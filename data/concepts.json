@@ -1,0 +1,4621 @@
+[
+  {
+    "id": "alienation",
+    "term": "异化",
+    "definition": "马克思批判理论核心概念，指主体创造的产物反过来支配和奴役主体自身的颠倒状态，在资本主义生产中表现为劳动异化的四种形式。",
+    "proponent": "马克思",
+    "school": "马克思主义/批判理论",
+    "source_text": "《1844年经济学哲学手稿》",
+    "core_points": [
+      "劳动者与劳动产品的异化——工人生产越多自己越贫困",
+      "劳动者与劳动过程的异化——劳动成为被迫的谋生手段",
+      "劳动者与类本质的异化——创造性劳动被贬为动物式生存",
+      "劳动者与他人关系的异化——所有人际关系异化为交换关系"
+    ],
+    "related": [
+      {
+        "id": "commodity_fetishism",
+        "relation": "develops_from"
+      },
+      {
+        "id": "anomie",
+        "relation": "parallel"
+      },
+      {
+        "id": "class",
+        "relation": "prerequisite"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "古典社会学理论/马克思",
+    "textbook_ref": "侯钧生《西方社会学理论教程》第2章"
+  },
+  {
+    "id": "class",
+    "term": "阶级",
+    "definition": "与生产资料的不同关系所决定的大规模社会群体，生产资料占有关系是阶级划分的根本标准，阶级利益对立是社会变迁的根本动力。",
+    "proponent": "马克思",
+    "school": "马克思主义/历史唯物主义",
+    "source_text": "《共产党宣言》",
+    "core_points": [
+      "生产资料关系决定阶级地位——有产者与无产者的根本对立",
+      "自在阶级→自为阶级：从客观经济地位到主观阶级意识的转变",
+      "阶级斗争是历史发展的直接动力",
+      "阶级分析是理解一切社会现象的钥匙"
+    ],
+    "related": [
+      {
+        "id": "alienation",
+        "relation": "successor"
+      },
+      {
+        "id": "class_consciousness",
+        "relation": "contains"
+      },
+      {
+        "id": "base_superstructure",
+        "relation": "school_of"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "古典社会学理论/马克思",
+    "textbook_ref": "侯钧生《西方社会学理论教程》第2章"
+  },
+  {
+    "id": "base_superstructure",
+    "term": "经济基础与上层建筑",
+    "definition": "历史唯物主义的核心分析框架，经济基础（生产关系的总和）决定上层建筑（政治法律制度和社会意识形态），后者对前者有反作用。",
+    "proponent": "马克思",
+    "school": "马克思主义/历史唯物主义",
+    "source_text": "《政治经济学批判·序言》",
+    "core_points": [
+      "经济基础决定上层建筑的性质和变革方向",
+      "上层建筑具有相对独立性并对基础产生反作用",
+      "社会变革的根本动力在于生产关系与生产力的矛盾",
+      "不是人们的意识决定存在，而是社会存在决定意识"
+    ],
+    "related": [
+      {
+        "id": "historical_materialism",
+        "relation": "contains"
+      },
+      {
+        "id": "class",
+        "relation": "school_of"
+      },
+      {
+        "id": "ideology",
+        "relation": "contains"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "古典社会学理论/马克思",
+    "textbook_ref": "侯钧生《西方社会学理论教程》第2章"
+  },
+  {
+    "id": "commodity_fetishism",
+    "term": "商品拜物教",
+    "definition": "马克思揭示的在商品生产社会中人与人之间的社会关系被表现为物与物之间关系的颠倒现象，商品被赋予独立于人类劳动的魔力般的属性。",
+    "proponent": "马克思",
+    "school": "马克思主义/政治经济学批判",
+    "source_text": "《资本论》第1卷",
+    "core_points": [
+      "私人劳动的社会性质只有通过商品交换才能表现出来的客观颠倒",
+      "商品形式掩盖了生产的真实社会关系——资本对劳动的剥削",
+      "商品看似具有'超感觉'的属性，实则是社会构造",
+      "消解路径：揭示商品世界背后的真实社会关系"
+    ],
+    "related": [
+      {
+        "id": "alienation",
+        "relation": "successor"
+      },
+      {
+        "id": "reification",
+        "relation": "successor"
+      },
+      {
+        "id": "use_value_exchange_value",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "古典社会学理论/马克思",
+    "textbook_ref": "侯钧生《西方社会学理论教程》第2章"
+  },
+  {
+    "id": "social_fact",
+    "term": "社会事实",
+    "definition": "涂尔干方法论的核心概念，指一切存在于个体之外、对个体具有强制性约束力的行为方式、思维方式和感觉方式，应当被当作'物'来研究。",
+    "proponent": "涂尔干",
+    "school": "实证主义社会学",
+    "source_text": "《社会学方法的规则》",
+    "core_points": [
+      "外在性——先于个体而存在，独立于个体意志",
+      "强制性——对个体行为具有外部约束力和强制作用",
+      "普遍性——在社会范围内普遍存在而非个体特征",
+      "必须以社会事实解释社会事实，排除心理主义和还原论"
+    ],
+    "related": [
+      {
+        "id": "collective_consciousness",
+        "relation": "prerequisite"
+      },
+      {
+        "id": "anomie",
+        "relation": "applies_to"
+      },
+      {
+        "id": "suicide_typology",
+        "relation": "applies_to"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "古典社会学理论/涂尔干",
+    "textbook_ref": "侯钧生《西方社会学理论教程》第3章"
+  },
+  {
+    "id": "anomie",
+    "term": "失范",
+    "definition": "涂尔干提出的概念，指社会规范体系崩溃或缺失所导致的个体行为缺乏道德指引和制度约束的无序状态，常见于社会急剧转型时期。",
+    "proponent": "涂尔干",
+    "school": "实证主义社会学",
+    "source_text": "《自杀论》《社会分工论》",
+    "core_points": [
+      "起因：社会规范体系无法有效约束个体欲望和行为期待",
+      "经济繁荣与危机均可导致失范——关键在于社会调控能力断裂",
+      "失范型自杀区别于利己型、利他型、宿命型自杀",
+      "现代工商业社会中的长期失范导致道德个人主义泛滥"
+    ],
+    "related": [
+      {
+        "id": "social_fact",
+        "relation": "school_of"
+      },
+      {
+        "id": "suicide_typology",
+        "relation": "contains"
+      },
+      {
+        "id": "organic_solidarity",
+        "relation": "parallel"
+      },
+      {
+        "id": "alienation",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "古典社会学理论/涂尔干",
+    "textbook_ref": "侯钧生《西方社会学理论教程》第3章"
+  },
+  {
+    "id": "organic_solidarity",
+    "term": "有机团结",
+    "definition": "涂尔干提出的现代社会整合形式，以高度发达的社会分工为基础，个体之间因功能互补而相互依赖，法律以恢复性制裁为主。",
+    "proponent": "涂尔干",
+    "school": "实证主义社会学",
+    "source_text": "《社会分工论》",
+    "core_points": [
+      "基础：高度发达的社会分工和个体功能专业化",
+      "机制：个体间功能互补产生相互依赖——'有机'类比生物体",
+      "法律特征：恢复性法（合同法、民法）——旨在恢复被破坏的关系而非惩罚",
+      "现代社会的正常状态——不同于马克思的'异化'诊断"
+    ],
+    "related": [
+      {
+        "id": "mechanical_solidarity",
+        "relation": "opposes"
+      },
+      {
+        "id": "social_fact",
+        "relation": "school_of"
+      },
+      {
+        "id": "division_of_labor",
+        "relation": "prerequisite"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "古典社会学理论/涂尔干",
+    "textbook_ref": "侯钧生《西方社会学理论教程》第3章"
+  },
+  {
+    "id": "mechanical_solidarity",
+    "term": "机械团结",
+    "definition": "涂尔干提出的传统社会整合形式，建立在个体间高度相似性和共享集体意识之上，法律以压制性制裁为主，个体差异被压制。",
+    "proponent": "涂尔干",
+    "school": "实证主义社会学",
+    "source_text": "《社会分工论》",
+    "core_points": [
+      "基础：个体之间高度相似——共同信仰、情感、生活方式",
+      "机制：集体意识强有力地约束个体——'机械'指同质性连接",
+      "法律特征：压制性法（刑法、严惩）——惩罚是对集体意识的捍卫",
+      "社会进化：机械团结→有机团结是社会分工发展的必然趋向"
+    ],
+    "related": [
+      {
+        "id": "organic_solidarity",
+        "relation": "opposes"
+      },
+      {
+        "id": "collective_consciousness",
+        "relation": "contains"
+      },
+      {
+        "id": "social_fact",
+        "relation": "school_of"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "古典社会学理论/涂尔干",
+    "textbook_ref": "侯钧生《西方社会学理论教程》第3章"
+  },
+  {
+    "id": "suicide_typology",
+    "term": "自杀类型论",
+    "definition": "涂尔干在《自杀论》中根据社会整合程度和社会规范调控程度两个维度将自杀划分为利己型、利他型、失范型和宿命型四种经典类型。",
+    "proponent": "涂尔干",
+    "school": "实证主义社会学",
+    "source_text": "《自杀论》",
+    "core_points": [
+      "利己型自杀：社会整合过低——个体与群体纽带断裂",
+      "利他型自杀：社会整合过强——个体为集体义务性自杀",
+      "失范型自杀：社会规范缺失——欲望无限扩张而缺乏约束",
+      "宿命型自杀：社会规范过强——个体被过度管制而绝望"
+    ],
+    "related": [
+      {
+        "id": "anomie",
+        "relation": "contains"
+      },
+      {
+        "id": "social_fact",
+        "relation": "school_of"
+      },
+      {
+        "id": "social_integration",
+        "relation": "applies_to"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "古典社会学理论/涂尔干",
+    "textbook_ref": "侯钧生《西方社会学理论教程》第3章"
+  },
+  {
+    "id": "bureaucracy",
+    "term": "科层制",
+    "definition": "韦伯提出的法理型权威的最纯粹形式，以层级节制、规则化运作、专业分工和非人格化为核心特征的理性组织形式，是现代社会的'铁笼'。",
+    "proponent": "韦伯",
+    "school": "理解社会学",
+    "source_text": "《经济与社会》",
+    "core_points": [
+      "等级制权力结构：上下级关系明确，权限范围清晰界定",
+      "规章制度化管理：一切行为遵循成文规则，不受个人情感影响",
+      "专业化分工：官员经专业培训和考核，职务与个人分离",
+      "非人格化：去除个人好恶，将人还原为组织职位中的'齿轮'"
+    ],
+    "related": [
+      {
+        "id": "ideal_type",
+        "relation": "applies_to"
+      },
+      {
+        "id": "rationalization",
+        "relation": "contains"
+      },
+      {
+        "id": "authority_types",
+        "relation": "contains"
+      },
+      {
+        "id": "iron_cage",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "古典社会学理论/韦伯",
+    "textbook_ref": "侯钧生《西方社会学理论教程》第4章"
+  },
+  {
+    "id": "ideal_type",
+    "term": "理想类型",
+    "definition": "韦伯方法论的核心概念，指研究者通过片面强调一个或多个观点并综合大量具体个别现象而建构的纯粹逻辑形式，不是对现实的描述而是理解和比较现实的工具。",
+    "proponent": "韦伯",
+    "school": "理解社会学",
+    "source_text": "《社会科学方法论》",
+    "core_points": [
+      "方法论工具而非现实本身——不存在于经验世界中",
+      "建构方法：片面强调某些特征→逻辑整合形成内在一致的纯粹形式",
+      "功能：提供比较基准，测量现实与理想类型的偏差",
+      "三大经典应用：科层制、权威三类型、新教伦理"
+    ],
+    "related": [
+      {
+        "id": "bureaucracy",
+        "relation": "applies_to"
+      },
+      {
+        "id": "value_neutrality",
+        "relation": "parallel"
+      },
+      {
+        "id": "verstehen",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "古典社会学理论/韦伯",
+    "textbook_ref": "侯钧生《西方社会学理论教程》第4章"
+  },
+  {
+    "id": "social_action_types",
+    "term": "社会行动四类型",
+    "definition": "韦伯根据行动的取向和可理解性将社会行动划分为目的理性、价值理性、情感行动和传统行动四种类型，是理解社会学分析的基本框架。",
+    "proponent": "韦伯",
+    "school": "理解社会学",
+    "source_text": "《经济与社会》",
+    "core_points": [
+      "目的理性行动：根据目的、手段和后果权衡最优路径——现代社会最典型",
+      "价值理性行动：为实现某种绝对价值信念不计后果——'信念伦理'",
+      "情感行动：由当下的情绪和感情状态直接决定",
+      "传统行动：由根深蒂固的习惯和传统决定"
+    ],
+    "related": [
+      {
+        "id": "verstehen",
+        "relation": "applies_to"
+      },
+      {
+        "id": "rationalization",
+        "relation": "contains"
+      },
+      {
+        "id": "authority_types",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "古典社会学理论/韦伯",
+    "textbook_ref": "侯钧生《西方社会学理论教程》第4章"
+  },
+  {
+    "id": "authority_types",
+    "term": "权威三类型",
+    "definition": "韦伯提出的三种合法性支配类型：传统型权威基于习俗和神圣性、魅力型权威基于个人超凡品质、法理型权威基于理性规则，对应不同社会形态。",
+    "proponent": "韦伯",
+    "school": "理解社会学",
+    "source_text": "《经济与社会》",
+    "core_points": [
+      "传统型：'历来如此'——世袭君主制、宗法制",
+      "魅力型：'追随非凡'——先知、革命领袖、英雄",
+      "法理型：'依法办事'——科层制是现代法理型权威的最纯粹形式",
+      "三类型可组合出现：科层制组织中的领导也可能具有魅力特征"
+    ],
+    "related": [
+      {
+        "id": "bureaucracy",
+        "relation": "school_of"
+      },
+      {
+        "id": "ideal_type",
+        "relation": "applies_to"
+      },
+      {
+        "id": "rationalization",
+        "relation": "contains"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "古典社会学理论/韦伯",
+    "textbook_ref": "侯钧生《西方社会学理论教程》第4章"
+  },
+  {
+    "id": "value_neutrality",
+    "term": "价值中立",
+    "definition": "韦伯提出的社会科学研究原则，要求研究者在研究过程中区分事实判断与价值判断，不将个人的政治立场和价值观带入科学研究结论。",
+    "proponent": "韦伯",
+    "school": "理解社会学",
+    "source_text": "《以学术为业》《社会科学方法论》",
+    "core_points": [
+      "区分'价值关联'（选题受价值观影响）与'价值中立'（研究过程客观）",
+      "研究者可以在教室外持有立场，但在讲台上必须价值中立",
+      "教师不应利用讲台的权力向学生灌输自己的政治观点",
+      "社会科学的客观性不是排除一切价值而是保持价值判断的可验证性"
+    ],
+    "related": [
+      {
+        "id": "ideal_type",
+        "relation": "parallel"
+      },
+      {
+        "id": "verstehen",
+        "relation": "parallel"
+      },
+      {
+        "id": "positivism",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "古典社会学理论/韦伯",
+    "textbook_ref": "侯钧生《西方社会学理论教程》第4章"
+  },
+  {
+    "id": "protestant_ethic",
+    "term": "新教伦理",
+    "definition": "韦伯在《新教伦理与资本主义精神》中揭示的核心机制：加尔文宗预定论引发的入世禁欲主义无意中塑造了现代资本主义的精神驱动力。",
+    "proponent": "韦伯",
+    "school": "理解社会学",
+    "source_text": "《新教伦理与资本主义精神》",
+    "core_points": [
+      "预定论→得救焦虑→世俗职业成功作为恩宠证明→入世禁欲主义",
+      "天职观：将世俗职业视为上帝的'召唤'而非世俗谋生",
+      "资本主义精神：以挣钱为'义务'而非享乐手段——无限积累的伦理基础",
+      "不是因果决定论：新教伦理与资本主义精神存在'选择性亲和'"
+    ],
+    "related": [
+      {
+        "id": "rationalization",
+        "relation": "contains"
+      },
+      {
+        "id": "ideal_type",
+        "relation": "applies_to"
+      },
+      {
+        "id": "iron_cage",
+        "relation": "successor"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "古典社会学理论/韦伯",
+    "textbook_ref": "侯钧生《西方社会学理论教程》第4章"
+  },
+  {
+    "id": "rationalization",
+    "term": "理性化",
+    "definition": "韦伯分析现代社会历史变迁的核心主题，指社会各领域（经济、政治、法律、宗教）日益按照可计算性、效率和程序化逻辑组织的过程，以西方为最典型。",
+    "proponent": "韦伯",
+    "school": "理解社会学",
+    "source_text": "《经济与社会》《宗教社会学论文集》",
+    "core_points": [
+      "西方的独特性：只有西方产生了系统性、多领域并进的理性化",
+      "实质理性vs形式理性：前者关注价值目标，后者关注程序和效率",
+      "理性化的悖论：解放人类又奴役人类——'铁笼'隐喻",
+      "现代性的根本特征是不可逆的形式理性化"
+    ],
+    "related": [
+      {
+        "id": "bureaucracy",
+        "relation": "contains"
+      },
+      {
+        "id": "iron_cage",
+        "relation": "successor"
+      },
+      {
+        "id": "disenchantment",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "古典社会学理论/韦伯",
+    "textbook_ref": "侯钧生《西方社会学理论教程》第4章"
+  },
+  {
+    "id": "verstehen",
+    "term": "理解",
+    "definition": "韦伯方法论的核心概念，指对行动者赋予自身行为的主观意义的解释性把握，区别于自然科学的因果说明，是社会学区别于自然科学的独特方法。",
+    "proponent": "韦伯",
+    "school": "理解社会学",
+    "source_text": "《经济与社会》《社会科学方法论》",
+    "core_points": [
+      "两种理解：直接观察理解（看表情知情绪）和解释性理解（理解动机）",
+      "因果说明与意义理解的结合——社会学是'解释性理解'的科学",
+      "社会学的研究对象是社会行动——被行动者赋予主观意义的行为",
+      "不是直觉共情，而是理性重构——需要证据和逻辑支撑"
+    ],
+    "related": [
+      {
+        "id": "social_action_types",
+        "relation": "applies_to"
+      },
+      {
+        "id": "ideal_type",
+        "relation": "parallel"
+      },
+      {
+        "id": "value_neutrality",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "古典社会学理论/韦伯",
+    "textbook_ref": "侯钧生《西方社会学理论教程》第4章"
+  },
+  {
+    "id": "formal_sociology",
+    "term": "形式社会学",
+    "definition": "齐美尔创立的社会学分析路径，将社会交往的纯粹形式从具体内容中抽象出来加以研究，探讨支配、竞争、冲突、社交性等形式本身的普遍规律。",
+    "proponent": "齐美尔",
+    "school": "形式社会学",
+    "source_text": "《社会学——关于社会化形式的研究》",
+    "core_points": [
+      "形式vs内容：社会学研究社会化的形式而非具体内容",
+      "形式的抽象性与普遍性：同样的形式（如竞争）可在不同内容领域出现",
+      "社会学=社会化的形式几何学——揭示社会关系的结构法则",
+      "为后续的社会网络分析和交换理论奠定方法论基础"
+    ],
+    "related": [
+      {
+        "id": "sociation",
+        "relation": "parallel"
+      },
+      {
+        "id": "dyad_triad",
+        "relation": "applies_to"
+      },
+      {
+        "id": "stranger",
+        "relation": "applies_to"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "古典社会学理论/齐美尔",
+    "textbook_ref": "侯钧生《西方社会学理论教程》第5章"
+  },
+  {
+    "id": "stranger",
+    "term": "陌生人",
+    "definition": "齐美尔提出的经典社会类型——既非近在咫尺的熟人亦非远在天边的外来者，而是物理接近但社会距离遥远的特殊角色，兼具近和远的双重属性。",
+    "proponent": "齐美尔",
+    "school": "形式社会学",
+    "source_text": "《陌生人》",
+    "core_points": [
+      "距离社会学：物理空间的近与心理/社会距离的远的辩证统一",
+      "客观性优势：陌生人不受群体内部偏见和利益纠葛的束缚",
+      "流动性和不稳定性——陌生人今天在明天可能离开",
+      "成为社会冲突和创新的重要媒介——既受排斥又被需要"
+    ],
+    "related": [
+      {
+        "id": "formal_sociology",
+        "relation": "school_of"
+      },
+      {
+        "id": "social_distance",
+        "relation": "contains"
+      },
+      {
+        "id": "marginal_man",
+        "relation": "successor"
+      }
+    ],
+    "exam_frequency": "medium",
+    "chapter": "古典社会学理论/齐美尔",
+    "textbook_ref": "侯钧生《西方社会学理论教程》第5章"
+  },
+  {
+    "id": "dyad_triad",
+    "term": "二人组与三人组",
+    "definition": "齐美尔对群体规模的形式分析：二人组是最纯粹的社会关系因只依赖于双方、三人组是最简单的超个体社会结构，从2到3的转变是社会学上意义最重大的量变到质变。",
+    "proponent": "齐美尔",
+    "school": "形式社会学",
+    "source_text": "《社会学》",
+    "core_points": [
+      "二人组：完全对称、高度亲密、极度脆弱——一方退出关系即消亡",
+      "三人组：出现'多数vs少数'、'分而治之'、'第三者受益'三种新角色",
+      "从2到3标志着社会关系的本质飞跃——出现了独立于个体的结构",
+      "群体规模持续扩大→个体性增强、结构分化加剧"
+    ],
+    "related": [
+      {
+        "id": "formal_sociology",
+        "relation": "school_of"
+      },
+      {
+        "id": "social_circles",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "medium",
+    "chapter": "古典社会学理论/齐美尔",
+    "textbook_ref": "侯钧生《西方社会学理论教程》第5章"
+  },
+  {
+    "id": "symbolic_interactionism",
+    "term": "符号互动论",
+    "definition": "以米德思想为基础、由布鲁默正式命名的微观社会学理论，主张社会是由个体通过有意义的符号进行互动而建构的持续过程，强调人类行为的创造性和反思性。",
+    "proponent": "米德（奠基）、布鲁默（命名）",
+    "school": "符号互动论",
+    "source_text": "米德《心灵、自我与社会》",
+    "core_points": [
+      "人类对刺激的反应是经过符号中介的解释过程而非机械反应",
+      "意义产生于社会互动之中并在此过程中被持续修正和重塑",
+      "自我是社会互动的产物——通过角色扮演和'泛化他人'建构",
+      "方法论：参与观察和深度访谈——理解行动者的主观意义世界"
+    ],
+    "related": [
+      {
+        "id": "i_me",
+        "relation": "contains"
+      },
+      {
+        "id": "generalized_other",
+        "relation": "contains"
+      },
+      {
+        "id": "role_taking",
+        "relation": "prerequisite"
+      },
+      {
+        "id": "dramaturgy",
+        "relation": "successor"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "现代社会学理论/符号互动论",
+    "textbook_ref": "侯钧生《西方社会学理论教程》第6章"
+  },
+  {
+    "id": "i_me",
+    "term": "主我与客我",
+    "definition": "米德自我理论的核心概念对：'主我'是行动的源泉——当下主动的、创造性的自我；'客我'是内化的社会态度——他人对自己的期待和评价的组织化集合。",
+    "proponent": "米德",
+    "school": "符号互动论",
+    "source_text": "《心灵、自我与社会》",
+    "core_points": [
+      "主我(I)：不可预测的冲动的行动者，是变化的源泉和创造的发动机",
+      "客我(Me)：内化的社会期待，是他人眼中'我应该如何'的集合",
+      "自我是I与Me的持续内在对话——'我想做'与'别人期待我做'的协商",
+      "完全社会化的人=Me完全支配I，但那是不可能的也是不可欲的"
+    ],
+    "related": [
+      {
+        "id": "symbolic_interactionism",
+        "relation": "school_of"
+      },
+      {
+        "id": "generalized_other",
+        "relation": "prerequisite"
+      },
+      {
+        "id": "looking_glass_self",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "现代社会学理论/符号互动论",
+    "textbook_ref": "侯钧生《西方社会学理论教程》第6章"
+  },
+  {
+    "id": "generalized_other",
+    "term": "泛化他人",
+    "definition": "米德提出的概念，指个体在成长过程中内化的整个社会共同体的组织化态度和普遍化期待，是自我形成的最终阶段——个体不仅考虑具体他人的反应还考虑社会一般的期待。",
+    "proponent": "米德",
+    "school": "符号互动论",
+    "source_text": "《心灵、自我与社会》",
+    "core_points": [
+      "发展三阶段：模仿→角色扮演（具体他人）→泛化他人（社会共同体）",
+      "泛化他人的内化使个体能参与有组织的群体活动——遵守抽象规则",
+      "儿童通过游戏（play）和竞赛（game）逐步获得泛化他人",
+      "语言是泛化他人形成和传递的核心媒介"
+    ],
+    "related": [
+      {
+        "id": "i_me",
+        "relation": "successor"
+      },
+      {
+        "id": "symbolic_interactionism",
+        "relation": "school_of"
+      },
+      {
+        "id": "role_taking",
+        "relation": "successor"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "现代社会学理论/符号互动论",
+    "textbook_ref": "侯钧生《西方社会学理论教程》第6章"
+  },
+  {
+    "id": "dramaturgy",
+    "term": "拟剧论",
+    "definition": "戈夫曼以戏剧表演为隐喻分析社会互动的微观社会学理论，将日常生活视为一个舞台，人们在其中通过控制自我呈现来管理和维持特定的自我印象。",
+    "proponent": "戈夫曼",
+    "school": "拟剧论/符号互动论",
+    "source_text": "《日常生活中的自我呈现》",
+    "core_points": [
+      "前台：个体按照社会期待进行表演的场合——呈现理想化的自我",
+      "后台：卸下表演、放松休息的私密空间——'真实的自我'得以喘息",
+      "印象管理：个体运用言语、动作、道具等控制别人对自己的印象",
+      "即便在'后台'，个体仍可能有另一层表演——'表演的真诚'是流动的"
+    ],
+    "related": [
+      {
+        "id": "front_back_stage",
+        "relation": "contains"
+      },
+      {
+        "id": "impression_management",
+        "relation": "contains"
+      },
+      {
+        "id": "stigma",
+        "relation": "parallel"
+      },
+      {
+        "id": "symbolic_interactionism",
+        "relation": "develops_from"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "现代社会学理论/拟剧论",
+    "textbook_ref": "侯钧生《西方社会学理论教程》第7章"
+  },
+  {
+    "id": "impression_management",
+    "term": "印象管理",
+    "definition": "戈夫曼拟剧论的核心概念，指个体在社会互动中有意或无意地运用各种策略和技术控制他人对自己形成特定印象的过程，是社会互动的基本特征。",
+    "proponent": "戈夫曼",
+    "school": "拟剧论/符号互动论",
+    "source_text": "《日常生活中的自我呈现》",
+    "core_points": [
+      "理想化表演：展示比真实自我更符合社会规范的形象",
+      "神秘化：通过保持距离维持权威和魅力",
+      "误导性表演：有意识地制造假印象——但观众也在配合",
+      "表演的崩溃：姿态滑落、无意手势、'失礼'导致的尴尬"
+    ],
+    "related": [
+      {
+        "id": "dramaturgy",
+        "relation": "school_of"
+      },
+      {
+        "id": "front_back_stage",
+        "relation": "parallel"
+      },
+      {
+        "id": "self_presentation",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "现代社会学理论/拟剧论",
+    "textbook_ref": "侯钧生《西方社会学理论教程》第7章"
+  },
+  {
+    "id": "stigma",
+    "term": "污名",
+    "definition": "戈夫曼提出的概念，指个体因某种身体、性格或群体特征而被社会赋予的贬低性标记，使其从'完整的常人'降格为'受损者'，社会互动因此受到系统性的扭曲。",
+    "proponent": "戈夫曼",
+    "school": "拟剧论/符号互动论",
+    "source_text": "《污名——受损身份管理札记》",
+    "core_points": [
+      "三种污名：身体可憎、性格缺陷、部族污名（种族、民族、宗教）",
+      "污名者与被污名者'共谋'维持互动的脆弱正常表象",
+      "应对策略：信息控制（'装'正常）、自我隔离、污名转化",
+      "污名不是个体特征而是关系属性——同样的特征在不同情境下污名程度不同"
+    ],
+    "related": [
+      {
+        "id": "dramaturgy",
+        "relation": "school_of"
+      },
+      {
+        "id": "labeling_theory",
+        "relation": "parallel"
+      },
+      {
+        "id": "total_institution",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "现代社会学理论/拟剧论",
+    "textbook_ref": "侯钧生《西方社会学理论教程》第7章"
+  },
+  {
+    "id": "habitus",
+    "term": "惯习",
+    "definition": "布迪厄超越主客观二元对立的核心概念，指被社会结构内化而成的持久的、可转换的性情倾向系统，既是'结构化了的结构'也是'结构化的结构'。",
+    "proponent": "布迪厄",
+    "school": "实践社会学/生成结构主义",
+    "source_text": "《实践感》《区隔》",
+    "core_points": [
+      "内化的社会结构——阶级地位通过惯习铭刻于身体和心智",
+      "生成性——惯习不是机械决定而是产生多样的策略性实践",
+      "不是习惯：习惯是机械重复，惯习是生成性原则",
+      "阶级惯习→消费/审美/教育选择→阶级边界的再生产"
+    ],
+    "related": [
+      {
+        "id": "field",
+        "relation": "parallel"
+      },
+      {
+        "id": "capital_forms",
+        "relation": "parallel"
+      },
+      {
+        "id": "distinction",
+        "relation": "applies_to"
+      },
+      {
+        "id": "symbolic_violence",
+        "relation": "contains"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "现代社会学理论/布迪厄",
+    "textbook_ref": "侯钧生《西方社会学理论教程》第9章"
+  },
+  {
+    "id": "field",
+    "term": "场域",
+    "definition": "布迪厄提出的概念，指由不同位置之间的客观关系构成的配置性网络空间，每个场域有自身的运行逻辑和资本形式，场域是权力关系和竞争的竞技场。",
+    "proponent": "布迪厄",
+    "school": "实践社会学/生成结构主义",
+    "source_text": "《实践与反思》",
+    "core_points": [
+      "场域=位置的客观关系结构——不是实体而是关系",
+      "每个场域有自己的'游戏规则'：学术场≠经济场≠艺术场",
+      "行动者在场域中的位置由其拥有的资本数量和结构决定",
+      "场域与惯习的双向建构：场域塑造惯习，惯习使场域运作"
+    ],
+    "related": [
+      {
+        "id": "habitus",
+        "relation": "parallel"
+      },
+      {
+        "id": "capital_forms",
+        "relation": "applies_to"
+      },
+      {
+        "id": "social_space",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "现代社会学理论/布迪厄",
+    "textbook_ref": "侯钧生《西方社会学理论教程》第9章"
+  },
+  {
+    "id": "capital_forms",
+    "term": "资本形式",
+    "definition": "布迪厄打破经济学垄断的资本概念，区分四种资本类型：经济资本可直接兑换为货币、文化资本体现为知识和文凭、社会资本来自关系网络、符号资本是合法化了的声誉和威望。",
+    "proponent": "布迪厄",
+    "school": "实践社会学/生成结构主义",
+    "source_text": "《资本的形式》",
+    "core_points": [
+      "经济资本：可直接转化为货币和产权的资本——最基础形态",
+      "文化资本：具身化（知识品位）、客观化（藏书字画）、制度化（文凭）",
+      "社会资本：嵌入于持久社会关系网络中的实际和潜在资源的总和",
+      "四种资本可相互转换——如经济资本通过精英教育转换为文化资本和符号资本"
+    ],
+    "related": [
+      {
+        "id": "habitus",
+        "relation": "applies_to"
+      },
+      {
+        "id": "field",
+        "relation": "applies_to"
+      },
+      {
+        "id": "distinction",
+        "relation": "applies_to"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "现代社会学理论/布迪厄",
+    "textbook_ref": "侯钧生《西方社会学理论教程》第9章"
+  },
+  {
+    "id": "distinction",
+    "term": "区隔",
+    "definition": "布迪厄在《区隔》中揭示的核心命题：审美判断和消费趣味不是纯粹的个体选择而是阶级惯习的表达，通过文化消费区分和排斥其他阶级，从而再生产阶级结构。",
+    "proponent": "布迪厄",
+    "school": "实践社会学/生成结构主义",
+    "source_text": "《区隔——趣味判断的社会批判》",
+    "core_points": [
+      "趣味是阶级的标志——'美学的凝视'是统治阶级的文化特权",
+      "文化消费的阶级梯度：高雅→中产→大众→必然性趣味",
+      "区隔的逻辑：通过贬低他人的品位来提升自己的社会地位",
+      "文化资本的不平等比经济不平等更隐蔽但同样有效"
+    ],
+    "related": [
+      {
+        "id": "habitus",
+        "relation": "applies_to"
+      },
+      {
+        "id": "capital_forms",
+        "relation": "applies_to"
+      },
+      {
+        "id": "symbolic_violence",
+        "relation": "contains"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "现代社会学理论/布迪厄",
+    "textbook_ref": "侯钧生《西方社会学理论教程》第9章"
+  },
+  {
+    "id": "structuration",
+    "term": "结构化理论",
+    "definition": "吉登斯超越结构-行动二元对立的核心理论，主张结构既是行动的中介也是行动的结果，社会系统通过行动者日复一日的实践中被持续生产和再生产。",
+    "proponent": "吉登斯",
+    "school": "结构化理论/第三条道路",
+    "source_text": "《社会的构成》",
+    "core_points": [
+      "结构的二重性：结构不是外在于行动的框架而是内在于行动的生产规则",
+      "结构即规则和资源——行动者运用规则和资源再生产出社会系统",
+      "实践意识：行动者知道如何'继续'日常生活的默会知识——无需明确反思",
+      "制度分析：分析规则和资源如何在时空中被组织为持久的制度形式"
+    ],
+    "related": [
+      {
+        "id": "reflexivity",
+        "relation": "parallel"
+      },
+      {
+        "id": "ontological_security",
+        "relation": "parallel"
+      },
+      {
+        "id": "habitus",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "现代社会学理论/吉登斯",
+    "textbook_ref": "侯钧生《西方社会学理论教程》第11章"
+  },
+  {
+    "id": "reflexivity",
+    "term": "反思性",
+    "definition": "吉登斯晚期现代性理论的核心概念，指社会行动者持续地监控自身行为及其社会情境并在信息基础上调整行动的特征，在现代性条件下被彻底激化。",
+    "proponent": "吉登斯",
+    "school": "结构化理论/现代性分析",
+    "source_text": "《现代性的后果》《现代性与自我认同》",
+    "core_points": [
+      "行动的反思性监控——所有社会行动的内在特征",
+      "现代的独特性：制度的反思性——专业知识不断被应用于制度运作",
+      "反思性不等于'更聪明'——信息增多也可能带来更大的不确定性",
+      "自我认同成为反思性项目——个体必须不断选择'我是谁'"
+    ],
+    "related": [
+      {
+        "id": "structuration",
+        "relation": "school_of"
+      },
+      {
+        "id": "disembedding",
+        "relation": "parallel"
+      },
+      {
+        "id": "ontological_security",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "现代社会学理论/吉登斯",
+    "textbook_ref": "侯钧生《西方社会学理论教程》第11章"
+  },
+  {
+    "id": "communicative_action",
+    "term": "沟通行动",
+    "definition": "哈贝马斯提出的核心概念，指至少两个具有语言和行为能力的主体之间为达成相互理解而进行的互动，以语言为媒介、以达成共识为目标，区别于以实现个人目的为导向的策略行动。",
+    "proponent": "哈贝马斯",
+    "school": "法兰克福学派/批判理论",
+    "source_text": "《沟通行动理论》",
+    "core_points": [
+      "有效性主张：真实性（客观世界）、正当性（社会世界）、真诚性（主观世界）",
+      "沟通理性区别于工具理性：前者追求理解，后者追求成功",
+      "生活世界的理性化→沟通行动的潜力→抵抗系统对生活世界的殖民化",
+      "理想言说情境——不受权力和强制扭曲的自由对话"
+    ],
+    "related": [
+      {
+        "id": "lifeworld_system",
+        "relation": "applies_to"
+      },
+      {
+        "id": "public_sphere",
+        "relation": "applies_to"
+      },
+      {
+        "id": "rationalization",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "现代社会学理论/哈贝马斯",
+    "textbook_ref": "侯钧生《西方社会学理论教程》第14章"
+  },
+  {
+    "id": "lifeworld_system",
+    "term": "生活世界与系统",
+    "definition": "哈贝马斯社会分析的二元框架：生活世界是沟通行动的文化背景和意义再生产空间，系统（经济市场+政治权力）是功能分化的非人格化协调机制，现代性危机表现为系统对生活世界的殖民化。",
+    "proponent": "哈贝马斯",
+    "school": "法兰克福学派/批判理论",
+    "source_text": "《沟通行动理论》",
+    "core_points": [
+      "生活世界：文化再生产、社会整合、人格形成的符号空间",
+      "系统：以金钱和权力为媒介的非人格化整合机制——功能效率优于沟通",
+      "系统殖民生活世界：市场逻辑和政治权力侵入本应由沟通协调的领域','沟通行动→公共领域→民主意志形成→以法律驯服系统"
+    ],
+    "related": [
+      {
+        "id": "communicative_action",
+        "relation": "school_of"
+      },
+      {
+        "id": "public_sphere",
+        "relation": "parallel"
+      },
+      {
+        "id": "rationalization",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "现代社会学理论/哈贝马斯",
+    "textbook_ref": "侯钧生《西方社会学理论教程》第14章"
+  },
+  {
+    "id": "power_knowledge",
+    "term": "权力-知识",
+    "definition": "福柯的核心命题：权力和知识不是外在的对抗关系而是内在的共生关系——权力运作生产出知识，知识建构又增强权力的效果，二者在具体实践中不可分割。",
+    "proponent": "福柯",
+    "school": "后结构主义/谱系学",
+    "source_text": "《规训与惩罚》《性经验史》",
+    "core_points": [
+      "权力不是被'拥有'的而是被'行使'的——权力的微观物理学",
+      "知识为权力提供正当化话语和操作技术",
+      "权力生产现实——它界定正常/异常、健康/病态、合法/犯罪",
+      "抵抗在权力内部——哪里有权力哪里就有抵抗"
+    ],
+    "related": [
+      {
+        "id": "discipline",
+        "relation": "contains"
+      },
+      {
+        "id": "panopticon",
+        "relation": "applies_to"
+      },
+      {
+        "id": "discourse",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "现代社会学理论/福柯",
+    "textbook_ref": "侯钧生《西方社会学理论教程》第8章"
+  },
+  {
+    "id": "discipline",
+    "term": "规训",
+    "definition": "福柯揭示的现代社会中一种特殊的权力技术，通过对身体的持续监视、层级化考核和标准化训练将个体塑造为驯服而有用的人体，不同于传统的暴力惩罚。",
+    "proponent": "福柯",
+    "school": "后结构主义/谱系学",
+    "source_text": "《规训与惩罚》",
+    "core_points": [
+      "规训≠压迫：规训不仅压制还生产——生产出有用的人",
+      "三大技术：层级监视、规范化裁决、检查（exam）",
+      "17-18世纪从酷刑到规训：权力从肉体惩罚变为灵魂操控",
+      "规训社会：学校、军营、工厂、医院、监狱都是规训机构"
+    ],
+    "related": [
+      {
+        "id": "power_knowledge",
+        "relation": "school_of"
+      },
+      {
+        "id": "panopticon",
+        "relation": "contains"
+      },
+      {
+        "id": "biopolitics",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "现代社会学理论/福柯",
+    "textbook_ref": "侯钧生《西方社会学理论教程》第8章"
+  },
+  {
+    "id": "panopticon",
+    "term": "全景敞视",
+    "definition": "福柯借用边沁的监狱设计作为现代规训权力的隐喻：囚犯处于持续的可见性之中而看不见监视者，权力因此自动化、非个人化且持续有效。",
+    "proponent": "福柯",
+    "school": "后结构主义/谱系学",
+    "source_text": "《规训与惩罚》",
+    "core_points": [
+      "可见性是权力的陷阱——被看的人不知道是否正在被监视而持续自我约束",
+      "权力自动运作：无需暴力和直接命令，主体内化监视成为自己的看守",
+      "从监狱建筑到现代社会的普遍形态：监控摄像头、电子追踪、社交媒体",
+      "全景敞视不是压迫的象征而是权力效率的极致——以最小的力量实现最大的控制"
+    ],
+    "related": [
+      {
+        "id": "discipline",
+        "relation": "school_of"
+      },
+      {
+        "id": "power_knowledge",
+        "relation": "school_of"
+      },
+      {
+        "id": "surveillance_society",
+        "relation": "applies_to"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "现代社会学理论/福柯",
+    "textbook_ref": "侯钧生《西方社会学理论教程》第8章"
+  },
+  {
+    "id": "discourse",
+    "term": "话语",
+    "definition": "福柯的核心概念，指在特定历史时期由社会制度和实践生产出来的有组织的言说方式，话语不仅描述世界还构成和建构世界，规定什么是可说的、可思的和可为的。",
+    "proponent": "福柯",
+    "school": "后结构主义/知识考古学",
+    "source_text": "《知识考古学》《话语的秩序》",
+    "core_points": [
+      "话语不是简单的语言——它是生产'真理'的制度性实践",
+      "话语的排斥机制：禁忌、排斥、真理/谬误的对立",
+      "权力通过话语运作——界定正常/疯狂、健康/病态、合法/犯罪",
+      "话语分析：不追问'谁说的'而是追问'为什么会这样说'——分析话语的构成规则"
+    ],
+    "related": [
+      {
+        "id": "power_knowledge",
+        "relation": "school_of"
+      },
+      {
+        "id": "episteme",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "现代社会学理论/福柯",
+    "textbook_ref": "侯钧生《西方社会学理论教程》第8章"
+  },
+  {
+    "id": "middle_range_theory",
+    "term": "中层理论",
+    "definition": "默顿提出的介于宏大理论与具体经验描述之间的理论策略，以特定社会现象为对象提出可检验的命题，架通抽象理论与经验研究之间的鸿沟，是社会学最有效的理论积累方式。",
+    "proponent": "默顿",
+    "school": "结构功能主义/科学社会学",
+    "source_text": "《社会理论与社会结构》",
+    "core_points": [
+      "不要试图一夜之间建构统一的大理论——帕森斯的错误",
+      "中层理论：以限定范围内的社会现象为对象提出具体可检验的假定",
+      "经典范例：自杀论（涂尔干）、新教伦理（韦伯）、参照群体理论",
+      "当代社会学几乎一切成熟的理论都是中层理论"
+    ],
+    "related": [
+      {
+        "id": "anomie_strain",
+        "relation": "applies_to"
+      },
+      {
+        "id": "self_fulfilling_prophecy",
+        "relation": "applies_to"
+      },
+      {
+        "id": "manifest_latent",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "现代社会学理论/默顿",
+    "textbook_ref": "侯钧生《西方社会学理论教程》第8章"
+  },
+  {
+    "id": "anomie_strain",
+    "term": "失范与紧张（默顿）",
+    "definition": "默顿对涂尔干失范概念的发展：失范不是规范的缺失而是文化目标和制度化手段之间的断裂，个体根据接受/拒绝这两个维度的不同组合产生五种适应模式。",
+    "proponent": "默顿",
+    "school": "结构功能主义/越轨社会学",
+    "source_text": "《社会结构与失范》",
+    "core_points": [
+      "文化目标（成功）vs制度化手段（合法途径）→不适配→紧张",
+      "五种适应模式：遵从、创新（犯罪）、仪式主义、退却主义、反抗",
+      "美国梦悖论：所有人被鼓励追求财富但合法手段分配不均→高犯罪率",
+      "失范从个体心理转向社会结构分析——社会结构制造越轨"
+    ],
+    "related": [
+      {
+        "id": "middle_range_theory",
+        "relation": "school_of"
+      },
+      {
+        "id": "anomie",
+        "relation": "develops_from"
+      },
+      {
+        "id": "reference_group",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "现代社会学理论/默顿",
+    "textbook_ref": "侯钧生《西方社会学理论教程》第8章"
+  },
+  {
+    "id": "self_fulfilling_prophecy",
+    "term": "自我实现预言",
+    "definition": "默顿提出的经典社会学概念，指最初虚假的情境定义因引发新的行为而最终使原本虚假的预期变为真实的动态过程，揭示社会主观定义如何创造客观现实。",
+    "proponent": "默顿",
+    "school": "结构功能主义/科学社会学",
+    "source_text": "《社会理论与社会结构》",
+    "core_points": [
+      "三个条件：初始定义是假的→行动基于这个假定义→假定义变为真的",
+      "经典案例：银行挤兑——虚假的破产传言引发挤兑使银行真破产",
+      "教育领域：教师对学生能力的错误预期→区别对待→学生真实成就的差异",
+      "应用的道德歧义：可被操纵——知道这一机制的人可利用它有意制造预期结果"
+    ],
+    "related": [
+      {
+        "id": "middle_range_theory",
+        "relation": "school_of"
+      },
+      {
+        "id": "labeling_theory",
+        "relation": "parallel"
+      },
+      {
+        "id": "thomas_theorem",
+        "relation": "develops_from"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "现代社会学理论/默顿",
+    "textbook_ref": "侯钧生《西方社会学理论教程》第8章"
+  },
+  {
+    "id": "agil",
+    "term": "AGIL模式",
+    "definition": "帕森斯分析社会系统功能条件的经典模型：适应获取资源、目标达成设定优先级、整合协调各部分、模式维持供给价值观和动机，四功能缺一不可。",
+    "proponent": "帕森斯",
+    "school": "结构功能主义",
+    "source_text": "《社会系统》《经济与社会》",
+    "core_points": [
+      "A(Adaptation)适应：从环境中获取和分配资源——对应经济子系统",
+      "G(Goal attainment)目标达成：确定目标并动员资源实现——对应政治子系统",
+      "I(Integration)整合：协调系统各部分维持一致性——对应法律/社会控制",
+      "L(Latent pattern maintenance)模式维持：传递文化价值观化解紧张——对应教育/家庭/宗教"
+    ],
+    "related": [
+      {
+        "id": "pattern_variables",
+        "relation": "parallel"
+      },
+      {
+        "id": "social_system",
+        "relation": "contains"
+      },
+      {
+        "id": "structural_functionalism",
+        "relation": "school_of"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "现代社会学理论/帕森斯",
+    "textbook_ref": "侯钧生《西方社会学理论教程》第7章"
+  },
+  {
+    "id": "pattern_variables",
+    "term": "模式变量",
+    "definition": "帕森斯分析行动者在社会互动中必须面对的五组二元选择困境，是连接个体行动与社会结构的概念工具，也是比较不同文化价值取向的分析框架。",
+    "proponent": "帕森斯",
+    "school": "结构功能主义",
+    "source_text": "《社会行动的结构》《关于行动的一般理论》",
+    "core_points": [
+      "五组选择：情感/情感中立、自我取向/集体取向、普遍主义/特殊主义、先赋/成就、扩散/专一",
+      "传统社会的典型配置：情感+特殊主义+先赋+扩散",
+      "现代社会的典型配置：情感中立+普遍主义+成就+专一",
+      "医生-病人关系=情感中立+普遍主义+成就+功能专一——现代职业关系的典范"
+    ],
+    "related": [
+      {
+        "id": "agil",
+        "relation": "parallel"
+      },
+      {
+        "id": "social_system",
+        "relation": "contains"
+      },
+      {
+        "id": "structural_functionalism",
+        "relation": "school_of"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "现代社会学理论/帕森斯",
+    "textbook_ref": "侯钧生《西方社会学理论教程》第7章"
+  },
+  {
+    "id": "socialization",
+    "term": "社会化",
+    "definition": "个体从生物人转变为社会人的终身过程，通过学习和内化社会规范、价值观、知识技能，形成自我意识和社会角色，实现社会文化的代际传递。",
+    "proponent": null,
+    "school": "社会学概论",
+    "source_text": null,
+    "core_points": [
+      "初级社会化（家庭/童年期——形成基本人格和语言能力）",
+      "次级社会化（学校/职场——学习专门知识和角色规范）",
+      "再社会化（移民/入伍/改行——放弃旧规范学习新规范）",
+      "社会化≠被动接收——个体在社会化过程中也有主动选择和反思"
+    ],
+    "related": [
+      {
+        "id": "role",
+        "relation": "applies_to"
+      },
+      {
+        "id": "looking_glass_self",
+        "relation": "contains"
+      },
+      {
+        "id": "i_me",
+        "relation": "parallel"
+      },
+      {
+        "id": "generalized_other",
+        "relation": "contains"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "社会学概论/社会化",
+    "textbook_ref": "马工程《社会学概论》第4章"
+  },
+  {
+    "id": "social_stratification",
+    "term": "社会分层",
+    "definition": "社会成员因资源占有不均而被区分为高低有序的不同层次的社会现象，是社会学分析社会不平等的核心概念，不同于简单的个体差异。",
+    "proponent": null,
+    "school": "社会分层理论",
+    "source_text": null,
+    "core_points": [
+      "分层≠分化：分层是垂直不平等+制度化，分化可以是水平差异",
+      "三大经典理论：马克思（阶级=生产关系）、韦伯（三位一体：阶级+地位+政党）、功能论（分层激励最有才能者填补最重要职位）",
+      "布迪厄：经济资本+文化资本+社会资本的多维分层",
+      "代际流动和代内流动是测量社会开放度的核心指标"
+    ],
+    "related": [
+      {
+        "id": "class",
+        "relation": "parallel"
+      },
+      {
+        "id": "social_mobility",
+        "relation": "parallel"
+      },
+      {
+        "id": "status",
+        "relation": "parallel"
+      },
+      {
+        "id": "distinction",
+        "relation": "applies_to"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "社会学概论/社会分层",
+    "textbook_ref": "马工程《社会学概论》"
+  },
+  {
+    "id": "social_mobility",
+    "term": "社会流动",
+    "definition": "社会成员从一个社会位置向另一个社会位置的移动，包括垂直流动（阶层升降）和水平流动（同层职位变化），以及代际流动和代内流动。",
+    "proponent": "索罗金",
+    "school": "社会分层理论",
+    "source_text": null,
+    "core_points": [
+      "垂直流动：向上（升迁）或向下（降级）的阶层变动",
+      "水平流动：同一阶层内不同职业、城市之间的移动",
+      "代际流动：子女相对于父母阶层地位的变化——衡量社会开放性",
+      "代内流动：个体一生中阶层位置的变化——职业流动率是重要指标"
+    ],
+    "related": [
+      {
+        "id": "social_stratification",
+        "relation": "applies_to"
+      },
+      {
+        "id": "class",
+        "relation": "applies_to"
+      },
+      {
+        "id": "status_attainment",
+        "relation": "applies_to"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "社会学概论/社会分层",
+    "textbook_ref": "马工程《社会学概论》"
+  },
+  {
+    "id": "role",
+    "term": "角色",
+    "definition": "与特定社会地位相对应的一套行为期待和规范要求，是社会互动的核心单元——个体同时承担多重角色（角色丛），角色冲突和角色紧张是常见的个体经验。",
+    "proponent": "林顿",
+    "school": "角色理论/符号互动论",
+    "source_text": null,
+    "core_points": [
+      "角色=地位的动态面——地位是你'是'什么，角色是你'做'什么",
+      "角色丛：每个人不是只有一个角色而是多个角色的复合体",
+      "角色冲突：两个角色期待不一致（职场妈妈=职业角色vs家庭角色）",
+      "角色紧张：同一角色内部的矛盾期待（教师既要严格又要慈爱）"
+    ],
+    "related": [
+      {
+        "id": "status",
+        "relation": "parallel"
+      },
+      {
+        "id": "socialization",
+        "relation": "applies_to"
+      },
+      {
+        "id": "dramaturgy",
+        "relation": "applies_to"
+      },
+      {
+        "id": "role_taking",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "社会学概论/社会角色",
+    "textbook_ref": "马工程《社会学概论》"
+  },
+  {
+    "id": "status",
+    "term": "地位",
+    "definition": "个体在社会关系体系中所处的特定位置，是角色的静态面。分为先赋地位（出生决定的——性别、种族、家庭出身）和自致地位（个体努力获得的——学历、职业、收入）。",
+    "proponent": "林顿",
+    "school": "角色理论",
+    "source_text": null,
+    "core_points": [
+      "先赋地位：个体无法选择的出生特征——种族、性别、家庭阶级",
+      "自致地位：通过个人努力获得的地位——教育、职业、财富",
+      "首要地位：在多重地位中主导个体社会身份的那个——现代社会通常是职业",
+      "地位不一致：不同地位维度不匹配——高学历低收入"
+    ],
+    "related": [
+      {
+        "id": "role",
+        "relation": "parallel"
+      },
+      {
+        "id": "social_stratification",
+        "relation": "applies_to"
+      },
+      {
+        "id": "status_attainment",
+        "relation": "applies_to"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "社会学概论/社会角色",
+    "textbook_ref": "马工程《社会学概论》"
+  },
+  {
+    "id": "social_institution",
+    "term": "社会制度",
+    "definition": "围绕社会基本需求而形成的、由相互关联的规范、价值观和角色构成的行为模式体系，主要包括家庭制度、经济制度、政治制度、教育制度和宗教制度。",
+    "proponent": null,
+    "school": "社会学概论/制度分析",
+    "source_text": null,
+    "core_points": [
+      "制度≠组织：制度是规范体系，组织是实施制度的实体",
+      "五大核心制度：家庭、经济、政治、教育、宗教",
+      "制度的功能：行为约束、社会整合、文化传递、人格塑造",
+      "制度变迁：技术变革、价值观念转型、社会运动共同推动制度演进"
+    ],
+    "related": [
+      {
+        "id": "institution",
+        "relation": "parallel"
+      },
+      {
+        "id": "social_stratification",
+        "relation": "applies_to"
+      },
+      {
+        "id": "base_superstructure",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "社会学概论/社会制度",
+    "textbook_ref": "马工程《社会学概论》"
+  },
+  {
+    "id": "social_deviance",
+    "term": "越轨",
+    "definition": "违反社会规范并被社会多数成员负面评价的行为，越轨不是行为的内在属性而是社会定义和标定的结果——同一行为在不同文化和时期可能被不同对待。",
+    "proponent": null,
+    "school": "越轨社会学",
+    "source_text": null,
+    "core_points": [
+      "越轨的社会建构性：同一行为在A文化合法（饮酒）在B文化是越轨",
+      "生物→心理→社会——社会学解释的演进：重在分析社会结构与文化矛盾",
+      "标签理论的贡献：越轨不是一个行为而是一个标签——被贴上标签改变了行为者轨迹",
+      "越轨的社会功能：默顿——越轨暴露制度缺陷、促进社会变迁"
+    ],
+    "related": [
+      {
+        "id": "anomie_strain",
+        "relation": "applies_to"
+      },
+      {
+        "id": "labeling_theory",
+        "relation": "applies_to"
+      },
+      {
+        "id": "stigma",
+        "relation": "applies_to"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "社会学概论/越轨",
+    "textbook_ref": "马工程《社会学概论》"
+  },
+  {
+    "id": "social_research",
+    "term": "社会研究",
+    "definition": "以经验方式对社会世界中人们的行为、态度、关系及社会现象进行科学探究的活动，旨在认识客观社会并解决社会问题。",
+    "proponent": null,
+    "school": "定量/定性",
+    "source_text": null,
+    "core_points": [
+      "以经验事实为基础",
+      "科学性和系统性",
+      "认识社会现象和规律"
+    ],
+    "related": [
+      {
+        "id": "methodology",
+        "relation": "applies_to"
+      },
+      {
+        "id": "research_methods",
+        "relation": "applies_to"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第一章 导论",
+    "textbook_ref": "风笑天《社会研究方法》第6版 第1章"
+  },
+  {
+    "id": "methodology",
+    "term": "方法论",
+    "definition": "关于人们认识世界和改造世界的根本方法的哲学学说，规范科学学科的原理、原则和方法的体系。",
+    "proponent": null,
+    "school": "定量/定性",
+    "source_text": null,
+    "core_points": [
+      "社会研究方法体系第一层次",
+      "实证主义与人文主义两大传统",
+      "指导研究设计和具体方法选择"
+    ],
+    "related": [
+      {
+        "id": "positivism",
+        "relation": "contains"
+      },
+      {
+        "id": "humanism_method",
+        "relation": "contains"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第一章 导论",
+    "textbook_ref": "风笑天《社会研究方法》第6版 第1章"
+  },
+  {
+    "id": "research_methods",
+    "term": "研究方式",
+    "definition": "研究所采取的具体形式或具体类型，分为定量研究方式和定性研究方式两大类，主要包括调查研究、实验研究、实地研究和文献研究四种。",
+    "proponent": null,
+    "school": "定量/定性",
+    "source_text": null,
+    "core_points": [
+      "四种基本方式各有特定语言和特征",
+      "每种方式可独立完成研究全过程",
+      "社会研究方法体系第二层次"
+    ],
+    "related": [
+      {
+        "id": "survey_research",
+        "relation": "contains"
+      },
+      {
+        "id": "experimental_research",
+        "relation": "contains"
+      },
+      {
+        "id": "field_research",
+        "relation": "contains"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第一章 导论",
+    "textbook_ref": "风笑天《社会研究方法》第6版 第1章"
+  },
+  {
+    "id": "quantitative_research",
+    "term": "定量研究",
+    "definition": "实证主义方法论的最集中体现，侧重于对事物的测量和计算，用数字描述现象，强调客观事实和变量之间的因果联系。",
+    "proponent": null,
+    "school": "定量",
+    "source_text": null,
+    "core_points": [
+      "强调客观事实和标准化程序",
+      "用数字和量度描述现象",
+      "主要目标：确定变量间关系和因果联系"
+    ],
+    "related": [
+      {
+        "id": "positivism",
+        "relation": "school_of"
+      },
+      {
+        "id": "qualitative_research",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第一章 导论",
+    "textbook_ref": "风笑天《社会研究方法》第6版 第1章"
+  },
+  {
+    "id": "qualitative_research",
+    "term": "定性研究",
+    "definition": "人文主义方法论的最集中体现，侧重于对事物含义、特征的理解和描述，强调研究程序的灵活性和现象对于行为主体的意义。",
+    "proponent": null,
+    "school": "定性",
+    "source_text": null,
+    "core_points": [
+      "强调灵活性和特殊性",
+      "注重现象与背景的关系",
+      "主要目标：深入理解社会现象"
+    ],
+    "related": [
+      {
+        "id": "humanism_method",
+        "relation": "school_of"
+      },
+      {
+        "id": "quantitative_research",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第一章 导论",
+    "textbook_ref": "风笑天《社会研究方法》第6版 第1章"
+  },
+  {
+    "id": "positivism",
+    "term": "实证主义",
+    "definition": "由孔德提出的方法论传统，强调感觉经验和客观观察，主张社会研究应与自然科学研究一致，将社会现象当作'物'来研究。",
+    "proponent": "孔德",
+    "school": "定量",
+    "source_text": null,
+    "core_points": [
+      "将社会现象当作客观事物",
+      "通过具体客观的观察得出结论",
+      "研究过程可重复",
+      "定量研究是其典型特征"
+    ],
+    "related": [
+      {
+        "id": "quantitative_research",
+        "relation": "applies_to"
+      },
+      {
+        "id": "humanism_method",
+        "relation": "opposes"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第一章 导论",
+    "textbook_ref": "风笑天《社会研究方法》第6版 第1章"
+  },
+  {
+    "id": "humanism_method",
+    "term": "人文主义方法论",
+    "definition": "与实证主义相对的方法论传统，重视人的特殊性，强调研究者的主观理解，认为社会现象与自然现象有本质区别。",
+    "proponent": null,
+    "school": "定性",
+    "source_text": null,
+    "core_points": [
+      "考虑人的特殊性和主观意识",
+      "社会与自然有本质不同",
+      "发挥研究者主观性",
+      "定性研究是其典型特征"
+    ],
+    "related": [
+      {
+        "id": "qualitative_research",
+        "relation": "applies_to"
+      },
+      {
+        "id": "positivism",
+        "relation": "opposes"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第一章 导论",
+    "textbook_ref": "风笑天《社会研究方法》第6版 第1章"
+  },
+  {
+    "id": "exploratory_research",
+    "term": "探索性研究",
+    "definition": "对研究题目范围和概念不清楚时采用的初步研究方法，通过小样本非随机调查探测现象的基本范围和特征，为后续研究提供基础。",
+    "proponent": null,
+    "school": "定性",
+    "source_text": null,
+    "core_points": [
+      "设计简单、形式自由",
+      "采用参与观察和无结构访问",
+      "样本规模小",
+      "为描述性和解释性研究开辟道路"
+    ],
+    "related": [
+      {
+        "id": "descriptive_research",
+        "relation": "prerequisite"
+      },
+      {
+        "id": "explanatory_research",
+        "relation": "prerequisite"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第二章 研究的类型",
+    "textbook_ref": "风笑天《社会研究方法》第6版 第2章"
+  },
+  {
+    "id": "descriptive_research",
+    "term": "描述性研究",
+    "definition": "对社会现象的状况、过程和特征进行客观准确描述的研究，回答'是什么'的问题，通常采用大规模随机抽样调查。",
+    "proponent": null,
+    "school": "定量",
+    "source_text": null,
+    "core_points": [
+      "系统性、结构性和全面性",
+      "回答'是什么'",
+      "大样本按比例分层抽样",
+      "对总体分布特征进行描述"
+    ],
+    "related": [
+      {
+        "id": "exploratory_research",
+        "relation": "successor"
+      },
+      {
+        "id": "explanatory_research",
+        "relation": "prerequisite"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第二章 研究的类型",
+    "textbook_ref": "风笑天《社会研究方法》第6版 第2章"
+  },
+  {
+    "id": "explanatory_research",
+    "term": "解释性研究",
+    "definition": "以一定理论原则为指导，揭示事物本质和因果关系的研究，回答'为什么'的问题，需要明确假设和进行多变量统计分析。",
+    "proponent": null,
+    "school": "定量",
+    "source_text": null,
+    "core_points": [
+      "说明现象原因和因果联系",
+      "理论色彩浓厚",
+      "需要明确假设",
+      "要求双变量和多变量统计分析"
+    ],
+    "related": [
+      {
+        "id": "descriptive_research",
+        "relation": "successor"
+      },
+      {
+        "id": "hypothesis",
+        "relation": "prerequisite"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第二章 研究的类型",
+    "textbook_ref": "风笑天《社会研究方法》第6版 第2章"
+  },
+  {
+    "id": "longitudinal_research",
+    "term": "纵向研究",
+    "definition": "在若干不同时间点上收集资料，用以描述现象发展变化并解释不同现象前后联系的研究方式，包括趋势研究、同期群研究和同组研究。",
+    "proponent": null,
+    "school": "定量/定性",
+    "source_text": null,
+    "core_points": [
+      "描述事物变化过程",
+      "探寻因果关系的优势优于横向研究",
+      "包括趋势研究、同期群研究和同组研究"
+    ],
+    "related": [
+      {
+        "id": "cross_sectional_research",
+        "relation": "parallel"
+      },
+      {
+        "id": "panel_study",
+        "relation": "contains"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第二章 研究的类型",
+    "textbook_ref": "风笑天《社会研究方法》第6版 第2章"
+  },
+  {
+    "id": "cross_sectional_research",
+    "term": "横向研究",
+    "definition": "在一个时间点上收集资料，用以描述研究对象在该时点的状况或探讨不同变量之间关系的研究方式。",
+    "proponent": null,
+    "school": "定量",
+    "source_text": null,
+    "core_points": [
+      "单一时间点的横断面研究",
+      "调查面广、资料来源同一时间",
+      "资料格式统一易于比较",
+      "资料深度和广度较差"
+    ],
+    "related": [
+      {
+        "id": "longitudinal_research",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第二章 研究的类型",
+    "textbook_ref": "风笑天《社会研究方法》第6版 第2章"
+  },
+  {
+    "id": "panel_study",
+    "term": "同组研究",
+    "definition": "对同一组研究对象随时间推移而发生变化的研究，每次研究均使用同一个样本，主要探讨行为和态度的改变模式及影响因素。",
+    "proponent": null,
+    "school": "定量",
+    "source_text": null,
+    "core_points": [
+      "每次使用同一组样本",
+      "探讨行为态度改变模式",
+      "分析影响改变的因素",
+      "又称定组研究或追踪研究"
+    ],
+    "related": [
+      {
+        "id": "longitudinal_research",
+        "relation": "develops_from"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第二章 研究的类型",
+    "textbook_ref": "风笑天《社会研究方法》第6版 第2章"
+  },
+  {
+    "id": "unit_of_analysis",
+    "term": "分析单位",
+    "definition": "一项社会研究中的研究对象，即研究中被研究的人或事物，包括个人、群体、组织、社区和社会产品五种主要类型。",
+    "proponent": null,
+    "school": "定量/定性",
+    "source_text": null,
+    "core_points": [
+      "五种类型：个人、群体、组织、社区、社会产品",
+      "研究资料直接描述分析单位中每个个体",
+      "与调查对象有区别",
+      "必须明确以避免层次谬误"
+    ],
+    "related": [
+      {
+        "id": "ecological_fallacy",
+        "relation": "applies_to"
+      },
+      {
+        "id": "reductionism",
+        "relation": "applies_to"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第二章 研究的类型",
+    "textbook_ref": "风笑天《社会研究方法》第6版 第2章"
+  },
+  {
+    "id": "ecological_fallacy",
+    "term": "区群谬误",
+    "definition": "用一种高层次的分析单位做调查，却用一种低层次的分析单位做结论的逻辑错误，又称层次谬误。",
+    "proponent": null,
+    "school": "定量",
+    "source_text": null,
+    "core_points": [
+      "高层次分析单位收集资料",
+      "低层次分析单位下结论",
+      "又称层次谬误或体系错误",
+      "混淆不同分析层次的特征"
+    ],
+    "related": [
+      {
+        "id": "reductionism",
+        "relation": "opposes"
+      },
+      {
+        "id": "unit_of_analysis",
+        "relation": "applies_to"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第二章 研究的类型",
+    "textbook_ref": "风笑天《社会研究方法》第6版 第2章"
+  },
+  {
+    "id": "reductionism",
+    "term": "简化论",
+    "definition": "用个体层次的微观资料来解释宏观层次现象的逻辑错误，与区群谬误相反，将复杂的社会现象简单还原为个体心理或行为层面的解释。",
+    "proponent": null,
+    "school": "定量",
+    "source_text": null,
+    "core_points": [
+      "用个体层次解释宏观现象",
+      "与区群谬误方向相反",
+      "原因：宏观看不见但微观资料容易获得",
+      "解决方法：确保结论与调查的分析单位一致"
+    ],
+    "related": [
+      {
+        "id": "ecological_fallacy",
+        "relation": "opposes"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第二章 研究的类型",
+    "textbook_ref": "风笑天《社会研究方法》第6版 第2章"
+  },
+  {
+    "id": "hypothesis",
+    "term": "假设",
+    "definition": "一种有关变量之间关系的尝试性陈述，可用经验事实检验的命题，来源包括常识、个人预感、现有调查资料和理论。",
+    "proponent": null,
+    "school": "定量",
+    "source_text": null,
+    "core_points": [
+      "命题的特殊形式",
+      "三种陈述方式：条件式、差异式、函数式",
+      "导向研究的重要作用",
+      "必须可检验"
+    ],
+    "related": [
+      {
+        "id": "middle_range_theory",
+        "relation": "develops_from"
+      },
+      {
+        "id": "variable",
+        "relation": "applies_to"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第三章 理论与研究",
+    "textbook_ref": "风笑天《社会研究方法》第6版 第3章"
+  },
+  {
+    "id": "science_wheel",
+    "term": "科学环",
+    "definition": "华莱士提出的科学过程模型，说明科学是理论与研究之间不断相互作用的过程，包含归纳法（从观察到理论）和演绎法（从理论到观察）两条路径。",
+    "proponent": "华莱士",
+    "school": "定量/定性",
+    "source_text": "《社会学中的科学逻辑》",
+    "core_points": [
+      "理论—假设—观察—经验概括的循环",
+      "归纳法：观察→经验概括→理论（理论建构）",
+      "演绎法：理论→假设→观察→检验（理论检验）"
+    ],
+    "related": [
+      {
+        "id": "inductive_reasoning",
+        "relation": "contains"
+      },
+      {
+        "id": "deductive_reasoning",
+        "relation": "contains"
+      },
+      {
+        "id": "middle_range_theory",
+        "relation": "applies_to"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第三章 理论与研究",
+    "textbook_ref": "风笑天《社会研究方法》第6版 第3章"
+  },
+  {
+    "id": "inductive_reasoning",
+    "term": "归纳推理",
+    "definition": "从一组具体观察结果推导出一般性规律或法则的过程（从特殊到一般），用于系统地提出问题和建构解释现象的理论。",
+    "proponent": null,
+    "school": "定量/定性",
+    "source_text": null,
+    "core_points": [
+      "从特殊到一般",
+      "系统地提出问题",
+      "提出带规律性的结论",
+      "建构解释现象的理论"
+    ],
+    "related": [
+      {
+        "id": "deductive_reasoning",
+        "relation": "parallel"
+      },
+      {
+        "id": "science_wheel",
+        "relation": "school_of"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第三章 理论与研究",
+    "textbook_ref": "风笑天《社会研究方法》第6版 第3章"
+  },
+  {
+    "id": "deductive_reasoning",
+    "term": "演绎推理",
+    "definition": "从一般性理论出发到现实中去观察和收集资料以检验理论正确性的过程（从一般到特殊），用于检验和判断理论。",
+    "proponent": null,
+    "school": "定量",
+    "source_text": null,
+    "core_points": [
+      "从一般到特殊",
+      "从理论出发去观察现实",
+      "帮助检验和判断理论正确性",
+      "理论检验的逻辑基础"
+    ],
+    "related": [
+      {
+        "id": "inductive_reasoning",
+        "relation": "parallel"
+      },
+      {
+        "id": "science_wheel",
+        "relation": "school_of"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第三章 理论与研究",
+    "textbook_ref": "风笑天《社会研究方法》第6版 第3章"
+  },
+  {
+    "id": "measurement",
+    "term": "测量",
+    "definition": "按一定法则对研究对象的属性在数量上赋值的过程，包括测量客体、测量内容、测量法则以及数字和符号四个基本要素。",
+    "proponent": null,
+    "school": "定量",
+    "source_text": null,
+    "core_points": [
+      "四要素：客体、内容、法则、数字符号",
+      "法则是测量的关键",
+      "四个层次由低到高",
+      "尽可能使用高层次测量"
+    ],
+    "related": [
+      {
+        "id": "operationalization",
+        "relation": "applies_to"
+      },
+      {
+        "id": "reliability",
+        "relation": "applies_to"
+      },
+      {
+        "id": "validity",
+        "relation": "applies_to"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第五章 测量与操作化",
+    "textbook_ref": "风笑天《社会研究方法》第6版 第5章"
+  },
+  {
+    "id": "operationalization",
+    "term": "操作化",
+    "definition": "将抽象概念转化为可观察的具体指标的过程，是社会研究中由理论到实际、由抽象到具体的关键环节。",
+    "proponent": null,
+    "school": "定量",
+    "source_text": null,
+    "core_points": [
+      "两大步骤：澄清界定概念与发展测量指标",
+      "列出概念维度和建立测量指标",
+      "定量研究的关键一环",
+      "将头脑概念变成看得见摸得着的东西"
+    ],
+    "related": [
+      {
+        "id": "measurement",
+        "relation": "successor"
+      },
+      {
+        "id": "scale",
+        "relation": "applies_to"
+      },
+      {
+        "id": "concept",
+        "relation": "applies_to"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第五章 测量与操作化",
+    "textbook_ref": "风笑天《社会研究方法》第6版 第5章"
+  },
+  {
+    "id": "likert_scale",
+    "term": "李克特量表",
+    "definition": "由李克特改进的常用总加量表，由一组陈述组成，每项有五级回答选项，总加分数反映态度强弱，使用最广泛的态度测量工具。",
+    "proponent": "李克特",
+    "school": "定量",
+    "source_text": null,
+    "core_points": [
+      "五级选项：非常同意到非常不同意",
+      "总加各项得分反映态度强弱",
+      "具有计算题目分辨力功能",
+      "使用最广泛的总加量表"
+    ],
+    "related": [
+      {
+        "id": "scale",
+        "relation": "develops_from"
+      },
+      {
+        "id": "operationalization",
+        "relation": "applies_to"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第五章 测量与操作化",
+    "textbook_ref": "风笑天《社会研究方法》第6版 第5章"
+  },
+  {
+    "id": "reliability",
+    "term": "信度",
+    "definition": "采取同样方法对同一对象重复测量所得结果相一致的程度，反映测量结果的稳定性与一致性，是效度的必要条件而非充分条件。",
+    "proponent": null,
+    "school": "定量",
+    "source_text": null,
+    "core_points": [
+      "测量结果的一致性或稳定性",
+      "三种类型：再测信度、复本信度、折半信度",
+      "无信度必然无效度",
+      "有信度未必有效度"
+    ],
+    "related": [
+      {
+        "id": "validity",
+        "relation": "prerequisite"
+      },
+      {
+        "id": "measurement",
+        "relation": "applies_to"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第五章 测量与操作化",
+    "textbook_ref": "风笑天《社会研究方法》第6版 第5章"
+  },
+  {
+    "id": "validity",
+    "term": "效度",
+    "definition": "测量工具或手段能够准确测出所要测量变量属性的程度，关注所测量的是否是希望测量的，包括表面效度、准则效度和构造效度。",
+    "proponent": null,
+    "school": "定量",
+    "source_text": null,
+    "core_points": [
+      "测量的准确度",
+      "三种类型：表面效度、准则效度、构造效度",
+      "有效度必然有信度",
+      "无效度未必无信度"
+    ],
+    "related": [
+      {
+        "id": "reliability",
+        "relation": "successor"
+      },
+      {
+        "id": "measurement",
+        "relation": "applies_to"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第五章 测量与操作化",
+    "textbook_ref": "风笑天《社会研究方法》第6版 第5章"
+  },
+  {
+    "id": "sampling",
+    "term": "抽样",
+    "definition": "从总体中按一定方式抽取部分个体构成样本的过程，目的是通过样本特征对总体未知特性作出统计推断，分为概率抽样和非概率抽样。",
+    "proponent": null,
+    "school": "定量",
+    "source_text": null,
+    "core_points": [
+      "概率抽样遵循随机性原则",
+      "非概率抽样依据主观判断和方便性",
+      "样本代表性是核心问题",
+      "抽样误差不可避免但可控制"
+    ],
+    "related": [
+      {
+        "id": "simple_random_sampling",
+        "relation": "contains"
+      },
+      {
+        "id": "stratified_sampling",
+        "relation": "contains"
+      },
+      {
+        "id": "sampling_error",
+        "relation": "applies_to"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第六章 抽样",
+    "textbook_ref": "风笑天《社会研究方法》第6版 第6章"
+  },
+  {
+    "id": "simple_random_sampling",
+    "term": "简单随机抽样",
+    "definition": "概率抽样最基本的形式，按等概率原则直接从含有N个元素的总体中随机抽取n个元素组成样本，可采用抽签法或随机数表法。",
+    "proponent": null,
+    "school": "定量",
+    "source_text": null,
+    "core_points": [
+      "概率抽样的最基本形式",
+      "每个个体被抽中概率相等",
+      "抽取相互独立",
+      "适用于总体元素较少的情况"
+    ],
+    "related": [
+      {
+        "id": "sampling",
+        "relation": "develops_from"
+      },
+      {
+        "id": "stratified_sampling",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第六章 抽样",
+    "textbook_ref": "风笑天《社会研究方法》第6版 第6章"
+  },
+  {
+    "id": "stratified_sampling",
+    "term": "分层抽样",
+    "definition": "将总体按某一标志分成互不交叉的层，然后在各层内随机抽取调查单位，汇总构成总样本的概率抽样方式，适合内部差异大的总体。",
+    "proponent": null,
+    "school": "定量",
+    "source_text": null,
+    "core_points": [
+      "层内同质性强、层间异质性强",
+      "不增加样本规模前提下降低抽样误差",
+      "便于比较不同层次",
+      "分为按比例和非按比例分层"
+    ],
+    "related": [
+      {
+        "id": "sampling",
+        "relation": "develops_from"
+      },
+      {
+        "id": "cluster_sampling",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第六章 抽样",
+    "textbook_ref": "风笑天《社会研究方法》第6版 第6章"
+  },
+  {
+    "id": "cluster_sampling",
+    "term": "整群抽样",
+    "definition": "将总体按某一标志划分成相互不交叉的群，以群为抽样单位进行随机抽样，然后对抽中群内全面调查的随机抽样方式。",
+    "proponent": null,
+    "school": "定量",
+    "source_text": null,
+    "core_points": [
+      "以群为抽样单位",
+      "适合群内差异大而群间差异小的情况",
+      "节省时间和费用",
+      "误差通常大于简单随机抽样"
+    ],
+    "related": [
+      {
+        "id": "stratified_sampling",
+        "relation": "parallel"
+      },
+      {
+        "id": "sampling",
+        "relation": "develops_from"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第六章 抽样",
+    "textbook_ref": "风笑天《社会研究方法》第6版 第6章"
+  },
+  {
+    "id": "sampling_error",
+    "term": "抽样误差",
+    "definition": "样本统计值与总体参数值之间由于抽样本身的随机性所引起的偏差，不可避免但可在样本设计中事先限定其大小。",
+    "proponent": null,
+    "school": "定量",
+    "source_text": null,
+    "core_points": [
+      "由抽样随机性引起",
+      "不可避免但可控制",
+      "受总体分布方差和抽样规模影响",
+      "样本规模越大误差越小"
+    ],
+    "related": [
+      {
+        "id": "sampling",
+        "relation": "applies_to"
+      },
+      {
+        "id": "confidence_level",
+        "relation": "applies_to"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第六章 抽样",
+    "textbook_ref": "风笑天《社会研究方法》第6版 第6章"
+  },
+  {
+    "id": "classic_experimental_design",
+    "term": "经典实验设计",
+    "definition": "最基本和最标准的实验设计，包含实验组、控制组、前测、后测、自变量、因变量及随机指派等全部实验要素。",
+    "proponent": null,
+    "school": "定量",
+    "source_text": null,
+    "core_points": [
+      "双组前后测模式",
+      "包含实验研究的全部要素",
+      "控制组排除其他因素影响",
+      "随机指派保证两组相同"
+    ],
+    "related": [
+      {
+        "id": "experimental_research",
+        "relation": "develops_from"
+      },
+      {
+        "id": "double_blind_experiment",
+        "relation": "applies_to"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第七章 实验研究",
+    "textbook_ref": "风笑天《社会研究方法》第6版 第7章"
+  },
+  {
+    "id": "double_blind_experiment",
+    "term": "双盲实验",
+    "definition": "实验刺激对实验对象和参与观察人员均为未知的实验设计，由第三方分派刺激，旨在排除研究者期望效应对结果的影响。",
+    "proponent": null,
+    "school": "定量",
+    "source_text": null,
+    "core_points": [
+      "实验对象和实验人员均不知分组",
+      "第三方任意分派实验刺激",
+      "排除罗森塔尔效应",
+      "更准确地确定因果关系"
+    ],
+    "related": [
+      {
+        "id": "classic_experimental_design",
+        "relation": "applies_to"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第七章 实验研究",
+    "textbook_ref": "风笑天《社会研究方法》第6版 第7章"
+  },
+  {
+    "id": "questionnaire",
+    "term": "问卷",
+    "definition": "调查研究中最常用的收集资料的工具，形式上是一份精心设计的问题表格，功能上用于测量人们的行为、态度和社会特征。",
+    "proponent": null,
+    "school": "定量",
+    "source_text": null,
+    "core_points": [
+      "五大部分：封面信、指导语、问题和答案、编码",
+      "答案设计需穷尽性和互斥性",
+      "问题措辞需简短明确通俗易懂",
+      "顺序遵循先易后难等规则"
+    ],
+    "related": [
+      {
+        "id": "survey_research",
+        "relation": "applies_to"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第八章 调查研究",
+    "textbook_ref": "风笑天《社会研究方法》第6版 第8章"
+  },
+  {
+    "id": "survey_research",
+    "term": "调查研究",
+    "definition": "采用自填式问卷或结构式访问的方法，系统直接地从一个取自总体的随机样本中收集量化资料并进行统计分析来认识社会现象及其规律的研究方式。",
+    "proponent": null,
+    "school": "定量",
+    "source_text": null,
+    "core_points": [
+      "样本是随机抽取的相当规模样本",
+      "资料收集采用特定工具（问卷）",
+      "所得为量化资料需计算机分析",
+      "应用领域包括生活状况、社会问题、市场、民意和学术调查"
+    ],
+    "related": [
+      {
+        "id": "questionnaire",
+        "relation": "applies_to"
+      },
+      {
+        "id": "sampling",
+        "relation": "prerequisite"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第八章 调查研究",
+    "textbook_ref": "风笑天《社会研究方法》第6版 第8章"
+  },
+  {
+    "id": "content_analysis",
+    "term": "内容分析",
+    "definition": "通过对文献内容做客观、系统和量化的分析，探讨其中所反映的人们行为态度和特征，以说明社会结构及文化变迁的非干扰性文献研究方法。",
+    "proponent": null,
+    "school": "定量",
+    "source_text": null,
+    "core_points": [
+      "客观、系统、量化的分析",
+      "非干扰性研究方法",
+      "成本低但效度是常见问题",
+      "抽样和编码是关键步骤"
+    ],
+    "related": [
+      {
+        "id": "secondary_analysis",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第九章 利用文献的定量研究",
+    "textbook_ref": "风笑天《社会研究方法》第6版 第9章"
+  },
+  {
+    "id": "secondary_analysis",
+    "term": "二次分析",
+    "definition": "对那些由其他人原先为别的目的收集和分析过的原始数据资料进行的新的分析，包括分析新问题或用新方法检验已有结果。",
+    "proponent": null,
+    "school": "定量",
+    "source_text": null,
+    "core_points": [
+      "省时省钱省力",
+      "特别适合比较研究和趋势研究",
+      "效果依赖于原始资料准确性",
+      "需要主题适应资料而非相反"
+    ],
+    "related": [
+      {
+        "id": "content_analysis",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第九章 利用文献的定量研究",
+    "textbook_ref": "风笑天《社会研究方法》第6版 第9章"
+  },
+  {
+    "id": "grounded_theory",
+    "term": "扎根理论",
+    "definition": "在纯粹归纳基础上建构理论的方法，从实际观察入手而无需预设假设，通过定性资料的归纳和持续比较自下而上发展理论。",
+    "proponent": "格拉泽和斯特劳斯",
+    "school": "定性",
+    "source_text": null,
+    "core_points": [
+      "从观察入手而非假设",
+      "自下而上发展理论",
+      "方法基础：定性资料归纳与持续比较",
+      "四阶段：范畴比较、合并分类、划定界限、组织理论"
+    ],
+    "related": [
+      {
+        "id": "field_research",
+        "relation": "applies_to"
+      },
+      {
+        "id": "inductive_reasoning",
+        "relation": "applies_to"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第十二章 定性研究概述",
+    "textbook_ref": "风笑天《社会研究方法》第6版 第12章"
+  },
+  {
+    "id": "field_research",
+    "term": "实地研究",
+    "definition": "深入研究对象的生活背景，以参与观察和无结构访谈方式收集资料并进行定性分析来理解和解释现象的研究方式，是理论建构型研究。",
+    "proponent": null,
+    "school": "定性",
+    "source_text": null,
+    "core_points": [
+      "强调深入实地生活长时间",
+      "依靠观察、询问、感受和领悟",
+      "理论建构型研究方式",
+      "效度高但信度低、概括性较差"
+    ],
+    "related": [
+      {
+        "id": "participant_observation",
+        "relation": "contains"
+      },
+      {
+        "id": "grounded_theory",
+        "relation": "applies_to"
+      },
+      {
+        "id": "case_study",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第十三章 实地研究",
+    "textbook_ref": "风笑天《社会研究方法》第6版 第13章"
+  },
+  {
+    "id": "participant_observation",
+    "term": "参与观察",
+    "definition": "研究者深入研究对象的生活背景在实际参与其日常生活过程中进行的非结构性观察，是最能获得社会现实真实图像的方法。",
+    "proponent": null,
+    "school": "定性",
+    "source_text": null,
+    "core_points": [
+      "非结构性观察方式",
+      "四种角色：完全参与者到完全观察者",
+      "经典案例：怀特《街角社会》",
+      "优点：深度理解；缺点：主观性强"
+    ],
+    "related": [
+      {
+        "id": "field_research",
+        "relation": "develops_from"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第十三章 实地研究",
+    "textbook_ref": "风笑天《社会研究方法》第6版 第13章"
+  },
+  {
+    "id": "case_study",
+    "term": "个案研究",
+    "definition": "对研究总体中某个单一元素（个体、事件、组织或社区）进行深入全面调查的典型定性研究方式，焦点集中且对现象了解特别深入详细。",
+    "proponent": null,
+    "school": "定性",
+    "source_text": null,
+    "core_points": [
+      "聚焦于一点是最本质特征",
+      "利用多种资料来源和方法",
+      "三分类：内在的、工具性的、集体性的",
+      "结果推广受限于样本特殊性"
+    ],
+    "related": [
+      {
+        "id": "field_research",
+        "relation": "parallel"
+      },
+      {
+        "id": "grounded_theory",
+        "relation": "applies_to"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第十四章 个案研究",
+    "textbook_ref": "风笑天《社会研究方法》第6版 第14章"
+  },
+  {
+    "id": "open_coding",
+    "term": "开放式编码",
+    "definition": "初次分析定性资料时使用的编码方式，先设置主题将代码分配到资料中，把零散混杂的资料转变为不同类别，将资料深处的主题带到表面。",
+    "proponent": "斯特劳斯",
+    "school": "定性",
+    "source_text": null,
+    "core_points": [
+      "初次分析时使用",
+      "将零散资料转变成不同类别",
+      "研究者保持开放心态排除偏见",
+      "后续可改变原有编码"
+    ],
+    "related": [
+      {
+        "id": "axial_coding",
+        "relation": "prerequisite"
+      },
+      {
+        "id": "selective_coding",
+        "relation": "prerequisite"
+      },
+      {
+        "id": "grounded_theory",
+        "relation": "applies_to"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第十五章 定性资料分析",
+    "textbook_ref": "风笑天《社会研究方法》第6版 第15章"
+  },
+  {
+    "id": "axial_coding",
+    "term": "轴心式编码",
+    "definition": "从一组初步主题开始，研究者带着初步编码主题看待资料，着重发现和建立类别之间各种联系（因果关系、时间关系、语义关系）的编码方式。",
+    "proponent": "斯特劳斯",
+    "school": "定性",
+    "source_text": null,
+    "core_points": [
+      "从初步主题出发",
+      "注重发现类别间的联系",
+      "识别作为轴心的关键概念",
+      "刺激对概念与主题间联系的思考"
+    ],
+    "related": [
+      {
+        "id": "open_coding",
+        "relation": "successor"
+      },
+      {
+        "id": "selective_coding",
+        "relation": "prerequisite"
+      },
+      {
+        "id": "grounded_theory",
+        "relation": "applies_to"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第十五章 定性资料分析",
+    "textbook_ref": "风笑天《社会研究方法》第6版 第15章"
+  },
+  {
+    "id": "selective_coding",
+    "term": "选择式编码",
+    "definition": "在浏览资料和进行开放式或轴心式编码基础上，有选择地查找说明主题的个案并对资料进行比较对照，找到统领其他主题的核心主题。",
+    "proponent": "斯特劳斯",
+    "school": "定性",
+    "source_text": null,
+    "core_points": [
+      "查找说明主题的个案",
+      "对资料进行比较和对照",
+      "找到统领其他主题的核心主题",
+      "比较适合建立扎根理论"
+    ],
+    "related": [
+      {
+        "id": "axial_coding",
+        "relation": "successor"
+      },
+      {
+        "id": "grounded_theory",
+        "relation": "applies_to"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第十五章 定性资料分析",
+    "textbook_ref": "风笑天《社会研究方法》第6版 第15章"
+  },
+  {
+    "id": "social_work",
+    "term": "社会工作",
+    "definition": "以科学的专业方法助人的职业化助人活动，旨在挖掘案主潜力、解决问题、促进个人发展，区别于无私奉献、义工和一般社会服务。",
+    "proponent": null,
+    "school": "社会工作专业",
+    "source_text": "王思斌《社会工作概论》第三版第7页",
+    "core_points": [
+      "持证上岗的职业化助人活动",
+      "运用专业理论与方法",
+      "挖掘案主潜力促进发展"
+    ],
+    "related": [
+      {
+        "id": "social_welfare",
+        "relation": "applies_to"
+      },
+      {
+        "id": "poor_law_1601",
+        "relation": "develops_from"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第一章 社会工作的内涵与工作领域",
+    "textbook_ref": "课本第7-8页"
+  },
+  {
+    "id": "poor_law_1601",
+    "term": "济贫法",
+    "definition": "1601年英国伊丽莎白女王颁布的社会救济制度，标志着现代社会救助制度的开端，为专业社会工作的产生奠定了制度基础。",
+    "proponent": "伊丽莎白一世",
+    "school": "社会福利制度",
+    "source_text": "1601年英国《济贫法》",
+    "core_points": [
+      "建立社会救济制度",
+      "慈善救济的制度化开端",
+      "为社会工作产生奠定制度基础"
+    ],
+    "related": [
+      {
+        "id": "social_work",
+        "relation": "prerequisite"
+      },
+      {
+        "id": "social_security",
+        "relation": "develops_from"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第一章 社会工作的内涵与工作领域",
+    "textbook_ref": "课本第3-4页"
+  },
+  {
+    "id": "social_diagnosis",
+    "term": "社会诊断",
+    "definition": "玛丽·芮奇蒙1917年出版的著作，采用'研究—诊断—治疗'框架，标志个案工作专业化的正式诞生，奠定科学助人方法论基础。",
+    "proponent": "玛丽·芮奇蒙",
+    "school": "个案工作/诊断学派",
+    "source_text": "Richmond《社会诊断》（1917）",
+    "core_points": [
+      "标志个案工作专业化的开始",
+      "采用研究-诊断-治疗框架",
+      "奠定科学助人方法论基础"
+    ],
+    "related": [
+      {
+        "id": "social_casework",
+        "relation": "successor"
+      },
+      {
+        "id": "person_in_situation",
+        "relation": "develops_from"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第六章 社会个案工作",
+    "textbook_ref": "课本第95-96页"
+  },
+  {
+    "id": "general_social_work",
+    "term": "综融社会工作",
+    "definition": "20世纪70-80年代后出现的整合性社会工作取向，将个案、小组、社区等方法融为一体的综合实践模式，以案主需求为中心超越单一方法的局限性。",
+    "proponent": null,
+    "school": "社会工作整合取向",
+    "source_text": null,
+    "core_points": [
+      "整合个案小组社区等多元方法",
+      "超越单一方法的局限性",
+      "以案主需求为中心的综融视角"
+    ],
+    "related": [
+      {
+        "id": "social_casework",
+        "relation": "contains"
+      },
+      {
+        "id": "community_work",
+        "relation": "contains"
+      }
+    ],
+    "exam_frequency": "medium",
+    "chapter": "第一章 社会工作的内涵与工作领域",
+    "textbook_ref": "课本第5页"
+  },
+  {
+    "id": "social_security",
+    "term": "社会保障",
+    "definition": "国家依法保障社会成员基本生活的制度性规定，属政府行为，关注收入保障，是社会工作的制度依托。",
+    "proponent": null,
+    "school": "社会福利制度",
+    "source_text": null,
+    "core_points": [
+      "国家依法保障基本生活的制度",
+      "属政府行为的制度性规定",
+      "关注收入保障而非劳务服务"
+    ],
+    "related": [
+      {
+        "id": "social_welfare",
+        "relation": "parallel"
+      },
+      {
+        "id": "social_work",
+        "relation": "parallel"
+      },
+      {
+        "id": "poor_law_1601",
+        "relation": "develops_from"
+      }
+    ],
+    "exam_frequency": "medium",
+    "chapter": "第一章 社会工作的内涵与工作领域",
+    "textbook_ref": "课本第8页"
+  },
+  {
+    "id": "social_welfare",
+    "term": "社会福利",
+    "definition": "广义上改善全体成员物质文化生活的措施，狭义上面向困难群体的福利性支持，社会工作是福利的服务传递体系。",
+    "proponent": null,
+    "school": "社会福利制度",
+    "source_text": "Barker社会福利定义",
+    "core_points": [
+      "广义面向全民，狭义面向困难群体",
+      "社会工作的制度基础",
+      "社工是福利的服务传递机制"
+    ],
+    "related": [
+      {
+        "id": "social_work",
+        "relation": "applies_to"
+      },
+      {
+        "id": "social_security",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "medium",
+    "chapter": "第五章 社会福利制度",
+    "textbook_ref": "课本第74-78页"
+  },
+  {
+    "id": "help_people_help_themselves",
+    "term": "助人自助",
+    "definition": "社会工作的核心理念，强调协助案主增强自身能力以实现自助，而非替代案主解决问题，发掘案主自身潜能。",
+    "proponent": null,
+    "school": "社会工作价值体系",
+    "source_text": null,
+    "core_points": [
+      "发掘案主自身潜能",
+      "协助而非替代案主",
+      "授人以渔而非授人以鱼"
+    ],
+    "related": [
+      {
+        "id": "client_self_determination",
+        "relation": "parallel"
+      },
+      {
+        "id": "empowerment_theory",
+        "relation": "applies_to"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第二章 社会工作的功能",
+    "textbook_ref": "课本第22-25页"
+  },
+  {
+    "id": "client_self_determination",
+    "term": "案主自决",
+    "definition": "社会工作最基本原则，要求尊重案主自主做出决定的权利，社工不能自作主张替案主做决定，贯穿社会工作全过程。",
+    "proponent": "毕斯泰克",
+    "school": "社会工作专业伦理",
+    "source_text": "Biestek七原则（1957）",
+    "core_points": [
+      "案主自己做决定",
+      "社工不可替代案主决策",
+      "贯穿社会工作全过程的基本原则"
+    ],
+    "related": [
+      {
+        "id": "biestek_seven_principles",
+        "relation": "school_of"
+      },
+      {
+        "id": "acceptance",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第三章 社会工作的价值体系",
+    "textbook_ref": "课本第52页"
+  },
+  {
+    "id": "biestek_seven_principles",
+    "term": "毕斯泰克七原则",
+    "definition": "个案工作中专业关系的七项基本原则，包括个别化、接纳、案主自决等，对社会工作实践的影响最为持久和深远。",
+    "proponent": "毕斯泰克",
+    "school": "社会工作专业伦理",
+    "source_text": "Biestek《个案工作专业关系》（1957）",
+    "core_points": [
+      "个别化、有目的情感表达、适度情绪介入",
+      "接纳、非评判、案主自决、保密",
+      "对社会工作实践的影响最为持久"
+    ],
+    "related": [
+      {
+        "id": "client_self_determination",
+        "relation": "contains"
+      },
+      {
+        "id": "acceptance",
+        "relation": "contains"
+      },
+      {
+        "id": "confidentiality",
+        "relation": "contains"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第三章 社会工作的价值体系",
+    "textbook_ref": "课本第44-48页"
+  },
+  {
+    "id": "acceptance",
+    "term": "接纳",
+    "definition": "社会工作的专业价值原则，即接受、相信和尊重案主，积极追求理解但不等于同意其价值观，不等于批准案主行为。",
+    "proponent": null,
+    "school": "社会工作价值体系",
+    "source_text": "Biestek七原则",
+    "core_points": [
+      "接受、相信和尊重案主",
+      "积极追求理解而非判断",
+      "不等于同意案主的价值观"
+    ],
+    "related": [
+      {
+        "id": "biestek_seven_principles",
+        "relation": "school_of"
+      },
+      {
+        "id": "non_judgmental",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "medium",
+    "chapter": "第三章 社会工作的价值体系",
+    "textbook_ref": "课本第50-51页"
+  },
+  {
+    "id": "non_judgmental",
+    "term": "非评判",
+    "definition": "毕斯泰克七原则之一，要求社会工作者不对案主的行为和价值观进行道德判断，保持价值中立的态度。",
+    "proponent": "毕斯泰克",
+    "school": "社会工作专业伦理",
+    "source_text": "Biestek七原则（1957）",
+    "core_points": [
+      "不对案主做道德判断",
+      "保持价值中立的态度",
+      "避免以自身标准衡量案主"
+    ],
+    "related": [
+      {
+        "id": "biestek_seven_principles",
+        "relation": "school_of"
+      },
+      {
+        "id": "acceptance",
+        "relation": "parallel"
+      },
+      {
+        "id": "confidentiality",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "medium",
+    "chapter": "第三章 社会工作的价值体系",
+    "textbook_ref": "课本第44-48页"
+  },
+  {
+    "id": "confidentiality",
+    "term": "保密",
+    "definition": "毕斯泰克七原则之一，要求社会工作者保护案主的隐私信息，是建立信任专业关系的基本前提，具法律和伦理双重约束。",
+    "proponent": "毕斯泰克",
+    "school": "社会工作专业伦理",
+    "source_text": "Biestek七原则（1957）",
+    "core_points": [
+      "保护案主隐私信息",
+      "建立信任关系的基本前提",
+      "法律和伦理的双重约束"
+    ],
+    "related": [
+      {
+        "id": "biestek_seven_principles",
+        "relation": "school_of"
+      },
+      {
+        "id": "client_self_determination",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "medium",
+    "chapter": "第三章 社会工作的价值体系",
+    "textbook_ref": "课本第44-48页"
+  },
+  {
+    "id": "empowerment_theory",
+    "term": "增权/赋权理论",
+    "definition": "帮助案主获得对自身生活的控制力，克服无力感，视案主为有能力的行动者而非被动的问题载体，通过提升意识、发展技能和链接资源实现改变。",
+    "proponent": null,
+    "school": "增权取向社会工作",
+    "source_text": null,
+    "core_points": [
+      "案主是有能力的行动者",
+      "克服无力感，重获生活控制",
+      "提升意识、发展技能、链接资源"
+    ],
+    "related": [
+      {
+        "id": "help_people_help_themselves",
+        "relation": "applies_to"
+      },
+      {
+        "id": "client_self_determination",
+        "relation": "applies_to"
+      },
+      {
+        "id": "strengths_perspective",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第四章 社会工作理论",
+    "textbook_ref": "课本第66页"
+  },
+  {
+    "id": "narrative_therapy",
+    "term": "叙事疗法",
+    "definition": "通过外化问题、寻找独特结果和重写生命故事，帮助案主摆脱问题饱和的故事束缚，实现'人是人，问题是问题'的分离。",
+    "proponent": "Michael White、David Epston",
+    "school": "后现代主义/叙事治疗",
+    "source_text": "White & Epston叙事治疗",
+    "core_points": [
+      "人是人，问题是问题（外化）",
+      "寻找独特结果以对抗问题叙事",
+      "重写替代故事实现身份重建"
+    ],
+    "related": [
+      {
+        "id": "labeling_theory",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第四章 社会工作理论",
+    "textbook_ref": "课本第67页"
+  },
+  {
+    "id": "social_systems_theory",
+    "term": "社会系统理论",
+    "definition": "以一般系统论为基础，认为人与环境是由功能相互依赖的元素组成的系统整体，协调与均衡是系统运行的基本条件，社工帮助恢复子系统间的均衡。",
+    "proponent": null,
+    "school": "系统理论/结构功能主义",
+    "source_text": "一般系统论及结构功能主义",
+    "core_points": [
+      "人与环境构成功能相互依赖的系统",
+      "协调与均衡是系统运行的基本条件",
+      "社工帮助恢复子系统间的均衡关系"
+    ],
+    "related": [
+      {
+        "id": "family_systems_theory",
+        "relation": "applies_to"
+      },
+      {
+        "id": "person_in_situation",
+        "relation": "parallel"
+      },
+      {
+        "id": "ecological_perspective",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第四章 社会工作理论",
+    "textbook_ref": "课本第67-68页"
+  },
+  {
+    "id": "labeling_theory",
+    "term": "标签理论",
+    "definition": "许多人成为'有问题的人'源于社会环境对其的定义和标定过程，社工通过重新定义使其恢复为'正常人'，强调社会定义过程的建构性。",
+    "proponent": "勒麦特、贝克",
+    "school": "符号互动论",
+    "source_text": "Lemert、Becker标签理论",
+    "core_points": [
+      "社会定义过程制造'有问题的人'",
+      "标签影响个体的自我认知和行为",
+      "重新定义可帮助恢复'正常'身份"
+    ],
+    "related": [
+      {
+        "id": "narrative_therapy",
+        "relation": "parallel"
+      },
+      {
+        "id": "stigma",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第四章 社会工作理论",
+    "textbook_ref": "课本第68页"
+  },
+  {
+    "id": "person_in_situation",
+    "term": "人在情境中",
+    "definition": "汉密尔顿提出的核心概念，强调个人的问题必须放在其所处的社会环境之中来理解和干预，个人与社会环境相互依存。",
+    "proponent": "汉密尔顿",
+    "school": "心理社会学派",
+    "source_text": "Hamilton（20世纪40年代）",
+    "core_points": [
+      "个人与社会环境相互依存",
+      "问题必须在情境中理解",
+      "调整个人与环境的关系是核心任务"
+    ],
+    "related": [
+      {
+        "id": "psychosocial_model",
+        "relation": "school_of"
+      },
+      {
+        "id": "social_systems_theory",
+        "relation": "parallel"
+      },
+      {
+        "id": "ecological_perspective",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第六章 社会个案工作",
+    "textbook_ref": "课本第96页"
+  },
+  {
+    "id": "social_casework",
+    "term": "社会个案工作",
+    "definition": "以个人和家庭为对象，通过面对面过程，基于科学知识与艺术化运用，帮助案主调适个人与环境关系的专业方法。",
+    "proponent": "玛丽·芮奇蒙",
+    "school": "个案工作",
+    "source_text": "Richmond《社会诊断》（1917）",
+    "core_points": [
+      "以个人和家庭为工作对象",
+      "面对面的一对一专业关系",
+      "科学知识与艺术化运用相结合"
+    ],
+    "related": [
+      {
+        "id": "social_diagnosis",
+        "relation": "develops_from"
+      },
+      {
+        "id": "person_in_situation",
+        "relation": "contains"
+      },
+      {
+        "id": "crisis_intervention",
+        "relation": "contains"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第六章 社会个案工作",
+    "textbook_ref": "课本第95-98页"
+  },
+  {
+    "id": "crisis_intervention",
+    "term": "危机介入模式",
+    "definition": "针对处于危机状态案主的短期干预模式，强调及时介入、聚焦当前问题和限时干预以恢复危机前功能水平。",
+    "proponent": null,
+    "school": "个案工作/危机理论",
+    "source_text": null,
+    "core_points": [
+      "针对自杀、灾难、重大丧失等危机",
+      "及时介入、聚焦当前、限时干预",
+      "目标是恢复危机前的功能水平"
+    ],
+    "related": [
+      {
+        "id": "social_casework",
+        "relation": "school_of"
+      },
+      {
+        "id": "task_centered_model",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第六章 社会个案工作",
+    "textbook_ref": "课本第102-103页"
+  },
+  {
+    "id": "task_centered_model",
+    "term": "任务中心模式",
+    "definition": "针对有明确具体问题案主的短期结构化干预模式，由案主与社工共同确定目标任务并执行评估，强调案主主动参与。",
+    "proponent": "波尔蒙",
+    "school": "问题解决学派",
+    "source_text": "Perlman问题解决模式",
+    "core_points": [
+      "案主与社工共同确定目标任务",
+      "结构化、有时间限制的干预",
+      "强调案主主动参与和问题解决能力"
+    ],
+    "related": [
+      {
+        "id": "social_casework",
+        "relation": "school_of"
+      },
+      {
+        "id": "crisis_intervention",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第六章 社会个案工作",
+    "textbook_ref": "课本第103-105页"
+  },
+  {
+    "id": "community_work",
+    "term": "社区工作",
+    "definition": "以社区为对象的宏观社会工作方法，通过居民参与、专家规划或集体行动解决社区问题，促进社区能力建设，三大模式由Rothman提出。",
+    "proponent": "Rothman",
+    "school": "社区工作/宏观社会工作",
+    "source_text": "Rothman三大模式（1979）",
+    "core_points": [
+      "以整个社区为服务对象",
+      "三大模式：地区发展、社会计划、社会行动",
+      "兼顾任务目标和过程目标"
+    ],
+    "related": [
+      {
+        "id": "locality_development",
+        "relation": "contains"
+      },
+      {
+        "id": "social_planning",
+        "relation": "contains"
+      },
+      {
+        "id": "social_action",
+        "relation": "contains"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第八章 社区工作",
+    "textbook_ref": "课本第132-138页"
+  },
+  {
+    "id": "locality_development",
+    "term": "地区发展模式",
+    "definition": "鼓励同质性社区居民通过自助互助解决社区问题，强调民主参与和人才培养，社工充当使能者和催化者。",
+    "proponent": "Rothman",
+    "school": "社区工作/保守主义",
+    "source_text": "Rothman（1979）",
+    "core_points": [
+      "居民自助互助解决社区问题",
+      "适用于同质性高、冲突少的社区",
+      "社工为使能者、协调者、催化者"
+    ],
+    "related": [
+      {
+        "id": "community_work",
+        "relation": "school_of"
+      },
+      {
+        "id": "social_planning",
+        "relation": "opposes"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第八章 社区工作",
+    "textbook_ref": "课本第136-138页"
+  },
+  {
+    "id": "social_planning",
+    "term": "社会计划模式",
+    "definition": "依靠专家通过调研论证和计划推行由上而下的专业化方案，居民参与较为被动，适用于复杂社区问题，社工为规划者和组织实施者。",
+    "proponent": "Rothman",
+    "school": "社区工作/多元主义",
+    "source_text": "Rothman（1979）",
+    "core_points": [
+      "专家主导、由上而下的理性规划",
+      "适用于需专业化方案的复杂问题",
+      "社工为规划者、组织实施者"
+    ],
+    "related": [
+      {
+        "id": "community_work",
+        "relation": "school_of"
+      },
+      {
+        "id": "locality_development",
+        "relation": "opposes"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第八章 社区工作",
+    "textbook_ref": "课本第136-138页"
+  },
+  {
+    "id": "social_action",
+    "term": "社会行动模式",
+    "definition": "组织弱势群体通过集体行动改变权力结构和资源分配，采用冲突性策略，社工为倡导者和组织者。",
+    "proponent": "Rothman",
+    "school": "社区工作/马克思主义、社会民主主义",
+    "source_text": "Rothman（1979）",
+    "core_points": [
+      "弱势群体集体行动改变不平等结构",
+      "采用组织动员、谈判、倡导等冲突策略",
+      "社工为倡导者、组织者、行动者"
+    ],
+    "related": [
+      {
+        "id": "community_work",
+        "relation": "school_of"
+      },
+      {
+        "id": "empowerment_theory",
+        "relation": "applies_to"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第八章 社区工作",
+    "textbook_ref": "课本第136-138页"
+  },
+  {
+    "id": "bio_psycho_social_model",
+    "term": "生理-心理-社会模型",
+    "definition": "Engel提出的医务社会工作基础理论，认为健康是身体、心理和社会功能三者的综合正常状态，彻底改变了传统生物医疗模型的单一维度。",
+    "proponent": "Engel",
+    "school": "全人健康/身心医学",
+    "source_text": "Engel生物心理社会模型",
+    "core_points": [
+      "健康=身体+心理+社会功能正常",
+      "超越传统生物医疗的单一维度",
+      "病人是完整的人而非病变部位"
+    ],
+    "related": [
+      {
+        "id": "whole_person_perspective",
+        "relation": "parallel"
+      },
+      {
+        "id": "psychosocial_model",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第十六章 医务社会工作",
+    "textbook_ref": "课本第273-275页"
+  },
+  {
+    "id": "whole_person_perspective",
+    "term": "全人视角",
+    "definition": "医务社工的核心理念，将病人视为完整的人而非病变部位，从身体、心理和社会多维度理解和介入，超越解剖学和病理学的单一视角。",
+    "proponent": null,
+    "school": "医务社会工作/全人关怀",
+    "source_text": null,
+    "core_points": [
+      "病人是完整的人而非病变部位",
+      "超越解剖学和病理学的单一视角",
+      "从生理、心理、社会多维介入"
+    ],
+    "related": [
+      {
+        "id": "bio_psycho_social_model",
+        "relation": "parallel"
+      },
+      {
+        "id": "person_in_situation",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第十六章 医务社会工作",
+    "textbook_ref": "课本第271-273页"
+  },
+  {
+    "id": "disengagement_theory",
+    "term": "社会撤离理论",
+    "definition": "老年人因活动能力下降和社会角色丧失而自愿脱离社会，使社会权力交接有序，但忽略了个性差异的作用和积极老龄化的可能。",
+    "proponent": null,
+    "school": "老年社会学/功能主义",
+    "source_text": null,
+    "core_points": [
+      "老年人自愿减少活动与社会交往",
+      "使社会权力交接有序",
+      "忽视个性差异和积极老龄化可能"
+    ],
+    "related": [
+      {
+        "id": "activity_theory",
+        "relation": "opposes"
+      },
+      {
+        "id": "continuity_theory",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第十二章 老年社会工作",
+    "textbook_ref": "课本第208-209页"
+  },
+  {
+    "id": "activity_theory",
+    "term": "社会活动理论",
+    "definition": "活动水平高的老年人生活满意度更高，主张老年人保持活跃生活方式，用新角色取代因退休和丧偶失去的角色。",
+    "proponent": null,
+    "school": "老年社会学/活动取向",
+    "source_text": null,
+    "core_points": [
+      "活跃老人比不活跃老人更幸福",
+      "用新角色替代因衰老失去的角色",
+      "产出性老龄化强调老人的社会贡献"
+    ],
+    "related": [
+      {
+        "id": "disengagement_theory",
+        "relation": "opposes"
+      },
+      {
+        "id": "continuity_theory",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第十二章 老年社会工作",
+    "textbook_ref": "课本第208-210页"
+  },
+  {
+    "id": "continuity_theory",
+    "term": "连续性理论",
+    "definition": "个性在适应衰老中起重要作用，保持中年时代个性和生活方式的老人更幸福，包括内部连续和外部连续两种形式。",
+    "proponent": null,
+    "school": "老年社会学/发展心理学",
+    "source_text": null,
+    "core_points": [
+      "个性是适应衰老的关键因素",
+      "中年生活方式和个性的延续带来幸福晚年",
+      "分内部连续（个性爱好）和外部连续"
+    ],
+    "related": [
+      {
+        "id": "disengagement_theory",
+        "relation": "parallel"
+      },
+      {
+        "id": "activity_theory",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第十二章 老年社会工作",
+    "textbook_ref": "课本第210页"
+  },
+  {
+    "id": "social_model_disability",
+    "term": "社会模式（残疾）",
+    "definition": "认为残疾是社会环境障碍所致而非个人缺陷，核心任务是消除社会障碍而非仅矫正个人功能，与医学模式形成根本对立。",
+    "proponent": null,
+    "school": "残疾人权利运动/社会模式",
+    "source_text": "WHO《世界残疾报告》（2011）",
+    "core_points": [
+      "残疾是社会障碍而非个人缺陷",
+      "核心是消除环境和社会障碍",
+      "与医学模式形成根本对立"
+    ],
+    "related": [
+      {
+        "id": "medical_model_disability",
+        "relation": "opposes"
+      },
+      {
+        "id": "normalization_theory",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第十四章 残疾人社会工作",
+    "textbook_ref": "课本第236-240页"
+  },
+  {
+    "id": "medical_model_disability",
+    "term": "医学模式（残疾）",
+    "definition": "将残疾视为个人身体缺陷，强调通过医疗手段进行矫正和治疗，忽视社会环境对残疾人造成的参与障碍。",
+    "proponent": null,
+    "school": "医学模式/个人病理取向",
+    "source_text": null,
+    "core_points": [
+      "残疾是个人的身体缺陷",
+      "以医疗手段矫正和治疗为核心",
+      "忽视社会环境造成的参与障碍"
+    ],
+    "related": [
+      {
+        "id": "social_model_disability",
+        "relation": "opposes"
+      },
+      {
+        "id": "normalization_theory",
+        "relation": "opposes"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第十四章 残疾人社会工作",
+    "textbook_ref": "课本第239-240页"
+  },
+  {
+    "id": "normalization_theory",
+    "term": "正常化理论",
+    "definition": "主张尽可能为残疾人提供接近正常生活方式的环境和条件，使其融入主流社会而非隔离于特殊机构中，反对隔离式的机构化照顾。",
+    "proponent": null,
+    "school": "残疾人权利/正常化运动",
+    "source_text": null,
+    "core_points": [
+      "为残疾人提供接近正常生活的条件",
+      "反对隔离式的机构化照顾",
+      "促进残疾人融入主流社会"
+    ],
+    "related": [
+      {
+        "id": "social_model_disability",
+        "relation": "parallel"
+      },
+      {
+        "id": "medical_model_disability",
+        "relation": "opposes"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第十四章 残疾人社会工作",
+    "textbook_ref": "课本第240页"
+  },
+  {
+    "id": "family_systems_theory",
+    "term": "家庭系统理论",
+    "definition": "家庭由子系统组成且成员互联互制互补，从循环因果而非线性因果理解家庭问题，关注边界、沟通模式与结构。",
+    "proponent": "Bowen",
+    "school": "系统理论/家庭治疗",
+    "source_text": "Bowen家庭系统理论",
+    "core_points": [
+      "家庭成员互联互制互补",
+      "从线性因果转向循环因果思维",
+      "核心概念：边界、沟通模式、结构"
+    ],
+    "related": [
+      {
+        "id": "social_systems_theory",
+        "relation": "school_of"
+      },
+      {
+        "id": "self_differentiation",
+        "relation": "contains"
+      },
+      {
+        "id": "structural_family_therapy",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第十五章 家庭社会工作",
+    "textbook_ref": "课本第253-255页"
+  },
+  {
+    "id": "family_life_cycle",
+    "term": "家庭生命周期",
+    "definition": "中国家庭经历新婚、育儿、教育、空巢、独身老年五个阶段，每阶段有特定发展任务，过渡期最易产生紧张。",
+    "proponent": null,
+    "school": "家庭发展理论",
+    "source_text": null,
+    "core_points": [
+      "中国五阶段：新婚-育儿-教育-空巢-独身老年",
+      "每阶段有特定的发展任务",
+      "过渡期是家庭紧张的高发期"
+    ],
+    "related": [
+      {
+        "id": "family_systems_theory",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第十五章 家庭社会工作",
+    "textbook_ref": "课本第254-255页"
+  },
+  {
+    "id": "self_differentiation",
+    "term": "自我分化",
+    "definition": "Bowen家庭治疗的核心概念，指个体在保持情感联结的同时维持独立思考和行动的能力，低分化导致家庭三角关系和功能失调。",
+    "proponent": "Murray Bowen",
+    "school": "Bowen家庭系统治疗",
+    "source_text": "Bowen八大连锁概念",
+    "core_points": [
+      "个体在情感联结中保持独立",
+      "低分化导致家庭三角关系和功能失调",
+      "是Bowen八大连锁概念之首"
+    ],
+    "related": [
+      {
+        "id": "family_systems_theory",
+        "relation": "school_of"
+      },
+      {
+        "id": "structural_family_therapy",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "medium",
+    "chapter": "第十五章 家庭社会工作",
+    "textbook_ref": "课本第258-259页"
+  },
+  {
+    "id": "structural_family_therapy",
+    "term": "结构家庭治疗",
+    "definition": "Minuchin创立的家庭治疗方法，关注家庭结构、子系统及其边界渗透性，通过调整代际权力和关系结构来改善家庭功能。",
+    "proponent": "Salvador Minuchin",
+    "school": "结构派家庭治疗",
+    "source_text": "Minuchin结构家庭治疗",
+    "core_points": [
+      "关注家庭结构和子系统边界",
+      "调整代际权力和关系结构的失衡",
+      "边界渗透性是诊断和干预的关键"
+    ],
+    "related": [
+      {
+        "id": "family_systems_theory",
+        "relation": "develops_from"
+      },
+      {
+        "id": "self_differentiation",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第十五章 家庭社会工作",
+    "textbook_ref": "课本第259-260页"
+  },
+  {
+    "id": "satir_model",
+    "term": "萨提亚模式",
+    "definition": "Satir创立的家庭治疗模式，通过提升自尊和改善沟通来促进家庭成长，核心技术包括冰山理论和人体雕塑。",
+    "proponent": "Virginia Satir",
+    "school": "萨提亚家庭治疗/人本主义",
+    "source_text": "Satir家庭治疗模式",
+    "core_points": [
+      "提升家庭成员的自尊水平",
+      "冰山理论揭示行为背后的深层渴望",
+      "人体雕塑技术外化家庭互动模式"
+    ],
+    "related": [
+      {
+        "id": "structural_family_therapy",
+        "relation": "parallel"
+      },
+      {
+        "id": "family_systems_theory",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "medium",
+    "chapter": "第十五章 家庭社会工作",
+    "textbook_ref": "课本第260-261页"
+  },
+  {
+    "id": "correctional_social_work",
+    "term": "矫正社会工作",
+    "definition": "在司法矫正体系中运用专业理论和方法为罪犯及其家人提供的专业化社会福利服务，视罪犯为特殊弱势群体。",
+    "proponent": null,
+    "school": "司法社会工作",
+    "source_text": null,
+    "core_points": [
+      "司法矫正体系中的社会福利服务",
+      "罪犯是社会化的特殊弱势群体",
+      "贯穿审判、监禁、刑释各环节"
+    ],
+    "related": [
+      {
+        "id": "social_work",
+        "relation": "school_of"
+      },
+      {
+        "id": "labeling_theory",
+        "relation": "applies_to"
+      }
+    ],
+    "exam_frequency": "medium",
+    "chapter": "第二十章 矫正社会工作",
+    "textbook_ref": "课本第342-345页"
+  },
+  {
+    "id": "identity_vs_role_confusion",
+    "term": "辨识对角色混乱",
+    "definition": "Erikson理论中青春期的核心心理危机，青少年需要建立自我同一性，若失败则陷入角色混乱和认同危机。",
+    "proponent": "艾里克森",
+    "school": "精神分析/发展心理学",
+    "source_text": "Erikson心理社会发展八阶段理论",
+    "core_points": [
+      "青春期核心危机：同一性vs角色混乱",
+      "成功建立自我同一性则顺利过渡",
+      "失败导致角色混乱和认同危机"
+    ],
+    "related": [
+      {
+        "id": "role_conflict",
+        "relation": "parallel"
+      },
+      {
+        "id": "developmental_tasks",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第十一章 青少年社会工作",
+    "textbook_ref": "课本第188-190页"
+  },
+  {
+    "id": "role_conflict",
+    "term": "角色冲突",
+    "definition": "Mead角色理论中青少年最普遍的问题，因同时处于多重角色丛中而产生的角色矛盾，可能导致角色中断和失败。",
+    "proponent": "米德",
+    "school": "符号互动论/角色理论",
+    "source_text": "Mead角色扮演理论",
+    "core_points": [
+      "青少年处于多重角色丛中",
+      "角色矛盾导致冲突和中断",
+      "最普遍的青少年发展问题"
+    ],
+    "related": [
+      {
+        "id": "identity_vs_role_confusion",
+        "relation": "parallel"
+      },
+      {
+        "id": "role",
+        "relation": "applies_to"
+      }
+    ],
+    "exam_frequency": "medium",
+    "chapter": "第十一章 青少年社会工作",
+    "textbook_ref": "课本第191-192页"
+  },
+  {
+    "id": "developmental_tasks",
+    "term": "发展任务",
+    "definition": "Havighurst提出青少年十项发展任务理论，包括情感独立、经济独立、职业选择、婚姻准备等阶段性发展目标。",
+    "proponent": "哈维格斯特",
+    "school": "发展心理学/学习理论",
+    "source_text": "Havighurst发展任务理论",
+    "core_points": [
+      "青少年需完成十项发展任务",
+      "涵盖情感、经济、职业、婚姻等领域",
+      "任务完成与否影响后续人生阶段"
+    ],
+    "related": [
+      {
+        "id": "identity_vs_role_confusion",
+        "relation": "parallel"
+      },
+      {
+        "id": "family_life_cycle",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "medium",
+    "chapter": "第十一章 青少年社会工作",
+    "textbook_ref": "课本第190-191页"
+  },
+  {
+    "id": "youth_subculture",
+    "term": "青少年亚文化",
+    "definition": "M.Mead提出的概念，指青少年群体区别于其他代群的独特价值标准、行为规范、思维方式和人格倾向，具有明显的反叛性。",
+    "proponent": "玛格丽特·米德",
+    "school": "社会文化理论/人类学",
+    "source_text": "Mead代沟与青年亚文化研究",
+    "core_points": [
+      "青少年群体独特的价值标准和行为规范",
+      "区别于其他代群的文化特征",
+      "具有反叛性，既积极又含不安定因素"
+    ],
+    "related": [
+      {
+        "id": "generation_gap",
+        "relation": "parallel"
+      },
+      {
+        "id": "labeling_theory",
+        "relation": "applies_to"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第十一章 青少年社会工作",
+    "textbook_ref": "课本第191页"
+  },
+  {
+    "id": "generation_gap",
+    "term": "代沟",
+    "definition": "M.Mead提出的概念，指不同代际之间在价值观、行为方式和思维方式上存在的系统性差异和隔阂，是社会快速变迁的结果。",
+    "proponent": "玛格丽特·米德",
+    "school": "社会文化理论/人类学",
+    "source_text": "Mead代沟理论",
+    "core_points": [
+      "代际间价值观和行为方式的系统差异",
+      "社会快速变迁加剧代际隔阂",
+      "是社会文化现象而非个体问题"
+    ],
+    "related": [
+      {
+        "id": "youth_subculture",
+        "relation": "parallel"
+      },
+      {
+        "id": "family_life_cycle",
+        "relation": "applies_to"
+      }
+    ],
+    "exam_frequency": "medium",
+    "chapter": "第十一章 青少年社会工作",
+    "textbook_ref": "课本第191页"
+  },
+  {
+    "id": "ecological_perspective",
+    "term": "生态视角",
+    "definition": "关注人与社会环境的多层次互动关系，强调个体嵌套于微观、中观、宏观系统之中，健康取决于人与环境的适应。",
+    "proponent": "Bronfenbrenner",
+    "school": "生态系统理论",
+    "source_text": "Bronfenbrenner生态系统理论",
+    "core_points": [
+      "个体嵌套于多层次社会系统中",
+      "健康取决于人与环境的适应",
+      "微观-中观-宏观系统交互影响个体"
+    ],
+    "related": [
+      {
+        "id": "social_systems_theory",
+        "relation": "develops_from"
+      },
+      {
+        "id": "person_in_situation",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "medium",
+    "chapter": "第四章 社会工作理论",
+    "textbook_ref": "课本第68-69页"
+  },
+  {
+    "id": "strengths_perspective",
+    "term": "优势视角",
+    "definition": "关注案主的能力和资源而非缺陷和问题，相信每个人都有内在力量和复原力，以案主优势为干预起点激发自身潜能实现改变。",
+    "proponent": "Saleebey",
+    "school": "优势视角/积极社会工作",
+    "source_text": "Saleebey优势视角理论",
+    "core_points": [
+      "关注案主的能力和资源而非缺陷",
+      "相信每个人都有内在力量和复原力",
+      "以案主优势为干预起点"
+    ],
+    "related": [
+      {
+        "id": "empowerment_theory",
+        "relation": "parallel"
+      },
+      {
+        "id": "narrative_therapy",
+        "relation": "parallel"
+      },
+      {
+        "id": "help_people_help_themselves",
+        "relation": "applies_to"
+      }
+    ],
+    "exam_frequency": "medium",
+    "chapter": "第十四章 残疾人社会工作",
+    "textbook_ref": "课本第241页"
+  },
+  {
+    "id": "psychosocial_model",
+    "term": "心理社会模式",
+    "definition": "以'人在情境中'为核心，关注个体心理因素与社会环境的交互影响，运用支持性技术和反思性讨论进行干预的个案工作模式。",
+    "proponent": "汉密尔顿",
+    "school": "心理社会学派",
+    "source_text": "Hamilton（20世纪40年代）",
+    "core_points": [
+      "个体心理与社会环境交互影响",
+      "支持性技术与反思性讨论并重",
+      "直接介入与间接介入并举"
+    ],
+    "related": [
+      {
+        "id": "person_in_situation",
+        "relation": "school_of"
+      },
+      {
+        "id": "social_casework",
+        "relation": "school_of"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "第六章 社会个案工作",
+    "textbook_ref": "课本第105-110页"
+  },
+  {
+    "id": "hospice_care",
+    "term": "临终关怀",
+    "definition": "健康照顾链条的最后一环，使临终患者在生命末期无痛苦安宁离世，关注生命质量而非延长生命长度。",
+    "proponent": null,
+    "school": "缓和医疗/临终关怀",
+    "source_text": null,
+    "core_points": [
+      "使临终患者无痛苦安宁离世",
+      "关注生命质量而非延长生命",
+      "健康照顾链条的最后一环"
+    ],
+    "related": [
+      {
+        "id": "bio_psycho_social_model",
+        "relation": "applies_to"
+      },
+      {
+        "id": "whole_person_perspective",
+        "relation": "applies_to"
+      }
+    ],
+    "exam_frequency": "medium",
+    "chapter": "第十六章 医务社会工作",
+    "textbook_ref": "课本第278-280页"
+  },
+  {
+    "id": "resource_scarcity",
+    "term": "资源稀缺性",
+    "definition": "相对于人类无限的欲望而言资源是有限的，这是经济活动的基础前提，决定制度安排的产生。",
+    "proponent": null,
+    "school": "新经济社会学",
+    "source_text": null,
+    "core_points": [
+      "不是资源在物理上绝对有限而是相对于无限欲望的有限",
+      "资源稀缺程度直接影响人们之间的合作与冲突",
+      "制度本质上是为了协调稀缺资源分配而产生的安排"
+    ],
+    "related": [
+      {
+        "id": "utility_maximization",
+        "relation": "prerequisite"
+      },
+      {
+        "id": "institution_econ",
+        "relation": "prerequisite"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "个体行为三大假定",
+    "textbook_ref": "经济社会学教材第一部分"
+  },
+  {
+    "id": "utility_maximization",
+    "term": "效用最大化",
+    "definition": "人们面临多个备选方案时倾向于选择带来满足感最大的方案，不限于货币收益最大化，两个前提条件为完备性与可传递性。",
+    "proponent": null,
+    "school": "新经济社会学",
+    "source_text": null,
+    "core_points": [
+      "不存在经济目标与非经济目标的根本差异",
+      "人可以为了尊严、情感、道德等非货币目标放弃金钱",
+      "两个前提条件：完备性（偏好可排序）与可传递性（偏好不循环）"
+    ],
+    "related": [
+      {
+        "id": "resource_scarcity",
+        "relation": "successor"
+      },
+      {
+        "id": "bounded_socialization",
+        "relation": "parallel"
+      },
+      {
+        "id": "embeddedness",
+        "relation": "contains"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "个体行为三大假定",
+    "textbook_ref": "经济社会学教材第一部分"
+  },
+  {
+    "id": "bounded_socialization",
+    "term": "有限社会化假定",
+    "definition": "个人在不同程度地遵循社会准则的同时保持着进行效用最大化选择的自主行动空间，社会化不等于完全的规范内化。",
+    "proponent": "格兰诺维特",
+    "school": "新经济社会学",
+    "source_text": null,
+    "core_points": [
+      "社会化的核心是社会准则的内化但内化不是完全的",
+      "人在服从还是违背规范之间进行收益与代价的权衡",
+      "调和过度社会化（社会学）与不充分社会化（经济学）两种极端"
+    ],
+    "related": [
+      {
+        "id": "embeddedness",
+        "relation": "parallel"
+      },
+      {
+        "id": "utility_maximization",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "个体行为三大假定",
+    "textbook_ref": "经济社会学教材第一部分"
+  },
+  {
+    "id": "embeddedness",
+    "term": "嵌入性",
+    "definition": "经济行动嵌入于社会关系网络之中，个体行为受社会结构和社会关系的约束与塑造，批判原子化行动者模型。",
+    "proponent": "格兰诺维特",
+    "school": "新经济社会学",
+    "source_text": "Granovetter, 1985",
+    "core_points": [
+      "经济行动不是孤立的原子化行为而是嵌入于具体的社会关系网络中",
+      "批判过度社会化和不充分社会化共同的原子化缺陷",
+      "整合效用最大化、他人影响与有限社会化三个基本假定"
+    ],
+    "related": [
+      {
+        "id": "utility_maximization",
+        "relation": "contains"
+      },
+      {
+        "id": "bounded_socialization",
+        "relation": "parallel"
+      },
+      {
+        "id": "strength_of_weak_ties",
+        "relation": "develops_from"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "个体行为三大假定",
+    "textbook_ref": "经济社会学教材第一部分"
+  },
+  {
+    "id": "institution_econ",
+    "term": "制度（经济社会学）",
+    "definition": "一个社会中人们相互作用的规则，是在人们相互交往中施加于他们身上的约束，决定人们的选择集合。",
+    "proponent": null,
+    "school": "新制度主义经济社会学",
+    "source_text": null,
+    "core_points": [
+      "制度的本质是决定人们的选择集合",
+      "制度通过改变不同方案的相对代价和收益来引导行为",
+      "制度内含着激励结构：提高相对收益或降低相对代价"
+    ],
+    "related": [
+      {
+        "id": "formal_institution",
+        "relation": "contains"
+      },
+      {
+        "id": "informal_institution",
+        "relation": "contains"
+      },
+      {
+        "id": "resource_scarcity",
+        "relation": "successor"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "制度",
+    "textbook_ref": "经济社会学教材第二部分"
+  },
+  {
+    "id": "formal_institution",
+    "term": "正式制度",
+    "definition": "以正式文本形式明确规定、有成文规则并由专门机构强制执行的制度，如法律、法规。",
+    "proponent": null,
+    "school": "新制度主义经济社会学",
+    "source_text": null,
+    "core_points": [
+      "有明确的成文规则和正式的惩罚机制",
+      "由专门机构（如政府、法院）负责执行",
+      "与非正式制度一致时实施顺利，严重冲突时可能被架空"
+    ],
+    "related": [
+      {
+        "id": "informal_institution",
+        "relation": "parallel"
+      },
+      {
+        "id": "institution_econ",
+        "relation": "school_of"
+      }
+    ],
+    "exam_frequency": "medium",
+    "chapter": "制度",
+    "textbook_ref": "经济社会学教材第二部分"
+  },
+  {
+    "id": "informal_institution",
+    "term": "非正式制度",
+    "definition": "未经明文规定但在社会交往中被共同遵守的规则，依靠社会舆论和群体压力维持，如行业惯例和市场默契。",
+    "proponent": null,
+    "school": "新制度主义经济社会学",
+    "source_text": null,
+    "core_points": [
+      "无明文规定的行为规则依靠社会压力而非法律强制维持",
+      "通过舆论压力、声誉机制和群体排斥来约束行为",
+      "如白沟箱包市场'同样的包价格都一样'属非正式制度"
+    ],
+    "related": [
+      {
+        "id": "formal_institution",
+        "relation": "parallel"
+      },
+      {
+        "id": "institution_econ",
+        "relation": "school_of"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "制度",
+    "textbook_ref": "经济社会学教材第二部分"
+  },
+  {
+    "id": "soft_budget_constraint",
+    "term": "软预算约束",
+    "definition": "传统社会主义体制中企业经营亏损由国家兜底导致企业对价格信号反应迟钝的制度特征，科尔内用以批评兰格模型。",
+    "proponent": "科尔内",
+    "school": "新经济社会学",
+    "source_text": null,
+    "core_points": [
+      "企业亏损后责任不自负国家以各种形式兜底",
+      "企业对价格反应迟钝：亏损不退出涨价不增产",
+      "构成对兰格模型的致命批评——正确的价格信号在软预算约束下无效"
+    ],
+    "related": [
+      {
+        "id": "lange_model",
+        "relation": "opposes"
+      },
+      {
+        "id": "institution_econ",
+        "relation": "school_of"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "市场机制与价格",
+    "textbook_ref": "经济社会学教材第三部分"
+  },
+  {
+    "id": "lange_model",
+    "term": "兰格模型",
+    "definition": "波兰经济学家兰格设想由中央计划局通过试错法模拟市场价格机制来指导社会主义企业生产的理论，忽视了信息分散性和激励问题。",
+    "proponent": "兰格",
+    "school": "社会主义经济学",
+    "source_text": null,
+    "core_points": [
+      "核心设想：中央计划局根据供求调整价格以行政手段模拟市场",
+      "企业被要求按边际成本等于价格的原则进行生产决策",
+      "忽视了信息分散性问题和企业激励机制问题"
+    ],
+    "related": [
+      {
+        "id": "soft_budget_constraint",
+        "relation": "opposes"
+      }
+    ],
+    "exam_frequency": "medium",
+    "chapter": "市场机制与价格",
+    "textbook_ref": "经济社会学教材第三部分"
+  },
+  {
+    "id": "strength_of_weak_ties",
+    "term": "弱关系的力量",
+    "definition": "格兰诺维特提出弱关系连接不同社会圈子，传递更丰富新颖的信息，对求职等行为帮助更大，强关系信息圈重叠新颖信息少。",
+    "proponent": "格兰诺维特",
+    "school": "新经济社会学",
+    "source_text": "The Strength of Weak Ties (Granovetter, 1973)",
+    "core_points": [
+      "弱关系是不同社会圈子之间的桥梁信息圈不重叠",
+      "强关系（密友）信息圈高度重叠新颖信息少",
+      "大多数人是通过弱关系而非强关系找到更好工作的"
+    ],
+    "related": [
+      {
+        "id": "embeddedness",
+        "relation": "develops_from"
+      },
+      {
+        "id": "information_asymmetry",
+        "relation": "applies_to"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "市场机制与价格",
+    "textbook_ref": "经济社会学教材第三部分"
+  },
+  {
+    "id": "information_asymmetry",
+    "term": "信息不对称",
+    "definition": "交易双方对他们共同关心的事务有不同程度的掌握，信息较少方处于劣势，是市场失灵、委托代理问题和逆向选择的根本原因。",
+    "proponent": null,
+    "school": "信息经济学",
+    "source_text": null,
+    "core_points": [
+      "是委托-代理问题、逆向选择、自我实现预言等现象的共同前提",
+      "四种降低机制：信号发送、信号搜寻、利用人际关系网络、通过制度设计",
+      "信息的分布不均衡导致市场低效乃至失灵"
+    ],
+    "related": [
+      {
+        "id": "adverse_selection",
+        "relation": "prerequisite"
+      },
+      {
+        "id": "signal_theory",
+        "relation": "prerequisite"
+      },
+      {
+        "id": "trust",
+        "relation": "opposes"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "信息不对称",
+    "textbook_ref": "经济社会学教材第七部分"
+  },
+  {
+    "id": "adverse_selection",
+    "term": "逆向选择",
+    "definition": "阿克洛夫提出信息不对称下低质量品排挤高质量品的市场失灵过程，以二手车柠檬市场为经典模型。",
+    "proponent": "阿克洛夫",
+    "school": "信息经济学",
+    "source_text": "The Market for Lemons (Akerlof, 1970)",
+    "core_points": [
+      "核心逻辑链：买方无法区分质量→按均价出价→高质量退出→均价下降→循环恶化",
+      "保险市场：健康人退出→剩下不健康人群→提高保费→更多健康人退出",
+      "最终结果：低质量品（柠檬）排挤高质量品市场萎缩甚至消失"
+    ],
+    "related": [
+      {
+        "id": "information_asymmetry",
+        "relation": "successor"
+      },
+      {
+        "id": "signal_theory",
+        "relation": "opposes"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "信息不对称",
+    "textbook_ref": "经济社会学教材第七部分"
+  },
+  {
+    "id": "signal_theory",
+    "term": "信号理论",
+    "definition": "斯宾塞提出信息充足方主动发送可识别信号以区分质量高低的理论，有效信号需满足不同类型者信号成本不同的条件。",
+    "proponent": "斯宾塞",
+    "school": "信息经济学",
+    "source_text": null,
+    "core_points": [
+      "有效信号需两个条件：成本与质量负相关+高质量者愿意采用",
+      "信号可人为控制（如教育文凭）区别于不可控的指示器（如种族、年龄）",
+      "声誉是典型有效信号——形成需长期投入对低质量者成本更高"
+    ],
+    "related": [
+      {
+        "id": "information_asymmetry",
+        "relation": "applies_to"
+      },
+      {
+        "id": "adverse_selection",
+        "relation": "opposes"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "信息不对称",
+    "textbook_ref": "经济社会学教材第七部分"
+  },
+  {
+    "id": "trust",
+    "term": "信任",
+    "definition": "在外在约束制度不完全且A不迫使B行动的条件下，A对B不会做出对A不利行动的预期，只有在有限社会化假定下谈信任才有意义。",
+    "proponent": null,
+    "school": "新经济社会学",
+    "source_text": null,
+    "core_points": [
+      "信任产生条件：制度通常不完全且主体A不拥有迫使B行动的强力",
+      "信任程度是A对B不会采取机会主义行为的主观概率",
+      "只有在有限社会化假定下谈信任才有意义"
+    ],
+    "related": [
+      {
+        "id": "bounded_socialization",
+        "relation": "develops_from"
+      },
+      {
+        "id": "information_asymmetry",
+        "relation": "opposes"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "委托-代理与信任",
+    "textbook_ref": "经济社会学教材第八部分"
+  },
+  {
+    "id": "self_fulfilling_prophecy_econ",
+    "term": "自我实现预言（经济社会学）",
+    "definition": "默顿提出初始虚假的情境定义因引发新的行动而最终变为真实，银行挤兑是经典案例：虚假破产传言引发挤兑使银行真破产。",
+    "proponent": "默顿",
+    "school": "社会学功能主义",
+    "source_text": null,
+    "core_points": [
+      "三个条件：行动能影响现实、存在初始虚假情境定义、集体行动达到关键阈值",
+      "银行挤兑经典案例",
+      "台州银行案例说明政府信息干预可以切断自我实现预言的链条"
+    ],
+    "related": [
+      {
+        "id": "self_fulfilling_prophecy",
+        "relation": "parallel"
+      },
+      {
+        "id": "information_asymmetry",
+        "relation": "successor"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "信息不对称",
+    "textbook_ref": "经济社会学教材第七部分"
+  },
+  {
+    "id": "demand_externality",
+    "term": "需求连带外部性",
+    "definition": "个人需求直接受到其他购买者数量或行为影响的效应，分为从众需求的正效应与求异需求的负效应，打破了传统经济学的需求独立假定。",
+    "proponent": null,
+    "school": "新经济社会学",
+    "source_text": null,
+    "core_points": [
+      "从众效应：他人买得越多自己越想要（正效应）",
+      "求异效应：他人买得越多自己越不想要（负效应）",
+      "打破了传统经济学'他人购买不影响自己效用'的假定"
+    ],
+    "related": [
+      {
+        "id": "others_influence_utility",
+        "relation": "develops_from"
+      },
+      {
+        "id": "threshold_model",
+        "relation": "applies_to"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "市场机制与价格",
+    "textbook_ref": "经济社会学教材第三部分"
+  },
+  {
+    "id": "threshold_model",
+    "term": "从众临界值（门槛模型）",
+    "definition": "格兰诺维特提出使个人发生从众行为的他人最小数量和比例，不同个体临界值的差异解释集体行为的突然爆发——连锁反应。",
+    "proponent": "格兰诺维特",
+    "school": "新经济社会学",
+    "source_text": null,
+    "core_points": [
+      "每个人的从众临界值不同：低门槛者率先行动高门槛者需多数人行动后才跟进",
+      "不同临界值的分布解释了集体行为为何突然爆发",
+      "秘鲁洛莫林村案例说明初始采纳者的社会地位比数量更重要"
+    ],
+    "related": [
+      {
+        "id": "demand_externality",
+        "relation": "develops_from"
+      },
+      {
+        "id": "s_curve_diffusion",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "市场机制与价格",
+    "textbook_ref": "经济社会学教材第三部分"
+  },
+  {
+    "id": "s_curve_diffusion",
+    "term": "S形创新扩散曲线",
+    "definition": "创新累积采纳率呈S形曲线，与潜在接受者禀赋的钟形分布相关，经历缓慢-加速-饱和三阶段，根本原因在于承受不确定性的意愿和能力分布不均。",
+    "proponent": null,
+    "school": "新经济社会学",
+    "source_text": null,
+    "core_points": [
+      "根本原因：承受不确定性的偏好、认知能力、对原有方式依恋程度呈钟形分布",
+      "三阶段：初期少数人采纳缓慢→中期临界规模后加速→后期饱和增速放缓",
+      "两个前提条件：足够多的初始数量+后续接受者都能获得正的净收益"
+    ],
+    "related": [
+      {
+        "id": "threshold_model",
+        "relation": "parallel"
+      },
+      {
+        "id": "schumpeter_innovation",
+        "relation": "applies_to"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "创新",
+    "textbook_ref": "经济社会学教材第五部分"
+  },
+  {
+    "id": "schumpeter_innovation",
+    "term": "熊彼特创新",
+    "definition": "实现经济要素的新组合，区别于技术发明，是将新发现应用于经济生产的过程，有五种形式，企业家是执行创新职能的社会角色。",
+    "proponent": "熊彼特",
+    "school": "创新经济学",
+    "source_text": null,
+    "core_points": [
+      "创新不等于发明：发明是技术新发现，创新是把发明应用于经济生产",
+      "五种创新：新产品、新生产方法、新市场、新供应来源、新产业组织",
+      "三大困难：信息困难、心理困难（习惯）、社会压力"
+    ],
+    "related": [
+      {
+        "id": "entrepreneur",
+        "relation": "contains"
+      },
+      {
+        "id": "s_curve_diffusion",
+        "relation": "applies_to"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "创新",
+    "textbook_ref": "经济社会学教材第五部分"
+  },
+  {
+    "id": "entrepreneur",
+    "term": "企业家",
+    "definition": "熊彼特定义为实现经济要素新组合的人，是社会机制的人格化表述，非等同于工厂主或CEO，只有执行创新职能时才是企业家。",
+    "proponent": "熊彼特",
+    "school": "创新经济学",
+    "source_text": null,
+    "core_points": [
+      "只有执行'要素新组合'职能时才是企业家不执行创新时则不是",
+      "企业家是一种社会机制的人格化表述非永恒的身份标签",
+      "创新不是个人孤立行为而是通过复杂社会过程实现的"
+    ],
+    "related": [
+      {
+        "id": "schumpeter_innovation",
+        "relation": "school_of"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "创新",
+    "textbook_ref": "经济社会学教材第五部分"
+  },
+  {
+    "id": "homans_behavioral_exchange",
+    "term": "霍曼斯行为主义交换论",
+    "definition": "霍曼斯以行为主义心理学为基础将社会交换还原为个体趋利避害行动的理论，含六项基本命题，核心公式为行动=价值×可能性。",
+    "proponent": "霍曼斯",
+    "school": "社会交换论",
+    "source_text": "《社会行为：它的基本形式》（1961）",
+    "core_points": [
+      "核心公式：行动=价值×可能性——人们根据预期报酬和可能性调整行动",
+      "六个基本命题：成功、刺激、价值、剥夺-满足、攻击-赞同、理性命题",
+      "用最小利益原则解释权力产生：得到最小利益的人最可能为合作指定条件",
+      "批评：循环论证、人与动物无本质差异、将不平等合理化、还原论"
+    ],
+    "related": [
+      {
+        "id": "blau_dialectical_exchange",
+        "relation": "opposes"
+      },
+      {
+        "id": "reciprocity_principle",
+        "relation": "parallel"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "社会交换论/霍曼斯",
+    "textbook_ref": "现代社会学第二编社会交换论"
+  },
+  {
+    "id": "blau_dialectical_exchange",
+    "term": "布劳辩证交换论",
+    "definition": "布劳从微观人际互动扩展到宏观结构，强调交换中整合与冲突辩证统一的社会交换理论体系，克服了霍曼斯的还原论局限。",
+    "proponent": "布劳",
+    "school": "社会交换论",
+    "source_text": "《社会生活中的交换与权力》",
+    "core_points": [
+      "与霍曼斯五大差异：从个体心理转向人际交互、扩展到组织、从直接转向间接、纳入制度、跨微观宏观",
+      "基本交换系统：社会吸引→互惠原理→资源分化→权力产生→整合与对立",
+      "权力的四个变量：接受者依赖度、替代来源选择、回报能力、强制能力",
+      "核心洞见：整合中蕴含冲突基因，冲突又走向整合——社会是交换逻辑上的辩证统一"
+    ],
+    "related": [
+      {
+        "id": "homans_behavioral_exchange",
+        "relation": "develops_from"
+      },
+      {
+        "id": "reciprocity_principle",
+        "relation": "contains"
+      },
+      {
+        "id": "social_attraction",
+        "relation": "contains"
+      }
+    ],
+    "exam_frequency": "high",
+    "chapter": "社会交换论/布劳",
+    "textbook_ref": "现代社会学第二编社会交换论"
+  },
+  {
+    "id": "reciprocity_principle",
+    "term": "互惠原理",
+    "definition": "布劳提出人们从事社会交换是因为预期会得到报酬，通过揣测他人需求并操控表现以促成交换的机制，是社会吸引的基础。",
+    "proponent": "布劳",
+    "school": "社会交换论",
+    "source_text": null,
+    "core_points": [
+      "人们揣测他人需求操控自身表现暗示他人必须提供相应资源来交换",
+      "是社会吸引的基础——人们知道交换会得到报酬才被吸引",
+      "四种报酬类型：金钱、社会赞同、尊重和尊敬、服从（获得服从即获得权力）"
+    ],
+    "related": [
+      {
+        "id": "social_attraction",
+        "relation": "prerequisite"
+      },
+      {
+        "id": "blau_dialectical_exchange",
+        "relation": "school_of"
+      }
+    ],
+    "exam_frequency": "medium",
+    "chapter": "社会交换论/布劳",
+    "textbook_ref": "现代社会学第二编社会交换论"
+  },
+  {
+    "id": "social_attraction",
+    "term": "社会吸引",
+    "definition": "布劳提出的概念，指人们因预期能从他人处获得报酬而产生的与之交往的心理倾向，是交换的起点，个体通过展示自身资源来产生吸引。",
+    "proponent": "布劳",
+    "school": "社会交换论",
+    "source_text": null,
+    "core_points": [
+      "社会吸引基于互惠原理——人们知道会得到报酬才被吸引",
+      "是基本交换系统的起点：吸引→竞争→分化→权力→整合/冲突",
+      "个体通过展示自身拥有他人需要的资源来产生社会吸引"
+    ],
+    "related": [
+      {
+        "id": "reciprocity_principle",
+        "relation": "successor"
+      },
+      {
+        "id": "blau_dialectical_exchange",
+        "relation": "school_of"
+      }
+    ],
+    "exam_frequency": "medium",
+    "chapter": "社会交换论/布劳",
+    "textbook_ref": "现代社会学第二编社会交换论"
+  }
+]
