@@ -394,9 +394,8 @@ input::placeholder, textarea::placeholder { color: var(--faint); }
 <div style="margin-top:24px;padding-top:16px;border-top:1px solid var(--border)">
   <div class="settings-toggle" onclick="toggleSettings()">⚙️ 设置</div>
   <div class="settings-panel card" id="settingsPanel">
-    <div class="api-row"><span class="lbl">Worker 地址</span><input type="text" id="workerUrl" placeholder="https://sociology-api.xxx.workers.dev/api/chat"></div>
-    <p class="hint">Worker 代理转发 DeepSeek API，你无需提供 Key。留空则使用直连模式（需填写下方 Key）。</p>
-    <div class="api-row"><span class="lbl">API Key</span><input type="password" id="apiKey" placeholder="sk-...（直连模式使用）"></div>
+    <div class="api-row"><span class="lbl">API Key</span><input type="password" id="apiKey" placeholder="sk-... DeepSeek API Key"></div>
+    <p class="hint"><a href="https://platform.deepseek.com/api_keys" target="_blank"><strong>点这里免费获取 Key</strong></a>（30秒注册，¥1/百万token，够用好几个月）。<br>Key 仅存你本地浏览器，不上传服务器。</p>
     <div class="api-row"><span class="lbl">模型</span><input type="text" id="apiModel" value="deepseek-chat" style="width:140px"></div>
     <button class="btn btn-secondary btn-sm" style="margin-top:8px" onclick="clearAllData()">🗑️ 清除本地数据</button>
   </div>
