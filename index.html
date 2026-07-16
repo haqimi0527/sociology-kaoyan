@@ -1825,8 +1825,8 @@ function renderCategoryBrowser(subject, shellId, resultShellId) {
   shell.innerHTML =
     '<div class="cb-label">📂 按分类浏览</div>' +
     '<div class="cat-cols">' +
-      '<div class="cat-col"><div class="cat-col-title">时期/阶段</div>' +
-        '<div class="cat-item' + (!state.period ? ' active' : '') + '" data-action="period" data-period="_all" data-subject="' + subject + '">📦 全部时期</div>' +
+      '<div class="cat-col"><div class="cat-col-title">' + (subject === 'theory' ? '时期' : '研究阶段') + '</div>' +
+        '<div class="cat-item' + (!state.period ? ' active' : '') + '" data-action="period" data-period="_all" data-subject="' + subject + '">📦 ' + (subject === 'theory' ? '全部时期' : '全部模块') + '</div>' +
         periods.map(function(p) {
           var isActive = state.period === p;
           return '<div class="cat-item' + (isActive ? ' active' : '') + '" data-action="period" data-period="' + escHtml(p) + '" data-subject="' + subject + '">' + escHtml(p) + '<span class="count">' + periodCount(p) + '</span></div>';
@@ -1841,26 +1841,43 @@ function renderCategoryBrowser(subject, shellId, resultShellId) {
     '</div>' +
     (tagChipsHtml ? '<div class="tag-filter-bar">' + tagChipsHtml + '</div>' : '');
 
-  // Right side: results
-  var resultList = document.getElementById('thrResultList');
-  var resultCard = document.getElementById('thrResultCard');
-  var resultCount = document.getElementById('thrResultCount');
-  var resultLabel = document.getElementById('thrResultLabel');
-  var emptyHint = document.getElementById('thrEmptyHint');
-  var detail = document.getElementById('conceptDetail');
+  // Right side / results area
+  if (subject === 'methods') {
+    // Methods panel: render concept cards instead of list
+    var grid = document.getElementById('metCardGrid');
+    var empty = document.getElementById('metCardEmpty');
+    var methodBrowser = document.getElementById('metCatBrowser');
+    if (grid && methodBrowser) {
+      grid.innerHTML = showConcepts.slice(0, 50).map(renderMethodCard).join('');
+      if (showConcepts.length > 50) grid.innerHTML += '<div style="padding:12px;text-align:center;color:var(--faint);font-size:12px;grid-column:1/-1">仅显示前 50 条，使用搜索或筛选缩小范围</div>';
+      grid.style.display = '';
+      if (empty) empty.style.display = (!showConcepts.length ? '' : 'none');
+      methodBrowser.style.display = '';
+    }
+    if (resultShell) resultShell.style.display = 'none';
+    shell.style.display = '';
+  } else {
+    // Theory panel: results in right column
+    var resultList = document.getElementById('thrResultList');
+    var resultCard = document.getElementById('thrResultCard');
+    var resultCount = document.getElementById('thrResultCount');
+    var resultLabel = document.getElementById('thrResultLabel');
+    var emptyHint = document.getElementById('thrEmptyHint');
+    var detail = document.getElementById('conceptDetail');
 
-  if (resultLabel) resultLabel.textContent = '筛选结果';
-  if (resultCount) resultCount.textContent = '(' + showConcepts.length + '条)';
-  if (resultList) {
-    resultList.innerHTML = showConcepts.slice(0, 50).map(function(c) { return conceptRow(c); }).join('');
-    if (showConcepts.length > 50) resultList.innerHTML += '<div style="padding:12px;text-align:center;color:var(--faint);font-size:12px">仅显示前 50 条，使用搜索或筛选缩小范围</div>';
+    if (resultLabel) resultLabel.textContent = '筛选结果';
+    if (resultCount) resultCount.textContent = '(' + showConcepts.length + '条)';
+    if (resultList) {
+      resultList.innerHTML = showConcepts.slice(0, 50).map(function(c) { return conceptRow(c); }).join('');
+      if (showConcepts.length > 50) resultList.innerHTML += '<div style="padding:12px;text-align:center;color:var(--faint);font-size:12px">仅显示前 50 条，使用搜索或筛选缩小范围</div>';
+    }
+    if (resultCard) resultCard.style.display = '';
+    if (emptyHint) emptyHint.style.display = 'none';
+    if (detail) detail.style.display = 'none';
+
+    if (resultShell) resultShell.style.display = 'none';
+    shell.style.display = '';
   }
-  if (resultCard) resultCard.style.display = '';
-  if (emptyHint) emptyHint.style.display = 'none';
-  if (detail) detail.style.display = 'none';
-
-  if (resultShell) resultShell.style.display = 'none';
-  shell.style.display = '';
 }
 
 document.addEventListener('click', function(e) {
@@ -2611,6 +2628,19 @@ function toggleStatAnswer(btn) {
   btn.textContent = isVisible ? '👁 显示答案' : '🙈 隐藏答案';
 }
 
+function renderMethodCard(c) {
+  var freqTag = c.exam_frequency === 'high' ? ' <span style="font-size:10px;background:var(--bad-bg);color:var(--bad);padding:1px 6px;border-radius:3px;margin-left:4px">高频</span>' : '';
+  var pointsHtml = c.core_points.filter(function(p) { return p.length >= 10; }).map(function(p) { return '<li>' + escHtml(cleanText(p)) + '</li>'; }).join('');
+  return '<div class="method-card" onclick="this.classList.toggle(\'expanded\')">' +
+    '<div class="mc-term">' + escHtml(cleanText(c.term)) + freqTag + '</div>' +
+    '<div class="mc-def">' + escHtml(cleanText(c.definition)) + '</div>' +
+    '<div class="mc-chapter">' + escHtml(c.chapter || '') + (c.proponent ? ' · ' + escHtml(c.proponent) : '') + '</div>' +
+    '<div class="mc-expand"><ul style="padding-left:16px">' + pointsHtml + '</ul>' +
+      (c.textbook_ref ? '<div style="margin-top:6px;font-size:11px;color:var(--faint)">📖 ' + escHtml(c.textbook_ref) + '</div>' : '') +
+    '</div>' +
+  '</div>';
+}
+
 function renderMetCards() {
   var grid = document.getElementById('metCardGrid');
   var empty = document.getElementById('metCardEmpty');
@@ -2646,18 +2676,7 @@ function renderMetCards() {
   if (!data.length) { grid.innerHTML = ''; if (empty) empty.style.display = ''; return; }
   if (empty) empty.style.display = 'none';
 
-  grid.innerHTML = data.map(function(c) {
-    var freqTag = c.exam_frequency === 'high' ? ' <span style="font-size:10px;background:var(--bad-bg);color:var(--bad);padding:1px 6px;border-radius:3px;margin-left:4px">高频</span>' : '';
-    var pointsHtml = c.core_points.filter(function(p) { return p.length >= 10; }).map(function(p) { return '<li>' + escHtml(cleanText(p)) + '</li>'; }).join('');
-    return '<div class="method-card" onclick="this.classList.toggle(\'expanded\')">' +
-      '<div class="mc-term">' + escHtml(cleanText(c.term)) + freqTag + '</div>' +
-      '<div class="mc-def">' + escHtml(cleanText(c.definition)) + '</div>' +
-      '<div class="mc-chapter">' + escHtml(c.chapter || '') + (c.proponent ? ' · ' + escHtml(c.proponent) : '') + '</div>' +
-      '<div class="mc-expand"><ul style="padding-left:16px">' + pointsHtml + '</ul>' +
-        (c.textbook_ref ? '<div style="margin-top:6px;font-size:11px;color:var(--faint)">📖 ' + escHtml(c.textbook_ref) + '</div>' : '') +
-      '</div>' +
-    '</div>';
-  }).join('');
+  grid.innerHTML = data.map(renderMethodCard).join('');
 }
 
 // ===== Task List Persistence =====
@@ -2980,14 +2999,10 @@ function startMockExam() {
 
   if (!useMC && !useSA && !useEssay) { showToast('至少选一种题型', 'error'); return; }
 
-  // Use lcwiki theory concepts only — cleanest data for mock exams
+  // Use theory + methods concepts for mock exams
   var pool = concepts.filter(function(c) {
-    var id = c.id || '';
     var ch = c.chapter || '';
-    // lcwiki theory concepts only (exclude stats/methods)
-    if (id.indexOf('lcwiki_') !== 0) return false;
     if (ch.indexOf('理论/') !== 0 && ch.indexOf('社会学研究方法/') !== 0 && ch.indexOf('方法/') !== 0) return false;
-    if (FORMULA_WHITELIST.indexOf(id) !== -1) return false;
     if (!c.definition || c.definition.length < 30) return false;
     return true;
   });
