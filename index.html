@@ -1477,14 +1477,14 @@ input::placeholder, textarea::placeholder { color: var(--placeholder); }
   </div>
 
   <div class="sub-panel active" id="sub-met-concept">
-    <div class="cat-browser" id="metCatBrowser" style="margin-bottom:12px"></div>
-    <div class="flash-filter">
-      <select id="metCardFilter" aria-label="筛选方法概念" onchange="renderMetCards()">
+    <div class="flash-filter" style="margin-bottom:10px">
+      <input type="text" id="metCardSearch" aria-label="搜索研究方法概念" placeholder="🔍 搜索方法概念…" style="width:100%;max-width:400px;font-size:14px;padding:8px 12px" autocomplete="off">
+      <select id="metCardFilter" aria-label="筛选方法概念" onchange="renderMetCards()" style="margin-left:auto">
         <option value="all">全部方法概念</option>
         <option value="high">仅高频</option>
       </select>
-      <input type="text" id="metCardSearch" aria-label="搜索研究方法概念" placeholder="搜索方法概念…" style="width:180px" oninput="clearTimeout(_metSearchTimer);_metSearchTimer=setTimeout(renderMetCards,150)">
     </div>
+    <div class="cat-browser" id="metCatBrowser" style="margin-bottom:12px"></div>
     <div class="method-card-grid" id="metCardGrid"></div>
     <div class="placeholder" id="metCardEmpty" style="display:none">
       <span class="ph-icon">📭</span>
@@ -4581,6 +4581,16 @@ loadConcepts().then(function() {
   updateDashStats();
 });
 initResources();
+// Methods search: proper event listener (more reliable than inline oninput)
+var _metSearchTimer;
+var metSearchEl = document.getElementById('metCardSearch');
+if (metSearchEl) {
+  metSearchEl.addEventListener('input', function() {
+    clearTimeout(_metSearchTimer);
+    _metSearchTimer = setTimeout(renderMetCards, 150);
+  });
+}
+
 // Mock exam panel init
 loadSchoolsData().then(function() { populateSchoolSelectors(); updateSchoolInfo('auto'); });
 loadExamsData();
