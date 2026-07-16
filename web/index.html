@@ -986,6 +986,9 @@ input::placeholder, textarea::placeholder { color: var(--placeholder); }
       <span class="nav-icon">🔬</span> 研究方法
       <span class="nav-badge">0</span>
     </button>
+    <button class="nav-item" data-panel="mock-exam" onclick="switchPanel('mock-exam')" style="background:var(--thr-bg)">
+      <span class="nav-icon">📝</span> 模拟测试
+    </button>
 
     <div class="side-divider"></div>
 
@@ -1547,6 +1550,130 @@ input::placeholder, textarea::placeholder { color: var(--placeholder); }
     </div>
   </div>
 </div><!-- /panel-methods -->
+
+<!-- =========================================================
+     PANEL: Mock Exam
+     ========================================================= -->
+<div class="panel" id="panel-mock-exam">
+  <div class="subj-header">
+    <span class="sh-icon">📝</span>
+    <div><div class="sh-title">社会学模拟测试</div><div class="sh-sub">自主出题 · 名校真题 · 智能批改</div></div>
+  </div>
+
+  <div style="display:flex;gap:16px;flex-wrap:wrap">
+    <!-- Left: Config -->
+    <div style="flex:0 0 300px;min-width:260px">
+      <div class="card" style="margin-bottom:12px">
+        <div class="card-header"><span class="ch-icon">⚙️</span>出题模式</div>
+        <div class="form-row" style="margin-bottom:12px">
+          <label style="cursor:pointer;display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:var(--r-sm);border:2px solid var(--thr);background:var(--thr-bg)">
+            <input type="radio" name="examMode" value="auto" checked onchange="switchExamMode('auto')"> 🤖 自主出题（AI 仿名校风格生成）
+          </label>
+        </div>
+        <div class="form-row">
+          <label style="cursor:pointer;display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:var(--r-sm);border:2px solid var(--border);background:var(--surface)">
+            <input type="radio" name="examMode" value="real" onchange="switchExamMode('real')"> 📄 历年真题（真实考卷练习）
+          </label>
+        </div>
+      </div>
+
+      <!-- Auto Mode Config -->
+      <div class="card" style="margin-bottom:12px" id="mockAutoConfig">
+        <div class="card-header"><span class="ch-icon">🤖</span>AI 出题配置</div>
+        <div class="form-row">
+          <label>目标学校</label>
+          <select id="mockAutoSchool" aria-label="选择目标学校" style="width:100%" onchange="updateSchoolInfo('auto')"></select>
+        </div>
+        <div id="mockSchoolInfo" style="font-size:11px;color:var(--faint);margin:-8px 0 8px 0;padding:6px 8px;background:var(--surface2);border-radius:var(--r-xs)"></div>
+        <div class="form-row">
+          <label>题目数量</label>
+          <select id="mockAutoCount" aria-label="题目数量" style="width:auto">
+            <option value="5">5 题</option>
+            <option value="10" selected>10 题</option>
+            <option value="15">15 题</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label>题型</label>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <label style="font-size:12px;cursor:pointer;display:flex;align-items:center;gap:4px"><input type="checkbox" id="mockAutoMC" checked> 名词解释</label>
+            <label style="font-size:12px;cursor:pointer;display:flex;align-items:center;gap:4px"><input type="checkbox" id="mockAutoSA" checked> 简答题</label>
+            <label style="font-size:12px;cursor:pointer;display:flex;align-items:center;gap:4px"><input type="checkbox" id="mockAutoEssay"> 论述题</label>
+          </div>
+        </div>
+        <div class="form-row">
+          <label>时间限制</label>
+          <select id="mockAutoTime" aria-label="时间限制" style="width:auto">
+            <option value="15">15 分钟</option>
+            <option value="30" selected>30 分钟</option>
+            <option value="45">45 分钟</option>
+            <option value="60">60 分钟</option>
+            <option value="90">90 分钟</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label>难度偏重</label>
+          <select id="mockAutoDifficulty" aria-label="难度偏重" style="width:auto">
+            <option value="mixed" selected>混合</option>
+            <option value="basic">基础</option>
+            <option value="advanced">拔高</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Real Exam Config -->
+      <div class="card" style="margin-bottom:12px;display:none" id="mockRealConfig">
+        <div class="card-header"><span class="ch-icon">📄</span>真题选择</div>
+        <div class="form-row">
+          <label>目标学校</label>
+          <select id="mockRealSchool" aria-label="选择学校" style="width:100%" onchange="updateRealYears()"></select>
+        </div>
+        <div class="form-row">
+          <label>考试年份</label>
+          <select id="mockRealYear" aria-label="选择年份" style="width:100%"></select>
+        </div>
+        <div id="mockRealInfo" style="font-size:11px;color:var(--faint);margin:-8px 0 8px 0;padding:6px 8px;background:var(--surface2);border-radius:var(--r-xs)"></div>
+        <div class="form-row">
+          <label>时间限制</label>
+          <select id="mockRealTime" aria-label="时间限制" style="width:auto">
+            <option value="30">30 分钟</option>
+            <option value="60">60 分钟</option>
+            <option value="90">90 分钟</option>
+            <option value="120">120 分钟</option>
+            <option value="180" selected>180 分钟（原卷时长）</option>
+          </select>
+        </div>
+      </div>
+
+      <button class="btn btn-primary" style="width:100%;padding:12px" onclick="startMockExamPanel()">▶ 开始考试</button>
+      <p class="hint" style="margin-top:8px" id="mockStartHint">AI 将从高频概念池抽取题目，仿照目标学校风格生成完整模拟卷</p>
+    </div>
+
+    <!-- Right: Exam Area -->
+    <div style="flex:1;min-width:0">
+      <!-- Config summary (shown before exam starts) -->
+      <div id="mockWelcome" style="text-align:center;padding:60px 0;color:var(--faint)">
+        <span style="font-size:48px;display:block;margin-bottom:12px">📝</span>
+        <div style="font-size:16px;font-weight:700;margin-bottom:6px">准备开始模拟测试</div>
+        <p style="font-size:13px;line-height:1.8;max-width:360px;margin:0 auto">选择出题模式 → 配置学校和题型 → 点击"开始考试"<br>交卷后 AI 自动四维批改（准确度 · 深度 · 结构 · 例证）</p>
+      </div>
+
+      <!-- Exam session (reused from theory panel) -->
+      <div class="exam-session" id="mockExamSession">
+        <div class="exam-timer" id="mockExamTimer">
+          <span class="et-clock" id="mockExamClock">30:00</span>
+          <span class="et-label">剩余时间</span>
+          <div class="et-progress"><div class="et-progress-fill" id="mockExamTimerBar" style="width:100%"></div></div>
+          <button class="btn btn-danger btn-sm" onclick="submitMockExam()">📩 交卷</button>
+        </div>
+        <div id="mockExamQuestions"></div>
+      </div>
+
+      <!-- Score result -->
+      <div id="mockExamScore" style="display:none"></div>
+    </div>
+  </div>
+</div>
 
 <!-- =========================================================
      PANEL: Settings
@@ -2239,6 +2366,268 @@ function initResources() {
       setTimeout(() => renderResourceGrid(dataKey), 50);
     });
   });
+}
+
+// ===== Mock Exam Panel =====
+var schoolsData = { schools: [], subjects: {} };
+var examsData = [];
+var examPrompts = null;
+var mockExamState = { mode: 'auto', school: 'ruc', year: 2025, questions: [], timeLimit: 0, timeLeft: 0, timerId: null, startTime: null };
+
+async function loadExamPrompts() {
+  if (examPrompts) return;
+  try {
+    var resp = await fetch('data/exam-prompts.json');
+    examPrompts = await resp.json();
+  } catch(e) { console.warn('exam-prompts.json 加载失败:', e.message); }
+}
+
+async function loadSchoolsData() {
+  if (schoolsData.schools.length) return;
+  try {
+    var resp = await fetch('data/schools.json');
+    schoolsData = await resp.json();
+  } catch(e) { console.warn('schools.json 加载失败:', e.message); }
+}
+
+async function loadExamsData() {
+  if (examsData.length) return;
+  try {
+    var resp = await fetch('data/exams.json');
+    examsData = await resp.json();
+  } catch(e) { console.warn('exams.json 加载失败:', e.message); }
+}
+
+function switchExamMode(mode) {
+  mockExamState.mode = mode;
+  document.getElementById('mockAutoConfig').style.display = mode === 'auto' ? '' : 'none';
+  document.getElementById('mockRealConfig').style.display = mode === 'real' ? '' : 'none';
+  var hint = document.getElementById('mockStartHint');
+  if (hint) hint.textContent = mode === 'auto' ? 'AI 将从高频概念池抽取题目，仿照目标学校风格生成完整模拟卷' : '使用真实历年考研真题进行模拟练习';
+  // Highlight active radio
+  document.querySelectorAll('input[name="examMode"]').forEach(function(r) {
+    r.parentElement.style.borderColor = r.checked ? 'var(--thr)' : 'var(--border)';
+    r.parentElement.style.background = r.checked ? 'var(--thr-bg)' : 'var(--surface)';
+  });
+  if (mode === 'real') updateRealYears();
+}
+
+function populateSchoolSelectors() {
+  var selAuto = document.getElementById('mockAutoSchool');
+  var selReal = document.getElementById('mockRealSchool');
+  var html = schoolsData.schools.map(function(s) {
+    return '<option value="' + s.id + '">' + s.name + ' · ' + s.full + (s.level === '985' ? ' 🔥' : '') + '</option>';
+  }).join('');
+  if (selAuto) { selAuto.innerHTML = html; selAuto.value = mockExamState.school; }
+  if (selReal) { selReal.innerHTML = html; selReal.value = mockExamState.school; }
+}
+
+function updateSchoolInfo(which) {
+  var sel = document.getElementById(which === 'auto' ? 'mockAutoSchool' : 'mockRealSchool');
+  var div = document.getElementById('mockSchoolInfo');
+  if (!sel || !div) return;
+  var s = schoolsData.schools.find(function(x) { return x.id === sel.value; });
+  if (!s) { div.innerHTML = ''; return; }
+  mockExamState.school = sel.value;
+  // Try to get style prompt description
+  var promptData = (typeof examPrompts !== 'undefined' && examPrompts.stylePrompts && examPrompts.stylePrompts[s.id])
+    ? examPrompts.stylePrompts[s.id].description
+    : '';
+  div.innerHTML = '<strong>' + s.full + '</strong> · ' + s.level + (promptData ? '<br>' + promptData.slice(0, 120) + (promptData.length > 120 ? '…' : '') : '');
+}
+
+function updateRealYears() {
+  var selSchool = document.getElementById('mockRealSchool');
+  var selYear = document.getElementById('mockRealYear');
+  var info = document.getElementById('mockRealInfo');
+  if (!selSchool || !selYear) return;
+  mockExamState.school = selSchool.value;
+  var schoolName = (schoolsData.schools.find(function(s) { return s.id === selSchool.value; }) || {}).name || selSchool.value;
+  var years = {};
+  examsData.forEach(function(e) { if (e.school === schoolName && !years[e.year]) years[e.year] = e; });
+  var yearList = Object.keys(years).sort(function(a,b) { return b - a; });
+  selYear.innerHTML = yearList.length ? yearList.map(function(y) {
+    return '<option value="' + y + '">' + y + ' 年' + (years[y].totalScore ? ' (' + years[y].totalScore + '分)' : '') + '</option>';
+  }).join('') : '<option value="">暂无真题</option>';
+  if (yearList.length) {
+    mockExamState.year = parseInt(selYear.value);
+    var exam = years[selYear.value];
+    if (exam && info) {
+      var qCount = (exam.questions || []).length;
+      info.innerHTML = '<strong>' + exam.title + '</strong><br>' + qCount + ' 道题 · ' + (exam.totalScore || '?') + ' 分 · ' + (exam.duration || '?') + ' 分钟';
+    }
+  }
+  if (info && !yearList.length) info.innerHTML = '该学校暂无真题数据';
+}
+
+async function startMockExamPanel() {
+  await loadSchoolsData();
+  await loadExamsData();
+  if (!concepts.length) { showToast('概念数据加载中，请稍后再试', 'error'); return; }
+
+  var mode = mockExamState.mode;
+  var schoolId = mockExamState.school;
+  var schoolObj = schoolsData.schools.find(function(s) { return s.id === schoolId; }) || { name: '人大', full: '中国人民大学' };
+
+  if (mode === 'real') {
+    // Real exam mode: load from exams.json
+    var year = mockExamState.year;
+    var schoolName = schoolObj.name;
+    var exam = examsData.find(function(e) { return e.school === schoolName && e.year === year; });
+    if (!exam) { showToast('未找到该年份真题', 'error'); return; }
+    mockExamState.questions = exam.questions.map(function(q) { return { term: q.question, type: q.type, prompt: '请结合社会学理论作答', score: q.score || 5 }; });
+    mockExamState.timeLimit = parseInt(document.getElementById('mockRealTime')?.value || exam.duration || 180) * 60;
+  } else {
+    // Auto mode: AI generate
+    var count = parseInt(document.getElementById('mockAutoCount')?.value || '10');
+    var types = [];
+    if (document.getElementById('mockAutoMC')?.checked) types.push('名词解释');
+    if (document.getElementById('mockAutoSA')?.checked) types.push('简答');
+    if (document.getElementById('mockAutoEssay')?.checked) types.push('论述');
+    if (!types.length) { showToast('请至少选择一种题型', 'error'); return; }
+    var difficulty = document.getElementById('mockAutoDifficulty')?.value || 'mixed';
+    mockExamState.timeLimit = parseInt(document.getElementById('mockAutoTime')?.value || '30') * 60;
+
+    var pool = concepts.filter(isTheoryConcept).filter(function(c) { return c.exam_frequency === 'high'; });
+    if (pool.length < count) pool = concepts.filter(isTheoryConcept).slice(0, count * 3);
+    // Shuffle
+    pool.sort(function() { return Math.random() - 0.5; });
+    var selected = pool.slice(0, count);
+
+    // Build AI prompt
+    var promptData = (typeof examPrompts !== 'undefined' && examPrompts.stylePrompts && examPrompts.stylePrompts[schoolId])
+      ? examPrompts.stylePrompts[schoolId].generatePrompt
+      : '请生成一套社会学考研模拟题。';
+    var conceptList = selected.map(function(c) { return c.term + '（' + (c.proponent || '') + '）'; }).join('、');
+    promptData += '\n\n请从以下概念中抽取 ' + count + ' 个作为名词解释题，并根据剩余概念生成简答题和论述题：\n' + conceptList;
+    promptData += '\n\n难度偏重：' + (difficulty === 'basic' ? '基础概念为主' : difficulty === 'advanced' ? '偏重深度和批判性分析' : '混合基础和深度');
+    promptData += '\n题型：' + types.join('、');
+    promptData += '\n\n请返回 JSON 数组，格式：[{"type":"名词解释|简答|论述","term":"概念名","prompt":"题目要求"}]. 只返回 JSON，不要其他内容。';
+
+    showToast('🤖 AI 出题中…', 'info');
+    try {
+      var aiRaw = (await callDeepSeek('你是' + schoolObj.full + '社会学考研命题专家。', promptData)).trim();
+      // Extract JSON
+      var jsonStart = aiRaw.indexOf('[');
+      var jsonEnd = aiRaw.lastIndexOf(']');
+      if (jsonStart === -1 || jsonEnd === -1) throw new Error('AI 返回格式错误');
+      mockExamState.questions = JSON.parse(aiRaw.substring(jsonStart, jsonEnd + 1));
+    } catch(e) {
+      showToast('AI 出题失败，使用默认题：' + e.message, 'error');
+      // Fallback: simple questions from selected concepts
+      mockExamState.questions = selected.map(function(c, i) {
+        return { term: c.term, type: types[i % types.length], prompt: '请解释' + c.term + '的定义、核心要点和理论意义。' };
+      });
+    }
+  }
+
+  // Hide welcome, show exam
+  document.getElementById('mockWelcome').style.display = 'none';
+  document.getElementById('mockExamScore').style.display = 'none';
+  var session = document.getElementById('mockExamSession');
+  session.classList.add('active');
+  renderMockExamQuestions();
+  startMockExamTimer();
+}
+
+function renderMockExamQuestions() {
+  var container = document.getElementById('mockExamQuestions');
+  container.innerHTML = mockExamState.questions.map(function(q, i) {
+    return '<div class="exam-q-card">' +
+      '<div class="eq-header"><span class="eq-num">第 ' + (i + 1) + ' 题</span><span class="eq-type">' + escHtml(q.type) + '</span></div>' +
+      '<div class="eq-term">' + escHtml(q.term) + '</div>' +
+      '<p style="font-size:13px;color:var(--lead);margin-bottom:12px">' + escHtml(q.prompt || '') + '</p>' +
+      '<textarea placeholder="在此作答…" aria-label="第' + (i + 1) + '题作答区" oninput="mockExamState.questions[' + i + '].answer=this.value" style="min-height:80px;width:100%;box-sizing:border-box"></textarea>' +
+    '</div>';
+  }).join('');
+}
+
+function startMockExamTimer() {
+  mockExamState.timeLeft = mockExamState.timeLimit;
+  updateMockTimer();
+  clearInterval(mockExamState.timerId);
+  mockExamState.timerId = setInterval(function() {
+    mockExamState.timeLeft--;
+    updateMockTimer();
+    if (mockExamState.timeLeft <= 0) { submitMockExam(); }
+  }, 1000);
+}
+
+function updateMockTimer() {
+  var mins = Math.floor(mockExamState.timeLeft / 60);
+  var secs = mockExamState.timeLeft % 60;
+  var clock = document.getElementById('mockExamClock');
+  var bar = document.getElementById('mockExamTimerBar');
+  var timerDiv = document.getElementById('mockExamTimer');
+  if (clock) clock.textContent = String(mins).padStart(2, '0') + ':' + String(secs).padStart(2, '0');
+  if (bar) bar.style.width = (mockExamState.timeLeft / mockExamState.timeLimit * 100) + '%';
+  if (timerDiv && mockExamState.timeLeft < 300) timerDiv.classList.add('warning');
+}
+
+async function submitMockExam() {
+  clearInterval(mockExamState.timerId);
+  var answered = mockExamState.questions.filter(function(q) { return q.answer && q.answer.trim(); }).length;
+  if (!answered) { showToast('请至少作答一道题再交卷', 'warn'); startMockExamTimer(); return; }
+
+  document.getElementById('mockExamSession').classList.remove('active');
+  var scoreDiv = document.getElementById('mockExamScore');
+  scoreDiv.style.display = '';
+  scoreDiv.innerHTML = '<div style="text-align:center;padding:40px 0"><p style="font-size:16px;font-weight:700;margin-bottom:8px">🤖 AI 批改中…</p><p style="font-size:13px;color:var(--lead)">正在调用 DeepSeek 进行四维评分</p></div>';
+
+  try {
+    var qas = mockExamState.questions.map(function(q, i) {
+      return '第' + (i + 1) + '题（' + q.type + '）：' + q.term + '\n题目要求：' + (q.prompt || '请作答') + '\n考生答案：' + (q.answer || '未作答');
+    }).join('\n\n');
+
+    var schoolName = (schoolsData.schools.find(function(s) { return s.id === mockExamState.school; }) || {}).full || '中国人民大学';
+    var raw = await callDeepSeek(
+      '你是' + schoolName + '社会学考研阅卷老师。请从以下四个维度批改：1.概念准确性 2.理论深度 3.逻辑结构 4.例证恰当性。请返回 JSON：{"score":总百分制分数,"dimensions":[{"name":"维度名","score":分,"comment":"评语"}],"perQuestion":[{"strengths":"优点","weaknesses":"不足"}],"overall":"总评","strongDims":["强项"],"weakDims":["弱项"]}。只返回JSON。',
+      qas
+    );
+    var jsonStart = raw.indexOf('{');
+    var jsonEnd = raw.lastIndexOf('}');
+    var result = JSON.parse(raw.substring(jsonStart, jsonEnd + 1));
+
+    var dimColors = { '概念准确性': 'var(--bad)', '理论深度': 'var(--thr)', '逻辑结构': 'var(--eng)', '例证恰当性': 'var(--met)' };
+    var dimsHtml = (result.dimensions || []).map(function(d) {
+      var color = dimColors[d.name] || 'var(--lead)';
+      return '<div style="margin-bottom:10px"><div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:2px"><span>' + escHtml(d.name) + '</span><span style="font-weight:700;color:' + color + '">' + d.score + '/25</span></div>' +
+        '<div style="height:6px;background:var(--surface2);border-radius:3px"><div style="width:' + (d.score * 4) + '%;height:100%;background:' + color + ';border-radius:3px"></div></div>' +
+        '<div style="font-size:11px;color:var(--faint);margin-top:2px">' + escHtml(d.comment || '') + '</div></div>';
+    }).join('');
+
+    var perQHtml = (result.perQuestion || []).slice(0, 5).map(function(q, i) {
+      return '<div style="margin-bottom:8px;padding:8px;background:var(--surface2);border-radius:var(--r-xs)"><strong style="font-size:12px">第' + (i + 1) + '题</strong>' +
+        (q.strengths ? '<div style="font-size:11px;color:var(--good)">👍 ' + escHtml(q.strengths) + '</div>' : '') +
+        (q.weaknesses ? '<div style="font-size:11px;color:var(--bad)">⚠ ' + escHtml(q.weaknesses) + '</div>' : '') +
+      '</div>';
+    }).join('');
+
+    scoreDiv.innerHTML =
+      '<div class="card" style="margin-bottom:12px"><div class="card-header"><span class="ch-icon">📊</span>考试成绩</div>' +
+      '<div style="text-align:center;padding:20px 0"><div style="font-size:48px;font-weight:800;color:var(--thr)">' + result.score + '</div><div style="font-size:14px;color:var(--lead)">总分 / 100</div></div>' +
+      '<div style="max-width:400px;margin:0 auto">' + dimsHtml + '</div>' +
+      (result.overall ? '<div style="padding:12px;background:var(--surface2);border-radius:var(--r-sm);margin-top:12px;font-size:13px;line-height:1.8">' + escHtml(result.overall) + '</div>' : '') +
+      '<div style="margin-top:12px;display:flex;gap:6px;flex-wrap:wrap">' +
+        (result.strongDims || []).map(function(d) { return '<span style="font-size:11px;padding:3px 10px;border-radius:12px;background:var(--good-bg);color:var(--good);font-weight:600">💪 ' + escHtml(d) + '</span>'; }).join('') +
+        (result.weakDims || []).map(function(d) { return '<span style="font-size:11px;padding:3px 10px;border-radius:12px;background:var(--bad-bg);color:var(--bad);font-weight:600">🎯 ' + escHtml(d) + '</span>'; }).join('') +
+      '</div></div>' +
+      '<div class="card"><div class="card-header"><span class="ch-icon">📝</span>逐题反馈</div>' + perQHtml + '</div>' +
+      '<button class="btn btn-primary btn-sm" style="margin-top:12px" onclick="resetMockExam()">🔄 重新出卷</button>';
+  } catch(e) {
+    scoreDiv.innerHTML =
+      '<div class="card" style="margin-bottom:12px"><div class="card-header"><span class="ch-icon">⚠️</span>批改失败</div>' +
+      '<p style="padding:12px;color:var(--bad)">' + escHtml(e.message) + '</p>' +
+      '<button class="btn btn-primary btn-sm" style="margin:12px" onclick="resetMockExam()">🔄 重新出卷</button></div>';
+  }
+}
+
+function resetMockExam() {
+  document.getElementById('mockExamSession').classList.remove('active');
+  document.getElementById('mockExamScore').style.display = 'none';
+  document.getElementById('mockWelcome').style.display = '';
+  mockExamState.questions = [];
+  clearInterval(mockExamState.timerId);
 }
 
 // ===== Dashboard localStorage persistence =====
@@ -4160,6 +4549,27 @@ loadConcepts().then(function() {
   updateDashStats();
 });
 initResources();
+// Mock exam panel init
+loadSchoolsData().then(function() { populateSchoolSelectors(); updateSchoolInfo('auto'); });
+loadExamsData();
+loadExamPrompts();
+switchExamMode('auto');
+// Theory panel mock exam tab redirect
+document.addEventListener('click', function(e) {
+  var el = e.target;
+  while (el && el !== document.body) { if (el.classList && el.classList.contains('sub-tab') && el.dataset.sub === 'thr-exam') break; el = el.parentElement; }
+  if (!el || el === document.body || el.dataset.sub !== 'thr-exam') return;
+  setTimeout(function() {
+    var questions = document.getElementById('examQuestions');
+    if (questions && !document.getElementById('examSession').classList.contains('active')) {
+      questions.innerHTML = '<div style="text-align:center;padding:30px 0;color:var(--faint)">' +
+        '<p style="font-size:15px;margin-bottom:8px">📝 更完整的真题模拟体验</p>' +
+        '<p style="font-size:13px;margin-bottom:12px">前往独立模拟测试板块，支持 AI 自主出题 + 历年真题</p>' +
+        '<button class="btn btn-primary btn-sm" onclick="switchPanel(\'mock-exam\')">前往 📝 模拟测试</button></div>';
+    }
+  }, 100);
+});
+
 initDash();
 renderTasks();
 updateDashboardPolStats();
