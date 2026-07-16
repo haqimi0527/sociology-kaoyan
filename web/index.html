@@ -2654,7 +2654,7 @@ function renderMetCards() {
   // Show category browser when no search/filter active
   if (!search && filter === 'all' && concepts.length) {
     if (browser) browser.style.display = '';
-    grid.style.display = 'none';
+    grid.innerHTML = ''; // let renderMethodCategoryBrowser populate it
     if (empty) empty.style.display = 'none';
     renderMethodCategoryBrowser();
     return;
