@@ -1477,6 +1477,7 @@ input::placeholder, textarea::placeholder { color: var(--placeholder); }
   </div>
 
   <div class="sub-panel active" id="sub-met-concept">
+    <div class="cat-browser" id="metCatBrowser" style="margin-bottom:12px"></div>
     <div class="flash-filter">
       <select id="metCardFilter" aria-label="筛选方法概念" onchange="renderMetCards()">
         <option value="all">全部方法概念</option>
@@ -1485,7 +1486,6 @@ input::placeholder, textarea::placeholder { color: var(--placeholder); }
       <input type="text" id="metCardSearch" aria-label="搜索研究方法概念" placeholder="搜索方法概念…" style="width:180px" oninput="clearTimeout(_metSearchTimer);_metSearchTimer=setTimeout(renderMetCards,150)">
     </div>
     <div class="method-card-grid" id="metCardGrid"></div>
-    <div class="cat-browser" id="metCatBrowser"></div>
     <div class="placeholder" id="metCardEmpty" style="display:none">
       <span class="ph-icon">📭</span>
       <div class="ph-title">未找到匹配的方法概念</div>
