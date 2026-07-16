@@ -1751,6 +1751,10 @@ function switchPanel(panelId) {
 
   // Scroll to top
   document.querySelector('.main').scrollTop = 0;
+
+  // Panel-specific init
+  if (panelId === 'english' && typeof startVocabSession === 'function') setTimeout(startVocabSession, 50);
+  if (panelId === 'mock-exam') { if (typeof populateSchoolSelectors === 'function') { populateSchoolSelectors(); updateSchoolInfo('auto'); } }
 }
 
 // ===== Sub-tab Switching =====
