@@ -1,0 +1,25 @@
+{
+  "schools": [
+    {"id": "ruc", "name": "人大", "full": "中国人民大学", "level": "985"},
+    {"id": "nju", "name": "南大", "full": "南京大学", "level": "985"},
+    {"id": "pku", "name": "北大", "full": "北京大学", "level": "985"},
+    {"id": "whu", "name": "武大", "full": "武汉大学", "level": "985"},
+    {"id": "nku", "name": "南开", "full": "南开大学", "level": "985"},
+    {"id": "zju", "name": "浙大", "full": "浙江大学", "level": "985"},
+    {"id": "xju", "name": "西安交大", "full": "西安交通大学", "level": "985"},
+    {"id": "csu", "name": "中南", "full": "中南大学", "level": "985"},
+    {"id": "xmu", "name": "厦大", "full": "厦门大学", "level": "985"},
+    {"id": "muc", "name": "民大", "full": "中央民族大学", "level": "985"},
+    {"id": "lzu", "name": "兰大", "full": "兰州大学", "level": "985"},
+    {"id": "hhu", "name": "河海", "full": "河海大学", "level": "211"},
+    {"id": "ecust", "name": "华理", "full": "华东理工大学", "level": "211"},
+    {"id": "ccnu", "name": "华中师", "full": "华中师范大学", "level": "211"},
+    {"id": "sufe", "name": "上财", "full": "上海财经大学", "level": "211"}
+  ],
+  "subjects": {
+    "theory": {"name": "社会学理论", "code": "845"},
+    "method": {"name": "社会研究方法", "code": "621"},
+    "general": {"name": "通论", "code": "617"},
+    "comprehensive": {"name": "综合", "code": "720"}
+  }
+}
