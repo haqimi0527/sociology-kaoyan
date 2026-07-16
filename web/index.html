@@ -1634,6 +1634,15 @@ input::placeholder, textarea::placeholder { color: var(--placeholder); }
         </div>
         <div id="mockRealInfo" style="font-size:11px;color:var(--faint);margin:-8px 0 8px 0;padding:6px 8px;background:var(--surface2);border-radius:var(--r-xs)"></div>
         <div class="form-row">
+          <label>题型</label>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <label style="font-size:12px;cursor:pointer;display:flex;align-items:center;gap:4px"><input type="checkbox" id="mockRealMC" checked onchange="updateRealYears()"> 名词解释</label>
+            <label style="font-size:12px;cursor:pointer;display:flex;align-items:center;gap:4px"><input type="checkbox" id="mockRealSA" checked onchange="updateRealYears()"> 简答</label>
+            <label style="font-size:12px;cursor:pointer;display:flex;align-items:center;gap:4px"><input type="checkbox" id="mockRealEssay" checked onchange="updateRealYears()"> 论述</label>
+            <label style="font-size:12px;cursor:pointer;display:flex;align-items:center;gap:4px"><input type="checkbox" id="mockRealCalc" onchange="updateRealYears()"> 计算</label>
+          </div>
+        </div>
+        <div class="form-row">
           <label>时间限制</label>
           <select id="mockRealTime" aria-label="时间限制" style="width:auto">
             <option value="30">30 分钟</option>
@@ -2430,7 +2439,7 @@ function updateSchoolInfo(which) {
   if (!s) { div.innerHTML = ''; return; }
   mockExamState.school = sel.value;
   // Try to get style prompt description
-  var promptData = (typeof examPrompts !== 'undefined' && examPrompts.stylePrompts && examPrompts.stylePrompts[s.id])
+  var promptData = (examPrompts && examPrompts.stylePrompts && examPrompts.stylePrompts[s.id])
     ? examPrompts.stylePrompts[s.id].description
     : '';
   div.innerHTML = '<strong>' + s.full + '</strong> · ' + s.level + (promptData ? '<br>' + promptData.slice(0, 120) + (promptData.length > 120 ? '…' : '') : '');
@@ -2443,19 +2452,32 @@ function updateRealYears() {
   if (!selSchool || !selYear) return;
   mockExamState.school = selSchool.value;
   var schoolName = (schoolsData.schools.find(function(s) { return s.id === selSchool.value; }) || {}).name || selSchool.value;
-  var years = {};
-  examsData.forEach(function(e) { if (e.school === schoolName && !years[e.year]) years[e.year] = e; });
-  var yearList = Object.keys(years).sort(function(a,b) { return b - a; });
+
+  // Group questions by year for this school
+  var yearQuestions = {};
+  examsData.forEach(function(q) {
+    if (q.school === schoolName) {
+      if (!yearQuestions[q.year]) yearQuestions[q.year] = [];
+      yearQuestions[q.year].push(q);
+    }
+  });
+  var yearList = Object.keys(yearQuestions).sort(function(a,b) { return b - a; });
   selYear.innerHTML = yearList.length ? yearList.map(function(y) {
-    return '<option value="' + y + '">' + y + ' 年' + (years[y].totalScore ? ' (' + years[y].totalScore + '分)' : '') + '</option>';
+    var qs = yearQuestions[y];
+    var typeCount = {};
+    qs.forEach(function(q) { typeCount[q.type] = (typeCount[q.type]||0) + 1; });
+    var totalScore = qs.reduce(function(s,q) { return s + (q.score||0); }, 0);
+    return '<option value="' + y + '">' + y + ' 年 · ' + qs.length + '题 · ' + totalScore + '分</option>';
   }).join('') : '<option value="">暂无真题</option>';
   if (yearList.length) {
     mockExamState.year = parseInt(selYear.value);
-    var exam = years[selYear.value];
-    if (exam && info) {
-      var qCount = (exam.questions || []).length;
-      info.innerHTML = '<strong>' + exam.title + '</strong><br>' + qCount + ' 道题 · ' + (exam.totalScore || '?') + ' 分 · ' + (exam.duration || '?') + ' 分钟';
-    }
+    var qs = yearQuestions[selYear.value] || [];
+    var typeSummary = {};
+    qs.forEach(function(q) { typeSummary[q.type] = (typeSummary[q.type]||0) + 1; });
+    var totalScore = qs.reduce(function(s,q) { return s + (q.score||0); }, 0);
+    if (info) info.innerHTML = '<strong>' + schoolName + ' ' + selYear.value + ' 年真题</strong><br>' +
+      Object.keys(typeSummary).map(function(t) { return t + '×' + typeSummary[t]; }).join(' · ') +
+      '<br>共 ' + qs.length + ' 题 · ' + totalScore + ' 分';
   }
   if (info && !yearList.length) info.innerHTML = '该学校暂无真题数据';
 }
@@ -2470,13 +2492,19 @@ async function startMockExamPanel() {
   var schoolObj = schoolsData.schools.find(function(s) { return s.id === schoolId; }) || { name: '人大', full: '中国人民大学' };
 
   if (mode === 'real') {
-    // Real exam mode: load from exams.json
+    // Real exam mode: load questions for selected school+year from exams.json
     var year = mockExamState.year;
     var schoolName = schoolObj.name;
-    var exam = examsData.find(function(e) { return e.school === schoolName && e.year === year; });
-    if (!exam) { showToast('未找到该年份真题', 'error'); return; }
-    mockExamState.questions = exam.questions.map(function(q) { return { term: q.question, type: q.type, prompt: '请结合社会学理论作答', score: q.score || 5 }; });
-    mockExamState.timeLimit = parseInt(document.getElementById('mockRealTime')?.value || exam.duration || 180) * 60;
+    var realTypes = [];
+    if (document.getElementById('mockRealMC')?.checked) realTypes.push('名词解释');
+    if (document.getElementById('mockRealSA')?.checked) realTypes.push('简答');
+    if (document.getElementById('mockRealEssay')?.checked) realTypes.push('论述');
+    if (document.getElementById('mockRealCalc')?.checked) { realTypes.push('计算'); realTypes.push('计算题'); }
+    var questions = examsData.filter(function(q) { return q.school === schoolName && q.year === year && realTypes.indexOf(q.type) !== -1; });
+    if (!questions.length) { showToast('该年份没有所选题型的真题', 'error'); return; }
+    questions.sort(function(a,b) { return (a.number||0) - (b.number||0); });
+    mockExamState.questions = questions.map(function(q) { return { term: q.question, type: q.type, prompt: '（' + q.score + '分）请作答', score: q.score || 5 }; });
+    mockExamState.timeLimit = parseInt(document.getElementById('mockRealTime')?.value || '180') * 60;
   } else {
     // Auto mode: AI generate
     var count = parseInt(document.getElementById('mockAutoCount')?.value || '10');
@@ -2495,7 +2523,7 @@ async function startMockExamPanel() {
     var selected = pool.slice(0, count);
 
     // Build AI prompt
-    var promptData = (typeof examPrompts !== 'undefined' && examPrompts.stylePrompts && examPrompts.stylePrompts[schoolId])
+    var promptData = (examPrompts && examPrompts.stylePrompts && examPrompts.stylePrompts[schoolId])
       ? examPrompts.stylePrompts[schoolId].generatePrompt
       : '请生成一套社会学考研模拟题。';
     var conceptList = selected.map(function(c) { return c.term + '（' + (c.proponent || '') + '）'; }).join('、');
