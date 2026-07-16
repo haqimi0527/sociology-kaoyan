@@ -1582,7 +1582,7 @@ input::placeholder, textarea::placeholder { color: var(--placeholder); }
       社会学考研 AI 导师 v2<br>
       四科全覆盖：政治 · 英语一 · 社会学理论 · 社会研究方法<br>
       纯前端单页应用，GitHub Pages / Gitee Pages 部署<br>
-      AI 引擎：DeepSeek API（用户自备 Key）<br>
+      AI 引擎：DeepSeek API（内置免费 Key，无需配置）<br>
       知识库：200万+字可检索教材文本
     </p>
   </div>
@@ -2829,10 +2829,14 @@ var DEFAULT_API_KEY = 'sk-abc773d66c684737aaa61ae612adb9d6';
 
 window.loadApiKey = function() {
   var raw = localStorage.getItem(LS_APIKEY);
-  if (!raw) return;
+  var keyEl = document.getElementById('apiKeyShell');
+  if (!raw) {
+    // Pre-fill with default built-in key so users don't need to configure anything
+    if (keyEl && typeof DEFAULT_API_KEY !== 'undefined') keyEl.value = DEFAULT_API_KEY;
+    return;
+  }
   try {
     var data = JSON.parse(raw);
-    var keyEl = document.getElementById('apiKeyShell');
     var modelEl = document.getElementById('apiModelShell');
     if (keyEl && data.key) keyEl.value = data.key;
     if (modelEl && data.model) modelEl.value = data.model;
