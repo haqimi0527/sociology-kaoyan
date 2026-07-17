@@ -4750,11 +4750,11 @@ async function loadConceptExtras() {
     if (resp.ok) {
       var data = await resp.json();
       data.forEach(function(item) {
-        if (item.concept && item.definitions && item.definitions.length) {
+        if (item.concept) {  // 无定义文本的条目也收：真题年份本身就是增强信息（156/208条只有年份）
           var key = item.concept.trim();
           if (!conceptExtras[key]) conceptExtras[key] = {years: [], versions: []};
           if (item.year) conceptExtras[key].years.push(item.year);
-          conceptExtras[key].versions = conceptExtras[key].versions.concat(item.definitions);
+          conceptExtras[key].versions = conceptExtras[key].versions.concat(item.definitions || []);
         }
       });
     }
