@@ -3793,7 +3793,7 @@ var metQuestionsLoaded = false;
 async function loadMetQuestions() {
   if (metQuestionsLoaded) return;
   try {
-    var resp = await fetch('data/methods-questions.json?v=1');
+    var resp = await fetch('data/methods-questions.json?v=2');
     if (resp.ok) { metQuestionsData = await resp.json(); metQuestionsLoaded = true; }
   } catch(e) {}
 }
