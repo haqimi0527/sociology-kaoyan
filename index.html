@@ -1799,7 +1799,7 @@ let conceptIndex = {};
 async function loadConcepts() {
   if (concepts.length) return;
   try {
-    const resp = await fetch('data/concepts.json?v=2');
+    const resp = await fetch('data/concepts.json?v=3');
     if (!resp.ok) throw new Error('HTTP ' + resp.status);
     concepts = await resp.json();
     concepts.forEach(c => { if (c.id) { conceptIndex[c.id] = c; } else { console.warn('概念缺少 id:', c.term); } });
@@ -2390,7 +2390,7 @@ var mockExamState = { mode: 'auto', school: 'ruc', year: 2025, questions: [], ti
 async function loadExamPrompts() {
   if (examPrompts) return;
   try {
-    var resp = await fetch('data/exam-prompts.json?v=2');
+    var resp = await fetch('data/exam-prompts.json?v=3');
     examPrompts = await resp.json();
   } catch(e) { console.warn('exam-prompts.json 加载失败:', e.message); }
 }
@@ -2398,7 +2398,7 @@ async function loadExamPrompts() {
 async function loadSchoolsData() {
   if (schoolsData.schools.length) return;
   try {
-    var resp = await fetch('data/schools.json?v=2');
+    var resp = await fetch('data/schools.json?v=3');
     schoolsData = await resp.json();
   } catch(e) { console.warn('schools.json 加载失败:', e.message); }
 }
@@ -2406,7 +2406,7 @@ async function loadSchoolsData() {
 async function loadExamsData() {
   if (examsData.length) return;
   try {
-    var resp = await fetch('data/exams.json?v=5');
+    var resp = await fetch('data/exams.json?v=6');
     examsData = await resp.json();
   } catch(e) { console.warn('exams.json 加载失败:', e.message); }
 }
@@ -2449,6 +2449,13 @@ function updateSchoolInfo(which) {
   div.innerHTML = '<strong>' + s.full + '</strong> · ' + s.level + (promptData ? '<br>' + promptData.slice(0, 120) + (promptData.length > 120 ? '…' : '') : '');
 }
 
+function getDefaultScore(q) {
+  // 有明确分值直接返回，否则按题型给默认分
+  if (q.score != null) return q.score;
+  var map = { '名词解释':5, '简答':10, '论述':20, '计算':10, '单选':2, '多选':2, '判断':2, '选择':2, '填空':2, '分析':10, '辨析':10, '其他':5 };
+  return map[q.type] || 5;
+}
+
 function updateRealYears() {
   var selSchool = document.getElementById('mockRealSchool');
   var selYear = document.getElementById('mockRealYear');
@@ -2470,7 +2477,7 @@ function updateRealYears() {
     var qs = yearQuestions[y];
     var typeCount = {};
     qs.forEach(function(q) { typeCount[q.type] = (typeCount[q.type]||0) + 1; });
-    var totalScore = qs.reduce(function(s,q) { return s + (q.score||0); }, 0);
+    var totalScore = qs.reduce(function(s,q) { return s + getDefaultScore(q); }, 0);
     return '<option value="' + y + '">' + y + ' 年 · ' + qs.length + '题 · ' + totalScore + '分</option>';
   }).join('') : '<option value="">暂无真题</option>';
   if (yearList.length) {
@@ -2478,7 +2485,7 @@ function updateRealYears() {
     var qs = yearQuestions[selYear.value] || [];
     var typeSummary = {};
     qs.forEach(function(q) { typeSummary[q.type] = (typeSummary[q.type]||0) + 1; });
-    var totalScore = qs.reduce(function(s,q) { return s + (q.score||0); }, 0);
+    var totalScore = qs.reduce(function(s,q) { return s + getDefaultScore(q); }, 0);
     if (info) info.innerHTML = '<strong>' + schoolName + ' ' + selYear.value + ' 年真题</strong><br>' +
       Object.keys(typeSummary).map(function(t) { return t + '×' + typeSummary[t]; }).join(' · ') +
       '<br>共 ' + qs.length + ' 题 · ' + totalScore + ' 分';
@@ -3832,11 +3839,20 @@ window.reviewEngEssay = async function() {
 // ===== Politics Quiz Data & Logic =====
 var LS_POL_WRONG = 'socio_pol_wrong_v1';
 var LS_POL_ESSAY = 'socio_pol_essay_v1';
+var polQuestionsLoaded = false;
+var polQuestions = [];
 
-var polQuestions = [
-  { id:'p1', module:'马原', type:'单选',
-    stem:'马克思主义哲学认为，世界的统一性在于它的',
-    options:['客观实在性','物质性','运动性','可知性'],
+async function loadPolData() {
+  if (polQuestionsLoaded) return;
+  try {
+    var resp = await fetch('data/politics.json?v=3');
+    if (resp.ok) { var data = await resp.json(); if (Array.isArray(data) && data.length > 0) { polQuestions = data; polQuestionsLoaded = true; } }
+  } catch(e) { /* keep fallback */ }
+  if (!polQuestions.length) {
+    polQuestions = [
+      { id:'p1', module:'马原', type:'单选',
+        stem:'马克思主义哲学认为，世界的统一性在于它的',
+        options:['客观实在性','物质性','运动性','可知性'],
     answer:1, explanation:'辩证唯物主义认为，世界是物质的，世界的真正统一性在于它的物质性。' },
   { id:'p2', module:'马原', type:'单选',
     stem:'"观念的东西不外是移入人的头脑并在人的头脑中改造过的物质的东西而已。"这一观点属于',
@@ -3914,7 +3930,9 @@ var polQuestions = [
     stem:'道德最突出的社会功能是',
     options:['认识功能','调节功能','教育功能','评价功能'],
     answer:1, explanation:'道德的调节功能是最突出、最重要的社会功能。' }
-];
+    ];
+  }
+}
 
 var polEssayItems = [
   { id:'e1', module:'马原',
@@ -3990,7 +4008,8 @@ function savePolWrong() {
   try { localStorage.setItem(LS_POL_WRONG, JSON.stringify(polWrongState)); } catch(e) {}
 }
 
-function renderPolQuiz(module) {
+async function renderPolQuiz(module) {
+  await loadPolData();
   loadPolWrong();
   polQuizModule = module || 'all';
   var list = document.getElementById('polQuizList');
@@ -4289,8 +4308,19 @@ var LS_ENG_VOCAB = 'socio_eng_vocab_v1';
 var engVocabState = {};
 var engVocabSession = { queue: [], idx: 0 };
 
-var engVocabWords = [
-  { word:'undermine', phonetic:'/ˌʌndərˈmaɪn/', meaning:'v. 削弱；逐渐破坏', example:'This could undermine years of hard work.', exampleCn:'这可能会破坏多年的辛勤工作。' },
+var engVocabWords = [];
+var engVocabLoaded = false;
+
+async function loadEngVocabData() {
+  if (engVocabLoaded) return;
+  try {
+    var resp = await fetch('data/english-vocab.json?v=3');
+    if (resp.ok) { engVocabWords = await resp.json(); engVocabLoaded = true; }
+  } catch(e) { /* keep fallback */ }
+  if (!engVocabWords.length) {
+    // Fallback: minimal curated word list
+    engVocabWords = [
+      { word:'undermine', phonetic:'/ˌʌndərˈmaɪn/', meaning:'v. 削弱；逐渐破坏', example:'This could undermine years of hard work.', exampleCn:'这可能会破坏多年的辛勤工作。' },
   { word:'commodity', phonetic:'/kəˈmɒdəti/', meaning:'n. 商品；货物', example:'Water is a precious commodity in arid regions.', exampleCn:'在干旱地区，水是珍贵的商品。' },
   { word:'consensus', phonetic:'/kənˈsensəs/', meaning:'n. 共识；一致意见', example:'There is a growing consensus that climate change demands urgent action.', exampleCn:'越来越多的共识认为气候变化需要紧急行动。' },
   { word:'scrutiny', phonetic:'/ˈskruːtəni/', meaning:'n. 仔细审查；监督', example:'The proposal came under intense scrutiny from regulators.', exampleCn:'该提案受到监管机构的严格审查。' },
@@ -4339,8 +4369,10 @@ var engVocabWords = [
   { word:'obsolete', phonetic:'/ˈɒbsəliːt/', meaning:'adj. 过时的；废弃的', example:'The technology became obsolete within five years.', exampleCn:'该技术在五年内就过时了。' },
   { word:'substantial', phonetic:'/səbˈstænʃl/', meaning:'adj. 大量的；实质性的', example:'There has been substantial progress in poverty reduction.', exampleCn:'减贫方面取得了实质性进展。' },
   { word:'conventional', phonetic:'/kənˈvenʃənl/', meaning:'adj. 传统的；常规的', example:'Conventional wisdom is not always correct.', exampleCn:'传统智慧并不总是正确的。' },
-  { word:'persistent', phonetic:'/pəˈsɪstənt/', meaning:'adj. 持续的；坚持不懈的', example:'Persistent inequality undermines social cohesion.', exampleCn:'持续的不平等破坏社会凝聚力。' }
-];
+      { word:'persistent', phonetic:'/pəˈsɪstənt/', meaning:'adj. 持续的；坚持不懈的', example:'Persistent inequality undermines social cohesion.', exampleCn:'持续的不平等破坏社会凝聚力。' }
+    ];
+  }
+}
 
 function loadEngVocab() {
   try { engVocabState = JSON.parse(localStorage.getItem(LS_ENG_VOCAB) || '{}'); } catch(e) { engVocabState = {}; }
@@ -4350,7 +4382,8 @@ function saveEngVocab() {
   try { localStorage.setItem(LS_ENG_VOCAB, JSON.stringify(engVocabState)); } catch(e) {}
 }
 
-function startVocabSession() {
+async function startVocabSession() {
+  await loadEngVocabData();
   loadEngVocab();
   var today = new Date().toISOString().slice(0, 10);
   var due = [], newWords = [];
@@ -4369,7 +4402,8 @@ function startVocabSession() {
   _renderVocabCard();
 }
 
-function updateVocabStats() {
+async function updateVocabStats() {
+  await loadEngVocabData();
   loadEngVocab();
   var today = new Date().toISOString().slice(0, 10);
   var dueCount = 0, newCount = 0, masteredCount = 0;
@@ -4390,10 +4424,16 @@ function _renderVocabCard() {
   var w = session.queue[session.idx];
   document.getElementById('vocabProgress').textContent = (session.idx + 1) + ' / ' + session.queue.length;
   document.getElementById('vocabWord').textContent = w.word;
-  document.getElementById('vocabPhonetic').textContent = w.phonetic;
-  document.getElementById('vocabMeaning').textContent = w.meaning;
-  document.getElementById('vocabExample').textContent = w.example;
-  document.getElementById('vocabExampleCn').textContent = w.exampleCn;
+  document.getElementById('vocabPhonetic').textContent = w.phonetic || '';
+  document.getElementById('vocabMeaning').textContent = w.meaning || '';
+  document.getElementById('vocabExample').textContent = w.example || '';
+  document.getElementById('vocabExampleCn').textContent = w.exampleCn || '';
+  // Hide example section if both fields empty
+  var exEl = document.getElementById('vocabExample');
+  var exCnEl = document.getElementById('vocabExampleCn');
+  var hasExample = (w.example || w.exampleCn);
+  if (exEl) exEl.style.display = hasExample ? '' : 'none';
+  if (exCnEl) exCnEl.style.display = hasExample ? '' : 'none';
   var card = document.getElementById('vocabFlashCard');
   if (card) card.classList.remove('flipped');
   document.getElementById('vocabRateBar').style.display = '';
