@@ -1583,6 +1583,9 @@ table.tbl tr:nth-child(even) td {
         <option value="论述">论述</option>
         <option value="设计题">设计题</option>
         <option value="计算">计算</option>
+        <option value="判断">判断</option>
+        <option value="单选">单选</option>
+        <option value="多选">多选</option>
       </select>
       <span style="font-size:12px;color:var(--faint);margin-left:10px" id="metQCount"></span>
     </div>
@@ -2446,7 +2449,7 @@ async function loadSchoolsData() {
 async function loadExamsData() {
   if (examsData.length) return;
   try {
-    var resp = await fetch('data/exams.json?v=15');
+    var resp = await fetch('data/exams.json?v=16');
     examsData = await resp.json();
   } catch(e) { console.warn('exams.json 加载失败:', e.message); }
 }
@@ -3816,7 +3819,7 @@ var metQuestionsLoaded = false;
 
 async function loadMetQuestions() {
   try {
-    var resp = await fetch('data/methods-questions.json?v=15');
+    var resp = await fetch('data/methods-questions.json?v=16');
     if (resp.ok) { var data = await resp.json(); metQuestionsData = data; }
   } catch(e) {}
 }
