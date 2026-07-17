@@ -2446,7 +2446,7 @@ async function loadSchoolsData() {
 async function loadExamsData() {
   if (examsData.length) return;
   try {
-    var resp = await fetch('data/exams.json?v=9');
+    var resp = await fetch('data/exams.json?v=10');
     examsData = await resp.json();
   } catch(e) { console.warn('exams.json 加载失败:', e.message); }
 }
@@ -3816,7 +3816,7 @@ var metQuestionsLoaded = false;
 
 async function loadMetQuestions() {
   try {
-    var resp = await fetch('data/methods-questions.json?v=9');
+    var resp = await fetch('data/methods-questions.json?v=10');
     if (resp.ok) { var data = await resp.json(); metQuestionsData = data; }
   } catch(e) {}
 }
@@ -3838,13 +3838,13 @@ function renderMetQuestions() {
     list.innerHTML = qs.map(function(q, i) {
       var ansHtml = '';
       if (q.answer) {
-        ansHtml = '<div class="mq-answer" id="mqAns_' + q.id + '" style="display:none;margin-top:8px;padding:12px;background:var(--surface2);border-radius:var(--r-sm);border-left:3px solid var(--met);font-size:13px;line-height:1.8;white-space:pre-wrap;overflow-x:auto">' + stripTags(q.answer, ['pre']) + '</div>' +
+        ansHtml = '<div class="mq-answer" id="mqAns_' + q.id + '" style="display:none;margin-top:8px;padding:12px;background:var(--surface2);border-radius:var(--r-sm);border-left:3px solid var(--met);font-size:13px;line-height:1.8;white-space:pre-wrap;overflow-x:auto">' + stripTags(q.answer) + '</div>' +
           '<button class="btn btn-sm" style="margin-top:8px" onclick="var a=document.getElementById(\'mqAns_' + q.id + '\');var t=this;a.style.display=a.style.display===\'none\'?\'\':\'none\';t.textContent=a.style.display===\'none\'?\'📖 显示答案\':\'🙈 隐藏答案\'">📖 显示答案</button>';
       }
       var srcTag = q.source ? ' <span style="font-size:11px;color:var(--thr)">[' + escHtml(q.source) + ']</span>' : '';
       return '<div class="card" style="margin-bottom:10px">' +
         '<div style="display:flex;gap:8px;align-items:center;margin-bottom:6px"><span class="badge" style="background:var(--met);color:#fff;font-size:11px">' + escHtml(q.type) + '</span><span style="font-size:12px;color:var(--faint)">#' + q.number + '</span>' + srcTag + '</div>' +
-        '<div style="font-size:14px;font-weight:600;line-height:1.6;white-space:pre-wrap;overflow-x:auto">' + stripTags(q.title, ['pre']) + '</div>' +
+        '<div style="font-size:14px;font-weight:600;line-height:1.6;white-space:pre-wrap;overflow-x:auto">' + stripTags(q.title) + '</div>' +
         ansHtml +
       '</div>';
     }).join('');
