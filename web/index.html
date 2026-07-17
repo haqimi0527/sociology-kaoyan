@@ -3268,6 +3268,13 @@ function updateWeakDims() {
 var LS_APIKEY = 'socio_apikey_v1';
 var DEFAULT_API_KEY = 'sk-abc773d66c684737aaa61ae612adb9d6';
 
+// Single source of truth: user key from localStorage, fallback to built-in default
+window.getApiKey = function() {
+  var apiKey = '';
+  try { var data = JSON.parse(localStorage.getItem(LS_APIKEY) || '{}'); apiKey = data.key || ''; } catch(e) {}
+  return apiKey || DEFAULT_API_KEY;
+}
+
 window.loadApiKey = function() {
   var raw = localStorage.getItem(LS_APIKEY);
   var keyEl = document.getElementById('apiKeyShell');
@@ -3310,10 +3317,9 @@ if (apiKeyShell) apiKeyShell.addEventListener('input', saveApiKey);
 if (apiModelShell) apiModelShell.addEventListener('input', saveApiKey);
 
 // ===== DeepSeek API Client =====
-window.callDeepSeek = async function(systemPrompt, userPrompt) {
-  var raw = localStorage.getItem(LS_APIKEY);
-  var apiKey = '';
-  try { var data = JSON.parse(raw || '{}'); apiKey = data.key || ''; } catch(e) {}
+window.callDeepSeek = async function(systemPrompt, userPrompt, opts) {
+  opts = opts || {};
+  var apiKey = getApiKey();
   if (!apiKey) throw new Error('请先在设置面板填入 DeepSeek API Key');
 
   var modelEl = document.getElementById('apiModelShell');
@@ -3332,7 +3338,7 @@ window.callDeepSeek = async function(systemPrompt, userPrompt) {
         { role: 'user', content: userPrompt }
       ],
       temperature: 0.3,
-      max_tokens: 2048
+      max_tokens: opts.maxTokens || 2048
     })
   });
 
@@ -3584,25 +3590,11 @@ async function evaluateWithAI(questions, answered, maxScore, elapsed, scoreDiv) 
 
   try {
     var answers = questions.map(function(q) { return q.answer || ''; });
-    var key = localStorage.getItem('socio_apikey_v1');
-    if (!key) { aiDiv.innerHTML = '<div style="color:var(--bad)">请先在设置中填入 DeepSeek API Key</div>'; return; }
-    var apiKey = JSON.parse(key).key;
     var examData = questions.map(function(q, i) {
       return { type: q.type, term: q.term, question: q.prompt, maxScore: q.type === '名词解释' ? 5 : q.type === '简答' ? 10 : 20, reference: q.concept ? q.concept.definition : '', studentAnswer: answers[i] || '' };
     });
-    var evalPrompt = '你是社会学考研阅卷老师。请对以下学生的作答进行逐题批改。\\n\\n题目与标准答案：\\n' + JSON.stringify(examData, null, 2) + '\\n\\n请按JSON格式返回批改结果：{\"totalScore\":数字,\"maxScore\":数字,\"dimensions\":{\"accuracy\":0-10,\"depth\":0-10,\"structure\":0-10,\"examples\":0-10},\"perQuestion\":[{\"score\":数字,\"maxScore\":数字,\"comment\":\"评语\",\"strength\":\"优点\",\"weakness\":\"不足\"}],\"overall\":\"总体评价与学习建议\"}';
-    var resp = await fetch('https://api.deepseek.com/v1/chat/completions', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + apiKey },
-      body: JSON.stringify({ model: 'deepseek-chat', messages: [{ role: 'user', content: evalPrompt }], temperature: 0.3, max_tokens: 4000 })
-    });
-
-    if (!resp.ok) {
-      throw new Error('DeepSeek API ' + resp.status);
-    }
-
-    var dsResp = await resp.json();
-    var rawContent = dsResp.choices[0].message.content;
+    var evalPrompt = '请对以下学生的作答进行逐题批改。\n\n题目与标准答案：\n' + JSON.stringify(examData, null, 2) + '\n\n请按JSON格式返回批改结果：{"totalScore":数字,"maxScore":数字,"dimensions":{"accuracy":0-10,"depth":0-10,"structure":0-10,"examples":0-10},"perQuestion":[{"score":数字,"maxScore":数字,"comment":"评语","strength":"优点","weakness":"不足"}],"overall":"总体评价与学习建议"}';
+    var rawContent = await callDeepSeek('你是社会学考研阅卷老师。', evalPrompt, { maxTokens: 4000 });
     // Try to parse JSON from the response
     var aiResult;
     try {
