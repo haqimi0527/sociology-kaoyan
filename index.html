@@ -2390,7 +2390,7 @@ var mockExamState = { mode: 'auto', school: 'ruc', year: 2025, questions: [], ti
 async function loadExamPrompts() {
   if (examPrompts) return;
   try {
-    var resp = await fetch('data/exam-prompts.json');
+    var resp = await fetch('data/exam-prompts.json?v=2');
     examPrompts = await resp.json();
   } catch(e) { console.warn('exam-prompts.json 加载失败:', e.message); }
 }
@@ -2398,7 +2398,7 @@ async function loadExamPrompts() {
 async function loadSchoolsData() {
   if (schoolsData.schools.length) return;
   try {
-    var resp = await fetch('data/schools.json');
+    var resp = await fetch('data/schools.json?v=2');
     schoolsData = await resp.json();
   } catch(e) { console.warn('schools.json 加载失败:', e.message); }
 }
