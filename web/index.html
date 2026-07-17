@@ -823,17 +823,27 @@ input::placeholder, textarea::placeholder { color: var(--placeholder); }
 .quiz-card .qc-opt.wrong-opt { border-color: var(--bad); background: var(--bad-bg); }
 
 /* Data tables in questions */
-pre.data-table {
-  font-family: var(--font-mono);
+table.tbl {
+  width: 100%;
+  border-collapse: collapse;
   font-size: 12px;
-  line-height: 1.4;
-  white-space: pre;
-  overflow-x: auto;
-  background: var(--surface2);
-  border: 1px solid var(--border);
-  border-radius: var(--r-sm);
-  padding: 10px 14px;
+  line-height: 1.5;
   margin: 8px 0;
+  overflow-x: auto;
+  display: block;
+}
+table.tbl th, table.tbl td {
+  border: 1px solid var(--border);
+  padding: 4px 8px;
+  text-align: left;
+  white-space: nowrap;
+}
+table.tbl th {
+  background: var(--surface2);
+  font-weight: 700;
+}
+table.tbl tr:nth-child(even) td {
+  background: var(--surface);
 }
 .quiz-card .qc-opt .qc-opt-letter { width: 26px; height: 26px; border-radius: 50%; border: 2px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; flex-shrink: 0; color: var(--lead); background: var(--surface2); }
 .quiz-card .qc-opt.selected .qc-opt-letter { background: var(--pol); border-color: var(--pol); color: #fff; }
@@ -2436,7 +2446,7 @@ async function loadSchoolsData() {
 async function loadExamsData() {
   if (examsData.length) return;
   try {
-    var resp = await fetch('data/exams.json?v=7');
+    var resp = await fetch('data/exams.json?v=8');
     examsData = await resp.json();
   } catch(e) { console.warn('exams.json 加载失败:', e.message); }
 }
@@ -3806,7 +3816,7 @@ var metQuestionsLoaded = false;
 
 async function loadMetQuestions() {
   try {
-    var resp = await fetch('data/methods-questions.json?v=7');
+    var resp = await fetch('data/methods-questions.json?v=8');
     if (resp.ok) { var data = await resp.json(); metQuestionsData = data; }
   } catch(e) {}
 }
@@ -3844,12 +3854,15 @@ function renderMetQuestions() {
 function escapeHtml(s) { return escHtml(String(s)).replace(/\n/g, '<br>'); }
 
 function stripTags(s, allowed) {
-  // Escape all HTML, then restore allowed tags
   var escaped = escHtml(String(s));
   if (!allowed || !allowed.length) return escaped;
-  // Restore <pre>, </pre>, <pre class="...">
-  escaped = escaped.replace(/&amp;lt;pre(?: class="[^"]*")?&amp;gt;/g, '<pre class="data-table">');
-  escaped = escaped.replace(/&amp;lt;\/pre&amp;gt;/g, '</pre>');
+  // Restore table-related tags
+  var tags = ['table','thead','tbody','tr','th','td','caption','colgroup','col'];
+  tags.forEach(function(t) {
+    var re = new RegExp('&amp;lt;'+t+'(?: class="[^"]*")?&amp;gt;','g');
+    escaped = escaped.replace(re, '<'+t+' class="tbl">');
+    escaped = escaped.replace(new RegExp('&amp;lt;/'+t+'&amp;gt;','g'), '</'+t+'>');
+  });
   return escaped;
 }
 
