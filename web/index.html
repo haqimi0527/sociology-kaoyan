@@ -777,57 +777,6 @@ input::placeholder, textarea::placeholder { color: var(--placeholder); }
 @keyframes toastOut { from { opacity: 1; transform: translateX(0); } to { opacity: 0; transform: translateX(40px); } }
 @keyframes aiProgress { 0% { margin-left: 0; width: 20%; } 50% { margin-left: 40%; width: 30%; } 100% { margin-left: 80%; width: 20%; } }
 
-/* ===== Theory Compare ===== */
-.compare-layout { display: flex; gap: 0; min-height: 500px; }
-.compare-sidebar { width: 320px; min-width: 240px; flex-shrink: 0; overflow-y: auto; max-height: calc(100vh - 240px); border-right: 1px solid var(--border); padding-right: 12px; }
-.compare-sidebar .cmp-filter-row { display: flex; gap: 6px; margin-bottom: 10px; flex-wrap: wrap; }
-.compare-sidebar .cmp-filter-btn {
-  padding: 4px 10px; border: 1px solid var(--border); border-radius: 14px;
-  background: var(--surface); cursor: pointer; font-size: 11px; font-weight: 600;
-  font-family: var(--font); color: var(--lead); transition: all var(--fast) var(--ease);
-}
-.compare-sidebar .cmp-filter-btn:hover { border-color: var(--thr); color: var(--thr); }
-.compare-sidebar .cmp-filter-btn.active { background: var(--thr); color: #fff; border-color: var(--thr); }
-.cmp-list-item {
-  padding: 10px 12px; border-radius: var(--r-xs); cursor: pointer;
-  transition: background var(--fast); border-left: 3px solid transparent;
-  margin-bottom: 2px;
-}
-.cmp-list-item:hover { background: var(--thr-bg); }
-.cmp-list-item.active { background: var(--thr-bg); border-left-color: var(--thr); }
-.cmp-list-item .cmp-li-title { font-size: 13px; font-weight: 600; line-height: 1.5; margin-bottom: 2px; }
-.cmp-list-item .cmp-li-meta { font-size: 10px; color: var(--faint); display: flex; gap: 6px; flex-wrap: wrap; }
-.cmp-list-item .cmp-li-meta span { background: var(--surface2); padding: 1px 6px; border-radius: 3px; }
-.compare-detail { flex: 1; min-width: 0; padding-left: 20px; overflow-y: auto; max-height: calc(100vh - 240px); }
-.compare-detail .cmp-title { font-size: 18px; font-weight: 700; margin-bottom: 8px; line-height: 1.5; }
-.compare-detail .cmp-theorists { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 16px; }
-.compare-detail .cmp-theorists span {
-  padding: 3px 10px; border-radius: 14px; font-size: 12px; font-weight: 600;
-  background: var(--thr-bg); color: var(--thr);
-}
-.compare-detail .cmp-content { font-size: 14px; line-height: 1.9; color: var(--ink); white-space: pre-line; }
-.compare-detail .cmp-content table {
-  width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 12px;
-  background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-xs); overflow: hidden;
-}
-.compare-detail .cmp-content th {
-  background: var(--thr-bg); color: var(--thr); padding: 8px 10px; text-align: left;
-  font-weight: 700; font-size: 11px; border-bottom: 2px solid var(--thr-light);
-}
-.compare-detail .cmp-content td {
-  padding: 8px 10px; border-bottom: 1px solid var(--border-light); vertical-align: top;
-}
-.compare-detail .cmp-content td:first-child { font-weight: 600; white-space: nowrap; }
-.compare-detail .cmp-content tr:last-child td { border-bottom: none; }
-.cmp-empty { text-align: center; padding: 60px 20px; color: var(--faint); }
-.cmp-empty .cmp-empty-icon { font-size: 48px; display: block; margin-bottom: 12px; }
-
-@media (max-width: 768px) {
-  .compare-layout { flex-direction: column; }
-  .compare-sidebar { width: 100%; max-height: 300px; border-right: none; border-bottom: 1px solid var(--border); padding-right: 0; padding-bottom: 10px; margin-bottom: 14px; }
-  .compare-detail { padding-left: 0; max-height: none; }
-}
-
 /* ===== English Writing Templates ===== */
 .template-list { display: flex; flex-direction: column; gap: 10px; }
 .template-card {
@@ -1365,7 +1314,7 @@ input::placeholder, textarea::placeholder { color: var(--placeholder); }
     <button class="sub-tab thr-tab" data-sub="thr-quiz">✏️ 刷题</button>
     <button class="sub-tab thr-tab" data-sub="thr-exam">📝 模拟考</button>
     <button class="sub-tab thr-tab" data-sub="thr-resource">📚 资料库</button>
-    <button class="sub-tab thr-tab" data-sub="thr-compare">⚖️ 理论对比</button>
+	    <button class="sub-tab thr-tab" data-sub="thr-exampoints">📖 全考点</button>
   </div>
 
   <div class="sub-panel active" id="sub-thr-concept">
@@ -1507,24 +1456,6 @@ input::placeholder, textarea::placeholder { color: var(--placeholder); }
       <span class="ph-icon">📭</span>
       <div class="ph-title">该分类暂无资料</div>
       <p>上传或链接资料后将显示在此处</p>
-    </div>
-  </div>
-
-  <div class="sub-panel" id="sub-thr-compare">
-    <div class="compare-layout">
-      <div class="compare-sidebar" id="cmpSidebar">
-        <div class="cmp-filter-row" id="cmpFilterBar">
-          <button class="cmp-filter-btn active" data-theorist="all">全部</button>
-        </div>
-        <div id="cmpList"></div>
-      </div>
-      <div class="compare-detail" id="cmpDetail">
-        <div class="cmp-empty">
-          <span class="cmp-empty-icon">⚖️</span>
-          <div style="font-size:16px;font-weight:700;margin-bottom:6px">理论对比</div>
-          <p style="font-size:13px;max-width:320px;margin:0 auto">选择一个对比专题，查看马克思、涂尔干、韦伯、齐美尔等理论家在同一维度上的观点异同</p>
-        </div>
-      </div>
     </div>
   </div>
 </div><!-- /panel-theory -->
@@ -1859,7 +1790,6 @@ document.querySelectorAll('.sub-tabs').forEach(tabBar => {
     else if (subId === 'eng-vocab') startVocabSession();
     else if (subId === 'eng-read') renderReading();
     else if (subId === 'eng-trans') renderTranslation();
-    else if (subId === 'thr-compare') loadAndRenderCompare();
   });
 });
 
@@ -4714,173 +4644,6 @@ document.addEventListener('click', function(e) {
     }
   }, 100);
 });
-
-// ===== Theory Compare =====
-var theoryCompareData = [];
-var theoryCompareLoaded = false;
-var cmpCurrentFilter = 'all';
-var cmpCurrentId = null;
-
-async function loadAndRenderCompare() {
-  if (!theoryCompareLoaded) {
-    try {
-      var resp = await fetch('data/theory-compare.json?v=1');
-      if (resp.ok) { theoryCompareData = await resp.json(); theoryCompareLoaded = true; }
-    } catch(e) { /* keep empty */ }
-  }
-  if (!theoryCompareData.length) {
-    document.getElementById('cmpList').innerHTML = '<div class="cmp-empty"><span class="cmp-empty-icon">📭</span><p>理论对比数据加载失败，请确认通过 HTTP 服务器打开</p></div>';
-    return;
-  }
-  buildCompareFilter();
-  renderCompareList(cmpCurrentFilter);
-  // Auto-select first item if nothing selected
-  if (!cmpCurrentId && theoryCompareData.length) {
-    selectCompareItem(theoryCompareData[0].id);
-  }
-}
-
-function buildCompareFilter() {
-  var bar = document.getElementById('cmpFilterBar');
-  if (!bar) return;
-  var theorists = {};
-  theoryCompareData.forEach(function(item) {
-    (item.theorists || []).forEach(function(t) { if (t) theorists[t] = (theorists[t] || 0) + 1; });
-  });
-  var sorted = Object.keys(theorists).sort(function(a, b) { return theorists[b] - theorists[a]; });
-  bar.innerHTML = '<button class="cmp-filter-btn active" data-theorist="all">全部 (' + theoryCompareData.length + ')</button>' +
-    sorted.map(function(t) {
-      return '<button class="cmp-filter-btn" data-theorist="' + escHtml(t) + '">' + escHtml(t) + ' (' + theorists[t] + ')</button>';
-    }).join('');
-
-  bar.querySelectorAll('.cmp-filter-btn').forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      bar.querySelectorAll('.cmp-filter-btn').forEach(function(b) { b.classList.remove('active'); });
-      btn.classList.add('active');
-      cmpCurrentFilter = btn.dataset.theorist;
-      renderCompareList(cmpCurrentFilter);
-      // Select first in filtered list
-      var firstVisible = document.querySelector('#cmpList .cmp-list-item');
-      if (firstVisible) selectCompareItem(firstVisible.dataset.id);
-    });
-  });
-}
-
-function renderCompareList(filter) {
-  var list = document.getElementById('cmpList');
-  if (!list) return;
-
-  var data = theoryCompareData;
-  if (filter && filter !== 'all') {
-    data = data.filter(function(item) {
-      return (item.theorists || []).indexOf(filter) !== -1;
-    });
-  }
-
-  if (!data.length) {
-    list.innerHTML = '<div class="cmp-empty" style="padding:30px 0"><span class="cmp-empty-icon">📭</span><p>该理论家暂无对比条目</p></div>';
-    return;
-  }
-
-  list.innerHTML = data.map(function(item) {
-    var theoristsHtml = (item.theorists || []).length ? item.theorists.map(function(t) { return '<span>' + escHtml(t) + '</span>'; }).join('') : '';
-    return '<div class="cmp-list-item' + (cmpCurrentId === item.id ? ' active' : '') + '" data-id="' + item.id + '" onclick="selectCompareItem(\'' + item.id + '\')">' +
-      '<div class="cmp-li-title">' + escHtml(item.title) + '</div>' +
-      '<div class="cmp-li-meta">' + theoristsHtml + '<span>' + (item.content_length || 0) + ' 字</span></div>' +
-    '</div>';
-  }).join('');
-}
-
-function selectCompareItem(id) {
-  cmpCurrentId = id;
-  var item = theoryCompareData.find(function(x) { return x.id === id; });
-  if (!item) return;
-
-  document.querySelectorAll('#cmpList .cmp-list-item').forEach(function(el) {
-    el.classList.toggle('active', el.dataset.id === id);
-  });
-
-  var detail = document.getElementById('cmpDetail');
-  if (!detail) return;
-
-  var theoristsHtml = (item.theorists || []).length ?
-    '<div class="cmp-theorists">' + item.theorists.map(function(t) { return '<span>' + escHtml(t) + '</span>'; }).join('') + '</div>' : '';
-
-  var contentHtml = formatCompareContent(item.content || '');
-
-  detail.innerHTML =
-    '<div class="cmp-title">' + escHtml(item.title) + '</div>' +
-    theoristsHtml +
-    '<div class="cmp-content">' + contentHtml + '</div>';
-
-  // Scroll detail to top
-  detail.scrollTop = 0;
-}
-
-function formatCompareContent(text) {
-  if (!text) return '';
-  // Detect pipe-delimited tables and convert to HTML tables
-  var lines = text.split('\n');
-  var result = [];
-  var tableRows = [];
-  var inTable = false;
-
-  function flushTable() {
-    if (tableRows.length >= 2) {
-      var headerCells = tableRows[0];
-      var bodyRows = tableRows.slice(1);
-      // Skip separator rows like "---|---"
-      if (bodyRows.length > 0 && /^[\s|:\-—]+$/.test(bodyRows[0].map(function(c) { return c.trim(); }).join('|'))) {
-        bodyRows = bodyRows.slice(1);
-      }
-      if (bodyRows.length > 0) {
-        var html = '<table><thead><tr>';
-        headerCells.forEach(function(c) { html += '<th>' + escHtml(c.trim()) + '</th>'; });
-        html += '</tr></thead><tbody>';
-        bodyRows.forEach(function(row) {
-          html += '<tr>';
-          row.forEach(function(c) { html += '<td>' + escHtml(c.trim()) + '</td>'; });
-          html += '</tr>';
-        });
-        html += '</tbody></table>';
-        result.push(html);
-      }
-    } else if (tableRows.length === 1) {
-      result.push('<p>' + escHtml(tableRows[0].join(' | ')) + '</p>');
-    }
-    tableRows = [];
-    inTable = false;
-  }
-
-  for (var i = 0; i < lines.length; i++) {
-    var line = lines[i];
-    var isPipeLine = line.indexOf('|') !== -1 && line.trim().length > 0;
-
-    if (isPipeLine) {
-      if (!inTable) {
-        if (tableRows.length) flushTable();
-        inTable = true;
-      }
-      var cells = line.split('|');
-      if (cells.length > 1 && cells[0].trim() === '') cells.shift();
-      if (cells.length > 1 && cells[cells.length - 1].trim() === '') cells.pop();
-      tableRows.push(cells);
-    } else {
-      if (inTable) { flushTable(); }
-      if (line.trim()) {
-        // Highlight section headers like "1.xxx" or "比较社会理论"
-        if (/^(\d+[\.\、\)）]|比较社会理论|I+[\.\s]|[①②③④⑤⑥⑦⑧⑨⑩])/.test(line.trim())) {
-          result.push('<p style="font-weight:700;margin-top:14px;color:var(--thr)">' + escHtml(line) + '</p>');
-        } else {
-          result.push('<p>' + escHtml(line) + '</p>');
-        }
-      }
-    }
-  }
-  if (inTable || tableRows.length) flushTable();
-
-  return result.join('\n');
-}
 
 initDash();
 renderTasks();

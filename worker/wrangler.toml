@@ -1,0 +1,14 @@
+name = "sociology-kaoyan-proxy"
+main = "index.js"
+compatibility_date = "2026-07-01"
+
+# KV 绑定（概念数据缓存）
+# [[kv_namespaces]]
+# binding = "SOCIOLOGY_DATA"
+# id = "your-kv-namespace-id"
+
+# 环境变量
+# wrangler secret put DEEPSEEK_API_KEY
+
+# [vars]
+# DEEPSEEK_API_KEY = "sk-xxx"  # 不推荐，会进 git

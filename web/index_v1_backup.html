@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>社会学考研 · AI 导师</title>
+<style>
+/* ===== Design System ===== */
+:root {
+  --blue: #2c6fce; --blue-deep: #1a5299;
+  --ink: #1a1a18; --lead: #6b6964; --faint: #99968e;
+  --surface: #fafaf8; --card: #ffffff; --border: #e6e4dd;
+  --correct: #0d7a3e; --correct-bg: #e6f4ea;
+  --partial: #b85c00; --partial-bg: #fef3e4;
+  --wrong: #c7362b; --wrong-bg: #fce8e6;
+  --cat-1: #2c6fce; --cat-2: #1a8a6a; --cat-3: #b8700e; --cat-4: #3d6e35;
+  --cat-5: #5b4da8; --cat-6: #c2514a; --cat-7: #b85478; --cat-8: #c95d2e;
+  --r: 10px; --r-sm: 8px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #f5f4f1; --lead: #b8b5ad; --faint: #7a7770;
+    --surface: #1c1c1a; --card: #262522; --border: #3d3b36;
+    --correct-bg: #1a3c28; --partial-bg: #3d2e18; --wrong-bg: #3d1e1c;
+  }
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: var(--surface); color: var(--ink); line-height: 1.8;
+  font-size: 15px; min-height: 100vh; -webkit-font-smoothing: antialiased;
+}
+
+.app { max-width: 780px; margin: 0 auto; padding: 20px 16px 60px; }
+
+/* ===== Header ===== */
+header { padding: 28px 0 8px; display: flex; justify-content: space-between; align-items: flex-end; }
+header h1 { font-size: 22px; font-weight: 700; letter-spacing: -.01em; color: var(--ink); }
+header .subtitle { font-size: 13px; color: var(--lead); margin-top: 2px; }
+
+/* Persona selector */
+.persona-bar { display: flex; gap: 4px; background: var(--card); border: 1px solid var(--border); border-radius: var(--r); padding: 3px; margin-top: 16px; }
+.persona-btn { flex: 1; padding: 10px 8px; border: none; border-radius: 7px; background: none; cursor: pointer; font-size: 13px; font-weight: 600; font-family: inherit; color: var(--lead); transition: all .15s; text-align: center; }
+.persona-btn:hover { color: var(--ink); background: var(--surface); }
+.persona-btn.active { background: var(--blue); color: #fff; }
+.persona-btn .emoji { display: block; font-size: 18px; margin-bottom: 2px; }
+.persona-btn .label-sm { font-size: 10px; font-weight: 400; opacity: .8; }
+
+/* ===== Mode Tabs ===== */
+.tabs { display: flex; gap: 0; background: var(--card); border: 1px solid var(--border); border-radius: var(--r); overflow: hidden; margin: 16px 0; }
+.tab { flex: 1; padding: 12px; border: none; background: none; cursor: pointer; font-size: 14px; font-weight: 600; font-family: inherit; color: var(--lead); transition: all .15s; text-align: center; position: relative; }
+.tab + .tab { border-left: 1px solid var(--border); }
+.tab:hover { color: var(--ink); background: var(--surface); }
+.tab.active { color: var(--blue); background: var(--surface); }
+.tab.active::after { content: ''; position: absolute; bottom: 0; left: 20%; right: 20%; height: 2px; background: var(--blue); border-radius: 1px; }
+
+/* ===== Cards ===== */
+.card { background: var(--card); border: 1px solid var(--border); border-radius: var(--r); padding: 20px; margin-bottom: 14px; transition: box-shadow .2s; }
+.card:hover { box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+.card-title { font-size: 13px; font-weight: 700; color: var(--lead); margin-bottom: 12px; letter-spacing: .02em; display: flex; align-items: center; gap: 8px; }
+.card-title .icon { font-size: 15px; }
+
+/* ===== Stats Row ===== */
+.stats { display: flex; gap: 10px; margin-bottom: 16px; }
+.stat { flex: 1; text-align: center; padding: 16px 8px; background: var(--card); border: 1px solid var(--border); border-radius: var(--r); }
+.stat-val { font-size: 24px; font-weight: 700; color: var(--ink); font-variant-numeric: tabular-nums; }
+.stat-lbl { font-size: 11px; color: var(--lead); margin-top: 2px; font-weight: 500; }
+
+/* ===== Buttons ===== */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 10px 20px; border: none; border-radius: var(--r-sm); font-size: 14px; font-weight: 600; cursor: pointer; font-family: inherit; transition: all .15s; }
+.btn:active { transform: scale(.97); }
+.btn-primary { background: var(--blue); color: #fff; }
+.btn-primary:hover { background: var(--blue-deep); }
+.btn-primary:disabled { background: #c4c7cc; cursor: not-allowed; }
+.btn-secondary { background: var(--card); border: 1px solid var(--border); color: var(--ink); }
+.btn-secondary:hover { border-color: var(--blue); color: var(--blue); }
+.btn-ghost { background: none; color: var(--blue); padding: 8px 12px; font-size: 13px; }
+.btn-ghost:hover { text-decoration: underline; }
+.btn-sm { padding: 6px 14px; font-size: 12px; }
+
+/* Difficulty buttons */
+.diff-bar { display: flex; gap: 6px; margin-bottom: 12px; }
+.diff-btn { flex: 1; padding: 8px 4px; border: 1px solid var(--border); border-radius: var(--r-sm); background: var(--card); cursor: pointer; font-size: 12px; font-weight: 600; font-family: inherit; color: var(--lead); text-align: center; transition: all .15s; }
+.diff-btn:hover { border-color: var(--blue); }
+.diff-btn.active { background: var(--blue); color: #fff; border-color: var(--blue); }
+
+/* ===== Form Controls ===== */
+input, textarea, select { width: 100%; padding: 10px 14px; border: 1px solid var(--border); border-radius: var(--r-sm); font-size: 14px; font-family: inherit; outline: none; background: var(--card); color: var(--ink); transition: border-color .15s; }
+input:focus, textarea:focus, select:focus { border-color: var(--blue); box-shadow: 0 0 0 3px rgba(44,111,206,.1); }
+textarea { min-height: 120px; line-height: 1.8; resize: vertical; }
+input::placeholder, textarea::placeholder { color: var(--faint); }
+
+/* API row */
+.api-row { display: flex; gap: 8px; align-items: center; margin-bottom: 10px; }
+.api-row .lbl { font-size: 12px; font-weight: 600; color: var(--lead); white-space: nowrap; }
+
+/* ===== Search ===== */
+.search-wrap { position: relative; margin-bottom: 14px; }
+.search-wrap input { padding-left: 36px; }
+.search-wrap .search-icon { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); font-size: 14px; color: var(--faint); pointer-events: none; }
+.search-results { max-height: 50vh; overflow-y: auto; }
+.search-item { padding: 14px; border-bottom: 1px solid var(--border); cursor: pointer; transition: background .15s; }
+.search-item:last-child { border-bottom: none; }
+.search-item:hover { background: var(--surface); }
+.search-item .term { font-weight: 700; font-size: 15px; color: var(--ink); }
+.search-item .def { font-size: 13px; color: var(--lead); margin-top: 4px; line-height: 1.7; }
+.search-item .meta { font-size: 11px; color: var(--faint); margin-top: 4px; display: flex; gap: 12px; }
+
+/* Concept detail card */
+.concept-detail { display: none; }
+.concept-detail.show { display: block; }
+.concept-detail h3 { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
+.concept-detail .field { margin-bottom: 10px; }
+.concept-detail .field-label { font-size: 11px; font-weight: 700; color: var(--lead); text-transform: uppercase; letter-spacing: .04em; margin-bottom: 3px; }
+.concept-detail .field-value { font-size: 14px; line-height: 1.8; }
+.concept-detail .point { display: inline-block; background: var(--surface); padding: 4px 12px; border-radius: 20px; font-size: 13px; margin: 3px 4px 3px 0; }
+.concept-detail .related-tag { display: inline-block; padding: 3px 10px; border: 1px solid var(--border); border-radius: 20px; font-size: 12px; margin: 3px 4px 3px 0; cursor: pointer; transition: all .15s; color: var(--blue); }
+.concept-detail .related-tag:hover { background: var(--blue); color: #fff; border-color: var(--blue); }
+
+/* ===== Concept Graph ===== */
+.graph-wrap { position: relative; width: 100%; height: 340px; border: 1px solid var(--border); border-radius: var(--r); overflow: hidden; background: var(--surface); margin-bottom: 14px; }
+.graph-wrap canvas { display: block; cursor: grab; }
+.graph-wrap canvas:active { cursor: grabbing; }
+.graph-controls { position: absolute; bottom: 10px; right: 10px; display: flex; gap: 4px; }
+.graph-controls button { width: 28px; height: 28px; border: 1px solid var(--border); border-radius: 6px; background: var(--card); cursor: pointer; font-size: 14px; display: flex; align-items: center; justify-content: center; color: var(--lead); }
+
+/* ===== Question List ===== */
+.q-list { display: flex; flex-direction: column; gap: 10px; max-height: 55vh; overflow-y: auto; margin: 14px 0; }
+.q-item { border: 1px solid var(--border); border-radius: var(--r); padding: 14px; transition: border-color .15s; }
+.q-item:hover { border-color: var(--blue); }
+.q-item .q-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 6px; }
+.q-item .q-num { font-size: 12px; font-weight: 700; color: var(--lead); }
+.q-item .q-text { font-size: 14px; font-weight: 600; flex: 1; }
+.q-item .q-actions button { width: 24px; height: 24px; border-radius: 6px; border: 1px solid var(--border); background: var(--card); cursor: pointer; font-size: 11px; color: var(--faint); }
+.q-item .q-actions button:hover { border-color: var(--wrong); color: var(--wrong); }
+.q-item .ans-toggle { font-size: 12px; color: var(--blue); cursor: pointer; font-weight: 600; margin-top: 6px; display: inline-block; }
+.q-item .ans-content { display: none; margin-top: 8px; padding: 12px; background: var(--surface); border-radius: var(--r-sm); font-size: 14px; line-height: 1.8; white-space: pre-wrap; }
+.q-item .ans-content.show { display: block; }
+
+/* ===== Practice Card ===== */
+.practice-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--r); padding: 32px 24px; min-height: 260px; cursor: pointer; user-select: none; transition: all .3s; }
+.practice-card:hover { box-shadow: 0 2px 8px rgba(0,0,0,.08); }
+.practice-card .pc-idx { font-size: 12px; color: var(--lead); text-align: center; margin-bottom: 8px; }
+.practice-card .pc-question { font-size: 17px; line-height: 2; font-weight: 600; text-align: center; padding: 36px 16px; }
+.practice-card .pc-answer { font-size: 15px; line-height: 2; padding: 20px; margin-top: 8px; background: var(--partial-bg); border-radius: var(--r-sm); border-left: 3px solid var(--partial); display: none; white-space: pre-wrap; }
+.practice-card.show-answer .pc-answer { display: block; }
+.practice-card .pc-hint { font-size: 12px; color: var(--faint); text-align: center; margin-top: 12px; }
+.practice-card.show-answer .pc-hint { display: none; }
+
+/* Eval buttons */
+.eval-row { display: flex; gap: 8px; margin-top: 14px; }
+.eval-btn { flex: 1; padding: 12px; border: 2px solid var(--border); border-radius: var(--r-sm); background: var(--card); cursor: pointer; font-size: 13px; font-weight: 600; font-family: inherit; transition: all .15s; text-align: center; }
+.eval-btn:active { transform: scale(.97); }
+.eval-btn.forgot:hover { border-color: var(--wrong); background: var(--wrong-bg); color: var(--wrong); }
+.eval-btn.partial:hover { border-color: var(--partial); background: var(--partial-bg); color: var(--partial); }
+.eval-btn.correct:hover { border-color: var(--correct); background: var(--correct-bg); color: var(--correct); }
+
+/* Nav */
+.nav-row { display: flex; gap: 10px; margin-top: 14px; }
+.nav-row .btn { flex: 1; }
+
+/* ===== Exam Panel ===== */
+.exam-timer { font-size: 28px; font-weight: 700; font-variant-numeric: tabular-nums; text-align: center; padding: 12px; color: var(--blue); }
+.exam-timer.warning { color: var(--partial); animation: pulse 1s infinite; }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.4} }
+.exam-config { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 14px; }
+.exam-config > div { flex: 1; min-width: 100px; }
+.exam-config label { font-size: 11px; font-weight: 700; color: var(--lead); display: block; margin-bottom: 4px; }
+.exam-config select, .exam-config input { text-align: center; }
+
+/* ===== Rubric Result ===== */
+.rubric-table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13px; }
+.rubric-table th, .rubric-table td { padding: 10px 12px; text-align: left; border-bottom: 1px solid var(--border); }
+.rubric-table th { font-size: 11px; font-weight: 700; color: var(--lead); }
+.rubric-table .score-bar { display: inline-block; height: 6px; border-radius: 3px; background: var(--blue); vertical-align: middle; margin-right: 6px; }
+.rubric-table .score-bar-bg { display: inline-block; width: 80px; height: 6px; border-radius: 3px; background: var(--border); vertical-align: middle; margin-right: 6px; }
+
+/* Radar chart */
+.radar-wrap { width: 100%; max-width: 280px; margin: 0 auto; }
+.radar-wrap canvas { display: block; width: 100%; }
+
+/* ===== Toast ===== */
+.toast { position: fixed; top: 16px; right: 16px; z-index: 999; padding: 10px 18px; border-radius: var(--r-sm); font-size: 13px; font-weight: 600; animation: slideIn .25s; max-width: 300px; color: #fff; }
+.toast.info { background: var(--blue); }
+.toast.ok { background: var(--correct); }
+.toast.err { background: var(--wrong); }
+@keyframes slideIn { from { transform: translateX(100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+
+/* ===== Loading ===== */
+.loading { display: flex; align-items: center; gap: 8px; padding: 12px 0; color: var(--lead); font-size: 13px; }
+.spinner { width: 16px; height: 16px; border: 2px solid var(--border); border-top-color: var(--blue); border-radius: 50%; animation: spin .6s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ===== Settings ===== */
+.settings-toggle { cursor: pointer; font-size: 13px; color: var(--lead); padding: 6px 0; }
+.settings-panel { display: none; }
+.settings-panel.show { display: block; }
+.hint { font-size: 12px; color: var(--faint); margin-top: 6px; line-height: 1.6; }
+
+/* ===== Empty State ===== */
+.empty { text-align: center; padding: 48px 20px; color: var(--faint); }
+.empty .empty-icon { font-size: 40px; margin-bottom: 10px; }
+.empty p { font-size: 13px; line-height: 1.8; }
+
+/* ===== Tag ===== */
+.tag { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 10px; font-weight: 600; margin-left: 4px; vertical-align: middle; }
+.tag-easy { background: var(--correct-bg); color: var(--correct); }
+.tag-medium { background: var(--partial-bg); color: var(--partial); }
+.tag-hard { background: var(--wrong-bg); color: var(--wrong); }
+
+@media (max-width: 640px) {
+  .app { padding: 12px; }
+  .practice-card { padding: 20px 14px; min-height: 220px; }
+  .practice-card .pc-question { font-size: 15px; padding: 20px 8px; }
+}
+</style>
+</head>
+<body>
+<div class="app">
+
+<!-- ===== Header ===== -->
+<header>
+  <div>
+    <h1>社会学考研 · AI 导师</h1>
+    <div class="subtitle">概念学习 · 智能出题 · 逐维批改 · 模拟考场</div>
+  </div>
+</header>
+
+<!-- Persona selector -->
+<div class="persona-bar" id="personaBar">
+  <button class="persona-btn active" data-persona="professor" onclick="setPersona('professor')">
+    <span class="emoji">👨‍🏫</span>命题教授<span class="label-sm">严格·抠细节</span>
+  </button>
+  <button class="persona-btn" data-persona="senior" onclick="setPersona('senior')">
+    <span class="emoji">🧑‍🎓</span>辅导学长<span class="label-sm">耐心·讲白话</span>
+  </button>
+  <button class="persona-btn" data-persona="student" onclick="setPersona('student')">
+    <span class="emoji">🤔</span>挑剔学生<span class="label-sm">追问·费曼模式</span>
+  </button>
+</div>
+
+<!-- Mode Tabs -->
+<div class="tabs" id="tabBar">
+  <button class="tab active" data-tab="concept">📖 概念学习</button>
+  <button class="tab" data-tab="practice">✏️ 刷题</button>
+  <button class="tab" data-tab="exam">📝 模拟考</button>
+</div>
+
+<!-- ===== Panel 1: 概念学习 ===== -->
+<div id="panelConcept">
+  <div class="stats" id="conceptStats">
+    <div class="stat"><div class="stat-val" id="statConcepts">--</div><div class="stat-lbl">收录概念</div></div>
+    <div class="stat"><div class="stat-val" id="statChapters">--</div><div class="stat-lbl">覆盖章节</div></div>
+    <div class="stat"><div class="stat-val" id="statHighFreq">--</div><div class="stat-lbl">高频考点</div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">🔍</span>搜索概念</div>
+    <div class="search-wrap">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="conceptSearch" placeholder="输入概念名称、学者、学派…" oninput="searchConcepts()">
+    </div>
+    <div class="search-results" id="searchResults">
+      <div class="empty"><p>输入关键词搜索，或展开下方关系图浏览</p></div>
+    </div>
+  </div>
+
+  <!-- Concept detail -->
+  <div class="card concept-detail" id="conceptDetail">
+    <button class="btn btn-ghost btn-sm" style="margin-bottom:8px" onclick="closeConceptDetail()">← 返回搜索结果</button>
+    <div id="conceptDetailContent"></div>
+  </div>
+
+  <!-- Concept graph -->
+  <div class="card">
+    <div class="card-title"><span class="icon">🕸️</span>概念关系图</div>
+    <div class="graph-wrap" id="graphWrap">
+      <canvas id="graphCanvas"></canvas>
+      <div class="graph-controls">
+        <button onclick="zoomGraph(1.1)" title="放大">+</button>
+        <button onclick="zoomGraph(0.9)" title="缩小">−</button>
+        <button onclick="resetGraph()" title="重置">↺</button>
+      </div>
+    </div>
+    <p class="hint">拖拽移动 · 滚轮缩放 · 点击节点查看详情 · 连线代表概念间关系</p>
+  </div>
+</div>
+
+<!-- ===== Panel 2: 刷题 ===== -->
+<div id="panelPractice" style="display:none">
+  <div class="stats" id="practiceStats">
+    <div class="stat"><div class="stat-val" id="statNew">0</div><div class="stat-lbl">新题待做</div></div>
+    <div class="stat"><div class="stat-val" id="statReview">0</div><div class="stat-lbl">待复习</div></div>
+    <div class="stat"><div class="stat-val" id="statDone">0</div><div class="stat-lbl">已掌握</div></div>
+  </div>
+
+  <!-- AI Generate -->
+  <div class="card" id="cardGenerate">
+    <div class="card-title"><span class="icon">🤖</span>AI 出题</div>
+    <div class="diff-bar" id="diffSelector">
+      <button class="diff-btn active" data-diff="easy" onclick="setDifficulty('easy')">🟢 名词解释<br><span style="font-size:10px;font-weight:400">概念释义</span></button>
+      <button class="diff-btn" data-diff="medium" onclick="setDifficulty('medium')">🟡 简答题<br><span style="font-size:10px;font-weight:400">对比/分析</span></button>
+      <button class="diff-btn" data-diff="hard" onclick="setDifficulty('hard')">🔴 论述题<br><span style="font-size:10px;font-weight:400">综合论证</span></button>
+      <button class="diff-btn" data-diff="mixed" onclick="setDifficulty('mixed')">🎲 综合出卷<br><span style="font-size:10px;font-weight:400">梯度配比</span></button>
+    </div>
+    <div style="margin-bottom:10px;font-size:12px;color:var(--lead);font-weight:600">📎 指定知识范围（可选，留空则随机出题）</div>
+    <input type="text" id="topicHint" placeholder="如：马克思异化理论、韦伯科层制…" style="margin-bottom:10px">
+    <input type="text" id="questionCount" placeholder="出题数量（默认10道）" value="10" style="margin-bottom:10px;width:140px;text-align:center">
+    <button class="btn btn-primary" style="width:100%" id="btnGenerate" onclick="generateQuestions()">✨ AI 生成题目</button>
+  </div>
+
+  <!-- Generated questions -->
+  <div class="card" id="cardGenerated" style="display:none">
+    <div class="card-title"><span class="icon">📋</span>生成的题目</div>
+    <div class="q-list" id="qList"></div>
+    <button class="btn btn-primary" style="width:100%;margin-top:8px" onclick="saveToBank()">✅ 确认存入题库</button>
+  </div>
+
+  <!-- Practice area -->
+  <div id="practiceArea" style="display:none">
+    <div class="practice-card" id="flipCard" onclick="flipCard()">
+      <div class="pc-idx" id="cardIdx">1 / 1</div>
+      <div class="pc-question" id="cardQuestion"></div>
+      <div class="pc-answer" id="cardAnswer"></div>
+      <div class="pc-hint">👆 点击卡片查看答案，然后自我评估</div>
+    </div>
+
+    <div class="eval-row" id="evalRow" style="display:none">
+      <button class="eval-btn forgot" onclick="selfEval('forgot')">😰 没记住</button>
+      <button class="eval-btn partial" onclick="selfEval('partial')">🤔 部分正确</button>
+      <button class="eval-btn correct" onclick="selfEval('correct')">✅ 完全掌握</button>
+    </div>
+
+    <!-- AI grading area -->
+    <div class="card" id="cardGrading" style="display:none;margin-top:14px">
+      <div class="card-title"><span class="icon">📊</span>AI 批改结果</div>
+      <div id="gradingContent"></div>
+    </div>
+
+    <div class="card" style="display:none" id="cardTextInput">
+      <div class="card-title"><span class="icon">✍️</span>输入你的答案（提交AI批改）</div>
+      <textarea id="userAnswer" placeholder="在这里写下你的答案…&#10;&#10;提交后会从四个维度（术语/逻辑/深度/案例）打分"></textarea>
+      <button class="btn btn-primary" style="width:100%;margin-top:8px" id="btnGrade" onclick="submitForGrading()">📊 提交AI批改</button>
+    </div>
+
+    <div class="nav-row">
+      <button class="btn btn-secondary" onclick="prevCard()">⬅ 上一题</button>
+      <button class="btn btn-secondary" onclick="nextCard()">下一题 ➡</button>
+    </div>
+  </div>
+
+  <!-- Empty state -->
+  <div id="practiceEmpty">
+    <div class="card"><div class="empty">
+      <div class="empty-icon">📭</div>
+      <p>题库为空<br>用 AI 生成一些题目开始练习吧</p>
+    </div></div>
+  </div>
+</div>
+
+<!-- ===== Panel 3: 模拟考 ===== -->
+<div id="panelExam" style="display:none">
+  <!-- Exam setup -->
+  <div class="card" id="cardExamSetup">
+    <div class="card-title"><span class="icon">⚙️</span>模拟考设置</div>
+    <div class="exam-config">
+      <div><label>题型</label><select id="examType"><option value="mixed">综合（名词解释+简答+论述）</option><option value="full">全论述（深度模拟）</option></select></div>
+      <div><label>题量</label><input type="number" id="examCount" value="8" min="3" max="20"></div>
+      <div><label>时长（分钟）</label><input type="number" id="examDuration" value="120" min="30" max="300"></div>
+    </div>
+    <button class="btn btn-primary" style="width:100%" onclick="startExam()">🚀 开始模拟考</button>
+  </div>
+
+  <!-- Exam in progress -->
+  <div id="examInProgress" style="display:none">
+    <div class="card" style="text-align:center">
+      <div class="exam-timer" id="examTimer">120:00</div>
+      <div style="font-size:12px;color:var(--lead)">剩余时间</div>
+    </div>
+    <div id="examQuestions"></div>
+    <button class="btn btn-primary" style="width:100%;margin-top:14px" onclick="submitExam()">📤 交卷</button>
+  </div>
+
+  <!-- Exam results -->
+  <div class="card" id="examResults" style="display:none">
+    <div class="card-title"><span class="icon">📊</span>考试成绩</div>
+    <div id="examResultsContent"></div>
+  </div>
+</div>
+
+<!-- Settings -->
+<div style="margin-top:24px;padding-top:16px;border-top:1px solid var(--border)">
+  <div class="settings-toggle" onclick="toggleSettings()">⚙️ 设置</div>
+  <div class="settings-panel card" id="settingsPanel">
+    <div class="api-row"><span class="lbl">API Key</span><input type="password" id="apiKey" placeholder="sk-... DeepSeek API Key"></div>
+    <p class="hint"><a href="https://platform.deepseek.com/api_keys" target="_blank"><strong>点这里免费获取 Key</strong></a>（30秒注册，¥1/百万token，够用好几个月）。<br>Key 仅存你本地浏览器，不上传服务器。</p>
+    <div class="api-row"><span class="lbl">模型</span><input type="text" id="apiModel" value="deepseek-chat" style="width:140px"></div>
+    <button class="btn btn-secondary btn-sm" style="margin-top:8px" onclick="clearAllData()">🗑️ 清除本地数据</button>
+  </div>
+</div>
+
+</div><!-- /app -->
+
+<script>
+// ========== State ==========
+let concepts = [];
+let conceptIndex = {}; // id -> concept
+let persona = 'professor';
+let currentTab = 'concept';
+let currentDifficulty = 'easy';
+let currentQueue = [];
+let currentIdx = 0;
+let cardFlipped = false;
+
+// localStorage keys
+const LS_BANK = 'socio_bank';
+const LS_STATE = 'socio_study_state';
+const LS_SETTINGS = 'socio_settings';
+
+let bank = JSON.parse(localStorage.getItem(LS_BANK) || '[]');
+let settings = JSON.parse(localStorage.getItem(LS_SETTINGS) || '{}');
+
+document.getElementById('workerUrl').value = settings.workerUrl || '';
+document.getElementById('apiKey').value = settings.apiKey || '';
+document.getElementById('apiModel').value = settings.apiModel || 'deepseek-chat';
+
+// ========== Persona ==========
+function setPersona(p) {
+  persona = p;
+  document.querySelectorAll('.persona-btn').forEach(b => b.classList.remove('active'));
+  document.querySelector(`[data-persona="${p}"]`).classList.add('active');
+}
+
+// ========== Tab switching ==========
+document.getElementById('tabBar').addEventListener('click', e => {
+  if (!e.target.classList.contains('tab')) return;
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  e.target.classList.add('active');
+  currentTab = e.target.dataset.tab;
+  document.getElementById('panelConcept').style.display = currentTab === 'concept' ? '' : 'none';
+  document.getElementById('panelPractice').style.display = currentTab === 'practice' ? '' : 'none';
+  document.getElementById('panelExam').style.display = currentTab === 'exam' ? '' : 'none';
+  if (currentTab === 'concept') resizeGraph();
+  if (currentTab === 'practice') refreshPractice();
+});
+
+// ========== Settings ==========
+function toggleSettings() {
+  document.getElementById('settingsPanel').classList.toggle('show');
+}
+document.getElementById('workerUrl').addEventListener('change', function() { settings.workerUrl = this.value; saveSettings(); });
+document.getElementById('apiKey').addEventListener('change', function() { settings.apiKey = this.value; saveSettings(); });
+document.getElementById('apiModel').addEventListener('change', function() { settings.apiModel = this.value; saveSettings(); });
+function saveSettings() { localStorage.setItem(LS_SETTINGS, JSON.stringify(settings)); }
+
+function clearAllData() {
+  if (confirm('确定清除所有本地数据（题库、学习进度）？此操作不可恢复。')) {
+    localStorage.removeItem(LS_BANK);
+    localStorage.removeItem(LS_STATE);
+    bank = [];
+    refreshPractice();
+    toast('本地数据已清除', 'info');
+  }
+}
+
+// ========== Toast ==========
+function toast(msg, type) {
+  const el = document.createElement('div');
+  el.className = 'toast ' + (type || 'info');
+  el.textContent = msg;
+  document.body.appendChild(el);
+  setTimeout(() => el.remove(), 2200);
+}
+
+// ========== Concept Search ==========
+function searchConcepts() {
+  const q = document.getElementById('conceptSearch').value.trim().toLowerCase();
+  const container = document.getElementById('searchResults');
+  const detail = document.getElementById('conceptDetail');
+
+  if (!q) {
+    container.innerHTML = '<div class="empty"><p>输入关键词搜索，或展开下方关系图浏览</p></div>';
+    detail.classList.remove('show');
+    return;
+  }
+
+  if (!concepts.length) {
+    container.innerHTML = '<div class="empty"><p>概念词典加载中…</p></div>';
+    return;
+  }
+
+  const results = concepts.filter(c =>
+    c.term.toLowerCase().includes(q) ||
+    (c.proponent && c.proponent.toLowerCase().includes(q)) ||
+    (c.school && c.school.toLowerCase().includes(q)) ||
+    c.core_points.some(p => p.toLowerCase().includes(q)) ||
+    (c.chapter && c.chapter.toLowerCase().includes(q))
+  ).slice(0, 30);
+
+  if (!results.length) {
+    container.innerHTML = '<div class="empty"><p>未找到匹配的概念。试试其他关键词，如"异化""涂尔干""结构化"</p></div>';
+    detail.classList.remove('show');
+    return;
+  }
+
+  container.innerHTML = results.map(c => `
+    <div class="search-item" onclick="showConceptDetail('${c.id}')">
+      <div class="term">${escHtml(c.term)}${c.exam_frequency === 'high' ? '<span class="tag tag-hard">高频</span>' : ''}${c.exam_frequency === 'medium' ? '<span class="tag tag-medium">常考</span>' : ''}</div>
+      <div class="def">${escHtml(c.definition)}</div>
+      <div class="meta"><span>${escHtml(c.proponent || '')}</span><span>${escHtml(c.school || '')}</span><span>${escHtml(c.chapter || '')}</span></div>
+    </div>
+  `).join('');
+
+  detail.classList.remove('show');
+}
+
+function showConceptDetail(id) {
+  const c = conceptIndex[id];
+  if (!c) return;
+  document.getElementById('searchResults').innerHTML = '';
+  document.getElementById('conceptSearch').value = c.term;
+  const detail = document.getElementById('conceptDetail');
+  detail.classList.add('show');
+
+  const relationLabels = {
+    prerequisite: '前置', parallel: '并列', successor: '后继', opposes: '对立',
+    contains: '包含', applies_to: '应用于', develops_from: '继承', school_of: '学派'
+  };
+
+  document.getElementById('conceptDetailContent').innerHTML = `
+    <h3>${escHtml(c.term)}${c.exam_frequency === 'high' ? '<span class="tag tag-hard">高频</span>' : ''}${c.exam_frequency === 'medium' ? '<span class="tag tag-medium">常考</span>' : ''}</h3>
+    <div class="field"><div class="field-label">定义</div><div class="field-value">${escHtml(c.definition)}</div></div>
+    ${c.proponent ? `<div class="field"><div class="field-label">提出者</div><div class="field-value">${escHtml(c.proponent)}</div></div>` : ''}
+    ${c.school ? `<div class="field"><div class="field-label">学派</div><div class="field-value">${escHtml(c.school)}</div></div>` : ''}
+    ${c.source_text ? `<div class="field"><div class="field-label">出处</div><div class="field-value">${escHtml(c.source_text)}</div></div>` : ''}
+    <div class="field"><div class="field-label">核心要点</div><div class="field-value">${c.core_points.map(p => `<span class="point">${escHtml(p)}</span>`).join('')}</div></div>
+    ${c.textbook_ref ? `<div class="field"><div class="field-label">教材出处</div><div class="field-value">${escHtml(c.textbook_ref)}</div></div>` : ''}
+    ${c.related && c.related.length ? `<div class="field"><div class="field-label">关联概念</div><div class="field-value">${c.related.map(r => {
+      const relConcept = conceptIndex[r.id];
+      const label = relationLabels[r.relation] || r.relation;
+      return `<span class="related-tag" onclick="event.stopPropagation();showConceptDetail('${r.id}')">${relConcept ? escHtml(relConcept.term) : r.id} · ${label}</span>`;
+    }).join('')}</div></div>` : ''}
+  `;
+}
+
+function closeConceptDetail() {
+  document.getElementById('conceptDetail').classList.remove('show');
+  document.getElementById('conceptSearch').value = '';
+  document.getElementById('searchResults').innerHTML = '<div class="empty"><p>输入关键词搜索，或展开下方关系图浏览</p></div>';
+}
+
+function escHtml(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+// ========== Concept Graph (Canvas force-directed) ==========
+let graphNodes = [], graphEdges = [];
+let graphZoom = 1, graphOffsetX = 0, graphOffsetY = 0;
+let graphDragging = false, graphDragNode = null, graphDragStart = null;
+let graphAnimFrame;
+
+function initGraph() {
+  if (!concepts.length) return;
+  // Select high-frequency concepts for the graph (~60 nodes)
+  const highFreq = concepts.filter(c => c.exam_frequency === 'high' || c.exam_frequency === 'medium');
+  const selected = highFreq.length > 60 ? highFreq.slice(0, 60) : [...highFreq, ...concepts.filter(c => c.exam_frequency === 'low').slice(0, 60 - highFreq.length)];
+
+  graphNodes = selected.map(c => ({
+    id: c.id, term: c.term, x: Math.random() * 600 + 50, y: Math.random() * 280 + 30,
+    vx: 0, vy: 0, fx: null, fy: null
+  }));
+  const nodeIds = new Set(graphNodes.map(n => n.id));
+
+  graphEdges = [];
+  selected.forEach(c => {
+    if (!c.related) return;
+    c.related.forEach(r => {
+      if (nodeIds.has(r.id) && c.id < r.id) {
+        graphEdges.push({ source: c.id, target: r.id, relation: r.relation });
+      }
+    });
+  });
+
+  simulateGraph();
+}
+
+function simulateGraph() {
+  const canvas = document.getElementById('graphCanvas');
+  const wrap = document.getElementById('graphWrap');
+  canvas.width = wrap.clientWidth;
+  canvas.height = 340;
+
+  const nodeMap = {};
+  graphNodes.forEach(n => { nodeMap[n.id] = n; });
+
+  // Simple force simulation
+  for (let iter = 0; iter < 50; iter++) {
+    // Repulsion
+    for (let i = 0; i < graphNodes.length; i++) {
+      for (let j = i + 1; j < graphNodes.length; j++) {
+        const a = graphNodes[i], b = graphNodes[j];
+        let dx = b.x - a.x, dy = b.y - a.y;
+        const dist = Math.max(Math.sqrt(dx * dx + dy * dy), 1);
+        const force = 800 / (dist * dist);
+        const fx = dx / dist * force, fy = dy / dist * force;
+        if (!a.fx) { a.vx -= fx; a.vy -= fy; }
+        if (!b.fx) { b.vx += fx; b.vy += fy; }
+      }
+    }
+    // Attraction
+    graphEdges.forEach(e => {
+      const a = nodeMap[e.source], b = nodeMap[e.target];
+      if (!a || !b) return;
+      let dx = b.x - a.x, dy = b.y - a.y;
+      const dist = Math.max(Math.sqrt(dx * dx + dy * dy), 1);
+      const force = (dist - 100) * 0.005;
+      const fx = dx / dist * force, fy = dy / dist * force;
+      if (!a.fx) { a.vx += fx; a.vy += fy; }
+      if (!b.fx) { b.vx -= fx; b.vy -= fy; }
+    });
+    // Center gravity
+    graphNodes.forEach(n => {
+      if (!n.fx) {
+        n.vx += (canvas.width / 2 - n.x) * 0.001;
+        n.vy += (canvas.height / 2 - n.y) * 0.001;
+      }
+    });
+    // Apply velocity with damping
+    graphNodes.forEach(n => {
+      if (!n.fx) {
+        n.vx *= 0.5; n.vy *= 0.5;
+        n.x += n.vx; n.y += n.vy;
+        n.x = Math.max(30, Math.min(canvas.width - 30, n.x));
+        n.y = Math.max(20, Math.min(canvas.height - 20, n.y));
+      }
+    });
+  }
+
+  drawGraph();
+}
+
+function drawGraph() {
+  const canvas = document.getElementById('graphCanvas');
+  if (!canvas.width) return;
+  const ctx = canvas.getContext('2d');
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  ctx.save();
+  ctx.translate(graphOffsetX, graphOffsetY);
+  ctx.scale(graphZoom, graphZoom);
+
+  const catColors = ['#2c6fce','#1a8a6a','#b8700e','#3d6e35','#5b4da8','#c2514a','#b85478','#c95d2e'];
+
+  // Edges
+  graphEdges.forEach(e => {
+    const s = graphNodes.find(n => n.id === e.source);
+    const t = graphNodes.find(n => n.id === e.target);
+    if (!s || !t) return;
+    ctx.beginPath();
+    ctx.moveTo(s.x, s.y);
+    ctx.lineTo(t.x, t.y);
+    ctx.strokeStyle = 'rgba(107,105,100,0.3)';
+    ctx.lineWidth = 1;
+    ctx.stroke();
+  });
+
+  // Nodes
+  graphNodes.forEach((n, i) => {
+    const isHighFreq = concepts.find(c => c.id === n.id)?.exam_frequency === 'high';
+    const r = isHighFreq ? 10 : 7;
+    const color = catColors[i % catColors.length];
+
+    ctx.beginPath();
+    ctx.arc(n.x, n.y, r, 0, Math.PI * 2);
+    ctx.fillStyle = color;
+    ctx.fill();
+
+    // Surface ring
+    ctx.beginPath();
+    ctx.arc(n.x, n.y, r + 1.5, 0, Math.PI * 2);
+    ctx.strokeStyle = '#ffffff';
+    ctx.lineWidth = 2;
+    ctx.stroke();
+
+    // Label
+    ctx.fillStyle = getComputedStyle(document.body).getPropertyValue('--ink').trim() || '#1a1a18';
+    ctx.font = `${isHighFreq ? '11px' : '10px'} system-ui, "PingFang SC", sans-serif`;
+    ctx.textAlign = 'center';
+    ctx.fillText(n.term.length > 5 ? n.term.slice(0,4)+'…' : n.term, n.x, n.y + r + 14);
+  });
+
+  ctx.restore();
+}
+
+function resizeGraph() {
+  const canvas = document.getElementById('graphCanvas');
+  const wrap = document.getElementById('graphWrap');
+  if (canvas && wrap) {
+    canvas.width = wrap.clientWidth;
+    canvas.height = 340;
+    drawGraph();
+  }
+}
+
+function zoomGraph(factor) {
+  graphZoom *= factor;
+  graphZoom = Math.max(0.3, Math.min(3, graphZoom));
+  drawGraph();
+}
+
+function resetGraph() {
+  graphZoom = 1; graphOffsetX = 0; graphOffsetY = 0;
+  graphNodes.forEach(n => { n.fx = null; n.fy = null; });
+  simulateGraph();
+}
+
+// Graph mouse events
+(function() {
+  const canvas = document.getElementById('graphCanvas');
+  canvas.addEventListener('mousedown', e => {
+    const rect = canvas.getBoundingClientRect();
+    const mx = (e.clientX - rect.left - graphOffsetX) / graphZoom;
+    const my = (e.clientY - rect.top - graphOffsetY) / graphZoom;
+    const hit = graphNodes.find(n => Math.hypot(n.x - mx, n.y - my) < 14);
+    if (hit) {
+      graphDragNode = hit;
+      hit.fx = hit.x; hit.fy = hit.y;
+    } else {
+      graphDragging = true;
+      graphDragStart = { x: e.clientX - graphOffsetX, y: e.clientY - graphOffsetY };
+    }
+  });
+  canvas.addEventListener('mousemove', e => {
+    if (graphDragNode) {
+      const rect = canvas.getBoundingClientRect();
+      graphDragNode.fx = (e.clientX - rect.left - graphOffsetX) / graphZoom;
+      graphDragNode.fy = (e.clientY - rect.top - graphOffsetY) / graphZoom;
+      drawGraph();
+    } else if (graphDragging) {
+      graphOffsetX = e.clientX - graphDragStart.x;
+      graphOffsetY = e.clientY - graphDragStart.y;
+      drawGraph();
+    }
+  });
+  canvas.addEventListener('mouseup', () => {
+    if (graphDragNode) { graphDragNode.fx = null; graphDragNode.fy = null; graphDragNode = null; }
+    graphDragging = false;
+  });
+  canvas.addEventListener('wheel', e => { e.preventDefault(); zoomGraph(e.deltaY < 0 ? 1.08 : 0.93); });
+  canvas.addEventListener('dblclick', e => {
+    const rect = canvas.getBoundingClientRect();
+    const mx = (e.clientX - rect.left - graphOffsetX) / graphZoom;
+    const my = (e.clientY - rect.top - graphOffsetY) / graphZoom;
+    const hit = graphNodes.find(n => Math.hypot(n.x - mx, n.y - my) < 14);
+    if (hit) { showConceptDetail(hit.id); document.getElementById('tabBar').querySelector('[data-tab="concept"]').click(); }
+  });
+  window.addEventListener('resize', () => { if (currentTab === 'concept') resizeGraph(); });
+})();
+
+// ========== Practice ==========
+function setDifficulty(d) {
+  currentDifficulty = d;
+  document.querySelectorAll('#diffSelector .diff-btn').forEach(b => b.classList.remove('active'));
+  document.querySelector(`#diffSelector [data-diff="${d}"]`).classList.add('active');
+}
+
+function refreshPractice() {
+  updatePracticeStats();
+  if (bank.length === 0) {
+    document.getElementById('cardGenerate').style.display = '';
+    document.getElementById('practiceEmpty').style.display = '';
+    document.getElementById('practiceArea').style.display = 'none';
+    return;
+  }
+  document.getElementById('practiceEmpty').style.display = 'none';
+  const newQs = bank.filter(q => q.status === 'new' || !q.status);
+  const reviewQs = bank.filter(q => q.status === 'forgot' || q.status === 'partial');
+
+  // Priority: review > new
+  currentQueue = [...reviewQs, ...newQs];
+  // Shuffle within same priority
+  for (let i = currentQueue.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [currentQueue[i], currentQueue[j]] = [currentQueue[j], currentQueue[i]];
+  }
+
+  if (currentQueue.length === 0) {
+    document.getElementById('cardGenerate').style.display = '';
+    document.getElementById('practiceArea').style.display = 'none';
+    return;
+  }
+
+  document.getElementById('practiceArea').style.display = '';
+  currentIdx = 0;
+  cardFlipped = false;
+  renderCard();
+}
+
+function updatePracticeStats() {
+  document.getElementById('statNew').textContent = bank.filter(q => q.status === 'new' || !q.status).length;
+  document.getElementById('statReview').textContent = bank.filter(q => q.status === 'forgot' || q.status === 'partial').length;
+  document.getElementById('statDone').textContent = bank.filter(q => q.status === 'correct').length;
+}
+
+function renderCard() {
+  if (currentQueue.length === 0) { refreshPractice(); return; }
+  const q = currentQueue[currentIdx];
+  document.getElementById('cardIdx').textContent = `${currentIdx + 1} / ${currentQueue.length}`;
+  const diffTag = q.difficulty ? `<span class="tag tag-${q.difficulty === 'hard' ? 'hard' : q.difficulty === 'medium' ? 'medium' : 'easy'}">${q.difficulty === 'hard' ? '困难' : q.difficulty === 'medium' ? '中等' : '简单'}</span>` : '';
+  document.getElementById('cardQuestion').innerHTML = diffTag + ' ' + escHtml(q.q);
+  document.getElementById('cardAnswer').textContent = q.a || '';
+  document.getElementById('flipCard').classList.remove('show-answer');
+  cardFlipped = false;
+  document.getElementById('evalRow').style.display = 'none';
+  document.getElementById('cardGrading').style.display = 'none';
+  document.getElementById('cardTextInput').style.display = '';
+  document.getElementById('userAnswer').value = '';
+}
+
+function flipCard() {
+  if (currentQueue.length === 0) return;
+  cardFlipped = !cardFlipped;
+  document.getElementById('flipCard').classList.toggle('show-answer', cardFlipped);
+  document.getElementById('evalRow').style.display = cardFlipped ? 'flex' : 'none';
+}
+
+function selfEval(level) {
+  const q = currentQueue[currentIdx];
+  const orig = bank.find(b => b.id === q.id);
+  if (orig) {
+    orig.status = level;
+    if (level === 'correct') orig.reviewedAt = Date.now();
+    saveBank();
+  }
+  updatePracticeStats();
+  currentQueue.splice(currentIdx, 1);
+  if (currentQueue.length === 0) { refreshPractice(); return; }
+  if (currentIdx >= currentQueue.length) currentIdx = 0;
+  renderCard();
+}
+
+function prevCard() {
+  if (currentQueue.length === 0) return;
+  currentIdx = (currentIdx - 1 + currentQueue.length) % currentQueue.length;
+  cardFlipped = false;
+  renderCard();
+}
+
+function nextCard() {
+  if (currentQueue.length === 0) return;
+  currentIdx = (currentIdx + 1) % currentQueue.length;
+  cardFlipped = false;
+  renderCard();
+}
+
+// Keyboard
+document.addEventListener('keydown', e => {
+  if (currentTab !== 'practice') return;
+  if (!document.getElementById('practiceArea') || document.getElementById('practiceArea').style.display === 'none') return;
+  if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); flipCard(); }
+  if (!cardFlipped) return;
+  if (e.key === '1') selfEval('forgot');
+  if (e.key === '2') selfEval('partial');
+  if (e.key === '3') selfEval('correct');
+  if (e.key === 'ArrowLeft') prevCard();
+  if (e.key === 'ArrowRight') nextCard();
+});
+
+function saveBank() { localStorage.setItem(LS_BANK, JSON.stringify(bank)); }
+
+// ========== API Helper ==========
+async function callAI(messages, maxTokens = 4096) {
+  const workerUrl = settings.workerUrl;
+  const apiKey = settings.apiKey;
+  const model = settings.apiModel || 'deepseek-chat';
+
+  let url, headers;
+
+  if (workerUrl) {
+    url = workerUrl;
+    headers = { 'Content-Type': 'application/json' };
+  } else if (apiKey) {
+    url = 'https://api.deepseek.com/chat/completions';
+    headers = { 'Content-Type': 'application/json', 'Authorization': `Bearer ${apiKey}` };
+  } else {
+    throw new Error('请先在设置中填写 Worker 地址或 API Key');
+  }
+
+  const resp = await fetch(url, {
+    method: 'POST',
+    headers,
+    body: JSON.stringify({ model, messages, temperature: 0.7, max_tokens: maxTokens })
+  });
+
+  if (!resp.ok) {
+    const err = await resp.text();
+    throw new Error(`API 错误 ${resp.status}: ${err.slice(0, 200)}`);
+  }
+
+  const data = await resp.json();
+  return data.choices[0].message.content;
+}
+
+// ========== AI Question Generation ==========
+async function generateQuestions() {
+  if (!concepts.length) { toast('概念词典未加载', 'err'); return; }
+  if (!settings.workerUrl && !settings.apiKey) { toast('请先在设置中填写 Worker 地址或 API Key', 'err'); return; }
+
+  const btn = document.getElementById('btnGenerate');
+  btn.disabled = true;
+  btn.textContent = '⏳ AI 正在出题…';
+
+  const diffConfig = {
+    easy: { label: '名词解释', prompt: '出题类型：名词解释。每道题要求解释一个核心概念的定义和要点。答案50-100字。' },
+    medium: { label: '简答题', prompt: '出题类型：简答题。40%对比辨析两个易混概念，30%用理论分析现实案例，30%核心概念简答。答案150-300字。' },
+    hard: { label: '论述题', prompt: '出题类型：论述题。40%综合论述串联多个知识点，30%深度案例分析，30%批判性思考评估理论。答案300-800字。' },
+    mixed: { label: '综合', prompt: '出题类型：综合出卷。20%名词解释+50%简答+30%论述，梯度配比。' }
+  };
+
+  const dc = diffConfig[currentDifficulty];
+  const topicHint = document.getElementById('topicHint').value.trim();
+  const count = parseInt(document.getElementById('questionCount').value) || 10;
+  const topicStr = topicHint ? `\n指定知识范围：${topicHint}。围绕该范围出题。` : '';
+
+  // Build concept context
+  const highConcepts = concepts.filter(c => c.exam_frequency === 'high').map(c => c.term).join('、');
+  const mediumConcepts = concepts.filter(c => c.exam_frequency === 'medium').slice(0, 15).map(c => c.term).join('、');
+
+  const personaPrompt = {
+    professor: '你是一位严格的考研命题教授，出的题目紧扣考纲、区分度好，答案要求精准。',
+    senior: '你是一位耐心的辅导学长，出的题目讲求理解而非背诵，答案清晰易懂。',
+    student: '你是一位挑剔的学生，你喜欢从刁钻角度出题，考察对概念的深层理解而非表面记忆。'
+  };
+
+  const prompt = `${personaPrompt[persona]}
+
+请根据以下社会学知识体系出题。
+已知高频概念：${highConcepts}
+已知常考概念：${mediumConcepts}
+${topicStr}
+
+${dc.prompt}
+题量：${count}道。
+核心规则：题目和答案需符合社会学学术规范，均匀覆盖不同主题。
+输出纯 JSON 数组：[{"q":"题目","a":"参考答案"}]，不要输出任何其他内容。`;
+
+  try {
+    const content = await callAI([{ role: 'user', content: prompt }], 8192);
+    let json = content;
+    const m = content.match(/```(?:json)?\s*([\s\S]*?)```/);
+    if (m) json = m[1];
+    const qaList = JSON.parse(json);
+    if (!Array.isArray(qaList)) throw new Error('返回格式不是数组');
+
+    // Show in list
+    document.getElementById('cardGenerated').style.display = '';
+    document.getElementById('qList').innerHTML = qaList.map((item, i) => `
+      <div class="q-item" id="genItem${i}">
+        <div class="q-header">
+          <span class="q-num">#${i + 1}</span>
+          <span class="q-text">${escHtml(item.q)}</span>
+          <div class="q-actions"><button onclick="document.getElementById('genItem${i}').remove()" title="删除">✕</button></div>
+        </div>
+        <span class="ans-toggle" onclick="toggleGenAnswer(${i})">▸ 展开答案</span>
+        <div class="ans-content" id="genAns${i}">${escHtml(item.a)}</div>
+      </div>
+    `).join('');
+
+    // Store temporarily for saving
+    window._generatedQA = qaList;
+    toast(`AI 生成了 ${qaList.length} 道题`, 'ok');
+  } catch (e) {
+    toast('生成失败：' + e.message, 'err');
+  } finally {
+    btn.disabled = false;
+    btn.textContent = '✨ AI 生成题目';
+  }
+}
+
+function toggleGenAnswer(i) {
+  const el = document.getElementById('genAns' + i);
+  const toggle = el.previousElementSibling;
+  el.classList.toggle('show');
+  toggle.textContent = el.classList.contains('show') ? '▾ 收起答案' : '▸ 展开答案';
+}
+
+function saveToBank() {
+  if (!window._generatedQA) return;
+  const newQs = window._generatedQA.map((item, i) => ({
+    id: 'q_' + Date.now() + '_' + i,
+    q: item.q, a: item.a,
+    status: 'new',
+    difficulty: currentDifficulty === 'mixed' ? (item.d || 'medium') : currentDifficulty,
+    addedAt: Date.now()
+  }));
+  bank = [...bank, ...newQs];
+  saveBank();
+  document.getElementById('cardGenerated').style.display = 'none';
+  document.getElementById('topicHint').value = '';
+  window._generatedQA = null;
+  toast(`已存入 ${newQs.length} 道题`, 'ok');
+  refreshPractice();
+}
+
+// ========== AI Grading ==========
+async function submitForGrading() {
+  const userAnswer = document.getElementById('userAnswer').value.trim();
+  if (!userAnswer) { toast('请先写下你的答案', 'err'); return; }
+  if (!settings.workerUrl && !settings.apiKey) { toast('请先在设置中填写 Worker 地址或 API Key', 'err'); return; }
+
+  const q = currentQueue[currentIdx];
+  const btn = document.getElementById('btnGrade');
+  btn.disabled = true;
+  btn.textContent = '⏳ AI 批改中…';
+
+  const prompt = `你是一位社会学考研批卷老师。请根据以下评分标准批改学生的答案。
+
+评分标准（100分）：
+- 术语准确性（30%）：核心概念定义精准，术语规范，提出者/学派归属正确
+- 逻辑严密性（30%）：论证结构清晰，因果链正确，自洽
+- 理论深度（25%）：联系理论背景，引用经典学者，跨学派对话
+- 案例运用（15%）：案例准确贴切，有现实观察
+
+题目：${q.q}
+参考答案：${q.a}
+学生答案：${userAnswer}
+
+请输出 JSON：
+{
+  "scores": {"terminology": {"score": 25, "max": 30}, "logic": {"score": 22, "max": 30}, "depth": {"score": 18, "max": 25}, "cases": {"score": 10, "max": 15}},
+  "total": 75,
+  "weak_points": [{"dimension": "术语", "detail": "具体问题", "severity": "high|medium|low"}],
+  "strengths": ["优点1"],
+  "correction_hints": ["改进建议1"]
+}
+只输出 JSON，不要其他内容。`;
+
+  try {
+    const content = await callAI([{ role: 'user', content: prompt }], 4096);
+    let json = content;
+    const m = content.match(/```(?:json)?\s*([\s\S]*?)```/);
+    if (m) json = m[1];
+    const result = JSON.parse(json);
+
+    // Show results
+    const card = document.getElementById('cardGrading');
+    card.style.display = '';
+
+    const dims = [
+      { key: 'terminology', name: '术语准确性', max: 30 },
+      { key: 'logic', name: '逻辑严密性', max: 30 },
+      { key: 'depth', name: '理论深度', max: 25 },
+      { key: 'cases', name: '案例运用', max: 15 }
+    ];
+
+    document.getElementById('gradingContent').innerHTML = `
+      <div style="text-align:center;margin-bottom:16px">
+        <div style="font-size:48px;font-weight:700;font-variant-numeric:tabular-nums;color:${result.total >= 80 ? 'var(--correct)' : result.total >= 60 ? 'var(--partial)' : 'var(--wrong)'}">${result.total}</div>
+        <div style="font-size:12px;color:var(--lead)">总分 / 100</div>
+      </div>
+      ${dims.map(d => {
+        const s = result.scores[d.key];
+        if (!s) return '';
+        const pct = s.score / d.max * 100;
+        return `<div style="margin-bottom:8px"><div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:2px"><span>${d.name}</span><span style="font-weight:600">${s.score}/${d.max}</span></div><div class="score-bar-bg"><div class="score-bar" style="width:${pct}%;background:${pct >= 80 ? 'var(--correct)' : pct >= 60 ? 'var(--partial)' : 'var(--wrong)'}"></div></div></div>`;
+      }).join('')}
+      ${result.weak_points && result.weak_points.length ? `<div style="margin-top:12px;font-size:13px"><strong>薄弱点</strong><ul style="margin-top:4px;padding-left:18px">${result.weak_points.map(w => `<li>${escHtml(w.detail)} <span class="tag tag-${w.severity === 'high' ? 'hard' : 'medium'}">${w.dimension}</span></li>`).join('')}</ul></div>` : ''}
+      ${result.correction_hints && result.correction_hints.length ? `<div style="margin-top:10px;font-size:13px"><strong>改进建议</strong><ul style="margin-top:4px;padding-left:18px">${result.correction_hints.map(h => `<li>${escHtml(h)}</li>`).join('')}</ul></div>` : ''}
+    `;
+
+    // Save grade
+    const orig = bank.find(b => b.id === q.id);
+    if (orig) { orig.gradeResult = result; orig.status = result.total >= 80 ? 'correct' : 'partial'; saveBank(); }
+
+    toast(`批改完成：${result.total}分`, result.total >= 80 ? 'ok' : 'info');
+  } catch (e) {
+    toast('批改失败：' + e.message, 'err');
+  } finally {
+    btn.disabled = false;
+    btn.textContent = '📊 提交AI批改';
+  }
+}
+
+// ========== Mock Exam ==========
+let examTimerInterval, examSecondsRemaining, examQuestions = [];
+
+async function startExam() {
+  if (!settings.workerUrl && !settings.apiKey) { toast('请先设置 Worker 地址或 API Key', 'err'); return; }
+  const count = parseInt(document.getElementById('examCount').value) || 8;
+  const duration = parseInt(document.getElementById('examDuration').value) || 120;
+
+  document.getElementById('cardExamSetup').style.display = 'none';
+  document.getElementById('examInProgress').style.display = '';
+
+  // Generate exam questions
+  const highConcepts = concepts.filter(c => c.exam_frequency === 'high').map(c => c.term).join('、');
+  const prompt = `你是一位社会学考研命题教授。请出一份完整模拟考试卷。
+题量：${count}道，包含名词解释、简答题、论述题，按考研难度梯度配比。
+已知高频考点：${highConcepts}
+输出纯 JSON 数组：[{"q":"题目","a":"参考答案"}]
+要求：题目覆盖社会学理论、概论、研究方法三大领域，区分度好。`;
+
+  try {
+    const content = await callAI([{ role: 'user', content: prompt }], 8192);
+    let json = content;
+    const m = content.match(/```(?:json)?\s*([\s\S]*?)```/);
+    if (m) json = m[1];
+    examQuestions = JSON.parse(json);
+  } catch (e) {
+    toast('出卷失败：' + e.message, 'err');
+    document.getElementById('cardExamSetup').style.display = '';
+    document.getElementById('examInProgress').style.display = 'none';
+    return;
+  }
+
+  // Render questions
+  document.getElementById('examQuestions').innerHTML = examQuestions.map((q, i) => `
+    <div class="card" style="margin-top:12px">
+      <div style="font-weight:700;margin-bottom:8px">第${i+1}题 ${q.q}</div>
+      <textarea id="examAns${i}" placeholder="在此作答…" style="min-height:${i >= examQuestions.length - 2 ? '160px' : '100px'}"></textarea>
+    </div>
+  `).join('');
+
+  // Start timer
+  examSecondsRemaining = duration * 60;
+  updateExamTimer();
+  examTimerInterval = setInterval(() => {
+    examSecondsRemaining--;
+    updateExamTimer();
+    if (examSecondsRemaining <= 0) { clearInterval(examTimerInterval); submitExam(); }
+  }, 1000);
+
+  toast(`模拟考开始！${count}道题，${duration}分钟`, 'info');
+}
+
+function updateExamTimer() {
+  const m = Math.floor(examSecondsRemaining / 60);
+  const s = examSecondsRemaining % 60;
+  const el = document.getElementById('examTimer');
+  el.textContent = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+  if (examSecondsRemaining < 300) el.classList.add('warning'); else el.classList.remove('warning');
+}
+
+async function submitExam() {
+  clearInterval(examTimerInterval);
+  document.getElementById('examInProgress').style.display = 'none';
+  document.getElementById('examResults').style.display = '';
+
+  const userAnswers = examQuestions.map((q, i) => ({
+    q: q.q, ref: q.a,
+    user: document.getElementById('examAns' + i)?.value?.trim() || '(未作答)'
+  }));
+
+  // AI grading for each question
+  document.getElementById('examResultsContent').innerHTML = '<div class="loading"><div class="spinner"></div>正在批改试卷…</div>';
+
+  let totalScore = 0;
+  const dimensionTotals = { terminology: 0, logic: 0, depth: 0, cases: 0 };
+  const results = [];
+
+  for (let i = 0; i < userAnswers.length; i++) {
+    const ua = userAnswers[i];
+    if (ua.user === '(未作答)') {
+      results.push({ ...ua, score: { total: 0 }, skipped: true });
+      continue;
+    }
+
+    const prompt = `改卷。题目：${ua.q}\n参考答案：${ua.ref}\n学生答案：${ua.user}\n
+评分（术语30%+逻辑30%+深度25%+案例15%）。输出JSON：{"scores":{"terminology":{"score":0,"max":30},"logic":{"score":0,"max":30},"depth":{"score":0,"max":25},"cases":{"score":0,"max":15}},"total":0}
+只输出JSON。`;
+
+    try {
+      const content = await callAI([{ role: 'user', content: prompt }], 2048);
+      let json = content;
+      const m = content.match(/```(?:json)?\s*([\s\S]*?)```/);
+      if (m) json = m[1];
+      const grade = JSON.parse(json);
+      results.push({ ...ua, score: grade });
+      totalScore += grade.total || 0;
+      if (grade.scores) {
+        Object.keys(dimensionTotals).forEach(k => {
+          if (grade.scores[k]) dimensionTotals[k] += grade.scores[k].score;
+        });
+      }
+    } catch (e) {
+      results.push({ ...ua, score: { total: 0 }, error: true });
+    }
+  }
+
+  const avgTotal = examQuestions.length ? Math.round(totalScore / examQuestions.length) : 0;
+
+  // Render results
+  const dims = [
+    { key: 'terminology', name: '术语', max: examQuestions.length * 30 },
+    { key: 'logic', name: '逻辑', max: examQuestions.length * 30 },
+    { key: 'depth', name: '深度', max: examQuestions.length * 25 },
+    { key: 'cases', name: '案例', max: examQuestions.length * 15 }
+  ];
+
+  document.getElementById('examResultsContent').innerHTML = `
+    <div style="text-align:center;margin-bottom:16px">
+      <div style="font-size:48px;font-weight:700">${avgTotal}</div>
+      <div style="font-size:12px;color:var(--lead)">平均分 / 100</div>
+    </div>
+    ${dims.map(d => {
+      const max = d.max || 1;
+      const pct = Math.round(dimensionTotals[d.key] / max * 100);
+      return `<div style="margin-bottom:8px"><div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:2px"><span>${d.name}</span><span style="font-weight:600">${dimensionTotals[d.key]}分</span></div><div class="score-bar-bg"><div class="score-bar" style="width:${pct}%"></div></div></div>`;
+    }).join('')}
+    <div style="margin-top:16px;font-size:13px;max-height:40vh;overflow-y:auto">
+      ${results.map((r, i) => `<div style="padding:8px 0;border-bottom:1px solid var(--border)">
+        <span style="font-weight:600">#${i+1}</span>
+        ${r.skipped ? '<span class="tag tag-hard">未作答</span>' : `<span class="tag tag-${(r.score.total||0) >= 80 ? 'easy' : (r.score.total||0) >= 60 ? 'medium' : 'hard'}">${r.score.total||0}分</span>`}
+        ${r.user.slice(0, 80)}${r.user.length > 80 ? '…' : ''}
+      </div>`).join('')}
+    </div>
+    <button class="btn btn-primary" style="width:100%;margin-top:14px" onclick="resetExam()">🔄 重新模考</button>
+  `;
+
+  toast(`批改完成！平均分 ${avgTotal}`, 'info');
+}
+
+function resetExam() {
+  document.getElementById('examResults').style.display = 'none';
+  document.getElementById('cardExamSetup').style.display = '';
+  document.getElementById('examInProgress').style.display = 'none';
+  examQuestions = [];
+}
+
+// ========== Init ==========
+async function loadConcepts() {
+  try {
+    const resp = await fetch('data/concepts.json');
+    if (!resp.ok) throw new Error('HTTP ' + resp.status);
+    concepts = await resp.json();
+    concepts.forEach(c => { conceptIndex[c.id] = c; });
+    // Stats
+    document.getElementById('statConcepts').textContent = concepts.length;
+    const chapters = new Set(concepts.map(c => c.chapter).filter(Boolean));
+    document.getElementById('statChapters').textContent = chapters.size;
+    document.getElementById('statHighFreq').textContent = concepts.filter(c => c.exam_frequency === 'high').length;
+    // Init graph
+    initGraph();
+    resizeGraph();
+  } catch (e) {
+    console.warn('概念词典加载失败:', e.message);
+    document.getElementById('statConcepts').textContent = '--';
+    document.getElementById('statChapters').textContent = '--';
+    document.getElementById('statHighFreq').textContent = '--';
+  }
+}
+
+loadConcepts();
+refreshPractice();
+</script>
+</body>
+</html>

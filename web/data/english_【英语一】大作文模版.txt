@@ -1,0 +1,3830 @@
+作文模板材料(仅供内部学员使用)
+2026
+26 考研写作清单
+大纲解读
+构思三步走
+三段详细讲解
+自带模板
+DIY 模板
+历年真题套用
+目录
+1. 备考方法论................................................................................................................... 1
+1.1大纲说明............................................................................................................... 1
+1.2题目要求............................................................................................................... 2
+1.3评分标准............................................................................................................... 8
+1.4审题构思............................................................................................................... 9
+1.4.1确定主题................................................................................................... 9
+1.4.2首段构思................................................................................................. 11
+1.4.3二三段轮廓构思..................................................................................... 13
+1.5考场提醒............................................................................................................. 14
+1.6模板说明............................................................................................................. 16
+2.内容三段论.................................................................................................................. 18
+2.1第一段................................................................................................................. 18
+2.1.1图画引入句DIY...................................................................................... 18
+2.1.2主要人物描述DIY.................................................................................. 22
+2.1.3图表引入句DIY...................................................................................... 26
+2.1.4数据描述DIY.......................................................................................... 26
+2.1.5文字段落总结DIY.................................................................................. 29
+2.1.6其他DIY.................................................................................................. 30
+2.1.7首段模板................................................................................................. 30
+2.1.8真题解读................................................................................................. 32
+2.2第二段................................................................................................................ 34
+2.2.1主题句DIY.............................................................................................. 34
+2.2.2逻辑衔接词DIY...................................................................................... 36
+2.2.3论点DIY.................................................................................................. 38
+2.2.4第二段模板............................................................................................. 48
+2.2.5真题解读................................................................................................. 49
+2.3第三段................................................................................................................ 53
+2.3.1点题句DIY............................................................................................... 53
+2.3.2行动建议句DIY....................................................................................... 53
+2.3.3升华展望句DIY....................................................................................... 54
+2.3.4第三段模板.............................................................................................. 55
+2.3.5真题解读.................................................................................................. 56
+3.模板库.......................................................................................................................... 59
+3.1图画类................................................................................................................. 59
+3.2文字类................................................................................................................. 61
+3.3图表类................................................................................................................. 63
+3.3.1动态图....................................................................................................... 63
+3.3.2静态图....................................................................................................... 66
+3.4混合类................................................................................................................. 69
+4. 真题范文精析............................................................................................................. 74
+2025........................................................................................................................74
+2024........................................................................................................................76
+2023........................................................................................................................78
+2022........................................................................................................................80
+2021........................................................................................................................82
+2020........................................................................................................................84
+2019........................................................................................................................86
+2018........................................................................................................................88
+2017........................................................................................................................90
+2016........................................................................................................................92
+2015........................................................................................................................94
+2014........................................................................................................................96
+2013........................................................................................................................98
+2012......................................................................................................................100
+2011......................................................................................................................102
+2010......................................................................................................................104
+2009......................................................................................................................106
+2008......................................................................................................................108
+2007......................................................................................................................110
+2006......................................................................................................................112
+2005......................................................................................................................114
+2004......................................................................................................................115
+2003......................................................................................................................116
+2002......................................................................................................................117
+2001......................................................................................................................118
+2000......................................................................................................................119
+1
+1. 备考方法论
+1.1大纲说明
+
+2023~2025 年关于写作部分的考试大纲如下：
+部分
+节为考生提
+供的信息
+指导语言
+考查要点
+题型
+题目
+数量
+计分
+Ⅲ写作
+A
+规定情景
+英语
+写书信、通知
+、告示、纪
+要等
+应用文写作
+(约100 词)
+1
+10
+B
+文字、图
+画、图表
+等
+英语
+写描述性、叙
+述性、说明性
+、论述性文
+章
+短文写作
+(160 -200词)
+1
+20
+
+2022 年关于写作部分的考试大纲如下：
+部分
+节为考生提
+供的信息
+指导语言
+考查要点
+题型
+题目
+数量
+计分
+Ⅲ写作
+A
+规定情景
+英语
+写私人和公务
+信函、备忘录
+、报告等
+应用文写作
+(约100 词)
+1
+10
+B
+主题句、写
+作提纲、规
+定情景、图
+、表等
+英语
+写描述性、叙
+述性、说明性
+、议论性文章
+短文写作
+(160 -200词)
+1
+20
+大作文上,2025年考纲延续了2023年的调整，明确英语一大作文需掌握图画、
+图表、文字材料三种形式。
+1 ) 图画作文：注重细节描述（人物动作、环境、标题文字）和寓意解读。
+2 ) 图表作文：重点体现数据对比、趋势分析，避免单纯罗列数字。
+3 ) 文字材料作文：从给定文本中提取观点，并展开辩证讨论（如教育公平
+的利弊）。
+2025年英语一首次出现孤立图表题（家电使用数据图表），打破了以往图画
+为主的命题模式。预计2026年仍可能延续这一趋势，甚至出现混合题型（如图画
++图表结合），本作文模板均囊括在内。
+2
+1.2题目要求
+
+来看一下2025 年英一真题
+Directions：
+Write an essay of 160-200 words based on the picture below . In your essay you
+should
+1) describe the drawing briefly,
+2) explain its intended meaning, and
+3) give your comments .
+You should write neatly on the ANSWER SHEET . (20 points)
+
+解读：
+1 ) describe the drawing briefly
+简要地描述图画，但同时需要包含所有的要点。本图表需总括性的描述一下，
+即2014-2023年全国居民每百户主要耐用消费品（空调、洗衣机、冰箱）的拥有量。
+2) explain its intended meaning
+切忌罗列数字，需挖掘图表数字背后的含义。首先是简单的描述图表数据趋
+势，变高了还是变低了，全都变高了吗？其次是各项数据的横向对比，哪个涨的
+最快，哪个涨的最慢？更进一步，还可以挖掘数据背后的社会经济含义，例如数
+据反映了中国经济发展、居民消费升级与生活质量提升。
+3) give your comments
+基于第二点的intended meaning，可挑选几个容易评论的点，例如家电拥有量
+的增加需要做到低碳节能以及环保，过度消费可能加剧碳排放；也可进一步联系
+城乡差距（农村家电普及率仍较低）和电商平台普及（网购便利性和价格优势，
+如拼多多、京东）。
+3
+A. 数据趋势：家电拥有量的增加需要做到低碳节能以及环保，推广节能家电。
+B. 横向对比：空调的拥有量很高，可能是由于最近几年的炎热天气。
+C. 社会经济含义：联系城乡差距，农村家电普及率仍较低；电商平台普及，
+网购便利性和价格优势，如拼多多、京东；制造业技术进步，生产成本下降，价
+格更亲民；人均可支配收入增加，GDP增长支撑消费能力。
+
+25真题例文见第四章真题范文精析74页
+4
+
+来看一下2024年英一真题
+Directions：
+Write an essay based on the picture and the chart below. In your essay, you should
+1) describe the picture and the chart briefly,
+2) interpret the implied meaning,and
+3) give your comments.
+Write your answer in 160-200 words on the ANSWER SHEET. (20 points)
+
+解读：
+1) describe the picture and the chart briefly
+为图画+图表形式，因此，既需描述图画细节，又需描述图表数据趋势。图
+画细节为公园环境，市民健身、文字内容；图表数据趋势为2020-2022年公园数量
+从406增至670。
+2) interpret the implied meaning
+分析数据背后的社会现象，可从个人和社会两个角度展开。
+①个人角度：大家对身体健康的重视，公园锻炼既可以强身健体、缓解压力，
+又可以改善心理健康。
+②社会角度：政府投资绿色基础设施，反映社会对健康生活、绿色生态的重
+视。
+3) give your comments
+给出自己的评论与意见，可在第二段基础上略作调整与升华，给出自己的观
+点：
+5
+A.呼吁大家养成良好的生活习惯，加强对身体健康的重视。
+B.支持绿色基础设施的建设，呼吁持续加强环境建设，将公园建设与城市可
+持续发展结合。
+
+24真题例文见第四章真题范文精析76页
+6
+
+来看一下2023 年英一真题
+Directions：
+Write an essay of 160-200 words based on the picture below . In your essay you
+should
+1) describe the picture briefly ,
+2) interpret the implied meaning ,and
+3) give your comments .
+You should write neatly on the ANSWER SHEET . (20 points)
+
+解读：
+1 ) describe the picture briefly
+简要地描述图画，但同时需要包含所有的要点。比如本图中，有人在划龙舟
++一群观众+老爷爷老奶奶的对话内容都需要简短地概括进去。如果有小标题，还
+需要包含小标题。
+2) interpret the implied meaning
+划龙舟仅仅是一项娱乐活动吗？为什么岸上有这么多人观看？为什么非要标
+注是老爷爷老奶奶？这都是为了暗示「文化传承」的重要性，这就是作者想要传
+7
+达的重点。无论是implied meaning 还是extended meaning，都是作者想要通过一
+幅图画展示出来的——传统文化传承很重要。
+因此，第二段内容大致可为：指出龙舟赛是中华传统文化的载体，增强民族
+认同感和文化自信。龙舟赛可以促进文化交流与传承，年轻人可以通过参加龙舟
+赛体验合作的乐趣，体会中华传统文化的传统价值。传统文化活动的举办也可以
+推动乡村的振兴与发展。
+3) give your comments
+基于文化传承的重要性，可从个人与社会等角度给出自己的观点和建议。
+①个人角度：呼吁年轻人主动参与传统文化活动（如学习民俗技艺、传播文
+化故事）。
+②社会角度：建议政府加大投入，多举办传统文化节庆活动，助力乡村发展。
+③未来展望：展望传统文化与现代生活的融合。
+
+23真题例文见第四章真题范文精析78页
+8
+1.3评分标准
+评分一共分五档，一般大作文拿到13 -16分已经是非常高了，平均分大概在
+9 -12 分。
+第五档
+A 节
+(9 -10分)
+B 节
+(17 -20 分)
+很好地完成了试题规定的任务：
+很好地完成了试题规定的任务;
+包含所有内容要点;
+使用丰富的语法结构和词汇;
+语言自然流畅，语法错误极少;
+有效地采用了多种衔接手法，文字连贯，层次清晰;
+格式与语域恰当、贴切。
+对目标读者产生了预期的效果。
+第四档
+A 节
+(7 -8 分)
+B节
+(13 -16 分)
+较好地完成了试题规定的任务：
+包含所有内容要点，少数要点未能有效阐述；
+使用了较丰富的语法结构和词汇;
+语言基本准确，只有在试图使用较复杂结构或较高级词汇时才有个
+别错误;
+比较有效地使用了一些衔接手段，内容较连贯，层次较清晰
+文体格式和语体较恰当。
+对目标读者产生了预期的效果。
+第三档
+A 节
+(5 -6分)
+B 节
+(9 -12 分)
+基本完成了试题规定的任务。
+虽漏掉一些内容，但包含多数内容要点;
+应用的语法结构和词汇能满足任务的需求;
+有一些语法及词汇错误，但不影响理解;
+采用了简单的衔接手法，内容较连贯，层次较清晰;
+格式和语域基本合理。
+对目标读者产生了预期的效果。
+第二档
+A 节
+(3 -4分)
+B 节
+( 5-8 分)
+未能按要求完成试题规定的任务。
+漏掉或未能有效阐述一些内容要点，写了一些无关内容;
+语法结构单调、词汇项目有限;
+有较多语法结构或词汇方面的错误，影响了对写作内容的理解;
+未采用恰当的衔接手法，内容缺少连贯性;
+格式和语域不恰当。
+未能清楚地传达信息给读者。
+第一档
+A 节
+(1 -2分)
+B 节
+(1 -4 分)
+未完成试题规定的任务。
+明显遗漏主要内容，且有许多不相关的内容;
+语法项目和词汇的使用单调、重复;
+语言错误多，有碍读者对内容的理解，语言运用能力差;
+未使用任何衔接手法，内容不连贯，缺少组织、分段;
+无格式与语域概念
+未能传达信息给读者。
+所以三档及以上的大作文要注重这几点：三段论格式与要点正确+字迹清晰+
+无明显低级错误。
+9
+1.4审题构思
+动笔之前，大作文的主题一定要完全确定，首段的描述方法应该要基本确定，
+二三段的具体细节无需在动笔之前完全确定，只需要有一个大致的构思或想法，
+毕竟考场上时间是比较有限的，审题构思花费2-3分钟即可。
+1.4.1 确定主题
+绝大多数真题大作文都在论述xxx的重要性，而即便是批评某种现象，也是在
+反过来论述xxx的重要性。真题大作文不论是图画、图表或文字，主题肯定是非常
+明了的，关键在于要仔细阅读题干中的所有细节，如人物动作、对话、文字标注、
+数据对比、小标题。
+
+常见主题分类
+1.社会问题​
+​
+核心方向：环境保护（如垃圾分类、碳中和）、城市发展（如智慧城市）、老
+龄化问题、社会公平（如教育资源分配）等。
+​
+例：2020年真题“习惯”隐含对健康生活方式的倡导。
+2.教育话题​
+​
+核心方向：创新教育（如在线学习）、教育公平（如乡村教育）、校园生活（
+如学生压力）等。
+​
+例：2018年“选课进行时”反映学生自主性与教育多样化。
+3.科技发展​
+​
+核心方向：人工智能、互联网影响（如短视频文化）、科技与伦理（如隐私保
+护）等。
+​
+例：2024年真题“科技对阅读习惯的影响”需结合电子书与纸质书的对比分析。
+4.文化交流​
+​
+核心方向：传统文化传承（如非遗保护）、全球化影响（如中西节日融合）、
+文化自信等。
+​
+例：2023年“龙舟赛”主题需关联乡村振兴与文化复兴。
+5.健康生活​
+​
+核心方向：心理健康（如压力管理）、运动健身、饮食习惯（如外卖依赖）等。
+​
+例：2012年“乐观心态”强调心理健康的积极意义。
+10
+6.人生价值​
+​
+核心方向：坚持与奋斗、诚信与责任、代际关系（如养老问题）等。
+​
+例：2005年“养老足球赛”呼吁孝道与家庭责任
+
+主题确定
+可以不用局限于一个主题，比如互联网发展的科技主题往往与健康生活挂钩。
+而负面话题往往可以归结到正面话题上来，所以只需要确定：「xxx」这一品质/
+习惯/行为/现象很重要。
+
+历年真题主题
+2025
+家电拥有量越来越多
+经济发展很重要
+2024
+公园数量越来越多
+绿色发展很重要
+2023
+龙舟比赛越来越热闹
+文化传承很重要
+2022
+不听非本专业讲座/要听跨学科讲座
+广泛学习很重要
+2021
+同学不喜欢唱戏/自己喜欢才重要
+坚持个人兴趣很重要
+2020
+尽早完成才放心/不到最后不动手
+时间规划很重要
+2019
+累了不爬了/休息下继续爬
+坚持很重要
+2018
+选难的课/选简单的课
+勇敢应对挑战很重要
+2017
+有很多书不读/读一本书
+实际行动很重要
+2016
+要求儿子学习/一起学习
+父母言传身教很重要
+2015
+沉迷手机
+合理使用手机很重要
+2014
+母女30 年前后相携
+孝顺很重要
+2013
+毕业生面临选择
+做出正确选择很重要
+2012
+全完了/幸好还剩点
+乐观很重要
+2011
+旅途之余乱丢垃圾
+保护环境很重要
+2010
+文化火锅
+文化融合很重要
+2009
+网络的远与近
+合理使用网络很重要
+2008
+你我一起走南闯北
+合作很重要
+2007
+守门员和前锋互相高估
+自信很重要
+2006
+把贝克汉姆写在脸上
+合理偶像崇拜很重要
+2005
+儿女把父亲当足球踢
+孝顺很重要
+2004
+终点又是新起点
+坚持很重要
+2003
+温室花朵开得好/室外就凋零
+独立很重要
+2002
+穿中国传统服饰的美国女生
+文化融合很重要
+2001
+爱心是一盏灯在越黑暗的地方越明亮
+爱心很重要
+2000
+捕鱼业的历史发展
+保护环境很重要
+11
+1.4.2首段构思
+第一段需完成“引入→核心场景动态描写→细节补充（对话/环境）→点题过渡”
+的逻辑闭环，建议控制在3-4句，字数30-60词。
+
+引入图画：用灵活句式点明图画类型（如漫画或照片）及核心场景。
+
+动态描述：聚焦人物动作、互动、数据，使用动态动词和细节描写。
+
+补充细节：加入对话、环境描写、数据对比或标题翻译，强化画面感。
+
+过渡句：提炼主旨，自然引出下文分析。
+1）引入句
+倒装句：Portrayed vividly in the cartoon is a scene in which...
+非限制性定语从句：As is symbolically depicted in the picture, two individuals...
+地点状语前置：In the center of the thought-provoking drawing stands...
+避免用“The first picture shows...”或“The cartoon is interesting”等泛泛表达。
+2）主要人物描述
+①几个人
+单人的话要体现学生/老师/家长等身份，多人的话要体现夫妻/父子/母女/观众等身
+份。
+②每个人的动作
+主要动作:be doing
+次要动作：doing/done
+最好用“jogging, pondering, struggling”等具象动词替代“doing, saying”等泛词。
+③每个人说的话
+可以直译：be saying that . . ./with the words that . . .
+若有观点冲突：One student remarks, "This lecture is unrelated to my major," while
+the other insists, "Any knowledge is valuable!"/A girl complains that online classes are
+inefficient, yet her classmate emphasizes their flexibility.一个学生说：“这堂课和我
+的专业无关。”而另一个坚持说：“任何知识都是有价值的！”/一个女孩抱怨网
+络课程效率低下，而她的同学强调网络课程的灵活性。
+3）数据描述
+①总体描述
+12
+The bar chart/line graph/pie chart vividly illustrates the changes in （主题词）between
+（时间/对象）./As is revealed in the table, （核心现象）has undergone significant
+shifts over the period from （时间）to （时间）.该柱状图/折线图/饼图生动展示了
+（主题词）在（时间/对象）间的变化趋势。/如表所示，（核心现象）从（时间）
+到（时间）期间发生了显著波动。
+②趋势概括
+The line graph shows a steady increase in smartphone users in developing countries,
+surging from 0.4 billion in 2000 to 4 billion in 2008.该折线图显示了发展中国家智能
+手机用户数量稳步增长，从2000年的4亿激增至2008年的40亿。
+③数据细节/对比
+The proportion of （对象A）peaked at （最高值）in （时间）, whereas (对象B) hit
+a trough of (最低值) during the same period.（对象A）的比例在（时间）达到峰值
+（最高值），而同期（对象B）则跌至谷底（最低值）。
+While （对象A）constituted （比例）of the total, （对象B）represented only （比
+例）, indicating a clear preference for （现象）.虽然（对象A）占总体的（比例），
+但（对象B）仅占（比例），这表明对（现象）存在明显偏好。
+4）场景描述
+①利用地点进行倒装
+Around the table sit four young people . . .
+桌子周围坐着四名年轻人. . .
+In front of the notice board stand 2 girls . . .
+在公告栏前站着两名女孩. . .
+②独立主格结构
+With the dragon boat moving fast . . .
+随着龙舟迅速前进. . .
+With their crutches left behind . . .
+随着他们的拐杖留在了身后. . .
+5）标题
+如果有小标题，一定要在首段写出来：
+The caption below the picture indicates/reads : (小标题翻译).
+6）过渡句
+13
+可以在第一段加上过渡句，也可以不加，放在第二段。
+用隐含主旨的总结句衔接第二段：This scene subtly reflects the growing emphasis on
+environmental protection in modern society.这个场景巧妙地反映了现代社会对环境
+保护的日益重视。
+1.4.3二三段轮廓构思
+可基于作文主题：「xxx」这一品质/习惯/行为/现象很重要。思考二三段可以
+说些什么思考和建议。可从个人层面、社会层面、国家层面、科技层面、文化层
+面、价值升华和未来展望等方面进行大致思考，具体将在下章三段论中详细说明。
+14
+1.5考场提醒
+1）答题顺序
+答题顺序1：优先完成作文：作文→阅读→新题型→翻译→完型​
+答题顺序2：优先完成阅读：阅读→新题型→翻译→作文→完型
+答题顺序3：作文留到最后：阅读→新题型→翻译→完型→作文​
+······
+
+可以将作文总时长控制在50分钟内（小作文15分钟，大作文35分钟左右）。
+
+答题顺序因人而异，关键是在平时的模考养成习惯，验证时间分配的可行性，
+避免超时。
+2）审题构思​
+
+下笔前花2-3分钟审题，二三段的细节不用急于确定，一定一定要避免跑题。
+
+快速列提纲：大作文建议采用“描述→分析→评论”三段式。
+3）格式要求
+
+大作文：无需标题，段落首行缩进2-4个字母左右。
+
+字迹工整，控制字体大小（避免超出答题卡边界）。
+
+修改时用单斜线“/”划掉错误，不要涂黑或使用修正液。
+
+检查重点：时态、单复数、主谓一致、标点。
+15
+4）易错点规避
+
+图表题勿单纯罗列数据，需提炼趋势（如“消费升级反映经济转型”）并关联
+社会背景。
+
+开放式命题（如“人工智能伦理”）需辩证分析，说明好处与坏处。
+5）临场策略
+
+若时间不足，优先保证小作文完整，大作文可简化分析部分，但需有明确结
+论。
+
+考试前确认答题卡填涂规范，客观题和主观题勿写错位置（翻译在答题卡正
+面，大作文在背面）
+16
+1.6模板说明
+
+模板说明
+本章节为备考方法论，通过大纲说明、题目要求、评分标准、审题构思和考
+场提醒，帮助大家快速掌握考研英语大作文的技巧与方法。本模板剩余部分包含
+内容三段论，模板库，以及历年真题精析。
+其中，内容三段论包含了图画类、图表类、文字类作文的讲解以及DIY方法，
+保证大家可以完全理解掌握所有类型作文；
+在此基础上，第三章模板库基于近几年命题趋势，详细介绍了图画类、文字
+类、图表类以及混合类作文的写法，给出了各类型作文的模板；
+最后，第四章真题范文精析基于模板库，给出了2000~2025真题范文以及点评，
+便于大家学习如何在真题中运用模板。
+
+为什么要用作文模板？为什么不自己整理+听课？
+因为这样做性价比最高。
+我们的目标是上岸，是总分达标。数学+专业课共300 分，需要我们花大量
+的时间精力，每天每科至少3-4h 。而且数学和专业课的投入回报率是非常高的。
+数学/专业课提高10 分和英语/政治提高3 分的难度是类似的。
+所以说，英语政治保证平均分即可。在我看来，70 分以上就OK 。英语作文
+自己整理+听课的话太花时间了，还不一定有作文模板的效果，不如将时间留给
+数学/专业课。
+
+英语最重要的是什么？
+对于英语，主框架是阅读。如果你能拿到绝大部分的阅读分数，那么即使你
+的作文只是平均水平，70-75 分都完全没问题。平时的英语备考，要把重点精力
+花在琢磨真题。
+剩下30 分属于作文，大家可以运用作文模板，做到格式与要点正确+字迹清
+晰+无明显低级错误，可以至少拿到平均分（10+5）。运用一点作文模板的高级
+句型&词汇就是中等偏上水平（13+7）。
+17
+
+怎么提高作文水平？
+可按照如下顺序使用作文模板，备考后期开始准备的同学也不用着急，我们
+会在各个阶段配套给到该作文模板的详细学习方法（在小鹅通内陆续更新）：
+①前期学习：看资料！第一章方法论一定要认真看！！里面都是最基础的知
+识！第二章是重中之重！每段的每一句话的DIY方法都要理解！理解大作文中的
+每句话的作用、意义以及写法，以后碰到这个情况我会怎么写？以后可以在什么
+情况下用出来？
+②中期学习：开始背诵！基础好的同学可以着重背诵第二章DIY方法，试着
+自己去挑选、组合一些喜欢的语料、句型，进行背诵！背完可以写真题作文，融
+进自己的作文里！写完之后再去看模板库和范文，看看有什么可以借鉴的地方；
+基础不好的同学，可以先着重背诵模板库，先完全熟练掌握各类作文模板！在此
+基础上，通过写真题作文进行套用！然后再去看范文以及DIY方法，尝试改进和
+积累语料。
+③后期学习：模拟考试！一方面每天复习之前积累的语料，每天晚上背诵30
+分钟！每天早上默写昨天背诵的内容！另一方面进行限时仿写与批改，每周限时
+完成2篇真题作文（50分钟），批改修正错误。
+祝前程似锦，一定上岸。
+18
+2.内容三段论
+我们的作文模板材料是根据内容三段论来编排的，因为不管碰到什么类型的
+作文题——图表、图画、文字、或是几种形式混在一起——内容三段论都能稳稳
+接住。
+四段式（“问题—原因—对策—意义”）易因段落割裂导致逻辑跳跃，例如
+“意义”部分常与结论段的升华内容重复，破坏论述的紧凑性。
+但是三段论核心就三步：开头亮观点，中间摆论据，结尾升华主题。大家可
+以发现，三段论特别符合考研大作文的天然要求，更便于在有限篇幅内快速构建
+框架，集中火力展开多角度论证，同时实现论证深度与结构美感。
+2.1第一段
+第一段需完成“引入→核心场景动态描写→细节补充（对话/环境）→点题过渡”
+的逻辑闭环，建议控制在3-4句，字数30-60词。以下内容包含了图画、图表、文
+字类作文，可根据作文类型灵活选择。例如，图画类作文仅需关注图画引入句
+DIY、主要人物描述DIY以及最后的模板和真题解读。
+
+引入：用灵活句式点明作文类型（如图画或者图表）及核心场景。
+
+动态描述：聚焦人物动作、互动、数据，使用动态动词和细节描写。
+
+补充细节：加入对话、环境描写、数据对比或标题翻译，强化画面感。
+
+过渡句：提炼主旨，自然引出下文分析。
+2.1.1图画引入句DIY
+①Depict 倒装
+1) 对比图
+
+事物不同状态：Depicted in the portrayal is/are . . . showing entirely distinct
+states . . .
+
+人不同态度：Depicted in the portrayal are . . . holding entirely distinct attitudes
+towards/in the face of/when facing . . .
+2) 非对比图
+
+有深意：Depicted in the portrayal is a common yet thought-provoking scene in
+which . . .
+19
+
+无明显深意：Depicted in the portrayal is sb. doing sth.
+2023
+Depicted in the portrayal are two
+teams of dragon boat competitors
+rowing on the river , with a good
+many spectators cheering them on .
+这幅画面描绘了两支龙舟队在河
+上划船，众多观众为他们加油助
+威。
+2022
+Depicted in the portrayal are two
+girls holding
+entirely
+distinct
+attitudes towards a campus lecture .
+这幅画面描绘了两名女孩对校园
+讲座持有完全不同的态度。
+2021
+Depicted in the portrayal are a father
+and son showing entirely distinct
+attitudes towards one’s passion .
+这幅画面描绘了一个父亲和儿子
+对于个人热情表现出完全不同的
+态度。
+2020
+Depicted in the portrayal are
+two individuals showing entirely
+distinct attitudes towards time
+schedule .
+这幅画面描绘了两个人对待时间
+规划的态度完全不同。
+20
+2019
+Depicted in the portrayal are
+two individuals showing entirely
+distinct attitudes towards climbing .
+这幅画面展现了两个人对待攀登
+活动的态度截然不同。
+②地点倒装
+正常语序：主语+ 谓语动词+ 地点状语
+地点倒装：地点状语+ 谓语动词+ 主语
+Here comes the bus.公交车来了。
+Under the tree sits an old man.树下坐着一位老人。
+In the distance lies a lake.远处有一个湖泊。
+2023
+On the river row two teams of dragon
+boat competitors , with a good
+many spectators cheering them on .
+在河上，两支龙舟队的选手正在划
+船，有许多观众为他们加油助威。
+2022
+In front of the notice board stand two
+lovely girls , holding entirely
+distinct attitudes towards a campus
+lecture . 在公告栏前站着两位可爱
+的女孩，对一场校园讲座持有完全
+不同的态度。
+21
+2018
+At the table sits a confused boy ,
+facing a dilemma of course selection.
+在桌前坐着一个困惑的男孩，面临
+着选课的两难抉择。
+③如图所示
+1) 套话：As is vividly/symbolically illustrated in the portrayal，. . .
+2) 暗示：As is subtly/ironically revealed in the portrayal，. . .
+2023
+As is vividly illustrated in the
+portrayal，two teams of dragon
+boat competitors are rowing on the
+river , with a good many spectators
+cheering them on . 正如这幅图画
+生动地展示的那样，两支龙舟队
+的选手正在河上划船，有众多观
+众为他们加油助威。
+2022
+As is subtly revealed in the
+portrayal , two girls are holding
+entirely distinct attitudes towards
+the upcoming campus lecture .
+正如这幅图画微妙地呈现的那样
+，两名女孩对待即将到来的校园
+讲座持有完全不同的态度。
+22
+2021
+As is vividly illustrated in the
+portrayal , a father and son are
+holding entirely distinct attitudes
+towards one’s passion . 正如这幅
+图画生动地展示的那样，一个父
+亲和儿子对待个人热情持有完全
+不同的态度。
+2.1.2主要人物描述DIY
+包括主语+ 主要动作+次要动作+ 说话
+①主语：明确人物角色
+单人的话要体现学生/老师/家长等身份，多人的话要体现夫妻/父子/母女/观众等身
+份。a girl/a man/a farmer/a father/a student/a teacher/a couple
+若为两人物的鲜明对比图，在人物1 描述后，可加「By contrast/On the
+contrary/In stark contrast to sb」进行过渡。
+②每个人的动作：主要动作+次要动作
+
+主要动作:be doing
+站
+stand
+坐
+sit
+躺
+lie
+蹲
+crouch
+蜷缩
+curl
+看
+凝视：stare at/gaze at/fix one’s eyes on
+怒目而视：glare at
+看：watch/look
+看上去：seem to be . . .
+说话
+
+发起
+1)
+说话：say
+2)
+小声嘟囔：murmur
+3)
+抱怨：complain
+4)
+担心：worry
+5)
+要求：urge/demand/ask
+6)
+非动词：with the words that . . .
+
+回复
+1) 回复：respond/answer
+2) 鼓励：encourage
+23
+手部动作
+把. . .递给. . .：pass . . .to . . ./hand over . . .to . . .
+指：point at
+拍手：clap hands
+双臂交叉：cross one’s arms
+轻拍背部：pat on the back
+握住双手：hold one’s hands
+专心致志于
+concentrate on . . .
+devote oneself to . . .
+be absorbed in . . .
+be immersed in . . .
+dedicate oneself to . . .
+
+次要动作：doing/done
+若次要动作的主语不是人，而是物时，用with sth doing/done
+穿着
+wearingSunWukong’scostume
+表情
+
+喜
+1) with satisfaction/happiness 带着满意/幸福
+2)with a bright/confident smile on his/her face 脸上带着明亮/自信的微笑
+3)encouragingly/cheerfully 鼓励地/愉快地
+4)in a tone of encouragement 以鼓励的口吻
+
+哀
+1)in dismay/depression/despair/frustration 惊愕/沮丧/绝望/挫败地
+2) with disappointment 带着失望
+3)with a miserable/confused expression on his face 脸上可怜/困惑的表情
+4) with an air of confusion on his face 脸上带着困惑的神情
+
+中性
+1 )with indifference 冷漠地
+2)with a concentrated expression on their faces 脸上带着专注的表情
+想
+think/wonder/worryabout
+怀着. . .的意图：with the/no intention of . . .
+怀着. . .的想法：with the idea that . . .
+③每个人说的话
+可以直译：be saying that . . ./with the words that . . .
+若有观点冲突：One student remarks, "This lecture is unrelated to my major," while
+the other insists, "Any knowledge is valuable!"/A girl complains that online classes are
+24
+inefficient, yet her classmate emphasizes their flexibility.一个学生说：“这堂课和我
+的专业无关。”而另一个坚持说：“任何知识都是有价值的！”/一个女孩抱怨网
+络课程效率低下，而她的同学强调网络课程的灵活性。
+④场景
+1.利用地点进行倒装
+Around the table sit four young people . . .
+桌子周围坐着四名年轻人. . .
+In front of the notice board stand 2 girls . . .
+在公告栏前站着两名女孩. . .
+2.独立主格结构
+With the dragon boat moving fast . . .
+随着龙舟迅速前进. . .
+With their crutches left behind . . .
+随着他们的拐杖留在了身后. . .
+2023
+Depicted in the cartoon are two teams of
+dragon boat competitors rowing on the
+river, with a good many spectators
+cheering them on . Among the crowd
+stands an elderly lady , saying to her
+spouse，“ it is so excellent to have an
+increasing number of people participating
+in the village’s Dragon BoatFestival!”
+这幅漫画中描绘了两支龙舟队
+的选手在河上划船，众多观众为
+他们加油助威。人群中站着一位
+年迈的女士，对她的伴侣说：“越
+来越多的人参加村庄的龙舟节真
+是太好了！”
+2022
+Onthe leftstandsa girl, staringatthe
+boardwithindifferenceandsayingthat it
+is
+meaningless
+to
+attend
+a cross-
+disciplinelecture . By contrast , the
+other girlresponds cheerfully that there
+must be some benefits to
+participating insuch lectures.
+图画左边站着一名女孩，漠不关
+心地注视着公告板，说参加跨学
+科讲座毫无意义。相比之下，另
+一位女孩愉快地回应说参加这
+些讲座一定有一些好处。
+25
+2021
+Depictedintheportrayalisadepressed
+boy,wearingSunWukong’scostume and
+worrying that his classmates dislike
+opera . By contrast , his father
+encourageshimtopursue his passion
+regardlessofothers’thoughts.
+在这个描述中，画面呈现出一个
+沮丧的男孩，穿着孙悟空的服装
+，担心同学们不喜欢京剧。与
+此形成对比的是，他的父亲鼓
+励他不顾他人的看法，追求自
+己的热情所在。
+2020
+In the first picture, the girl devotes
+herself to a sea of tasks , murmuring
+thatshewillnotrelaxuntilshefinishes
+themearlier. Bycontrast, lying onthe
+sofa cozily , the boy in the second
+picture says that not until the last
+minute will he do anything .
+在第一幅图片中，女孩全身心投
+入到一堆任务中，低声嘟囔着在
+尽早完成它们之前绝不松懈。相
+比之下，在第二张图片中，舒适
+地躺在沙发上的男孩表示，只有
+在最后一刻他才会采取行动。
+2019
+On the ladder sits a depressed boy,
+complainingthatheistootiredtoclimb the
+mountain.Onthecontrary,handing over
+a bottle of water , the boy
+downstairs encourages him to keep
+movingaftera short break .
+梯子上坐着一个沮丧的男孩，抱
+怨说他太累了，爬不上山。相反
+，台阶下男孩递给他一瓶水，鼓
+励他在短暂休息后继续前行。
+26
+2.1.3图表引入句DIY
+若为混合类大作文，可舍弃单独的图表引入句，将其与数据描述结合，显得
+更加高级和简洁明了。
+①相关词汇
+折线图：curve graph 曲线图/line graph 折线图
+柱状图：bar chart/column chart
+饼图：pie chart
+表格：table/form
+不同类型的混合：different charts
+②通用引入句
+The bar chart/line graph/pie chart vividly illustrates the changes in （主题词）between
+（时间/对象）.
+This is a bar chart/line graph/pie chart illustrating （主题）.
+2025
+Thistablevividlyillustratesthechangesin
+durableconsumergoodsamongChinese
+residentsfrom2014to2023.
+这个表格生动的描述了2014-
+2023年的中国居民的耐用消费品
+的变化。
+2.1.4数据描述DIY
+①相关词句
+
+变化类词汇
+数量单位：hundred/thousand/million/billion/trillion
+时间：in 2000/from 2000 to 2002/between 2000 and 2002
+表示上升：increase/rise/climb/jump/ascend/leap/soar
+表示下降：decline/decrease/descend/drop/shrink/plunge
+表示波动：fluctuate
+27
+表示稳定：remain/stay/stagnate
+变化程度很大：significantly/considerably/sharply/dramatically/enormously
+变化程度较小：slightly/gradually/slowly/moderately
+到达最高/低点：reach the peak/bottom of
+占比最多/少：occupy the largest/smallest proportion of
+由. . .组成：consist of/be made up of
+
+原因类短语
+with the progress in economy随着经济的发展
+with the improvement of living standards随着生活水平的提高
+with the quickening pace and ever-increasing pressure of modern life随着现代生活节
+奏的加快和压力的不断增加
+with the pace of modern society speeding up随着现代社会步伐的加快
+with the advance of technology随着科技的进步
+with the rapid development of economy and society随着经济和社会的快速发展
+under the background of modernization/urbanization/industrialization在现代化/城市化/
+工业化的背景下
+②数据趋势/细节/对比
+
+动态图（折线图/柱状图/表格）：时间推移变化
+1.上升趋势：
+动词：increase / rise / surge / soar / grow / climb
+副词：gradually / slightly / steadily/ drastically / sharply/ significantly / dramatically
+例句：The number of smartphone users surged from 50% to 90% between 2010 and
+2023, peaking at 95% in 2022.智能手机用户比例从2010年的50%激增至2023年的
+90%，并在2022年达到95%的峰值。
+2.下降趋势：
+动词：decrease / decline / drop / plummet / dip
+副词：gradually / slightly / steadily/ drastically / sharply/ significantly / dramatically
+例句：The unemployment rate plummeted by 8% in the last quarter, hitting a record
+low of 3%.上一季度失业率骤降8%，创下3%的历史新低。
+28
+3.波动趋势：
+动词：fluctuate / oscillate / vary
+例句：Oil prices fluctuated between 50 and 80 during the same period, reaching a peak
+in mid-2022.同期油价在50至80美元之间波动，并在2022年年中达到峰值。
+4.稳定趋势：
+动词：remain stable / stabilize / level off
+例句：The proportion of male students remained stable at around 45% over the decade.
+过去十年间，男学生比例始终稳定在45%左右。
+
+静态图（饼图/表格）：无时间变化。
+1.极值对比：
+词汇：highest / lowest / dominate / account for / occupy
+例句：Knowledge acquisition dominates at 91.3%, accounting for the largest
+proportion, while cooperation skills rank lowest at 32.6%.知识获取占比最高，达到
+91.3%，而合作技能占比最低，仅为32.6%。
+2.倍数/比例：
+词汇：X times higher than / by a margin of / make up
+例句：A is three times larger than B... A比B大三倍...
+3.分类对比：
+词汇：in contrast / whereas / compared with
+例句：Employees aged 50+ reported 40% job satisfaction, compared to merely 16%
+among those under 30. 50岁以上员工报告的工作满意度达40%，而30岁以下员工仅
+为16%。
+2025
+This table vividly illustrates the
+changes in durable consumer goods
+among Chinese residents from
+2014 to 2023. Air conditioners
+surged from 75.2 to 145.9 units,
+nearly doubling, while washing
+machines and refrigerators showed
+steadier growth, reaching 98.2 and
+103.4 units respectively该表格生
+动展示了2014年至2023年中国居
+民耐用消费品的变化情况。空调
+数量从75.2台激增至145.9台，几
+乎翻了一番；而洗衣机和冰箱则
+呈现更稳定的增长态势，分别达
+到98.2台和103.4台。
+29
+2.1.5文字段落总结DIY
+文字类作文通常要求对给定文字（如引文、名言或观点）进行解读和评价。
+第一段的核心任务是：精准概括原文核心观点，并表明个人立场。可按需选择以
+下四层递进结构。
+①引入原文内容
+The provided text presents a thought-provoking perspective that （主题）.所提供的文
+本提出了一个发人深省的观点，即（主题）。
+Emerging from the excerpt is an insightful statement addressing （话题）, in which the
+author emphasizes that （观点）.从这段摘录中浮现出一个关于（话题）的深刻见
+解，作者在此强调（观点）。
+②转述作者核心观点
+The author argues that （观点）, highlighting （关键词/逻辑）.作者提出（观点），
+并强调（关键词/逻辑）。
+This text underscores the significance of （主题）, particularly focusing on （具体方
+面）.这段文字强调了（主题）的重要性，尤其着重于（具体方面）。
+③强调观点重要性
+There is no denying that this perspective deserves profound reflection, especially in the
+context of （社会背景/当前现象）.不可否认，这一观点值得深刻反思，尤其是在
+（社会背景/当前现象）的背景下。
+Such a viewpoint not only reveals （问题本质）but also provides a lens through which
+to examine （相关议题）.这种观点不仅揭示了（问题本质），还为审视（相关议
+题）提供了一个视角。
+④明确个人立场
+Personally, I firmly endorse this idea, as it aligns with （价值观/现实依据）.就个人而
+言，我坚决支持这一观点，因为它与（价值观/现实依据）高度契合。
+While some may question （潜在反驳点）, I find this argument compelling due to （
+理由）.尽管有人可能质疑（潜在反驳点），但我认为这一论点颇具说服力，因为
+（理由）。
+30
+2.1.6其他DIY
+①标题
+如果图画有小标题，一定要在首段写出来：
+The caption below the picture indicates/reads : (小标题翻译).
+②过渡句
+可以在第一段加上过渡句，也可以不加，放在第二段。
+用隐含主旨的总结句衔接第二段：This scene subtly reflects the growing emphasis on
+environmental protection in modern society.这个场景巧妙地反映了现代社会对环境
+保护的日益重视。
+2.1.7首段模板
+对比图画1
+Depicted in the portrayal is/are . . . showing entirely distinct states/holding entirely distinct
+attitudes towards/in the face of/when facing . . . .Doing/Done sth (动作1 ) , A is doing .
+. .(动作2) . By contrast , B is doing . . .(动作1 ) , with . . . (动作2) . The caption
+below the picture indicates : . . . .
+图中描绘的是某事物/人面对. . . 时展现出完全不同的状态/持有完全不同
+的观点。A 做了. . .相反，B 做了. . . 。图下小标题写的是：. . .。
+对比图画2
+A stark/striking contrast is observed between two cartoons : in the first one , doing/done
+sth(动作1 ) , A is doing . . .(动作2) . However，in the second picture , B is doing . . .(动
+作1 ) , with . . . (动作2 ) . The caption below the picture indicates : . . . .
+两幅图之间形成了鲜明的对比：第一幅图中，A 在做. . .。然而，在第二幅图
+中，B 在做. . . 。图下小标题写的是：. . .。
+非对比图画
+Depicted in the portrayal is a common yet thought-provoking scene in which A is doing .
+. .(动作1) . Meanwhile, B is doing . . .(动作2) . And below the drawing there is a
+caption which reads . . .(标题) .
+图中描述了一副普遍却又引人深思的现象：A 在做. . .同时B 在做. . . 。图
+下小标题写的是. . .。
+动态图表
+有时间变化
+The xxx chart above clearly reflects the changes in the number of 主体in 地点between 年
+份1 and 年份2 . Based upon the data , there was a significant increase in 事物1 from 数字
+1 to 数字2 , while 事物2 witnessed an opposing trend during the same period , decreasing
+substantially from 数字3 to 数字4./Meanwhile , 事物2 witnessed a similar trend during the
+sameperiod, growing from 数字3 to 数字4 .
+上面的xxx 图表清楚地反映了从xx 年到xx 年间主体数量的变化。从数据上
+看，事物1 从数字1 显著增长到数字2 ，而同期的事物2 则呈现相反的趋势，从
+数字3 大幅下降至数字4 。/而同期的事物2 趋势类似，从数字3 增长至数字4。
+31
+静态图表
+无时间变化
+Thexxxchartaboveclearlyreflects the result of a survey about . . . in 地点during 时间.Based upon
+thedata , 主体A who . . . occupy the largest portion , up to 百分比1 . It is followed by those (
+主体B&C)
+who . . . , making up 百分比2 and 百分比3 respectively . By contrast , 主体D
+who . . . only take up merely 百分比4 .
+上述xxx图表清晰反映了某时间段内某地区关于...的调查结果。数据显示，主体A
+占比最高，达到百分之...；其次是主体B和C，分别占比百分之...和百分之...；相
+比之下，主体D仅占百分之...。
+文字类
+Emerging from theexcerpt is an enlightening paragraph of the article , in which the author tells us
+that. ..(作者观点) .Thereisnodenyingthatitsprofound meaningsubtly conveyedshouldbeplaced
+ahigh value on . Personally , I completely agreewith this idea.
+文章节选中有一段很有启发性，作者向我们介绍了某观点：… 。不可否认，它
+巧妙传达的深刻含义应该得到高度重视。就我个人而言，我完全同意这个观点
+。
+
+各类型作文的首段模板可参照上方表格，也可根据DIY语料自行排列组合，
+DIY属于自己的首段模板
+32
+2.1.8真题解读
+2017
+对比1
+Depictedintheportrayalaretwo men holding entirely distinctattitudes towardsbooks. Lyingon the sofa
+comfortably, themanintheleftpictureissatisfiedwithhisnumerous booksbut reads none of them . By
+contrast , the man in the right picture devotes his attention to only one book with the goal of reading 20
+booksayear.Thecaptionbelow thepicture indicates:“readingbooks”and“havingbooks”.
+在这个图画中，两名男子对待书籍持有完全不同的态度。左侧图片中，舒适地
+躺在沙发上男子满足于拥有众多的书籍，却不读任何一本。相比之下，右侧图片
+中的男子将注意力专注于一本书，目标是每年读20 本书。图片下方标注着标题：
+“读书”和“有书”。
+2016
+对比2
+A striking contrast is observed between two cartoons : in the first one , lying on the sofa cozily , the
+father is enjoying the TV show while pressing his son to study. However，inthesecond picture,
+both of them devote themselves to a sea of books , with a concentrated expression on their faces . The
+captionbelowthepictureindicates: bettertosetanexample than to make requests .
+两幅图片之间存在着鲜明的对比：在第一幅图片中，父亲舒适地躺在沙发上，
+享受着电视节目，同时催促儿子学习。然而，在第二幅图片中，他们俩都全身心
+地投入到一堆书中，脸上带着专注的表情。图片下方标注着标题：“身教胜于言教”。
+33
+2015
+非对比
+Depicted in the portrayal is a common yet thought-provoking scene in which four young people,
+sitting in front of the delicious dishes, are staring at their cellphones intently instead of communicating
+with others face-to-face. The caption below the picture indicates:ameeting inthesmartphones’era.
+在这个图画中，展现了一个常见但发人深思的场景：4 名年轻人坐在美味的菜肴
+前，他们却专注地盯着自己的手机，而不是面对面地与他人交流。图片下方的标
+题指出：“手机时代的聚会”。
+2025
+动态图表
+The table chart above clearly reflects the changes in the number of main durable
+consumer goods owned per 100 households in China between 2014 and 2023.Based
+upon the data, there was a remarkable surge in air-conditioners from 75.2 to 145.9,
+while washing machines experienced a gradual climb during the same period, rising
+from 83.7 to 98.2. Meanwhile,
+electric refrigerators (cabinets) demonstrated a
+consistent upward trend, growing from 85.5 to 103.4.
+上述表格清晰反映了2014至2023年间中国每百户家庭主要耐用消费品拥有量的
+变化。数据显示，空调数量从75.2台激增至145.9台，洗衣机同期则呈现平稳增长
+，从83.7台上升至98.2台。与此同时，电冰箱（柜）保持持续上升态势，从85.5台
+增长至103.4台。
+34
+2.2第二段
+第二段、第三段的写法与作文类型的关系已经不大。第二段是核心论证段落，包
+括主题句、逻辑连接词、论据展开。第二段作为主体段，应尽量丰满，字数可以
+在80-100词左右。
+
+主题句：开门见山点明本段核心论点，直接呼应首段主旨句。
+
+逻辑衔接：可以是并列、对比、转折、因果，无逻辑衔接会很生硬。
+
+论据展开：通常2-3个，建议采用“总分总”结构，每个论点独立成句。
+2.2.1主题句DIY
+①开头词
+Conspicuously/Undoubtedly/Incontrovertibly/Apparently/Evidently 显然/毫无疑问/无
+可辩驳/明显地/显然
+②主题词
+若主题词简单，可多替换，增加高级感；如果想不到同义词，也无需强求。
+技巧：n . = being adj . = v+ing = 同义词v+ing
+常见主题词：
+坚持
+persistence/being persistent/persisting in
+perseverance/persevering in
+tenacity/beingtenacious
+诚实
+honesty/beinghonest
+being truthful/staying truthful to
+责任心
+responsibility/beingresponsible/assumingresponsibility
+beingaccountable(for)
+同情心
+empathy/beingempathetic
+sympathy/beingsympathetic
+compassion/beingcompassionate
+勤奋
+diligence/beingdiligent
+industriousness/being industrious
+hardwork/being hard-working
+自律
+self-discipline/being self-disciplined
+self-control/being self-controlled
+好学
+beingstudious
+eagernesstolearn
+enthusiasmforlearning
+thirstforknowledge
+宽容
+tolerance/beingtolerant(of)
+forgiveness/beingforgiving
+35
+谦虚
+humbleness/beinghumble
+modesty/beingmodest
+自信
+confidence/beingconfident
+self-assurance/being self-assured
+合作
+cooperation/beingcooperative/cooperating with
+collaboration/being collaborative/collaborating with
+乐观
+optimism/anoptimisticmindset/being optimistic
+positiveness/a positivemindset/being positive
+创造力
+creativity/being creative
+③前半句
+1）the painter aims/intends/attempts/strives to convey/demonstrate that . . . 画家旨在传
+达/表达. . .
+2）the picture is intended to illustrate that . . . 这幅画意在阐明. . .
+3）what the painter intends to convey is that . . . 画家想要表达的是. . .
+④后半句
+1）. . . is of the essence in our life . . .在我们生活中至关重要
+2）. . . is of vital/paramount/critical/cardinal significance in our life . . .在我们生活中
+至关重要
+3）. . . plays an irreplaceable role in our life . . .在我们生活中扮演着不可替代的角
+色
+4）. . . is the pyramidal cornerstone (for) . . .是重要的基石
+5）. . . is an extremely/extraordinarily valuable/indispensable contributor (to) . . .是
+极其有价值/不可或缺的贡献者
+6）Great significance ought to be attached to . . . 应该高度重视. . .
+7）. . . should be placed a high value on . . .应该高度重视
+8）. . . deserves to be promoted actively 值得积极推广. . .
+⑤补充
+1 ) because of its extensive benefits for individual development (and social progress)
+因为它对个体发展(和社会进步) 具有广泛的益处
+2) to the achievement of success and happiness在实现成功和幸福方面
+3) in the pursuit of success and happiness 在追求成功和幸福时
+36
+4) whether in academic performance or in working competence 无论是在学术表现还
+是在工作能力方面
+5) be it in academic progress or in career advancement 无论是在学业进步还是职业
+晋升方面
+6) be it in individual growth or in social progress 无论是在个人成长还是社会进步
+方面
+7 ) be it in mental health or in external performance 无论是在心理健康还是外部表
+现方面
+2023
+Conspicuously, thepainterintendstodemonstratethatinheritingtraditionalculture is of the
+essence in our life and should be placed a high value on .
+显然，画家意在展示继承传统文化在我们的生活中至关重要，应该高度
+重视。
+2019
+Evidently , what the cartoonist intends to convey is that persistence plays a vital rolein
+our dailylife,whether in academic performance or in working competence . 显然，漫
+画家意在传达的是坚持在我们日常生活中扮演着至关重要的角色，无
+论是在学术表现还是工作能力方面。
+2016
+Apparently , the cartoonist intends to convey that instead of being considered of little
+value or outdated , role modeling is stillof cardinalimportance in today’s family education
+anddeserves to beencouraged actively .
+显然，漫画家的意图是，榜样力量在今天的家庭教育中仍然具有至关重
+要的地位，而不是毫无价值或已过时，应该积极鼓励。
+2.2.2逻辑衔接词DIY
+①层次递进
+用于分论点间的递进或并列展开，体现论述的层次性。
+Firstly/To begin with/First and foremost首先
+Furthermore/Moreover/Additionally/In addition/What’s more此外
+Moreover/Broadly speaking/That is to say/In other words补充
+Finally/Last but not least最后
+For one thing . . .For another . . .一方面. . .另一方面
+②因果论证
+用于揭示现象与原因、行为与结果的关系。
+Therefore/Thus/Hence因此
+As a result/Consequently结果
+Due to/Owing to由于
+37
+Lead to/Contribute to导致
+③对比转折
+用于呈现对立观点或矛盾现象。
+However/Nevertheless然而
+On the contrary/Conversely相反
+Whereas/While而
+Despite/In spite of尽管
+④举例类比
+通过具体事例或类比强化论点可信度。
+For instance/For example例如
+A case in point is典型例子是
+Such as/Like比如
+Similarly/Likewise同样地
+⑤总结归纳
+用于段落收尾，或强调论点。
+In conclusion/To sum up总之
+In brief/In a nutshell简言之
+Ultimately/Overall最终
+These evidences collectively prove that...综上
+38
+2.2.3论点DIY
+第二段需围绕主题句核心论点，通过分层论证展现多维度思考。论点可分为积极
+与消极意义，可以只说积极意义（因为消极意义可以转化为积极意义叙述），也
+可分别作为独立分论点，通过对比/转折逻辑融合在同一论述链中。
+①积极意义论点素材
+可从个人、社会、国家、环境等角度出发
+个人内在
+growuptobea personwith life integrity and sound personality 成长为一个
+拥有正直和健全人格的人
+set up thecorrectvalues and outlook on life
+树立正确的价值观和人生观
+transformtheemotionally-drivenyoungmanintoaself-controlledadult 把情绪驱动
+的年轻人转变成一个自控的成年人
+maintainpsychologicalhealth and spiritualpositiveness
+保持心理健康和精神积极性
+showanaspiringattitude towards life展现出对生活的积极态度
+alleviate/relieve self-doubt/anxiety/pressure/boredom
+减少自我怀疑/焦虑/压力/无聊
+cultivate a sense of responsibility/creativity/teamwork
+培养责任感/创造力/团队合作意识
+个人外在1
+expandourcapabilities to a higher degree
+将我们的能力拓展到更高的程度
+unleashourbestpotential释放我们的最佳潜能
+ensuresteadierandbetterperformance确保更稳定和更优异的表现
+confrontanychallengewithcomposure沉着冷静应对挑战
+keepupwithrapidlychanging technologyand businesstrends 跟上迅速变
+化的科技和商业趋势
+controlthe steering wheel of life in the direction that we desire 将人生的方
+向掌控在我们所期望的方向上
+lead a remarkable life trajectory that we desire
+引领我们所期望的卓越生活轨迹
+leadus outofthe impasse to a brilliant/worthy/shining future 引领我们走
+出困境，走向光明/有价值/辉煌的未来。
+pavethewayfor/laythefoundationforone’sfurtherdevelopmentand personal
+fulfillment
+为个人进一步发展和个人成就铺平道路/奠定基础
+stepoutof the comfort zone and break new ground
+走出舒适区，开辟新天地
+relisha lifeofexploration/purpose/passion/contentment
+享受探索/目标/热情/满足的生活
+derivespiritualpleasure获得心灵愉悦
+39
+个人外在2
+attain a higher level of well-being and life satisfaction
+达到更高水平的幸福感和生活满足
+achievetheambitiousgoal实现雄心勃勃的目标
+reapthehappiness of success 收获成功的快乐
+embracenew lifeexperience拥抱新的生活经历
+utilize skills/talents to the fullest extent 充分利用技能/才能
+adapttoan increasingly competitive anddynamic jobmarket
+适应日益竞争激烈和充满活力的就业市场
+takethe initiative to implement our vision 主动实现我们的愿景
+exponentially elevate the quality of our life 大幅提升生活质量
+acquire a wide array of knowledge 获取广泛的知识
+enlargeone’sknowledgereserve扩大知识储备
+beexposed to a variety of ideas and practices
+接触各种各样的观念和实践
+overcomeafixed mindset 克服固定思维模式
+adoptcreativeapproachestodauntingchallenges
+采用创造性方法应对艰巨的挑战
+transformone’sstruggle intoamightyforce
+将自己的奋斗转化为强大的力量
+maintain/foster a tight relationship with individuals
+与他人保持/培养紧密的关系
+get on well with . . . 与. . .相处融洽
+enhance interpersonalskills提升人际交往技巧
+getanedgeoveralltherivalswhenencounteringanyfiercecompetition 在任何激烈
+的竞争中胜过所有竞争对手
+excelbeyond/outperform/outshine/surpasstheirpeers
+超越同龄人/胜过同龄人
+utilize . . . in a rational way 理性地利用…
+beconfrontedwith/encounterdauntingtasks/challenges
+面临艰巨的任务/挑战
+dealwitharduous tasks 处理艰巨的任务
+viewcomplex issues from diverse perspectives 从不同角度看待复杂问题
+offer infinite possibilities for . . . 为……提供无限的可能性
+makea commitment/be committed toexcellence
+坚守卓越的承诺/致力于卓越
+40
+社会
+maintain social stability/cohesion/solidarity
+维护社会稳定/凝聚力/团结
+facilitatemutualcommunicationbetween. . . 促进. . .之间的相互沟通
+conform to the basicnorms 遵循基本规范
+live up to the virtues passed down to us by our ancestors 继
+承祖先传承给我们的美德
+raisethe publicconsciousness 提高公众意识
+contributetosustainabledevelopment 为可持续发展做出贡献
+cultivate a harmonious and civilized social atmosphere
+培养和谐文明的社会氛围
+providetheunderpinningformaintainingsocialbondsbetween. . . 为维
+护. . .之间的社会纽带提供支持
+foster inter-generationrespectandcare 促进代际之间的尊重和关怀
+set in motion a positive cycle 启动积极循环
+国家
+set up a world image of China 树立中国的世界形象
+spread the Chinese voice 传播中国的声音
+enhance internationalcooperationandfriendship/mutualunderstanding 加强
+国际合作与友谊/相互理解
+reflect a unique worldview with itsown value systems ,philosophyand
+particularculturalfeatures
+反映独特的世界观，具有自己的价值体系、哲学和独特的文化
+特色
+promote the enjoyment and sharing of authentic cultural and natural heritage
+促进真正的文化和自然遗产的欣赏和分享
+protectnational identityandpride保护民族身份和自豪感
+cultivate a culture of diversity and inclusion 培育多元包容的文化
+Enhance/Improveour international influenceandcompetitiveness
+增强我们的国际影响力和竞争力
+providefurther impetusforrural revitalization
+为乡村振兴提供进一步的推动力量
+环境1
+reducetherapiddepletionofdisposableresources
+减少一次性资源的快速耗尽
+disappearanceofbiodiversity生物多样性的消失
+reducecarbonemissions/minimizecarbonfootprint降低碳排放
+combatclimatechangeand global warming
+应对气候变化和全球变暖
+monitor/reduceair/water/garbagepollution
+监测/减少空气/水/垃圾污染
+implementwasterecyclingprograms实施垃圾回收计划
+环境2
+combat illegal wildlife trade
+打击非法野生动物贸易
+41
+raisefundsforenvironmentalprojects
+为环保项目筹款
+encourageeco-friendly lifestyle choices
+鼓励环保的生活方式选择
+advocateforrenewableenergy
+提倡可再生能源
+②消极意义论点素材
+也可从个人、社会、国家、环境等角度出发。不建议通篇描述消极意义，如要描
+述消极意义，通常可以转化成前面的积极意义进行描述。因此，可对消极层面的
+意义进行少量直接描述。
+个人
+harm physical and mental well-being 危害身心健康
+trap individuals in a vicious cycle of frustration
+陷入挫败恶性循环
+bow to the reality 向现实低头
+shrink back from difficulties 在困难面前退缩
+drift with the current 随波逐流
+waste/squandera great deal of our time and money
+浪费大量的时间和金钱
+endanger/impede the efficiency of our work
+危害/阻碍我们工作的效率
+imposetremendouspressureonall individuals
+给所有人带来巨大的压力
+prevent excessive addiction/prevent overuse 防止过度沉迷/使用
+faceskepticism from others 面对他人的怀疑
+give in to pressure to follow the herd 屈从于从众压力
+hinderusfrom making real progress 阻碍我们取得真正的进步
+社会
+exacerbate social inequality 加剧社会不平等
+undermine the bedrock of a harmonious society
+侵蚀社会和谐根基
+contradicts with the core values of a harmonious society.
+与和谐社会的核心价值观相矛盾
+The phenomenon poses a severe threat to social stability
+and long-term prosperity.
+这一现象对社会稳定和长期繁荣构成严重威胁
+increase family burdens and trigger conflicts.
+增加家庭负担，引发冲突
+undermines the educational purpose of cultivating well-
+rounded individuals.破坏了培养全面发展的个人的教育
+目的
+国家
+stifle sustainable economic growth抑制经济可持续发展
+42
+tarnish the nation's global credibility损害国家国际公信力
+hinder cultural heritage and cultural exchange阻碍文化传
+承和文化交流
+环境
+accelerate the depletion of natural resources
+加速自然资源枯竭
+precipitate irreversible environmental degradation
+引发不可逆的环境恶化
+pour heavy smoke and dirty rivers, altering ecosystems.
+排放浓烟并污染河流，改变生态系统
+depletes resources and increases greenhouse gases.
+耗尽资源并增加温室气体排放
+③高级同义词/句替换
+图片
+picture/drawing/cartoon
+重要
+vital/essential/crucial/indispensable/fundamental
+大量地
+considerably/enormously/substantially
+动词
+gain/ensure/assure/allow/provide/offer/enable/remain/cultivate/foster
+特征
+virtue/trait/quality
+重视
+attach importanceto
+hold in high regard
+placea premium on
+place great weight on
+put a high value on
+give weight to
+put . . . high on the agenda
+behigh/top on the agenda
+尽一份力
+do our bit in
+devoteoneselfto (doing) . . .
+endeavorto do
+就. . .而言
+in terms of
+with regard to
+with respect to
+阻碍
+get/stand in the way of
+impede
+pose an obstacle to
+范围广
+from far and wide
+all over the world
+为了
+in an effort to
+in an attempt to
+in a bid to
+43
+在. . .方面
+when it comes to
+speakingof
+as for
+concerning
+沉迷于
+indulge in
+be obsessed with
+积极
+lay the foundation for/of . . . 奠定. . .的基础
+serve as a cornerstone of 作为. . .的基石
+be of the essence 至关重要
+play a vital/irreplaceable role in . . .
+在. . . 中起到至关重要/不可替代的作用
+beremarkably beneficial/crucial to . . . 对. . .非常有益/至关重要
+beextremelyconstructive/supportivefordoing sth .
+对于做某事非常有助/有益/支持
+be notably instrumental in . . . 在. . . 中起到显著的作用
+be the prerequisite of . . . 是. . .的前提条件
+to the advantage/benefit of . . . 对于. . .是好处
+exert/generate positive impacts on sth . 对. . .产生积极影响
+providefurther impetusfor . .. 进一步推动
+go a long way towards (doing) . . . 大大有助于
+消极
+pose a huge threat to . . . 对…构成巨大威胁
+exert/generatedetrimental impacts on sth . 对…产生不利影响
+weigh heavily on . . . 对…产生沉重压力
+serve as a stumbling stone of 作为. . .的绊脚石
+cast a cloud over/be clouded with . . . 给…蒙上阴影/被…所蒙蔽
+beplagued by . . . 受到. . .的困扰
+中性
+it is universally acknowledged that . . . 这是普遍公认的…
+it is no exaggeration to say that . . . 毫不夸张地说…
+it is manifest that . . . 显而易见…
+44
+④变身长难句技巧
+从积极意义和消极意义素材中选取两相关的素材，即可扩充长难句
+… not only …but also …
+不仅. . .而且. . .
+…helpusnotonlyacquireawidearrayofknowledge but
+also view complex issues from diverse
+perspectives.
+. . .帮助我们不仅获得广泛的知识，还能够从
+不同的角度看待复杂问题。
+…,thus/therebydoing …
+从而. . .
+… help us acquire a wide array of knowledge ,
+thus/thereby viewingcomplex issues fromdiverse
+perspectives.
+. . .帮助我们获得广泛的知识，从而能够从不
+同的角度看待复杂问题。
+… in order to/so as to …
+为的是. . .
+…help us acquire a wide array of knowledge so as to
+viewcomplex issues from diverse perspectives . . . .
+帮助我们获得广泛的知识，为的是能够从不
+同的角度看待复杂问题。
+… , so that …
+因此
+…helpusacquireawidearrayofknowledge,sothat we
+are able to view complex issues from diverse
+perspectives.
+. . .帮助我们获得广泛的知识，因此能够从不
+同的角度看待复杂问题。
+… , which …
+引导定语从句
+…helpusacquirea widearrayofknowledge, which
+enables us to view complex issues from diverse
+perspectives.
+. . .帮助我们获得广泛的知识，从而能够从不
+同的角度看待复杂问题。
+… , especially when …
+尤其是. . .
+Bypracticingthispreciousquality , we will unleash
+huge talents and utilize our talents to the fullest
+extent, especially when we are confronted with
+dauntingchallenges.
+通过培养这一宝贵品质，当我们面对艰巨的
+挑战时，我们将能够释放潜在的才能，充
+分发挥自身的天赋。
+… , enabling/allowing …
+使能够. . .
+… help us acquire a wide array of knowledge ,
+enabling/allowing us to view complex issues from
+diverseperspectives.
+…帮助我们获取广泛的知识，使我们能够从
+多元视角审视复杂问题。
+45
+… , be it in . . . or in . . .
+无论是. . .还是, , ,
+. . . , be it in academic progress or in career
+advancement
+. . . , 无论是在学术进步还是职业发展
+... , be it in individual growth or in social progress . .
+. , 无论是在个体成长还是社会进步
+.
+..,beitinmentalhealthorinexternalperformance . . .
+, 无论是在心理健康还是外部表现
+. . . , as a motive force of
+individual/culturaldevelopment , . . .
+作为个人成长/文化发展的推动力
+Eagernessto learn , as a motive force of individual
+development, helps us acquire a wide array of
+knowledgesoastoviewcomplexissuesfromdiverse
+perspectives.
+求知欲作为个人发展的动力，帮助我们获得
+广泛的知识，以便从多角度看待复杂问题。
+. . . , because/for . . .
+因为. . .
+Perseverance can contribute to individuals’mental
+positiveness,forthosewhoarearmedwiththevirtue of
+persistencearemoreinclinedtomoveawayfrom the
+external stress and stick to the goal .
+坚持这种品质可以促进个体的心态积极性，
+因为那些具备坚韧品质的人更倾向于远离外
+部压力并坚守目标。
+. . . , always to the
+advantage/detrimentof . . .
+总是对. . .有好处/坏处
+Eagerness to learn helps us acquire a wide array of
+knowledgesoastoviewcomplexissuesfromdiverse
+perspectives,alwaystotheadvantageofindividuals’ long-
+termdevelopment.
+求知欲帮助我们获得广泛的知识，从不同的
+角度看待复杂问题，这始终有利于个体的长
+期发展。
+. . . when it comes to . . .
+在. . .方面
+By practicing this precious quality , we will utilize
+ourtalentstothefullestextentandoutperformpeers when
+it comes to job hunting .
+通过培养这一宝贵品质，当我们找工作时，
+我们将充分发挥自己的才能，并在竞争中超
+越同龄人。
+. . . , which in turn . . .
+进而. . .
+Regular exercise improves physical health , which
+in turn boosts our mental well-being .
+定期锻炼改善身体健康，从而改善我们的心
+理健康状况。
+A substantial body of research has
+proven that those equipped with the
+quality of . . . are more inclined to
+do . . .
+有证据表明带有. . .特质的人更容易做出. . .
+A substantial body of research has demonstrated that
+those armed with the habit of managing time are
+more inclined to show an aspiring attitude towards
+life .
+大量研究表明，具备时间管理习惯的人往往对
+生活展现出更积极向上的态度。
+46
+⑤论点示例
+
+积极意义
+1）… can not only relieve self-doubt/ enhance self-control but also help us sustain
+inner tranquility, which safeguards us from being swayed by external pressure .
+. . . 不仅可以减轻我们的自我怀疑/增强我们的自制力，还可以帮助我们保持内心
+的宁静，保护我们免受外部压力的负面影响。
+2）By practicing this precious quality , we will unleash huge potential and utilize our
+talents to the fullest extent , thus gaining an edge over rivals when coping with arduous
+tasks/facing fierce competition . 通过践行这一美好品质，我们将释放出巨大的潜力，
+最大限度地利用我们的才能，从而在解决艰巨任务/面对激烈竞争时能战胜竞争对
+手。
+3）… is remarkably beneficial for us to acquire a wide array of knowledge , which in
+turn enables us to view complex problems from diverse perspectives . …对我们获取广
+泛知识大有裨益，因此使我们能够从多样化的角度看待复杂问题。
+4）… is extremely constructive for us to grow up to be a person with life integrity and
+sound personality , thereby setting up the correct values and outlook on life .
+…帮助我们成长为一个生活完整、人格健全的人，从而树立正确的价值观和人生
+观。
+5）. . . is incredibly beneficial for us to control the steering wheel of life , thus
+pursuing a remarkable life trajectory that we desire . . . .非常有益于帮助我们掌控生
+活的方向盘，从而为个人的进一步发展和自我实现铺平道路
+6）It
+is . . . that offers infinite possibilities for our life , leading us out of the
+impasse to a shining future . . . .为我们的生活提供了无限的可能性，带领我们走
+出绝境，走向光明的未来。
+7）It is . . . that produces a lasting energizing effect , granting us a fruitful life without
+regrets . , , ,能产生持久的激励效应，使我们的人生充满收获不留遗憾。
+8 ）This merit , if carried forward fully ,will contribute to an individual’s further
+development and personal fulfillment . 如果这种优点得到充分发扬，将有助于个人
+的进一步发展和个人成就。
+9 ）Should this virtue/phenomenon of
+. . . spread widely ,
+it would contribute to
+fostering a harmonious and civilized social atmosphere .
+47
+如果. . .这种美德得到广泛传播，那么将会有助于营造和谐文明的社会氛围。
+
+消极意义
+1 ) 主题not only does harm to our physical and mental health but also results in a
+frustrating and humiliating life. 它不仅危害我们的身心健康，而且还导致我们的生
+活令人沮丧和羞辱。
+2) 主题is the worst problem for people's confidence and happiness. For example, when
+people face 主题, they may start doubting their abilities and feel like they can never
+succeed, even in small things like finishing daily tasks. （主题）是人们信心和幸福的
+最大障碍。例如，当人们面对（主题）时，他们可能会开始怀疑自己的能力，甚
+至觉得永远无法成功，连完成日常小事都感到困难。
+3 ) 主题goes against what a harmonious society should be. Because a good society
+needs people to care for each other and work together, but 主题encourages selfishness
+and makes people ignore others' needs. （主题）违背了和谐社会应有的理念。因为
+一个良好的社会需要人们互相关心、共同努力，但这一（主题）助长了自私行为，
+使人们忽视他人的需求。
+4 ) If we don't stop 主题, it could cause big problems like fights between different
+groups and unfair resource distribution. This will make it harder for society to stay
+peaceful and develop in the future. 如果我们不制止这一（主题），可能会导致严重
+问题，例如不同群体间的冲突和资源分配不公。这将使社会更难保持和平并在未
+来实现发展。
+5）主题makes family life much harder. For instance, it may force parents to work extra
+hours to pay for something, which makes them tired and angry, and this stress often
+leads to arguments at home. （主题）让家庭生活变得更加艰难。例如，它可能迫使
+父母加班工作以支付某些开支，这会让他们疲惫不堪、心情烦躁，而这种压力往
+往会导致家庭争吵。
+6）主题ruins the real goal of education. Instead of teaching students to think creatively
+and be kind, schools might focus too much on test scores because of 主题, so students
+only learn how to memorize answers, not how to solve real-life problems.
+（主题）扭曲了教育的真正目的。学校可能因过分关注（主题）而过度强调考试
+成绩，导致学生只学会死记硬背答案，而非培养创造性思维和善良品质，无法解
+决现实生活中的问题。
+48
+2.2.4第二段模板
+图画模板
+Conspicuously , the painter intends to demonstrate that . . . is of the
+essence in our life and should be placed a high value on . To begin with ,
+. . . not only relieves self-doubt/enhances self-control but also helps us
+sustain inner tranquility , which safeguards us from being swayed by
+external pressure . In addition , by practicing this valuable merit , we
+will unleash huge potential and utilize our talents to the fullest extent ,
+thus gaining an edge over rivals when facing fierce competition . Last
+but not least , it is . . . that offers infinite possibilities for our life ,
+leading us out of the impasse to a shining future .
+显而易见，作者的意图是要展示. . .在我们的生活中至关重要，应
+该被高度重视。首先，
+. . .不仅能缓解自我怀疑/增强自制力，
+还帮助我们保持内心的宁静，从而使我们不受外部压力的影响。
+此外，通过实践这一宝贵的品德，我们将释放巨大的潜力，并
+充分利用我们的才华，从而在面对激烈竞争时胜过对手。最后，
+正是. . .为我们的生活提供了无限的可能性，引领我们走出困境，
+走向光明的未来。
+文字类
+Conspicuously , the author strives to convey that . . . plays a critical role in our
+life , be it in academic progress or in career advancement . For one thing ,
+such a traitlaysasolidfoundation for maintaining an aspiring state of mind , which
+safeguards us from being swayed by external pressure. A substantial body of
+research has demonstrated that those armed with the virtue of . . . are more
+inclined to . . . . For another , by practicing this valuable merit , we will
+unleash huge potential and utilize our talents to the fullest extent , thus gaining
+an edge over rivals when facing fierce competition . As a matter of fact , it is .
+. . that offers infinite opportunities forour life , leading us out of the impasse
+to a shining future .
+显然，作者努力传达. . .在我们的生活中起着至关重要的作用，
+无论是在学业进步还是在职业发展方面。首先，这种特质为保持
+积极的心态打下了坚实的基础，从而使我们不受外部压力的影响
+。大量的研究已经证明，那些拥有. . .的人更倾向于. . . 。其次
+，通过实践这一宝贵的品德，我们将释放巨大的潜力，并充分利
+用我们的才华，从而在面对激烈的竞争时胜过竞争对手。实际上
+，正是. . . 为我们的生活提供了无限的机会，引领我们走出困境
+，走向光明的未来。
+动态图
+有时间变化
+Toexamine the root cause of the tendency thoroughly , certain factors should be
+specifically pointed out here . First of all , with the development of . . . , a
+growing numberofpeoplechoose to . . . (instead of . . .) , which enables them to .
+. . . Thus , it is the growing demand that leads to A’s popularity among people .
+Secondly , the xxx industry has been flourishing in recent years , thus offering
+people more high-quality 产品at a reasonable price . That is to say , the rapid
+expansion of the xxx industry has also encouraged people to . . . .
+为了彻底检查这种趋势的根本原因，这里应该特别指出某些因素
+。首先，随着. . .的发展，越来越多的人选择. . . (而不是. . . ) ，
+这使他们能够. . . 。因此，正是不断增长的需求导致了A 在人们
+中的流行。其次，xxx 行业近年来蓬勃发展，从而以合理的价格
+为人们提供了更多高质量的产品。也就是说，xxx 行业的快速扩
+张也鼓励了人们. . .。
+49
+静态图
+无时间变化
+Toexaminetherootcauseofthephenomenonthoroughly, certain factorsshould
+be specifically pointed out here . First of all , with the development of . . . ,
+a growing number of people choose to . . . (instead of . . .) , which enables
+them to ... . Thus , it is the growing demand that leads to A’s popularity among
+people . Secondly , the xxx industry has been flourishing in recent years , thus
+offeringpeople morehigh-quality 产品at a reasonable price . That is to say , the
+rapid expansion of the xxx industry has also encouraged people to . . . .
+为了彻底检查这种现象的根本原因，这里应该特别指出某些因素
+。首先，随着. . .的发展，越来越多的人选择. . . (而不是. . . )
+，这使他们能够. . . 。因此，正是不断增长的需求导致了A 在人
+们中的流行。其次，xxx 行业近年来蓬勃发展，从而以合理的
+价格为人们提供了更多高质量的产品。也就是说，xxx 行业的快
+速扩张也鼓励了人们. . .。
+
+各类型作文的第二段模板可参照上方表格，也可根据DIY语料自行排列组合，
+DIY属于自己的第二段模板
+2.2.5真题解读
+2025
+To examine the root cause of the tendency thoroughly, certain factors should be
+specifically pointed out here. First of all, with the development of China's economy over
+the past decade, a growing number of people choose to prioritize purchasing durable goods,
+which enables them to elevate their living standards significantly. Thus, it is the growing
+demand that leads to durable goods’ popularity among people. Secondly, the technology-
+driven manufacturing industry has been flourishing in recent years, thus offering people
+more high-quality products at a reasonable price. That is to say, the rapid expansion of the
+domestic consumer goods industry has also encouraged people to embrace these advanced
+and affordable options.
+为深入探究这一趋势的根本原因，需特别指出以下几个关键因素。首先，随着
+中国经济过去十年的发展，越来越多人选择优先购置耐用消费品，这显著提升了
+他们的生活水平。由此可见，正是日益增长的需求推动了耐用消费品在民众中的
+普及。其次，技术驱动的制造业近年来蓬勃发展，从而以合理价格为消费者提供
+了更多优质产品。换言之，国内消费品行业的快速扩张也促使人们更愿意接受这
+些兼具先进性与价格优势的选择。
+50
+2023
+Conspicuously,thepainterintendstodemonstrate thatinheriting traditionalculture is of the
+essence in our life and should be placed a high value on . For one thing , theinheritance
+of traditions can not only enhance cultural confidence but also help us develop an aspiring
+attitude towards life , which safeguards us from being swayed by external changes . For
+another , by obeying such behavioral norms , we can build cultural identity and a close-knit
+relationship with individuals , thus fostering a harmonious and civilized social atmosphere .
+That is to say , cultural transmission provides an underpinningformaintainingsocial
+bondsbetweengenerations.
+显然，画家的意图是要展示传承传统文化对我们的生活至关重要，应该
+高度重视。首先，传统的传承不仅可以增强文化自信，还可以帮助我们
+培养对生活充满向上的态度，从而使我们不受外部变化的影响。其次，
+通过遵守这些行为规范，我们可以建立文化认同感，并与他人建立紧密
+的关系，从而促进和谐和文明的社会氛围。换句话说，文化传承为维系
+代际社会纽带提供了支撑。
+2022
+Undoubtedly , the painter intends to demonstrate that extensive learning is of vital
+significance in our life and should be placed a high value on . To begin with，wide-ranging
+educationcannotonly enhance self-confidence but also help us maintain an aspiring attitude
+towards life , which safeguards us from being swayed by external pressure . Inaddition,by
+practicing this valuable merit, wecan enlarge our knowledge reserve, which inturnenables
+us to view complex problems from various perspectives . Last but not least , it is
+interdisciplinary learning that offers infinite opportunities for our life , leading us out of the
+impasse to a shining future .
+毫无疑问，画家的意图是要展示广泛学习在我们的生活中具有至关重要
+的意义，应该高度重视。首先，广泛的教育不仅可以增强自信心，还可
+以帮助我们保持对生活的向往态度，从而使我们不受外部压力的影响。此
+外，通过培养这一宝贵品质，我们的知识储备可以扩大，从而使我们能
+够从各种角度看待复杂问题。最后但并非最不重要的是，跨学科学习为我
+们的生活提供了无限的机会，引领我们走出困境，迎向光明的未来。
+51
+2021
+To begin with , staying true to ourselves not only relieves self-doubt but also helps us
+maintainanaspiringstateofmind, whichsafeguardsusfrombeingswayedbyexternal pressure.
+In addition , by practicing this valuable merit , we will unleash huge potential andutilize our
+talents to the fullest extent , thus gaining an edge over peers when dealing with arduous tasks .
+Last but not least , it is adhering to ourselves that offers infinite opportunities for our life ,
+leading us out of the impasse to a shining future .
+首先，忠于自己不仅可以减轻自我怀疑，还可以帮助我们保持对生活充
+满向往的心态，从而使我们不受外部压力的影响。此外，通过培养这一宝
+贵品质，我们将能够释放潜在的巨大潜力，充分发挥自身的才能，从而
+在处理艰巨任务时超越同龄人。最后但并非最不重要的是，忠于自己为
+我们的生活提供了无限的机会，引领我们走出困境，走向光明的未来。
+2020
+Conspicuously , the painter intends to demonstrate that proper time management is of
+critical significance and should be placed a high value on . For one thing , such a habitlays
+a solid foundation for maintaining a composed state of mind , which safeguards us from being
+swayed by external pressure . A substantial body of research has demonstrated that
+those armed with the habit of managing time are more inclined to show an aspiring attitude
+towards life . For another , by practicing this valuable merit , we will unleash huge potential
+and utilize our talents to the fullest extent , thus gaining an edge over opponents when coping
+with arduous tasks . Broadly speaking , it is our effective time management that offers
+infinite opportunities forour life, leading usoutofthe impasse to a shining future.
+显然，画家的意图是要展示良好的时间管理习惯在我们的生活中具有至关重要
+的意义，应该高度重视。首先，这种习惯为保持平静的心态打下坚实基础，使
+我们不受外部压力的影响。大量研究已经证明，那些具备时间管理习惯的人更
+倾向于对生活怀有积极向上的态度。其次，通过培养这一宝贵品质，我们将
+能够释放潜在的巨大潜力，充分发挥自身的才能，从而在应对艰巨任务时超越
+对手。总的来说，高效的时间管理为我们的生活提供了无限的机会，引领我
+们走出困境，走向光明的未来。
+52
+2019
+Evidently , what the cartoonist intends to convey is that persistence plays a vital role
+in our daily life , whether in academic performance or in working competence . To begin
+with ，perseverance can not only enhance self-confidence but also help us maintain an
+aspiringattitudetowards life, which safeguards us from being swayed by external pressure .
+In addition , by practicing this valuable merit , we will expand our capabilities to a higher
+degree and thus relish a life of constant progress . Moreover , a substantial body of research
+has demonstrated that those who are armed with the qualityofadherencearemoreinclined to
+utilize their talents to the fullest extent , enabling them to gain an edge over peers when
+confronted with hardships .
+显然，漫画家的意图是要传达坚持这种品质在我们日常生活中扮演着至
+关重要的角色，无论是在学术表现还是工作能力方面。首先，坚韧不拔
+不仅可以增强自信心，还可以帮助我们保持对生活充满向上的心态，从
+而使我们不受外部压力的影响。此外，通过培养这一宝贵品质，我们将
+能够将能力提高到更高的水平，从而享受不断进步的生活。此外，大量的
+研究已经证明，那些具备坚持品质的人更倾向于充分发挥自己的才能，使
+他们在面对困难时能够超越同龄人。
+53
+2.3第三段
+第三段的写法与作文类型的关系不大。第三段是总结升华的关键部分，可自行
+选择点题、行动建议和升华展望三个层次完成收尾，字数控制在40-60词左右。
+
+点题：与首段主题句、第二段论点形成闭环。
+
+行动建议：根据图画/图表，从不同主体角度提出具体措施。
+
+升华展望：呼吁行动或预测趋势，提升文章深度。
+2.3.1点题句DIY
+①前半句：表总结
+In conclusion/In short/In summary/In a nutshell/To sum up/All in all/On the whole
+总之/简而言之/总的来说/概括地说/综上所述/总而言之/总体而言
+②后半句：重申主旨
+1）From what has been discussed, . . .is deeply rooted in.
+综上所述，……深深植
+根于……。
+2）In summary, . . .is the driving force behind.
+总之，……是推动……的主要动
+力。
+3）the spirit of . . . holds the key to pursuing success and should be held in high
+regard.
+. . .的精神是成功的关键，应该高度重视。
+4）the spirit of . . . gives an entry ticket to pursuing success and should be held in
+high regard.
+. . .的精神是成功的入场券，应该高度重视。
+5）the spirit of . . . grasps the master key to pursuing success and should be held in
+high regard.
+. . .的精神是成功的关键，应该高度重视。
+2.3.2行动建议句DIY
+个人
+On an individual level, it is imperative to（具体行动）, such as（举例）
+, which can effectively （目标）.
+在个人层面上，必须（具体行动），例如（举例），这能有效（
+目标）。
+Each citizen can contribute to （主题）by （行动）, thereby
+fostering （积极影响）.
+每位公民都能通过（行动）为（主题）贡献力量，从而促进（积
+极影响）。
+54
+社会
+From a societal perspective, （机构/群体）should （行动）, for
+instance, （举例）, so as to （目标）.
+从社会角度来看，（机构/群体）应当（行动），例如（举例），
+以实现（目标）。
+The media and enterprises ought to （行动）, thereby （结果）
+媒体和企业应当（行动），从而（结果）。
+国家
+At the national level, governments must （政策行动）, including （
+具体措施）, which will （预期结果）.
+在国家层面，政府必须（政策行动），包括（具体措施），这将
+（预期结果）。
+Authorities are advised to （行动）, thereby （宏观影响）.
+建议有关部门采取（行动），从而（宏观影响）。
+2.3.3升华展望句DIY
+积极品质
+With the spirit of （品质）, it is only a matter of time before we （理想
+目标）.
+秉持（品质）的精神，（理想目标）只是时间问题。
+A sound mind in a sound body is not an ancient ideal but a modern
+imperative. Through （健康行动）, we cultivate resilience against （挑
+战）, forging a society where wellness thrives.
+健全的精神寓于强健的体魄，这并非古老的理想，而是现代社会的
+必然要求。通过（健康行动），我们培养抵御（挑战）的韧性，打
+造一个健康蓬勃发展的社会。
+Consequently/Hence , no matter what circumstances we encounter in the
+future , we should remind ourselves to maintain abundant . . . so as to
+stimulate self-advancement .
+因此，无论将来遇到什么情况，我们都应该提醒自己保持丰富的.
+. . 以激发自我进步。
+Consequently/Hence , in no circumstances should we forget that it is
+critical to maintain abundant . . . so as to stimulate self-advancement .
+因此，无论在什么情况下，我们都不能忘记，保持丰富的. . .对于
+激发自我进步至关重要。
+社会问题
+The clock is ticking. Immediate actions from all stakeholders are
+imperative to reverse this alarming trend.时间紧迫。所有利益相关方
+必须立即采取行动，扭转这一令人担忧的趋势。
+If every citizen contributes a drop of （主题）, our society will become
+an ocean of （主题）.
+如果每个公民都贡献一滴（主题），我们的社会将变成一片（主题
+）的海洋。
+Let us take immediate action, for a brighter future hinges on our choices
+today.
+让我们立即采取行动，因为更光明的未来取决于我们今天的选择。
+55
+科技发展
+Innovation is the engine of civilization. Harnessing its power wisely will
+define humanity's next chapter.
+创新是文明的引擎。明智地驾驭其力量将决定人类的下一个篇章。
+As we marvel at ChatGPT's capabilities, we must anchor innovation to
+ethical moorings. Only by enacting algorithmic transparency laws can we
+prevent AI from becoming a double-edged sword.
+当我们惊叹于ChatGPT的强大能力时，必须将创新锚定在伦理基石
+上。唯有通过制定算法透明度法规，才能防止人工智能沦为一把双
+刃剑。
+文化传承
+By blending tradition with modernity, we can ensure that our cultural
+roots nourish the fruits of future generations.
+通过将传统与现代相融合，我们能够确保文化根基滋养子孙后代的
+硕果。
+Chinese traditional virtues, such as （美德）, have penetrated into our
+national DNA. Revitalizing them is key to （社会目标）.
+中华传统美德，如（美德），已深深融入我们的民族基因。振兴这
+些美德是实现（社会目标）的关键。
+生态环保
+If every individual plants a seed of （环保行动）, our planet will
+flourish into a garden where （生态）becomes the legacy we bequeath
+to future generations.
+如果每个人都播下一颗（环保行动）的种子，我们的星球将繁荣成
+一座花园，让（生态）成为我们留给后世的遗产。
+2.3.4第三段模板
+对个人
+In a nutshell , the spirit of . . . grasps the master key to pursuing success
+and should be held
+in high regard . Consequently , no matter what
+circumstances we encounter in the future , we should remind ourselves to
+maintainabundant... so as to stimulate self-advancement .
+简而言之，. . .这一品质是成功的关键，并应受到高度重视。因
+此，无论将来我们遇到什么情况，我们都应该提醒自己保持足够
+的. . .，以促进自我进步。
+对社会
+In a nutshell , the spirit of . . . grasps the master key to pursuing success
+and should be held
+in high regard . Consequently , no matter what
+circumstances we encounter in the future , we should remind ourselves to
+maintainabundant... so as to stimulate social advancement .
+简而言之，. . .这一品质是成功的关键，并应受到高度重视。因
+此，无论将来我们遇到什么情况，我们都应该提醒自己保持足够
+的. . .，以促进社会进步。
+
+各类型作文的第三段模板可参照上方表格，也可根据DIY语料自行排列组合，
+DIY属于自己的第三段模板
+56
+2.3.5真题解读
+2025
+In a nutshell ,itispredictedthatthistrendwillcontinueintheforeseeablefutureasthe
+Chineseeconomycontinuestogrowandthestandardoflivingimproves.Theownershipof
+durableconsumergoodsamonghouseholdsatdifferentincomelevelswillfurtherrise.This
+willnotonlyreflecttheincreasedinfluenceofChinesehouseholdsbutalsocontributetothe
+continuedgrowthofthedomesticmarket.
+简言之，随着中国经济的持续增长和生活水平的不断提高，预计这一趋势
+将在可预见的未来延续下去。不同收入水平家庭的耐用消费品拥有率将进一
+步上升。这不仅将反映出中国家庭影响力的增强，也将为国内市场的持续增
+长做出贡献。
+2023
+In a nutshell , the spirit of carrying forward traditions grasps the master key to
+social cohesion and should be held in high regard . Consequently , no matter what
+circumstances we encounter in the future , we should both preserve and develop
+ancestral heritages so as to stimulate social advancement .
+简而言之，传承传统这一精神是社会凝聚力的关键，应该受到高
+度重视。因此，无论将来我们遇到什么情况，我们都应该既保留又
+发展祖先的遗产，以促进社会进步。
+57
+2022
+In a nutshell , thespiritof comprehensive learning grasps the master key to pursuing success
+andshouldbeheldinhighregard.Consequently, nomatterwhatcircumstances weencounterin
+thefuture , we should remind ourselves to maintain abundant curiosity towards knowledge so
+as to stimulate self-advancement .
+简而言之，全面学习的精神是追求成功的关键，应该高度重视。因此，
+无论将来我们遇到什么情况，我们都应该提醒自己保持对知识的浓厚好奇
+心，以促进自我进步。
+2021
+In a nutshell , the spirit of pursuing dreams grasps the master key to success and should
+beheldin highregard . Consequently , nomatter what circumstanceswe encounter in the future ,
+we should remind ourselves to maintain abundant zeal for dreams so as to stimulate self-
+advancement .
+简而言之，追逐梦想这一精神是成功的关键，应该高度重视。因此，无
+论将来我们遇到什么情况，我们都应该提醒自己保持对梦想的极大热情，
+以促进自我进步。
+2020
+In a nutshell , the habit of proper time management grasps the master key to success and
+shouldbeheld in high regard . Consequently , no matter what circumstances we encounterin
+the future , we should remind ourselves to maintain abundant consciousness for time so as to
+stimulate self-advancement .
+简而言之，时间管理这一习惯是成功的关键，应该高度重视。因此，无
+论将来我们遡遇到什么情况，我们都应该提醒自己保持对时间的高度重视
+，以促进自我进步。
+58
+2019
+In a nutshell , the spirit of being persistent grasps the master key to success and should
+be held in high regard . Consequently , no matter what circumstances we encounter in the future ,
+we should remind ourselves to maintain abundant perseverance so as to stimulate self-
+advancement .
+简而言之，坚持不懈这一精神是成功的关键，应该高度重视。因此，无
+论将来我们遇到什么情况，我们都应该提醒自己保持充分的毅力，以促进
+自我进步。
+59
+3.模板库
+这份作文模板定位为通用性框架，因此模板库给到的都是通用模板，只有
+少量进行了语句变化，方便大家上手。也可以调用第二章进行灵活适配和个性
+化的DIY调整。
+3.1图画类
+Depicted in the portrayal is/are 某物/ 某人
+showing entirely distinct
+states/holding entirely distinct attitudes towards 某物. Doing/Done sth (动作1 ) , A
+is doing . . .(动作2) . By contrast , B is doing . . .(动作1 ) , with . . . (动作2) . The
+caption below the picture indicates :图画标题.
+Conspicuously , the painter
+intends to demonstrate that
+主题词
+is of the
+essence in our life and
+should be placed
+a high value on .
+To begin
+with ,
+主题词
+not only relieves self-doubt/enhances self-control but also helps us sustain
+inner tranquility , which safeguards us from being swayed by external pressure . In
+addition , by practicing this valuable merit , we will unleash huge potential and utilize
+our talents to the fullest extent , thus gaining an edge over rivals when facing fierce
+competition . Last but not least , it is 主题词that offers infinite possibilities for
+our life , leading us out of the impasse to a shining future .
+In a nutshell , the spirit of 主题词grasps the master key to pursuing success and
+should be held
+in high regard . Consequently , no matter what circumstances we
+encounter in the future , we should remind ourselves to maintain abundant 主题词so
+as to stimulate self-advancement .
+图中描绘的是某事物/人面对. . .时展现出完全不同的状态/持有完全不同的
+观点。A 做了. . . 相反，B 做了. . . 。图下小标题写的是：. . .。
+显而易见，作者的意图是要展示. . .在我们的生活中至关重要，应该被高度
+重视。首先，. . . 不仅能缓解自我怀疑/增强自制力，还帮助我们保持内心的宁
+静，从而使我们不受外部压力的影响。此外，通过实践这一宝贵的品德，我们
+将释放巨大的潜力，并充分利用我们的才华，从而在面对激烈竞争时胜过对手。
+最后，正是. . .为我们的生活提供了无限的可能性，引领我们走出困境，走向光
+明的未来。
+简而言之，. . .这一品质是追求成功的秘诀，并应受到高度重视。因此，
+无论将来我们遇到什么情况，我们都应该提醒自己保持足够的. . .，以促进自
+我进步。
+
+2000-2023年英一真题均为图画类作文，此处给到2023年的真题套用，其余
+真题模板套用见真题范文精析，此处不作举例。
+60
+
+2023英一真题
+
+模板套用
+Depicted in the cartoon are two teams of dragon boat competitors rowing on the
+river , with a good many spectators cheering them on . Among the crowd stands an
+elderly lady , saying to her spouse，“it is so excellent to have an increasing number
+of people participating in the village’ s Dragon Boat Festival !”
+Conspicuously , the painter
+intends to demonstrate that
+inheriting traditional
+culture is of the essence in our life and should be placed a high value on . For one
+thing , the inheritance of traditions can not only enhance cultural confidence but also
+help us develop an aspiring attitude towards life , which safeguards us from being
+swayed by external changes . For another , by obeying such behavioral norms , we can
+build cultural identity and close-knit relationships with others , thus fostering
+a
+harmonious
+and
+civilized
+social
+atmosphere . That
+is
+to
+say ,
+cultural
+transmission provides an underpinning for maintaining social bonds between
+generations .
+In a nutshell , the spirit of carrying forward traditions grasps the master key to
+social cohesion and should be held in high regard . Consequently , no matter what
+circumstances we encounter in the future , we should both preserve and develop
+ancestral heritages so as to stimulate social advancement .
+
+翻译
+这个漫画描绘了两支龙舟队在河上划行，众多观众为他们欢呼加油。人群
+中有一位年长的女士对她的伴侣说：“有越来越多的人参加村庄的龙舟节真是太
+棒了！”
+显然，画家意在展示传承传统文化在我们的生活中至关重要，应该高度重
+视。首先，传统的传承不仅可以增强文化自信，还可以帮助我们培养对生活充
+满向往的态度，从而使我们不受外部变化的影响。其次，通过遵守这些行为规
+范，我们可以建立文化认同感，并与他人建立紧密的关系，从而促进和谐和文
+明的社会氛围。换句话说，文化传承为维系代际社会纽带提供了支撑。
+简而言之，传承传统的精神是社会凝聚力的关键，应该高度重视。因此，
+无论将来我们遇到什么情况，我们都应该既保留又发展祖先的遗产，以促进
+社会进步。
+61
+3.2文字类
+Emerging from the excerpt is an enlightening paragraph of the article , in which
+the author tells us that . . .(作者观点) . There is no denying that its profound meaning
+subtly conveyed should be placed a high value on . Personally , I completely agree
+with this idea .
+For one thing , 主题词can not only alleviate self-doubt but also help us
+maintain inner tranquility . A case in point is me . As an undergraduate , I cling to
+the
+idea that
+it
+is
+主题词that keeps us away from external pressure , thus
+maintaining psychological health and spiritual positiveness . For another , 主题词is
+extremely constructive for us to utilize our talents to the fullest extent . A substantial
+body of research has demonstrated that those armed with the virtue of 主题词are
+more inclined to gain an edge over rivals when facing fierce competition .
+In conclusion , the spirit of
+主题词
+grasps the master key to pursuing
+success/happiness and should be held in high regard . Consequently , no matter what
+circumstances we encounter in the future , we should remind ourselves to maintain
+abundant 主题词so as to stimulate self-advancement .
+文章节选中有一段很有启发性，作者向我们介绍了某观点：…。不可否认，
+它巧妙传达的深刻含义应该得到高度重视。就我个人而言，我完全同意这个观
+点。
+一方面，…不仅可以减轻自我怀疑，还可以帮助我们保持内心的平静。我
+就是一个典型的例子。作为一名大学生，我坚持认为是. . .让我们远离外界压
+力，从而保持心理健康和精神积极性。另一方面，. . .对我们发挥才能来说是
+非常有利的。大量的研究表明，那些拥有. . . 品质的人更有可能在面对激烈的
+竞争时胜过竞争对手。
+总之，…是追求成功/幸福的万能钥匙，应该受到高度重视。因此，无论
+我们将来遇到什么情况，我们都应该提醒自己保持充足的…从而促进自我提升。
+62
+
+23 大纲题目
+Read the following excerpt from an article and write an essay . In your essay ,
+you should explain whether or to what extent you agree with the author . Support your
+argument with reasons and relevant examples .Write your answer in 160-200 words
+on the ANSWER SHEET .(20 points)
+Many of us , whatever our field of work , fear that showing uncertainty can
+damage our image - and we may compensate by expressing overconfidence in an
+attempt to win trust . But in many situations people are willing to trust those who can
+admit they don't have a definitive answer . Recent studies found that communicating
+uncertainty and even admitting our mistakes is not harmful and can even be beneficial
+to trustworthiness . So , failure in "expertise”can be compensated by higher integrity
+and benevolence .When communicating uncertainty in a transparent way , we are
+perceived as less biased and willing to tell the truth .
+
+模板套用
+Emerging from the excerpt is an enlightening paragraph of the article , in which
+the author tells us that communicating uncertainty is beneficial for us instead of
+damaging our image . There is no denying that its profound meaning subtly conveyed
+should be placed a high value on . Personally , I completely agree with this idea .
+For one thing , showing uncertainty can not only alleviate self-doubt but also
+help us maintain inner tranquility . A case in point is me . As an undergraduate who
+possesses limited professional
+knowledge , I cling to the idea that it is admitting
+ignorance that keeps us away from overconfidence , thus relishing a life of constant
+progress .
+For
+another ,
+expressing
+uncertainty
+is
+extremely
+constructive for
+maintaining a close-knit relationship with others . A substantial body of research has
+proven that those armed with the quality of honesty are more prone to win trust from
+their friends .
+In conclusion , the spirit of showing uncertainty grasps the master key to
+pursuing happiness and should be held in high regard . Consequently , no matter what
+circumstances we encounter in the future , we should remind ourselves to maintain
+abundant honesty to others so as to pursue success and happiness.
+
+翻译
+文章的节选中出现了一段启发性的段落，作者向我们介绍了一种观点：沟
+通不确定性对我们有益，而不是损害我们的形象。不可否认，它巧妙传达的深
+刻含义应该得到高度重视。就我个人而言，我完全同意这个观点。
+一方面，表现出不确定性不仅可以减轻自我怀疑，还可以帮助我们保持内
+心的平静。我就是一个典型的例子。作为一名专业知识有限的大学生，我认为
+只有承认自己的无知，才能避免过度自信，从而享受不断进步的生活。另一方
+面，表达不确定对于保持与他人的紧密关系是极具建设性的。大量研究证明，
+那些拥有诚实品质的人更容易赢得朋友的信任。
+总之，展现不确定性是追求幸福的万能钥匙，应该受到高度重视。因此，
+无论我们将来遇到什么情况，我们都应该提醒自己对别人保持足够的诚实，以
+追求成功和幸福。
+63
+3.3图表类
+3.3.1动态图
+
+动态图：存在时间的变化
+The xxx chart above clearly reflects the changes in the number of 主体in 地点
+between 年份1 and 年份2 . Based upon the data , there was a significant increase in
+事物1 from 数字1 to 数字2 , while 事物2 witnessed an opposing trend during
+the same period , decreasing substantially from 数字3 to 数字4 ./Meanwhile , 事物
+2 witnessed a similar trend during the same period , growing from 数字3 to 数字4 .
+To examine the root cause of the tendency thoroughly , certain factors should be
+specifically pointed out here . First of all , with the development of . . . , a growing
+number of people choose to 做某事(instead of . . .), which enables them to . . . . Thus
+, it is the growing demand that leads to A’s popularity among people . Secondly , the
+行业industry has been flourishing in recent years , thus offering people more high-
+quality 产品at a reasonable price . That is to say , the rapid expansion of the 行业
+industry has also encouraged people to 做某事.
+With due consideration of all these contributors , we may predict that the number
+of . . . will keep rising in the forthcoming decade . It is time for us to embrace the
+trend of outdoor activities .
+上面的xxx 图表清楚地反映了从xx 年到xx 年间主体数量的变化。从数据
+上看，事物1 从数字1 显著增长到数字2 ，而同期的事物2 则呈现相反的趋势，
+从数字3 大幅下降至数字4 。/而同期的事物2 趋势类似，从数字3 增长至数字
+4。
+为了彻底检查这种趋势的根本原因，这里应该特别指出某些因素。首先，
+随着. . .的发展，越来越多的人选择. . . (而不是. . . )
+，这使他们能够. . . 。
+因此，正是不断增长的需求导致了A 在人们中的流行。其次，xxx 行业近年来
+蓬勃发展，从而以合理的价格为人们提供了更多高质量的产品。也就是说，
+xxx 行业的快速扩张也鼓励了人们. . .。
+考虑到所有这些因素，我们可以预测，未来十年. . .的数量将继续增加。现
+在正是我们拥抱. . . 趋势的时候了。
+64
+
+2023英二真题
+
+模板套用
+The line chart above clearly reflects the changes of the residents’health literacy
+level in our country between 2012 and 2021 . Based upon the data , the health literacy
+level climbed moderately from 8 .8% to 10 .25% between 2012 and 2015 , a rise of
+merely 1 .45% . By contrast , there was a significant leap from 10 .25% to 25 .4%
+between 2015 and 2021 , an increase of 15 .15% within only 6 years .
+To examine the root cause of the tendency thoroughly , certain factors should be
+specifically pointed out here . First of all , with the development of living standards ,
+a growing number of people choose to maintain a healthy lifestyle , which enables
+them to attain a higher
+level of well-being and life satisfaction . Thus , it is the
+increasing living standards that lead to heightened awareness of health among modern
+people . Secondly , the medical industry has been flourishing in recent years , thus
+offering people more high-quality medicines at a reasonable price . That is to say , the
+rapid expansion of the medical industry has also encouraged people to enjoy better
+healthcare services and medical treatments .
+With due consideration of all these contributors , we may predict that the
+residents’health literacy level will keep improving in the forthcoming decade .
+
+翻译
+上图清楚地反映了2012 年至2021 年间我国居民健康素养水平的变化。根
+据数据，2012 年至2015 年间，健康素养水平从8 .8%适度攀升至10 .25%，仅
+上升了1 .45%。相比之下，2015 年至2021 年间，这一比例从10 .25%大幅跃升
+至25 .4%，仅6 年内就增长了15 .15%。
+为了彻底检查这种趋势的根本原因，这里应该特别指出某些因素。首先，
+随着生活水平的提高，越来越多的人选择保持健康的生活方式，这使他们能够
+获得更高水平的幸福感和生活满意度。因此，正是生活水平的提高提高了现代
+人的健康意识。其次，近年来医疗行业蓬勃发展，以合理的价格为人们提供了
+更多优质药品。也就是说，医疗行业的快速扩张也鼓励人们享受更好的医疗服
+务和治疗。
+考虑到所有这些因素，我们可以预测，在未来十年，居民的健康素养水平
+将不断提高。
+65
+
+2022 英二真题
+
+模板套用
+The bar chart above clearly reflects the changes
+in the number of express
+deliveries
+in China between 2018 and 2020 . Based upon the data , there was a
+significant increase
+in the number of all parcels from 51 billion to 83 billion .
+Meanwhile , the number of parcels in rural areas witnessed a similar trend , growing
+from 12 billion to 30 billion .
+To examine the root cause of the tendency thoroughly , certain factors should be
+specifically pointed out here . First of all , with the development of the mobile Internet ,
+a growing number of people choose to buy products online instead of offline , which
+enables them to browse and purchase products from home at any time of the day or
+night . Thus , it is the growing demand that leads to express delivery’s popularity
+among modern people , especially those in rural areas . Secondly , E-commerce
+platforms have been flourishing in recent years , thus offering people more high-
+quality products at a reasonable price . That is to say , the rapid expansion of E-
+commerce platforms has also encouraged people to choose online shopping .
+With due consideration of all these contributors , we may predict that the number
+of parcels will keep rising in the forthcoming decade . It is time for us to embrace the
+trend of online shopping .
+
+翻译
+上面的条形图清楚地反映了2018 年至2020 年间中国快递数量的变化。根据
+这些数据，所有包裹的数量都大幅增加，从510 亿个增加到830 亿个。与此同
+时，农村地区的包裹数量也出现了类似的趋势，从120 亿件增长到300 亿件。
+为了彻底检查这种趋势的根本原因，这里应该特别指出某些因素。首先，
+随着移动互联网的发展，越来越多的人选择在线上而不是线下购买产品，这使
+他们能够在白天或晚上的任何时候在家浏览和购买产品。因此，正是不断增长
+的需求导致了快递在现代人中的流行，尤其是在农村地区。其次，近年来电子
+商务平台蓬勃发展，以合理的价格为人们提供了更多优质的产品。也就是说，
+电子商务平台的快速扩张也鼓励了人们选择网上购物。
+考虑到所有这些因素，我们可以预测，在未来十年中，包裹数量将继续增
+加。现在是我们拥抱网上购物潮流的时候了。
+
+2025年英一真题为图表类作文，模板套用见真题范文精析。
+66
+3.3.2静态图
+
+静态图：不存在时间的变化
+The xxx chart above clearly reflects the result of a survey about . . . in 地点
+during 时间.Based upon the data , 主体A who . . . occupy the largest portion , up to
+百分比1 . It is followed by those (主体B&C)
+who . . . , making up 百分比2 and
+百分比3 respectively . By contrast , 主体D who . . . only take up merely 百分比4 .
+To examine the root cause of the phenomenon thoroughly , certain factors should
+be specifically pointed out here . First of all , with the development of . . . , a growing
+number of people choose to 做某事(instead of . . .) , which enables them to . . . . Thus
+, it is the growing demand that leads to A’s popularity among people . Secondly , the
+行业industry has been flourishing in recent years , thus offering people more high-
+quality 产品at a reasonable price . That is to say , the rapid expansion of the 行业
+industry has also encouraged people to 做某事.
+With due consideration of all these contributors , we may predict that (the number
+of . . . will keep growing in the forthcoming decade .)
+上面的xxx 图表清楚地反映了关于某时某地xx 调查的结果。从数据上看，
+主体A 占最大的部分，达到百分比1 。主体B 和C 紧随其后，分别占百分比2
+和百分比3 。相比之下，主体D 只占了百分比4。
+为了彻底检查这种现象的根本原因，这里应该特别指出某些因素。首先，
+随着. . .的发展，越来越多的人选择. . . (而不是. . . )
+，这使他们能够. . . 。
+因此，正是不断增长的需求导致了A 在人们中的流行。其次，xxx 行业近年来
+蓬勃发展，从而以合理的价格为人们提供了更多高质量的产品。也就是说，
+xxx 行业的快速扩张也鼓励了人们. . .。
+考虑到所有这些因素，我们可以预测，未来十年. . .的数量将继续增加。现
+在正是我们拥抱. . . 趋势的时候了。
+67
+
+2021英二真题
+
+模板套用
+The bar chart above clearly reflects the result of a survey about residents’exercis-
+ing ways in a certain city . Based upon the data , people who exercise alone occupy the
+largest portion , up to 54 .3% . It is followed by those who exercise with friends and
+families , making up 47 .7% and 23 .9% respectively . By contrast , people who take
+part in group activities only take up merely 15 .8% .
+To examine the root cause of the phenomenon thoroughly , certain factors should
+be specifically pointed out here . First of all , with the quickening pace and ever-
+increasing pressure of modern life , a growing number of people choose to exercise
+alone instead of with others , which enables them to freely choose personalized
+exercises without being restricted by others . Thus , it is the growing demand that leads
+to the solo exercise’s popularity among citizens . Secondly , the online fitness
+platforms have been flourishing
+in recent years , thus offering people more high-
+quality fitness courses at a reasonable price. That is to say , the rapid expansion of
+online fitness platforms has also encouraged people to choose exercising alone at home.
+With due consideration of all these contributors , we may predict that the number
+of people exercising alone will keep growing in the forthcoming decade . It is time for
+us to embrace the trend of exercising alone .
+
+翻译
+上面的条形图清楚地反映了某城市居民锻炼方式的调查结果。根据数据显
+示，单独锻炼的人所占比例最大，高达54 .3% 。其次是与朋友和家人一起锻炼
+的人，分别占47 .7%和23 .9%。相比之下，参加团体活动的人只占15 .8%。
+为了彻底探究这一现象的根本原因，这里应该特别指出某些因素。首先，
+随着现代生活节奏的加快和压力的增加，越来越多的人选择独自锻炼，而不是
+与他人一起锻炼，这使他们能够自由选择个性化的锻炼，而不受他人的限制。
+因此，正是日益增长的需求导致了单人锻炼在公民中的流行。其次，近年来，
+在线健身平台蓬勃发展，以合理的价格为人们提供了更多优质的健身课程。也
+就是说，在线健身平台的快速扩张也鼓励了人们选择在家独自锻炼。
+考虑到所有这些因素，我们可以预测，在未来十年中，单独锻炼的人数将
+继续增长。现在是我们拥抱在线独自健身趋势的时候了。
+68
+
+2020英二真题
+
+模板套用
+The bar chart above clearly reflects the result of a survey about students’purposes
+of reading on a certain campus . Based upon the data , students who acquire
+knowledge occupy the largest portion , up to 59 .5% . It is followed by those who kill
+time and acquire information , making up 21 .3% and 17 .0% respectively .
+To examine the root cause of the phenomenon thoroughly , certain factors should
+be specifically pointed out here . First of all , with the development of the mobile
+Internet , a growing number of people choose to study online instead of offline , which
+enables them to acquire knowledge from home at any time of the day or night . Thus ,
+it is the growing demand that leads to online study’s
+popularity
+among
+young
+students . Secondly , the online learning platforms have been flourishing in recent
+years , thus offering students more high-quality courses at a reasonable price . That is
+to say , the rapid expansion of online learning platforms has also encouraged students
+to choose phones as a way to acquire new knowledge .
+With due consideration of all these contributors , we may predict that the
+proportion of students studying online will keep increasing in the forthcoming decade .
+It is time for us to embrace the trend of online learning .
+
+翻译
+上面的条形图清楚地反映了一项关于某校园学生阅读目的的调查结果。根
+据数据显示，获得知识的学生所占比例最大，高达59 .5% 。其次是消磨时间
+和获取信息的人，分别占21 .3% 和17 .0%。
+为了彻底探究这一现象的根本原因，这里应该特别指出某些因素。首先，
+随着移动互联网的发展，越来越多的人选择在线学习而不是离线学习，这使他
+们能够在白天或晚上的任何时候在家学习知识。因此，正是不断增长的需求
+导致了在线学习在年轻学生中的流行。其次，近年来，在线学习平台蓬勃发展，
+从而以合理的价格为学生提供了更多高质量的课程。也就是说，在线学习平台
+的快速扩张也鼓励学生选择手机作为获取新知识的一种方式。
+考虑到所有这些因素，我们可以预测，在未来十年中，在线学习的学生比
+例将继续增加。现在是我们拥抱在线学习趋势的时候了。
+69
+3.4混合类
+其他类型的作文无非前述各种作文类型的混合。只要图画、图表、文字作
+文都可以掌握，混合类型的作文的写作可完全拆分为图画、图表、文字作文。
+不同的是：混合型作文要同时处理两种媒介（如图表与图画、数据与文字）
+，需在描述、分析和论证中体现两者的关联性。例如2024年英一真题要求考生
+既描述图表数据趋势，又结合图画内容分析深层社会现象。
+因此，对于混合型作文，应先找出两类信息之间的逻辑关系（如因果关系、
+对比关系、互补关系），描述时避免机械堆砌，需通过过渡句自然衔接。
+
+第一段：
+Depicted in the left picture are （图画核心元素：人物动作+场景细节）, with
+a banner/sign reading （标志性文字）. A young person remarks, "（人物对话）".
+若有图表类混合：+ Meanwhile, the right chart clearly reflects that （图表主题）
+has experienced a significant increase/decline from （起始数据）to （终点数据）
+between （起始年份）and （终点年份）, demonstrating （总体趋势）.
+若有文字类混合：+ Meanwhile, the right excerpt is an enlightening paragraph
+of the article , in which the author tells us that . . .(作者观点) . There is no denying
+that its profound meaning subtly conveyed should be placed a high value on .
+Personally , I completely agree with this idea .
+左图中描绘的是（图画核心元素：人物动作+场景细节），并附有一条横幅
+/标牌，上面写着（标志性文字）。一位年轻人评论道：“（人物对话）”。
+若有图表类混合：与此同时，右侧图表清晰反映出（图表主题）在（起始
+年份）至（终点年份）期间从（起始数据）显著上升/下降至（终点数据），表
+明（总体趋势）。
+若有文字类混合：与此同时，右侧摘录是文章中一段富有启发性的段落，
+作者告诉我们……（作者观点）。不可否认，其巧妙传达的深刻含义应被高度
+重视。就个人而言，我完全赞同这一观点。
+
+第二段
+To examine the root cause of this phenomenon, three driving forces deserve
+particular emphasis. Primarily, with the heightened awareness of （相关社会议题，
+如public health/environmental protection）, there emerges a growing demand for （
+与图表数据相关的需求，如green spaces/outdoor facilities）. Consequently, it is
+this social consensus that propels （现象主体）to gain momentum. Furthermore,
+governments' substantial investments in （公共建设领域，如urban infrastructure）
+have been instrumental, as evidenced by （具体政策表现，如the 15% rise in fiscal
+expenditure shown in the chart）. Most crucially, this trend aligns with the national
+strategy to （国家政策导向，如achieve carbon neutrality/promote全民健身）.
+为探究该现象的根源，需重点考量三大驱动因素。首要原因是随着（相关
+社会议题，如公共卫生/环境保护）意识增强，市场对（与图表数据相关的需求，
+70
+如绿地/户外设施）的需求持续增长。正是这种社会共识推动（现象主体）加速
+发展。其次，政府对（公共建设领域，如城市基础设施）的大规模投入起到关
+键作用，图表中（具体政策表现，如财政支出增长15%）的数据即为明证。最
+关键的是，该趋势符合国家（政策导向，如实现碳中和/推进全民健身）的战略
+布局。
+
+第三段
+With these multidimensional efforts in place, it is reasonable to anticipate
+sustained growth in （现象主体）throughout the next decade. The convergence of （
+宏观因素1，如policy support）and （宏观因素2，如public participation）will
+undoubtedly solidify this trajectory. As the young observer aptly noted in the
+illustration, such developments truly constitute "（呼应图片中的关键评价）" for
+modern society.
+在这些多维举措推动下，（现象主体）未来十年有望持续增长。（宏观因
+素1，如政策支持）与（宏观因素2，如公众参与）的协同作用必将巩固这一发
+展态势。正如插图中那位年轻观察者所言，这样的进步堪称现代社会"（呼应图
+片中的关键评价）"的典范。
+71
+
+2024英一真题
+
+模板套用
+Depicted in the left picture are several citizens walking or running along the road,
+with a banner reading "Fitness Area for Citizens". A young boy is remarking, "The
+newly-built park close to my home is really nice". Meanwhile, the right chart clearly
+reflects that the number of parks in a certain city has experienced a significant
+increase from 406 to 670 between 2020 and 2022.
+To examine the root cause of this phenomenon, three driving forces deserve
+particular emphasis. Primarily, with the heightened awareness of public health, there
+emerges a growing demand for accessible recreational green spaces and outdoor
+fitness facilities. Consequently, it is this social consensus that propels urban park
+construction to gain momentum. Furthermore, owing to the remarkable development
+of living standards , governments attach more importance to meeting residents’
+demand for a higher quality of life . Most crucially, this trend aligns with the national
+strategy to promote national fitness and build healthier communities.
+With these multidimensional efforts in place, it is reasonable to anticipate
+sustained growth in urban green spaces and park facilities throughout the next decade.
+The convergence of policy-driven infrastructure development and increasing public
+demand for active lifestyles will undoubtedly solidify this trajectory. As the young
+observer aptly noted in the illustration, such developments truly constitute "really
+nice" enhancements for modern society.
+
+翻译
+左图描绘了几位市民正在路上行走或跑步，横幅上写着市民健身区。一个
+小男孩感叹道：“我家附近新建的公园真不错”。与此同时，右图清晰显示某
+城市公园数量从2020年的406个显著增长至2022年的670个。
+究其原因，三大驱动力尤为关键。首要的是，随着公共卫生意识提升，人
+们对绿地和户外健身设施的需求与日俱增，正是这种社会共识推动着城市公园
+建设蓬勃发展。其次，由于生活水平的显著提高，政府更加重视满足居民对高
+品质生活的追求。最重要的是，这一趋势与国家推进全民健身、建设健康社区
+的战略高度契合。
+在这些多维度的努力下，我们可以预见未来十年城市绿地和公园设施将不
+断增长。政策支持的基础设施建设与公众对健康生活方式日益增长的需求相结
+合，必将巩固这一态势。正如图片中那位年轻人所言，这确实是现代社会的一
+大进步。
+72
+
+例题假设​
+​
+图画：一名学生深夜玩手机，桌上堆满零食和饮料
+​
+文字：某高校学生近视率从2020年45%上升至2024年78%
+
+模板套用
+Depicted in the left picture are a student scrolling through a smartphone late at
+night, with piles of snacks and soda cans cluttering the desk. A faint caption on the
+phone screen reads "Online Gaming Marathon". A weary classmate remarks, "I can't
+stop checking notifications even at midnight". Meanwhile, the right excerpt is an
+enlightening paragraph of the article, in which the author tells us that myopia rates
+among college students in a certain university have surged from 45% in 2020 to 78%
+in 2024.
+To examine the root cause of this phenomenon, three driving forces deserve
+particular emphasis. Primarily, with the heightened awareness of digital addiction,
+there emerges a growing demand for instant gratification through screens, as
+evidenced by students averaging 8 hours of daily screen time. Consequently, it is this
+social consensus that propels vision deterioration to gain momentum. Furthermore,
+universities' insufficient investments in health education programs have been
+instrumental, as shown by the mere 12% of schools offering mandatory eye-protection
+courses. Most crucially, this trend aligns with the national strategy to combat youth
+myopia through the "Healthy China 2030" initiative, which prioritizes reducing screen
+-based sedentary behaviors.
+With these multidimensional efforts in place, it is reasonable to anticipate
+sustained growth in public health interventions throughout the next decade. The
+convergence of policy support and student self-discipline will undoubtedly solidify
+this trajectory. As the young observer aptly noted in the illustration, such
+developments truly constitute "a wake-up call for balanced digital lifestyles" for
+modern society.
+
+翻译
+左图中描绘的是一名学生在深夜刷手机，桌上堆满零食和苏打水罐。手机
+屏幕上隐约可见一行字："在线游戏马拉松"。一位疲惫的同学感叹道："半夜了
+我还是忍不住看通知"。而右侧的摘录则是文章中一段发人深省的论述：作者指
+出某高校大学生近视率已从2020年的45%飙升至2024年的78%。
+为探究这一现象的根源，需要特别关注三大驱动因素。首先，随着对数字
+成瘾认知的提升，人们越来越追求通过屏幕获得即时满足——数据显示学生日
+均屏幕使用时间达8小时，正是这种社会共识加速了视力恶化趋势。其次，高校
+在健康教育项目上投入不足也起到推波助澜的作用，仅12%的院校开设护眼必
+修课。最关键的是，这一趋势与"健康中国2030"规划纲要中通过减少久坐屏幕
+行为来防治青少年近视的国家战略相契合。
+在这些多维举措的共同作用下，可以预见未来十年公共卫生干预措施将持
+续加强。政策支持与学生自律的协同效应必将巩固这一发展轨迹。正如插图中
+那位年轻观察者所言，这些进展确实为现代社会敲响了"平衡数字生活方式"的
+警钟。
+73
+
+例题假设​
+图表：某高校大学生体质合格率折线图（2020年80% →2023年65%）
+文字材料：某研究显示，67%大学生日均使用电子产品超6小时，仅23%保
+持规律运动
+
+模板套用
+The line chart above clearly reflects the changes in the number of college
+students with qualified physical fitness in a certain university between 2020 and 2023.
+Based upon the data, there was a significant decline in physical fitness qualification
+rate from 80% to 65%, while sedentary behavior witnessed a similar trend during the
+same period, growing from 45% to 67% as per the text. Meanwhile, the right excerpt
+is an enlightening paragraph of the article, in which the author tells us that 67% of
+students spend over 6 hours daily on electronic devices, with only 23% engaging in
+regular exercise.
+To examine the root cause of this phenomenon, three driving forces deserve
+particular emphasis. Primarily, with the heightened awareness of digital convenience,
+there emerges a growing demand for instant entertainment through screens, as
+evidenced by the 67% of students glued to electronic devices. Consequently, it is this
+social consensus that propels sedentary lifestyles to gain momentum. Furthermore,
+universities' insufficient investments in sports facilities have been instrumental, as
+shown by the 40% reduction in campus gym hours since 2020. Most crucially, this
+trend aligns with the national strategy to prioritize youth health through the "Healthy
+China 2030" initiative, which mandates schools to implement campus fitness
+programs.
+With these multidimensional efforts in place, it is reasonable to anticipate
+sustained growth in health-conscious behaviors throughout the next decade. The
+convergence of policy support and student self-regulation will undoubtedly solidify
+this trajectory. As the young observer aptly noted in the illustration, such
+developments truly constitute "a silent alarm for lifestyle transformation" for modern
+society
+
+翻译
+上述折线图清晰反映了某高校2020至2023年间大学生体质达标人数的变化
+趋势。数据显示，体质合格率从80%显著下降至65%，而久坐行为同期呈现相似
+趋势，根据文本描述从45%攀升至67%。右侧摘录是文章中具有启发性的段落，
+作者指出67%的学生每日使用电子设备超6小时，仅23%保持规律锻炼。
+为探究这一现象的根源，需重点强调三大驱动因素。首要原因是数字便利
+意识增强催生了通过屏幕获取即时娱乐的需求，67%的学生沉迷电子设备便是
+明证。这种社会共识推动久坐生活方式日益盛行。其次，高校体育设施投入不
+足也起到关键作用——校园健身房开放时长自2020年以来缩减了40%。最重要
+的是，该趋势与"健康中国2030"规划纲要的国家战略相契合，该战略要求学校
+实施校园健身计划以保障青少年健康。
+在这些多维举措推动下，我们有理由预期未来十年健康意识行为将持续增
+长。政策支持与学生自我调节的协同作用必将巩固这一发展轨迹。正如插图中
+年轻观察者敏锐指出的，这种演变对现代社会而言实为"生活方式变革的无声警
+钟"。
+74
+4. 真题范文精析
+为了帮助大家更好地使用模板，真题范文基本都遵循了相应大作文类型的
+通用模板框架，只有少量进行了语句变化。既可以让大家看到模板稳定可靠的
+应用实例，又学习到在模板基础上进行的灵活调整。
+2025
+The table above clearly reflects the changes in the ownership of major durable
+goods per 100 households among Chinese residents between 2014 and 2023. Based
+upon the data, there was a significant increase in air conditioner ownership from 75.2
+to 145.9, while washing machines and refrigerators witnessed a similar trend during
+the same period, growing from 83.7 to 98.2 and from 85.5 to 103.4 respectively.
+To examine the root cause of the tendency thoroughly, certain factors should be
+specifically pointed out here. First of all, with the development of China's economy, a
+growing number of households choose to purchase durable goods. Thus, it is the
+growing demand that leads to these goods' popularity among people. Secondly, the
+manufacturing industry has been flourishing in recent years, thus offering people more
+high-quality durable goods at a reasonable price. That is to say, the rapid expansion of
+the manufacturing industry has also encouraged people to buy such appliances.
+With due consideration of all these contributors, we may predict that the
+ownership of these durable consumer goods will keep rising in the forthcoming decade.
+It is time for us to embrace the trend of improving household living standards through
+these consumption upgrades.
+上表清晰反映了2014至2023年间中国居民每百户主要耐用消费品拥有量的
+变化。数据显示，空调拥有量从75.2台大幅增长至145.9台，而洗衣机和冰箱同
+期也呈现相似增长趋势，分别从83.7台升至98.2台、从85.5台增至103.4台。
+深入探究这一趋势的根本原因，需要特别指出以下因素。首先，随着我国
+经济发展，越来越多的家庭开始购买耐用消费品，正是这种日益增长的需求推
+动了这些商品的普及。其次，近年来制造业蓬勃发展，能以合理价格为消费者
+提供更优质的耐用商品，换言之，制造业的快速扩张也促进了这类家电的购买
+行为。
+75
+综合考虑这些因素，我们可以预见未来十年这些耐用消费品的拥有量将持
+续上升。现在正是我们拥抱消费升级趋势、提升家庭生活品质的时机。
+主题词：
+耐用消费品普及（Popularization of Durable Consumer Goods）
+居民生活水平提升（Improvement in Living Standards）
+思路：
+可挑选几个容易评论的点，首先是经济发展居民生活水平提升。以及例如
+家电拥有量的增加需要做到低碳节能以及环保，过度消费可能加剧碳排放；也
+可进一步联系城乡差距（农村家电普及率仍较低）和电商平台普及（网购便利
+性和价格优势，如拼多多、京东）。
+76
+2024
+Depicted in the left picture are several citizens walking or running along the road,
+with a banner reading "Fitness Area for Citizens". A young boy is remarking, "The
+newly-built park close to my home is really nice". Meanwhile, the right chart clearly
+reflects that the number of parks in a certain city has experienced a significant increase
+from 406 to 670 between 2020 and 2022.
+To examine the root cause of this phenomenon, three driving forces deserve
+particular emphasis. Primarily, with the heightened awareness of public health, there
+emerges a growing demand for accessible recreational green spaces and outdoor
+fitness facilities. Consequently, it is this social consensus that propels urban park
+construction to gain momentum. Furthermore, owing to the remarkable development
+of living standards , governments attach more importance to meeting residents’
+demand for a higher quality of life . Most crucially, this trend aligns with the national
+strategy to promote national fitness and build healthier communities.
+With these multidimensional efforts in place, it is reasonable to anticipate
+sustained growth in urban green spaces and park facilities throughout the next decade.
+The convergence of policy-driven infrastructure development and increasing public
+demand for active lifestyles will undoubtedly solidify this trajectory. As the young
+observer aptly noted in the illustration, such developments truly constitute "really
+nice" enhancements for modern society.
+左图描绘了几位市民正在路上行走或跑步，横幅上写着市民健身区。一个
+小男孩感叹道：“我家附近新建的公园真不错”。与此同时，右图清晰显示某
+城市公园数量从2020年的406个显著增长至2022年的670个。
+究其原因，三大驱动力尤为关键。首要的是，随着公共卫生意识提升，人
+们对绿地和户外健身设施的需求与日俱增，正是这种社会共识推动着城市公园
+建设蓬勃发展。其次，由于生活水平的显著提高，政府更加重视满足居民对高
+品质生活的追求。最重要的是，这一趋势与国家推进全民健身、建设健康社区
+的战略高度契合。
+在这些多维度的努力下，我们可以预见未来十年城市绿地和公园设施将不
+断增长。政策支持的基础设施建设与公众对健康生活方式日益增长的需求相结
+合，必将巩固这一态势。正如图片中那位年轻人所言，这确实是现代社会的一
+大进步。
+77
+主题词：
+健康生活方式（Healthy Lifestyle）
+公共设施建设（Public Facility Construction）
+思路：
+分析数据背后的社会现象，可从个人和社会两个角度展开。
+①个人角度：大家对身体健康的重视，公园锻炼既可以强身健体、缓解压
+力，又可以改善心理健康。
+②社会角度：政府投资绿色基础设施，反映社会对健康生活、绿色生态的
+重视。
+78
+2023
+Depicted in the cartoon are two teams of dragon boat competitors rowing on the
+river , with a good many spectators cheering them on . Among the crowd stands an
+elderly lady , saying to her spouse，“it is so excellent to have an increasing number
+of people participating in the village’ s Dragon Boat Festival !”
+Conspicuously , the painter
+intends to demonstrate that
+inheriting traditional
+culture is of the essence in our life and should be placed a high value on . For one
+thing , the inheritance of traditions can not only enhance cultural confidence but also
+help us develop an aspiring attitude towards life , which safeguards us from being
+swayed by external changes . For another , by obeying such behavioral norms , we can
+build cultural identity and close-knit relationships with others , thus fostering
+a
+harmonious
+and
+civilized
+social
+atmosphere . That
+is
+to
+say ,
+cultural
+transmission provides an underpinning for maintaining social bonds between
+generations .
+In a nutshell , the spirit of carrying forward traditions grasps the master key to
+social cohesion and should be held in high regard . Consequently , no matter what
+circumstances we encounter in the future , we should both preserve and develop
+ancestral heritages so as to stimulate social advancement .
+这个漫画描绘了两支龙舟队在河上划行，众多观众为他们欢呼加油。人群
+中有一位年长的女士对她的伴侣说：“有越来越多的人参加村庄的龙舟节真是太
+棒了！”
+显然，画家意在展示传承传统文化在我们的生活中至关重要，应该高度重
+视。首先，传统的传承不仅可以增强文化自信，还可以帮助我们培养对生活充
+满向往的态度，从而使我们不受外部变化的影响。其次，通过遵守这些行为规
+范，我们可以建立文化认同感，并与他人建立紧密的关系，从而促进和谐和文
+明的社会氛围。换句话说，文化传承为维系代际社会纽带提供了支撑。
+简而言之，传承传统的精神是社会凝聚力的关键，应该高度重视。因此，
+无论将来我们遇到什么情况，我们都应该既保留又发展祖先的遗产，以促进社
+会进步。
+79
+主题词：
+inheriting traditional culture/inheritance of traditions
+cultural transmission/carrying forward traditions
+思路：
+「传承文化」这一特质是可以分成个人+社会意义的，所以用for one thing .
+. .for another 会更好。个人方面，传承文化可以提高文化自信(enhance cultural
+confidence)，也可以获取更多知识(acquire a wide array of knowledge and
+thus view complex problems from various perspectives) 。社会方面，可以加强
+人际联系(foster a close-knit relationship with individuals)，也可以说套话。
+社会的两句套话：
+1 ) 建设和谐文明的社会氛围：foster a harmonious and civilized social
+atmosphere
+2) 提高国际影响力：enhance our international influence and competitiveness
+80
+2022
+Depicted in the portrayal are two girls holding entirely distinct attitudes towards
+a campus lecture . On the left stands the girl , staring at the board with indifference
+and stating that listening to a cross-discipline lecture is meaningless . By contrast ,
+the other girl responds cheerfully that there must be some benefits to participating in
+such lectures .
+Undoubtedly , the painter intends to demonstrate that extensive learning is of
+vital significance in our life and should be placed a high value on . To begin with ，
+wide-ranging education can not only enhance self-confidence but also help us
+maintain an aspiring attitude towards life , which safeguards us from being swayed by
+external pressure . In addition , by practicing this precious merit , we can enlarge our
+knowledge reserve , which in turn enables us to view complex problems from various
+perspectives . Last but not least , it is interdisciplinary learning that offers infinite
+opportunities for our life , leading us out of the impasse to a shining future .
+In a nutshell , the spirit of comprehensive learning grasps the master key to
+pursuing success and should be held in high regard . Consequently , no matter what
+circumstances we encounter in the future , we should remind ourselves to maintain
+abundant curiosity towards knowledge so as to stimulate self-advancement .
+画中描绘了两位女孩对待校园讲座有着截然不同的态度。左边的女孩面对
+布告栏，显得漠不关心，声称听跨学科讲座毫无意义。相比之下，另一位女孩
+则愉快地回应，坚信参与此类讲座一定有一些好处。
+毫无疑问，画家的意图是要展示广泛学习在我们的生活中具有至关重要的
+意义，应该高度重视。首先，广泛的教育不仅可以增强自信心，还可以帮助我
+们保持对生活充满向往的心态，从而使我们不受外部压力的影响。此外，通过
+培养这一宝贵品质，我们的知识储备可以扩大，从而使我们能够从不同的角度
+看待复杂问题。最后但并非不重要的是，跨学科学习为我们的生活提供了无限
+的机会，引领我们走出困境，走向光明的未来。
+简而言之，全面学习的精神是追求成功的关键，应该高度重视。因此，无
+论将来我们遇到什么情况，我们都应该提醒自己保持对知识的浓厚好奇心，
+以激发自我进步。
+81
+主题词：
+extensive learning/wide-ranging education
+inter-disciplinary learning/comprehensive learning
+思路：
+个人品质类话题简单，从三方面进行记忆。第一是内在情绪，是让你心境
+更宁静/积极主动了。第二是外在行动，比如学到知识/提高能力/释放潜能/走出
+舒适区/享受生活。第三是与他人关系，是相处友好还是竞争打败。还有2 句
+套话。
+个人品质2 套话：
+1 ) 证据表明(通常用于段中，补充解释)
+：A substantial body of research
+has proven that those equipped with the virtue of . . . are more inclined to do . . . .
+2) 提供更多可能性(通常用于结尾，升华主题)
+：It is . . . that offers
+infinite possibilities for our life , leading us out of the impasse to a brilliant future .
+82
+2021
+Depicted in the portrayal is a depressed boy , wearing Sun Wukong’s costume
+and worrying that his classmates dislike opera . By contrast , his father encourages
+him to pursue his passion regardless of others’thoughts .Conspicuously , the painter
+intends to demonstrate that sticking to one’s enthusiasm is remarkably constructive
+for individual development .
+To begin with , staying true to ourselves can not only alleviate self-doubt but also
+help us maintain an aspiring state of mind , which safeguards us from being swayed
+by external pressure . In addition , by practicing this valuable merit , we will unleash
+our best potential and utilize talents to the fullest extent , thus gaining an edge over
+peers when dealing with arduous tasks . Last but not least , it is adhering to ourselves
+that offers infinite opportunities for our life , leading us out of the
+impasse to a
+shining future .
+In a nutshell , the spirit of pursuing dreams grasps the master key to success and
+should be held
+in high regard . Consequently , no matter what circumstances we
+encounter in the future , we should remind ourselves to maintain
+abundant zeal
+for dreams so as to stimulate self-advancement .
+画中描绘了一个戴着孙悟空服装的沮丧的男孩，他担心同学不喜欢歌剧。
+相比之下，他的父亲鼓励他追求自己的热情，不管别人怎么想。显然，画家的
+意图是要展示坚守个人热情对个体发展非常有益。
+首先，忠于自己不仅可以减轻自我怀疑，还可以帮助我们保持对生活充满
+向上的心态，从而使我们不受外部压力的影响。此外，通过培养这一宝贵品质，
+我们将能够充分发挥我们的潜力，将才能发挥到极致，从而在处理艰巨任务时
+超越同龄人。最后但并非不重要的是，忠于自己为我们的生活提供了无限的机
+会，引领我们走出困境，走向光明的未来。
+简而言之，追逐梦想这一精神是成功的关键，应该高度重视。因此，无论
+将来我们遇到什么情况，我们都应该提醒自己保持对梦想的极大热情，以促
+进自我进步。
+83
+主题词：
+sticking to one’s enthusiasm/staying true to ourselves
+adhering to ourselves/pursuing dreams
+思路：
+最难写的一般都是第一段，但是第一段就可以奠定这篇作文在老师心中的
+档次。所以第一段一定要用倒装。
+倒装：
+1 ) Depicted 开头：Depicted in the portrayal is/are . . .
+2) 动词提前：Sitting on the ladder is a boy . . .
+3) 介词提前：At the desk sits a boy . . ./Around the table sit four young people
+如果有小标题，一定要写：The caption below the picture indicates : . . .
+如果没有小标题，且第一段太短，直接把第二段中心句提前到第一段末：
+Conspicuously , the painter intends to demonstrate that . . . is remarkably constructive
+for individuals’development.
+84
+2020
+Depicted in the portrayal are two individuals showing entirely distinct attitudes
+towards time schedule . In the first picture , the girl devotes herself to a sea of tasks ,
+murmuring that she will not relax until she finishes them earlier . By contrast , lying
+on the sofa cozily , the boy in the second picture says that not until the last minute
+will he do anything .
+Conspicuously , the painter intends to demonstrate that proper time management
+is of critical significance and should be placed a high value on . For one thing , such a
+habit lays a solid foundation for maintaining inner tranquility , which safeguards us
+from being swayed by external pressure . A substantial body of research has
+demonstrated that those armed with the habit of managing time effectively are more
+inclined to show an aspiring attitude towards life . For another , by practicing this
+valuable merit , we will unleash our best potential and utilize talents to the fullest
+extent , thus gaining an edge over peers when dealing with arduous tasks . Broadly
+speaking , it is our efficient time management that offers infinite opportunities for our
+life , leading us out of the impasse to a shining future .
+In a nutshell , the habit of proper time control grasps the master key to success
+and should be held in high regard . Consequently , no matter what circumstances we
+encounter in the future , we should remind ourselves to manage time effectively so as
+to stimulate self-advancement .
+画中描绘了两个人对待时间安排有完全不同态度。在第一张图片中，女孩
+全身心地投入到一堆任务中，喃喃自语着她不会松懈，直到提前完成所有任务。
+相比之下，第二张图片中的男孩舒适地躺在沙发上，说他要等到最后一刻才会
+开始做任何事情。
+显然，画家的意图是要展示良好的时间管理习惯在我们的生活中具有至关
+重要的意义，应该高度重视。首先，这种习惯为保持内心平静打下坚实基础，
+使我们不受外部压力的影响。大量研究已经证明，那些具备时间管理习惯的人
+更倾向于对生活怀有积极向上的态度。其次，通过培养这一宝贵品质，我们将
+能够充分发挥我们的潜力，将才能发挥到极致，从而在处理艰巨任务时超越同
+龄人。总的来说，高效的时间管理为我们的生活提供了无限的机会，引领我们
+走出困境，走向光明的未来。
+简而言之，时间管理的习惯是成功的关键，应该高度重视。因此，无论将
+来我们遇到什么情况，我们都应该提醒自己保持对时间的高度警觉，以促进自
+我进步。
+85
+主题词：
+proper time management/good timetable/managing time effectively/proper time
+control
+思路：
+个人品质类文章最好套模板。只是本文偏长，可适当裁剪。比如第一段第
+一句可删除，从而把第二段第一句提前。第二段的长度就会更加适中。
+86
+2019
+On the ladder sits a depressed boy , complaining that he is too tired to climb the
+mountain . On the contrary , handing over a bottle of water , the boy downstairs
+encourages him to keep moving after a short break . The caption below the picture
+indicates : on the way .
+Evidently , what the cartoonist intends to convey is that persistence plays a vital
+role in our daily life , whether in academic performance or in working competence .
+To begin with，perseverance can not only enhance self-confidence but also help us
+maintain an aspiring attitude towards life , which safeguards us from being swayed by
+external pressure . In addition , by practicing this precious merit , we will expand our
+capabilities to a higher degree and thus relish a life of constant progress . Moreover , a
+substantial body of research has demonstrated that those who are armed with the
+quality of adherence are more inclined to utilize their talents to the fullest extent ,
+which in turn enables them to gain an edge over peers when confronted with hardships.
+In a nutshell , the spirit of being persistent grasps the master key to success and
+should be held
+in high regard . Consequently , no matter what circumstances we
+encounter
+in the future , we should remind ourselves to maintain abundant
+perseverance so as to stimulate self-advancement .
+在梯子上坐着一个沮丧的男孩，抱怨自己太累，无法爬山。相反，楼下的
+男孩递过一瓶水，鼓励他休息一会后继续前进。图片下方的标题标明：在路
+上。
+显然，漫画家意图传达的是坚持这一精神在我们的日常生活中起着至关重
+要的作用，无论是在学业表现还是工作能力方面。首先，毅力不仅可以增强自
+信心，还可以帮助我们保持对生活充满向上的态度，从而使我们不受外部压力
+的影响。此外，通过培养这一宝贵品质，我们将能够将我们的能力提高到更高
+的水平，因此能够享受不断进步的生活。此外，大量的研究已经证明，那些具
+备坚持品质的人更倾向于充分发挥他们的才能，从而使他们在面对困难时能够
+超越同龄人。
+简而言之，坚持不懈的精神是成功的关键，应该高度重视。因此，无论将
+来我们遇到什么情况，我们都应该提醒自己保持充分的毅力，以激发自我进步。
+87
+主题词：
+persistence/perseverance/adherence/being persistent
+思路：
+个人品质类作文模板趋同，注意第一段的倒装+doing 提前。第二段可DIY
+积极意义句，用not only . . .but also/which/thus/thereby/enabling 扩写。
+whether . . .or . . . = be it . . .or . . . ：都表示无论. . .还是. . . ，很适合写不同
+方面。
+. . . , whether in academic performance or in working competence
+. . . , be it in academic progress or in career advancement
+. . . , be it in individual growth or in social progress
+. . . , be it in mental health or in external performance
+88
+2018
+In front of the computer sits a confused boy , facing a dilemma of course selection
+. With a variety of courses displayed on the screen , he is wondering whether to choose
+courses with fresh knowledge , strong innovation and superior difficulty or courses
+with high scores , superior qualified rate and little homework . The caption below the
+picture indicates : the course selection is in progress .
+Evidently , what the cartoonist intends to convey is that courage is of paramount
+significance and ought to be placed a high value on . To begin with，being
+brave can not only enhance self-confidence but also help us maintain an aspiring
+attitude towards life , which safeguards us from being swayed by external pressure . In
+addition , by practicing this valuable merit , we will expand our capabilities to a higher
+degree and thus relish a life of constant progress . Last but not least , it is bravery that
+offers infinite opportunities for our life , leading us out of the impasse to a shining
+future .
+In a nutshell , the spirit of boldness grasps the master key to pursuing success and
+should be held
+in high regard . Consequently , no matter what circumstances we
+encounter in the future , we should remind ourselves to maintain abundant courage so
+as to stimulate self-advancement .
+在计算机前坐着一个困惑的男孩，面临着选择课程的困境。屏幕上显示着
+各种课程，他在犹豫是选择知识新颖、创新性高、难度大的课程，还是选择分
+数高、合格率高、作业少的课程。图片下方的标题标明：选课进行中。
+显然，漫画家意图传达的是勇气具有至关重要的意义，应该高度重视。首
+先，勇敢不仅可以增强自信心，还可以帮助我们保持对生活充满向往的态度，
+从而使我们不受外部压力的影响。此外，通过培养这一宝贵品质，我们将能够
+将我们的能力提高到更高的水平，因此能够享受不断进步的生活。最后但并非
+不重要的是，面对挑战的勇气为我们的生活提供了无限的机会，引领我们走出
+困境，走向光明的未来。
+简而言之，勇气是追求成功的关键，应该高度重视。因此，无论将来我们
+遇到什么情况，我们都应该提醒自己保持充分的勇气，以激发自我进步。
+89
+主题词：
+courage/being brave/bravery/boldness
+思路：
+某类品质一定是可以从内在激励个人的，让我们对生活充满干劲儿，从而
+免去外在压力的干扰。其次是一定可以提升我们的能力的，让我们享受更美好
+的生活。最后是一定能让我们打败竞争对手的。如果想不到点，就写套话(研
+究表明/提供无限可能) 。
+第一段稍长，但是最好把提到的词都列举出来，避免失分。小标题也要点
+明，用简单话术：The caption below the picture indicates : . . . 。
+90
+2017
+Depicted in the portrayal are two men holding different attitudes towards books .
+Lying on the
+sofa comfortably , the man in the left picture is satisfied with his
+numerous books but reads none of them . By contrast , the man in the right picture
+devotes his attention to only one book with the goal of reading 20 books a year . The
+caption below the picture indicates :“reading books” and“having books”.
+Conspicuously , the cartoonist strives to convey that being pragmatic plays a
+critical role in our life , be it in academic performance or in working competence .
+For one thing , such a trait lays a solid foundation for maintaining an aspiring state of
+mind , which safeguards us from being swayed by external pressure . A substantial
+body of research has demonstrated that those armed with strong execution are more
+inclined to cultivate psychological health and spiritual positiveness . For another , by
+practicing this valuable merit , we will unleash our best potential and utilize talents to
+the fullest extent , thus gaining an edge over peers when dealing with arduous tasks .
+Broadly speaking , it is taking action that offers infinite opportunities for our life ,
+leading us out of the impasse to a shining future .
+In a nutshell , the spirit of being practical grasps the master key to pursuing
+success and should be held in high regard . Consequently , no matter what
+circumstances we encounter in the future , we
+should
+remind
+ourselves
+to
+maintain abundant execution force so as to stimulate self-advancement .
+画中描绘了两位男士对待书籍有不同态度。坐在舒适的沙发上，左图中的
+男士对自己众多的书感到满意，但却不阅读任何一本。相比之下，右图中的男
+士专注于一本书，目标是每年阅读20 本书。图片下方的标题标明：“读书”
+和“有书”。
+显然，漫画家力图传达务实在我们的生活中发挥着关键作用，无论是在学
+业表现还是工作能力方面。首先，这种特质为保持积极向上的心态打下坚实基
+础，从而使我们不受外部压力的影响。大量的研究已经证明，那些具备强烈执
+行力的人更倾向于培养心理健康和精神积极性。其次，通过培养这一宝贵品质，
+我们将能够充分发挥我们的潜力，将才能发挥到极致，从而在处理艰巨任务时
+超越同龄人。总的来说，采取行动为我们的生活提供了无限的机会，引领我们
+走出困境，走向光明的未来。
+简而言之，务实的精神是追求成功的关键，应该高度重视。因此，无论将
+来我们遇到什么情况，我们都应该提醒自己保持充分的执行力，以激发自我
+进步。
+91
+主题词：
+being pragmatic/strong execution/taking action
+思路：
+如果第一段相对较长，就可以用(to begin with . . .in addition . . .last but not
+least . . .)来写3 个论点。如果第一段相对较短，就可以用(For one thing . . .For
+another . . .)来写2 论点，但是每个论点后跟一句补充解释的套话
+( A
+substantial body of research has demonstrated that . . ./That is to say . . .) ，相当
+于4 个论点。
+92
+2016
+A striking contrast is observed between two cartoons : in the first one , lying on
+the sofa cozily , the father is enjoying the TV show while pressing his son to study .
+However，in the second picture , both of them devote themselves to a sea of books ,
+with a concentrated expression on their faces . The caption below the picture indicates :
+better to set an example than to make requests .
+Conspicuously , the cartoonist intends to convey that instead of being considered
+of little value or outdated, role modeling is still of cardinal importance in today’s
+family
+education
+and
+deserves
+to
+be
+encouraged
+actively. To
+begin
+with ,
+examples
+set
+by parents
+are remarkably
+constructive for
+alleviating
+children’s
+defensiveness , thus safeguarding children from being swayed by parents’ inconsistent
+words and actions. In addition , such behavioral norms go a long way towards family
+members’ mutual communication , which in turn foster a close-knit tie between
+generations . Last but not least , it is parents’ examples that offer infinite opportunities
+for children’s life , leading them out of the impasse to a shining future .
+In a nutshell, the spirit of role modeling grasps the master key to successful family
+education and should be held
+in high regard. Consequently , no matter what
+circumstances we encounter in the future , we should remind ourselves to set a positive
+example rather than make requests , be it in family education or in daily life .
+两幅漫画之间存在着鲜明的对比：在第一幅漫画中，父亲舒适地躺在沙发上，
+一边享受电视节目，一边催促儿子学习。然而，在第二张图片中，他们两人都
+全身心投入到一堆书籍中，脸上带着专注的表情。图片下方的标题标明：“身
+教胜于言教”。
+显然，漫画家意图传达的是，在今天的家庭教育中，身教仍然具有至关重要
+的价值，应该得到积极鼓励，而不是被认为毫无价值或过时。首先，父母所树
+立的榜样对于减轻孩子的戒备心具有显著作用，从而保护孩子不受父母言行不
+一的影响。此外，这种行为规范有助于家庭成员之间的相互沟通，进而培养代
+际之间的亲密联系。最后但并非不重要的是，正是父母的榜样力量为孩子的生
+活提供了无限的机会，引领他们走出困境，走向光明的未来。
+简而言之，榜样精神是成功的家庭教育的关键，应该高度重视。因此，无
+论将来我们遇到什么情况，我们都应该提醒自己要树立良好的榜样，而不是只
+是提出要求，无论是在家庭教育中还是在日常生活中。
+93
+主题词：
+role modeling/examples set by parents/parents’examples
+思路：
+1 ) 当两幅图前后对比时，可使用A striking contrast is observed between
+two cartoons : . . .
+2) 社会美德也可以从个人美德的角度出发。因为它首先是反映在个体身
+上的，其次才推广到全社会和国家。
+94
+2015
+Depicted in the portrayal is a common yet thought-provoking scene in which four
+young people, sitting in front of the delicious dishes, are staring at their cellphones
+intently instead of communicating with others face-to-face. The caption below the
+picture indicates : a meeting in the smartphones’ era .
+Conspicuously , the cartoonist attempts to convey that the rational use of phones
+is of vital importance and ought to be placed a high value on . To begin with , rational
+phone use is remarkably constructive for enlarging our knowledge reserve , which in
+turn enables us to view complex problems from various perspectives . In addition ,
+such behavioral norms
+lay a foundation for maintaining close-knit ties with friends
+who can not readily communicate with each other face-to-face . Last but not least , it
+is the proper attitude towards phone use that offers infinite opportunities for our life ,
+leading us out of the impasse to a shining future .
+In a nutshell , proper phone use grasps the master key to a life of purpose and
+should be held in high regard . Consequently , no matter what circumstances we
+encounter in the future , we should remind
+ourselves
+to
+maintain
+abundant
+rationality towards phone use so as to stimulate self-advancement .
+画中描绘了一个常见但发人深省的场景，4 名年轻人坐在美味的餐桌前，却
+专注地盯着手机，而不是面对面地与他人交流。图片下方的标题标明：“手机
+时代的聚会”。
+显然，漫画家试图传达的是合理使用手机具有至关重要的意义，应该高度重
+视。首先，合理使用手机对于扩大我们的知识储备具有显著作用，从而使我们
+能够从不同的角度看待复杂的问题。此外，这种行为规范为那些无法轻松面对
+面交流的朋友之间维护亲密关系打下了基础。最后但并非不重要的是，正确的
+手机使用态度为我们的生活提供了无限的机会，引领我们走出困境，走向光明
+的未来。
+简而言之，正确的手机使用习惯是过上有目标的生活的关键，应该高度重视
+。因此，无论将来我们遇到什么情况，我们都应该提醒自己保持充分的理性对
+待手机使用，以促进自我进步。
+95
+主题词：
+rational use of phones/reasonable phone use/the proper attitude towards phone
+use
+思路：
+关于手机，可以使用负面话题模板。但是我们也可以逆转为正确使用手机
+的重要性，也可以套模板。
+96
+2014
+In the first picture walked a young woman and her daughter , with their hands
+held tightly . While thirty years later , the lovely girl has grown up to be a woman who
+holds her elderly mother by the arm . The caption below the picture
+indicates :
+supporting each other .
+Conspicuously , the cartoonist strives to convey that instead of being considered
+of little value or outdated, filial piety is still of supreme importance and will
+undoubtedly exert certain positive impacts on our daily life . To begin with ,
+respecting parents is extremely constructive for us to grow up to be a person with life
+integrity and sound personality , thereby setting up the correct values and outlook on
+life . In addition , such merit goes a long way towards facilitating family members’
+mutual communication , which in turn fosters a close-knit tie between generations .
+Last but not least , it is honoring parents that cultivates inter-generation respect and
+care , leading to a more harmonious and civilized society .
+In a nutshell , the spirit of being filial grasps the master key to our
+life and
+should be held in high regard . Consequently , no matter what circumstances we
+encounter in the future , we should remind ourselves to maintain abundant respect for
+our parents so as to stimulate both individual growth and social progress .
+第一幅画中走着一位年轻女士和她的女儿，她们手牵着手。而三十年后，
+可爱的女孩已经长大成为一个扶持年迈母亲的女人。图片下方的标题指示：“
+相互扶持”。
+显然，漫画家力求传达的是孝顺之道不仅有着极高的价值，而且在我们日
+常生活中必然产生积极的影响，绝不是过时或缺乏价值。首先，尊重父母对我
+们成长为具有生活操守和健全个性的人极为有益，从而确立正确的价值观和人
+生观。此外，这一美德有助于促进家庭成员之间的相互交流，进而培养代际间
+紧密的联系。最后但同样重要的是，孝顺父母培养了代际间的尊重与关怀，促
+进了更加和谐和文明的社会。
+简而言之，孝顺精神是我们生活的关键，应该受到高度重视。因此，无论
+将来我们遇到什么情况，我们都应提醒自己保持对父母的尊重，以促进个人
+成长和社会进步。
+97
+主题词：
+filial piety/respecting parents/honoring parents/being filial
+思路：
+传统美德甚至比个人品质类话题更好写。因为它一定是对个人/社会两方
+面都有益的。对个人：情绪积极/良好人格/家庭内部友善关系
+对社会：促进代际沟通/营造良好社会氛围
+社会类套话：It is . . . that fosters a harmonious and civilized social
+atmosphere , which exponentially elevates the life satisfaction of every individual .
+98
+2013
+In front of the crossroads stand a good many graduates , facing four paths :
+seeking a job , attending postgraduate exams , studying abroad and starting their own
+business . With a puzzled expression on their faces , they seem to be too hesitant to
+make a choice . The caption below the picture indicates : the choices .
+Conspicuously , the cartoonist attempts to demonstrate that making a good choice
+is of paramount significance , be it in mental health or in external performance . For
+one thing , making proper decisions alleviates self-doubt , which safeguards us from
+being swayed by external pressure . A substantial body of research has proven that
+those armed with such a trait stand more chances of believing in themselves and thus
+relishing a life of contentment . For another , by practicing this valuable merit , we
+will unleash our best potential and utilize talents to the fullest extent , thus gaining an
+edge over opponents when confronted with fierce competition . As a matter of fact , it
+is making a wise choice that offers infinite opportunities for our life , leading us out of
+the impasse to a shining future .
+In a nutshell , the spirit of making sensible decisions grasps the master key to
+pursuing success and shall be held in high regard . Consequently , no matter what
+circumstances we encounter in the future , we should remind ourselves to maintain
+abundant consciousness towards life choices so as to stimulate self-advancement .
+在十字路口前站着许多毕业生，面对四条道路：求职、参加研究生考试、
+出国留学和创业。他们脸上带着困惑的表情，似乎犹豫不决。图片下方标明：
+“选择”。
+显然，漫画家试图表明，做出明智的选择在内心状态或外部表现方面至关
+重要。首先，做出正确的决定可以减轻自我怀疑，从而使我们不受外部压力的
+影响。大量的研究已经证明，那些具备这种品质的人更有可能相信自己，因此
+能够享受幸福的生活。其次，通过实践这一宝贵的品质，我们将释放自己的最
+大潜力，充分利用自己的才能，从而在激烈的竞争中占据优势。事实上，做出
+明智的选择为我们的生活提供了无限的机会，引领我们走出困境，迎向光明的
+未来。
+简而言之，做出明智决策的精神是追求成功的关键，应受到高度重视。因
+此，无论将来我们遇到什么情况，我们都应提醒自己保持对生活选择的充分认
+识，以促进自我进步。
+99
+主题词：
+making good/wise/sensible choices
+思路：
+看似在描述社会现象，毕业生何去何从。实则也可以从个人品质角度出发，
+论述做出好决定的重要性。作文是更看重语言能力而非观点新颖程度，所以就
+用之前准备的语言套。
+100
+2012
+Depicted in the cartoon are two men showing entirely distinct attitudes towards
+the dropped bottle . With hands covering his face , the depressed man on the left is
+complaining that everything is gone . By contrast , stretching out his hands to pick up
+the bottle , the man on the right says with contentment that there is still some water
+left .
+Conspicuously , the cartoonist attempts to demonstrate that being optimistic is of
+vital essence , be it in mental health or in external performance . For one thing ,
+being optimistic enhances self-fulfillment , which safeguards us from being swayed
+by external pressure . A substantial body of research has proven that those armed with
+such a trait stand more chances of showing an aspiring attitude towards life and thus
+relishing a life of satisfaction . For another , by practicing this valuable merit , we will
+unleash our best potential and utilize talents to the fullest extent , thus gaining an edge
+over opponents when confronted with fierce competition . As a matter of fact , it is the
+positive mindset that offers infinite opportunities for our life , leading us out of the
+impasse to a shining future .
+In a nutshell , the spirit of being positive grasps the master key to pursuing
+success and shall be held in high regard . Consequently , no matter what circumstances
+we encounter in the future , we should remind ourselves to maintain abundant
+optimism so as to stimulate self-advancement .
+漫画中描述了两位男士对掉落的瓶子表现出完全不同的态度。左边的沮丧
+男子捂着脸抱怨一切都结束了。相比之下，右边的男子伸手拾起瓶子，满足
+地说还有一些水幸好还有点水。
+显然，漫画家试图表明，乐观在心理健康或外部表现方面至关重要。首先，
+乐观主义增强了自我满足感，使我们不受外部压力的影响。大量的研究已经证
+明，那些具备这种品质的人更有机会表现出积极的生活态度，从而享受满足的
+生活。其次，通过实践这一宝贵的品质，我们将释放自己的最大潜力，充分利
+用自己的才能，从而在激烈的竞争中占据优势。事实上，积极的心态为我们的
+生活提供了无限的机会，引领我们走出困境，迎向光明的未来。
+简而言之，积极乐观的精神是追求成功的关键，应受到高度重视。因此，
+无论将来我们遇到什么情况，我们都应提醒自己保持充分的乐观，以促进自我
+进步。
+101
+主题词：
+optimism/being optimistic/positive mindset/being positive
+思路：
+其实所有的个人品质都可以用这篇模板套，因为都是积极的品质。可以
+从两方面展开。
+mental health : enhance self-confidence/self-control/self-fulfillment ;
+safeguard us from being swayed by external pressure
+心理健康：提升自信/自控力/自我实现；保护我们免受外界压力的影响
+external performance : our potential will be unleashed and talents will be utilized
+to the fullest extent ; gain an edge over peers when dealing with arduous tasks
+外在表现：我们的潜力将得到释放，才能将得到充分发挥；在应对艰巨任
+务时比同龄人更具优势
+102
+2011
+Sitting on the boat are two visitors , discarding waste into the river , with a pile of
+rubbish floating on the river already . The caption below the picture indicates : after
+the trip .
+Conspicuously , the cartoonist attempts to demonstrate that protecting the
+environment
+is of paramount significance , be it in individual growth or in social
+sustainable development . For one thing , a better environment is remarkably beneficial
+for our physical health , which safeguards us from being clouded with various diseases .
+A substantial body of research has proven that those living in better habitats are more
+likely to relish a sound and joyful life . For another , preserving the environment
+provides a better living environment for the next generation , contributing to the long-
+term development and prosperity of mankind . As a matter of fact , it is the joint efforts
+towards protecting our habitat that foster a harmonious and civilized social atmosphere ,
+which exponentially elevate the life satisfaction of every individual .
+In a nutshell , the norm of preserving the environment grasps the master key to our
+life and shall be held in high regard . Consequently , no matter what circumstances we
+encounter in the future , we should remind ourselves to maintain abundant respect for
+the environment so as to stimulate both individual growth and social progress .
+坐在小船上的两位游客将垃圾扔进河里，而河里已经漂浮着一堆垃圾。图片
+下方的标题写着：“旅行结束后”。
+显然，漫画家试图展示保护环境的重要性，不论是在个人成长还是对社会可
+持续发展方面。首先，更好的环境对我们的身体健康有着显著的益处，可以
+保护我们免受各种疾病的威胁。大量的研究已经证明，生活在更好的生活环境
+中的人更有可能享受健康和幸福的生活。其次，保护环境为下一代提供了更好
+的生活基础，有助于人类的长期发展和繁荣。实际上，共同努力保护我们的生
+活环境促进了和谐文明的社会氛围，这将显著提高每个个体的生活满意度。
+总之，保护环境是我们生活的关键，应受到高度重视。因此，无论将来面
+临何种情况，我们都应提醒自己保持对环境的高度敬畏，以促进个人成长和社
+会进步。
+103
+主题词；
+protecting/preserving the environment
+思路：
+环境类主题也可以用个人品质类套，不用特意准备，因为考的可能性不是
+很大。环境污染等不利主题都可以转化为：保护环境这一品质的重要性。
+保护环境的重要性有：
+1 ) 个人：身体健康
+2) 社会：为下一代提供更好的生活环境；促进社会良好风气
+3) 套话：it is the joint efforts towards protecting our habitat that foster a
+harmonious and civilized social atmosphere , which exponentially elevate the life
+satisfaction of every individual .
+正是这种携手保护家园的共同努力，培育了和谐文明的社会风尚，使每个
+人的生活幸福感得以倍增。
+104
+2010
+Depicted in the picture is a hot-pot containing a great deal of cultural ingredients ,
+which can be classified into western and eastern elements , such as Kungfu and
+Postmodernism . The caption below the picture indicates : the hotpot of culture .
+Conspicuously , the cartoonist strives to convey that instead of being considered
+of little value or outdated, cultural integration is still of supreme importance and will
+undoubtedly exert certain positive impacts on our daily life . To begin with , such a
+trend is extremely constructive for us to acquire a wide array of knowledge , which
+in turn enables us to view complex problems from diverse perspectives . In addition ,
+cultural blending goes a long way towards facilitating mutual communication among
+individuals from different backgrounds , boosting a more harmonious and civilized
+world . Last but not least , it is cultural integration that reflects a unique image of
+China , thereby enhancing our international influence and competitiveness .
+In a nutshell , the practice of cultural blending grasps the master key to world
+harmony and should be held in high regard . Consequently , in no circumstances
+should we forget that it is critical to advocate cultural integration vigorously so as to
+stimulate both national progress and global advancement .
+在图片中，有一个火锅，其中包含大量的文化元素，可以分类为西方和东
+方的元素，如功夫和后现代主义。图片下方的标题写着：“文化火锅”。
+显然，漫画家试图传达的是文化融合并不是毫无价值的，它仍然对我们的
+日常生活产生着至关重要的影响。首先，这种趋势对我们获取各种知识极为有
+益，进而使我们能够从不同的角度看待复杂的问题。此外，文化融合在促进来
+自不同背景的个体之间的相互交流方面发挥着积极的作用，推动了更加和谐和
+文明的世界。最重要的是，正是在文化融合的过程中反映了中国独特的形象，
+从而提高了我们的国际影响力和竞争力。
+总之，文化融合是世界和谐的关键，应受到高度重视。因此，在任何情况
+下，我们都不能忘记文化融合的重要性，以促进国家的进步和全球的发展。
+105
+主题词：
+cultural integration/cultural blending
+思路：
+文化融合的好处可以从个人/社会/国家三层面思考。
+个人：获得更广泛的知识/看待问题更多角度
+社会：促进与不同背景个体的沟通-更和谐友好的社会(和谐社会一定与沟
+通联系在一起)
+国家：反映了中国独特的文化/增强国际影响力和竞争力
+106
+2009
+Depicted in the portrayal is a common yet thought-provoking scene in which a
+large number of people are sitting in front of the computer, seemingly close to each
+other yet separated by the net. The caption below the picture indicates : the farness
+and nearess of the Internet .
+Conspicuously , the cartoonist attempts to convey that the rational use of
+networks is of vital importance and ought to be placed a high value on . To begin with
+, the network serves as a cornerstone for us to enhance interpersonal skills , especially
+when we can not readily communicate with others face-to-face . That is to say , those
+who are armed with the habit of rational Internet use are more prone to maintain a
+close-knit relationship with their beloved . However , indulgence in the Internet may
+cast a cloud over individuals’long-term development . A substantial body of research
+has proven that those addicted to the Internet may face more risks of psychological
+problems and poor academic performance .
+In a nutshell , proper Internet use grasps the master key to a life of purpose and
+should be held in high regard . Consequently , no matter what circumstances we
+encounter in the future , we should remind
+ourselves
+to
+maintain
+abundant
+rationality towards network use so as to stimulate self-advancement .
+描绘在图中的是一幅寻常却发人深省的场景，许多人坐在电脑前，看似彼
+此亲近，但实际上被互联网所隔绝。图片下方的标题写着：“互联网的远近”。
+显然，漫画家试图传达的是理性使用网络是至关重要的，应该高度重视。
+首先，网络是我们提高人际交往能力的基石，尤其是当我们不能轻松面对面与
+他人交流时。也就是说，那些养成理性上网习惯的人更容易与所爱之人保持亲
+密关系。然而，沉迷于互联网可能会对个人的长期发展蒙上阴影。大量的研究
+已经证明，沉迷于互联网的人可能会面临更多的心理问题和学业表现较差的风
+险。
+总之，适当的互联网使用是实现有意义生活的关键，应该受到高度重视。
+因此，无论将来我们面临何种情况，都应提醒自己保持对网络使用的理性态度，
+以激发个人的发展。
+107
+主题词：
+rational use of networks/rational Internet use/proper Internet use
+思路：
+手机/网络的好处坏处一模一样。
+好处：获取知识-看待问题更多元化/提升人际技巧/维持紧密的人际关系
+坏处：心理健康/不好的学业表现/竞争被打败
+108
+2008
+Depicted in the portrayal are two disabled men holding each other , with their
+crutches left behind . The caption below the picture indicates : you have a leg and so
+do I . We can go anywhere with each other’s support .
+Conspicuously , the cartoonist strives to convey that cooperation plays a critical
+role in our life and should be placed a high value on . For one thing , such a trait lays
+a solid foundation for maintaining an aspiring state of mind , which safeguards us from
+being swayed by external pressure . That is to say , those who are armed with the team
+spirit are more prone to maintain a positive mindset and thus confront any challenge
+with composure . For another , teamwork is remarkably beneficial for enhancing
+interpersonal skills , which in turn enables us to build up close-knit relationships
+with peers . A substantial body of research has proven that individuals with such a
+trait stand more chances of getting along well with others , together with a higher level
+of well-being and life satisfaction .
+In a nutshell , the spirit of teamwork grasps the master key to pursuing success
+and should be held in high regard . Consequently , no matter what circumstances we
+encounter in the future , we should remind ourselves to maintain abundant team spirit
+so as to stimulate self-advancement .
+图画中描绘了两名残疾人互相扶持，他们的拐杖被留在了一边。图片下方
+的标题写着：“你有一条腿，我也有一条腿。有了彼此的支持，我们可以一起
+去任何地方。”
+显然，漫画家试图传达合作在我们的生活中起着至关重要的作用，应该高
+度重视。首先，这种品质奠定了保持积极心态的坚实基础，从而使我们能够抵
+御外部压力的影响。也就是说，那些具备团队精神的人更有可能保持积极的心
+态，从而镇定地应对各种挑战。其次，团队合作对于增强人际交往能力非常有
+益，从而使我们能够与同事建立紧密的关系。大量的研究已经证明，具备这种
+品质的人更有机会与他人和睦相处，拥有更高的幸福感和生活满意度。
+简而言之，团队合作精神是追求成功的关键，并应受到高度重视。因此，
+无论将来我们面临何种情况，都应提醒自己保持充分的团队合作精神，以激发
+自我提升。
+109
+主题词：
+cooperation/team spirit/teamwork
+思路：
+个人品质类很好套模板。
+个人内在：积极心态
+个人外在：沉静应对挑战/提升能力
+与他人关系：提高人际交往能力-相处融洽/合作
+110
+2007
+In front of the goal stands a goalkeeper , who is imagining himself too small to
+defend the gate . On the contrary , the striker considers
+it hard to score a goal for
+exaggerating the shape of the goalkeeper .
+Evidently, what the cartoonist intends to convey is that self-confidence is
+of paramount significance and ought to be placed a high value on. Consider the case of
+Oprah Winfrey, a renowned media mogul and talk show host. Oprah came from a
+challenging background, experiencing poverty and adversity throughout her early life.
+However, she possessed unwavering self-confidence in her abilities and her vision for
+the future. She firmly believed in herself and her capacity to succeed in the
+entertainment industry, even when facing rejection and numerous obstacles.
+In a nutshell, the spirit of self-assurance grasps the master key to pursuing success
+and should be held in high regard. Consequently, no matter what circumstances we
+encounter in the future, we should remind ourselves to maintain abundant confidence
+so as to stimulate self-advancement.
+在球门前站着一个守门员，他认为自己太小，无法守住球门。相反，前锋认
+为很难进球，因为他夸大了守门员的体形。
+显然，漫画家的意图是自信心至关重要，应该高度重视。以著名媒体大亨、
+脱口秀主持人奥普拉· 温弗瑞(Oprah Winfrey)为例。奥普拉来自一个充满挑战的
+背景，在她的早期生活中经历了贫困和逆境。然而，她对自己的能力和对未来的
+愿景有着坚定不移的自信。她坚信自己和自己在娱乐圈取得成功的能力，即使
+面对拒绝和无数障碍。
+简而言之，自信心精神是追求成功的关键，并应受到高度重视。因此，无
+论将来我们面临何种情况，都应提醒自己保持充分的信心，以促进自我提升。
+111
+主题词：
+self-confidence/confidence/believing in ourselves/self-assurance
+思路：
+举例论证类话题(可替换主题词) ：
+万能例子1 :
+Consider the case of Oprah Winfrey , a renowned media mogul and talk show host
+. Oprah came
+from a challenging background , overcoming poverty and adversity
+throughout her early life . However , she possessed unwavering self-confidence in her
+abilities and her vision for the future . She firmly believed in herself and her capacity
+to succeed in the entertainment industry , even when facing rejection and numerous
+obstacles . Oprah's self-confidence enabled her to persevere , build a successful
+career , and become one of the most influential and wealthy individuals in the world .
+Her journey exemplifies how self-confidence can be a driving force behind achieving
+extraordinary accomplishments , no matter where one starts in life .
+以著名媒体大亨、脱口秀主持人奥普拉·温弗瑞(Oprah Winfrey)为例。奥普
+拉来自一个充满挑战的背景，在她的早期生活中克服了贫困和逆境。然而，她
+对自己的能力和对未来的愿景有着坚定不移的自信。她坚信自己和自己在娱乐
+圈取得成功的能力，即使面对拒绝和无数障碍。她的经历证明了自信是如何成
+为取得非凡成就背后的推动力，无论一个人的人生起点在哪里。
+万能例子2 :
+Consider the story of Helen Keller , a remarkable woman who overcame
+enormous challenges . Helen was born deaf and blind , leaving her in a world of
+isolation and darkness . Despite these seemingly insurmountable obstacles , Helen
+maintained unwavering optimism . With the help of her dedicated teacher and her own
+indomitable spirit , she learned to communicate , read , and write .Helen Keller's
+optimism drove her to break through the barriers that confined her , and she went on to
+become an inspirational author , lecturer , and advocate for the rights of people with
+disabilities . Her life story demonstrates the transformative power of optimism in
+turning adversity into opportunity and achieving remarkable personal growth and
+success .
+想想海伦·凯勒的故事，她是一位克服了巨大挑战的杰出女性。海伦天生又
+聋又瞎，这使她生活在一个孤立和黑暗的世界里。尽管有这些看似不可逾越的
+障碍，海伦仍然保持着坚定不移的乐观。在她敬业的老师的帮助下，以及她自
+己不屈不挠的精神，她学会了交流、阅读和写作。海伦·凯勒的乐观精神促使她
+打破了束缚她的障碍，她后来成为了一名鼓舞人心的作家、讲师，并为残疾人
+的权利而奔走。她的人生故事展示了乐观主义的变革力量，它能化逆境为机遇，
+实现非凡的个人成长和成功。
+112
+2006
+Depicted in the portrayal are two men showing craze towards Beck ham , who
+enjoys a high reputation in the soccer field . In the former picture , Beck ham’s name is
+written on the teenager’ s faces . Meanwhile , in the latter picture , a young man is
+spending 300 yuan on a haircut similar to Beck ham’s .
+Conspicuously , the cartoonist attempts to convey that rational idol worship is of
+vital importance and ought to be placed a high value on . To begin with , positive idol
+worship can cultivate an aspiring attitude towards life , which in turn safeguards us
+from being swayed by external pressure . That is to say , those who are armed with
+proper idolatry are more inclined to maintain spiritual positiveness and thus expand
+their capabilities to a higher degree . However , excessive idolatry may cast a cloud
+over individuals’long-term development . A substantial body of research has proven
+that those crazy about their idols may face more risks of psychological problems and
+poor academic performance .
+In a nutshell , proper idol worship grasps the master key to a life of purpose and
+should be held
+in high regard . Consequently , no matter what circumstances we
+encounter in the future , we should remind ourselves to maintain abundant rationality
+towards idolatry so as to stimulate self-advancement .
+在这幅画中，有两个男人对贝克汉姆表现出疯狂的崇拜，贝克汉姆在足球领
+域享有很高的声誉。在前一幅图片中，少年脸上写有贝克汉姆的名字。同时，
+在后一幅图片中，一名年轻人花了300 元来做一个类似贝克汉姆的发型。
+显然，漫画家试图传达理性的崇拜是至关重要的，应该高度重视。首先，
+积极的偶像崇拜可以培养对生活充满雄心壮志的态度，从而使我们不受外部压
+力的影响。也就是说，那些具备适当偶像的人更倾向于保持精神上的积极性，
+从而将他们的能力提升到更高的水平。然而，过度的偶像崇拜可能会对个人的
+长期发展产生不利影响。大量的研究已经证明，那些痴迷于偶像的人可能会面
+临更多的心理问题和较差的学业表现。
+简而言之，适当的偶像崇拜是追求有意义生活的关键，并应受到高度重视。
+因此，无论将来我们面临何种情况，都应提醒自己保持充分的理性来对待偶像
+崇拜，以促进自我提升。
+113
+主题词：
+rational idol worship/positive idol worship/proper idolatry
+思路：
+关于某种社会现象，都可以从正反两方面来套。
+正面：适当的某行为有利于. . . (类似个人品质模板)
+负面：过度的某行为不利于. .
+负面套话：However , excessive . . . may cast a cloud over individuals’long-term
+development . A substantial body of research has proven that those who . . . may face
+more risks of psychological problems and poor academic performance .
+然而，过度的. . .可能会给个人的长期发展蒙上一层阴影。大量研究证明，
+这些. . .的人可能会面临更多心理问题和学习成绩不佳的风险。
+114
+2005
+Depicted in the picture are four children playing a football game . Instead of
+kicking a real football , they kick away their elderly father and defend their goal
+tightly . The caption below the picture indicates : the football game of supporting the
+elderly .
+Conspicuously , the cartoonist strives to convey that instead of being considered
+of little value or outdated, filial piety is still of supreme importance and will exert
+certain positive
+impacts on our daily
+life . To begin with , respecting parents is
+extremely constructive for us to grow up to be a person with life integrity and sound
+personality , thereby setting up the correct values and outlook on life . In addition ,
+such
+merit
+goes
+a
+long
+way
+towards
+facilitating
+family
+members’mutual
+communication , which in turn fosters a close-knit tie between generations . Last but
+not least , it is honoring parents that cultivates inter-generation respect and care ,
+leading to a more harmonious and civilized society .
+In a nutshell , the spirit of being filial grasps the master key to our
+life and
+should be held in high regard . Consequently , no matter what circumstances we
+encounter in the future , we should remind ourselves to maintain abundant respect for
+our parents so as to stimulate both individual growth and social progress .
+在图片中，有四个孩子正在进行足球比赛。但他们并不是在踢真正的足球，
+而是在将他们年迈的父亲踢开，并紧守自己的球门。图片下方标注：“养老
+足球赛”。
+显然，漫画家力图传达孝顺之道并不是没有价值或过时的，它仍然至关重
+要，将对我们的日常生活产生积极的影响。首先，尊敬父母对我们成长为具有
+生活操守和健全个性的人非常有益，从而树立正确的价值观和人生观。此外，
+这种美德在促进家庭成员之间的相互沟通方面发挥了积极作用，从而促进了代
+际间的紧密联系。最重要的是，尊敬父母培养了代际之间的尊重和关怀，促使
+社会更加和谐文明。
+简而言之，孝顺之道是我们生活的关键，并应受到高度重视。因此，无论
+将来我们面临何种情况，都应提醒自己保持充分的对父母的尊重，以激发个
+人成长和社会进步。
+主题词：
+filial piety/respecting parents/honoring parents
+思路：
+同14 年真题，第二/三段完全可以作为模板。
+115
+2004
+Depicted in the portrayal is a young man running across the finishing line , with
+sweat pouring down his face . However , instead of stopping to have a rest , he
+commences striving for the next destination . Under his feet indicates the sign : the
+destination is another starting point .
+Evidently , what the cartoonist intends to convey is that persistence is of
+paramount significance and ought to be placed a high value on . To begin with，
+perseverance
+can not only
+enhance self-confidence but also help us maintain an
+aspiring attitude towards life , which safeguards us from being swayed by external
+pressure . In addition , by practicing this precious merit , we will expand our
+capabilities to a higher degree and thus relish a life of constant progress . Moreover , a
+substantial body of research has demonstrated that those who are armed with the
+quality of adherence are more inclined to utilize their talents to the fullest extent ,
+which
+in turn enables them to gain an edge over peers when confronted with
+hardships.
+In a nutshell , the spirit of being persistent grasps the master key to success and
+should be held
+in high regard . Consequently , no matter what circumstances we
+encounter
+in the future , we should remind ourselves to maintain abundant
+perseverance so as to stimulate self-advancement .
+在这幅画中，一个年轻人穿过终点线，汗水从他的脸上流淌下来。然而，
+他没有停下来休息，而是开始努力追求下一个目标。他脚下的标志写着：“ 目
+标是另一个起点”。
+显然，漫画家意图传达的是坚持不懈是至关重要的，应该高度重视。首先，
+毅力不仅可以增强自信心，还可以帮助我们保持对生活充满向上的态度，使我
+们不会受到外部压力的影响。此外，通过培养这一宝贵的品质，我们将提高自
+己的能力，从而享受到不断进步的生活。此外，大量的研究已经证明，那些具
+备坚持品质的人更倾向于充分发挥他们的才能，从而在面对困难时能够胜过同
+龄人。
+简而言之，坚持不懈的精神是成功的关键，应该受到高度重视。因此，无
+论将来我们面临什么样的情况，都应提醒自己保持充分的毅力，以促进个人
+的进步。
+主题词：
+persistence/perseverance/adherence/being persistent
+思路：
+同19 年真题主题。本漫画主题可为：坚持/持续努力，只要切一点题就
+行，不要太偏题。更重要的是语言。
+116
+2003
+Depicted in the portrayal is a flower showing entirely distinct states towards a
+storm . In the former picture , the flower is in full bloom under the protection of a
+greenhouse . By contrast , when removed from the shed , the flower instantly withers
+in face of the storm . The caption below the picture indicates : the flowers in the
+greenhouse cannot withstand wind and rain .
+Conspicuously , the painter intends to demonstrate that independence is
+remarkably constructive for individual development . To begin with , depending
+on ourselves can not only enhance self-confidence but also help us maintain an
+aspiring state of mind , which safeguards us from being swayed by external pressure .
+In addition , by practicing this valuable merit , we will unleash our best potential and
+utilize talents to the fullest extent , thus gaining an edge over peers when dealing with
+arduous tasks . Last but not least , it is independence that offers infinite opportunities
+for our life , leading us out of the impasse to a shining future .
+In a nutshell , the spirit of self-reliance grasps the master key to success and
+should be held in high regard . Consequently , no matter what circumstances we
+encounter in the future , we should remind ourselves to maintain abundant
+independence so as to stimulate self-advancement .
+在这个图画中，一朵花对待一场风暴表现出完全不同的状态。在前一幅画
+中，这朵花在温室的保护下盛开。相比之下，当它被移出温室，面对风暴时，
+花朵立刻凋谢。画面下方的标题写着：“温室中的花朵经不起风雨的侵袭”。
+显然，画家意图表明独立对个人发展非常有益。首先，依赖自己不仅可以
+增强自信心，还可以帮助我们保持对生活充满向上的心态，使我们不会受到外
+部压力的影响。此外，通过培养这一宝贵的品质，我们将释放出自己的最大潜
+力，充分利用自己的才能，从而在处理艰巨任务时胜过同龄人。最重要的是，
+独立能够为我们的生活提供无限的机会，引领我们走出困境，迎接光明的未来。
+简而言之，自力更生的精神是成功的关键，应该受到高度重视。因此，无
+论将来我们面临什么样的情况，都应提醒自己保持充分的独立性，以促进个人
+的进步。
+主题词：
+independence/depending on ourselves/self-reliance
+思路：
+这幅图隐喻了父母溺爱对孩子发展的消极影响。但是从「独立」这一个人
+品质的积极性出发，更好写，更能引用模板。
+117
+2002
+Depicted in the picture is a lovely American girl , wearing a traditional
+Chinese costume . Ornamented with elaborate earrings and necklaces , she wears a
+broad smile on her face , which adds to her unique charm .
+Conspicuously , the cartoonist strives to convey that instead of being considered
+of little value or outdated, cultural integration is still of supreme importance and will
+undoubtedly exert certain positive impacts on our daily life . To begin with , such a
+trend is extremely constructive for us to acquire a wide array of knowledge , which
+in turn enables us to view complex problems from diverse perspectives . In addition ,
+cultural blending goes a long way towards facilitating mutual communication among
+individuals from different backgrounds , boosting a more harmonious and civilized
+world . Last but not least , it is cultural integration that reflects a unique image of
+China , thereby enhancing our international influence and competitiveness .
+In a nutshell , the practice of cultural blending grasps the master key to world
+harmony and should be held in high regard . Consequently , in no circumstances
+should we forget that it is critical to advocate cultural integration vigorously so as to
+stimulate both national progress and global advancement .
+在这幅图片中，一位可爱的美国女孩穿着传统的中国服装。她戴着精美的
+耳环和项链，脸上洋溢着灿烂的微笑，这增添了她独特的魅力。
+显然，漫画家力求传达的是文化融合并非毫无价值，而是至关重要的，并
+将在我们的日常生活中产生积极影响。首先，这种趋势对于我们获取广泛的知
+识非常有益，从而使我们能够从不同的角度看待复杂的问题。此外，文化融合
+在促进不同背景的人之间相互沟通方面有很大帮助，有助于建设一个更加和谐
+和文明的世界。最重要的是，文化融合的过程中反映了中国独特的形象，从而
+增强了我们的国际影响力和竞争力。
+简而言之，文化融合是实现世界和谐的关键，应该受到高度重视。因此，
+在任何情况下，我们都应该铭记，积极倡导文化融合对于促进国家的进步和全
+球的发展至关重要。
+主题词：
+cultural integration/cultural blending
+思路：
+同10 年真题，区别点在于描述图画不同。
+118
+2001
+Depicted in the portrayal is an oil lamp , with only a tiny flame flickering in the
+dark . However , the tiny flame seems to be so bright that it illuminates a large part
+of the room . Just as the sign above the lamp indicates : love is a lamp that shines
+brighter in the darker places .
+Conspicuously , the cartoonist strives to convey that instead of being considered
+of little value or outdated, kindness
+is still of supreme
+importance and will
+undoubtedly exert certain positive impacts on our daily life . To begin with , caring
+for others is extremely constructive for us to grow up to be a person with life integrity
+and sound personality , thereby setting up the correct values and outlook on life . In
+addition , such merit goes a long way to facilitating mutual communication between
+individuals , which in turn fosters a close-knit tie within the society . Last but not least
+, it is being warm-hearted that cultivates reciprocal understanding and tolerance ,
+leading to a more harmonious and civilized society .
+In a nutshell , the spirit of kindness grasps the master key to our life and should
+be held in high regard . Consequently , no matter what circumstances we encounter in
+the future , we should remind ourselves to maintain abundant love for others so as to
+stimulate both individual growth and social progress .
+这幅插画描绘了一盏油灯，只有微弱的火焰在黑暗中摇曳。然而，这微弱
+的火焰似乎如此明亮，照亮了房间的大部分区域。就像灯上方的标志所标注的：
+爱心是一盏灯，在越黑暗的地方越明亮。
+显然，漫画家力求传达的是善良并非毫无价值，而是至关重要的，并将在
+我们的日常生活中产生积极影响。首先，关心他人对我们成长为一个具有生活
+完整性和健全个性的人来说非常有益，从而树立正确的价值观和人生观。此外，
+这种美德在个体之间促进了相互交流，进而在社会中培养了紧密的联系。最重
+要的是，心地善良这种品质培养了相互理解和宽容，通向了一个更加和谐和文
+明的社会。
+简而言之，善良的精神是我们生活的关键，应该受到高度重视。因此，无
+论将来我们面对什么样的情况，都应提醒自己保持对他人的充分爱心，以激
+发个体成长和社会进步。
+主题词：
+love/kindness/caring for others/being warm-hearted
+思路：
+有爱心可以说是个人品质，但如果加上社会的角度，就会有更多的意义句
+可用。类似14 年真题：孝顺。
+119
+2000
+A stark contrast is observed between two cartoons : in the former picture , a large
+quantity of fish were swimming freely in the ocean with only a fishing boat in 1900 .
+While 95 years later , loads of fishing boats gathered on the sea with only one fish in
+the ocean .
+Conspicuously , the cartoonist attempts to demonstrate that protecting the
+ecological environment is of paramount significance , be it in individual growth or
+in social sustainable development . For one thing , a better ecological environment is
+remarkably beneficial for our physical health , which safeguards us from being
+clouded with various diseases . A substantial body of research has proven that those
+living in better habitats are more likely to relish a sound and joyful life . For another ,
+preserving the ecological environment provides a better living environment for the
+next generation , contributing to the long-term development and prosperity of mankind
+. As a matter of fact , it is the joint efforts towards protecting our habitat that foster a
+harmonious and civilized social atmosphere , which exponentially elevate the
+life
+satisfaction of every individual .
+In a nutshell , the norm of preserving the ecological environment grasps the
+master key to our life and shall be held in high regard . Consequently , no matter what
+circumstances we encounter in the future , we should remind ourselves to maintain
+abundant respect for the environment so as to stimulate both individual growth and
+social progress .
+这幅漫画中，两幅图之间呈现了鲜明的对比：在前一幅图中，大量的鱼在
+海洋中自由游动，只有一艘渔船出现在1900 年。而95 年后，大量的渔船聚集
+在海上，而海洋中只剩下一条鱼。
+显然，漫画家试图展示保护生态环境的重要性，无论是对个体成长还是对
+社会可持续发展都至关重要。首先，更好的生态环境对我们的身体健康非常有
+益，可以保护我们免受各种疾病的困扰。大量研究已经证明，生活在更好的
+栖息地中的人更有机会享受健康和幸福的生活。此外，保护生态环境为下一代
+提供了更好的生活基础，有助于人类的长期发展和繁荣。事实上，共同努力保
+护我们的栖息地有助于培养和谐和文明的社会氛围，从而显著提高了每个个体
+的生活满意度。
+简而言之，保护生态环境的这一准则是我们生活的关键，应受到高度重视。
+因此，无论将来我们面对什么样的情况，都应提醒自己保持对环境的充分敬畏，
+以促进个体成长和社会进步。
+120
+主题词：
+protecting the ecological environment/preserving the ecological
+environment/protecting our habitat
+思路：
+环境保护类都是一个模板，同11 年真题。
