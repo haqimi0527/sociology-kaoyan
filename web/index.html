@@ -1314,7 +1314,6 @@ input::placeholder, textarea::placeholder { color: var(--placeholder); }
     <button class="sub-tab thr-tab" data-sub="thr-quiz">✏️ 刷题</button>
     <button class="sub-tab thr-tab" data-sub="thr-exam">📝 模拟考</button>
     <button class="sub-tab thr-tab" data-sub="thr-resource">📚 资料库</button>
-	    <button class="sub-tab thr-tab" data-sub="thr-exampoints">📖 全考点</button>
   </div>
 
   <div class="sub-panel active" id="sub-thr-concept">
@@ -1475,6 +1474,7 @@ input::placeholder, textarea::placeholder { color: var(--placeholder); }
     <button class="sub-tab met-tab" data-sub="met-stat">📊 统计练习</button>
     <button class="sub-tab met-tab" data-sub="met-design">📋 研究设计</button>
     <button class="sub-tab met-tab" data-sub="met-resource">📚 资料库</button>
+    <button class="sub-tab met-tab" data-sub="met-questions">📝 真题题库</button>
   </div>
 
   <div class="sub-panel active" id="sub-met-concept">
@@ -1549,6 +1549,20 @@ input::placeholder, textarea::placeholder { color: var(--placeholder); }
       <div class="ph-title">该分类暂无资料</div>
       <p>上传或链接资料后将显示在此处</p>
     </div>
+  </div>
+</div><div class="sub-panel" id="sub-met-questions">
+    <div class="flash-filter" style="margin-bottom:12px">
+      <select id="metQFilter" onchange="renderMetQuestions()" style="font-size:14px;padding:6px 12px">
+        <option value="all">全部题型</option>
+        <option value="名词解释">名词解释</option>
+        <option value="简答">简答</option>
+        <option value="论述">论述</option>
+        <option value="设计题">设计题</option>
+        <option value="计算">计算</option>
+      </select>
+      <span style="font-size:12px;color:var(--faint);margin-left:10px" id="metQCount"></span>
+    </div>
+    <div id="metQList"></div>
   </div>
 </div><!-- /panel-methods -->
 
@@ -1782,6 +1796,7 @@ document.querySelectorAll('.sub-tabs').forEach(tabBar => {
     else if (subId === 'met-formula' && concepts.length) renderFormulaCards('all');
     else if (subId === 'met-stat') renderStatExercises('all');
     else if (subId === 'met-design') renderDesignCards();
+    else if (subId === 'met-questions') renderMetQuestions();
     else if (subId === 'eng-write') ensureEngTemplates();
     else if (subId === 'pol-quiz') renderPolQuiz('all');
     else if (subId === 'pol-wrong') renderPolWrong('all');
@@ -3769,6 +3784,48 @@ function renderDesignCards() {
       '</div>' +
     '</div>';
   }).join('');
+}
+
+// ===== Methods Question Bank =====
+var metQuestionsData = [];
+var metQuestionsLoaded = false;
+
+async function loadMetQuestions() {
+  if (metQuestionsLoaded) return;
+  try {
+    var resp = await fetch('data/methods-questions.json?v=1');
+    if (resp.ok) { metQuestionsData = await resp.json(); metQuestionsLoaded = true; }
+  } catch(e) {}
+}
+
+function renderMetQuestions() {
+  loadMetQuestions().then(function() {
+    var filter = document.getElementById('metQFilter');
+    var type = filter ? filter.value : 'all';
+    var qs = metQuestionsData;
+    if (type !== 'all') qs = qs.filter(function(q) { return q.type === type; });
+
+    var countEl = document.getElementById('metQCount');
+    if (countEl) countEl.textContent = qs.length + ' 题';
+
+    var list = document.getElementById('metQList');
+    if (!list) return;
+    if (!qs.length) { list.innerHTML = '<div class="placeholder"><span class="ph-icon">📭</span><p>暂无题目</p></div>'; return; }
+
+    list.innerHTML = qs.map(function(q, i) {
+      var ansHtml = '';
+      if (q.answer) {
+        ansHtml = '<div class="mq-answer" id="mqAns_' + q.id + '" style="display:none;margin-top:8px;padding:12px;background:var(--surface2);border-radius:var(--r-sm);border-left:3px solid var(--met);font-size:13px;line-height:1.8;white-space:pre-wrap">' + escHtml(q.answer) + '</div>' +
+          '<button class="btn btn-sm" style="margin-top:8px" onclick="var a=document.getElementById(\'mqAns_' + q.id + '\');var t=this;a.style.display=a.style.display===\'none\'?\'\':\'none\';t.textContent=a.style.display===\'none\'?\'📖 显示答案\':\'🙈 隐藏答案\'">📖 显示答案</button>';
+      }
+      var srcTag = q.source ? ' <span style="font-size:11px;color:var(--thr)">[' + escHtml(q.source) + ']</span>' : '';
+      return '<div class="card" style="margin-bottom:10px">' +
+        '<div style="display:flex;gap:8px;align-items:center;margin-bottom:6px"><span class="badge" style="background:var(--met);color:#fff;font-size:11px">' + escHtml(q.type) + '</span><span style="font-size:12px;color:var(--faint)">#' + q.number + '</span>' + srcTag + '</div>' +
+        '<div style="font-size:14px;font-weight:600;line-height:1.6">' + escHtml(q.title) + '</div>' +
+        ansHtml +
+      '</div>';
+    }).join('');
+  });
 }
 
 function escapeHtml(s) { return escHtml(String(s)).replace(/\n/g, '<br>'); }
