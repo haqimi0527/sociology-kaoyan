@@ -2446,7 +2446,7 @@ async function loadSchoolsData() {
 async function loadExamsData() {
   if (examsData.length) return;
   try {
-    var resp = await fetch('data/exams.json?v=11');
+    var resp = await fetch('data/exams.json?v=12');
     examsData = await resp.json();
   } catch(e) { console.warn('exams.json 加载失败:', e.message); }
 }
@@ -3816,7 +3816,7 @@ var metQuestionsLoaded = false;
 
 async function loadMetQuestions() {
   try {
-    var resp = await fetch('data/methods-questions.json?v=11');
+    var resp = await fetch('data/methods-questions.json?v=12');
     if (resp.ok) { var data = await resp.json(); metQuestionsData = data; }
   } catch(e) {}
 }
@@ -3853,9 +3853,8 @@ function renderMetQuestions() {
 
 function escapeHtml(s) { return escHtml(String(s)).replace(/\n/g, '<br>'); }
 
-function stripTags(s, allowed) {
+function stripTags(s) {
   var escaped = escHtml(String(s));
-  if (!allowed || !allowed.length) return escaped;
   // Restore table-related tags
   var tags = ['table','thead','tbody','tr','th','td','caption','colgroup','col'];
   tags.forEach(function(t) {
