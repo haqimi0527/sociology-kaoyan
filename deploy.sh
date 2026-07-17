@@ -21,6 +21,10 @@ DATA_FILES=(
   schools.json
   english-vocab.json
   politics.json
+  politics-essay.json
+  theory-topics.json
+  methods-questions.json
+  method-exam-freq.json
   rubric.md
 )
 for f in "${DATA_FILES[@]}"; do
@@ -37,23 +41,10 @@ echo "[3/5] Copy JS files..."
 cp "$WEB/js/exam-engine.js" "$REPO_ROOT/js/exam-engine.js"
 echo "  ✓ exam-engine.js"
 
-# 4. Auto-bump cache version in fetch calls
-echo "[4/5] Bump cache versions..."
-INDEX="$REPO_ROOT/index.html"
-# Find all ?v=N patterns in fetch calls and bump them
-# Extract current versions, bump each by 1
-grep -oP "(?<=fetch\('data/[^']+\?v=)\d+" "$INDEX" | sort -u | while read -r ver; do
-  new=$((ver + 1))
-  echo "  v=$ver → v=$new"
-done
-
-# Actually do the bump (macOS/BSD sed compatible)
-grep -oP "fetch\('data/[^']+\?v=\K\d+" "$INDEX" | sort -u | while read -r ver; do
-  new=$((ver + 1))
-  sed -i "s/?v=$ver'/?v=$new'/g" "$INDEX"
-done
-
-echo "  Cache versions bumped"
+# 4. Cache versions are managed in web/index.html (bump ?v=N there when data changes).
+#    Auto-bump removed: the old sed loop chain-polluted versions (v=1→2 then v=2→3 hit the same file twice)
+#    and only patched the root copy, so web/ and root drifted apart.
+echo "[4/5] Cache versions: managed manually in web/index.html (no auto-bump)"
 
 # 5. Git commit & push
 echo "[5/5] Git commit & push..."

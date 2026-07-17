@@ -877,6 +877,9 @@ table.tbl tr:nth-child(even) td {
 .essay-card .ec-back { display: none; padding: 0 24px 24px; border-top: 1px solid var(--border-light); }
 .essay-card.flipped .ec-back { display: block; }
 .essay-card .ec-back .ec-section { margin-top: 14px; }
+.essay-card .ec-back .ec-materials { margin-top: 12px; border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; }
+.essay-card .ec-back .ec-materials summary { font-size: 12px; font-weight: 700; color: var(--pol); cursor: pointer; }
+.essay-card .ec-back .ec-materials .ec-section-body { margin-top: 6px; white-space: pre-wrap; }
 .essay-card .ec-back .ec-section-title { font-size: 11px; font-weight: 700; color: var(--pol); margin-bottom: 4px; text-transform: uppercase; letter-spacing: .03em; }
 .essay-card .ec-back .ec-section-body { font-size: 13px; line-height: 1.8; color: var(--lead); }
 .essay-card .ec-back .ec-keywords { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 4px; }
@@ -1185,6 +1188,7 @@ table.tbl tr:nth-child(even) td {
       <button class="res-cat-btn active" data-module="all">全部</button>
       <button class="res-cat-btn" data-module="马原">📗 马原</button>
       <button class="res-cat-btn" data-module="毛中特">📘 毛中特</button>
+      <button class="res-cat-btn" data-module="习思想">📔 习思想</button>
       <button class="res-cat-btn" data-module="史纲">📙 史纲</button>
       <button class="res-cat-btn" data-module="思修">📕 思修</button>
     </div>
@@ -1842,7 +1846,7 @@ let conceptIndex = {};
 async function loadConcepts() {
   if (concepts.length) return;
   try {
-    const resp = await fetch('data/concepts.json?v=2');
+    const resp = await fetch('data/concepts.json?v=3');
     if (!resp.ok) throw new Error('HTTP ' + resp.status);
     concepts = await resp.json();
     concepts.forEach(c => { if (c.id) { conceptIndex[c.id] = c; } else { console.warn('概念缺少 id:', c.term); } });
@@ -4309,6 +4313,25 @@ function retryPolQuestion(qid) {
 // ===== Politics Essay Memorization =====
 var polEssayState = {};
 
+// 肖1000材料分析题（27题）从 JSON 异步加载，追加到内置背诵框架题后
+async function loadPolEssayData() {
+  try {
+    var resp = await fetch('data/politics-essay.json?v=2');
+    if (resp.ok) {
+      var data = await resp.json();
+      var known = {};
+      polEssayItems.forEach(function(e) { known[e.id] = 1; });
+      data.forEach(function(e) { if (!known[e.id]) polEssayItems.push(e); });
+      var panel = document.getElementById('sub-pol-essay');
+      if (panel && panel.classList.contains('active')) {
+        var activeBtn = document.querySelector('#essayFilterBar .res-cat-btn.active');
+        renderPolEssay(activeBtn ? activeBtn.dataset.module : 'all');
+      }
+    }
+  } catch(e) {}
+}
+loadPolEssayData();
+
 function loadPolEssay() {
   try { polEssayState = JSON.parse(localStorage.getItem(LS_POL_ESSAY) || '{}'); } catch(e) { polEssayState = {}; }
 }
@@ -4341,10 +4364,11 @@ function renderPolEssay(module) {
       '<div class="ec-front"><div class="ec-module">' + escHtml(e.module) + '</div>' +
       '<div class="ec-question">' + escHtml(e.question) + '</div></div>' +
       '<div class="ec-back">' +
-        '<div class="ec-section"><div class="ec-section-title">📋 答题框架</div>' +
+        (e.materials ? '<details class="ec-materials" onclick="event.stopPropagation()"><summary>📄 材料原文</summary><div class="ec-section-body">' + escapeHtml(e.materials) + '</div></details>' : '') +
+        '<div class="ec-section"><div class="ec-section-title">📋 ' + (e.materials ? '参考答案' : '答题框架') + '</div>' +
         '<div class="ec-section-body">' + escapeHtml(e.framework) + '</div></div>' +
-        '<div class="ec-section"><div class="ec-section-title">🔑 关键词</div>' +
-        '<div class="ec-keywords">' + e.keywords.map(function(k) { return '<span class="ec-kw">' + escHtml(k) + '</span>'; }).join('') + '</div></div>' +
+        (e.keywords && e.keywords.length ? '<div class="ec-section"><div class="ec-section-title">🔑 关键词</div>' +
+        '<div class="ec-keywords">' + e.keywords.map(function(k) { return '<span class="ec-kw">' + escHtml(k) + '</span>'; }).join('') + '</div></div>' : '') +
       '</div>' +
       '<div class="ec-rate" onclick="event.stopPropagation()">' +
         '<button class="ec-rate-btn hard" onclick="ratePolEssay(\'' + e.id + '\', 1)">😰 没记住</button>' +
@@ -4722,7 +4746,7 @@ var methodFreq = {};
 
 async function loadConceptExtras() {
   try {
-    var resp = await fetch('data/theory-topics.json?v=2');
+    var resp = await fetch('data/theory-topics.json?v=3');
     if (resp.ok) {
       var data = await resp.json();
       data.forEach(function(item) {
