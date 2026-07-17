@@ -11671,7 +11671,7 @@
  },
  {
   "year": 2003,
-  "type": "计算题",
+  "type": "计算",
   "question": "列联表部分，计算职业与疾病的相关性并分析",
   "number": 1,
   "school": "武大",
@@ -11855,7 +11855,7 @@
  },
  {
   "year": 2002,
-  "type": "计算题",
+  "type": "计算",
   "question": "主要是研究学生父母的职业背景与其学习成绩是否存在相关性，也是列联表部分的内容，让你计算结果并分析。",
   "number": 1,
   "school": "武大",
@@ -12063,7 +12063,7 @@
  },
  {
   "year": 2001,
-  "type": "计算题",
+  "type": "计算",
   "question": "是一个列联表题目（代际流动），计算变量相关，把卢淑华的那本书的相关内容会做就行了",
   "number": 1,
   "school": "武大",
@@ -15397,7 +15397,7 @@
   "school": "民大",
   "subject": "theory",
   "year": 2004,
-  "type": "填空题",
+  "type": "填空",
   "number": 1,
   "question": "美国社会学家威廉·奥格本提出的（ ）理论认为有相互依赖的各部分所组成的文化在发生变迁时，各部分变迁的速度不一致，结果造成个部分之间的不平衡、差距、错位，由此造成社会问题。",
   "score": 3
@@ -15406,7 +15406,7 @@
   "school": "民大",
   "subject": "theory",
   "year": 2004,
-  "type": "填空题",
+  "type": "填空",
   "number": 2,
   "question": "组成文化的最小单位是（ ）。",
   "score": 3
@@ -15415,7 +15415,7 @@
   "school": "民大",
   "subject": "theory",
   "year": 2004,
-  "type": "填空题",
+  "type": "填空",
   "number": 3,
   "question": "从人们获得角色的方式上可将社会角色分为（ ）。",
   "score": 3
@@ -15424,7 +15424,7 @@
   "school": "民大",
   "subject": "theory",
   "year": 2004,
-  "type": "填空题",
+  "type": "填空",
   "number": 4,
   "question": "有一对夫妇与其未婚子女做成的家庭称（ ）。",
   "score": 3
@@ -15433,7 +15433,7 @@
   "school": "民大",
   "subject": "theory",
   "year": 2004,
-  "type": "填空题",
+  "type": "填空",
   "number": 5,
   "question": "美国二十世纪二三十年代以研究城市社区而闻名的是（ ）学派。",
   "score": 3
@@ -18033,5 +18033,7925 @@
   "type": "论述",
   "number": 2,
   "question": "运用社会学理论分析，韩国教育部门也同样在给学生减负，在减负政策下，为什么私教费用还是很高？"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2013,
+  "type": "名词解释",
+  "number": 1,
+  "question": "越轨行为"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2013,
+  "type": "名词解释",
+  "number": 2,
+  "question": "社会群体"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2013,
+  "type": "名词解释",
+  "number": 3,
+  "question": "社会流动"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2013,
+  "type": "名词解释",
+  "number": 4,
+  "question": "新功能主义"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2013,
+  "type": "名词解释",
+  "number": 5,
+  "question": "福柯"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2013,
+  "type": "名词解释",
+  "number": 6,
+  "question": "《污名》"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2013,
+  "type": "简答",
+  "number": 1,
+  "question": "集体行为与社会运动的关系。"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2013,
+  "type": "简答",
+  "number": 2,
+  "question": "结构功能主义的缺陷。"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2013,
+  "type": "简答",
+  "number": 3,
+  "question": "简评马克思和韦伯对社会冲突论的影响。"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2013,
+  "type": "简答",
+  "number": 4,
+  "question": "简述布鲁默的符号互动论理论。"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2013,
+  "type": "简答",
+  "number": 5,
+  "question": "社会分层的社会反应。"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2013,
+  "type": "简答",
+  "number": 6,
+  "question": "影响社会组织结构的因素。"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2013,
+  "type": "论述",
+  "number": 1,
+  "question": "评古典社会学的贡献和局限。"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2013,
+  "type": "论述",
+  "number": 2,
+  "question": "城市化是现代化的一部分，中国的城市化有哪几种实践模式？各有什么优劣？"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2013,
+  "type": "论述",
+  "number": 3,
+  "question": "你认为当前中国最严重的问题是什么？分析形成的社会原因，造成什么样社会后果？"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2013,
+  "type": "简答",
+  "number": 1,
+  "question": "简析吉登斯的现代性理论。"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2013,
+  "type": "简答",
+  "number": 2,
+  "question": "文化石怎样再生产社会阶级的？"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2013,
+  "type": "论述",
+  "number": 3,
+  "question": "用社会学理论，分析当前中国社会诚信缺失的现象。"
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2013,
+  "type": "名词解释",
+  "number": 1,
+  "question": "信度"
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2013,
+  "type": "名词解释",
+  "number": 2,
+  "question": "操作化"
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2013,
+  "type": "名词解释",
+  "number": 3,
+  "question": "抽样框"
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2013,
+  "type": "名词解释",
+  "number": 4,
+  "question": "理想型"
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2013,
+  "type": "名词解释",
+  "number": 5,
+  "question": "资料审校"
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2013,
+  "type": "简答",
+  "number": 1,
+  "question": "为什么问卷设计必须有理论框架？"
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2013,
+  "type": "简答",
+  "number": 2,
+  "question": "举例说明什么是虚无关系？"
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2013,
+  "type": "简答",
+  "number": 1,
+  "question": "在何种情况下适用分层不等比例抽样？"
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2013,
+  "type": "简答",
+  "number": 2,
+  "question": "问卷的排序题目有哪两种编码方法？它们各自的优缺点？"
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2013,
+  "type": "计算",
+  "number": 1,
+  "question": "考试完成数学试题所需时间，μ=90，σ=15 。问：在2小时内完成比例95%的学生有足够时间来完成考试的前提下，考试应规定多少分钟内结束？"
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2013,
+  "type": "计算",
+  "number": 2,
+  "question": "华南某大学男生身高总体μ=169cm，σ=10.2，如果抽n=100，样本均值在总体均值μ±2厘米之内的机会是多少"
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2013,
+  "type": "计算",
+  "number": 3,
+  "question": "为了戏曲节目收看率，要求抽样调查结果误差不超过5%，置信度95%，求样本容量。"
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2013,
+  "type": "计算",
+  "number": 4,
+  "question": "为了研究习惯与地区之关系。作了共202人的抽样调查。问：饮食习惯是否与地区有关？关系程度如何？\n\t南方\t北方\n面食\t32\t120\n米食\t30\t20"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2014,
+  "type": "名词解释",
+  "number": 1,
+  "question": "集体行为"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2014,
+  "type": "名词解释",
+  "number": 2,
+  "question": "社会网络"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2014,
+  "type": "名词解释",
+  "number": 3,
+  "question": "模式变量"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2014,
+  "type": "名词解释",
+  "number": 4,
+  "question": "择偶梯度"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2014,
+  "type": "名词解释",
+  "number": 5,
+  "question": "哈贝马斯"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2014,
+  "type": "名词解释",
+  "number": 6,
+  "question": "《心灵、自我与社会》"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2014,
+  "type": "简答",
+  "number": 1,
+  "question": "韦伯的科层制的特点及缺点"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2014,
+  "type": "简答",
+  "number": 2,
+  "question": "霍曼斯的交换论的成果与局限"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2014,
+  "type": "简答",
+  "number": 3,
+  "question": "达伦多夫冲突论的起源、形成和影响"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2014,
+  "type": "简答",
+  "number": 4,
+  "question": "怎样看待性别不平等"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2014,
+  "type": "简答",
+  "number": 5,
+  "question": "常人方法论的社会秩序观"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2014,
+  "type": "简答",
+  "number": 6,
+  "question": "社会控制的功能"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2014,
+  "type": "论述",
+  "number": 1,
+  "question": "论述结构功能主义由古典、现代到当代的地位和影响"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2014,
+  "type": "论述",
+  "number": 2,
+  "question": "试从社会结构变迁的角度，评析我国当代城市化的成因、现状、问题"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2016,
+  "type": "名词解释",
+  "number": 1,
+  "question": "首要地位"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2016,
+  "type": "名词解释",
+  "number": 2,
+  "question": "非现实性冲突"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2016,
+  "type": "名词解释",
+  "number": 3,
+  "question": "弱关系"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2016,
+  "type": "名词解释",
+  "number": 4,
+  "question": "情景定义"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2016,
+  "type": "名词解释",
+  "number": 5,
+  "question": "卢曼"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2016,
+  "type": "名词解释",
+  "number": 6,
+  "question": "《规驯与惩罚》"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2016,
+  "type": "简答",
+  "number": 7,
+  "question": "历史上四种分层制度"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2016,
+  "type": "简答",
+  "number": 8,
+  "question": "初级群体和次级群体特性比较"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2016,
+  "type": "简答",
+  "number": 9,
+  "question": "斯美尔塞价值累加理论"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2016,
+  "type": "简答",
+  "number": 10,
+  "question": "戈伏慢的贡献"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2016,
+  "type": "简答",
+  "number": 11,
+  "question": "科二慢的法人行动"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2016,
+  "type": "简答",
+  "number": 12,
+  "question": "结构功能思想来源"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2016,
+  "type": "论述",
+  "number": 13,
+  "question": "网络社会的兴起对社会学基本理论提出的问题和意义"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2016,
+  "type": "论述",
+  "number": 14,
+  "question": "老龄化社会，文化和社会带来的变化，你怎么看？"
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2016,
+  "type": "名词解释",
+  "number": 1,
+  "question": "探索性研究"
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2016,
+  "type": "名词解释",
+  "number": 2,
+  "question": "焦点座谈"
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2016,
+  "type": "名词解释",
+  "number": 3,
+  "question": "表面效度"
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2016,
+  "type": "名词解释",
+  "number": 4,
+  "question": "因果关系"
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2016,
+  "type": "名词解释",
+  "number": 5,
+  "question": "规模比例的整群抽样"
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2016,
+  "type": "简答",
+  "number": 6,
+  "question": "举例说明间接测量的主要缺陷"
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2016,
+  "type": "简答",
+  "number": 7,
+  "question": "提高问卷设计题目效度的两种方法"
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2016,
+  "type": "简答",
+  "number": 8,
+  "question": "研究对象的询问性的方法论意义"
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2016,
+  "type": "简答",
+  "number": 9,
+  "question": "排序题目的编码录入两种方法及其优缺点"
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2016,
+  "type": "简答",
+  "number": 10,
+  "question": "定类与定比两变量的相关统计值"
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2016,
+  "type": "简答",
+  "number": 11,
+  "question": "定序与定序两变量的相关统计值（两个即可）"
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2016,
+  "type": "简答",
+  "number": 12,
+  "question": "参数点估计值的标准"
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2016,
+  "type": "简答",
+  "number": 13,
+  "question": "方差的无偏估计值"
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2016,
+  "type": "简答",
+  "number": 14,
+  "question": "回归方程的基本假定"
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2016,
+  "type": "计算",
+  "number": 15,
+  "question": "用普通正太分布的概率密度公式推倒标准正太分布的概率密度公式"
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2016,
+  "type": "计算",
+  "number": 16,
+  "question": "大样本乘数检验   总估计0.1，现在抽取样本100，比值为0.17能否认为增加了"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1995,
+  "type": "名词解释",
+  "number": 1,
+  "question": "涂尔干"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1995,
+  "type": "名词解释",
+  "number": 2,
+  "question": "社会我"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1995,
+  "type": "名词解释",
+  "number": 3,
+  "question": "自获地位"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1995,
+  "type": "名词解释",
+  "number": 4,
+  "question": "科层制"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1995,
+  "type": "名词解释",
+  "number": 5,
+  "question": "相对剥夺"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1995,
+  "type": "名词解释",
+  "number": 6,
+  "question": "城市化"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1995,
+  "type": "名词解释",
+  "number": 7,
+  "question": "社会流动"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1995,
+  "type": "名词解释",
+  "number": 8,
+  "question": "标签论"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1995,
+  "type": "名词解释",
+  "number": 9,
+  "question": "生育率"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1995,
+  "type": "名词解释",
+  "number": 10,
+  "question": "失范"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1995,
+  "type": "简答",
+  "number": 1,
+  "question": "什么是集体行为，它有哪些特征？"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1995,
+  "type": "简答",
+  "number": 2,
+  "question": "什么是社区，社区有哪些要素？"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1995,
+  "type": "论述",
+  "number": 1,
+  "question": "试论述当前中国实行社会控制的手段和意义？"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1996,
+  "type": "名词解释",
+  "number": 1,
+  "question": "孔德"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1996,
+  "type": "名词解释",
+  "number": 2,
+  "question": "连就无能"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1996,
+  "type": "名词解释",
+  "number": 3,
+  "question": "同化"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1996,
+  "type": "名词解释",
+  "number": 4,
+  "question": "功能冲突论"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1996,
+  "type": "名词解释",
+  "number": 5,
+  "question": "社会调查量表"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1996,
+  "type": "名词解释",
+  "number": 6,
+  "question": "性别歧视"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1996,
+  "type": "名词解释",
+  "number": 7,
+  "question": "宗教"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1996,
+  "type": "名词解释",
+  "number": 8,
+  "question": "相对剥夺"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1996,
+  "type": "名词解释",
+  "number": 9,
+  "question": "中层理论"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1996,
+  "type": "名词解释",
+  "number": 10,
+  "question": "价值观"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1996,
+  "type": "简答",
+  "number": 1,
+  "question": "社会不平等的一般特征是什么？"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1996,
+  "type": "简答",
+  "number": 2,
+  "question": "组织制度化过程具体表现在哪些方面？"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1996,
+  "type": "简答",
+  "number": 3,
+  "question": "离轨行为的主要原因有哪些？"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1996,
+  "type": "论述",
+  "number": 1,
+  "question": "试论述人口迁移的规律"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1997,
+  "type": "名词解释",
+  "number": 1,
+  "question": "理解社会学"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1997,
+  "type": "名词解释",
+  "number": 2,
+  "question": "现象学社会学"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1997,
+  "type": "名词解释",
+  "number": 3,
+  "question": "文化模式"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1997,
+  "type": "名词解释",
+  "number": 4,
+  "question": "道德社会化"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1997,
+  "type": "名词解释",
+  "number": 5,
+  "question": "精神自我"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1997,
+  "type": "名词解释",
+  "number": 6,
+  "question": "失范-机会结构理论"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1997,
+  "type": "名词解释",
+  "number": 7,
+  "question": "群体冲突"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1997,
+  "type": "名词解释",
+  "number": 8,
+  "question": "家庭"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1997,
+  "type": "名词解释",
+  "number": 9,
+  "question": "代际冲突"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1997,
+  "type": "名词解释",
+  "number": 10,
+  "question": "社会变迁"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1997,
+  "type": "简答",
+  "number": 1,
+  "question": "社会学有哪些基本视角？"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1997,
+  "type": "简答",
+  "number": 2,
+  "question": "集体行为发生的条件有哪些？"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1997,
+  "type": "简答",
+  "number": 3,
+  "question": "组织目标的意义是什么？"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1997,
+  "type": "简答",
+  "number": 4,
+  "question": "当代中国城乡差别的主要表现在哪几个方面？"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1997,
+  "type": "论述",
+  "number": 1,
+  "question": "论个人与社会的关系"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1998,
+  "type": "名词解释",
+  "number": 1,
+  "question": "生活机会"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1998,
+  "type": "名词解释",
+  "number": 2,
+  "question": "家庭生命周期"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1998,
+  "type": "名词解释",
+  "number": 3,
+  "question": "后工业社会"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1998,
+  "type": "名词解释",
+  "number": 4,
+  "question": "尼尔斯莫尔"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1998,
+  "type": "名词解释",
+  "number": 5,
+  "question": "社会报酬"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1998,
+  "type": "名词解释",
+  "number": 6,
+  "question": "工作单位"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1998,
+  "type": "名词解释",
+  "number": 7,
+  "question": "同辈群体"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1998,
+  "type": "名词解释",
+  "number": 8,
+  "question": "次级群体"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1998,
+  "type": "名词解释",
+  "number": 9,
+  "question": "社区组织"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1998,
+  "type": "名词解释",
+  "number": 10,
+  "question": "角色紧张"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1998,
+  "type": "简答",
+  "number": 1,
+  "question": "简述社会群体发展的过程"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1998,
+  "type": "简答",
+  "number": 2,
+  "question": "简述社会不平等在我国社会转型期中的作用"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1998,
+  "type": "论述",
+  "number": 1,
+  "question": "试论社会学研究对于中国经济体制改革的意义"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1999,
+  "type": "名词解释",
+  "number": 1,
+  "question": "社会学研究的逻辑"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1999,
+  "type": "名词解释",
+  "number": 2,
+  "question": "文化融合"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1999,
+  "type": "名词解释",
+  "number": 3,
+  "question": "可持续发展"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1999,
+  "type": "名词解释",
+  "number": 4,
+  "question": "社会救助"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1999,
+  "type": "名词解释",
+  "number": 5,
+  "question": "本土方法论"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1999,
+  "type": "名词解释",
+  "number": 6,
+  "question": "空巢家庭"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1999,
+  "type": "名词解释",
+  "number": 7,
+  "question": "二元社会结构"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1999,
+  "type": "名词解释",
+  "number": 8,
+  "question": "舒茨"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1999,
+  "type": "名词解释",
+  "number": 9,
+  "question": "代际关系模式"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1999,
+  "type": "名词解释",
+  "number": 10,
+  "question": "择偶梯度"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1999,
+  "type": "简答",
+  "number": 1,
+  "question": "权力对分配的作用是什么？"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1999,
+  "type": "简答",
+  "number": 2,
+  "question": "如何用差序格局来理解中国社会的人际关系？"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1999,
+  "type": "简答",
+  "number": 3,
+  "question": "哎文化评价中如何灵活运用文化相对论的观点？"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 1999,
+  "type": "论述",
+  "number": 1,
+  "question": "论社会流动与我国经济社会发展的关系。"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2000,
+  "type": "名词解释",
+  "number": 1,
+  "question": "费孝通"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2000,
+  "type": "名词解释",
+  "number": 2,
+  "question": "福利性物价政策"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2000,
+  "type": "名词解释",
+  "number": 3,
+  "question": "大社会学理论体系"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2000,
+  "type": "名词解释",
+  "number": 4,
+  "question": "目标体系"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2000,
+  "type": "名词解释",
+  "number": 5,
+  "question": "《群学肄言》"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2000,
+  "type": "名词解释",
+  "number": 6,
+  "question": "非对抗性阶级冲突"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2000,
+  "type": "名词解释",
+  "number": 7,
+  "question": "中间变量法"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2000,
+  "type": "名词解释",
+  "number": 8,
+  "question": "地位群体"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2000,
+  "type": "简答",
+  "number": 1,
+  "question": "宗教的本能与功能是什么？"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2000,
+  "type": "简答",
+  "number": 2,
+  "question": "分析强制性退休的社会意义？"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2000,
+  "type": "简答",
+  "number": 3,
+  "question": "简述冲突与调和的相互转换？"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2000,
+  "type": "论述",
+  "number": 1,
+  "question": "述评社会学家关于经济与社会关系论述的主要观点，并用其中一种观点分析中国现状。"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2001,
+  "type": "名词解释",
+  "number": 1,
+  "question": "社会事实"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2001,
+  "type": "名词解释",
+  "number": 2,
+  "question": "参与观察"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2001,
+  "type": "名词解释",
+  "number": 3,
+  "question": "参照群体"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2001,
+  "type": "名词解释",
+  "number": 4,
+  "question": "《江村经济》"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2001,
+  "type": "名词解释",
+  "number": 5,
+  "question": "莫顿"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2001,
+  "type": "简答",
+  "number": 1,
+  "question": "简述唯实论和唯名论在个人与社会关系问题上的不同立场。"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2001,
+  "type": "简答",
+  "number": 2,
+  "question": "人类婚配模式有哪些共同特点。"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2001,
+  "type": "简答",
+  "number": 3,
+  "question": "文化传播如何影响社会变迁？"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2001,
+  "type": "简答",
+  "number": 4,
+  "question": "为什么说社会化不足和社会化过度都会妨碍个人成为胜任的社会成员。"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2001,
+  "type": "简答",
+  "number": 5,
+  "question": "不平等在社会分层结构中是如何表现出来的？"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2001,
+  "type": "论述",
+  "number": 1,
+  "question": "请结合我国当前的政府机构改革实践，谈谈科层组织的利弊优劣。"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2001,
+  "type": "论述",
+  "number": 2,
+  "question": "统计资料显示，自80年代以来我国的犯罪率呈不断上升的趋势。试用“结构性紧张”理论分析这种现象，解释当前产生犯罪现象的主要社会原因。"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2004,
+  "type": "名词解释",
+  "number": 1,
+  "question": "反文化",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2004,
+  "type": "名词解释",
+  "number": 2,
+  "question": "先赋地位",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2004,
+  "type": "名词解释",
+  "number": 3,
+  "question": "情境定义",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2004,
+  "type": "名词解释",
+  "number": 4,
+  "question": "初级群体",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2004,
+  "type": "名词解释",
+  "number": 5,
+  "question": "集合行为",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2004,
+  "type": "名词解释",
+  "number": 6,
+  "question": "社会事实",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2004,
+  "type": "简答",
+  "number": 1,
+  "question": "试述社会互动的基本形式",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2004,
+  "type": "简答",
+  "number": 2,
+  "question": "简述科层制的优缺点",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2004,
+  "type": "简答",
+  "number": 3,
+  "question": "影响社会化的主要社会环境",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2004,
+  "type": "简答",
+  "number": 4,
+  "question": "历史上的分层制度都有哪些？",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2004,
+  "type": "简答",
+  "number": 5,
+  "question": "简述功能论的基本观点",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2004,
+  "type": "简答",
+  "number": 6,
+  "question": "简述标签理论的主要观点",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2004,
+  "type": "论述",
+  "number": 1,
+  "question": "联系社会学中的科学主义与人文主义传统，谈谈社会学的学科性质",
+  "score": 20
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2004,
+  "type": "论述",
+  "number": 2,
+  "question": "联系实际，谈谈越轨行为对社会的实际影响",
+  "score": 20
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2004,
+  "type": "论述",
+  "number": 3,
+  "question": "运用所学的社会学理论，分析中国当前的社会变迁",
+  "score": 20
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2005,
+  "type": "名词解释",
+  "number": 1,
+  "question": "社会网络",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2005,
+  "type": "名词解释",
+  "number": 2,
+  "question": "相对贫困",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2005,
+  "type": "名词解释",
+  "number": 3,
+  "question": "性别歧视",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2005,
+  "type": "名词解释",
+  "number": 4,
+  "question": "芝加哥学派",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2005,
+  "type": "名词解释",
+  "number": 5,
+  "question": "社会变迁",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2005,
+  "type": "名词解释",
+  "number": 6,
+  "question": "科层制",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2005,
+  "type": "简答",
+  "number": 1,
+  "question": "试述性别分层的社会学理论",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2005,
+  "type": "简答",
+  "number": 2,
+  "question": "试述文化的构成",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2005,
+  "type": "简答",
+  "number": 3,
+  "question": "试述社会运动发展的“资源动员”理论",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2005,
+  "type": "简答",
+  "number": 4,
+  "question": "试述现代化的构成要素",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2005,
+  "type": "简答",
+  "number": 5,
+  "question": "试述社会学的研究模式",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2005,
+  "type": "简答",
+  "number": 6,
+  "question": "简要评价“功能主义”、“冲突论”和“互动论”。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2005,
+  "type": "论述",
+  "number": 1,
+  "question": "结合迪尔凯姆的“自杀论”，谈谈你对社会学这门学科的理解",
+  "score": 30
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2005,
+  "type": "论述",
+  "number": 2,
+  "question": "请结合实际说明社会群体的性质、结构及其运行过程",
+  "score": 30
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2006,
+  "type": "名词解释",
+  "number": 1,
+  "question": "内群体",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2006,
+  "type": "名词解释",
+  "number": 2,
+  "question": "地位一致",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2006,
+  "type": "名词解释",
+  "number": 3,
+  "question": "“镜中我”",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2006,
+  "type": "名词解释",
+  "number": 4,
+  "question": "文化堕距",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2006,
+  "type": "名词解释",
+  "number": 5,
+  "question": "社会性别",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2006,
+  "type": "名词解释",
+  "number": 6,
+  "question": "吉登斯(A.Giddens)",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2006,
+  "type": "简答",
+  "number": 1,
+  "question": "简述社会互动的基本形式。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2006,
+  "type": "简答",
+  "number": 2,
+  "question": "简述西方学者论“后现代化”的主要观点。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2006,
+  "type": "简答",
+  "number": 3,
+  "question": "简述戴维斯(K.Davis)和摩尔(W.Moore)提出的功能主义社会分层观。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2006,
+  "type": "简答",
+  "number": 4,
+  "question": "如何理解“全球化”背景下的文化多样性。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2006,
+  "type": "简答",
+  "number": 5,
+  "question": "试述默顿(R.K.Merton)的“中层理论”思想。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2006,
+  "type": "简答",
+  "number": 6,
+  "question": "简要评述沃勒斯坦(I.Wallerstein)的“世界体系理论”。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2006,
+  "type": "论述",
+  "number": 1,
+  "question": "试比较迪尔凯姆(E.Durkheim)与韦伯(M.Weber)所开创的社会学研究范式之间的区别,并结合自己的理解进行简要评价。",
+  "score": 20
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2006,
+  "type": "论述",
+  "number": 2,
+  "question": "试用社会学的集体行为理论,结合我国现阶段社会发展的特点,论述如何对“集体**件”加以预测、引导和控制。",
+  "score": 20
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2006,
+  "type": "论述",
+  "number": 3,
+  "question": "自20世纪90年代以来,由于中国城乡社会的分化加剧,“农业不可持续,农村没法发展,农民过于贫困”的“三农”问题日显突出。试从制度层面对我国“三农”问题形成的原因和后果做社会学分析。",
+  "score": 20
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2007,
+  "type": "名词解释",
+  "number": 1,
+  "question": "实证主义",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2007,
+  "type": "名词解释",
+  "number": 2,
+  "question": "炫耀消费",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2007,
+  "type": "名词解释",
+  "number": 3,
+  "question": "“托马斯定理”",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2007,
+  "type": "名词解释",
+  "number": 4,
+  "question": "文化的反功能",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2007,
+  "type": "名词解释",
+  "number": 5,
+  "question": "社会排斥",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2007,
+  "type": "名词解释",
+  "number": 6,
+  "question": "布迪厄(Pierre Bourdieu)",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2007,
+  "type": "简答",
+  "number": 1,
+  "question": "如何理解社会分层中的“地位不一致”现象。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2007,
+  "type": "简答",
+  "number": 2,
+  "question": "简述舆论形成的要素、过程和功能。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2007,
+  "type": "简答",
+  "number": 3,
+  "question": "简述迪尔凯姆(Emile Durkheim)的宗教社会学观点。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2007,
+  "type": "简答",
+  "number": 4,
+  "question": "什么是社会问题?如何识别社会问题?",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2007,
+  "type": "简答",
+  "number": 5,
+  "question": "简述布鲁默(Herbert Blumer)提出的符号互动论的基本原则。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2007,
+  "type": "简答",
+  "number": 6,
+  "question": "简述经济行为分析的社会学视角。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2007,
+  "type": "论述",
+  "number": 1,
+  "question": "试述20世纪80年代以来西方社会学理论发展的主要特点。",
+  "score": 20
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2007,
+  "type": "论述",
+  "number": 2,
+  "question": "试述科塞(Lewis Coser)的冲突功能论的基本观点,并结合我国现实,说明“安全阀”机制对和谐社会建设的意义。",
+  "score": 20
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2007,
+  "type": "论述",
+  "number": 3,
+  "question": "试析农民工在我国城市化进程中的地位和作用,以及由于农民工特殊的社会身份所引起的相关社会问题。",
+  "score": 20
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2008,
+  "type": "名词解释",
+  "number": 1,
+  "question": "社会人假设",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2008,
+  "type": "名词解释",
+  "number": 2,
+  "question": "精英阶级",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2008,
+  "type": "名词解释",
+  "number": 3,
+  "question": "后现代城市",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2008,
+  "type": "名词解释",
+  "number": 4,
+  "question": "集体意识",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2008,
+  "type": "名词解释",
+  "number": 5,
+  "question": "模式变项",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2008,
+  "type": "名词解释",
+  "number": 6,
+  "question": "沟通行动",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2008,
+  "type": "简答",
+  "number": 1,
+  "question": "请举例分析亚文化的正、反功能。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2008,
+  "type": "简答",
+  "number": 2,
+  "question": "简述我国社会转型时期犯罪现象的主要特点。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2008,
+  "type": "简答",
+  "number": 3,
+  "question": "如何理解贫困问题分析的文化视角和结构视角?",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2008,
+  "type": "简答",
+  "number": 4,
+  "question": "简述霍曼斯社会交换理论的基本命题。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2008,
+  "type": "简答",
+  "number": 5,
+  "question": "简述功能主义理论的思想来源。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2008,
+  "type": "简答",
+  "number": 6,
+  "question": "简评科尔曼的理性选择理论的基本观点。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2008,
+  "type": "论述",
+  "number": 1,
+  "question": "请结合西方社会思想史谈谈古典社会学理论的成就与局限。",
+  "score": 30
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2008,
+  "type": "论述",
+  "number": 2,
+  "question": "试用社会变迁的观点阐释我国社会主义新农村建设运动。",
+  "score": 30
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2010,
+  "type": "名词解释",
+  "number": 1,
+  "question": "小群体",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2010,
+  "type": "名词解释",
+  "number": 2,
+  "question": "虚拟社区",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2010,
+  "type": "名词解释",
+  "number": 3,
+  "question": "形式社会学",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2010,
+  "type": "名词解释",
+  "number": 4,
+  "question": "敏化概念",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2010,
+  "type": "名词解释",
+  "number": 5,
+  "question": "哈贝马斯",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2010,
+  "type": "名词解释",
+  "number": 6,
+  "question": "《社会研究的新规则》",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2010,
+  "type": "简答",
+  "number": 1,
+  "question": "社会分层的社会反应",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2010,
+  "type": "简答",
+  "number": 2,
+  "question": "韦伯对冲突社会学的影响",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2010,
+  "type": "简答",
+  "number": 3,
+  "question": "布迪厄文化资本理论",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2010,
+  "type": "简答",
+  "number": 4,
+  "question": "社会变迁的形式",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2010,
+  "type": "简答",
+  "number": 5,
+  "question": "当代中国性别角色变迁",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2010,
+  "type": "简答",
+  "number": 6,
+  "question": "布劳对交换轮的贡献",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2010,
+  "type": "论述",
+  "number": 1,
+  "question": "从社会学理论发展的角度，对比评述涂尔干帕森斯加芬克尔社会秩序观",
+  "score": 20
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2010,
+  "type": "论述",
+  "number": 2,
+  "question": "社会结构理论分析我国社会建设",
+  "score": 20
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2011,
+  "type": "名词解释",
+  "number": 1,
+  "question": "科层制",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2011,
+  "type": "名词解释",
+  "number": 2,
+  "question": "亚文化",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2011,
+  "type": "名词解释",
+  "number": 3,
+  "question": "法人行动",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2011,
+  "type": "名词解释",
+  "number": 4,
+  "question": "社会控制",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2011,
+  "type": "名词解释",
+  "number": 5,
+  "question": "加芬克尔",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2011,
+  "type": "名词解释",
+  "number": 6,
+  "question": "《社会的构成》",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2011,
+  "type": "简答",
+  "number": 1,
+  "question": "中国城乡差异的原因（或表现）",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2011,
+  "type": "简答",
+  "number": 2,
+  "question": "社会不平等的特征",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2011,
+  "type": "简答",
+  "number": 3,
+  "question": "老年问题的表现",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2011,
+  "type": "简答",
+  "number": 4,
+  "question": "韦伯的方法论思想",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2011,
+  "type": "简答",
+  "number": 5,
+  "question": "芝加哥学派的主要贡献",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2011,
+  "type": "简答",
+  "number": 6,
+  "question": "霍曼斯和布劳关于交换理论的区别",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2011,
+  "type": "论述",
+  "number": 1,
+  "question": "结合社会学理论的发展进程，说明批判理论在社会学理论中的地位和发展。",
+  "score": 20
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2011,
+  "type": "论述",
+  "number": 2,
+  "question": "美国著名权威医学杂志《柳叶刀》记载，中国逐渐成为世界上自杀率最高的国家。试用涂尔干（Durkheim）的自杀理论来解释这一现象。",
+  "score": 20
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2011,
+  "type": "论述",
+  "number": 3,
+  "question": "请论述集体行为的原因、特征、过程等等（差不多就集合行为那一章的，实在记不住了……汗……）。",
+  "score": 20
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2003,
+  "type": "名词解释",
+  "number": 1,
+  "question": "定距尺度",
+  "score": 3
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2003,
+  "type": "名词解释",
+  "number": 2,
+  "question": "测量过程法则",
+  "score": 3
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2003,
+  "type": "名词解释",
+  "number": 3,
+  "question": "操作定义",
+  "score": 3
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2003,
+  "type": "名词解释",
+  "number": 4,
+  "question": "扎根理论",
+  "score": 3
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2003,
+  "type": "名词解释",
+  "number": 5,
+  "question": "再测信度",
+  "score": 3
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2003,
+  "type": "名词解释",
+  "number": 6,
+  "question": "第一手资料",
+  "score": 3
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2003,
+  "type": "简答",
+  "number": 1,
+  "question": "在用问卷调查大学生“上网”情况时，你选择下列哪个题型？为什么？A题型：请问您平均每周“上网”情况如何？（请选择一项）（1）1至2次 （2）3至4次 （3）基本每天一次 （4）基本不上网 B题型：请问您平均每周“上网”_______次。C题型：请问您平均每周“上网”大约_______小时。",
+  "score": 6
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2003,
+  "type": "简答",
+  "number": 2,
+  "question": "在设计调查大学生宿舍关系情况问卷时，你选择下列哪个题型？为什么？A题型：请问您宿舍同学之间的关系如何？（请选择一项）1、很好 2、较好 3、一般 4、较差 5、很差 B题型：请问，当看到宿舍同学洗的衣服掉在地上时，您一般会如何做？（请选一项）1、拾起来 2、告诉她/他 3、一般不管 4其他（请注明）",
+  "score": 6
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2003,
+  "type": "简答",
+  "number": 3,
+  "question": "分析下面的“问题”错误，并且提出修改建议方案。“您选择职业的主要标准是什么？（请选择一项或排出次序）（1）收入 （2）地点 （3）专业 （4）兴趣（5）其他（请注明）",
+  "score": 6
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2003,
+  "type": "论述",
+  "number": 1,
+  "question": "试论检验随机抽样样本代表性的两个主要指标。",
+  "score": 13
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2003,
+  "type": "论述",
+  "number": 2,
+  "question": "试比较总合量表与累计量表（如鲍氏社会距离量表）的优点",
+  "score": 13
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2003,
+  "type": "论述",
+  "number": 3,
+  "question": "试论对社会现象间接测量的基本假定。",
+  "score": 13
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2003,
+  "type": "填空",
+  "number": 1,
+  "question": "在一个正态分布中，均值、中位数、众数间的关系是________,在一个负偏态分布中，三者间的关系是 ________",
+  "score": 3
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2003,
+  "type": "填空",
+  "number": 2,
+  "question": "二项分布近似为正态分布的条件是________",
+  "score": 3
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2003,
+  "type": "填空",
+  "number": 3,
+  "question": "应用相关系数r时应注意 ________ ，________ ，________。",
+  "score": 3
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2003,
+  "type": "填空",
+  "number": 4,
+  "question": "方差分析的假设是________ ，________；方差分析适用的变量层次是________ ；",
+  "score": 3
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2003,
+  "type": "填空",
+  "number": 5,
+  "question": "适用于二个独立样本的非参数检验法有（列出两种） ________；________ ；",
+  "score": 3
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2003,
+  "type": "简答",
+  "number": 1,
+  "question": "衡量估计值的标准有________、 ________、________，分别简要解释之。",
+  "score": 15
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2003,
+  "type": "计算",
+  "number": 2,
+  "question": "为研究饮食习惯与地区之间的关系：做了共100人的抽样调查，问饮食习惯是否与地区有关（a=0.05）？关系程度如何？并解释其意义。地区 饮食习惯 南方 北方 面食 10 30 40 米食 40 20 60 50 50 100",
+  "score": 12
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2003,
+  "type": "计算",
+  "number": 3,
+  "question": "有40道英语测验题，每题有四个答案供选择，其中有一个正确答案，问答对几道题才能说不是猜测的结果（a=0.05） c=0.05 单侧 双侧 Z 1.65 1.96 x2（1） 3.841 5.024",
+  "score": 15
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2004,
+  "type": "名词解释",
+  "number": 1,
+  "question": "准则效度",
+  "score": 4
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2004,
+  "type": "名词解释",
+  "number": 2,
+  "question": "实验组",
+  "score": 4
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2004,
+  "type": "名词解释",
+  "number": 3,
+  "question": "参与观察",
+  "score": 4
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2004,
+  "type": "名词解释",
+  "number": 4,
+  "question": "内容分析方法",
+  "score": 4
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2004,
+  "type": "简答",
+  "number": 1,
+  "question": "在测量居民的“收入”时，你选择下列哪一种题型？为什么？题型一：“请问您平均每月的总收入大约是多少元？”题型二：“请问您平均每月的总消费额大约是多少？（请选择一项）：” A 500元及以下 B 501至1000元 C 1001至1500元 D1501至2000元 F 2001至2500元 G2501至3000元 H 3001至3500元 I3501至4000元 J 4001元及以上",
+  "score": 7
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2004,
+  "type": "简答",
+  "number": 2,
+  "question": "分析下面问卷中“问题”设计的错误，并且提出修改方案：“您比较喜欢看下列哪些报刊？（请选择三项或排序）” （1）天津日报 （2）今晚报 （3）人民日报 （4）光明日报 （5）南方周末 （6）其他（请注明）",
+  "score": 7
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2004,
+  "type": "论述",
+  "number": 1,
+  "question": "举例说明什么是“虚无关系”",
+  "score": 15
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2004,
+  "type": "论述",
+  "number": 2,
+  "question": "试论理论对社会调查研究的指导作用",
+  "score": 15
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2004,
+  "type": "论述",
+  "number": 3,
+  "question": "扼要说明“多节段整群抽样方法”中“阶段比例分布”的影响。",
+  "score": 15
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2004,
+  "type": "其他",
+  "number": 1,
+  "question": "若a相同，则双侧检验较单侧检验更难否定H。 A对 B错 C无法判断",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2004,
+  "type": "填空",
+  "number": 2,
+  "question": "运用t检验对独立样本总体均值差的显著性进行检验时，该t分布的自由度为_______。若对配对样本的总体均值差检验时，则其t分布的自由度为_______。(用符号表示即可)",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2004,
+  "type": "简答",
+  "number": 1,
+  "question": "列举出线形相关系数ρ的显著性检验可应用的几种方法（写出方法的名称即可）",
+  "score": 12
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2004,
+  "type": "简答",
+  "number": 2,
+  "question": "非参数检验与参数检验相比有哪些特点？",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2004,
+  "type": "简答",
+  "number": 3,
+  "question": "二总体均值差的检验比单总体均值的检验增加了哪些前提条件？",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2004,
+  "type": "简答",
+  "number": 4,
+  "question": "比较斯皮尔曼等级相关系数与Gamma等级相关系数的特点。",
+  "score": 12
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2004,
+  "type": "计算",
+  "number": 1,
+  "question": "随机抽取了甲、乙二校某年的升学率资料。已知，甲校300名毕业生中升学93人，乙校180名毕业生中升学71人。若乙校为重点校，只有其升学率高于普通校5%，才被认为其教学质量较高的话，问，可否认为乙校教学质量高于甲校？（a=0.05） Z0.05/2=1.96 Z0.05=1.65",
+  "score": 16
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2005,
+  "type": "名词解释",
+  "number": 1,
+  "question": "探索性研究",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2005,
+  "type": "名词解释",
+  "number": 2,
+  "question": "因果关系",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2005,
+  "type": "名词解释",
+  "number": 3,
+  "question": "配额抽样",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2005,
+  "type": "名词解释",
+  "number": 4,
+  "question": "随机误差",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2005,
+  "type": "论述",
+  "number": 1,
+  "question": "选择一个题目，简要设计一个问卷调查研究方案，其内容包括：（1）写出一个明确的调研假设；（2）给出所设及概念的“操作性定义”（3）指明拟使用的“测量尺度”（4）指出拟采用的抽样方法（5）指出拟采用的收集资料的方法，并阐明选择该方法的主要理由（6）分别说明本次调查的分析单位，调查对象和调查内容。☆ 供选择的调查研究项目（指选择一个）1 独生子女教育 2 职工积极性与组织管理 3收入水平与消费模式 4 教学方法与人才培养",
+  "score": 25
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2005,
+  "type": "论述",
+  "number": 1,
+  "question": "扼要说明在社会研究中影响随机抽样样本规模的四个基本技术性因素。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2005,
+  "type": "论述",
+  "number": 2,
+  "question": "简要说明在构造总合量表中运用逻辑推导与经验检验各自的方法及其相互之间的关系。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2005,
+  "type": "论述",
+  "number": 3,
+  "question": "请举例说明什么是间接测量？",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2005,
+  "type": "计算",
+  "number": 1,
+  "question": "分别A,B从两个正态总体中各随机抽取一个样本，nA=10 SA2=7 nB=8 SB2=3 问二总体方差有无显著差异（a=0.05）？",
+  "score": 15
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2005,
+  "type": "计算",
+  "number": 2,
+  "question": "设总体服从N(μ,σ2 )，其中σ2 已知，问样本容量n取多大时方能保证μ的95%的双侧置信区间的宽度不大于L?",
+  "score": 15
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2005,
+  "type": "简答",
+  "number": 1,
+  "question": "列联表的检验统计量卡方x2 = ？ 列联表的检验是单侧还是双侧？为什么？若列联表中的变量是相互独立的，则其条件分布等于什么分布？",
+  "score": 15
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2005,
+  "type": "简答",
+  "number": 2,
+  "question": "写出回归方程的基本假定",
+  "score": 15
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2005,
+  "type": "填空",
+  "number": 1,
+  "question": "设X1 , X2 , X3 …… Xn 为来自正态总体N(μ,σ2 )的一个简单随机样本，则样本均值 的分布服从 ？ ；又若ai为常数(ai≠0)，则∑i=1n ai Xi的分布服从 ?",
+  "score": 15
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2006,
+  "type": "名词解释",
+  "number": 1,
+  "question": "信度",
+  "score": 4
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2006,
+  "type": "名词解释",
+  "number": 2,
+  "question": "内容分析",
+  "score": 4
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2006,
+  "type": "名词解释",
+  "number": 3,
+  "question": "理想类型",
+  "score": 4
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2006,
+  "type": "简答",
+  "number": 1,
+  "question": "请简要说明定序尺度，定距尺度的定义及其关系。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2006,
+  "type": "简答",
+  "number": 2,
+  "question": "请举例说明什么是“虚无关系”。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2006,
+  "type": "简答",
+  "number": 3,
+  "question": "请根据以下三个总体信息，编制400人的配额抽样表 1. 性别比例为6:4（男性60%，女性40%） 2. 职业结构为2:3:5 （教师20%，管理者30%，其他50%） 3. 年龄结构为3:5:2 （老年30%，中年50%，青年20%）",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2006,
+  "type": "论述",
+  "number": 1,
+  "question": "较之单纯的统计分析，实验方法对验证因果关系上的优点。",
+  "score": 16
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2006,
+  "type": "论述",
+  "number": 2,
+  "question": "试举例说明两种优化测量指标的方法。",
+  "score": 16
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2006,
+  "type": "简答",
+  "number": 1,
+  "question": "说明减少误差比例PRE对相关的定义以及PRE所使用的变量层次。",
+  "score": 15
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2006,
+  "type": "填空",
+  "number": 1,
+  "question": "若随机变量ξ～N(μ,σ2 ),则η=（ξ—2）/3服从正态分布N( , )",
+  "score": 7
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2006,
+  "type": "计算",
+  "number": 1,
+  "question": "设样本x1,x2,……,x10和样本y1,y2,……,y5分别取自两个独立样本X与Y， X～N(10,√¯2¯2 ) ，Y～N(20,22 ) 求P[（ ）≥—11]=?",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2006,
+  "type": "计算",
+  "number": 2,
+  "question": "对一个由200名居民构成的随机样本的调查显示，支持该社区管理新方案的占54%，据此能否得出该社区多数居民支持此方案的结论？（a=0.05）",
+  "score": 15
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2006,
+  "type": "计算",
+  "number": 3,
+  "question": "设随机变量ξ～N(0,1) ，若P(ξ2 ≥λ)=0.05,求λ。",
+  "score": 8
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2006,
+  "type": "计算",
+  "number": 4,
+  "question": "以下是12名学生的抽样调查结果，问是否可以认为先交卷的学生成绩较好（a=0.05）？ 交卷名次 1 2 3 4 5 6 7 8 9 10 11 12 成绩名次 2 7 7 11 9 3 1 12 4 7 5 10 t0.05(10)=1.8125 Z0.05=1.65 x0.052(1)=3.841 t0.05(11)=1.7959 Z0.025=1.96 x0.052(2)=5.991 t0.05(12)=1.7823 Z0.1587=1.00 x0.0252(1)=5.024 x0.0252(2)=7.378",
+  "score": 20
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2010,
+  "type": "名词解释",
+  "number": 1,
+  "question": "操作化",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2010,
+  "type": "名词解释",
+  "number": 2,
+  "question": "效度",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2010,
+  "type": "名词解释",
+  "number": 5,
+  "question": "控制变量",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2010,
+  "type": "简答",
+  "number": 1,
+  "question": "三种提高信度的方法",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2010,
+  "type": "简答",
+  "number": 2,
+  "question": "两个名词的含义，忘了",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2010,
+  "type": "论述",
+  "number": 1,
+  "question": "选择抽样方案，父母子女关系",
+  "score": 15
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2010,
+  "type": "论述",
+  "number": 2,
+  "question": "一个题器修改",
+  "score": 15
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2010,
+  "type": "计算",
+  "number": 1,
+  "question": "样本容量的计算题",
+  "score": 9
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2010,
+  "type": "简答",
+  "number": 1,
+  "question": "回归的三个基本假定，三种检验方法",
+  "score": 20
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2010,
+  "type": "计算",
+  "number": 2,
+  "question": "根据三个成绩的均值方差计算选择最好的一个"
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2010,
+  "type": "计算",
+  "number": 3,
+  "question": "假设检验的计算题",
+  "score": 20
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2010,
+  "type": "计算",
+  "number": 4,
+  "question": "二项分布近似正态分布求概率的计算题"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2013,
+  "type": "名词解释",
+  "number": 1,
+  "question": "结构性贫困"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2013,
+  "type": "名词解释",
+  "number": 2,
+  "question": "集体意识"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2013,
+  "type": "名词解释",
+  "number": 3,
+  "question": "道德社会化"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2013,
+  "type": "名词解释",
+  "number": 4,
+  "question": "社会行动单元"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2013,
+  "type": "名词解释",
+  "number": 5,
+  "question": "中层理论"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2013,
+  "type": "名词解释",
+  "number": 6,
+  "question": "交换与地位"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2013,
+  "type": "名词解释",
+  "number": 7,
+  "question": "情境定义"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2013,
+  "type": "名词解释",
+  "number": 8,
+  "question": "文化资本"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2013,
+  "type": "名词解释",
+  "number": 9,
+  "question": "社会越轨"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2013,
+  "type": "名词解释",
+  "number": 10,
+  "question": "社会保障"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2013,
+  "type": "简答",
+  "number": 1,
+  "question": "精英循环理论"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2013,
+  "type": "简答",
+  "number": 2,
+  "question": "理想类型"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2013,
+  "type": "简答",
+  "number": 3,
+  "question": "现实冲突和非现实冲突是什么"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2013,
+  "type": "简答",
+  "number": 4,
+  "question": "社会问题的界定"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2013,
+  "type": "简答",
+  "number": 5,
+  "question": "马克思的异化"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2013,
+  "type": "论述",
+  "number": 1,
+  "question": "社区建设存在的问题及解决对策"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2013,
+  "type": "论述",
+  "number": 2,
+  "question": "用社会学理论解释和谐社会"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2013,
+  "type": "论述",
+  "number": 3,
+  "question": "这个忘了"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2013,
+  "type": "名词解释",
+  "number": 1,
+  "question": "二次分析"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2013,
+  "type": "名词解释",
+  "number": 2,
+  "question": "系统抽样"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2013,
+  "type": "名词解释",
+  "number": 3,
+  "question": "信度"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2013,
+  "type": "名词解释",
+  "number": 4,
+  "question": "抽样误差"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2013,
+  "type": "简答",
+  "number": 1,
+  "question": "什么是生日法"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2013,
+  "type": "简答",
+  "number": 2,
+  "question": "样本的影响因素"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2013,
+  "type": "简答",
+  "number": 3,
+  "question": "定性资料分析与定量资料分析的区别"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2013,
+  "type": "简答",
+  "number": 4,
+  "question": "中心极限定理"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2013,
+  "type": "简答",
+  "number": 5,
+  "question": "经典实验的步骤"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2013,
+  "type": "计算",
+  "number": 1,
+  "question": "列联表（分析条件分布与边缘分布并且会写）"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2013,
+  "type": "计算",
+  "number": 2,
+  "question": "小样本二总体假设检验，总体方差不知道但相等"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2013,
+  "type": "计算",
+  "number": 3,
+  "question": "spss软件分析计算"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2012,
+  "type": "名词解释",
+  "number": 1,
+  "question": "个人关系、群体关系"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2012,
+  "type": "名词解释",
+  "number": 2,
+  "question": "性别角色、社会性别"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2012,
+  "type": "名词解释",
+  "number": 3,
+  "question": "社会整合、社会解体"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2012,
+  "type": "名词解释",
+  "number": 4,
+  "question": "失范、越轨"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2012,
+  "type": "名词解释",
+  "number": 5,
+  "question": "绝对贫困、相对贫困"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2012,
+  "type": "简答",
+  "number": 1,
+  "question": "社会功能初级生活圈的主要方面"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2012,
+  "type": "简答",
+  "number": 2,
+  "question": "非正式群体的社会功能"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2012,
+  "type": "简答",
+  "number": 3,
+  "question": "自我认同、社会认同"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2012,
+  "type": "简答",
+  "number": 4,
+  "question": "现代化、现代化特征、现代化过程"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2012,
+  "type": "简答",
+  "number": 5,
+  "question": "《自杀论》、自杀分类、自杀原因"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2012,
+  "type": "论述",
+  "number": 1,
+  "question": "人口老龄化的原因、特点、后果、对策"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2012,
+  "type": "论述",
+  "number": 2,
+  "question": "社会现代化对于社会分层的影响"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2012,
+  "type": "论述",
+  "number": 3,
+  "question": "文化功能分析文化强国"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2011,
+  "type": "名词解释",
+  "number": 1,
+  "question": "镜中我"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2011,
+  "type": "名词解释",
+  "number": 2,
+  "question": "社会互动"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2011,
+  "type": "名词解释",
+  "number": 3,
+  "question": "家庭"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2011,
+  "type": "名词解释",
+  "number": 4,
+  "question": "科层制"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2011,
+  "type": "名词解释",
+  "number": 5,
+  "question": "社会失范"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2011,
+  "type": "名词解释",
+  "number": 6,
+  "question": "角色集"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2011,
+  "type": "名词解释",
+  "number": 7,
+  "question": "印象管理"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2011,
+  "type": "名词解释",
+  "number": 8,
+  "question": "社会性别"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2011,
+  "type": "名词解释",
+  "number": 9,
+  "question": "社会解体"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2011,
+  "type": "名词解释",
+  "number": 10,
+  "question": "文化模式"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2011,
+  "type": "简答",
+  "number": 1,
+  "question": "为什么社会与个人关系是社会学的基本问题？"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2011,
+  "type": "简答",
+  "number": 2,
+  "question": "什么是集合行为，集合行为的特征？"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2011,
+  "type": "简答",
+  "number": 3,
+  "question": "解释社会制度的功能及其制度变迁的原因？"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2011,
+  "type": "简答",
+  "number": 4,
+  "question": "什么是社会群体，社会群体具有哪些特征？"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2011,
+  "type": "简答",
+  "number": 5,
+  "question": "简述发展中国家的现代化进程中的特征"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2011,
+  "type": "论述",
+  "number": 1,
+  "question": "运用社会学相关理论解释“包容性增长”。"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2011,
+  "type": "论述",
+  "number": 2,
+  "question": "从职业流动相关层面，特定分析农民工流动的影响。"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2011,
+  "type": "论述",
+  "number": 3,
+  "question": "社会现代化过程的基本特征及社会现代化路径的选择。"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2011,
+  "type": "名词解释",
+  "number": 1,
+  "question": "双盲实验"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2011,
+  "type": "名词解释",
+  "number": 2,
+  "question": "分层抽样"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2011,
+  "type": "名词解释",
+  "number": 3,
+  "question": "阐释模型"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2011,
+  "type": "名词解释",
+  "number": 4,
+  "question": "去__心式"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2011,
+  "type": "名词解释",
+  "number": 5,
+  "question": "准则效度"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2011,
+  "type": "简答",
+  "number": 1,
+  "question": "中位数与均值"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2011,
+  "type": "简答",
+  "number": 2,
+  "question": "相关……"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2011,
+  "type": "简答",
+  "number": 3,
+  "question": "效度与信度"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2011,
+  "type": "简答",
+  "number": 4,
+  "question": "滚雪球抽样"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2011,
+  "type": "简答",
+  "number": 5,
+  "question": "同期群研究与同组研究"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2011,
+  "type": "简答",
+  "number": 6,
+  "question": "所罗门三组实验设计是否能够测量出外部效应"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2011,
+  "type": "计算",
+  "number": 1,
+  "question": "列连表。卢淑华《社会统计学》习题。求卡方值，并且进行假设检验"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2011,
+  "type": "计算",
+  "number": 2,
+  "question": "忘了怎么个题了，比较难。"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2011,
+  "type": "论述",
+  "number": 1,
+  "question": "实验设计：城市公平感研究。"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2011,
+  "type": "论述",
+  "number": 2,
+  "question": "理论研究与经验研究的关系。"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2014,
+  "type": "名词解释",
+  "number": 1,
+  "question": "主我"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2014,
+  "type": "名词解释",
+  "number": 2,
+  "question": "权威"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2014,
+  "type": "名词解释",
+  "number": 3,
+  "question": "逆向社会化"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2014,
+  "type": "名词解释",
+  "number": 4,
+  "question": "参照群体"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2014,
+  "type": "名词解释",
+  "number": 5,
+  "question": "文化中心主义"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2014,
+  "type": "名词解释",
+  "number": 6,
+  "question": "文化堕距"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2014,
+  "type": "名词解释",
+  "number": 7,
+  "question": "社会分化"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2014,
+  "type": "名词解释",
+  "number": 8,
+  "question": "机械团结"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2014,
+  "type": "简答",
+  "number": 1,
+  "question": "社区与社会的区别"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2014,
+  "type": "简答",
+  "number": 2,
+  "question": "科层制特征"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2014,
+  "type": "简答",
+  "number": 3,
+  "question": "社会角色的概念"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2014,
+  "type": "简答",
+  "number": 4,
+  "question": "库利自我意识形成的三阶段"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2014,
+  "type": "简答",
+  "number": 5,
+  "question": "韦伯统治的三类型"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2014,
+  "type": "论述",
+  "number": 1,
+  "question": "韦伯与涂尔干在社会学研究方法上的区别和联系"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2014,
+  "type": "论述",
+  "number": 2,
+  "question": "论述外国社会学家对城市文化的看法"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2014,
+  "type": "论述",
+  "number": 3,
+  "question": "用环境问题的社会冲突模式，分析我国环境问题"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2014,
+  "type": "名词解释",
+  "number": 1,
+  "question": "区群谬误"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2014,
+  "type": "名词解释",
+  "number": 2,
+  "question": "指数"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2014,
+  "type": "名词解释",
+  "number": 3,
+  "question": "复本信度"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2014,
+  "type": "简答",
+  "number": 1,
+  "question": "实地研究的优缺点"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2014,
+  "type": "简答",
+  "number": 2,
+  "question": "影响实验研究正确性因素"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2014,
+  "type": "简答",
+  "number": 3,
+  "question": "同期群和同组研究的区别"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2014,
+  "type": "其他",
+  "number": 1,
+  "question": "中心极限定理、弃伪纳真、测量层次等，比较细"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2014,
+  "type": "计算",
+  "number": 1,
+  "question": "期望频次计算和含义，卡方的计算"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2014,
+  "type": "计算",
+  "number": 2,
+  "question": "大样本二总体成数差检验，区间估计"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2014,
+  "type": "计算",
+  "number": 3,
+  "question": "回归方程中a、b的涵义，计算r、r平方，并说明含义，偏差BSS、TSS等的计算"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2014,
+  "type": "论述",
+  "number": 1,
+  "question": "定量和定性研究的区别"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2014,
+  "type": "论述",
+  "number": 2,
+  "question": "研究设计：“农民工城市居住意愿的影响研究”。具体包括：目的和意义、概念操作化、2-3个理论假设、分析方法和理由。"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2003,
+  "type": "名词解释",
+  "number": 1,
+  "question": "社会化"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2003,
+  "type": "名词解释",
+  "number": 2,
+  "question": "社会角色"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2003,
+  "type": "名词解释",
+  "number": 3,
+  "question": "社会互动"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2003,
+  "type": "名词解释",
+  "number": 4,
+  "question": "社会地位"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2003,
+  "type": "名词解释",
+  "number": 5,
+  "question": "社区"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2003,
+  "type": "名词解释",
+  "number": 6,
+  "question": "初级群体"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2003,
+  "type": "名词解释",
+  "number": 7,
+  "question": "中位数"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2003,
+  "type": "名词解释",
+  "number": 8,
+  "question": "相关关系"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2003,
+  "type": "简答",
+  "number": 1,
+  "question": "简述科层制的主要特征"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2003,
+  "type": "简答",
+  "number": 2,
+  "question": "社会分层的常用标准主要有哪些"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2003,
+  "type": "简答",
+  "number": 3,
+  "question": "简述社会工作的含义及其主要内容"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2003,
+  "type": "简答",
+  "number": 4,
+  "question": "简述社会指标的主要功能"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2003,
+  "type": "简答",
+  "number": 5,
+  "question": "简述正式组织与非正式组织的区别与联系"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2003,
+  "type": "简答",
+  "number": 6,
+  "question": "简述抽样调查方法的特点"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2003,
+  "type": "计算",
+  "number": 1,
+  "question": "从某校随机抽取100名教师进行调查，得出他们的平均年龄为42岁，标准差为5岁，要求在95%的概率保证下，估计该校全体教师的平均年龄（与95%相对应的概率度t=1.96）"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2003,
+  "type": "计算",
+  "number": 2,
+  "question": "现有两组不同水平的工人日产量（件）资料如下：A组：60,65,70,75,80,85,90；B组：3,5,6,7,9,12,15。要求：分别计算两组工人的平均日产量；比较两组工人平均日产量的代表性大小；"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2003,
+  "type": "论述",
+  "number": 1,
+  "question": "为什么说合理的社会流动是社会良性运行的重要协调机制？"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2003,
+  "type": "论述",
+  "number": 2,
+  "question": "试述建立社会保障制度的作用及意义。"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2004,
+  "type": "名词解释",
+  "number": 1,
+  "question": "操作定义"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2004,
+  "type": "名词解释",
+  "number": 2,
+  "question": "定类尺度"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2004,
+  "type": "名词解释",
+  "number": 3,
+  "question": "态度量表"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2004,
+  "type": "名词解释",
+  "number": 4,
+  "question": "信度"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2004,
+  "type": "名词解释",
+  "number": 5,
+  "question": "典型调查"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2004,
+  "type": "名词解释",
+  "number": 6,
+  "question": "中位数"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2004,
+  "type": "名词解释",
+  "number": 7,
+  "question": "假设检验"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2004,
+  "type": "名词解释",
+  "number": 8,
+  "question": "电话调查"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2004,
+  "type": "简答",
+  "number": 1,
+  "question": "进行社会研究一般应遵循那些基本原则"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2004,
+  "type": "简答",
+  "number": 2,
+  "question": "调查研究方案包括哪些主要内容"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2004,
+  "type": "简答",
+  "number": 3,
+  "question": "确定样本大小时应考虑哪些主要因素"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2004,
+  "type": "简答",
+  "number": 4,
+  "question": "简要评价个案调查方法"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2004,
+  "type": "简答",
+  "number": 5,
+  "question": "简述问卷设计的基本要求"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2004,
+  "type": "简答",
+  "number": 6,
+  "question": "简述统计分析方法的特点"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2004,
+  "type": "计算",
+  "number": 1,
+  "question": "有10个家庭每个月比前两年增加开支的情况如下：85、63、50、46、37、34、28、25、22、20。这十个家庭平均每月增加支出是多少，其偏差情况怎样？"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2004,
+  "type": "计算",
+  "number": 2,
+  "question": "从某城镇随机抽取100名家庭进行调查，得出20%的家庭不和。要求在95%的概率保证下，估计该城镇家庭不和的比例。（与95%相对应的概率度t=1.96）"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2004,
+  "type": "论述",
+  "number": 1,
+  "question": "绘制社会研究流程图，并对其主要特征进行分析"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2004,
+  "type": "论述",
+  "number": 2,
+  "question": "试对文献法、观察法、访问法和实验法等几种调查资料收集方法的特点进行对比分析。"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2005,
+  "type": "名词解释",
+  "number": 1,
+  "question": "范式"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2005,
+  "type": "名词解释",
+  "number": 2,
+  "question": "操作化"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2005,
+  "type": "名词解释",
+  "number": 3,
+  "question": "测量"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2005,
+  "type": "名词解释",
+  "number": 4,
+  "question": "相关关系"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2005,
+  "type": "名词解释",
+  "number": 5,
+  "question": "效度"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2005,
+  "type": "名词解释",
+  "number": 6,
+  "question": "实验法"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2005,
+  "type": "名词解释",
+  "number": 7,
+  "question": "分层抽样"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2005,
+  "type": "名词解释",
+  "number": 8,
+  "question": "四分互差"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2005,
+  "type": "简答",
+  "number": 1,
+  "question": "简述社会研究的一般程序"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2005,
+  "type": "简答",
+  "number": 2,
+  "question": "在进行比较分析时，应该注意哪些问题？"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2005,
+  "type": "简答",
+  "number": 3,
+  "question": "结构式观察的实施主要包括哪些问题"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2005,
+  "type": "简答",
+  "number": 4,
+  "question": "简述假设检验的一般步骤"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2005,
+  "type": "简答",
+  "number": 5,
+  "question": "在设计社会指标时，应把握哪些原则？"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2005,
+  "type": "简答",
+  "number": 6,
+  "question": "简述研究报告撰写的一般程序。"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2005,
+  "type": "计算",
+  "number": 1,
+  "question": "现有两组不同水平的工人日产量（件）资料如下：A组：60,65,70,75,80,85,90；B组：3,5,6,7,9,12,15。要求：分别计算两组工人的平均日产量；比较两组工人平均日产量的代表性大小；"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2005,
+  "type": "计算",
+  "number": 2,
+  "question": "从某校随机抽取100名教师进行调查，得出他们的平均年龄为42岁，标准差为5岁，要求在95%的概率保证下，估计该校全体教师的平均年龄（与95%相对应的概率度t=1.96）"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2005,
+  "type": "论述",
+  "number": 1,
+  "question": "试对抽样调查、典型调查、个案调查、纵贯调查等集中调查方法进行比较和评价。"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2005,
+  "type": "论述",
+  "number": 2,
+  "question": "试述社会研究方法的方法层次及其关系。"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2006,
+  "type": "名词解释",
+  "number": 1,
+  "question": "假设"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2006,
+  "type": "名词解释",
+  "number": 2,
+  "question": "区群谬误"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2006,
+  "type": "名词解释",
+  "number": 3,
+  "question": "李克特量表"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2006,
+  "type": "名词解释",
+  "number": 4,
+  "question": "抽样框"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2006,
+  "type": "名词解释",
+  "number": 5,
+  "question": "无结构访谈"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2006,
+  "type": "名词解释",
+  "number": 6,
+  "question": "双盲实验"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2006,
+  "type": "名词解释",
+  "number": 7,
+  "question": "个案研究"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2006,
+  "type": "名词解释",
+  "number": 8,
+  "question": "PPS抽样"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2006,
+  "type": "简答",
+  "number": 1,
+  "question": "简要叙述社会研究中的主要困难"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2006,
+  "type": "简答",
+  "number": 2,
+  "question": "对于一项具体你的社会研究来说，文献回顾主要有哪些作用"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2006,
+  "type": "简答",
+  "number": 3,
+  "question": "简要叙述调查研究的优缺点。"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2006,
+  "type": "简答",
+  "number": 4,
+  "question": "简要叙述实验室试验与实地试验的区别与联系"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2006,
+  "type": "简答",
+  "number": 5,
+  "question": "什么是观察法？简要比较常见的几种观察法的特点"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2006,
+  "type": "简答",
+  "number": 6,
+  "question": "简要叙述定性资料分析与定量资料分析的差别。"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2006,
+  "type": "计算",
+  "number": 1,
+  "question": "对甲乙两城市居民生活质量的调查发现，甲城市居民的月平均收入为680元，标准差为120元；乙城市居民的月平均收入为460元，标准差为100元。问哪个城市的居民相互之间在收入上的差异程度更大？"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2006,
+  "type": "计算",
+  "number": 2,
+  "question": "某调查公司接受委托，拟对某城市居民未来两年内购买私人汽车的意向进行调查。要求调查结果的可靠程度为95%，抽样误差不能超过3%。试问，该调查公司需要抽取多大规模的样本来进行此次调查？（与95%相对应的概率度t=1.96）"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2006,
+  "type": "论述",
+  "number": 1,
+  "question": "试述社会学研究中理论与经验研究之间的关系。"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2006,
+  "type": "论述",
+  "number": 2,
+  "question": "在社会学研究中，一般要求按照“沙漏”形式的思路来撰写研究报告。对此，你是如何理解的？并举例说明"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2007,
+  "type": "名词解释",
+  "number": 1,
+  "question": "分析单位"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2007,
+  "type": "名词解释",
+  "number": 2,
+  "question": "解释性研究"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2007,
+  "type": "名词解释",
+  "number": 3,
+  "question": "同期群研究"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2007,
+  "type": "名词解释",
+  "number": 4,
+  "question": "定序测量"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2007,
+  "type": "名词解释",
+  "number": 5,
+  "question": "定额抽样"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2007,
+  "type": "名词解释",
+  "number": 6,
+  "question": "内容分析"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2007,
+  "type": "名词解释",
+  "number": 7,
+  "question": "个案研究"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2007,
+  "type": "名词解释",
+  "number": 8,
+  "question": "交互分类"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2007,
+  "type": "简答",
+  "number": 1,
+  "question": "简述经验研究的理论功能"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2007,
+  "type": "简答",
+  "number": 2,
+  "question": "一项研究的具体方案包括哪些主要内容"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2007,
+  "type": "简答",
+  "number": 3,
+  "question": "影响样本规模的主要因素有哪些"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2007,
+  "type": "简答",
+  "number": 4,
+  "question": "在问卷设计中，对问题的语言表达和提问方式包括哪些主要的规则"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2007,
+  "type": "简答",
+  "number": 5,
+  "question": "什么是研究问题的明确化？举例说明研究问题明确化的方法"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2007,
+  "type": "计算",
+  "number": 1,
+  "question": "现有城乡两组家庭某年上半年的月消费额（元）资料如下：城市组：800、900、750、700、600、650；农村组：350、480、400、300、320、200。要求：分别计算两组家庭的月平均消费额；比较两组家庭月平均消费额的代表性的大小"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2007,
+  "type": "计算",
+  "number": 2,
+  "question": "某研究人员调查了某乡镇农民外出打工的收入状况，随机抽取了100名外出打工的农民作样本，调查得到他们的月收入为618元，标准差为180元。在可靠程度为95%的条件下，该乡镇外出打工农民收入的可能范伟是多少（与95%相对应的概率度t=1.96）"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2007,
+  "type": "论述",
+  "number": 1,
+  "question": "请结合例子论述社会学研究中定量研究与定性研究之间的关系"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2007,
+  "type": "论述",
+  "number": 2,
+  "question": "结合实例分析，试对调查研究、实验研究、文献研究和实地研究这四种基本的研究方式进行比较和评价。"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2008,
+  "type": "名词解释",
+  "number": 1,
+  "question": "同期群研究"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2008,
+  "type": "名词解释",
+  "number": 2,
+  "question": "简化论"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2008,
+  "type": "名词解释",
+  "number": 3,
+  "question": "操作化"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2008,
+  "type": "名词解释",
+  "number": 4,
+  "question": "语义差异量表"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2008,
+  "type": "名词解释",
+  "number": 5,
+  "question": "开放式问题"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2008,
+  "type": "名词解释",
+  "number": 6,
+  "question": "PPS抽样"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2008,
+  "type": "名词解释",
+  "number": 7,
+  "question": "表面效度"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2008,
+  "type": "名词解释",
+  "number": 8,
+  "question": "阐释模式"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2008,
+  "type": "名词解释",
+  "number": 9,
+  "question": "参与观察"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2008,
+  "type": "名词解释",
+  "number": 10,
+  "question": "内容分析"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2008,
+  "type": "简答",
+  "number": 1,
+  "question": "简述社会现象测量存在的缺陷"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2008,
+  "type": "简答",
+  "number": 2,
+  "question": "简述测量中信度和效度的关系"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2008,
+  "type": "简答",
+  "number": 3,
+  "question": "简述调查研究的优点、不足与缺陷"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2008,
+  "type": "简答",
+  "number": 4,
+  "question": "简述实地研究的优缺点"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2008,
+  "type": "简答",
+  "number": 5,
+  "question": "简述经典实验设计的基本步骤"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2008,
+  "type": "简答",
+  "number": 6,
+  "question": "简述定性资料编码的基本方法及其与定量资料编码的区别"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2008,
+  "type": "简答",
+  "number": 7,
+  "question": "简述影响样本规模的因素"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2008,
+  "type": "简答",
+  "number": 8,
+  "question": "简述二次分析的基本步骤"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2008,
+  "type": "计算",
+  "number": 1,
+  "question": "某研究人员为证实知识分子家庭的平均子女数低于工人家庭的平均子女数，后者平均子女数为2.5人，作了100名知识分子的抽样调查，其结果是：平均子女数为2.1人，样本标准差为1.1人，问上述看法是否得到证实？（ɑ=0.05)"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2008,
+  "type": "计算",
+  "number": 2,
+  "question": "以下是那女女青年对古典音乐是否喜爱的抽样调查结果: 男 女 喜爱 46 20 无所谓 10 18 不喜爱 30 50 计算各单元格的期望频次;男女青年对古典音乐的态度是否有显著性差异?"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2008,
+  "type": "论述",
+  "number": 1,
+  "question": "论述在社会研究中理论对经验研究的作用"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2008,
+  "type": "论述",
+  "number": 2,
+  "question": "论述社会研究方法体系基本机构及其关系"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2008,
+  "type": "论述",
+  "number": 3,
+  "question": "比较分层抽样和定额抽样两种抽样方法的异同,并举例说明在什么情形下使用分层抽样,什么情形下使用定额抽样"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2004,
+  "type": "名词解释",
+  "number": 1,
+  "question": "生活质量"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2004,
+  "type": "名词解释",
+  "number": 2,
+  "question": "社会问题"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2004,
+  "type": "名词解释",
+  "number": 3,
+  "question": "社会控制"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2004,
+  "type": "名词解释",
+  "number": 4,
+  "question": "社区"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2004,
+  "type": "名词解释",
+  "number": 5,
+  "question": "社会设置"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2004,
+  "type": "名词解释",
+  "number": 6,
+  "question": "社会分化"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2004,
+  "type": "名词解释",
+  "number": 7,
+  "question": "组织管理"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2004,
+  "type": "名词解释",
+  "number": 8,
+  "question": "文化震惊"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2004,
+  "type": "名词解释",
+  "number": 9,
+  "question": "社会整合"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2004,
+  "type": "名词解释",
+  "number": 10,
+  "question": "社会疏导"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2004,
+  "type": "简答",
+  "number": 1,
+  "question": "什么是社会工作，其功能和价值何在"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2004,
+  "type": "简答",
+  "number": 2,
+  "question": "社会指标的特点与功能"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2004,
+  "type": "简答",
+  "number": 3,
+  "question": "何为社会分层研究的两大理论传统？简述二者的区别"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2004,
+  "type": "简答",
+  "number": 4,
+  "question": "简述社会互动的维度与类型"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2004,
+  "type": "简答",
+  "number": 5,
+  "question": "何为社会角色？简述社会角色的失调"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2004,
+  "type": "论述",
+  "number": 1,
+  "question": "运用社会运行理论，结合十六届三中全会提出的科学发展观、评价社会运行状态的原则"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2004,
+  "type": "论述",
+  "number": 2,
+  "question": "论社会现代化的基本特征，结合十六大报告，谈谈中国特色的社会主义现代化道路"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2005,
+  "type": "名词解释",
+  "number": 1,
+  "question": "社会"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2005,
+  "type": "名词解释",
+  "number": 2,
+  "question": "文化"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2005,
+  "type": "名词解释",
+  "number": 3,
+  "question": "社会化"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2005,
+  "type": "名词解释",
+  "number": 4,
+  "question": "社会角色"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2005,
+  "type": "名词解释",
+  "number": 5,
+  "question": "社会流动"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2005,
+  "type": "名词解释",
+  "number": 6,
+  "question": "社区"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2005,
+  "type": "名词解释",
+  "number": 7,
+  "question": "社会问题"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2005,
+  "type": "名词解释",
+  "number": 8,
+  "question": "社会控制"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2005,
+  "type": "简答",
+  "number": 1,
+  "question": "简述贫困现象的基本类型"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2005,
+  "type": "简答",
+  "number": 2,
+  "question": "简述社会分层的方法和标准"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2005,
+  "type": "简答",
+  "number": 3,
+  "question": "简述社会互动的纬度和类型"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2005,
+  "type": "简答",
+  "number": 4,
+  "question": "简述社会政策的制定过程"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2005,
+  "type": "简答",
+  "number": 5,
+  "question": "简述初级撤回群体的基本特点和功能"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2005,
+  "type": "论述",
+  "number": 1,
+  "question": "试论述社会学的研究对象"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2005,
+  "type": "论述",
+  "number": 2,
+  "question": "试论述社会现代化过程及我国社会现代化过程的特点"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2005,
+  "type": "论述",
+  "number": 3,
+  "question": "试论述我国社会转型期社会组织结构的特点和组织结构调整的任务"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2005,
+  "type": "论述",
+  "number": 4,
+  "question": "试论述我国城乡机构的特点和城市化道路的选择"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2006,
+  "type": "名词解释",
+  "number": 1,
+  "question": "文化相对主义"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2006,
+  "type": "名词解释",
+  "number": 2,
+  "question": "镜中我"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2006,
+  "type": "名词解释",
+  "number": 3,
+  "question": "社会角色"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2006,
+  "type": "名词解释",
+  "number": 4,
+  "question": "制度化"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2006,
+  "type": "名词解释",
+  "number": 5,
+  "question": "世俗化"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2006,
+  "type": "名词解释",
+  "number": 6,
+  "question": "异化"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2006,
+  "type": "名词解释",
+  "number": 7,
+  "question": "失范"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2006,
+  "type": "名词解释",
+  "number": 8,
+  "question": "社区"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2006,
+  "type": "名词解释",
+  "number": 9,
+  "question": "社会规范"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2006,
+  "type": "名词解释",
+  "number": 10,
+  "question": "社会解体"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2006,
+  "type": "简答",
+  "number": 1,
+  "question": "什么是制度，社会制度与组织规章的区别"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2006,
+  "type": "简答",
+  "number": 2,
+  "question": "什么是结合行为？它的特征是什么？"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2006,
+  "type": "简答",
+  "number": 3,
+  "question": "科层制及其主要特征"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2006,
+  "type": "简答",
+  "number": 4,
+  "question": "简要分析竞争与冲突的区别"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2006,
+  "type": "简答",
+  "number": 5,
+  "question": "初级群体的基本特点"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2006,
+  "type": "论述",
+  "number": 1,
+  "question": "怎样的社会流动才是合理的社会流动？试就当代中国的社会流动进行分析"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2006,
+  "type": "论述",
+  "number": 2,
+  "question": "试论述社会现代化过程的基本特征和我国社会现代化的特殊性要求"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2006,
+  "type": "论述",
+  "number": 3,
+  "question": "运用有关社会学理论，分析构建社会主义和谐社会的伟大意义。"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2007,
+  "type": "名词解释",
+  "number": 1,
+  "question": "文化震荡"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2007,
+  "type": "名词解释",
+  "number": 2,
+  "question": "无焦点的互动"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2007,
+  "type": "名词解释",
+  "number": 3,
+  "question": "印象管理"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2007,
+  "type": "名词解释",
+  "number": 4,
+  "question": "社会事实"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2007,
+  "type": "名词解释",
+  "number": 5,
+  "question": "合理化"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2007,
+  "type": "名词解释",
+  "number": 6,
+  "question": "标签理论"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2007,
+  "type": "名词解释",
+  "number": 7,
+  "question": "去商品化"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2007,
+  "type": "名词解释",
+  "number": 8,
+  "question": "公共领域"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2007,
+  "type": "名词解释",
+  "number": 9,
+  "question": "社会学想象力"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2007,
+  "type": "名词解释",
+  "number": 10,
+  "question": "社会整合"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2007,
+  "type": "简答",
+  "number": 1,
+  "question": "什么是歧视？什么是偏见？简述二者之间的关系"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2007,
+  "type": "简答",
+  "number": 2,
+  "question": "简述社会控制的基本功能"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2007,
+  "type": "简答",
+  "number": 3,
+  "question": "影响群体凝聚力的主要因素有哪些？"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2007,
+  "type": "简答",
+  "number": 4,
+  "question": "简述城市社会的“世俗化”"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2007,
+  "type": "简答",
+  "number": 5,
+  "question": "简述社会角色的类型"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2007,
+  "type": "论述",
+  "number": 1,
+  "question": "试论述人口老龄化的本质及解决中国人口老龄化的对策"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2007,
+  "type": "论述",
+  "number": 2,
+  "question": "运用有关社会学理论，分析建设社会主义新农村的伟大意义"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2007,
+  "type": "论述",
+  "number": 3,
+  "question": "试论述构建社会主义和谐社会的伟大意义。"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2008,
+  "type": "名词解释",
+  "number": 1,
+  "question": "文化震惊"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2008,
+  "type": "名词解释",
+  "number": 2,
+  "question": "逆向社会化"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2008,
+  "type": "名词解释",
+  "number": 3,
+  "question": "首属群体"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2008,
+  "type": "名词解释",
+  "number": 4,
+  "question": "印象管理"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2008,
+  "type": "名词解释",
+  "number": 5,
+  "question": "主我"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2008,
+  "type": "名词解释",
+  "number": 6,
+  "question": "有机团结"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2008,
+  "type": "名词解释",
+  "number": 7,
+  "question": "核心家庭"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2008,
+  "type": "名词解释",
+  "number": 8,
+  "question": "社会性别"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2008,
+  "type": "名词解释",
+  "number": 9,
+  "question": "理想类型"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2008,
+  "type": "名词解释",
+  "number": 10,
+  "question": "结构性贫困"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2008,
+  "type": "简答",
+  "number": 1,
+  "question": "简述社会角色的失调及表现"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2008,
+  "type": "简答",
+  "number": 2,
+  "question": "简述实在社区与虚拟社区的各自特点。"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2008,
+  "type": "简答",
+  "number": 3,
+  "question": "简述风险社会理论"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2008,
+  "type": "简答",
+  "number": 4,
+  "question": "如何理解正式组织中的非正式群体。"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2008,
+  "type": "简答",
+  "number": 5,
+  "question": "简述镜中我和初级群体的关系。"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2008,
+  "type": "论述",
+  "number": 1,
+  "question": "结合全球化进程，试论文化中心主义与文化相对主义的理论特征及其解释力"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2008,
+  "type": "论述",
+  "number": 2,
+  "question": "试评析社会分层的若干主要理论流派及其主要观点，并结合我国经济社会发展的实际，分析现阶段我国社会分层的特点。"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2008,
+  "type": "论述",
+  "number": 3,
+  "question": "试用社会学的结构理论和社会冲突理论，分析转型时期的犯罪和越轨行为。"
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2008,
+  "type": "名词解释",
+  "number": 1,
+  "question": "准则效度",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2008,
+  "type": "名词解释",
+  "number": 2,
+  "question": "项目分辨力系数",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2008,
+  "type": "名词解释",
+  "number": 3,
+  "question": "PPS",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2008,
+  "type": "名词解释",
+  "number": 4,
+  "question": "追踪研究",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2008,
+  "type": "名词解释",
+  "number": 5,
+  "question": "复本信度",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2008,
+  "type": "简答",
+  "number": 1,
+  "question": "为什么科学研究的随机抽样问卷调查事前要有基本假设？",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2008,
+  "type": "分析应用题",
+  "number": 1,
+  "question": "分析下面的题器，并且提出修改建议：\n“您是如何支配自己休闲时间的？（可以多选）\n（1）看电视\n（3）交往\n（4）睡觉\n（2）运动\n（5）其他（请注明）",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2008,
+  "type": "分析应用题",
+  "number": 2,
+  "question": "分析下面的题器，并且提出修改建议：\n“您认为某某演员的暴光度如何？（单项选择）\n（3）一般\n（4）较低\n（5）很低\n（1）很高\n（2）较高",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2008,
+  "type": "分析应用题",
+  "number": 3,
+  "question": "写出包括一个实验组和两个控制组的实验设计程序并且分析该设计是如何提取出实验变量效果的？",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2008,
+  "type": "计算",
+  "number": 4,
+  "question": "分别在初一和初三年级随机抽样50人和60人，发现其爱好外语的比例分别为0.50和0.60，问能否说明对外语的爱好与年级高低有关（α=0.05）",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2008,
+  "type": "计算",
+  "number": 5,
+  "question": "已知入学考试成绩服从N（70，12\"），若录取率为16%，确定最低录取分数。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2008,
+  "type": "简答",
+  "number": 6,
+  "question": "简要列出检验回归方程的三种检验法。",
+  "score": 9
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2008,
+  "type": "计算",
+  "number": 7,
+  "question": "已知X和Y是来自正态总体N(μ,o²)的容量均为n的二个样本的均值。试确定n，使得二个样本均值之差（的绝对值）超过o的概率大约为0.01。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2008,
+  "type": "其他",
+  "number": 8,
+  "question": "相互独立，S²和S2分别为二个样本的方差，则服从F（7，9）的统计量是\n（10分）\n2S2\n5S2\n4S2\nb.\nd. 5S2\na.\n5S2\n4S2\n2S2",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2008,
+  "type": "计算",
+  "number": 9,
+  "question": "设随机抽取 20名被试，将其随机均分为4组，每组5人，各组分别随机地接受一种学习辅导方案。学习结束时，其考试成绩服从正态分布，结果如下表，问这四种学习方案是否呈显著差异。（α=0.01）\n学习方案\nA\nB\nC\nD\n每组平均成绩\n79.0\n75.4\n81.0\n77.2\n每组成绩方差\n4.0\n2.8\n3.0\n3.5\n1、该题可否用方差分析法？为什么？\n2、若可用，列出方差分析表\n(1)\nHo:\nH:\n(2)\n方差来源\n平方和\n自由度\nF值\nF临界值\n组间\n组内\n总和\n（3）结论\nF值\nZ值\nF0.01 (4. 19)=4.50\nα\n单侧\n双侧\nF0.01 (3. 16) =5.29\n0.01\n2.33\n2.58\nF0.01 (4. 16)=4.77\n0.05\n1.65\n1.96\nF0.01 (3. 19) =5.01\n0.16\n1.00\n1.43",
+  "score": 26
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2008,
+  "type": "简答",
+  "number": 4,
+  "question": "简述霍曼斯（GeorgeC.Homans）社会交换论的基本命题。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2008,
+  "type": "简答",
+  "number": 6,
+  "question": "简评科尔曼（J.S.Coleman）的理性选择理论的基本观点。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2008,
+  "type": "论述",
+  "number": 1,
+  "question": "请结合西方社会思想史谈谈古典社会学理论的成就和局限。",
+  "score": 30
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2008,
+  "type": "论述",
+  "number": 2,
+  "question": "试用社会变迁的观点阐释投国社会主义新农村建设运动。",
+  "score": 30
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2009,
+  "type": "名词解释",
+  "number": 1,
+  "question": "抽样框",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2009,
+  "type": "名词解释",
+  "number": 2,
+  "question": "总和量表",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2009,
+  "type": "名词解释",
+  "number": 3,
+  "question": "第一手文献",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2009,
+  "type": "名词解释",
+  "number": 4,
+  "question": "因果关系",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2009,
+  "type": "名词解释",
+  "number": 5,
+  "question": "分析单位",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2009,
+  "type": "简答",
+  "number": 1,
+  "question": "扼要说明前期探索性研究的主要内容与完成的基本标志。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2009,
+  "type": "简答",
+  "number": 2,
+  "question": "简述在问卷调查数据分析时召开座谈会的重要性及其基本组织方式。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2009,
+  "type": "论述",
+  "number": 1,
+  "question": "在测量大学生宿舍人际关系状况时，你将倾向选择以下A和B哪一个“操作定义”？为什么？对于选择的那个，你还有什么修改的建议吗？A、你们宿舍人际关系状况如何？备选答案为：1很好丨_丨很差5 B、在水房打水高峰时间连续几天观察学生拿暖水瓶的数量。观察记录为：每人__只。",
+  "score": 15
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2009,
+  "type": "论述",
+  "number": 2,
+  "question": "设某大学进行一项教师参加体育锻炼情况的随机抽样问卷调查，研究的目的不仅要推论全校教师的状况，而且要进行所属学院（或系）之间状况的比较。请问：你将倾向选择以A、分层不等比例抽样方法 B、按规模成比例抽样（PPS）方法",
+  "score": 15
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2009,
+  "type": "计算",
+  "number": 4,
+  "question": "已知样本x1，x2，…，xn取自正态总体N（0，1），x为样本均值，P(x=)=0.01，求λ。",
+  "score": 12
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2009,
+  "type": "计算",
+  "number": 5,
+  "question": "设ξ1，ξ2，…，ξ500为独立同分布的随机变量，若E(ξ)=1，D(ξ)=4，求I。",
+  "score": 13
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2009,
+  "type": "简答",
+  "number": 6,
+  "question": "列出假设检验中第二类错误β的影响因素；简要说明这些影响因素的增大或减小会如何影响β。",
+  "score": 13
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2009,
+  "type": "其他",
+  "number": 7,
+  "question": "填空：1、相关系数r的适应条件 2、应用相关系数r时，还应给出或注明 3、判定系数r²的意义是",
+  "score": 13
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2009,
+  "type": "计算",
+  "number": 8,
+  "question": "某社区随机抽样100户，其中60户拥有汽车。求该社区汽车拥有率的双侧置信区间。(1-α = 0.95)",
+  "score": 12
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2009,
+  "type": "计算",
+  "number": 9,
+  "question": "随机抽样调查170名大学生对某方案的态度，结果如下。问性别与态度是否有关？(α =0.05) 态度 肯定 否定 性别 男 90 20 女 20 40 注：Z值 单侧 0.01 2.33 双侧 0.01 2.58 0.05 1.65 1.96 0.16 1.00 1.43 x²0.05 (1)= 3.84 x²0.05 (2)= 5.99",
+  "score": 12
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2009,
+  "type": "名词解释",
+  "number": 1,
+  "question": "理想类型",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2009,
+  "type": "名词解释",
+  "number": 2,
+  "question": "社会性别",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2009,
+  "type": "名词解释",
+  "number": 3,
+  "question": "混合经济制度",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2009,
+  "type": "名词解释",
+  "number": 4,
+  "question": "社会解体",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2009,
+  "type": "名词解释",
+  "number": 5,
+  "question": "印象管理",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2009,
+  "type": "名词解释",
+  "number": 6,
+  "question": "惯习",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2009,
+  "type": "简答",
+  "number": 1,
+  "question": "当代女性主义发展过程中形成了哪些共同议题？",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2009,
+  "type": "简答",
+  "number": 2,
+  "question": "举例说明社会问题过程的三个阶段。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2009,
+  "type": "简答",
+  "number": 3,
+  "question": "简述社会交换论的思想来源",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2009,
+  "type": "简答",
+  "number": 4,
+  "question": "试析当代中国社会分层体系的主要特征。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2009,
+  "type": "简答",
+  "number": 5,
+  "question": "简评米尔斯（Wright C. Mills）对社会冲突论的贡献。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2009,
+  "type": "论述",
+  "number": 1,
+  "question": "请以当代社会学理论的多元化发展和新综合运动为背景，评析新功能主义对结构功能主义理论的继承和发展。",
+  "score": 30
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2009,
+  "type": "论述",
+  "number": 2,
+  "question": "试从社会学的学科视角出发，反思中国目前和谐社会建设的现状和问题。",
+  "score": 30
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2010,
+  "type": "名词解释",
+  "number": 3,
+  "question": "虚无关系",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2010,
+  "type": "名词解释",
+  "number": 4,
+  "question": "分层不等比例抽样",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2010,
+  "type": "简答",
+  "number": 1,
+  "question": "简答提高测量信度的三种方法。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2010,
+  "type": "简答",
+  "number": 2,
+  "question": "简述问卷指导语“多选”与“排序”各自的意义。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2010,
+  "type": "论述",
+  "number": 1,
+  "question": "一项研究老年人与其子女关系的问卷调查，有如下A、B两种调查设计。你选择哪一个？为什么？设计A：抽取两个样本：在老年人（60岁及以上）的样本中询问关于对子女的各项帮助如，帮助照看孩子，支援部分买房款等；在子女（45岁及以下）的样本中询问孝敬父母的情况如，给养费，定期看望等。设计B：在一个老年人的样本中同时询问对子女的帮助和子女对其的孝敬情况。",
+  "score": 15
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2010,
+  "type": "论述",
+  "number": 2,
+  "question": "以测量“社会资源的状况”为目标，分析以下调查问卷的缺陷，并且提出改进意见。“请问您家庭和亲戚中在党政机关、国营企业中工作的总人数他们对你就业①很有帮助②有所帮助③帮助不大④不好说。”",
+  "score": 15
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2010,
+  "type": "计算",
+  "number": 4,
+  "question": "欲以简单随机抽样的方式调查某大学学生的平均月消费。以往相应的调查显示其月消费服从分布N（μ,40²）。若允许误差为10元，可靠程度要求为95%，则样本容量至少为多少？",
+  "score": 9
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2010,
+  "type": "简答",
+  "number": 5,
+  "question": "（1）列出线性回归方程的基本假定。",
+  "score": 16
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2010,
+  "type": "简答",
+  "number": 5,
+  "question": "（2）列出线性回归方程的三种检验法。",
+  "score": 16
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2010,
+  "type": "计算",
+  "number": 6,
+  "question": "已知某班期末考试成绩如下表所示。该班某生的成绩为语文85分，数学82分，英语90分，问该生这三科成绩中哪一科在班上考得最好？平均分：语文80，数学70，英语85；标准差：语文10，数学12，英语15。",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2010,
+  "type": "计算",
+  "number": 7,
+  "question": "从甲、乙二群体中各随机抽取100户。甲样本中拥有汽车的户数为60户，乙样本中拥有汽车的户数为40户。问甲、乙二群体的汽车拥有率是否呈显著差异？(α = 0.05)",
+  "score": 20
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2010,
+  "type": "计算",
+  "number": 8,
+  "question": "对三名候选人A、B、C做民意测验。随机抽取60人的调查结果为：A得票26张，B得票17张，C得票17张，问选民对该三名候选人的支持有否显著差异？(α = 0.05)",
+  "score": 14
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2010,
+  "type": "计算",
+  "number": 9,
+  "question": "已知生男孩的概率为0.515，求在10000个新生婴儿中女孩不少于男孩的概率。",
+  "score": 11
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2010,
+  "type": "名词解释",
+  "number": 5,
+  "question": "哈贝马斯（Jurgen Habermas）",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2010,
+  "type": "名词解释",
+  "number": 6,
+  "question": "《社会学方法的新规则》",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2010,
+  "type": "简答",
+  "number": 1,
+  "question": "简述社会分层造成的社会反应。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2010,
+  "type": "简答",
+  "number": 2,
+  "question": "简析韦伯（MaxWeber）对社会冲突论的影响。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2010,
+  "type": "简答",
+  "number": 3,
+  "question": "简述当代中国性别角色观的变化。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2010,
+  "type": "简答",
+  "number": 4,
+  "question": "简述布迪厄（PierreBourdieu）的文化资本理论。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2010,
+  "type": "简答",
+  "number": 5,
+  "question": "简述社会变迁的基本形式。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2010,
+  "type": "简答",
+  "number": 6,
+  "question": "简评布劳（PeterBlau）对社会交换论的贡献。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2010,
+  "type": "论述",
+  "number": 1,
+  "question": "试从社会学理论发展的角度，比较评述迪尔凯姆（EmileDurkneim）、帕森斯（Talcott Parsons）和加芬克尔（HaroldGarfinkel）的社会秩序观。",
+  "score": 30
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2010,
+  "type": "论述",
+  "number": 2,
+  "question": "从社会结构的角度看，当前中国应如何进行社会建设？",
+  "score": 30
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2011,
+  "type": "名词解释",
+  "number": 1,
+  "question": "研究总体",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2011,
+  "type": "名词解释",
+  "number": 2,
+  "question": "标准化访问",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2011,
+  "type": "名词解释",
+  "number": 3,
+  "question": "信度",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2011,
+  "type": "名词解释",
+  "number": 4,
+  "question": "定组研究",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2011,
+  "type": "名词解释",
+  "number": 5,
+  "question": "三角测量",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2011,
+  "type": "简答",
+  "number": 1,
+  "question": "为什么应该尽量采用高级测量尺度？",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2011,
+  "type": "简答",
+  "number": 2,
+  "question": "举例说明“虚无关系”并且指出它在判别因果关系中的意义。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2011,
+  "type": "论述",
+  "number": 1,
+  "question": "以测量“出勤状况”为目标，分析以下题器的缺陷，并且提出改进意见。“请问你周围同学中逃课的情况如何？（请选一项）①很严重②比较严重③不太严重④基本无逃课。”",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2011,
+  "type": "论述",
+  "number": 2,
+  "question": "分析以下题器的错误，并且提出改进建议。“您是否认为当前志愿活动的内容需要改革？（请选一项）①过于单调，需要改革②内容丰富多彩，不需改革③无所谓",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2011,
+  "type": "论述",
+  "number": 3,
+  "question": "一项研究大学生生活费收入的随机抽样调查时，有如下A、B两种调查设计。你选择哪一个？为什么？设计A：询问消费（如，学习、生活用品种类和档次；校外就/聚餐比例等）水平。设计B：询问每个同学生活费来源（如，来自家庭的、个人打工实践的、奖学金等）。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2011,
+  "type": "计算",
+  "number": 4,
+  "question": "已知某市招工考试成绩服从正态分布N（70,12），若录取率为5%，确定最低录取分数。",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2011,
+  "type": "计算",
+  "number": 5,
+  "question": "已知x~N（μ，o²）（1）求概率P(μ-1.96<x<μ+1.96);（2）解释上式对总体均值区间估计的意义。",
+  "score": 12
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2011,
+  "type": "简答",
+  "number": 6,
+  "question": "列出方差分析的基本假定。",
+  "score": 6
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2011,
+  "type": "简答",
+  "number": 7,
+  "question": "简要分析假设检验中的第二类错误β的影响因素。",
+  "score": 8
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2011,
+  "type": "其他",
+  "number": 8,
+  "question": "样本x,x2...，x，（n>1）取自正态总体N(0,1），x，s分别为样本均值及标准差，指出下式中正确的答案。（a)x-N(0,1) (b) nx ~N(0, 1) (u),x (d)x/s~t(n-1)",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2011,
+  "type": "计算",
+  "number": 9,
+  "question": "分别在某校高一年级随机抽取男、女生各60人调查其喜欢物理的比例。样本调查结果为女生喜欢物理的比例为 45.7%，男生为 54.3%。问：对物理的喜欢是否与性别有关？（α=0.05)",
+  "score": 13
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2011,
+  "type": "计算",
+  "number": 10,
+  "question": "以下是个人能力测验得分（x）与其成就期望得分（y）的随机抽样结果：成就期望得分（y）10876.432 能力测验得分（x）791042132 （1）回归方程；（2）相关系数和判定系数，并解释其意义；（3）是否具有推论意义？(α=0.05)",
+  "score": 21
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2011,
+  "type": "名词解释",
+  "number": 5,
+  "question": "加芬克尔（Harold Garfinkel)",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2011,
+  "type": "简答",
+  "number": 1,
+  "question": "当前造成我国城乡差异的原因是什么？",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2011,
+  "type": "简答",
+  "number": 2,
+  "question": "简述社会不平等的性质。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2011,
+  "type": "简答",
+  "number": 3,
+  "question": "中国老年问题有哪些基本表现？",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2011,
+  "type": "简答",
+  "number": 4,
+  "question": "简述韦伯（MaxWeber）的社会学方法论思想。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2011,
+  "type": "简答",
+  "number": 5,
+  "question": "简析芝加哥学派对社会学的主要贡献。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2011,
+  "type": "简答",
+  "number": 6,
+  "question": "简评布劳（PeterBlau）与霍曼斯（GeorgeC.Homans）社会交换论的主要区别。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2011,
+  "type": "论述",
+  "number": 1,
+  "question": "请从社会学史的角度，评析批判理论传统在社会学理论发展中的地位和影响。",
+  "score": 20
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2011,
+  "type": "论述",
+  "number": 2,
+  "question": "2002年，加拿大医生费力鹏和他的中国同事在国际权威医学杂志《柳叶刀》发文指出，中国每年有28.7万人自杀身亡，有200万人自杀未遂，自杀率已经达到了十万分之二十三，相当于美国的两倍。试用涂尔干（Emile Durkheim）的自杀理论，解释为什么中国目前在世界大国中成了高自杀率国家？",
+  "score": 20
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2011,
+  "type": "论述",
+  "number": 3,
+  "question": "试析当前我国群体性事件频发的基本原因，并举例说明群体性事件的发生条件。",
+  "score": 20
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2005,
+  "type": "其他",
+  "number": 2,
+  "question": "请选择二个题目，简要设计一个问卷调查研究方案，其内容包括：(1)写出一个明确的调研假设;(2)给出所涉及概念的“操作性定义”；(3)指明拟使用的“测量尺度”；(4)指出拟采用的抽样方式：(5)指出拟采用的收集资料的方法，并阐明选择该方法的主要理由；(6)分别说明本次调查的分析单位、调查对象和调查内容。☆供选择的调查研究题目（只选择1个）：1．独生子女教育 2.职工积极性与组织管理 3．收入水平与消费模式 4.教学方法与人才培养",
+  "score": 25
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2005,
+  "type": "简答",
+  "number": 1,
+  "question": "扼要说明在社会研究中影响随机抽样样本规模的4个基本技术性因素。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2005,
+  "type": "简答",
+  "number": 2,
+  "question": "简要说明在构造总和量表中运用逻辑推导与经验检验各自的方法及其相互之间的关系。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2005,
+  "type": "计算",
+  "number": 4,
+  "question": "分别从A、B二个正态总体中各随机抽取一个样本，nA=10，S=7，n=8，S=3，问二总体方差有无显著差异？（α=0.10）",
+  "score": 15
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2005,
+  "type": "计算",
+  "number": 5,
+  "question": "设总体服从N(μ,o²)，若o²已知，问样本容量n取多大时方能保证μ的 95%的双侧置信区间的宽度不大于L?",
+  "score": 15
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2005,
+  "type": "简答",
+  "number": 6,
+  "question": "列联表的检验统计量·卡方x²= 列联表的检验是单侧还是双侧？为什么？若列联表中的变量是相互独立的，则其条件分布等于 分布？",
+  "score": 15
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2005,
+  "type": "简答",
+  "number": 8,
+  "question": "设X，X，X3,\"…·X,为来自正态总体N(μ,o²)的一个简单随机样本，则样本均值X的分布服 ；又若a;为常数（a;≠0)，则a;X;的分布服从",
+  "score": 15
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2006,
+  "type": "其他",
+  "number": 4,
+  "question": "说明减少误差比例 PRE 对相关的定义以及 PRE 所适用的变量层次。",
+  "score": 15
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2006,
+  "type": "其他",
+  "number": 5,
+  "question": "若随机变量～M(μ,o²)，则n=服从正态分布N（",
+  "score": 7
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2006,
+  "type": "其他",
+  "number": 6,
+  "question": "设样本x,x2,A xo和y,y2,Ay分别取自二个独立总体X与Y，X~N{10,√2²)，Y~N(20,22)求: P[(x -Y)≥-11]=?",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2006,
+  "type": "其他",
+  "number": 7,
+  "question": "对一个由 200 名居民构成的随机样本的调查显示，支持该社区管理新方案的占54%，据此能否得出该社区多数居民支持此方案的结论？(α=0.05)",
+  "score": 15
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2006,
+  "type": "其他",
+  "number": 8,
+  "question": "设随机变量～N(0,1)，若P(g²≥)=0.05，求。",
+  "score": 8
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2006,
+  "type": "其他",
+  "number": 9,
+  "question": "以下是 12 名学生的抽样调查结果。问是否可认为先交卷的学生成绩较好(α = 0.05)?交卷名次 1 2 3 4 5 6 7 8 9 10 11 12 成绩名次 7 7 11 6 3 1 12 4 7 5 10 2 x0.0s(1)= 3.841 to.os (10)= 1.8125 Z.0s = 1.65 x2.s(2)= 5.991 to.os (11)= 1.7959 Z0.02s = 1.96 x,02 (1)= 5.024 t0.os(12) = 1.7823 Z0.1587 = 1.00 x2.02(2)= 7.378",
+  "score": 20
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2006,
+  "type": "论述",
+  "number": 1,
+  "question": "范式之间的区别，并结合自己的理解进行简要评价。"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2006,
+  "type": "论述",
+  "number": 2,
+  "question": "试用社会学的集体行为理论，结合我国现阶段社会发展的特点，论述如何对“集体性事件”加以预测、引导和控制。"
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2006,
+  "type": "论述",
+  "number": 3,
+  "question": "自20世纪90年代以来，由于中国城乡社会的分化加剧，“农业不可持续，农村没法发展，农民过于贫困”的“三农”问题日益突显。试从制度层面对我国"
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2000,
+  "type": "名词解释",
+  "number": 1,
+  "question": "非介入收集资料方法",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2000,
+  "type": "名词解释",
+  "number": 2,
+  "question": "抽样框",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2000,
+  "type": "名词解释",
+  "number": 3,
+  "question": "实验组",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2000,
+  "type": "名词解释",
+  "number": 4,
+  "question": "纵贯研究方法",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2000,
+  "type": "简答",
+  "number": 1,
+  "question": "影响调研方案设计的主要因素是什么？",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2000,
+  "type": "简答",
+  "number": 2,
+  "question": "利用随机数表抽样的基本程序是什么？",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2000,
+  "type": "简答",
+  "number": 3,
+  "question": "访问时访谈员应特别注意哪三个环节的问题？",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2000,
+  "type": "其他",
+  "number": 2,
+  "question": "标准正态分布的均值为0"
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2000,
+  "type": "其他",
+  "number": 3,
+  "question": "制作统计图时，定类变量可选择圆本年图和图；图和图仅适用于定距变量。"
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2000,
+  "type": "其他",
+  "number": 4,
+  "question": "中心极限定理表明，当样本容量玉_时，均值的抽样分布趋近于_正布且该分布的均值等于标准差为"
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2000,
+  "type": "其他",
+  "number": 5,
+  "question": "对一个简单随机样本（n=200）做态度测量，其平均分为52，标准差为16，其均值的抽样误差为_，总体均值的区间估计为(α=0.01)。"
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2000,
+  "type": "其他",
+  "number": 6,
+  "question": "定类变量一定序变量间相关统计量的检验叫做卡_检验。"
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2000,
+  "type": "其他",
+  "number": 7,
+  "question": "若斯皮尔曼相关系数rs=-1，则表示"
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2000,
+  "type": "其他",
+  "number": 8,
+  "question": "若G等级相关系数G=1，则表示"
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2000,
+  "type": "其他",
+  "number": 9,
+  "question": "列联表的检验是：A 应用频次做检验 B 应用相对频次做检验 C 应用频次或相对频次做检验"
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2000,
+  "type": "其他",
+  "number": 10,
+  "question": "回归方程的检验是：F检验 (1) a.单侧 b.双侧 c.单、双侧均可 (2) a.只能为右侧检验 b.只能为左侧检验 c.左侧或右侧"
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2000,
+  "type": "其他",
+  "number": 11,
+  "question": "定类--定距（等方差，正态）变量间的相关统计量为：(1) a. t Eta² (2)其相关检验应用：a.检验 b.F检验 c.t检验 x'"
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2000,
+  "type": "计算",
+  "number": 4,
+  "question": "二个样本容量分别为15位男性和17位女性的随机样本，均分别来自正态总体。调查其对吸烟的容忍度（分数越高，表示容忍度越高），结果如下表：容忍度的特征值 男性 女性 平均值 12 10 标准差 8 6 (1)比较其特征值，说明在对吸烟的容忍度上性别差异如何？（3分）(2)能否认为男性比女性对吸烟的容忍度高（α=0.01）？（12分）",
+  "score": 15
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2000,
+  "type": "计算",
+  "number": 5,
+  "question": "以下是子代和父代受教育年限的随机抽样调查结果：父代 5 5 6 7 9 12 13 15 子代 1 7 9 9 12 12 13 16 18 (1)配置回归直线是否有意义（α=0.01）？若有，求回归方程。（10分）(2)求判定系数，并解释意义。（5分）",
+  "score": 15
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2001,
+  "type": "名词解释",
+  "number": 1,
+  "question": "科学假设",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2001,
+  "type": "名词解释",
+  "number": 2,
+  "question": "因果关系",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2001,
+  "type": "名词解释",
+  "number": 3,
+  "question": "系统误差",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2001,
+  "type": "名词解释",
+  "number": 4,
+  "question": "对照组（控制组）",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2001,
+  "type": "简答",
+  "number": 1,
+  "question": "扼要说明探索性研究的基本内容及其基本目的。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2001,
+  "type": "简答",
+  "number": 2,
+  "question": "简要说明量表在社会测量中对于提高信度和效度以及简化资料分析的作用。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2001,
+  "type": "简答",
+  "number": 3,
+  "question": "什么是配额抽样？并且根据下列信息作出你的配额控制表。N = 100,000 人，其中：男性70,000人；脑力劳动的占60%；老中青的比例为5：3：2。n = 200人。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2001,
+  "type": "计算",
+  "number": 1,
+  "question": "设总体～N(u)。1.若σ=？，X̄是容量为100的样本均值，若使？2.若σ=0.5，且要以P%的概率保证|X̄-μ|<0.1，则样本容量至少为多少？",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2001,
+  "type": "计算",
+  "number": 2,
+  "question": "一项关于学生的性别与其专业志愿间的随机抽样资料如下：\n志愿 性别 男 女 边缘和\n理科 40 10 50\n商科 15 15 30\n人文科 5 15 20\n边缘和 60 40 100\n1.专业志愿是否与性别有关(α=0.05)？\n2.若有关，求λ，并解释其意义。\n3.上表显示，20%的学生选择人文学科，在95%的置信水平上，估计总体成数。",
+  "score": 15
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2001,
+  "type": "计算",
+  "number": 3,
+  "question": "设X₁、X₂…X₁₀是来自正态总体～N(u,σ²)的10个随机观测值，α=0.05，检验：H₀: u=u₀=0，H₁: u≠0。1.若否定域为|t|≥C，则C=？2.若X̄=0.5，是否可据此样本推断u≠0？3.若否定域为|t|≥1.63，则检验的显著性水平α=？",
+  "score": 15
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2001,
+  "type": "其他",
+  "number": 1,
+  "question": "设随机变量X～P(2)，用切贝谢夫不等式估计P(|X-2|≥2)≤？"
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2001,
+  "type": "其他",
+  "number": 2,
+  "question": "对回归方程的显著性进行检验时，(1)F检验最有效 (2)t检验最有效 (3)相关系数检验最有效 (4)前述三种检验等效"
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2002,
+  "type": "名词解释",
+  "number": 1,
+  "question": "社会测量",
+  "score": 3
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2002,
+  "type": "名词解释",
+  "number": 2,
+  "question": "分析单位",
+  "score": 3
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2002,
+  "type": "名词解释",
+  "number": 3,
+  "question": "效度",
+  "score": 3
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2002,
+  "type": "名词解释",
+  "number": 4,
+  "question": "M.韦伯的理想型方法",
+  "score": 3
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2002,
+  "type": "其他",
+  "number": 1,
+  "question": "判断并说明或改正题（每小题3分，本大题共12分。）题型1：“请问您平均每月的总收入是（请选择一项）：” A._500元及以下， B._601-—1000元， C. 1001—1500 元， D._—1501-2000 元, F.- 2001—-2500元, G._2501--3000 元, H. 3001---3500元， 1. 3501-4000元， J... _4001元及以上， K.-m _没有收入。 题型2： “请问您平均每月的总收入是 元。”",
+  "score": 3
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2002,
+  "type": "其他",
+  "number": 2,
+  "question": "分析下面问卷中“问题”设计的错误，并且提出修改方案： …（2）否 .B.北京， .C.上海， F．到国外去。",
+  "score": 3
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2002,
+  "type": "简答",
+  "number": 1,
+  "question": "什么是深度访问？扼要说明其优点和局限性以及适用的范围。",
+  "score": 6
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2002,
+  "type": "简答",
+  "number": 2,
+  "question": "写出两组前后实验设计（标准的、典型的、传统的实验设计）模式并简要分析说明控制组（参照组）的作用。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2002,
+  "type": "填空",
+  "number": 1,
+  "question": "t分布的均值为",
+  "score": 4
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2002,
+  "type": "填空",
+  "number": 2,
+  "question": "σ²未知，小样本时正态总体均值的检验应该用 检验。",
+  "score": 4
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2002,
+  "type": "填空",
+  "number": 3,
+  "question": "斯皮尔曼等级相关系数适用于 其检验统计量为",
+  "score": 4
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2002,
+  "type": "填空",
+  "number": 4,
+  "question": "已知样本分散程度S=12，样本量为36，α=0.05，假设总体为正态，则总体的分散程度为在[10.0.69777]",
+  "score": 4
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2002,
+  "type": "填空",
+  "number": 5,
+  "question": "符号检验法适用于",
+  "score": 4
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2002,
+  "type": "填空",
+  "number": 6,
+  "question": "若x_i ~ N(μ,σ²)， 服从 分布。",
+  "score": 4
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2002,
+  "type": "填空",
+  "number": 7,
+  "question": "请写上线性回归方程的基本假设",
+  "score": 4
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2002,
+  "type": "计算",
+  "number": 5,
+  "question": "随机抽取某社区200名选民做民意测验，有二名候选人，甲在样本中得票率为5%，能否据此得出甲将获胜的结论？α = 0.05 。(11分)",
+  "score": 11
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2002,
+  "type": "简答",
+  "number": 6,
+  "question": "假设检验中第一类错误的大小α与第二类错误的大小β的关系是否为α+β=1？为什么？影响β的因素有哪些？(11分)",
+  "score": 11
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 1999,
+  "type": "名词解释",
+  "number": 1,
+  "question": "社会测量尺度级别",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 1999,
+  "type": "名词解释",
+  "number": 2,
+  "question": "定组研究",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 1999,
+  "type": "名词解释",
+  "number": 3,
+  "question": "准则效度",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 1999,
+  "type": "名词解释",
+  "number": 4,
+  "question": "控制性问题（调查问卷中的）",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 1999,
+  "type": "简答",
+  "number": 1,
+  "question": "如何理解典型调查中“典型”的含义?",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 1999,
+  "type": "简答",
+  "number": 2,
+  "question": "总和量表(利克特量表)测量的优缺点分析。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 1999,
+  "type": "简答",
+  "number": 3,
+  "question": "试析社会调查研究中误差的三个基本种类。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 1999,
+  "type": "简答",
+  "number": 1,
+  "question": "某地区如年间国内生产总值发展现划分回阶段执行，每阶段五年，各阶段总值及其所计算的阶段逐度与翻焉逐度如下：国内生产总值（亿元) 总逐度 翻秀 阶段 (倍) α。 αn 逢度 an :lv 280 1. 4 0. 485-. 2 80 504 1.8 . 0.848 3 504 Ioog 4.0 1. 000 4 8001 454o 2:r 1. 32 2 清计算.总逐度、平均迷度、全期翻逐度",
+  "score": 3
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 1999,
+  "type": "简答",
+  "number": 2,
+  "question": "什么是统计调查误差、登记性误差和代表性误差？登记性误差和代表性误差在什么情况下发生？",
+  "score": 3
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 1999,
+  "type": "简答",
+  "number": 3,
+  "question": "在直线方程Y=a+bx中，参数a、b在社会经济现象中代表什么意义？",
+  "score": 3
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 1999,
+  "type": "简答",
+  "number": 4,
+  "question": "简答参数和统计量有哪些区别和联系？",
+  "score": 3
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 1999,
+  "type": "简答",
+  "number": 5,
+  "question": "简答什么是概率度？什么是置信度？它们有什么关系？",
+  "score": 3
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 1999,
+  "type": "计算",
+  "number": 1,
+  "question": "1963年美国的约翰逊总统执政后，在一个200位美国人的随机样本中，他得到了160人的拥护。随着对他的越南政策的争议，到了1968年，在200位美国人的样本中，他仅得到70人的拥护。用一个5%的置信区间计算从1963年到1968年支持率下降的情况。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 1999,
+  "type": "计算",
+  "number": 2,
+  "question": "一个从事市场研究的分析员想知道，为了确定某居民区内至少有一个成员看过某种报纸广告的家庭占多大比例，需要从该区抽选多少家庭作为样本。这个居民区共有500户，分析员希望以6%的置信度对这个比例做出估计，并使成数抽样误差不超过5%。在一个由7家组成的试调查样本中，有5家的被调查者表示他们自己的家中有人看过这种广告。请问：应取多大样本？",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 1999,
+  "type": "计算",
+  "number": 3,
+  "question": "1970年，5名年龄在35-54岁的美国男子的一个随机样本给出了年收入Y(美元)和所受教育X(年)之间的关系：Y=10+0.80X。已知年平均收入=1000美元，平均受教育年数X=11.0年，X=00，拟合直线的剩余标准差S=7300美元。(1).预测一个完成了12年高中教育(X=12)的男子的收入；(2).计算总体斜率的5%置信区间；(3).收入对教育的线性关系在5%水平下在统计上是可以分辨的(显著的)吗？不必检验；(4).每一年的教育价值是800元，这样说公平吗？",
+  "score": 15
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2004,
+  "type": "其他",
+  "number": 1,
+  "question": "请问您平均每月的总收入大约是\n元。\n.500元及以下，\nB. 501～1000元,\nC. 1001~1500元,\nD. 1501~2000元，\nF. 2001～2500元，\nG. 2501~--3000元，\nH. 3001~3500元，\n1. 3501~--4000元\n.4001元及以上。\nJ.",
+  "score": 7
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2004,
+  "type": "其他",
+  "number": 2,
+  "question": "分析下面问卷中“问题”设计的错误，并且提出修改方案：\n“您比较喜欢看下列哪些报刊？（请选择三项或排序）”\n（1）天津日报;\n（2）今晚报；\n（3）人民日报;\n（4）光明日报；\n（5）南方周末；\n(6）其它（请注明)",
+  "score": 7
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2004,
+  "type": "论述",
+  "number": 3,
+  "question": "扼要说明“多阶段整群抽样方法”中“阶段比例分布”的影响。",
+  "score": 15
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2004,
+  "type": "其他",
+  "number": 1,
+  "question": "若α相同，则双侧检验较单侧检验更难否定H。\nA.对\nB.错\nC．无法判断",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2004,
+  "type": "其他",
+  "number": 2,
+  "question": "运用检验对独立样本总体均值差的显著性进行检验时，该t分布的自由度为\n。若对配对样本的总体均值差检验时，则其\n1分布的自由度为\n，（用符号表示即前）",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2004,
+  "type": "简答",
+  "number": 1,
+  "question": "列举出线性相关系数P的显著性检验可应用的几种方法。（写出方法的名称即可）",
+  "score": 12
+ },
+ {
+  "school": "南开",
+  "subject": "methods",
+  "year": 2004,
+  "type": "计算",
+  "number": 1,
+  "question": "随机抽取了甲、乙二校某年的升学率资料。已知、甲校300名毕业生中\n升学93人，乙校180名毕业生中升学71人。若乙校为重点校，只有其升\n学率高丁普通校5%，才被认为其教学质量较高的话，问，可否认为乙校\n教学质量高于甲校？\n(α =0.05)\nZ0.05/2 = 1.96\nZ0.0s = 1.65",
+  "score": 16
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2000,
+  "type": "名词解释",
+  "number": 1,
+  "question": "劳孝遍",
+  "score": 4
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2000,
+  "type": "名词解释",
+  "number": 3,
+  "question": "大社会孕理论体系",
+  "score": 4
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2000,
+  "type": "名词解释",
+  "number": 4,
+  "question": "自标体系",
+  "score": 4
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2000,
+  "type": "名词解释",
+  "number": 5,
+  "question": "《群肆言》",
+  "score": 4
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2000,
+  "type": "名词解释",
+  "number": 7,
+  "question": "“中间受量“法",
+  "score": 4
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2000,
+  "type": "名词解释",
+  "number": 8,
+  "question": "地位君羊体",
+  "score": 4
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2000,
+  "type": "简答",
+  "number": 1,
+  "question": "宗教的尽质了功能是什么？分析强制性退休的社会意义。",
+  "score": 15
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2000,
+  "type": "简答",
+  "number": 2,
+  "question": "简迷冲突与调适的相转换。",
+  "score": 15
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2000,
+  "type": "简答",
+  "number": 3,
+  "question": "述详社会合家们关于伶济当社会养系让迷的主要现桌，并南其中一神观宾手分析中国吃状。",
+  "score": 15
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2001,
+  "type": "名词解释",
+  "number": 5,
+  "question": "默顿（Robert K.Merton)",
+  "score": 4
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2001,
+  "type": "论述",
+  "number": 1,
+  "question": "请你结合我国当前的政府机构改革实践，谈谈科层组织的利弊优劣。",
+  "score": 20
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2001,
+  "type": "论述",
+  "number": 2,
+  "question": "统计资料显示，自80年代以来我国的犯罪率呈不断上升趋势。试用“结构性紧张”理论分析这种现象，解释当前产生犯罪现象的主要社会原因。",
+  "score": 20
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2007,
+  "type": "简答",
+  "number": 3,
+  "question": "简述迪尔凯姆（EmileDurkheim）宗教社会学观点。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2007,
+  "type": "简答",
+  "number": 5,
+  "question": "简述布鲁默（HerberBloer）提出的符号互动论的基本原则。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2005,
+  "type": "名词解释",
+  "number": 4,
+  "question": "“芝加哥学派”",
+  "score": 5
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2005,
+  "type": "简答",
+  "number": 5,
+  "question": "试述社会学的研究范式。",
+  "score": 10
+ },
+ {
+  "school": "南开",
+  "subject": "theory",
+  "year": 2005,
+  "type": "论述",
+  "number": 2,
+  "question": "请结合实际说明社会群体的性质、结构极其运行过程。",
+  "score": 30
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2011,
+  "type": "名词解释",
+  "number": 1,
+  "question": "集经为，特绝"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2011,
+  "type": "名词解释",
+  "number": 2,
+  "question": "鏡中发"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2011,
+  "type": "名词解释",
+  "number": 3,
+  "question": "自能像"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2011,
+  "type": "名词解释",
+  "number": 4,
+  "question": "就功能，延"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2011,
+  "type": "名词解释",
+  "number": 6,
+  "question": "发阳家现代化"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2011,
+  "type": "简答",
+  "number": 1,
+  "question": "言性(五)"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2011,
+  "type": "简答",
+  "number": 2,
+  "question": "4民制"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2011,
+  "type": "简答",
+  "number": 3,
+  "question": "流动分拆农民流力用就影"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2011,
+  "type": "简答",
+  "number": 5,
+  "question": "就么砍代的世程是本特及我因就会现代的路往"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2011,
+  "type": "论述",
+  "number": 1,
+  "question": "最后大是做一个内會分折偏可码张，样做，问什們做现何现象"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2011,
+  "type": "简答",
+  "number": 1,
+  "question": "40(8x5)"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2011,
+  "type": "选择",
+  "number": 1,
+  "question": "30（10x3)"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2011,
+  "type": "计算",
+  "number": 1,
+  "question": "30.（2)"
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2011,
+  "type": "计算",
+  "number": 2,
+  "question": "用30（!)"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2003,
+  "type": "名词解释",
+  "number": 1,
+  "question": "社会化：",
+  "score": 5
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2003,
+  "type": "名词解释",
+  "number": 2,
+  "question": "社会角色；",
+  "score": 5
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2003,
+  "type": "名词解释",
+  "number": 3,
+  "question": "社会互动：",
+  "score": 5
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2003,
+  "type": "名词解释",
+  "number": 4,
+  "question": "社会地位：",
+  "score": 5
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2003,
+  "type": "名词解释",
+  "number": 5,
+  "question": "社区；",
+  "score": 5
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2003,
+  "type": "名词解释",
+  "number": 6,
+  "question": "初级群体；",
+  "score": 5
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2003,
+  "type": "简答",
+  "number": 1,
+  "question": "简述科层制的主要特征。",
+  "score": 10
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2003,
+  "type": "简答",
+  "number": 2,
+  "question": "社会分层的常用标准主要有哪些？",
+  "score": 10
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2003,
+  "type": "简答",
+  "number": 3,
+  "question": "简述社会工作的涵义及其主要内容。",
+  "score": 10
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2003,
+  "type": "简答",
+  "number": 5,
+  "question": "简述正式组织与非正式组织的区别与联系。",
+  "score": 10
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2003,
+  "type": "计算",
+  "number": 1,
+  "question": "从某校随机抽取100名教师进行调查，得出他们的平均年龄为42岁，标准差为5岁。要求在95%的概率保证下，估计该校全体教师的平均年龄（与95%相对应的概率度=1.96）。",
+  "score": 10
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2003,
+  "type": "计算",
+  "number": 2,
+  "question": "现有两组不同水平的工人日产量（件）资料如下：A组:60，65,70,75.80，85,90；B组:3，5，6,7,9,12，15。要求：（1），分别计算两组工人的平均日产量；（2），比较两组工人平均日产量的代表性大小。",
+  "score": 10
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2003,
+  "type": "论述",
+  "number": 1,
+  "question": "为什么说合理的社会流动是社会良性运行的重要协调机制？",
+  "score": 15
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2003,
+  "type": "论述",
+  "number": 2,
+  "question": "试述建立社会保障制度的作用及意义。",
+  "score": 15
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2004,
+  "type": "论述",
+  "number": 1,
+  "question": "运用社会运行理论，结合十六届三中全会提出的科学发展观，论评价社会运行状态的原则。",
+  "score": 20
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2005,
+  "type": "简答",
+  "number": 3,
+  "question": "简述社会互动的维度和类型",
+  "score": 10
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2005,
+  "type": "简答",
+  "number": 5,
+  "question": "简述初级社会群体的基本特点和功能",
+  "score": 10
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2005,
+  "type": "论述",
+  "number": 1,
+  "question": "试论社会学的研究对象",
+  "score": 20
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2005,
+  "type": "论述",
+  "number": 2,
+  "question": "试论社会现代化过程及其我国社会现代化过程的特点",
+  "score": 20
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2005,
+  "type": "论述",
+  "number": 3,
+  "question": "试论我国社会转型期社会组织结构的特点和组织结构调整的任务",
+  "score": 20
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2005,
+  "type": "论述",
+  "number": 4,
+  "question": "试论我国城乡结构的特点和城市化道路的选择",
+  "score": 20
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2006,
+  "type": "简答",
+  "number": 7,
+  "question": "六范",
+  "score": 5
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2006,
+  "type": "简答",
+  "number": 2,
+  "question": "什么是集合行为？它的特征是什么？",
+  "score": 10
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2006,
+  "type": "论述",
+  "number": 2,
+  "question": "试论社会现代化过程的基本特征和我国社会现代化的特殊性要求。"
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2007,
+  "type": "简答",
+  "number": 2,
+  "question": "元焦点的互动",
+  "score": 5
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2007,
+  "type": "论述",
+  "number": 1,
+  "question": "试论人口老龄化的本质及解决中国人口老龄化的对策。",
+  "score": 25
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2007,
+  "type": "论述",
+  "number": 3,
+  "question": "试述构建社会主义和谐社会的伟大意义。",
+  "score": 25
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2008,
+  "type": "名词解释",
+  "number": 2,
+  "question": "连同社会化",
+  "score": 5
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2008,
+  "type": "名词解释",
+  "number": 3,
+  "question": "首属寿体",
+  "score": 5
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2008,
+  "type": "名词解释",
+  "number": 6,
+  "question": "有机团销",
+  "score": 5
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2008,
+  "type": "名词解释",
+  "number": 7,
+  "question": "标心家庭",
+  "score": 5
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2008,
+  "type": "名词解释",
+  "number": 10,
+  "question": "结构性贡园",
+  "score": 5
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2008,
+  "type": "简答",
+  "number": 1,
+  "question": "简达社业角色的夫请及其录现",
+  "score": 10
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2008,
+  "type": "简答",
+  "number": 2,
+  "question": "何述“实在社区”与虚拟社区”各自特点。",
+  "score": 10
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2008,
+  "type": "简答",
+  "number": 3,
+  "question": "简述风险社会”理论",
+  "score": 10
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2008,
+  "type": "简答",
+  "number": 4,
+  "question": "加何理需正式组织中的丰正式举体！",
+  "score": 10
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2008,
+  "type": "简答",
+  "number": 5,
+  "question": "简述“锈中我”和“初级群体”的关系。",
+  "score": 10
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2008,
+  "type": "论述",
+  "number": 1,
+  "question": "结合全球化进程，试论述文化中心主义与文化相对主义的理论特征发其解释力：",
+  "score": 25
+ },
+ {
+  "school": "西安交大",
+  "subject": "theory",
+  "year": 2008,
+  "type": "论述",
+  "number": 2,
+  "question": "试评析社会分居的活于三要理论流派放基三桑现点，并结合我国经济社会发展的实际，分析现阶段我国社命分基的基本特点、服罪和越轨行元，",
+  "score": 25
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2004,
+  "type": "简答",
+  "number": 1,
+  "question": "进行社会研究一般应遵循哪些基本原则？",
+  "score": 10
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2004,
+  "type": "简答",
+  "number": 3,
+  "question": "确定样本大小时应考虑哪些因素？",
+  "score": 10
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2004,
+  "type": "计算",
+  "number": 1,
+  "question": "有10个家庭每个月比前两年增加开支的情况如下：55、63、50、46、37、34、28、25、22、20。",
+  "score": 10
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2004,
+  "type": "计算",
+  "number": 2,
+  "question": "从某城镇随机抽取100户家庭进行调查，得出有20%的家庭不和。要求在95%的概率保证下，估计该城镇家庭不和的比例（与95%相对应的概率度t=1.96）。",
+  "score": 10
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2004,
+  "type": "论述",
+  "number": 2,
+  "question": "试对文献法、观察法、访问法和实验法等几种调查资料收集方法的特点进行对比分析和评价。",
+  "score": 15
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2005,
+  "type": "名词解释",
+  "number": 7,
+  "question": "四分位差",
+  "score": 5
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2005,
+  "type": "简答",
+  "number": 3,
+  "question": "结构式观察的实施主要包括哪些内容？",
+  "score": 10
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2005,
+  "type": "简答",
+  "number": 5,
+  "question": "在设计社会指标体系时，应把握哪些原则？",
+  "score": 10
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2005,
+  "type": "计算",
+  "number": 1,
+  "question": "现有两组不同水平的工人日产量（件）资料如下：A组:60,65,70,75，80,85,90；B组:3，5，6,7，9，12，15。要求：（1）分别计算两组工人的平均日产量；",
+  "score": 10
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2005,
+  "type": "计算",
+  "number": 2,
+  "question": "从某高校随机抽取100名教师进行调查，得出他们的平均年龄为42岁，标准差为5岁。要求在95%的概率保证下，估计该校全体教师的平均年龄（与95%相对应的概率度t=1.96）。",
+  "score": 10
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2005,
+  "type": "论述",
+  "number": 1,
+  "question": "试对抽样调查、典型调查、个案调查、纵贯调查等几种调查方法进行比较和评价。",
+  "score": 15
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2005,
+  "type": "论述",
+  "number": 2,
+  "question": "试述社会研究的方法层次及其关系。",
+  "score": 15
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2006,
+  "type": "名词解释",
+  "number": 5,
+  "question": "元结构访谈：",
+  "score": 5
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2006,
+  "type": "名词解释",
+  "number": 7,
+  "question": "个买研究；",
+  "score": 5
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2006,
+  "type": "简答",
+  "number": 2,
+  "question": "对于一项具体的社会研究来说，文献回顾具有哪些作用？",
+  "score": 10
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2006,
+  "type": "简答",
+  "number": 4,
+  "question": "简要叙述实验室实验与实地实验的区别与联系。",
+  "score": 10
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2006,
+  "type": "计算",
+  "number": 1,
+  "question": "对甲乙两城市居民生活质量的调查发现，甲城市居民的月平均收入为680元，标准差为120元，乙城市居民的月平均收入为460元，标准差为？某调查公司接受委托，拟对某城市居民未来两年内购买私人汽车的意向进行调查。要求调查结果的可靠程度为95%，抽样误差不能超过3%。试问，该调查公司需要抽取多大规模的样本来进行此次调查？（与可靠程度95%相对应的概率度1.96）",
+  "score": 10
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2006,
+  "type": "论述",
+  "number": 1,
+  "question": "试述社会学研究中理论与经验研究之间的关系。对此，你是如何理解的？并举例予以说明。",
+  "score": 15
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2007,
+  "type": "简答",
+  "number": 2,
+  "question": "一项研究的具体方案包括哪些主要的内容？",
+  "score": 10
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2007,
+  "type": "简答",
+  "number": 6,
+  "question": "简述定性资料分析与定量资料分析的差别。",
+  "score": 10
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2007,
+  "type": "计算",
+  "number": 1,
+  "question": "现有城乡两组家庭某年上半年的月消费额（元）资料如下：城市组：800、900、750、700、600、650；农村组：350、480、400、300、320、200。要求：（1）分别计算两组家庭的月平均消费额；",
+  "score": 10
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2007,
+  "type": "计算",
+  "number": 2,
+  "question": "某研究人员调查了某乡镇农民外出打工的收入状况，随机抽取了100名外出打工的农民作样本，调查得到他们的月收入为618元，标准差为180元。在可靠程度为95%的条件下，该乡镇外出打工农民收入的可能范围是多少？",
+  "score": 10
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2008,
+  "type": "名词解释",
+  "number": 1,
+  "question": "简期群研究",
+  "score": 3
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2008,
+  "type": "名词解释",
+  "number": 6,
+  "question": "PPS拍样",
+  "score": 3
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2008,
+  "type": "名词解释",
+  "number": 8,
+  "question": "商释模式",
+  "score": 3
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2008,
+  "type": "简答",
+  "number": 3,
+  "question": "简述调查研究的优点，不是与缺降",
+  "score": 6
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2008,
+  "type": "简答",
+  "number": 4,
+  "question": "简达实地研究的优缺点，",
+  "score": 6
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2008,
+  "type": "简答",
+  "number": 5,
+  "question": "便述经典实验设计的基本步骤。",
+  "score": 6
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2008,
+  "type": "简答",
+  "number": 6,
+  "question": "简述定性资料编码的基本方法及其与定量资料编码的区制，",
+  "score": 6
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2008,
+  "type": "简答",
+  "number": 7,
+  "question": "简述影响确定样本规模的因素。",
+  "score": 6
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2008,
+  "type": "计算",
+  "number": 1,
+  "question": "某研究人员为证实知识分子家庭的平均子女数高于工人家庭的平均子女数（后者平均子女数为2.5人），作了100名知识分子的抽样调查，其结果为：平均子女数为2.6人。解：H0：μ=2.5人，H1：μ>2.5人，作单边检验，当α=0.05时，-Z(0.05)=-1.65，检验计量Z=(2.6-2.5)/(s/√n)=?，Z=-3.6<-Z(0.05)=-1.65，落入拒绝域，接受H1，假设得到证实。",
+  "score": 15
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2008,
+  "type": "计算",
+  "number": 2,
+  "question": "以下是男女青年对古典音乐是否喜爱的抽样调查结果：\n男 女\n喜爱 46 33\n无所谓 10 18\n不喜爱 30 50\n计算各单元格的期望值，男女青年对古典音乐的态度是否有显著性差异？（α=0.05，χ²0.05=5.99）\n解：fe为期望次数，fe=行总数×列总数/总总数，χ²=∑(fo-fe)²/fe=(46-33)²/33+(20-33)²/33+(10-10)²/10+(61-31)²/31+(30-40)²/40+(50-41)²/41=12.37，自由度df=(r-1)(c-1)=(3-1)(2-1)=2，α=0.05，χ²0.05=5.99，χ²=12.37>5.99，有显著性差异。",
+  "score": 15
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2008,
+  "type": "论述",
+  "number": 2,
+  "question": "诊述社会研究方法体系基本结构及其关票。",
+  "score": 15
+ },
+ {
+  "school": "西安交大",
+  "subject": "methods",
+  "year": 2008,
+  "type": "论述",
+  "number": 3,
+  "question": "情形下使用分层抽样，什么情形下使用定额拍样，",
+  "score": 15
  }
 ]
