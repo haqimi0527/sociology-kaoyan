@@ -2226,6 +2226,7 @@ function showConceptDetail(id) {
     ${c.source_text ? '<div class="field"><div class="field-label">出处</div><div class="field-value">'+escHtml(c.source_text)+'</div></div>' : ''}
     <div class="field"><div class="field-label">核心要点</div><div class="field-value">${(c.core_points || []).filter(p => p && p.length >= 10).map(p => '<span class="point">'+escHtml(cleanText(p))+'</span>').join('')}</div></div>
     ${c.textbook_ref ? '<div class="field"><div class="field-label">教材出处</div><div class="field-value">'+escHtml(c.textbook_ref)+'</div></div>' : ''}
+    ${renderExamInfo(c)}
     ${c.related && c.related.length ? '<div class="field"><div class="field-label">关联概念</div><div class="field-value">'+c.related.map(r => {
       const rc = conceptIndex[r.id]; if (!rc) return ''; const label = relLabels[r.relation] || r.relation;
       return '<span class="related-tag" onclick="event.stopPropagation();showConceptDetail(\''+escHtml(r.id)+'\')">'+escHtml(rc.term)+' · '+label+'</span>';
@@ -2238,6 +2239,33 @@ function closeConceptDetail() {
   var resultCard = document.getElementById('thrResultCard');
   if (detail) detail.style.display = 'none';
   if (resultCard) resultCard.style.display = '';
+}
+
+function renderExamInfo(c) {
+  var info = getExamInfo(c.term);
+  if (!info || (!info.years.length && !info.versions.length)) return '';
+  var html = '';
+  if (info.years.length) {
+    html += '<div class="field"><div class="field-label">📅 历年真题</div><div class="field-value">' +
+      info.years.map(function(y) { return '<span class="tag" style="background:var(--thr);color:#fff;margin:2px">'+y+'</span>'; }).join(' ') +
+      '</div></div>';
+  }
+  if (info.versions.length) {
+    var vers = info.versions.filter(function(v) { return v.text && v.text.length > 10; });
+    if (vers.length) {
+      html += '<div class="field"><div class="field-label">📏 多版本定义 (' + vers.length + '版)</div><div class="field-value">';
+      vers.forEach(function(v, vi) {
+        var source = v.source || '参考';
+        var words = v.words ? ' (' + v.words + '字)' : '';
+        html += '<details' + (vi===0?' open':'') + ' style="margin-bottom:6px;border-left:3px solid var(--thr);padding-left:10px">';
+        html += '<summary style="cursor:pointer;font-weight:600">' + escHtml(source) + words + '</summary>';
+        html += '<div style="font-size:13px;line-height:1.7;margin-top:4px">' + escHtml(v.text) + '</div>';
+        html += '</details>';
+      });
+      html += '</div></div>';
+    }
+  }
+  return html;
 }
 
 function closeConceptDetail() {
@@ -3101,7 +3129,10 @@ function toggleStatAnswer(btn) {
 }
 
 function renderMethodCard(c) {
+  var freqCount = methodFreq[c.term] || 0;
   var freqTag = c.exam_frequency === 'high' ? ' <span style="font-size:10px;background:var(--bad-bg);color:var(--bad);padding:1px 6px;border-radius:3px;margin-left:4px">高频</span>' : '';
+  if (!freqTag && freqCount >= 3) freqTag = ' <span style="font-size:10px;background:var(--good-bg);color:var(--good);padding:1px 6px;border-radius:3px;margin-left:4px">真题 '+freqCount+'次</span>';
+  else if (freqCount > 0) freqTag += ' <span style="font-size:10px;background:var(--surface2);color:var(--lead);padding:1px 6px;border-radius:3px;margin-left:2px">'+freqCount+'次</span>';
   var pointsHtml = c.core_points.filter(function(p) { return p.length >= 10; }).map(function(p) { return '<li>' + escHtml(cleanText(p)) + '</li>'; }).join('');
   return '<div class="method-card" onclick="this.classList.toggle(\'expanded\')">' +
     '<div class="mc-term">' + escHtml(cleanText(c.term)) + freqTag + '</div>' +
@@ -4685,11 +4716,58 @@ function compareTrans(tid) {
   cmp.innerHTML = '你已输入 <b>' + text.length + '</b> 字。参考译文 <b>' + ref.reference.length + '</b> 字。<br>💡 提示：翻译重点在于准确传达原文含义，注意被动语态、定语从句和强调句型的汉语表达习惯。';
 }
 
+// ===== Concept Enhancement Data =====
+var conceptExtras = {};
+var methodFreq = {};
+
+async function loadConceptExtras() {
+  try {
+    var resp = await fetch('data/theory-topics.json?v=2');
+    if (resp.ok) {
+      var data = await resp.json();
+      data.forEach(function(item) {
+        if (item.concept && item.definitions && item.definitions.length) {
+          var key = item.concept.trim();
+          if (!conceptExtras[key]) conceptExtras[key] = {years: [], versions: []};
+          if (item.year) conceptExtras[key].years.push(item.year);
+          conceptExtras[key].versions = conceptExtras[key].versions.concat(item.definitions);
+        }
+      });
+    }
+  } catch(e) {}
+  try {
+    var resp2 = await fetch('data/method-exam-freq.json?v=1');
+    if (resp2.ok) {
+      var rows = await resp2.json();
+      rows.forEach(function(row) {
+        var content = row.content || [];
+        for (var i = 2; i < content.length; i++) {
+          var name = (content[i] || '').replace(/^\d+\.\s*/, '').trim();
+          if (name && name.length > 1 && name.length < 50) {
+            methodFreq[name] = (methodFreq[name] || 0) + 1;
+          }
+        }
+      });
+    }
+  } catch(e) {}
+}
+
+function getExamInfo(conceptName) {
+  var extras = conceptExtras[conceptName];
+  if (extras) {
+    var years = extras.years ? [...new Set(extras.years)].sort(function(a,b){return b-a}) : [];
+    return {years: years, versions: extras.versions || []};
+  }
+  return null;
+}
+
 // ===== Init =====
 loadApiKey();
 loadConcepts().then(function() {
-  searchConceptsShell();
-  renderMetCards();
+  loadConceptExtras().then(function() {
+    searchConceptsShell();
+    renderMetCards();
+  });
   renderDesignCards();
   // Update filter dropdowns with real counts
   var thrFilter = document.getElementById('thrFlashFilter');
