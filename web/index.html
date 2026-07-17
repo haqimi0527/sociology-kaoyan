@@ -2406,7 +2406,7 @@ async function loadSchoolsData() {
 async function loadExamsData() {
   if (examsData.length) return;
   try {
-    var resp = await fetch('data/exams.json?v=4');
+    var resp = await fetch('data/exams.json?v=5');
     examsData = await resp.json();
   } catch(e) { console.warn('exams.json 加载失败:', e.message); }
 }
