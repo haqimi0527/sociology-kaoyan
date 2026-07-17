@@ -2446,7 +2446,7 @@ async function loadSchoolsData() {
 async function loadExamsData() {
   if (examsData.length) return;
   try {
-    var resp = await fetch('data/exams.json?v=10');
+    var resp = await fetch('data/exams.json?v=11');
     examsData = await resp.json();
   } catch(e) { console.warn('exams.json 加载失败:', e.message); }
 }
@@ -3816,7 +3816,7 @@ var metQuestionsLoaded = false;
 
 async function loadMetQuestions() {
   try {
-    var resp = await fetch('data/methods-questions.json?v=10');
+    var resp = await fetch('data/methods-questions.json?v=11');
     if (resp.ok) { var data = await resp.json(); metQuestionsData = data; }
   } catch(e) {}
 }
@@ -3859,9 +3859,9 @@ function stripTags(s, allowed) {
   // Restore table-related tags
   var tags = ['table','thead','tbody','tr','th','td','caption','colgroup','col'];
   tags.forEach(function(t) {
-    var re = new RegExp('&amp;lt;'+t+'(?: class="[^"]*")?&amp;gt;','g');
+    var re = new RegExp('&lt;'+t+'(?: class="[^"]*")?&gt;','g');
     escaped = escaped.replace(re, '<'+t+' class="tbl">');
-    escaped = escaped.replace(new RegExp('&amp;lt;/'+t+'&amp;gt;','g'), '</'+t+'>');
+    escaped = escaped.replace(new RegExp('&lt;/'+t+'&gt;','g'), '</'+t+'>');
   });
   return escaped;
 }
