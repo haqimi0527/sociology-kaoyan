@@ -2507,7 +2507,7 @@ async function startMockExamPanel() {
     var questions = examsData.filter(function(q) { return q.school === schoolName && q.year === year && realTypes.indexOf(q.type) !== -1; });
     if (!questions.length) { showToast('该年份没有所选题型的真题', 'error'); return; }
     questions.sort(function(a,b) { return (a.number||0) - (b.number||0); });
-    mockExamState.questions = questions.map(function(q) { return { term: q.question, type: q.type, prompt: '（' + q.score + '分）请作答', score: q.score || 5 }; });
+    mockExamState.questions = questions.map(function(q) { return { term: q.question, type: q.type, prompt: (q.score ? '（' + q.score + '分）' : '') + '请作答', score: q.score || 5 }; });
     mockExamState.timeLimit = parseInt(document.getElementById('mockRealTime')?.value || '180') * 60;
   } else {
     // Auto mode: AI generate
