@@ -980,6 +980,20 @@ table.tbl tr:nth-child(even) td {
 .trans-card .tr-reference .tr-ref-label { font-size: 11px; font-weight: 700; color: var(--eng); margin-bottom: 4px; }
 .trans-card .tr-compare { display: none; margin-top: 8px; font-size: 12px; color: var(--good); }
 .trans-card .tr-compare.show { display: block; }
+
+/* ===== Taxonomy Hierarchy (concept-taxonomy.json) ===== */
+.cat-school{font-size:11px;font-weight:700;color:var(--thr);padding:6px 8px 2px;margin-top:4px;border-top:1px solid var(--border-light)}
+.cat-school .school-desc{display:block;font-weight:400;font-size:10px;color:var(--faint);margin-top:1px}
+.cat-scholar{padding-left:16px !important;font-size:11px !important}
+.cat-period-summary{font-weight:600}
+.view-toggle-bar{display:flex;gap:4px;margin-bottom:10px;background:var(--surface2);border-radius:var(--r-xs);padding:3px}
+.view-toggle-btn{flex:1;text-align:center;padding:5px 8px;font-size:11px;font-weight:600;border:none;border-radius:4px;cursor:pointer;background:transparent;color:var(--lead);transition:all var(--fast) var(--ease)}
+.view-toggle-btn.active{background:var(--surface);color:var(--thr);box-shadow:var(--shadow-xs)}
+.view-toggle-btn:hover:not(.active){color:var(--ink)}
+.scholar-az-item{padding:6px 8px;font-size:12px;cursor:pointer;border-radius:4px;transition:background var(--fast) var(--ease);display:flex;justify-content:space-between;align-items:center}
+.scholar-az-item:hover{background:var(--thr-bg)}
+.scholar-az-item.active{background:var(--thr-light);font-weight:600}
+.scholar-az-item .count{font-size:10px;color:var(--faint);background:var(--surface2);padding:1px 6px;border-radius:10px}
 </style>
 </head>
 <body>
@@ -1842,6 +1856,19 @@ document.querySelectorAll('.sub-tabs').forEach(tabBar => {
 // ===== Concept Search — loads from concepts.json =====
 let concepts = [];
 let conceptIndex = {};
+let taxonomy = null;  // concept-taxonomy.json
+
+async function loadTaxonomy() {
+  if (taxonomy) return;
+  try {
+    const resp = await fetch('data/concept-taxonomy.json?v=1');
+    if (!resp.ok) throw new Error('HTTP ' + resp.status);
+    taxonomy = await resp.json();
+  } catch(e) {
+    console.warn('concept-taxonomy.json 加载失败:', e.message);
+    taxonomy = null;
+  }
+}
 
 async function loadConcepts() {
   if (concepts.length) return;
@@ -1864,12 +1891,93 @@ async function loadConcepts() {
   } catch (e) {
     console.warn('concepts.json 加载失败:', e.message);
   }
+  // Load taxonomy after concepts (await to avoid race with init render)
+  await loadTaxonomy();
+  if (taxonomy) {
+    renderTheoryCategoryBrowser();
+    renderMethodCategoryBrowser();
+  }
 }
 
-// ===== Category Browser =====
+// ===== Category Browser (powered by concept-taxonomy.json) =====
 var THEORY_PERIODS = ['古典时期', '现代时期', '当代时期', '综合'];
 
+function buildTaxonomyTree(subject) {
+  // Returns { periods/sections: [...], allConcepts: [...] } from taxonomy
+  if (!taxonomy) return { periods: [], allConcepts: [] };
+
+  if (subject === 'theory') {
+    var periods = [];
+    var allConcepts = [];
+    var tData = taxonomy.theory || {};
+    Object.keys(tData).forEach(function(periodName) {
+      var schools = [];
+      var schoolData = tData[periodName] || {};
+      Object.keys(schoolData).forEach(function(schoolName) {
+        var scholars = [];
+        var scholarsData = schoolData[schoolName].scholars || {};
+        Object.keys(scholarsData).forEach(function(scholarName) {
+          var scholarConcepts = (scholarsData[scholarName].concepts || []).map(function(c) {
+            var cid = typeof c === 'string' ? c : (c && c.id); return conceptIndex[cid] || null;
+          }).filter(Boolean);
+          allConcepts = allConcepts.concat(scholarConcepts);
+          scholars.push({ name: scholarName, concepts: scholarConcepts, keywords: scholarsData[scholarName].keywords || [] });
+        });
+        schools.push({ name: schoolName, desc: schoolData[schoolName].desc || '', scholars: scholars });
+      });
+      periods.push({ name: periodName, schools: schools });
+    });
+    return { periods: periods, allConcepts: allConcepts };
+  }
+
+  if (subject === 'methods') {
+    var cats = [];
+    var allConcepts = [];
+    var mData = taxonomy.methods || {};
+    Object.keys(mData).forEach(function(catName) {
+      var subCats = [];
+      var catData = mData[catName];
+      var subData = catData.categories || {};
+      Object.keys(subData).forEach(function(subName) {
+        var subConcepts = (subData[subName].concepts || []).map(function(c) {
+          var cid = typeof c === 'string' ? c : (c && c.id); return conceptIndex[cid] || null;
+        }).filter(Boolean);
+        allConcepts = allConcepts.concat(subConcepts);
+        subCats.push({ name: subName, concepts: subConcepts });
+      });
+      cats.push({ name: catName, desc: catData.desc || '', subCats: subCats });
+    });
+    return { periods: cats, allConcepts: allConcepts };
+  }
+
+  return { periods: [], allConcepts: [] };
+}
+
 function buildCatTree(concepts, subject) {
+  // Fallback: use taxonomy if available, otherwise parse chapter field
+  if (taxonomy) {
+    var taxTree = buildTaxonomyTree(subject);
+    var oldTree = {};
+    taxTree.periods.forEach(function(p) {
+      if (subject === 'theory') {
+        p.schools.forEach(function(school) {
+          school.scholars.forEach(function(scholar) {
+            var key = scholar.name;
+            if (!oldTree[key]) oldTree[key] = [];
+            oldTree[key] = oldTree[key].concat(scholar.concepts);
+          });
+        });
+      } else {
+        p.subCats.forEach(function(sub) {
+          var key = sub.name;
+          if (!oldTree[key]) oldTree[key] = [];
+          oldTree[key] = oldTree[key].concat(sub.concepts);
+        });
+      }
+    });
+    return { tree: oldTree, periods: taxTree.periods, allConcepts: taxTree.allConcepts };
+  }
+  // Legacy fallback: parse chapter field
   var prefix = subject === 'theory' ? '理论' : '社会学研究方法';
   var tree = {};
   concepts.forEach(function(c) {
@@ -1886,7 +1994,7 @@ function buildCatTree(concepts, subject) {
       tree[period]['_self'].push(c);
     }
   });
-  return tree;
+  return { tree: tree, periods: null, allConcepts: null };
 }
 
 // Derive method periods from data
@@ -1911,6 +2019,109 @@ function extractTags(concepts) {
   return Object.keys(tagMap).sort(function(a,b){ return (tagMap[b]||0)-(tagMap[a]||0); });
 }
 
+// Render taxonomy column for theory: schools → scholars
+function renderTheoryTaxonomyColumn(state) {
+  if (!taxonomy) return '';
+  var selPeriod = state.period;
+  var html = '';
+  var tData = taxonomy.theory || {};
+  var periods = Object.keys(tData);
+  // If a period is selected, show its schools + scholars
+  if (selPeriod && tData[selPeriod]) {
+    var schools = tData[selPeriod];
+    Object.keys(schools).forEach(function(schoolName) {
+      var schoolData = schools[schoolName];
+      var scholars = schoolData.scholars || {};
+      html += '<div class="cat-school">' + escHtml(schoolName);
+      if (schoolData.desc) html += '<span class="school-desc">' + escHtml(schoolData.desc) + '</span>';
+      html += '</div>';
+      Object.keys(scholars).forEach(function(scholarName) {
+        var scholarData = scholars[scholarName];
+        var count = (scholarData.concepts || []).length;
+        var isActive = !state.thinkers.length || state.thinkers.indexOf(scholarName) !== -1;
+        html += '<div class="cat-item cat-scholar' + (isActive ? ' active' : '') + '" data-action="thinker" data-thinker="' + escHtml(scholarName) + '" data-subject="theory">📖 ' + escHtml(scholarName) + '<span class="count">' + count + '</span></div>';
+      });
+    });
+  } else {
+    // All periods mode: show period → school summary
+    periods.forEach(function(pName) {
+      var schools = tData[pName] || {};
+      var totalCount = 0;
+      Object.values(schools).forEach(function(sd) {
+        var scholars = sd.scholars || {};
+        Object.values(scholars).forEach(function(sc) { totalCount += (sc.concepts || []).length; });
+      });
+      html += '<div class="cat-item cat-period-summary" data-action="period" data-period="' + escHtml(pName) + '" data-subject="theory">📂 ' + escHtml(pName) + '<span class="count">' + totalCount + '</span></div>';
+    });
+  }
+  return html;
+}
+
+// Render taxonomy column for methods: categories → subcategories
+function renderMethodTaxonomyColumn(state) {
+  if (!taxonomy) return '';
+  var selPeriod = state.period;
+  var html = '';
+  var mData = taxonomy.methods || {};
+  var cats = Object.keys(mData);
+  cats.forEach(function(catName) {
+    var catData = mData[catName];
+    var subCats = catData.categories || {};
+    if (selPeriod && selPeriod !== catName) return;
+    if (!selPeriod) {
+      var totalCat = 0;
+      Object.values(subCats).forEach(function(sc) { totalCat += (sc.concepts || []).length; });
+      html += '<div class="cat-item cat-period-summary" data-action="period" data-period="' + escHtml(catName) + '" data-subject="methods">📂 ' + escHtml(catName) + '<span class="count">' + totalCat + '</span></div>';
+    } else {
+      html += '<div class="cat-school">' + escHtml(catName) + (catData.desc ? '<span class="school-desc">' + escHtml(catData.desc) + '</span>' : '') + '</div>';
+      Object.keys(subCats).forEach(function(subName) {
+        var subConcepts = subCats[subName].concepts || [];
+        var isActive = !state.thinkers.length || state.thinkers.indexOf(subName) !== -1;
+        html += '<div class="cat-item cat-scholar' + (isActive ? ' active' : '') + '" data-action="thinker" data-thinker="' + escHtml(subName) + '" data-subject="methods">📖 ' + escHtml(subName) + '<span class="count">' + subConcepts.length + '</span></div>';
+      });
+    }
+  });
+  return html;
+}
+
+// Render scholar A-Z list for theory dual view
+function renderScholarAZColumn(state, taxPeriods) {
+  if (!taxPeriods) return '';
+  var selPeriod = state.period;
+  var scholarMap = {}; // name → concept count
+  var tData = taxonomy.theory || {};
+
+  function collectScholars(periodName) {
+    var schools = tData[periodName];
+    if (!schools) return;
+    Object.keys(schools).forEach(function(schoolName) {
+      var scholars = schools[schoolName].scholars || {};
+      Object.keys(scholars).forEach(function(scholarName) {
+        if (!scholarMap[scholarName]) scholarMap[scholarName] = 0;
+        scholarMap[scholarName] += (scholars[scholarName].concepts || []).length;
+      });
+    });
+  }
+
+  if (selPeriod && tData[selPeriod]) {
+    collectScholars(selPeriod);
+  } else {
+    Object.keys(tData).forEach(function(pName) { collectScholars(pName); });
+  }
+
+  var scholars = Object.keys(scholarMap).sort(function(a, b) {
+    return a.localeCompare(b, 'zh-CN');
+  });
+
+  if (!scholars.length) return '<div style="padding:8px;font-size:11px;color:var(--faint)">该时期暂无学者</div>';
+
+  return scholars.map(function(name) {
+    var count = scholarMap[name];
+    var isActive = !state.thinkers.length || state.thinkers.indexOf(name) !== -1;
+    return '<div class="scholar-az-item' + (isActive ? ' active' : '') + '" data-action="thinker" data-thinker="' + escHtml(name) + '" data-subject="theory">' + escHtml(name) + '<span class="count">' + count + '</span></div>';
+  }).join('');
+}
+
 function renderTheoryCategoryBrowser() {
   renderCategoryBrowser('theory', 'catBrowserShell', 'searchResultsShell');
 }
@@ -1931,8 +2142,11 @@ function renderCategoryBrowser(subject, shellId, resultShellId) {
     : concepts.filter(isMethodsConcept);
   if (!filtered.length) { shell.innerHTML = ''; return; }
 
-  var tree = buildCatTree(filtered, subject);
-  var periods = subject === 'theory' ? THEORY_PERIODS : getMethodPeriods(tree);
+  var result = buildCatTree(filtered, subject);
+  var tree = result.tree || {};
+  var taxPeriods = result.periods;  // taxonomy periods array (null if legacy)
+  var allTaxConcepts = result.allConcepts;
+  var periods = taxPeriods ? taxPeriods.map(function(p) { return p.name; }) : (subject === 'theory' ? THEORY_PERIODS : getMethodPeriods(tree));
   periods = periods.filter(function(p) { return tree[p]; });
   // Sort method periods logically
   if (subject !== 'theory') {
@@ -1945,39 +2159,97 @@ function renderCategoryBrowser(subject, shellId, resultShellId) {
   if (!state.thinkers) state.thinkers = [];
   if (!state.tags) state.tags = [];
   if (!state.period) state.period = null;
+  if (!state.viewMode) state.viewMode = 'tree';
 
   var allPeriod = !state.period; // "全部时期" mode
-  if (!allPeriod && (!state.period || !tree[state.period])) { state.period = periods[0]; state.thinkers = []; state.tags = []; }
+  var periodExists = taxPeriods ? taxPeriods.some(function(p) { return p.name === state.period; }) : !!tree[state.period];
+  if (!allPeriod && (!state.period || !periodExists)) { state.period = periods[0]; state.thinkers = []; state.tags = []; }
   _catState[subject] = state;
 
-  var thinkerMap = allPeriod ? {} : (tree[state.period] || {});
-  // In "all" mode, merge all periods
-  if (allPeriod) {
-    periods.forEach(function(p) {
-      var tm = tree[p]; if (!tm) return;
-      Object.keys(tm).forEach(function(tk) {
-        if (!thinkerMap[tk]) thinkerMap[tk] = [];
-        thinkerMap[tk] = thinkerMap[tk].concat(tm[tk]);
+  var thinkerMap = {};
+  if (taxPeriods && !allPeriod) {
+    // Taxonomy mode: rebuild thinkerMap from taxonomy for selected period
+    var selPeriodData = taxPeriods.find(function(p) { return p.name === state.period; });
+    if (selPeriodData && subject === 'theory') {
+      selPeriodData.schools.forEach(function(school) {
+        school.scholars.forEach(function(scholar) {
+          var key = scholar.name;
+          if (!thinkerMap[key]) thinkerMap[key] = [];
+          thinkerMap[key] = thinkerMap[key].concat(scholar.concepts);
+        });
       });
-    });
+    } else if (selPeriodData && subject === 'methods') {
+      selPeriodData.subCats.forEach(function(sub) {
+        thinkerMap[sub.name] = sub.concepts;
+      });
+    }
+  } else if (!taxPeriods) {
+    thinkerMap = allPeriod ? {} : (tree[state.period] || {});
+  }
+  // In "all" mode, merge across all periods/sections
+  if (allPeriod) {
+    if (taxPeriods) {
+      // Taxonomy mode: merge all concepts from all periods
+      taxPeriods.forEach(function(p) {
+        if (subject === 'theory') {
+          p.schools.forEach(function(school) {
+            school.scholars.forEach(function(scholar) {
+              var key = scholar.name;
+              if (!thinkerMap[key]) thinkerMap[key] = [];
+              thinkerMap[key] = thinkerMap[key].concat(scholar.concepts);
+            });
+          });
+        } else {
+          p.subCats.forEach(function(sub) {
+            if (!thinkerMap[sub.name]) thinkerMap[sub.name] = [];
+            thinkerMap[sub.name] = thinkerMap[sub.name].concat(sub.concepts);
+          });
+        }
+      });
+    } else {
+      // Legacy mode
+      periods.forEach(function(p) {
+        var tm = tree[p]; if (!tm) return;
+        Object.keys(tm).forEach(function(tk) {
+          if (!thinkerMap[tk]) thinkerMap[tk] = [];
+          thinkerMap[tk] = thinkerMap[tk].concat(tm[tk]);
+        });
+      });
+    }
   }
   var thinkers = Object.keys(thinkerMap).sort(function(a, b) {
     return (thinkerMap[b].length||0) - (thinkerMap[a].length||0);
   });
 
   function periodCount(p) {
+    if (taxPeriods) {
+      var found = taxPeriods.find(function(tp) { return tp.name === p; });
+      if (!found) return 0;
+      if (subject === 'theory') {
+        var total = 0;
+        found.schools.forEach(function(school) {
+          school.scholars.forEach(function(scholar) { total += scholar.concepts.length; });
+        });
+        return total;
+      } else {
+        var total = 0;
+        found.subCats.forEach(function(sub) { total += sub.concepts.length; });
+        return total;
+      }
+    }
     var t = tree[p]; if (!t) return 0;
     return Object.values(t).reduce(function(s, arr) { return s + arr.length; }, 0);
   }
 
   var showConcepts = [];
-  Object.keys(thinkerMap).forEach(function(tk) {
-    if (!state.thinkers.length || state.thinkers.indexOf(tk) !== -1) {
-      showConcepts = showConcepts.concat(thinkerMap[tk]);
-    }
-  });
   if (!state.thinkers.length) {
     Object.values(thinkerMap).forEach(function(arr) { showConcepts = showConcepts.concat(arr); });
+  } else {
+    Object.keys(thinkerMap).forEach(function(tk) {
+      if (state.thinkers.indexOf(tk) !== -1) {
+        showConcepts = showConcepts.concat(thinkerMap[tk]);
+      }
+    });
   }
 
   var activeTags = state.tags || [];
@@ -2011,6 +2283,7 @@ function renderCategoryBrowser(subject, shellId, resultShellId) {
   // Left side: filters only
   shell.innerHTML =
     '<div class="cb-label">📂 按分类浏览</div>' +
+    (subject === 'theory' ? '<div class="view-toggle-bar"><button class="view-toggle-btn' + (state.viewMode === 'tree' ? ' active' : '') + '" data-action="viewMode" data-mode="tree" data-subject="theory">📂 时代树</button><button class="view-toggle-btn' + (state.viewMode === 'scholar' ? ' active' : '') + '" data-action="viewMode" data-mode="scholar" data-subject="theory">📋 学者 A-Z</button></div>' : '') +
     '<div class="cat-cols">' +
       '<div class="cat-col"><div class="cat-col-title">' + (subject === 'theory' ? '时期' : '研究阶段') + '</div>' +
         '<div class="cat-item' + (!state.period ? ' active' : '') + '" data-action="period" data-period="_all" data-subject="' + subject + '">📦 ' + (subject === 'theory' ? '全部时期' : '全部模块') + '</div>' +
@@ -2019,11 +2292,12 @@ function renderCategoryBrowser(subject, shellId, resultShellId) {
           return '<div class="cat-item' + (isActive ? ' active' : '') + '" data-action="period" data-period="' + escHtml(p) + '" data-subject="' + subject + '">' + escHtml(p) + '<span class="count">' + periodCount(p) + '</span></div>';
         }).join('') +
       '</div>' +
-      '<div class="cat-col"><div class="cat-col-title">' + (subject === 'theory' ? '理论家 / 流派' : '子分类') + '</div>' +
+      '<div class="cat-col"><div class="cat-col-title">' + (subject === 'theory' ? (state.viewMode === 'scholar' ? '学者' : '学派 / 学者') : '子分类') + '</div>' +
+        (taxPeriods ? (subject === 'theory' ? (state.viewMode === 'scholar' ? renderScholarAZColumn(state, taxPeriods) : renderTheoryTaxonomyColumn(state)) : renderMethodTaxonomyColumn(state)) :
         thinkers.map(function(tk) {
           var isActive = !state.thinkers.length || state.thinkers.indexOf(tk) !== -1;
           return '<div class="cat-item' + (isActive ? ' active' : '') + '" data-action="thinker" data-thinker="' + escHtml(tk) + '" data-subject="' + subject + '">' + (tk === '_self' ? '📦 综合' : escHtml(tk)) + '<span class="count">' + (thinkerMap[tk]||[]).length + '</span></div>';
-        }).join('') +
+        }).join('')) +
       '</div>' +
     '</div>' +
     (tagChipsHtml ? '<div class="tag-filter-bar">' + tagChipsHtml + '</div>' : '');
@@ -2086,13 +2360,17 @@ document.addEventListener('click', function(e) {
     var newPeriod = el.dataset.period;
     // If clicking the already-active period with no thinker/tag filters, no-op
     if (newPeriod === '_all') {
+      var oldView = st.viewMode;
       _catState[subject] = {};
+      if (oldView) _catState[subject].viewMode = oldView;
       if (subject === 'theory') renderTheoryCategoryBrowser();
       else renderMethodCategoryBrowser();
       return;
     }
     if (st.period === newPeriod && !st.thinkers.length && !(st.tags||[]).length) return;
+    var oldView2 = st.viewMode;
     _catState[subject] = { period: newPeriod, thinkers: [], tags: [] };
+    if (oldView2) _catState[subject].viewMode = oldView2;
     if (subject === 'theory') renderTheoryCategoryBrowser();
     else renderMethodCategoryBrowser();
   } else if (el.dataset.action === 'thinker') {
@@ -2103,6 +2381,12 @@ document.addEventListener('click', function(e) {
     if (idx === -1) st.thinkers.push(tk); else st.thinkers.splice(idx, 1);
     if (subject === 'theory') renderTheoryCategoryBrowser();
     else renderMethodCategoryBrowser();
+  } else if (el.dataset.action === 'viewMode') {
+    var st3 = _catState[subject] || {};
+    st3.viewMode = el.dataset.mode;
+    st3.thinkers = [];
+    _catState[subject] = st3;
+    renderTheoryCategoryBrowser();
   }
 
   if (el.classList.contains('tag-chip')) {
@@ -2481,7 +2765,7 @@ async function loadSchoolsData() {
 async function loadExamsData() {
   if (examsData.length) return;
   try {
-    var resp = await fetch('data/exams.json?v=16');
+    var resp = await fetch('data/exams.json?v=17');
     examsData = await resp.json();
   } catch(e) { console.warn('exams.json 加载失败:', e.message); }
 }
@@ -3976,7 +4260,7 @@ var polQuestions = [];
 async function loadPolData() {
   if (polQuestionsLoaded) return;
   try {
-    var resp = await fetch('data/politics.json?v=1');
+    var resp = await fetch('data/politics.json?v=2');
     if (resp.ok) { var data = await resp.json(); if (Array.isArray(data) && data.length > 0) { polQuestions = data; polQuestionsLoaded = true; } }
   } catch(e) { /* keep fallback */ }
   if (!polQuestions.length) {
@@ -4788,10 +5072,9 @@ function getExamInfo(conceptName) {
 // ===== Init =====
 loadApiKey();
 loadConcepts().then(function() {
-  loadConceptExtras().then(function() {
-    searchConceptsShell();
-    renderMetCards();
-  });
+  loadConceptExtras();
+  searchConceptsShell();
+  renderMetCards();
   renderDesignCards();
   // Update filter dropdowns with real counts
   var thrFilter = document.getElementById('thrFlashFilter');
