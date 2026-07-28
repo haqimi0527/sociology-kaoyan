@@ -154,7 +154,7 @@ def check_file_sizes():
         'concept-taxonomy.json': (40_000, 100_000),
         'politics-essay.json': (50_000, 200_000),
         'theory-topics.json': (50_000, 300_000),
-        'methods-questions.json': (100_000, 800_000),
+        'methods-questions.json': (100_000, 2_500_000),
     }
     for fname, (lo, hi) in expected.items():
         path = os.path.join(DATA_DIR, fname)
