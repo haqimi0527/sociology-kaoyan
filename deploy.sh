@@ -35,6 +35,7 @@ DATA_FILES=(
   methods-questions.json
   method-exam-freq.json
   questions-theory.json
+  concept-taxonomy.json
 )
 for f in "${DATA_FILES[@]}"; do
   if [ -f "$WEB/data/$f" ]; then
