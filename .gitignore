@@ -1,0 +1,8 @@
+node_modules/
+test-results/
+playwright-report/
+*.backup.json
+concepts_backup_*.json
+__pycache__/
+*.pyc
+.DS_Store
