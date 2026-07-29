@@ -1,198 +1,119 @@
-# 社会学考研 App — 前端待办清单
+# 前端需求文档 — 社会学考研 AI 导师 v3
 
-> 主文件：`D:\workspace\sociology-kaoyan-app\web\index.html`（1907 行，单文件 HTML+CSS+JS）
-> 数据文件：`D:\workspace\sociology-kaoyan-app\web\data/concepts.json`（2,418 条概念）
-> 测试方式：`cd D:\workspace\sociology-kaoyan-app\web && python -m http.server 8765` → `http://localhost:8765`
+> 交付给前端开发。当前代码在 `web/index.html`（单文件 5135 行 HTML+CSS+JS），数据在 `web/data/`。
 
 ---
 
-## 一、方法面板（panel-methods，行 1055-1126）
+## 数据接口（后端已就绪，前端只需读 JSON）
 
-当前 5 个子 Tab：概念卡片 ✅、公式手册 ❌、统计练习 ❌、研究设计 ❌、资料库 ✅
+所有数据在 `data/` 目录，fetch 时带 `?v=N` 做缓存刷新。关键文件：
 
-### 1.1 公式手册 UI（sub-met-formula，行 1087-1093）
+| 文件 | 条目 | 用途 |
+|------|:--:|------|
+| `concepts.json` | 2399 | 概念词典（term/definition/proponent/chapter/tags） |
+| `concept-taxonomy.json` | 2243 分类 | 概念分类树，前端面包屑导航 |
+| `exams.json` | 5651 | 16 校历年真题（名词解释/简答/论述/计算） |
+| `methods-questions.json` | 898 | 方法专题题库 |
+| `theory-questions.json` | 438 | 理论专题题库 |
+| `politics.json` | 1140 | 政治选择题（马原/毛中特/史纲/思修） |
+| `english-vocab.json` | 5169 | 考研英语词汇 |
+| `schools.json` | 16 | 院校列表 |
 
-**现状：** 占位符。一句话描述。
+### concepts.json 结构（样本）
 
-**要做：**
-- 左侧章节导航（单变量描述 → 概率 → 假设检验 → 回归…），右侧公式卡片列表
-- 公式卡片：名称 + 公式（等宽字体 `<code>`）+ 使用条件 + 计算示例
-- 数据源优先级：lcwiki 28 个方法概念 md > concepts.json 统计学章节 > 手写补充
-- 样式复用 `.card`、`.method-card-grid`
-
-**参考样式：** 行 598-621 `.method-card` 已有展开卡片样式，公式卡片类似
-
-### 1.2 统计练习 UI（sub-met-stat，行 1095-1101）
-
-**现状：** 占位符。
-
-**要做：**
-- 题目列表，每题：题干 + "显示答案"按钮 + 完整解答
-- 按章节筛选（假设检验 / 回归 / 方差分析 / 非参数）
-- 难度标签（简单/中等/困难）
-- 初期硬编码 10-15 道经典计算题
-
-### 1.3 研究设计 UI（sub-met-design，行 1103-1109）
-
-**现状：** 占位符。
-
-**要做：**
-- 场景卡片：研究问题描述 + 展开看完整方案
-- 每个场景包含：概念操作化、抽样方案、数据收集方法、分析策略
-- 初期硬编码 5-8 道经典设计题（从 `方法设计.docx` OCR 文本提取）
-- 卡片样式类似 `.method-card`，点击展开
+```json
+{
+  "id": "c_5add096e",
+  "term": "社会形态论",
+  "definition": "社会形态论是马克思社会变迁理论的必要前提...",
+  "proponent": "卡尔·马克思",
+  "school": "",
+  "chapter": "理论/古典/马克思/",
+  "exam_frequency": "high",
+  "core_points": ["生产力决定生产关系", "..."],
+  "related": [{"id": "c_f6f5f5cd", "relation": "related", "term": "社会变迁理论"}],
+  "source_text": "lcwiki compile",
+  "textbook_ref": "侯钧生《西方社会学理论教程》 第61页",
+  "tags": ["古典时期", "马克思"]
+}
+```
 
 ---
 
-## 二、理论面板（panel-theory，行 910-1053）
+## P0: 必须做的（当前是占位符/假数据）
 
-当前 4 个子 Tab：概念学习 ✅、刷题/闪卡 ✅、模拟考 ❌、资料库 ✅
+### 1. 方法面板 — 公式手册
+- **现状**：`index.html` 里有 `<div id="formula-handbook">` 空壳
+- **数据**：`D:\workspace\ocr_stats_formulas_*.txt`（3个文件，统计公式 OCR 文本），需结构化后放入 data/
+- **要做的**：显示公式列表，按主题分组（描述统计/推断统计/回归），支持搜索
 
-### 2.1 概念关系图 Canvas（#graphShell，行 972-981）
+### 2. 方法面板 — 统计练习
+- **现状**：占位符 div
+- **数据**：`exams.json` 里有 154 道 `type: "计算"` 的题
+- **要做的**：随机抽题、计时、输入答案、对答案
 
-**现状：** 空 `<div>`，占位文字。
-
-**要做：**
-- 力导向图：节点=概念，连线=关联关系，颜色=学派
-- 数据源：`concepts.json` 的 `related` 字段（`{id, relation}` 格式）
-- 交互：拖拽节点、滚轮缩放、点击节点跳转概念详情
-- 可选方案：D3.js force layout（CDN 引入，不增加依赖文件）或纯 Canvas 手写
-
-### 2.2 模拟考 UI（sub-thr-exam，行 1030-1036）
-
-**现状：** 占位符。
-
-**要做：**
-- 出卷配置：概念数量、题型（名词解释/简答/论述）、限时
-- 作答区：文本框，倒计时
-- 交卷后：逐题批改（需 DeepSeek API）+ 分数 + 维度雷达图
-- 先做 UI 框架，API 接入后面再说
-
-### 2.3 概念搜索搜索框实时搜索（已有框架，需打磨）
-
-**现状：** 搜索可用但结果展示偏简陋。
-
-**优化：**
-- 搜索结果高亮匹配文字
-- 支持拼音搜索
-- 快捷键：`/` 聚焦搜索框
+### 3. 方法面板 badge 硬编码 "0"
+- **现状**：`<span class="badge">0</span>` 写死的
+- **修复**：读 `exams.json` 里方法相关题数，动态填入
 
 ---
 
-## 三、政治面板（panel-politics，行 765-836）
+## P1: 提升体验
 
-当前 5 个子 Tab：选择题刷题 ❌、错题本 ❌、分析题背诵 ❌、时政速览 ❌、资料库 ✅
+### 4. API Key 持久化
+- **现状**：输入框的值刷新就丢
+- **修复**：存 `localStorage`，页面加载时恢复
+- **key**: `deepseek_api_key`
 
-**全部是占位符。** 缺政治题库数据文件，但可先做 UI 框架：
+### 5. 概念关系图谱（Canvas）
+- **现状**：`<div id="concept-graph">` 空壳
+- **数据**：`concepts.json` 里每个概念有 `related` 数组
+- **要做的**：选中一个概念 → 画它和关联概念的节点图（用 D3.js 或 vis.js CDN）
 
-### 3.1 选择题刷题 UI（sub-pol-quiz）
-
-- 题目卡片：题干 + 4 选项 + 提交按钮 + 即时判对错
-- 模块筛选：马原/毛中特/史纲/思修
-- 进度条：已做/总数
-- 错题自动入错题本
-
-### 3.2 错题本 UI（sub-pol-wrong）
-
-- 错题列表，按模块分组
-- 每道错题可重做
-- 重做正确后移除
-
-### 3.3 分析题背诵 UI（sub-pol-essay）
-
-- 卡片式：正面 = 题目，反面 = 答题框架 + 关键词
-- SM-2 间隔复习（复用理论闪卡的 `sm2Schedule()`）
-
-### 3.4 时政速览 UI（sub-pol-news）
-
-- 热点卡片：标题 + 关联出题角度 + 素材要点
-- 按国内/国际分类
+### 6. 搜索快捷键 `/`
+- **现状**：没有键盘快捷键
+- **修复**：按 `/` → focus 搜索框
 
 ---
 
-## 四、英语面板（panel-english，行 838-908）
+## P2: 锦上添花
 
-当前 5 个子 Tab：单词本 ❌、阅读理解 ❌、作文 ❌、翻译 ❌、资料库 ✅
+### 7. Toast 通知组件
+- 操作反馈（"已复制"、"保存成功"、"AI 回复中..."）
+- 不用引入库，原生 CSS animation 就行
 
-### 4.1 单词本 UI（sub-eng-vocab）
+### 8. 设置面板 — 清除数据
+- **现状**：`alert('清除成功')` 空壳
+- **修复**：弹确认框 → 清 localStorage → 刷新
 
-- 复用 SM-2 闪卡引擎（`sm2Schedule()` 行 1508）
-- 正面英文 → 反面中文 + 例句
-- 待复习 / 新词 / 已掌握 三栏统计
-- 数据源：需英语词库 JSON，暂无
-
-### 4.2 作文 UI（sub-eng-write）
-
-- data/ 下已有 4 个作文模板 txt（大/小作文 背诵+模板），但未渲染
-- 模板列表 + 展开看全文
-- AI 批改框：粘贴作文 → DeepSeek 批改（API 接入后）
-
-### 4.3 阅读/翻译 UI
-
-- 阅读理解：真题文章 + 题目 + 逐段翻译对照
-- 翻译：长难句拆解，手动输入译文对比
-- 都需要真题数据文件
+### 9. 概念对比模式
+- 选 2-3 个概念并排显示（term/definition/proponent/异同点）
 
 ---
 
-## 五、Dashboard（行 678-763）
+## 不需要做的
 
-基本可用，小修：
-
-### 5.1 方法卡片统计修正（行 1834-1843）
-
-方法卡片显示 `metReviewed/metConcepts`，逻辑已写但用的是 `isMethodsConcept()` 过滤，数据依赖 concepts.json 加载。确认功能正常即可。
-
-### 5.2 侧边栏 Badge 修正（行 649，行 1231-1233）
-
-方法 Badge 写死 `0`。已有 `updateDashStats()` 里的更新逻辑（行 1232-1233），加载 concepts.json 后自动更新到 559。检查是否生效。
+- 政治面板（选择题/错题本/材料分析题/时政）
+- 英语面板（词汇/阅读/写作/翻译）
+- 模拟考 UI
+- 研究设计 UI
+- DeepSeek API 客户端（AI 对话/出题）
 
 ---
 
-## 六、Settings 面板（行 1128-1166）
+## 技术约束
 
-### 6.1 API Key 持久化
-
-- 输入框 `apiKeyShell`、`apiModelShell` 无 JS 读写
-- localStorage key: `socio_apikey_v1`
-- oninput 自动保存，页面加载恢复
-
-### 6.2 清除数据按钮
-
-- 行 1153 的按钮 `alert('数据清除功能将在正式版开放')` → 替换为真实清除 localStorage
+- **单文件**：所有 HTML+CSS+JS 在 `web/index.html`，不改架构
+- **无框架**：原生 JS，不引入 React/Vue
+- **CDN 库**：如需图表用 Chart.js CDN，图谱用 vis.js CDN
+- **CSS 变量**：已有完整 design system（4 科主题色 + 暗色模式），复用 `var(--*)`
+- **数据路径**：所有 fetch 用相对路径 `data/xxx.json?v=N`，版本号手动管理
 
 ---
 
-## 七、全局
+## 验证
 
-### 7.1 DeepSeek API 客户端
-
-- 无任何外部 API 调用代码
-- 需要：`callDeepSeek(systemPrompt, userPrompt)` → 返回文本
-- API 格式：`POST https://api.deepseek.com/chat/completions`，Bearer 认证，model: deepseek-chat
-- 接入后激活：模拟考批改、英语作文批改、AI 出题
-
-### 7.2 Toast 提示组件
-
-- 页面右上角滑入提示，3 秒消失
-- 用于 API 错误、操作反馈
-
-### 7.3 删除中间产物
-
-`D:\workspace\` 下临时脚本：`_extract_docx.py`, `_pdf_classify.py`, `_ocr_batch.py`, `_ocr_g1.py`, `_ocr_g2.py`, `_dpi_test.py`, `_ocr_worker.py`, `_ocr_parallel.py`，OCR 全完成后删。
-
----
-
-## 优先级建议
-
-| 优先级 | 项目 | 理由 |
-|--------|------|------|
-| 🔴 P0 | 方法公式手册 UI | 方法面板最核心，有数据源可直接用 |
-| 🔴 P0 | 方法统计练习 UI | 同上，数据结构简单 |
-| 🟡 P1 | 概念关系图 Canvas | 视觉效果最好，数据现成 |
-| 🟡 P1 | API Key 持久化 | 15 行 JS，不堵路 |
-| 🟡 P1 | DeepSeek API 客户端 | 所有 AI 功能的基建 |
-| 🟢 P2 | 理论模拟考 UI | 依赖 API，先做壳 |
-| 🟢 P2 | 方法研究设计 UI | 依赖 DOCX OCR 文本 |
-| ⚪ P3 | 政治面板 | 缺题库数据文件 |
-| ⚪ P3 | 英语面板 | 缺词库+真题数据 |
+1. 本地起服：`cd web && python -m http.server 8765`
+2. 浏览器打开 `http://localhost:8765`
+3. 检查：概念列表加载正常、搜索可用、分类面包屑正常
+4. `deploy.sh` 推到 cykaoyan.top

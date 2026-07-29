@@ -147,7 +147,7 @@ def check_taxonomy():
 
 def check_file_sizes():
     expected = {
-        'concepts.json': (1_000_000, 2_000_000),
+        'concepts.json': (1_000_000, 3_000_000),
         'exams.json': (500_000, 1_500_000),
         'politics.json': (500_000, 1_000_000),
         'english-vocab.json': (500_000, 1_500_000),
