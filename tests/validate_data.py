@@ -30,6 +30,10 @@ def check_concepts():
     data = load('concepts.json')
     if not data: return
     ids, no_id = [], 0
+
+    # Semantic quality counters
+    sem_warn = Counter()
+
     for i, c in enumerate(data):
         if not isinstance(c, dict): err(f"concepts[{i}] not a dict"); continue
         for field in ['id', 'term', 'definition']:
@@ -37,9 +41,49 @@ def check_concepts():
                 err(f"concepts[{i}] missing '{field}' (term={str(c.get('term','?'))[:30]})")
         if c.get('id'): ids.append(c['id'])
         else: no_id += 1
+
+        # === Semantic quality checks (warnings only, not hard errors) ===
+        term = c.get('term', '').strip()
+        definition = c.get('definition', '').strip()
+        source = c.get('source_text', '').strip()
+
+        # 1. Definition must not start with narrative markers
+        if definition and definition[:1] in '在根据随着关于从对':
+            sem_warn['narrative_start'] += 1
+
+        # 2. Definition length: 15-500 chars
+        if len(definition) < 15:
+            sem_warn['def_too_short'] += 1
+        elif len(definition) > 500:
+            sem_warn['def_too_long'] += 1
+
+        # 3. Term must not be a chapter title
+        import re
+        if re.match(r'^(第[一二三四五六七八九十\d]+[章节篇]|[一二三四五六七八九十\d]+[、.\)）]|\d+[\.\、])', term):
+            sem_warn['term_is_chapter'] += 1
+
+        # 4. Definition must not contain textbook language
+        if any(w in definition[:120] for w in ['本章', '本书', '该书']):
+            sem_warn['textbook_language'] += 1
+
+        # 5. Definition should contain at least one sentence-ending period
+        if len(definition) >= 20 and '。' not in definition:
+            sem_warn['no_period'] += 1
+
+        # 6. source_text should be non-empty (informational)
+        if not source:
+            sem_warn['no_source_text'] += 1
+
     dupes = [id_ for id_, count in Counter(ids).items() if count > 1]
     for d in dupes: err(f"concepts.json duplicate id: {d}")
     print(f"  [OK] concepts.json: {len(data)} entries, {len(dupes)} dupes, {no_id} missing-id")
+
+    # Print semantic warnings
+    if sem_warn:
+        total_warn = sum(sem_warn.values())
+        print(f"  [WARN] Semantic quality issues: {total_warn} total")
+        for k, v in sem_warn.most_common():
+            print(f"         {k}: {v}")
 
 def check_exams():
     data = load('exams.json')
