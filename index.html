@@ -1094,50 +1094,19 @@ table.tbl tr:nth-child(even) td {
     </div>
   </div>
 
-  <!-- Bottom: Tasks + Stats -->
+  <!-- Today's Summary -->
   <div class="dash-bottom">
-    <!-- Today's Tasks -->
     <div class="card">
-      <div class="card-header"><span class="ch-icon">📋</span>今日任务</div>
-      <div id="taskList">
-        <div class="task-item">
-          <span class="task-check">✓</span>
-          <span class="task-tag pol">政治</span>
-          <span>马原 · 唯物辩证法 单选×20</span>
-        </div>
-        <div class="task-item">
-          <span class="task-check">✓</span>
-          <span class="task-tag eng">英语</span>
-          <span>阅读精练 2010 Text 2</span>
-        </div>
-        <div class="task-item">
-          <span class="task-check done">✓</span>
-          <span class="task-tag thr">理论</span>
-          <span style="text-decoration:line-through;opacity:.5">布迪厄 惯习+场域 简答×2</span>
-        </div>
-        <div class="task-item">
-          <span class="task-check">✓</span>
-          <span class="task-tag met">方法</span>
-          <span>抽样方法 概念对比×5</span>
-        </div>
+      <div class="card-header"><span class="ch-icon">📊</span>今日学习摘要</div>
+      <div class="stat-row" id="todaySummary">
+        <div class="stat-cell"><div class="sv" id="tsQuiz">—</div><div class="sl">刷题数</div></div>
+        <div class="stat-cell"><div class="sv" id="tsAccuracy">—</div><div class="sl">正确率</div></div>
+        <div class="stat-cell"><div class="sv" id="tsConcepts">—</div><div class="sl">浏览概念</div></div>
+        <div class="stat-cell"><div class="sv" id="tsFlash">—</div><div class="sl">闪卡复习</div></div>
       </div>
-    </div>
-
-    <!-- Weekly Stats -->
-    <div class="card">
-      <div class="card-header"><span class="ch-icon">📊</span>本周统计</div>
-      <div class="stat-row">
-        <div class="stat-cell"><div class="sv">—</div><div class="sl">刷题数</div></div>
-        <div class="stat-cell"><div class="sv">—</div><div class="sl">正确率</div></div>
-        <div class="stat-cell"><div class="sv">—</div><div class="sl">学习天数</div></div>
-      </div>
-      <div style="margin-top:16px;padding-top:14px;border-top:1px solid var(--border-light)">
-        <div class="card-header" style="margin-bottom:8px;"><span class="ch-icon">🎯</span>薄弱维度</div>
-        <div style="display:flex;gap:8px;flex-wrap:wrap">
-          <span style="font-size:12px;padding:4px 10px;background:var(--bad-bg);color:var(--bad);border-radius:12px;font-weight:600">术语准确性</span>
-          <span style="font-size:12px;padding:4px 10px;background:var(--warn-bg);color:var(--warn);border-radius:12px;font-weight:600">逻辑严密性</span>
-          <span style="font-size:12px;padding:4px 10px;background:var(--warn-bg);color:var(--warn);border-radius:12px;font-weight:600">案例运用</span>
-        </div>
+      <div style="margin-top:14px;padding-top:12px;border-top:1px solid var(--border-light)">
+        <div class="card-header" style="margin-bottom:6px;"><span class="ch-icon">🎯</span>刷题建议</div>
+        <div id="studySuggestion" style="font-size:13px;color:var(--lead);line-height:1.7">加载中…</div>
       </div>
     </div>
   </div>
@@ -2506,6 +2475,15 @@ function showConceptDetail(id) {
   const relLabels = {prerequisite:'前置', parallel:'并列', successor:'后继', opposes:'对立',
     contains:'包含', applies_to:'应用于', develops_from:'继承', school_of:'学派'};
 
+  // 记录概念浏览到 Dashboard (socio_concept_views_v1)
+  try {
+    var _views = JSON.parse(localStorage.getItem('socio_concept_views_v1') || '{}');
+    var _today = new Date().toISOString().slice(0, 10);
+    if (!_views[_today]) _views[_today] = [];
+    if (!_views[_today].includes(id)) _views[_today].push(id);
+    localStorage.setItem('socio_concept_views_v1', JSON.stringify(_views));
+  } catch(_e) {}
+
   detailContent.innerHTML = `
     <h3>${escHtml(cleanText(c.term))}${c.exam_frequency === 'high' ? '<span class="tag tag-hard">高频</span>' : c.exam_frequency === 'medium' ? '<span class="tag tag-medium">常考</span>' : ''}</h3>
     <div class="field"><div class="field-label">定义</div><div class="field-value">${escHtml(cleanText(c.definition))}</div></div>
@@ -3201,7 +3179,7 @@ function rateThrFlash(quality) {
 
   if (thrFlashSession.idx >= queue.length) {
     _showThrSummary();
-    updateDashStats();
+    updateTodaySummary();
   } else {
     setTimeout(_renderThrCard, 180);
   }
@@ -3470,163 +3448,88 @@ function renderMetCards() {
   grid.innerHTML = data.map(renderMethodCard).join('');
 }
 
-// ===== Task List Persistence =====
-var LS_TASKS = 'socio_tasks_v2';
-var todayTasks = [];
-
-function loadTasks() {
-  var today = new Date().toISOString().slice(0, 10);
-  var raw = localStorage.getItem(LS_TASKS);
-  var all = {};
-  try { all = JSON.parse(raw || '{}'); } catch(e) {}
-  // Migrate or init — preserve existing data
-  if (!all._version || all._version < 2) {
-    all._version = 2;
-  }
-  // Get today's tasks or init defaults
-  if (all._day !== today) {
-    // Keep overdue incomplete tasks
-    var prev = (all._day && all[all._day]) ? all[all._day] : [];
-    var carry = prev.filter(function(t) { return !t.done; });
-    all._day = today;
-    all[today] = carry.length ? carry : [
-      { id: 't1', tag: 'pol', text: '马原 · 唯物辩证法 单选×20', done: false },
-      { id: 't2', tag: 'eng', text: '阅读精练 2010 Text 2', done: false },
-      { id: 't3', tag: 'thr', text: '布迪厄 惯习+场域 简答×2', done: false },
-      { id: 't4', tag: 'met', text: '抽样方法 概念对比×5', done: false },
-      { id: 't5', tag: 'thr', text: '闪卡复习 20 个概念', done: false }
-    ];
-  }
-  todayTasks = all[today] || [];
-  try { localStorage.setItem(LS_TASKS, JSON.stringify(all)); } catch(e) {}
-}
-
-function saveTasks() {
-  var raw = localStorage.getItem(LS_TASKS);
-  var all = {};
-  try { all = JSON.parse(raw || '{}'); } catch(e) {}
-  all[all._day || new Date().toISOString().slice(0, 10)] = todayTasks;
-  try { localStorage.setItem(LS_TASKS, JSON.stringify(all)); } catch(e) {}
-}
-
-function renderTasks() {
-  loadTasks();
-  var container = document.getElementById('taskList');
-  if (!container) return;
-
-  var tags = { pol: '政治', eng: '英语', thr: '理论', met: '方法' };
-  container.innerHTML = todayTasks.map(function(t) {
-    return '<div class="task-item" role="checkbox" aria-checked="' + (t.done ? 'true' : 'false') + '" tabindex="0" onclick="toggleTask(\'' + escHtml(t.id) + '\')" onkeydown="if(event.key===\'Enter\'||event.key===\' \'){event.preventDefault();toggleTask(\'' + escHtml(t.id) + '\')}">' +
-      '<span class="task-check' + (t.done ? ' done' : '') + '">' + (t.done ? '✓' : '') + '</span>' +
-      '<span class="task-tag ' + escHtml(t.tag) + '">' + escHtml(tags[t.tag] || t.tag) + '</span>' +
-      '<span' + (t.done ? ' style="text-decoration:line-through;color:var(--lead)"' : '') + '>' + escHtml(t.text) + '</span>' +
-    '</div>';
-  }).join('');
-
-  updateDashStats();
-}
-
-function toggleTask(id) {
-  var t = todayTasks.find(function(x) { return x.id === id; });
-  if (t) { t.done = !t.done; }
-  saveTasks();
-  renderTasks();
-}
-
-// ===== Dashboard Stats (live) =====
-function updateDashStats() {
+// ===== Today's Learning Summary =====
+function updateTodaySummary() {
   loadFlashState();
+  loadPolWrong();
   var today = new Date().toISOString().slice(0, 10);
 
-  // Flashcard stats
-  var totalReviewed = Object.keys(flashState).length;
-  var dueCount = Object.values(flashState).filter(function(s) { return s.due <= today; }).length;
+  // 1. Quiz count today (politics + mock exam log)
+  var quizToday = 0, quizCorrect = 0;
+  Object.values(polWrongState).forEach(function(w) {
+    if (w._done) { quizToday++; if (w.correct) quizCorrect++; }
+  });
+  try {
+    var examLog = JSON.parse(localStorage.getItem('socio_exam_log_v1') || '[]');
+    examLog.forEach(function(e) {
+      if (e.date === today) { quizToday += (e.total || 0); quizCorrect += (e.correct || 0); }
+    });
+  } catch(e) {}
 
-  // Last 7 days review count
-  var weekAgo = new Date(Date.now() - 7 * 86400000).toISOString().slice(0, 10);
-  var weekReviews = Object.values(flashState).filter(function(s) {
-    return s.lastReview && s.lastReview >= weekAgo;
+  // 2. Flashcard reviews today
+  var flashToday = Object.values(flashState).filter(function(s) {
+    return s.lastReview === today;
   }).length;
 
-  // Quality distribution
-  var totalQ = 0, qCount = 0;
-  Object.values(flashState).forEach(function(s) {
-    if (s.lastQ) { totalQ += s.lastQ; qCount++; }
-  });
-  var avgQ = qCount > 0 ? Math.round(totalQ / qCount * 20) : 0; // 0-100 scale
+  // 3. Concepts viewed today
+  var conceptViewsToday = 0;
+  try {
+    var viewLog = JSON.parse(localStorage.getItem('socio_concept_views_v1') || '{}');
+    conceptViewsToday = (viewLog[today] || []).length;
+  } catch(e) {}
 
-  // Study days this week
-  var studyDays = new Set();
-  Object.values(flashState).forEach(function(s) {
-    if (s.lastReview && s.lastReview >= weekAgo) studyDays.add(s.lastReview);
-  });
-  // Also count today if tasks done
-  if (todayTasks.some(function(t) { return t.done; })) studyDays.add(today);
+  // 4. Accuracy
+  var accuracy = quizToday > 0 ? Math.round(quizCorrect / quizToday * 100) : null;
 
-  // Update stat cells
-  var statCells = document.querySelectorAll('.stat-cell .sv');
-  if (statCells.length >= 3) {
-    statCells[0].textContent = weekReviews || '—';
-    statCells[1].textContent = qCount > 0 ? avgQ + '%' : '—';
-    statCells[2].textContent = studyDays.size || '—';
+  // Update DOM
+  var tsQuiz = document.getElementById('tsQuiz');
+  var tsAccuracy = document.getElementById('tsAccuracy');
+  var tsConcepts = document.getElementById('tsConcepts');
+  var tsFlash = document.getElementById('tsFlash');
+  if (tsQuiz) tsQuiz.textContent = quizToday || '—';
+  if (tsAccuracy) tsAccuracy.textContent = accuracy !== null ? accuracy + '%' : '—';
+  if (tsConcepts) tsConcepts.textContent = conceptViewsToday || '—';
+  if (tsFlash) tsFlash.textContent = flashToday || '—';
+
+  // Smart suggestion
+  var suggestion = document.getElementById('studySuggestion');
+  if (suggestion) {
+    var tips = [];
+    if (quizToday === 0 && flashToday === 0 && conceptViewsToday === 0) {
+      tips.push('今天还没开始学习——刷 20 道政治选择暖暖手，或者浏览几个理论概念');
+    } else {
+      var wrongCount = Object.values(polWrongState).filter(function(w) { return w._done && !w.correct; }).length;
+      if (wrongCount > 10) tips.push(wrongCount + ' 道错题待复习，去「政治 → 错题本」巩固一下');
+      var dueFlash = Object.values(flashState).filter(function(s) { return s.due <= today; }).length;
+      if (dueFlash > 5) tips.push(dueFlash + ' 个概念到期待复习，打开「理论 → 闪卡」刷一轮');
+    }
+    if (!tips.length) tips.push('状态不错，继续保持！可以挑战一套模拟卷');
+    suggestion.innerHTML = tips.map(function(t) { return '• ' + t; }).join('<br>');
   }
 
-  // Update theory card
-  var thrConceptsDash = concepts.filter(function(c) { var ch = c.chapter || ''; return ch.indexOf('理论/') === 0 || ch.indexOf('社会学理论/') === 0; });
+  // Update subject card progress bars
+  updateSubjectCards();
+}
+
+function updateSubjectCards() {
+  if (!concepts.length) return;
+  loadFlashState();
+
+  var thrConceptsDash = concepts.filter(function(c) {
+    var ch = c.chapter || ''; return ch.indexOf('理论/') === 0 || ch.indexOf('社会学理论/') === 0;
+  });
   var thrReviewed = thrConceptsDash.filter(function(c) { return !!flashState[c.id]; }).length;
   var thrPct = document.querySelector('.subj-card.thr .sc-pct');
-  if (thrPct && thrConceptsDash.length) {
-    thrPct.textContent = thrReviewed + '/' + thrConceptsDash.length;
-  }
+  if (thrPct && thrConceptsDash.length) thrPct.textContent = thrReviewed + '/' + thrConceptsDash.length;
   var thrBar = document.querySelector('.subj-card.thr .sc-bar-inner');
-  if (thrBar && thrConceptsDash.length) {
-    thrBar.style.width = Math.round(thrReviewed / thrConceptsDash.length * 100) + '%';
-  }
+  if (thrBar && thrConceptsDash.length) thrBar.style.width = Math.round(thrReviewed / thrConceptsDash.length * 100) + '%';
 
-  // Update methods card (only methods concepts)
   var metConcepts = concepts.filter(isMethodsConcept);
   var metReviewed = metConcepts.filter(function(c) { return !!flashState[c.id]; }).length;
   var metPct = document.querySelector('.subj-card.met .sc-pct');
-  if (metPct && metConcepts.length) {
-    metPct.textContent = metReviewed + '/' + metConcepts.length;
-  }
+  if (metPct && metConcepts.length) metPct.textContent = metReviewed + '/' + metConcepts.length;
   var metBar = document.querySelector('.subj-card.met .sc-bar-inner');
-  if (metBar && metConcepts.length) {
-    metBar.style.width = Math.round(metReviewed / metConcepts.length * 100) + '%';
-  }
-
-  // Weak dimensions from quality scores
-  updateWeakDims();
-}
-
-function updateWeakDims() {
-  var container = document.getElementById('weakDimsContainer') || document.querySelector('#panel-dashboard .dash-bottom .card:last-child div[style*="flex-wrap"]');
-  if (!container) return;
-
-  // Simple heuristic based on review quality
-  var lowQualityCount = 0;
-  Object.values(flashState).forEach(function(s) {
-    if (s.lastQ && s.lastQ < 3) lowQualityCount++;
-  });
-
-  var dims = [];
-  if (lowQualityCount > 0) {
-    dims.push({ label: '术语准确性', level: 'bad' });
-    dims.push({ label: '逻辑严密性', level: 'warn' });
-  }
-  if (Object.keys(flashState).length < 50) {
-    dims.push({ label: '覆盖广度', level: 'warn' });
-  }
-  if (!dims.length) {
-    dims.push({ label: '暂无数据', level: 'info' });
-  }
-
-  var colors = { bad: 'var(--bad)', warn: 'var(--warn)', info: 'var(--lead)' };
-  var bgs = { bad: 'var(--bad-bg)', warn: 'var(--warn-bg)', info: 'var(--surface2)' };
-
-  container.innerHTML = dims.map(function(d) {
-    return '<span style="font-size:12px;padding:4px 10px;background:' + bgs[d.level] + ';color:' + colors[d.level] + ';border-radius:12px;font-weight:600">' + d.label + '</span>';
-  }).join('');
+  if (metBar && metConcepts.length) metBar.style.width = Math.round(metReviewed / metConcepts.length * 100) + '%';
 }
 
 // ===== Worker Backend =====
@@ -5091,7 +4994,7 @@ loadConcepts().then(function() {
     if (thrFilter.options[3]) thrFilter.options[3].textContent = '新概念 (' + newCount + ')';
   }
   // Update dash stats AFTER concepts are loaded
-  updateDashStats();
+  updateTodaySummary();
 });
 initResources();
 // Methods search: proper event listener (more reliable than inline oninput)
@@ -5126,7 +5029,7 @@ document.addEventListener('click', function(e) {
 });
 
 initDash();
-renderTasks();
+updateTodaySummary();
 updateDashboardPolStats();
 renderPolQuiz('all');
 </script>
