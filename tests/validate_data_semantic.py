@@ -203,29 +203,31 @@ def check_concept_name_noise():
     ok(f"Rule 5 (name noise): {len(noisy)} noisy concept names")
 
 
-# ===== Rule 6: concepts — 定义完全相同 =====
+# ===== Rule 6: concepts — 定义前60字(去空白)重复 =====
 def check_duplicate_definitions():
     data = load('concepts.json')
     if not data:
         return
 
-    # 找长度 > 20 的完全相同定义
+    import re
+    # 定义前60字（去空白）相同 → 疑似重复/共用引导语
     def_map = defaultdict(list)
     for i, c in enumerate(data):
         d = c.get('definition', '')
         if len(d) > 20:
-            def_map[d].append((i, c.get('term', '?'), c.get('id', '?')))
+            key = re.sub(r'\s+', '', d[:60])
+            def_map[key].append((i, c.get('term', '?'), c.get('id', '?')))
 
     dupes = []
     for d, entries in def_map.items():
         if len(entries) > 1:
             names = [e[1] for e in entries]
-            dupes.append((names, d[:80]))
+            dupes.append((names, d[:60]))
 
     for names, snippet in dupes:
-        warn(f"完全相同定义: {', '.join(names)} -> \"{snippet}...\"")
+        warn(f"定义前60字重复: {', '.join(names)} -> \"{snippet}...\"")
 
-    ok(f"Rule 6 (dup defs): {len(dupes)} groups with identical definitions")
+    ok(f"Rule 6 (dup defs): {len(dupes)} groups with same 60-char prefix")
 
 
 # ===== Rule 7 (bonus): politics stem length anomaly =====

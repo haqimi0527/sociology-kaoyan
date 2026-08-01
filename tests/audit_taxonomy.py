@@ -55,7 +55,7 @@ for cid in theory_ids | intro_ids:
     c = cmap.get(cid)
     if not c: continue
     ch = c.get('chapter', '')
-    if '研究方法' in ch or '社会学研究方法' in ch:
+    if '研究方法' in ch or '社会学研究方法' in ch or ch.startswith('方法/'):
         issue('ERR', 'methods-in-theory',
               f"{c['term']}: chapter={ch} but in theory/intro")
 

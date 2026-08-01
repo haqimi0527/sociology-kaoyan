@@ -78,6 +78,102 @@ def check_concepts():
     for d in dupes: err(f"concepts.json duplicate id: {d}")
     print(f"  [OK] concepts.json: {len(data)} entries, {len(dupes)} dupes, {no_id} missing-id")
 
+    # === 方向3 增强 5 项 ===
+    # 7. ERROR 定义前60字(去空白)查重（白名单豁免）
+    # 白名单：tests/config/approved_def_prefix_dups.json
+    approved_def_terms = set()
+    approved_path = os.path.join(os.path.dirname(__file__), 'config', 'approved_def_prefix_dups.json')
+    if os.path.exists(approved_path):
+        try:
+            _approved = json.load(open(approved_path, encoding='utf-8')).get('approved', [])
+            for g in _approved:
+                approved_def_terms.update(g.get('terms', []))
+        except (json.JSONDecodeError, IOError):
+            pass
+    def_prefix = Counter()
+    def_prefix_terms = {}
+    for c in data:
+        d = c.get('definition', '') or ''
+        if len(d) < 20:
+            continue
+        key = re.sub(r'\s+', '', d[:60])
+        def_prefix[key] += 1
+        if key not in def_prefix_terms:
+            def_prefix_terms[key] = c.get('term', '')
+    for key, cnt in def_prefix.items():
+        if cnt > 1:
+            # 组内所有 term 都在白名单 → 豁免
+            group_terms = [c.get('term', '') for c in data
+                           if re.sub(r'\s+', '', (c.get('definition', '') or '')[:60]) == key]
+            if all(t in approved_def_terms for t in group_terms):
+                continue
+            err(f"定义前60字重复: '{def_prefix_terms[key]}' 等 {cnt} 条 → {key[:30]}...")
+
+    # 8. WARN term规范化查重（去括号/标点后重复，排除精确同名）
+    norm_terms = Counter()
+    norm_terms_example = {}
+    for c in data:
+        t = c.get('term', '').strip()
+        nt = re.sub(r'[（）()\s,，。、；;：:]', '', t)
+        if nt:
+            norm_terms[nt] += 1
+            if nt not in norm_terms_example:
+                norm_terms_example[nt] = t
+    for nt, cnt in norm_terms.items():
+        if cnt > 1:
+            sem_warn['term_norm_dup'] += 1
+            if cnt == 2:  # 只 warn，不打断
+                pass
+    # 打印 term 规范化重复组
+    term_norm_groups = [(t, c_) for t, c_ in norm_terms.items() if c_ > 1]
+    if term_norm_groups:
+        print(f"  [WARN] term规范化重复组: {len(term_norm_groups)}")
+        for t, c_ in term_norm_groups[:8]:
+            print(f"         '{norm_terms_example[t]}' x{c_}")
+
+    # 9. ERROR chapter顶层白名单 {理论,方法,概论,未分类,''(空)}
+    bad_top = Counter()
+    for c in data:
+        ch = c.get('chapter', '') or ''
+        top = ch.split('/')[0] if ch else ''
+        if top and top not in ('理论', '方法', '概论', '未分类'):
+            bad_top[top] += 1
+    if bad_top:
+        err(f"chapter顶层白名单违规: {dict(bad_top)}")
+
+    # 10. WARN term碎片检测
+    from collections import Counter as _C
+    frag_cnt = 0
+    for c in data:
+        t = (c.get('term', '') or '').strip()
+        # 残句/泛化词特征
+        if (t.endswith(('的', '之', '中', '下', '与', '及', '或'))
+                or re.match(r'^(一是|二是|三是|不同之处|具体来说|如下|包括|分为|在于)', t)
+                or re.match(r'^例\d+', t)
+                or '如何' in t or '怎样' in t or '为什么' in t
+                or t in ('过程与步骤', '作用与重要性', '要求与问题', '怎么做', '解决措施', '优缺点')):
+            frag_cnt += 1
+            sem_warn['term_fragment'] += 1
+    if frag_cnt:
+        print(f"  [WARN] term碎片: {frag_cnt} 条")
+
+    # 11. WARN 人名目录检测（理论/ 直接挂学者名）
+    scholar_dir_cnt = 0
+    import sys as _sys
+    try:
+        _sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+        from pipeline.utils.concept_utils import SCHOLAR_NAMES
+    except ImportError:
+        SCHOLAR_NAMES = set()
+    for c in data:
+        ch = c.get('chapter', '') or ''
+        parts = [p for p in ch.split('/') if p]
+        if parts and parts[0] == '理论' and len(parts) == 2 and parts[1] in SCHOLAR_NAMES:
+            scholar_dir_cnt += 1
+            sem_warn['scholar_dir'] += 1
+    if scholar_dir_cnt:
+        print(f"  [WARN] 人名目录(理论/学者名): {scholar_dir_cnt} 条")
+
     # Print semantic warnings
     if sem_warn:
         total_warn = sum(sem_warn.values())
