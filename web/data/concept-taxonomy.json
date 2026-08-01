@@ -71,7 +71,6 @@
               "c_860b4b6a",
               "c_97aea108",
               "c_50d8ad8a",
-              "c_df91ea9e",
               "c_07474ed7",
               "c_5299a9a2",
               "c_c003edf4",
@@ -143,7 +142,6 @@
               "c_20390df3",
               "c_a07ecb0f",
               "c_66dc4e07",
-              "c_d0e92836",
               "c_791ee007",
               "c_d9811e2e",
               "c_f5d39e0e",
@@ -279,7 +277,6 @@
               "lc_6568da86",
               "lc_47a6305e",
               "lc_3eebe283",
-              "c_25d10259",
               "c_a106ea17",
               "c_b65345b255",
               "c_bf4bac6445",
@@ -1014,7 +1011,6 @@
               "c_3006ec29",
               "lc_8a8b895f",
               "lc_2bd9cdee",
-              "lc_11edb385",
               "lc_3f03637f",
               "lc_ff3d825c",
               "lc_abd71752",
@@ -1120,7 +1116,6 @@
               "c_0f13b8a0",
               "c_f78a5244",
               "c_87494089",
-              "c_eff867e1",
               "c_24b852d2",
               "c_32a781aa"
             ]
@@ -1172,7 +1167,6 @@
               "c_75b17209",
               "c_3b7331f3",
               "c_9efcc61a",
-              "c_d76d1bc5",
               "c_14b7857c",
               "c_d137e33c",
               "c_c3f70203",
@@ -1311,7 +1305,6 @@
               "c_c3647e83",
               "c_a87d0c86",
               "c_8f7efd99",
-              "c_5368b31d",
               "c_7906acba",
               "c_c19b3cbf",
               "c_bbb3e7cc",
@@ -1451,7 +1444,6 @@
         },
         "理论与研究关系": {
           "concepts": [
-            "c_fd5cca17",
             "c_ef9b8b2c",
             "c_36df8081",
             "c_67fd6ec0",
@@ -1487,7 +1479,6 @@
             "c_0ed8bf7a",
             "c_5d1b6f26",
             "c_13a51a5a",
-            "c_26763906",
             "c_8b062857",
             "c_7023e8a204",
             "c_46fd796d",
@@ -1618,7 +1609,6 @@
       "categories": {
         "研究类型": {
           "concepts": [
-            "m_专题小组",
             "m_个案式解释",
             "m_历时研究",
             "m_扩展个案研究",
@@ -1649,7 +1639,6 @@
           "concepts": [
             "m_层次谬误",
             "c_4258d7b9",
-            "c_ecologicalfalla",
             "c_c8bd1723",
             "c_ebe4701d",
             "c_18f33a4b",
@@ -1710,7 +1699,6 @@
             "m_评分者信度",
             "m_社会计量法",
             "m_拟合优度",
-            "m_校标效度",
             "m_定序尺度",
             "m_定距尺度",
             "c_101bebb6",
@@ -1757,7 +1745,6 @@
             "c_fefadc379e",
             "c_5b9085f8",
             "c_6400aac0",
-            "c_437a14ba",
             "c_a225c0b6",
             "c_7692d003",
             "c_f6ae943f",
@@ -1796,7 +1783,6 @@
             "c_84651d49",
             "c_multistagesampl",
             "c_accidentalsampl",
-            "c_judgmentalsampl",
             "c_2c5c0849",
             "c_c9f720f4",
             "c_4d37728d",
@@ -1957,7 +1943,6 @@
             "c_34f55ab9",
             "m_描述统计",
             "m_频数分布",
-            "c_055567ee",
             "m_集中趋势分析",
             "m_离散趋势分析",
             "m_中位数",
@@ -2314,7 +2299,6 @@
         "c_fefadc3749",
         "c_fefadc374a",
         "c_fefadc374c",
-        "c_fefadc37b3",
         "c_779ca1ee"
       ]
     },
@@ -2464,12 +2448,12 @@
     }
   },
   "_meta": {
-    "total_concepts": 1988,
-    "classified": 1988,
+    "total_concepts": 1972,
+    "classified": 1972,
     "unclassified": 0,
-    "theory_count": 1077,
-    "methods_count": 565,
-    "intro_count": 346,
+    "theory_count": 1070,
+    "methods_count": 557,
+    "intro_count": 345,
     "unclassified_terms": []
   }
 }
