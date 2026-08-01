@@ -12,8 +12,8 @@
 
 | 文件 | 变化 |
 |------|------|
-| `web/data/concepts.json` | 2457 → **2332 条**（+26 南大真概念+6 短定义真概念，-156 合并重复，-1 相倚问题合并） |
-| `web/data/concept-taxonomy.json` | classified 2212→**2332/2332**，unclassified 245→**0** |
+| `web/data/concepts.json` | 2457 → **2251 条**（+32 南大真概念，-156 合并重复，-1 相倚合并，-67 碎片/OCR/主题短语清理） |
+| `web/data/concept-taxonomy.json` | classified 2212→**2251/2251**，unclassified 245→**0** |
 | chapter 字段 | `社会学研究方法/` 全部归一到 `方法/`；`理论/古典/`→`理论/古典时期/`；学者直挂展开（`理论/帕森斯/`→`理论/现代时期/结构功能主义/帕森斯/`） |
 
 **validate 已过**：`bash scripts/verify.sh` 全绿。
