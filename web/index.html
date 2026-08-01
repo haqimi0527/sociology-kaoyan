@@ -2475,6 +2475,15 @@ function showConceptDetail(id) {
   const relLabels = {prerequisite:'前置', parallel:'并列', successor:'后继', opposes:'对立',
     contains:'包含', applies_to:'应用于', develops_from:'继承', school_of:'学派'};
 
+  // 记录概念浏览到 Dashboard (socio_concept_views_v1)
+  try {
+    var _views = JSON.parse(localStorage.getItem('socio_concept_views_v1') || '{}');
+    var _today = new Date().toISOString().slice(0, 10);
+    if (!_views[_today]) _views[_today] = [];
+    if (!_views[_today].includes(id)) _views[_today].push(id);
+    localStorage.setItem('socio_concept_views_v1', JSON.stringify(_views));
+  } catch(_e) {}
+
   detailContent.innerHTML = `
     <h3>${escHtml(cleanText(c.term))}${c.exam_frequency === 'high' ? '<span class="tag tag-hard">高频</span>' : c.exam_frequency === 'medium' ? '<span class="tag tag-medium">常考</span>' : ''}</h3>
     <div class="field"><div class="field-label">定义</div><div class="field-value">${escHtml(cleanText(c.definition))}</div></div>

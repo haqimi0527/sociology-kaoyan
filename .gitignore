@@ -6,3 +6,4 @@ concepts_backup_*.json
 __pycache__/
 *.pyc
 .DS_Store
+concept-taxonomy_backup_*.json

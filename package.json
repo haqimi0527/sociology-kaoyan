@@ -1,0 +1,27 @@
+{
+  "name": "sociology-kaoyan-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haqimi0527/sociology-kaoyan.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haqimi0527/sociology-kaoyan/issues"
+  },
+  "homepage": "https://github.com/haqimi0527/sociology-kaoyan#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.61.1"
+  }
+}
