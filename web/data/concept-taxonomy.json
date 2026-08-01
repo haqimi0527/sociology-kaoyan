@@ -65,10 +65,8 @@
               "c_ae00d81d",
               "c_f810dfd1",
               "c_f72a2616",
-              "c_99cd79bd",
               "c_ecfbca31",
               "c_a0e67c3f",
-              "c_71382084",
               "c_4fbfcf6c",
               "c_860b4b6a",
               "c_97aea108",
@@ -119,8 +117,7 @@
               "c_8ca98f01",
               "c_ad8b1ab1",
               "c_4fe99175",
-              "c_fefadc37c5",
-              "c_ca039220"
+              "c_fefadc37c5"
             ]
           }
         }
@@ -299,7 +296,6 @@
               "c_3ef031ce7c",
               "c_cb96ca44ae",
               "c_e7f5a3af8e",
-              "c_d7b4cb14d6",
               "c_89ec309d3a",
               "c_3873ef512f",
               "c_12c6fc3f47",
@@ -489,7 +485,6 @@
         "scholars": {
           "帕森斯": {
             "concepts": [
-              "c_d15a88ae",
               "c_a265a8e2",
               "c_6c6069f6",
               "c_28596682",
@@ -878,7 +873,6 @@
               "c_bc0f1dd4",
               "c_303e1308",
               "c_dea54f74",
-              "c_658c9a2c",
               "c_aadd7cc3",
               "c_35e7403d",
               "lc_9c4548c6",
@@ -1297,7 +1291,6 @@
               "c_5a07c136",
               "c_be3e16f2",
               "c_49565829",
-              "c_8e3757b5",
               "c_b82e12b8",
               "c_dfb374c0",
               "c_a7e575f4",
@@ -1786,7 +1779,6 @@
       "categories": {
         "概率抽样": {
           "concepts": [
-            "c_2eac5ab0",
             "m_配额抽样",
             "m_非概率抽样_1",
             "m_应答率",
@@ -1825,8 +1817,7 @@
             "c_fefadc376e",
             "c_fefadc3770",
             "c_34f8ce98",
-            "c_8c730689",
-            "c_5f2b3154"
+            "c_8c730689"
           ]
         }
       }
@@ -2115,7 +2106,6 @@
         "c_a9edbb24",
         "c_91bb398a",
         "c_c299bc63",
-        "c_a6ab8f47",
         "lc_622b43dc",
         "c_92779b9aa6",
         "c_0f13b000d0",
@@ -2244,7 +2234,6 @@
         "c_8a45ccaa",
         "c_577c1366",
         "lc_bf9eaab1",
-        "c_83492fdf",
         "c_6ed2e433",
         "c_c8cee17a",
         "c_e9b9bde1",
@@ -2396,7 +2385,6 @@
         "c_3b33b57d7f",
         "c_e7dedf3d8a",
         "c_f992aa33ba",
-        "c_3f6879be43",
         "c_bf1e3e0d",
         "c_c7e7b4bf",
         "c_f1629dd2",
@@ -2492,12 +2480,12 @@
     }
   },
   "_meta": {
-    "total_concepts": 2016,
-    "classified": 2016,
+    "total_concepts": 2004,
+    "classified": 2004,
     "unclassified": 0,
-    "theory_count": 1086,
-    "methods_count": 581,
-    "intro_count": 349,
+    "theory_count": 1079,
+    "methods_count": 579,
+    "intro_count": 346,
     "unclassified_terms": []
   }
 }
