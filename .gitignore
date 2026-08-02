@@ -11,3 +11,4 @@ __pycache__/
 concept-taxonomy_backup_*.json
 concept-taxonomy.json_backup_*.json
 concept-taxonomy.json_backup_*
+*.backup_pre_audit_*

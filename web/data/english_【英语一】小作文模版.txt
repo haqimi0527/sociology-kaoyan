@@ -23,42 +23,42 @@
 3.2 通知模板.............................................................................................44
 3.3 会议纪要模板...................................................................................... 48
 4. 真题范文精析.............................................................................................. 50
-
+•
 2025....................................................................................................50
-
+•
 2024....................................................................................................53
-
+•
 2023....................................................................................................56
-
+•
 2022....................................................................................................57
-
+•
 2021....................................................................................................58
-
+•
 2020....................................................................................................59
-
+•
 2019....................................................................................................60
-
+•
 2018....................................................................................................62
-
+•
 2017....................................................................................................63
-
+•
 2016....................................................................................................65
-
+•
 2015....................................................................................................66
-
+•
 2014....................................................................................................68
-
+•
 2013....................................................................................................69
-
+•
 2012....................................................................................................70
-
+•
 2011....................................................................................................71
-
+•
 2010....................................................................................................72
 1
 1. 备考方法论
 1.1大纲说明
-
+•
 2023~2025 年关于写作部分的考试大纲如下：
 部分
 节为考生提
@@ -93,7 +93,7 @@ B
 (160 -200词)
 1
 20
-
+•
 2022 年关于写作部分的考试大纲如下：
 部分
 节为考生提
@@ -134,9 +134,9 @@ B
 议纪要熟悉格式即可，内容可套用书信模板。
 2
 1.2题目要求
-
+•
 来看一下2025年英一真题
-
+•
 解读：
 1)
 Read the following email from your classmate Paul and write him a reply
@@ -144,12 +144,12 @@ Read the following email from your classmate Paul and write him a reply
 2)
 Write your answer in about 100 words on the ANSWER SHEET.
 写到答题卡2/3 处即可。
-
+•
 25真题例文见第四章真题范文精析50页
 3
-
+•
 来看一下2024 年英一真题
-
+•
 解读：
 1)
 Read the following email from an international student and write an reply.
@@ -157,12 +157,12 @@ Read the following email from an international student and write an reply.
 2)
 Write your answer in about 100 words on the ANSWER SHEET.
 写到答题卡2/3 处即可。
-
+•
 24真题例文见第四章真题范文精析53页
 4
-
+•
 来看一下2023 年英一真题：
-
+•
 解读：
 1) Write a notice
 通知/告示类小作文最看重的就是格式，占1 -2 分。内容上与书信类似。
@@ -174,12 +174,12 @@ activities
 文章要点：明确这份工作的职责和要求
 4) 100 words
 写到答题卡2/3 处即可
-
+•
 23真题例文见第四章真题范文精析56页
 5
-
+•
 再来看一下2022 年英一真题：
-
+•
 解读：
 1) Write an email to a professor at a British university
 最常见的应用文书信格式，重点看题目要求有没有涵盖。
@@ -189,7 +189,7 @@ be held at your university
 说明活动主题：国际创新比赛
 3) 100 words
 写到答题卡2/3 处即可
-
+•
 22真题例文见第四章真题范文精析57页
 6
 1.3评分标准
@@ -262,7 +262,7 @@ B 节
 7
 1.4审题构思
 1.4.1确定格式
-
+•
 只用准备3 种格式：书信、通知、会议纪要。书信出现的可能性最大，
 书信的格式必须严格掌握。
 书信：
@@ -283,7 +283,7 @@ Dear Mary,（直接使用对方名字）
 8
 语言要求：信函需正式、流畅即可，避免口语化表达，避免因使用高级句式导
 致低级错误。
-③结束语​
+③结束语
 正式书信：Yours sincerely,
 非正式书信：Best regards, / Yours,
 格式要求：右对齐，首字母大写，后接逗号
@@ -291,16 +291,16 @@ Dear Mary,（直接使用对方名字）
 固定署名Li Ming（不可用真实姓名或其他名字）
 位于结束语下方
 通知：
-①标题​
+①标题
 位置：首行居中，独立成行
 内容：直接写Notice（首字母大写）或自拟概括性标题（如“Volunteers Needed”）
-②日期​
-​
+②日期
+
 位置：标题下方右对齐
 格式：June 20th, 2025（英式）或June 20, 2025（美式）
 注意：若题干未明确要求日期可不写，但添加日期可避免格式扣分
-③正文​
-​
+③正文
+
 首段（目的段）：说明通知事项及核心信息（如活动时间、地点）。
 例：This notice is to inform that a summer camp will be held...
 9
@@ -308,31 +308,31 @@ Dear Mary,（直接使用对方名字）
 例：Applicants should meet the following requirements...
 结尾段（回应段）：提供联系方式或呼吁参与。
 例：For further details, please contact us at...
-④落款​
+④落款
 位置：正文右下方独立成行
 内容：根据题干要求填写（如Li Ming、Students’ Union）
 会议纪要：
-①标题​
-​
+①标题
+
 位置：首行居中
-内容：直接写Minutes（首字母大写）或Minutes of (会议主题)​
-​
+内容：直接写Minutes（首字母大写）或Minutes of (会议主题)
+
 例：Minutes of the Class Meeting 或Minutes of "Traditional Culture on Campus"
 注意：虚词（如of, the）无需大写，主标题首字母大写
-②基本信息​
+②基本信息
 位置：标题下方左对齐，分项列出
 Time: (具体时间，如From 9:00 a.m. to 11:00 a.m. on May 1, 2025)
 Place: (会议地点，如Room 301, Teaching Building)
 Present: (出席人员，如All members of the class)
 10
 Presided by: (主持人，如Li Hua)
-③正文​
-​
+③正文
+
 首段：宣布会议开始及主题
 中段：会议讨论内容与决议
 尾段：会议总结与结束
-④结尾​
-​
+④结尾
+
 位置：正文右下方
 内容：Submitted by: Li Ming
 Date: (日期，如May 1, 2025)
@@ -431,7 +431,7 @@ Date: (日期，如May 1, 2025)
 语料库」+「通知格式」。恰好，本模板都涵盖了。
 12
 1.6 模板说明
-
+•
 模板说明
 本章节为备考方法论，通过大纲说明、题目要求、评分标准、审题构思和
 真题统计，帮助大家快速掌握考研英语小作文的技巧与方法。本模板剩余部分
@@ -440,7 +440,7 @@ Date: (日期，如May 1, 2025)
 各种小作文时均有思路；第三章模板库包含了最常见的各类型的书信文、以及
 通知、会议纪要均包含在内；最后，第四章真题范文精析基于模板库，给出了
 2010~2025真题范文以及点评，便于大家学习如何在真题中运用模板。
-
+•
 为什么要用作文模板？为什么不自己整理+听课？
 因为这样做性价比最高。
 我们的目标是上岸，是总分达标。数学+专业课共300 分，需要我们花大量
@@ -449,7 +449,7 @@ Date: (日期，如May 1, 2025)
 所以说，英语政治保证平均分即可。在我看来，70 分以上就OK 。英语作
 文自己整理+听课的话太花时间了，还不一定有作文模板的效果，不如将时间留
 给数学/专业课。
-
+•
 英语最重要的是什么？
 对于英语，主框架是阅读。如果你能拿到绝大部分的阅读分数，那么即使
 你的作文只是平均水平，70-75 分都完全没问题。平时的英语备考，要把重点
@@ -458,7 +458,7 @@ Date: (日期，如May 1, 2025)
 清晰+无明显低级错误，可以至少拿到平均分（10+5）。运用一点作文模板的高
 级句型&词汇就是中等偏上水平（13+7）。
 13
-
+•
 怎么提高作文水平？
 可按照如下顺序使用作文模板，备考后期开始准备的同学也不用着急，我
 们会在各个阶段配套给到该作文模板的详细学习方法（在小鹅通内陆续更新）：
@@ -479,43 +479,43 @@ Date: (日期，如May 1, 2025)
 小作文三段论即为：开头点明意图、中间展开核心内容、结尾礼貌收束。
 三段论非常适合考研英语小作文短时间、小篇幅的写作。
 2.1第一段
-
+•
 第一段= (题干信息)+情感/身份+写作目的
 根据题干快速判断信件类型（如邀请信、建议信、投诉信），并选择对应的开
 头模板，可基于题干信息、情感、身份和写作目的对模板进行微调。
-①建议信​
-​
+①建议信
+
 直接说明目的:I am writing to offer some constructive suggestions regarding (主题).
 回应对方咨询:In response to your inquiry about (问题), I would like to share the
 following advice.
 基于经验或观察:Having noticed (现象/问题), I believe it would be beneficial to (建
 议).
-②邀请信​
+②邀请信
 正式邀请：It is my honor to formally invite you to (活动), which will be held at (地
 点) on (时间).
 以共同经历切入：Remembering our collaboration on (项目), I am delighted to
 invite you to (新活动).
 强调活动意义：This event aims to (目标), and your expertise in (领域) would
 greatly contribute to its success.
-③投诉信​
+③投诉信
 直接陈述问题：I am writing to express my dissatisfaction with (商品/服务), which I
 purchased on (日期).
 对比承诺与现实：Contrary to your advertisement claiming (承诺), the actual (问题)
 has caused me (影响).
 15
-④感谢信​
+④感谢信
 直接感谢：I am writing to express my heartfelt gratitude for your assistance during (
 事件).
 感谢长期帮助：Over the past (时间), your continuous support in (领域) has been
 instrumental to my (成就).
-⑤祝贺信​
+⑤祝贺信
 直接祝贺：Congratulations on your remarkable achievement in (领域)! I was thrilled
 to learn about (具体成就).
 回顾努力过程：Having witnessed your dedication to (目标), I am not surprised by
 this well-deserved success.
 展望未来：This honor is not only a recognition of your past efforts, but also a
 stepping stone to greater accomplishments.
-⑥申请信​
+⑥申请信
 明确申请意向：I am writing to apply for the (职位/项目) advertised in (来源), as my
 qualifications align closely with your requirements.
 以能力匹配切入：With (年限) years of experience in (领域), coupled with my (技能
@@ -563,7 +563,7 @@ school, the details of which are as follows.
 举办的国际创新大赛组建一个团队，具体细节如下。
 17
 2.2第二段
-
+•
 第二段= 3 论点，To begin with … In addition … Finally …
 要点：这里最重要的是想三个问题，这也是小作文的重点。在小作文打草稿时，
 就要123 标出来。
@@ -628,7 +628,7 @@ fresh ideas and enlightening perspectives.
 选手发表演讲。最后，我们将邀请您作为贵宾，为学生提供一些建议并为获胜
 者颁奖。我们相信您和您的团队的参与将无疑带来新鲜的思路和启发性的观点。
 2.3第三段
-
+•
 第三段= 重申情感/建议+联系我
 1.3.1 重申情感/建议
 情感：Please accept my sincere gratitude/apology again.请再次接受我最诚挚的感
@@ -698,7 +698,7 @@ Li Ming
 我真诚地希望我的申请能得到充分考虑。期待着尽快收到您的积极答复。
 诚挚地，
 李明
-
+•
 求职信相关语料
 1.
 （开头）I am writing to apply for the position of 职位advertised in 名称. 我写
@@ -730,7 +730,7 @@ interview. 如有机会在面试中讨论我的申请，我将不胜感激。
 我联系。
 10. （结尾）Thank you for considering my application. I look forward to your early
 reply. 感谢您考虑我的申请。期待您的早日回复。
-
+•
 辞职信相关语料
 1.
 （开头）I am writing to formally express my sincere gratitude for the
@@ -804,7 +804,7 @@ Li Ming
 原谅，希望您能理解我的处境。
 诚挚地，
 李明
-
+•
 道歉信相关语料
 1.
 （开头）I am writing to express my sincere apologies for… 我写信是为了对
@@ -868,7 +868,7 @@ Li Ming
 诚挚地，
 25
 李明
-
+•
 咨询信相关语料
 1.
 （开头）I am writing to inquire if it is possible for you to provide me with
@@ -923,7 +923,7 @@ Li Ming
 回复。
 诚挚地，
 李明
-
+•
 申请信相关语料
 1.
 （开头）As a senior student majoring in Environmental Science at Peking
@@ -1008,7 +1008,7 @@ Li Ming
 诚挚地，
 李明
 29
-
+•
 建议信常用句型
 1) It is crucial/vital/essential/advisable for sb to do sth
 2) sb is highly suggested/supposed to do sth
@@ -1044,7 +1044,7 @@ environmental impact.强烈建议企业投资环保技术和绿色创新，
 4) 个人：It is essential for us to minimize the use of single -use plastics by using
 reusable water bottles, bags, and containers.我们必须尽量减少使用一次性塑料，
 使用可重复使用的水瓶、袋子和容器。
-
+•
 建议信相关语料
 1.
 （开头）I am writing to propose some useful recommendations to you as
@@ -1105,7 +1105,7 @@ Li Ming
 如果您能够亲临现场并... ，我们将不胜感激。期待您尽早回复。
 诚挚地，
 李明
-
+•
 邀请信相关语料
 1.
 （直接邀请）I am writing to invite you to…
@@ -1173,7 +1173,7 @@ Li Ming
 我希望您能认真处理我的投诉。感谢您的时间和考虑。期待尽早回复。
 诚挚地，
 李明
-
+•
 投诉信相关语料
 1.
 （开头投诉服务）I am writing the letter to express my dissatisfaction with the
@@ -1244,7 +1244,7 @@ Li Ming
 35
 诚挚地，
 李明
-
+•
 推荐信相关语料
 1 ）推荐(电影/书) 句型：
 (开头) I'm writing the letter in order to recommend one of my favorite movies/books
@@ -1300,7 +1300,7 @@ Li Ming
 时与我联系。
 诚挚地，
 李明
-
+•
 感谢信相关语料
 1.
 （开头）I am writing the letter to express my heartfelt gratitude,…我写这封信
@@ -1386,7 +1386,7 @@ Li Ming
 再次恭喜并祝愿您持续成功。期待您的早日回复。
 诚挚地，
 李明
-
+•
 祝贺信相关语料
 1.
 （开头）I am writing to convey my warm congratulations on 事件. 我写信是为
@@ -1445,7 +1445,7 @@ Li Ming
 作为... 的成员，我们应该...
 诚挚地，
 李明
-
+•
 倡议信相关语料
 1.
 （开头）As everyone knows, nowadays, 问题现象has become increasingly
@@ -1502,7 +1502,7 @@ Li Ming
 信息，请随时与我们联系。
 诚挚地，
 李明
-
+•
 招募信相关语料
 1.
 （开头）I am ... . On behalf of ... ,I am writing this letter in order to recruit... ,the
@@ -1644,7 +1644,7 @@ Li Ming
 开始营业，到晚上10 点结束，旨在迎合早起的人和夜猫子。
 如果您需要进一步帮助，请随时通过library@university.edu.cn 与我们联系。
 李明
-
+•
 通知相关语料（中间段可参考招募信相关语料）
 1.
 （开头）This notice is for the purpose of + 目的（recruiting 25 volunteers）for
@@ -1720,9 +1720,9 @@ Date:December 24,2022
 4. 真题范文精析
 为了帮助大家更好地使用模板，真题范文基本都遵循了相应小作文类型的
 通用模板框架，在此基础上加入了必要的特定场景语料。
-2025
-Dear Paul,​
-​
+•2025
+Dear Paul,
+
 It was a pleasure to hear from you. The innovative craft exhibition will be held in
 front of the university auditorium, starting at 9:00 a.m. on December 21 and lasting
 approximately three hours. I am writing to provide further details about the event.
@@ -1737,12 +1737,12 @@ December 18 to confirm their material requirements, and arrive at the exhibition
 by 6:00 a.m. on the event day for setup.
 Thank you very much for your attention and consideration of this email and
 activity. lf you want to know more information, please feel free to contact me.
-​
+
 Yours sincerely,
-​
+
 Li Ming
 51
-亲爱的保罗，​
+亲爱的保罗，
 很高兴收到你的来信。本次手工艺品创新展览将于12月21日上午9点在大学
 礼堂前举行，活动持续约三小时。特此邮件告知您更多活动细节。
 此次活动将展出年轻工匠们的多样化作品，包括本地艺术家与国际参与者
@@ -1764,8 +1764,8 @@ Li Ming
 端午节the Dragon Boat Festival （赛龙舟race dragon boats ，吃粽子eat rice
 dumplings）
 中秋节the Mid-Autumn Festival（赏月admire the moon，吃月饼eat mooncakes）
-贴春联paste Spring Festival couplets​
-发压岁钱give lucky money​
+贴春联paste Spring Festival couplets
+发压岁钱give lucky money
 守岁stay up late on New Year’s Eve
 "The Spring Festival, falling on the 1st day of the first lunar month, is a time for
 family reunions and traditional rituals such as setting off firecrackers and enjoying
@@ -1777,7 +1777,7 @@ of teamwork through dragon boat racing."端午节既是为了纪念屈原，也�
 52
 ②文化遗产相关
 长城the Great Wall（象征不屈精神symbolize perseverance）
-故宫the Forbidden City​
+故宫the Forbidden City
 兵马俑Terra-Cotta Warriors
 龙Chinese dragon（象征吉祥Symbolize good fortune）
 中国结Chinese knot（代表团结Representing unity）
@@ -1790,13 +1790,13 @@ connecting ancient traditions to modern audiences."京剧以其绚丽多彩的�
 征性脸谱，如同一座桥梁，将古代传统与现代观众连接起来。
 ③手工艺相关
 书法calligraphy（文房四宝the Four Treasures of the Study）
-水墨画ink and wash painting​
-皮影戏shadow play 糖人sugar figurines​
+水墨画ink and wash painting
+皮影戏shadow play 糖人sugar figurines
 "Calligraphy, considered the essence of Chinese culture, combines aesthetic beauty
 with philosophical depth in every brushstroke."书法被视为中国文化的国粹，在一
 笔一画间融汇着独特的美学价值与深邃的哲学意蕴。
 ④饮食民俗
-火锅hot pot​
+火锅hot pot
 饺子dumplings
 茶文化tea culture（茶道tea ceremony）
 八大菜系（如川菜Sichuan cuisine）
@@ -1810,7 +1810,7 @@ the harmonious integration between humans and the natural world. 茶道艺术以
 品茗的仪式感，集中体现了“天人合一”的传统哲学理念，这正是中华文明对
 人与自然和谐共生的深刻诠释。
 53
-2024
+•2024
 Dear Paul,
 I am more than happy to offer some advice on preparing your oral report. I
 appreciate your initiative to delve into history and learn from the past.
@@ -1846,8 +1846,8 @@ Li Ming
 精彩演讲
 关于「古代历史人物」话题：
 ①政治家
-秦始皇（Qin Shi Huang）​
-​
+秦始皇（Qin Shi Huang）
+
 核心词汇：centralized empire（中央集权）, legalism（法家思想）, Great Wall（
 长城）, standardize（标准化）
 实用句型："Qin Shi Huang's unification of China laid the foundation for a
@@ -1857,16 +1857,16 @@ centralized state, with standardized writing systems and currency." 秦始皇统
 emperor's ambition to consolidate power."万里长城的修建既体现了古代防御智慧，
 也彰显了秦始皇巩固统治的雄心。
 ②科学家
-张衡（Zhang Heng）​
-​
+张衡（Zhang Heng）
+
 核心词汇：seismograph（地动仪）, astronomy（天文学）, innovation（创新）
 55
 实用句型：Zhang Heng's invention of the seismograph demonstrated ancient China's
 advanced understanding of natural sciences.张衡发明的地动仪，展现了古代中国在
 自然科学领域的深刻认知。
 ③思想家
-孔子（Confucius）​
-​
+孔子（Confucius）
+
 核心词汇：filial piety（孝道）, benevolence（仁爱）, The Analects（《论语》）
 实用句型：Confucius' teachings on social harmony and moral cultivation remain
 central to Chinese values, influencing education and governance. 孔子的思想以社会
@@ -1876,8 +1876,8 @@ The concept of “Do not do to others what you do not want done to yourself” r
 the Confucian ethic of reciprocity. “己所不欲，勿施于人”这一理念，深刻体现了
 儒家伦理中推己及人的伦理准则。
 ④女性历史人物
-武则天（Empress Wu Zetian）​
-​
+武则天（Empress Wu Zetian）
+
 核心词汇：female emperor（女皇帝）, Tang Dynasty（唐朝）, political reforms（
 政治改革）
 实用句型：Empress Wu Zetian broke gender barriers, ruling with intelligence and
@@ -1885,7 +1885,7 @@ implementing policies that promoted education and social welfare. 武则天突�
 桎梏，以卓越的政治智慧治国理政，其推行的文教振兴之策与惠民举措，有力
 推动了教育发展与社会福祉的完善。
 56
-2023
+•2023
 Notice
 December 21st , 2023
 The notice is to inform that Prof. Smith is looking for a student to join his
@@ -1918,7 +1918,7 @@ Li Ming
 requirements of the job.
 3) 工作的职责和内容：我们已经准备好的第二段句子有活动主题/时间要求/发
 送邮件，可套用后两点，再自己编一个。
-2022
+•2022
 Dear Professor,
 As a member of our school innovation club, I am writing this letter to ask
 whether it is possible for you to organize a team for the international innovation
@@ -1950,7 +1950,7 @@ Li Ming
 思路：
 关于活动的第二段，一定可以写的两个点：活动目的，举办细节(时间地点过
 程) 。第一段/三段套模板。
-2021
+•2021
 Dear friend,
 Congratulations on your graduation! Hearing that you are looking for a job in
 China, I am writing this letter to offer several suggestions that may be conducive to
@@ -1982,7 +1982,7 @@ Li Ming
 1) It is crucial/vital/essential/advisable for sb to do sth
 2) sb is highly suggested/supposed to do sth
 3) Don’t forget to...Otherwise,you will...
-2020
+•2020
 Notice
 December 21st , 2023
 We are thrilled to announce an upcoming event that you won't want to miss! The
@@ -2011,7 +2011,7 @@ The Students’ Union
 学生会
 思路：
 套通知1 模板。
-2019
+•2019
 Dear volunteer,
 With sincere appreciation for your dedication to our project, I am writing this
 letter to answer your inquiry concerning the voluntary activity.
@@ -2040,7 +2040,7 @@ Li Ming
 一点再结合具体题目现编。
 表示活动目的：The event is intended to...
 62
-2018
+•2018
 Dear Sir or Madam,
 I am writing this letter to ask whether it is possible for you to attend the 2018
 Graduation Ceremony, the details of which are as follows.
@@ -2066,7 +2066,7 @@ Li Ming
 活动的三大细节：目的/时间地点/志愿者，此处没写目的，但是补充了嘉宾作用
 (as a distinguished guest to offer some constructive suggestions to students).
 63
-2017
+•2017
 Dear Professor Cook,
 Welcome to China! Learning that you are fond of traveling, I am writing this
 letter to recommend some of the most distinguished landmarks in Beijing to you.
@@ -2137,7 +2137,7 @@ storytelling in the world of cinema.
 亡圣器》的黑暗，电影反映了友谊、勇气和寻找自我身份的主题。这是一场吸
 引新老粉丝的电影之旅，证明了叙事在电影世界中的持久力量。
 65
-2016
+•2016
 Notice
 December 21st , 2019
 The notice is to introduce the college library to those international students who
@@ -2175,7 +2175,7 @@ Li Ming
 思路：
 套用模板。第二段一定可以用的角度：时间地点/事物本来特征。
 66
-2015
+•2015
 Dear friends,
 As the host of the upcoming reading session, I am writing this letter to
 recommend a remarkable literary masterpiece called To Live, the details of which are
@@ -2254,7 +2254,7 @@ overall stamina.
 降低了受伤的风险，使其适合不同年龄和健康水平的个体。第三，游泳显著增
 强心血管健康，改善肺活量和整体耐力。
 68
-2014
+•2014
 Dear president,
 I am a senior student at the university. I am writing this letter to express my
 humble opinions about students’ physical condition.
@@ -2285,13 +2285,13 @@ Li Ming
 ...
 第三段：It is hoped that my suggestions will be of help and I am looking forward to
 your early reply.
-2013
-Dear Mr. Wilson,​
-​
+•2013
+Dear Mr. Wilson,
+
 I am writing on behalf of the Students' Union to cordially invite you to serve as a
 judge for the upcoming English Speech Contest. The event will take place in Room
-304, North Building, on Friday, May 9 from 2:00 p.m. to 5:00 p.m.​
-​
+304, North Building, on Friday, May 9 from 2:00 p.m. to 5:00 p.m.
+
 This contest aims to enhance students' practical English skills through public
 speaking. As a
 highly respected linguistics professor whose expertise is widely
@@ -2300,12 +2300,12 @@ evaluation process. The competition will primarily involve senior students, with
 speech focusing on environmental protection and sustainable development as the core
 theme.
 We are looking forward to your reply at your earliest convenience.
-​
-Yours sincerely,​
-​
-Li Ming​
-尊敬的威尔逊先生：​
-​
+
+Yours sincerely,
+
+Li Ming
+尊敬的威尔逊先生：
+
 我谨代表学生会诚挚邀请您担任即将举办的英语演讲比赛评委。本次活动
 将于5月9日（星期五）下午2:00至5:00在北楼304教室举行。
 本次比赛旨在通过公开演讲提升学生的英语实践能力。您作为备受敬仰的
@@ -2314,15 +2314,15 @@ Li Ming​
 一核心主题展开。
 恳请您在方便之时尽快回复。
 70
-​
+
 此致
-​
+
 李明
 思路：
 1) 题干信息简单，需自行补充时间、地点以及比赛目的、主题
 2) 第一段直接邀请并说明时间地点信息，第二段详细介绍比赛，第三段为联系
 我。
-2012
+•2012
 Some internationals students are coming to your university. Write them an email
 in the name of the Students’ Union to
 1) extend your welcome and
@@ -2330,8 +2330,8 @@ in the name of the Students’ Union to
 You should write about 100 words on ANSWER SHEET2.
 Do not sign your name at the end of the letter. Use “Li Ming” instead.
 Do not write the address.(10 points)
-Dear Friends,​
-​
+Dear Friends,
+
 On behalf of the Students’ Union of Beijing Foreign Studies University ,I would
 like to extend our heartfelt welcome to all the overseas students who will study in our
 university.
@@ -2342,13 +2342,13 @@ avoid indulging in computer games. Moreover，in order to make yourselves quickl
 adjusted to our campus life, it would be of great help if you can learn Chinese as well
 as you can. Last but not least，it is necessary to take part in some activities so that
 you can improve your communication abilities and expand horizon.
-We are looking forward to seeing you soon and wish everything goes well.​
+We are looking forward to seeing you soon and wish everything goes well.
 Yours sincerely,
-​
+
 Li Ming
 71
-亲爱的同学们：​
-​
+亲爱的同学们：
+
 我谨代表北京外国语大学学生会，向即将入学的全体留学生致以最诚挚的
 欢迎。在各位启程前，我们愿分享几点实用的校园生活建议。
 众所周知，大学阶段赋予学生更多自主安排时间的自由，教师亦不会进行
@@ -2356,16 +2356,16 @@ Li Ming
 等娱乐。此外，尽早提升中文水平将助力你们更顺利地适应校园环境。最后，
 积极参与学生活动不仅能提升跨文化交流能力，更能拓展个人视野。
 衷心期待与各位在校园相见，祝愿一切顺利。
-​
+
 此致
-​
+
 李明
 思路：
 1) 为建议信，需自行思考对大学生活的建议，可从少玩电子游戏，平衡学习和
 娱乐、学习中文等角度展开。
 2) 第一段根据题干信息表示欢迎，第二段提详细建议，第三段为重申感情，表
 达欢迎和祝福。
-2011
+•2011
 Dear Bob,
 As one of your closest friend, I'm writing the letter in purpose of recommending
 one of my favorite movies to you, Around the World in Eighty Days.
@@ -2373,7 +2373,7 @@ The primary factors for my recommendation are as follows. For one thing, this is
 movie of science fiction which tells us an exciting story about an English
 gentleman,Mr. Phileas Fogg, who makes a bet with his clubmates and manages to
 travel around the world in eighty days. For another, it gives us a vivid description of
-the many difficulties and incidents that happened during his journey.​
+the many difficulties and incidents that happened during his journey.
 Wish you enjoy the movie. Looking forward to your reply.
 Yours sincerely,
 72
@@ -2394,7 +2394,7 @@ Li Ming
 Long Journey》《Home》
 2) 第一段直入主题推荐电影，第二段详细描述电影，可挑选剧情、角色、情感、
 观后感进行描述，第三段为重申情感并联系我。
-2010
+•2010
 You are supposed to write for the Postgraduates' Association a notice to recruit
 volunteers for an international conference on globalization. The notice should include
 the basic qualifications for applicants and the other information which you think is
@@ -2421,14 +2421,14 @@ If you want to be a part of the conference and have close contact with world-
 famous experts, call 12345678 or send your resume to postgrad@xxx.edu.cn for
 application and for information on the interview.
 Postgraduates’ Association
-志愿者招募公告​
+志愿者招募公告
 现为12月28日于我校举办的全球化国际学术会议招募志愿者，承担会务秘
 书工作及嘉宾引导任务。基本要求包括具备流利英语沟通能力，熟悉会议主题
 相关知识，同时需拥有良好的跨文化交流能力、高度责任感及积极的工作热情。
 具有同类活动服务经验或通晓社交礼仪规范者将优先考虑。
 若您希望参与此次国际盛会并与全球知名学者近距离交流，请致电
 12345678或发送简历至postgrad@xxx.edu.cn进行报名，并获取面试相关信息。
-​
+
 校研究生会
 思路：
 1) 类型为通知，需具备通知的基本格式

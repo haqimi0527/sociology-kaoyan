@@ -48,36 +48,36 @@ DIY 模板
 3.3.2静态图....................................................................................................... 66
 3.4混合类................................................................................................................. 69
 4. 真题范文精析............................................................................................................. 74
-2025........................................................................................................................74
-2024........................................................................................................................76
-2023........................................................................................................................78
-2022........................................................................................................................80
-2021........................................................................................................................82
-2020........................................................................................................................84
-2019........................................................................................................................86
-2018........................................................................................................................88
-2017........................................................................................................................90
-2016........................................................................................................................92
-2015........................................................................................................................94
-2014........................................................................................................................96
-2013........................................................................................................................98
-2012......................................................................................................................100
-2011......................................................................................................................102
-2010......................................................................................................................104
-2009......................................................................................................................106
-2008......................................................................................................................108
-2007......................................................................................................................110
-2006......................................................................................................................112
-2005......................................................................................................................114
-2004......................................................................................................................115
-2003......................................................................................................................116
-2002......................................................................................................................117
-2001......................................................................................................................118
-2000......................................................................................................................119
+•2025........................................................................................................................74
+•2024........................................................................................................................76
+•2023........................................................................................................................78
+•2022........................................................................................................................80
+•2021........................................................................................................................82
+•2020........................................................................................................................84
+•2019........................................................................................................................86
+•2018........................................................................................................................88
+•2017........................................................................................................................90
+•2016........................................................................................................................92
+•2015........................................................................................................................94
+•2014........................................................................................................................96
+•2013........................................................................................................................98
+•2012......................................................................................................................100
+•2011......................................................................................................................102
+•2010......................................................................................................................104
+•2009......................................................................................................................106
+•2008......................................................................................................................108
+•2007......................................................................................................................110
+•2006......................................................................................................................112
+•2005......................................................................................................................114
+•2004......................................................................................................................115
+•2003......................................................................................................................116
+•2002......................................................................................................................117
+•2001......................................................................................................................118
+•2000......................................................................................................................119
 1
 1. 备考方法论
 1.1大纲说明
-
+•
 2023~2025 年关于写作部分的考试大纲如下：
 部分
 节为考生提
@@ -112,7 +112,7 @@ B
 (160 -200词)
 1
 20
-
+•
 2022 年关于写作部分的考试大纲如下：
 部分
 节为考生提
@@ -158,7 +158,7 @@ B
 +图表结合），本作文模板均囊括在内。
 2
 1.2题目要求
-
+•
 来看一下2025 年英一真题
 Directions：
 Write an essay of 160-200 words based on the picture below . In your essay you
@@ -167,7 +167,7 @@ should
 2) explain its intended meaning, and
 3) give your comments .
 You should write neatly on the ANSWER SHEET . (20 points)
-
+•
 解读：
 1 ) describe the drawing briefly
 简要地描述图画，但同时需要包含所有的要点。本图表需总括性的描述一下，
@@ -188,10 +188,10 @@ B. 横向对比：空调的拥有量很高，可能是由于最近几年的炎�
 C. 社会经济含义：联系城乡差距，农村家电普及率仍较低；电商平台普及，
 网购便利性和价格优势，如拼多多、京东；制造业技术进步，生产成本下降，价
 格更亲民；人均可支配收入增加，GDP增长支撑消费能力。
-
+•
 25真题例文见第四章真题范文精析74页
 4
-
+•
 来看一下2024年英一真题
 Directions：
 Write an essay based on the picture and the chart below. In your essay, you should
@@ -199,7 +199,7 @@ Write an essay based on the picture and the chart below. In your essay, you shou
 2) interpret the implied meaning,and
 3) give your comments.
 Write your answer in 160-200 words on the ANSWER SHEET. (20 points)
-
+•
 解读：
 1) describe the picture and the chart briefly
 为图画+图表形式，因此，既需描述图画细节，又需描述图表数据趋势。图
@@ -218,10 +218,10 @@ Write your answer in 160-200 words on the ANSWER SHEET. (20 points)
 A.呼吁大家养成良好的生活习惯，加强对身体健康的重视。
 B.支持绿色基础设施的建设，呼吁持续加强环境建设，将公园建设与城市可
 持续发展结合。
-
+•
 24真题例文见第四章真题范文精析76页
 6
-
+•
 来看一下2023 年英一真题
 Directions：
 Write an essay of 160-200 words based on the picture below . In your essay you
@@ -230,7 +230,7 @@ should
 2) interpret the implied meaning ,and
 3) give your comments .
 You should write neatly on the ANSWER SHEET . (20 points)
-
+•
 解读：
 1 ) describe the picture briefly
 简要地描述图画，但同时需要包含所有的要点。比如本图中，有人在划龙舟
@@ -252,7 +252,7 @@ You should write neatly on the ANSWER SHEET . (20 points)
 化故事）。
 ②社会角度：建议政府加大投入，多举办传统文化节庆活动，助力乡村发展。
 ③未来展望：展望传统文化与现代生活的融合。
-
+•
 23真题例文见第四章真题范文精析78页
 8
 1.3评分标准
@@ -332,49 +332,49 @@ B 节
 反过来论述xxx的重要性。真题大作文不论是图画、图表或文字，主题肯定是非常
 明了的，关键在于要仔细阅读题干中的所有细节，如人物动作、对话、文字标注、
 数据对比、小标题。
-
+•
 常见主题分类
-1.社会问题​
-​
+1.社会问题
+
 核心方向：环境保护（如垃圾分类、碳中和）、城市发展（如智慧城市）、老
 龄化问题、社会公平（如教育资源分配）等。
-​
+
 例：2020年真题“习惯”隐含对健康生活方式的倡导。
-2.教育话题​
-​
+2.教育话题
+
 核心方向：创新教育（如在线学习）、教育公平（如乡村教育）、校园生活（
 如学生压力）等。
-​
+
 例：2018年“选课进行时”反映学生自主性与教育多样化。
-3.科技发展​
-​
+3.科技发展
+
 核心方向：人工智能、互联网影响（如短视频文化）、科技与伦理（如隐私保
 护）等。
-​
+
 例：2024年真题“科技对阅读习惯的影响”需结合电子书与纸质书的对比分析。
-4.文化交流​
-​
+4.文化交流
+
 核心方向：传统文化传承（如非遗保护）、全球化影响（如中西节日融合）、
 文化自信等。
-​
+
 例：2023年“龙舟赛”主题需关联乡村振兴与文化复兴。
-5.健康生活​
-​
+5.健康生活
+
 核心方向：心理健康（如压力管理）、运动健身、饮食习惯（如外卖依赖）等。
-​
+
 例：2012年“乐观心态”强调心理健康的积极意义。
 10
-6.人生价值​
-​
+6.人生价值
+
 核心方向：坚持与奋斗、诚信与责任、代际关系（如养老问题）等。
-​
+
 例：2005年“养老足球赛”呼吁孝道与家庭责任
-
+•
 主题确定
 可以不用局限于一个主题，比如互联网发展的科技主题往往与健康生活挂钩。
 而负面话题往往可以归结到正面话题上来，所以只需要确定：「xxx」这一品质/
 习惯/行为/现象很重要。
-
+•
 历年真题主题
 2025
 家电拥有量越来越多
@@ -458,13 +458,13 @@ B 节
 1.4.2首段构思
 第一段需完成“引入→核心场景动态描写→细节补充（对话/环境）→点题过渡”
 的逻辑闭环，建议控制在3-4句，字数30-60词。
-
+•
 引入图画：用灵活句式点明图画类型（如漫画或照片）及核心场景。
-
+•
 动态描述：聚焦人物动作、互动、数据，使用动态动词和细节描写。
-
+•
 补充细节：加入对话、环境描写、数据对比或标题翻译，强化画面感。
-
+•
 过渡句：提炼主旨，自然引出下文分析。
 1）引入句
 倒装句：Portrayed vividly in the cartoon is a scene in which...
@@ -532,46 +532,46 @@ environmental protection in modern society.这个场景巧妙地反映了现代�
 14
 1.5考场提醒
 1）答题顺序
-答题顺序1：优先完成作文：作文→阅读→新题型→翻译→完型​
+答题顺序1：优先完成作文：作文→阅读→新题型→翻译→完型
 答题顺序2：优先完成阅读：阅读→新题型→翻译→作文→完型
-答题顺序3：作文留到最后：阅读→新题型→翻译→完型→作文​
+答题顺序3：作文留到最后：阅读→新题型→翻译→完型→作文
 ······
-
+•
 可以将作文总时长控制在50分钟内（小作文15分钟，大作文35分钟左右）。
-
+•
 答题顺序因人而异，关键是在平时的模考养成习惯，验证时间分配的可行性，
 避免超时。
-2）审题构思​
-
+2）审题构思
+•
 下笔前花2-3分钟审题，二三段的细节不用急于确定，一定一定要避免跑题。
-
+•
 快速列提纲：大作文建议采用“描述→分析→评论”三段式。
 3）格式要求
-
+•
 大作文：无需标题，段落首行缩进2-4个字母左右。
-
+•
 字迹工整，控制字体大小（避免超出答题卡边界）。
-
+•
 修改时用单斜线“/”划掉错误，不要涂黑或使用修正液。
-
+•
 检查重点：时态、单复数、主谓一致、标点。
 15
 4）易错点规避
-
+•
 图表题勿单纯罗列数据，需提炼趋势（如“消费升级反映经济转型”）并关联
 社会背景。
-
+•
 开放式命题（如“人工智能伦理”）需辩证分析，说明好处与坏处。
 5）临场策略
-
+•
 若时间不足，优先保证小作文完整，大作文可简化分析部分，但需有明确结
 论。
-
+•
 考试前确认答题卡填涂规范，客观题和主观题勿写错位置（翻译在答题卡正
 面，大作文在背面）
 16
 1.6模板说明
-
+•
 模板说明
 本章节为备考方法论，通过大纲说明、题目要求、评分标准、审题构思和考
 场提醒，帮助大家快速掌握考研英语大作文的技巧与方法。本模板剩余部分包含
@@ -582,7 +582,7 @@ environmental protection in modern society.这个场景巧妙地反映了现代�
 类、图表类以及混合类作文的写法，给出了各类型作文的模板；
 最后，第四章真题范文精析基于模板库，给出了2000~2025真题范文以及点评，
 便于大家学习如何在真题中运用模板。
-
+•
 为什么要用作文模板？为什么不自己整理+听课？
 因为这样做性价比最高。
 我们的目标是上岸，是总分达标。数学+专业课共300 分，需要我们花大量
@@ -591,7 +591,7 @@ environmental protection in modern society.这个场景巧妙地反映了现代�
 所以说，英语政治保证平均分即可。在我看来，70 分以上就OK 。英语作文
 自己整理+听课的话太花时间了，还不一定有作文模板的效果，不如将时间留给
 数学/专业课。
-
+•
 英语最重要的是什么？
 对于英语，主框架是阅读。如果你能拿到绝大部分的阅读分数，那么即使你
 的作文只是平均水平，70-75 分都完全没问题。平时的英语备考，要把重点精力
@@ -600,7 +600,7 @@ environmental protection in modern society.这个场景巧妙地反映了现代�
 晰+无明显低级错误，可以至少拿到平均分（10+5）。运用一点作文模板的高级
 句型&词汇就是中等偏上水平（13+7）。
 17
-
+•
 怎么提高作文水平？
 可按照如下顺序使用作文模板，备考后期开始准备的同学也不用着急，我们
 会在各个阶段配套给到该作文模板的详细学习方法（在小鹅通内陆续更新）：
@@ -633,29 +633,29 @@ environmental protection in modern society.这个场景巧妙地反映了现代�
 的逻辑闭环，建议控制在3-4句，字数30-60词。以下内容包含了图画、图表、文
 字类作文，可根据作文类型灵活选择。例如，图画类作文仅需关注图画引入句
 DIY、主要人物描述DIY以及最后的模板和真题解读。
-
+•
 引入：用灵活句式点明作文类型（如图画或者图表）及核心场景。
-
+•
 动态描述：聚焦人物动作、互动、数据，使用动态动词和细节描写。
-
+•
 补充细节：加入对话、环境描写、数据对比或标题翻译，强化画面感。
-
+•
 过渡句：提炼主旨，自然引出下文分析。
 2.1.1图画引入句DIY
 ①Depict 倒装
 1) 对比图
-
+•
 事物不同状态：Depicted in the portrayal is/are . . . showing entirely distinct
 states . . .
-
+•
 人不同态度：Depicted in the portrayal are . . . holding entirely distinct attitudes
 towards/in the face of/when facing . . .
 2) 非对比图
-
+•
 有深意：Depicted in the portrayal is a common yet thought-provoking scene in
 which . . .
 19
-
+•
 无明显深意：Depicted in the portrayal is sb. doing sth.
 2023
 Depicted in the portrayal are two
@@ -756,7 +756,7 @@ towards one’s passion . 正如这幅
 若为两人物的鲜明对比图，在人物1 描述后，可加「By contrast/On the
 contrary/In stark contrast to sb」进行过渡。
 ②每个人的动作：主要动作+次要动作
-
+•
 主要动作:be doing
 站
 stand
@@ -774,7 +774,7 @@ curl
 看：watch/look
 看上去：seem to be . . .
 说话
-
+•
 发起
 1)
 说话：say
@@ -788,7 +788,7 @@ curl
 要求：urge/demand/ask
 6)
 非动词：with the words that . . .
-
+•
 回复
 1) 回复：respond/answer
 2) 鼓励：encourage
@@ -806,25 +806,25 @@ devote oneself to . . .
 be absorbed in . . .
 be immersed in . . .
 dedicate oneself to . . .
-
+•
 次要动作：doing/done
 若次要动作的主语不是人，而是物时，用with sth doing/done
 穿着
 wearingSunWukong’scostume
 表情
-
+•
 喜
 1) with satisfaction/happiness 带着满意/幸福
 2)with a bright/confident smile on his/her face 脸上带着明亮/自信的微笑
 3)encouragingly/cheerfully 鼓励地/愉快地
 4)in a tone of encouragement 以鼓励的口吻
-
+•
 哀
 1)in dismay/depression/despair/frustration 惊愕/沮丧/绝望/挫败地
 2) with disappointment 带着失望
 3)with a miserable/confused expression on his face 脸上可怜/困惑的表情
 4) with an air of confusion on his face 脸上带着困惑的神情
-
+•
 中性
 1 )with indifference 冷漠地
 2)with a concentrated expression on their faces 脸上带着专注的表情
@@ -945,7 +945,7 @@ residentsfrom2014to2023.
 的变化。
 2.1.4数据描述DIY
 ①相关词句
-
+•
 变化类词汇
 数量单位：hundred/thousand/million/billion/trillion
 时间：in 2000/from 2000 to 2002/between 2000 and 2002
@@ -959,7 +959,7 @@ residentsfrom2014to2023.
 到达最高/低点：reach the peak/bottom of
 占比最多/少：occupy the largest/smallest proportion of
 由. . .组成：consist of/be made up of
-
+•
 原因类短语
 with the progress in economy随着经济的发展
 with the improvement of living standards随着生活水平的提高
@@ -971,7 +971,7 @@ with the rapid development of economy and society随着经济和社会的快速�
 under the background of modernization/urbanization/industrialization在现代化/城市化/
 工业化的背景下
 ②数据趋势/细节/对比
-
+•
 动态图（折线图/柱状图/表格）：时间推移变化
 1.上升趋势：
 动词：increase / rise / surge / soar / grow / climb
@@ -993,7 +993,7 @@ in mid-2022.同期油价在50至80美元之间波动，并在2022年年中达到
 动词：remain stable / stabilize / level off
 例句：The proportion of male students remained stable at around 45% over the decade.
 过去十年间，男学生比例始终稳定在45%左右。
-
+•
 静态图（饼图/表格）：无时间变化。
 1.极值对比：
 词汇：highest / lowest / dominate / account for / occupy
@@ -1111,7 +1111,7 @@ ahigh value on . Personally , I completely agreewith this idea.
 文章节选中有一段很有启发性，作者向我们介绍了某观点：… 。不可否认，它
 巧妙传达的深刻含义应该得到高度重视。就我个人而言，我完全同意这个观点
 。
-
+•
 各类型作文的首段模板可参照上方表格，也可根据DIY语料自行排列组合，
 DIY属于自己的首段模板
 32
@@ -1162,11 +1162,11 @@ consistent upward trend, growing from 85.5 to 103.4.
 第二段、第三段的写法与作文类型的关系已经不大。第二段是核心论证段落，包
 括主题句、逻辑连接词、论据展开。第二段作为主体段，应尽量丰满，字数可以
 在80-100词左右。
-
+•
 主题句：开门见山点明本段核心论点，直接呼应首段主旨句。
-
+•
 逻辑衔接：可以是并列、对比、转折、因果，无逻辑衔接会很生硬。
-
+•
 论据展开：通常2-3个，建议采用“总分总”结构，每个论点独立成句。
 2.2.1主题句DIY
 ①开头词
@@ -1676,7 +1676,7 @@ life .
 生活展现出更积极向上的态度。
 46
 ⑤论点示例
-
+•
 积极意义
 1）… can not only relieve self-doubt/ enhance self-control but also help us sustain
 inner tranquility, which safeguards us from being swayed by external pressure .
@@ -1712,7 +1712,7 @@ it would contribute to
 fostering a harmonious and civilized social atmosphere .
 47
 如果. . .这种美德得到广泛传播，那么将会有助于营造和谐文明的社会氛围。
-
+•
 消极意义
 1 ) 主题not only does harm to our physical and mental health but also results in a
 frustrating and humiliating life. 它不仅危害我们的身心健康，而且还导致我们的生
@@ -1813,7 +1813,7 @@ rapid expansion of the xxx industry has also encouraged people to . . . .
 们中的流行。其次，xxx 行业近年来蓬勃发展，从而以合理的
 价格为人们提供了更多高质量的产品。也就是说，xxx 行业的快
 速扩张也鼓励了人们. . .。
-
+•
 各类型作文的第二段模板可参照上方表格，也可根据DIY语料自行排列组合，
 DIY属于自己的第二段模板
 2.2.5真题解读
@@ -1916,11 +1916,11 @@ confronted with hardships .
 2.3第三段
 第三段的写法与作文类型的关系不大。第三段是总结升华的关键部分，可自行
 选择点题、行动建议和升华展望三个层次完成收尾，字数控制在40-60词左右。
-
+•
 点题：与首段主题句、第二段论点形成闭环。
-
+•
 行动建议：根据图画/图表，从不同主体角度提出具体措施。
-
+•
 升华展望：呼吁行动或预测趋势，提升文章深度。
 2.3.1点题句DIY
 ①前半句：表总结
@@ -2043,7 +2043,7 @@ maintainabundant... so as to stimulate social advancement .
 简而言之，. . .这一品质是成功的关键，并应受到高度重视。因
 此，无论将来我们遇到什么情况，我们都应该提醒自己保持足够
 的. . .，以促进社会进步。
-
+•
 各类型作文的第三段模板可参照上方表格，也可根据DIY语料自行排列组合，
 DIY属于自己的第三段模板
 56
@@ -2143,13 +2143,13 @@ as to stimulate self-advancement .
 简而言之，. . .这一品质是追求成功的秘诀，并应受到高度重视。因此，
 无论将来我们遇到什么情况，我们都应该提醒自己保持足够的. . .，以促进自
 我进步。
-
+•
 2000-2023年英一真题均为图画类作文，此处给到2023年的真题套用，其余
 真题模板套用见真题范文精析，此处不作举例。
 60
-
+•
 2023英一真题
-
+•
 模板套用
 Depicted in the cartoon are two teams of dragon boat competitors rowing on the
 river , with a good many spectators cheering them on . Among the crowd stands an
@@ -2179,7 +2179,7 @@ In a nutshell , the spirit of carrying forward traditions grasps the master key 
 social cohesion and should be held in high regard . Consequently , no matter what
 circumstances we encounter in the future , we should both preserve and develop
 ancestral heritages so as to stimulate social advancement .
-
+•
 翻译
 这个漫画描绘了两支龙舟队在河上划行，众多观众为他们欢呼加油。人群
 中有一位年长的女士对她的伴侣说：“有越来越多的人参加村庄的龙舟节真是太
@@ -2226,7 +2226,7 @@ abundant 主题词so as to stimulate self-advancement .
 总之，…是追求成功/幸福的万能钥匙，应该受到高度重视。因此，无论
 我们将来遇到什么情况，我们都应该提醒自己保持充足的…从而促进自我提升。
 62
-
+•
 23 大纲题目
 Read the following excerpt from an article and write an essay . In your essay ,
 you should explain whether or to what extent you agree with the author . Support your
@@ -2240,7 +2240,7 @@ uncertainty and even admitting our mistakes is not harmful and can even be benef
 to trustworthiness . So , failure in "expertise”can be compensated by higher integrity
 and benevolence .When communicating uncertainty in a transparent way , we are
 perceived as less biased and willing to tell the truth .
-
+•
 模板套用
 Emerging from the excerpt is an enlightening paragraph of the article , in which
 the author tells us that communicating uncertainty is beneficial for us instead of
@@ -2266,7 +2266,7 @@ In conclusion , the spirit of showing uncertainty grasps the master key to
 pursuing happiness and should be held in high regard . Consequently , no matter what
 circumstances we encounter in the future , we should remind ourselves to maintain
 abundant honesty to others so as to pursue success and happiness.
-
+•
 翻译
 文章的节选中出现了一段启发性的段落，作者向我们介绍了一种观点：沟
 通不确定性对我们有益，而不是损害我们的形象。不可否认，它巧妙传达的深
@@ -2282,7 +2282,7 @@ abundant honesty to others so as to pursue success and happiness.
 63
 3.3图表类
 3.3.1动态图
-
+•
 动态图：存在时间的变化
 The xxx chart above clearly reflects the changes in the number of 主体in 地点
 between 年份1 and 年份2 . Based upon the data , there was a significant increase in
@@ -2312,9 +2312,9 @@ xxx 行业的快速扩张也鼓励了人们. . .。
 考虑到所有这些因素，我们可以预测，未来十年. . .的数量将继续增加。现
 在正是我们拥抱. . . 趋势的时候了。
 64
-
+•
 2023英二真题
-
+•
 模板套用
 The line chart above clearly reflects the changes of the residents’health literacy
 level in our country between 2012 and 2021 . Based upon the data , the health literacy
@@ -2333,7 +2333,7 @@ rapid expansion of the medical industry has also encouraged people to enjoy bett
 healthcare services and medical treatments .
 With due consideration of all these contributors , we may predict that the
 residents’health literacy level will keep improving in the forthcoming decade .
-
+•
 翻译
 上图清楚地反映了2012 年至2021 年间我国居民健康素养水平的变化。根
 据数据，2012 年至2015 年间，健康素养水平从8 .8%适度攀升至10 .25%，仅
@@ -2348,9 +2348,9 @@ residents’health literacy level will keep improving in the forthcoming decade 
 考虑到所有这些因素，我们可以预测，在未来十年，居民的健康素养水平
 将不断提高。
 65
-
+•
 2022 英二真题
-
+•
 模板套用
 The bar chart above clearly reflects the changes
 in the number of express
@@ -2372,7 +2372,7 @@ commerce platforms has also encouraged people to choose online shopping .
 With due consideration of all these contributors , we may predict that the number
 of parcels will keep rising in the forthcoming decade . It is time for us to embrace the
 trend of online shopping .
-
+•
 翻译
 上面的条形图清楚地反映了2018 年至2020 年间中国快递数量的变化。根据
 这些数据，所有包裹的数量都大幅增加，从510 亿个增加到830 亿个。与此同
@@ -2385,11 +2385,11 @@ trend of online shopping .
 电子商务平台的快速扩张也鼓励了人们选择网上购物。
 考虑到所有这些因素，我们可以预测，在未来十年中，包裹数量将继续增
 加。现在是我们拥抱网上购物潮流的时候了。
-
+•
 2025年英一真题为图表类作文，模板套用见真题范文精析。
 66
 3.3.2静态图
-
+•
 静态图：不存在时间的变化
 The xxx chart above clearly reflects the result of a survey about . . . in 地点
 during 时间.Based upon the data , 主体A who . . . occupy the largest portion , up to
@@ -2417,9 +2417,9 @@ xxx 行业的快速扩张也鼓励了人们. . .。
 考虑到所有这些因素，我们可以预测，未来十年. . .的数量将继续增加。现
 在正是我们拥抱. . . 趋势的时候了。
 67
-
+•
 2021英二真题
-
+•
 模板套用
 The bar chart above clearly reflects the result of a survey about residents’exercis-
 ing ways in a certain city . Based upon the data , people who exercise alone occupy the
@@ -2439,7 +2439,7 @@ online fitness platforms has also encouraged people to choose exercising alone a
 With due consideration of all these contributors , we may predict that the number
 of people exercising alone will keep growing in the forthcoming decade . It is time for
 us to embrace the trend of exercising alone .
-
+•
 翻译
 上面的条形图清楚地反映了某城市居民锻炼方式的调查结果。根据数据显
 示，单独锻炼的人所占比例最大，高达54 .3% 。其次是与朋友和家人一起锻炼
@@ -2453,9 +2453,9 @@ us to embrace the trend of exercising alone .
 考虑到所有这些因素，我们可以预测，在未来十年中，单独锻炼的人数将
 继续增长。现在是我们拥抱在线独自健身趋势的时候了。
 68
-
+•
 2020英二真题
-
+•
 模板套用
 The bar chart above clearly reflects the result of a survey about students’purposes
 of reading on a certain campus . Based upon the data , students who acquire
@@ -2476,7 +2476,7 @@ to choose phones as a way to acquire new knowledge .
 With due consideration of all these contributors , we may predict that the
 proportion of students studying online will keep increasing in the forthcoming decade .
 It is time for us to embrace the trend of online learning .
-
+•
 翻译
 上面的条形图清楚地反映了一项关于某校园学生阅读目的的调查结果。根
 据数据显示，获得知识的学生所占比例最大，高达59 .5% 。其次是消磨时间
@@ -2498,7 +2498,7 @@ It is time for us to embrace the trend of online learning .
 既描述图表数据趋势，又结合图画内容分析深层社会现象。
 因此，对于混合型作文，应先找出两类信息之间的逻辑关系（如因果关系、
 对比关系、互补关系），描述时避免机械堆砌，需通过过渡句自然衔接。
-
+•
 第一段：
 Depicted in the left picture are （图画核心元素：人物动作+场景细节）, with
 a banner/sign reading （标志性文字）. A young person remarks, "（人物对话）".
@@ -2517,7 +2517,7 @@ Personally , I completely agree with this idea .
 若有文字类混合：与此同时，右侧摘录是文章中一段富有启发性的段落，
 作者告诉我们……（作者观点）。不可否认，其巧妙传达的深刻含义应被高度
 重视。就个人而言，我完全赞同这一观点。
-
+•
 第二段
 To examine the root cause of this phenomenon, three driving forces deserve
 particular emphasis. Primarily, with the heightened awareness of （相关社会议题，
@@ -2536,7 +2536,7 @@ strategy to （国家政策导向，如achieve carbon neutrality/promote全民�
 键作用，图表中（具体政策表现，如财政支出增长15%）的数据即为明证。最
 关键的是，该趋势符合国家（政策导向，如实现碳中和/推进全民健身）的战略
 布局。
-
+•
 第三段
 With these multidimensional efforts in place, it is reasonable to anticipate
 sustained growth in （现象主体）throughout the next decade. The convergence of （
@@ -2549,9 +2549,9 @@ modern society.
 展态势。正如插图中那位年轻观察者所言，这样的进步堪称现代社会"（呼应图
 片中的关键评价）"的典范。
 71
-
+•
 2024英一真题
-
+•
 模板套用
 Depicted in the left picture are several citizens walking or running along the road,
 with a banner reading "Fitness Area for Citizens". A young boy is remarking, "The
@@ -2572,7 +2572,7 @@ The convergence of policy-driven infrastructure development and increasing publi
 demand for active lifestyles will undoubtedly solidify this trajectory. As the young
 observer aptly noted in the illustration, such developments truly constitute "really
 nice" enhancements for modern society.
-
+•
 翻译
 左图描绘了几位市民正在路上行走或跑步，横幅上写着市民健身区。一个
 小男孩感叹道：“我家附近新建的公园真不错”。与此同时，右图清晰显示某
@@ -2587,13 +2587,13 @@ nice" enhancements for modern society.
 合，必将巩固这一态势。正如图片中那位年轻人所言，这确实是现代社会的一
 大进步。
 72
-
-例题假设​
-​
+•
+例题假设
+
 图画：一名学生深夜玩手机，桌上堆满零食和饮料
-​
+
 文字：某高校学生近视率从2020年45%上升至2024年78%
-
+•
 模板套用
 Depicted in the left picture are a student scrolling through a smartphone late at
 night, with piles of snacks and soda cans cluttering the desk. A faint caption on the
@@ -2618,7 +2618,7 @@ convergence of policy support and student self-discipline will undoubtedly solid
 this trajectory. As the young observer aptly noted in the illustration, such
 developments truly constitute "a wake-up call for balanced digital lifestyles" for
 modern society.
-
+•
 翻译
 左图中描绘的是一名学生在深夜刷手机，桌上堆满零食和苏打水罐。手机
 屏幕上隐约可见一行字："在线游戏马拉松"。一位疲惫的同学感叹道："半夜了
@@ -2635,12 +2635,12 @@ modern society.
 那位年轻观察者所言，这些进展确实为现代社会敲响了"平衡数字生活方式"的
 警钟。
 73
-
-例题假设​
+•
+例题假设
 图表：某高校大学生体质合格率折线图（2020年80% →2023年65%）
 文字材料：某研究显示，67%大学生日均使用电子产品超6小时，仅23%保
 持规律运动
-
+•
 模板套用
 The line chart above clearly reflects the changes in the number of college
 students with qualified physical fitness in a certain university between 2020 and 2023.
@@ -2666,7 +2666,7 @@ convergence of policy support and student self-regulation will undoubtedly solid
 this trajectory. As the young observer aptly noted in the illustration, such
 developments truly constitute "a silent alarm for lifestyle transformation" for modern
 society
-
+•
 翻译
 上述折线图清晰反映了某高校2020至2023年间大学生体质达标人数的变化
 趋势。数据显示，体质合格率从80%显著下降至65%，而久坐行为同期呈现相似
@@ -2687,7 +2687,7 @@ society
 为了帮助大家更好地使用模板，真题范文基本都遵循了相应大作文类型的
 通用模板框架，只有少量进行了语句变化。既可以让大家看到模板稳定可靠的
 应用实例，又学习到在模板基础上进行的灵活调整。
-2025
+•2025
 The table above clearly reflects the changes in the ownership of major durable
 goods per 100 households among Chinese residents between 2014 and 2023. Based
 upon the data, there was a significant increase in air conditioner ownership from 75.2
@@ -2724,7 +2724,7 @@ these consumption upgrades.
 可进一步联系城乡差距（农村家电普及率仍较低）和电商平台普及（网购便利
 性和价格优势，如拼多多、京东）。
 76
-2024
+•2024
 Depicted in the left picture are several citizens walking or running along the road,
 with a banner reading "Fitness Area for Citizens". A young boy is remarking, "The
 newly-built park close to my home is really nice". Meanwhile, the right chart clearly
@@ -2767,7 +2767,7 @@ nice" enhancements for modern society.
 ②社会角度：政府投资绿色基础设施，反映社会对健康生活、绿色生态的
 重视。
 78
-2023
+•2023
 Depicted in the cartoon are two teams of dragon boat competitors rowing on the
 river , with a good many spectators cheering them on . Among the crowd stands an
 elderly lady , saying to her spouse，“it is so excellent to have an increasing number
@@ -2822,7 +2822,7 @@ thus view complex problems from various perspectives) 。社会方面，可以�
 atmosphere
 2) 提高国际影响力：enhance our international influence and competitiveness
 80
-2022
+•2022
 Depicted in the portrayal are two girls holding entirely distinct attitudes towards
 a campus lecture . On the left stands the girl , staring at the board with indifference
 and stating that listening to a cross-discipline lecture is meaningless . By contrast ,
@@ -2869,7 +2869,7 @@ has proven that those equipped with the virtue of . . . are more inclined to do 
 ：It is . . . that offers
 infinite possibilities for our life , leading us out of the impasse to a brilliant future .
 82
-2021
+•2021
 Depicted in the portrayal is a depressed boy , wearing Sun Wukong’s costume
 and worrying that his classmates dislike opera . By contrast , his father encourages
 him to pursue his passion regardless of others’thoughts .Conspicuously , the painter
@@ -2916,7 +2916,7 @@ adhering to ourselves/pursuing dreams
 Conspicuously , the painter intends to demonstrate that . . . is remarkably constructive
 for individuals’development.
 84
-2020
+•2020
 Depicted in the portrayal are two individuals showing entirely distinct attitudes
 towards time schedule . In the first picture , the girl devotes herself to a sea of tasks ,
 murmuring that she will not relax until she finishes them earlier . By contrast , lying
@@ -2958,7 +2958,7 @@ control
 个人品质类文章最好套模板。只是本文偏长，可适当裁剪。比如第一段第
 一句可删除，从而把第二段第一句提前。第二段的长度就会更加适中。
 86
-2019
+•2019
 On the ladder sits a depressed boy , complaining that he is too tired to climb the
 mountain . On the contrary , handing over a bottle of water , the boy downstairs
 encourages him to keep moving after a short break . The caption below the picture
@@ -3003,7 +3003,7 @@ whether . . .or . . . = be it . . .or . . . ：都表示无论. . .还是. . . �
 . . . , be it in individual growth or in social progress
 . . . , be it in mental health or in external performance
 88
-2018
+•2018
 In front of the computer sits a confused boy , facing a dilemma of course selection
 . With a variety of courses displayed on the screen , he is wondering whether to choose
 courses with fresh knowledge , strong innovation and superior difficulty or courses
@@ -3044,7 +3044,7 @@ courage/being brave/bravery/boldness
 第一段稍长，但是最好把提到的词都列举出来，避免失分。小标题也要点
 明，用简单话术：The caption below the picture indicates : . . . 。
 90
-2017
+•2017
 Depicted in the portrayal are two men holding different attitudes towards books .
 Lying on the
 sofa comfortably , the man in the left picture is satisfied with his
@@ -3094,7 +3094,7 @@ another . . .)来写2 论点，但是每个论点后跟一句补充解释的套�
 substantial body of research has demonstrated that . . ./That is to say . . .) ，相当
 于4 个论点。
 92
-2016
+•2016
 A striking contrast is observed between two cartoons : in the first one , lying on
 the sofa cozily , the father is enjoying the TV show while pressing his son to study .
 However，in the second picture , both of them devote themselves to a sea of books ,
@@ -3151,7 +3151,7 @@ two cartoons : . . .
 2) 社会美德也可以从个人美德的角度出发。因为它首先是反映在个体身
 上的，其次才推广到全社会和国家。
 94
-2015
+•2015
 Depicted in the portrayal is a common yet thought-provoking scene in which four
 young people, sitting in front of the delicious dishes, are staring at their cellphones
 intently instead of communicating with others face-to-face. The caption below the
@@ -3193,7 +3193,7 @@ use
 关于手机，可以使用负面话题模板。但是我们也可以逆转为正确使用手机
 的重要性，也可以套模板。
 96
-2014
+•2014
 In the first picture walked a young woman and her daughter , with their hands
 held tightly . While thirty years later , the lovely girl has grown up to be a woman who
 holds her elderly mother by the arm . The caption below the picture
@@ -3235,7 +3235,7 @@ filial piety/respecting parents/honoring parents/being filial
 社会类套话：It is . . . that fosters a harmonious and civilized social
 atmosphere , which exponentially elevates the life satisfaction of every individual .
 98
-2013
+•2013
 In front of the crossroads stand a good many graduates , facing four paths :
 seeking a job , attending postgraduate exams , studying abroad and starting their own
 business . With a puzzled expression on their faces , they seem to be too hesitant to
@@ -3275,7 +3275,7 @@ making good/wise/sensible choices
 论述做出好决定的重要性。作文是更看重语言能力而非观点新颖程度，所以就
 用之前准备的语言套。
 100
-2012
+•2012
 Depicted in the cartoon are two men showing entirely distinct attitudes towards
 the dropped bottle . With hands covering his face , the depressed man on the left is
 complaining that everything is gone . By contrast , stretching out his hands to pick up
@@ -3321,7 +3321,7 @@ to the fullest extent ; gain an edge over peers when dealing with arduous tasks
 外在表现：我们的潜力将得到释放，才能将得到充分发挥；在应对艰巨任
 务时比同龄人更具优势
 102
-2011
+•2011
 Sitting on the boat are two visitors , discarding waste into the river , with a pile of
 rubbish floating on the river already . The caption below the picture indicates : after
 the trip .
@@ -3366,7 +3366,7 @@ satisfaction of every individual .
 正是这种携手保护家园的共同努力，培育了和谐文明的社会风尚，使每个
 人的生活幸福感得以倍增。
 104
-2010
+•2010
 Depicted in the picture is a hot-pot containing a great deal of cultural ingredients ,
 which can be classified into western and eastern elements , such as Kungfu and
 Postmodernism . The caption below the picture indicates : the hotpot of culture .
@@ -3403,7 +3403,7 @@ cultural integration/cultural blending
 通联系在一起)
 国家：反映了中国独特的文化/增强国际影响力和竞争力
 106
-2009
+•2009
 Depicted in the portrayal is a common yet thought-provoking scene in which a
 large number of people are sitting in front of the computer, seemingly close to each
 other yet separated by the net. The caption below the picture indicates : the farness
@@ -3444,7 +3444,7 @@ rational use of networks/rational Internet use/proper Internet use
 好处：获取知识-看待问题更多元化/提升人际技巧/维持紧密的人际关系
 坏处：心理健康/不好的学业表现/竞争被打败
 108
-2008
+•2008
 Depicted in the portrayal are two disabled men holding each other , with their
 crutches left behind . The caption below the picture indicates : you have a leg and so
 do I . We can go anywhere with each other’s support .
@@ -3483,7 +3483,7 @@ cooperation/team spirit/teamwork
 个人外在：沉静应对挑战/提升能力
 与他人关系：提高人际交往能力-相处融洽/合作
 110
-2007
+•2007
 In front of the goal stands a goalkeeper , who is imagining himself too small to
 defend the gate . On the contrary , the striker considers
 it hard to score a goal for
@@ -3548,7 +3548,7 @@ success .
 的权利而奔走。她的人生故事展示了乐观主义的变革力量，它能化逆境为机遇，
 实现非凡的个人成长和成功。
 112
-2006
+•2006
 Depicted in the portrayal are two men showing craze towards Beck ham , who
 enjoys a high reputation in the soccer field . In the former picture , Beck ham’s name is
 written on the teenager’ s faces . Meanwhile , in the latter picture , a young man is
@@ -3592,7 +3592,7 @@ more risks of psychological problems and poor academic performance .
 然而，过度的. . .可能会给个人的长期发展蒙上一层阴影。大量研究证明，
 这些. . .的人可能会面临更多心理问题和学习成绩不佳的风险。
 114
-2005
+•2005
 Depicted in the picture are four children playing a football game . Instead of
 kicking a real football , they kick away their elderly father and defend their goal
 tightly . The caption below the picture indicates : the football game of supporting the
@@ -3639,7 +3639,7 @@ filial piety/respecting parents/honoring parents
 思路：
 同14 年真题，第二/三段完全可以作为模板。
 115
-2004
+•2004
 Depicted in the portrayal is a young man running across the finishing line , with
 sweat pouring down his face . However , instead of stopping to have a rest , he
 commences striving for the next destination . Under his feet indicates the sign : the
@@ -3681,7 +3681,7 @@ persistence/perseverance/adherence/being persistent
 同19 年真题主题。本漫画主题可为：坚持/持续努力，只要切一点题就
 行，不要太偏题。更重要的是语言。
 116
-2003
+•2003
 Depicted in the portrayal is a flower showing entirely distinct states towards a
 storm . In the former picture , the flower is in full bloom under the protection of a
 greenhouse . By contrast , when removed from the shed , the flower instantly withers
@@ -3716,7 +3716,7 @@ independence/depending on ourselves/self-reliance
 这幅图隐喻了父母溺爱对孩子发展的消极影响。但是从「独立」这一个人
 品质的积极性出发，更好写，更能引用模板。
 117
-2002
+•2002
 Depicted in the picture is a lovely American girl , wearing a traditional
 Chinese costume . Ornamented with elaborate earrings and necklaces , she wears a
 broad smile on her face , which adds to her unique charm .
@@ -3749,7 +3749,7 @@ cultural integration/cultural blending
 思路：
 同10 年真题，区别点在于描述图画不同。
 118
-2001
+•2001
 Depicted in the portrayal is an oil lamp , with only a tiny flame flickering in the
 dark . However , the tiny flame seems to be so bright that it illuminates a large part
 of the room . Just as the sign above the lamp indicates : love is a lamp that shines
@@ -3787,7 +3787,7 @@ love/kindness/caring for others/being warm-hearted
 有爱心可以说是个人品质，但如果加上社会的角度，就会有更多的意义句
 可用。类似14 年真题：孝顺。
 119
-2000
+•2000
 A stark contrast is observed between two cartoons : in the former picture , a large
 quantity of fish were swimming freely in the ocean with only a fishing boat in 1900 .
 While 95 years later , loads of fishing boats gathered on the sea with only one fish in

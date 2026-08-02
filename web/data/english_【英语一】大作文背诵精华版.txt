@@ -611,7 +611,7 @@ generations.
 12
 经典真题范文
 2023英一真题（图画类）
-
+•
 主题词：
 inheriting
 traditional
@@ -621,7 +621,7 @@ traditions
 cultural
 transmission/carrying
 forward traditions
-
+•
 思路：
 「传承文化」
 这一特质是可以分成个人+社会意义的，所以用for one thing
@@ -650,7 +650,7 @@ atmosphere
 international
 influence and
 competitiveness
-
+•
 模板套用
 Depicted in the cartoon are two teams of dragon boat competitors rowing on the
 river , with
@@ -685,7 +685,7 @@ social cohesion and should be held
 in high regard . Consequently , no matter what
 circumstances we encounter in the future , we should both preserve and develop
 ancestral heritages so as to stimulate social advancement .
-
+•
 翻译
 这个漫画描绘了两支龙舟队在河上划行，众多观众为他们欢呼加油。人群中
 有一位年长的女士对她的伴侣说：“有越来越多的人参加村庄的龙舟节真是太棒
@@ -701,18 +701,18 @@ ancestral heritages so as to stimulate social advancement .
 社会进步。
 14
 2023 英二真题（动态图表）
-
+•
 主题词：
 Health literacy level（健康素养水平）Healthy lifestyle（健康生活方式）
 Medical industry expansion（医疗行业发展）Healthcare services（医疗服务）
-
+•
 思路：
 图表核心变化特征：前期（2012-2015）缓慢增长（8.80%→10.25%，+1.45%）
 ，后期（2015-2021）加速跃升（10.25%→25.40%，+15.15%）。随后分析成因，
 从宏观社会背景切入：一归因于生活水平提升推动健康意识增强，二关联医疗产
 业发展。最后可以基于趋势与动因，预测未来十年健康素养将持续提升，形成"
 现象描述→归因分析→未来展望"的闭环结构。
-
+•
 模板套用
 The
 line chart above clearly reflects the changes of the residents’health literacy
@@ -737,7 +737,7 @@ residents’health literacy level will keep
 improving
 in the forthcoming decade .
 15
-
+•
 翻译
 上图清楚地反映了2012 年至2021 年间我国居民健康素养水平的变化。
 根据数据，
@@ -754,19 +754,19 @@ in the forthcoming decade .
 不断提高。
 16
 2021英二真题（静态图表）
-
+•
 主题词：
 Solo exercise dominance（独自锻炼的主导地位）
-​
+
 Comparison of exercise preferences（锻炼方式的对比）
-
+•
 思路：
 描述图表时，先聚焦核心现象——独自锻炼（54.3%）占比最高，团体活动
 （15.8%）最低，并通过对比（如“远高于”“仅占”）突出差异；再分两层归因：一
 是现代生活节奏快、压力大，使居民倾向灵活自由的个性化锻炼方式；二是线上
 健身平台的普及，提供高性价比课程，助推居家独自锻炼趋势；最后预测未来：
 基于上述原因，独自锻炼人数将持续增长。
-
+•
 模板套用
 The bar chart above clearly reflects the result of a survey about residents’exercis-
 ing ways in a certain city . Based upon the data , people who exercise alone occupy the
@@ -791,7 +791,7 @@ With due consideration of all these contributors , we may predict that the numbe
 of people exercising alone will keep growing in the forthcoming decade . It is time for
 us to embrace the trend of exercising alone .
 17
-
+•
 翻译
 上面的条形图清楚地反映了某城市居民锻炼方式的调查结果。根据数据显
 示，单独锻炼的人所占比例最大，高达54 .3% 。其次是与朋友和家人一起锻炼
@@ -806,18 +806,18 @@ us to embrace the trend of exercising alone .
 续增长。现在是我们拥抱在线独自健身趋势的时候了。
 18
 2024英一真题（混合类）
-
+•
 主题词：
 健康生活方式（Healthy Lifestyle）
 公共设施建设（Public Facility Construction）
-
+•
 思路：
 分析数据背后的社会现象，可从个人和社会两个角度展开。
 ①个人角度：大家对身体健康的重视，公园锻炼既可以强身健体、缓解压力，
 又可以改善心理健康。
 ②社会角度：政府投资绿色基础设施，反映社会对健康生活、绿色生态的重
 视。
-
+•
 模板套用
 Depicted in the left picture are several citizens walking or running along the road,
 with a banner reading "Fitness Area for Citizens". A young boy is remarking, "The
@@ -840,7 +840,7 @@ demand for active lifestyles will undoubtedly solidify this trajectory. As the y
 19
 observer aptly noted in the illustration, such developments truly constitute "really
 nice" enhancements for modern society.
-
+•
 翻译
 左图描绘了几位市民正在路上行走或跑步，横幅上写着市民健身区。一个小
 男孩感叹道：“我家附近新建的公园真不错”。与此同时，右图清晰显示某城市
@@ -855,17 +855,17 @@ nice" enhancements for modern society.
 必将巩固这一态势。正如图片中那位年轻人所言，这确实是现代社会的一大进步。
 20
 2025英一真题（动态图表）
-
+•
 主题词：
 耐用消费品普及（Popularization of Durable Consumer Goods）
 居民生活水平提升（Improvement in Living Standards）
-
+•
 思路：
 可挑选几个容易评论的点，首先是经济发展居民生活水平提升。以及例如家
 电拥有量的增加需要做到低碳节能以及环保，过度消费可能加剧碳排放；也可进
 一步联系城乡差距（农村家电普及率仍较低）和电商平台普及（网购便利性和价
 格优势，如拼多多、京东）。
-
+•
 模板套用
 The table above clearly reflects the changes in the ownership of major durable
 goods per 100 households among Chinese residents between 2014 and 2023. Based
@@ -885,7 +885,7 @@ ownership of these durable consumer goods will keep rising in the forthcoming
 decade. It is time for us to embrace the trend of improving household living standards
 through these consumption upgrades.
 21
-
+•
 翻译
 上表清晰反映了2014至2023年间中国居民每百户主要耐用消费品拥有量的
 变化。数据显示，空调拥有量从75.2台大幅增长至145.9台，而洗衣机和冰箱同期
@@ -913,20 +913,20 @@ in "expertise”can be compensated by higher integrity
 and benevolence .When communicating uncertainty in a transparent way , we are
 perceived as
 less biased and willing to tell the truth .
-
+•
 主题词：
 Communicating uncertainty（表达不确定性）
 Trustworthiness & Integrity（可信度与诚信）
-
+•
 思路：
-写作时应紧扣题目核心——​
-“展现不确定性是否损害形象”​
+写作时应紧扣题目核心——
+“展现不确定性是否损害形象”
 ，明确支持作
 者观点。首段需概括原文立场并表态（如完全赞同），随后从两个维度展开论证：
 1.个人层面：承认不确定性可避免过度自信（如以学生身份举例，说明坦诚
 无知能促进持续进步）；
 2.人际层面：引用研究证明诚实沟通能增强可信度，维护亲密关系。
-
+•
 模板套用
 Emerging from the excerpt is an enlightening paragraph of the article , in which
 the author tells us that communicating uncertainty is beneficial for us instead of
@@ -962,7 +962,7 @@ in high regard . Consequently , no matter
 what circumstances we encounter in the future , we should remind ourselves to
 maintain abundant honesty to others so as to pursue success and happiness.
 23
-
+•
 翻译
 文章的节选中出现了一段启发性的段落，作者向我们介绍了一种观点：沟通
 不确定性对我们有益，而不是损害我们的形象。不可否认，它巧妙传达的深刻含

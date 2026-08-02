@@ -286,12 +286,12 @@ my control.
 保证不会再发生这种情况，并且我已经采取了改进措施。
 2018 英语（二）真题
 范文
-Dear Professor Smith,​
-​
+Dear Professor Smith,
+
 I am writing this letter in order to express my heartfelt apology to you for not being
-able to visit you as planned.​
-​
-​
+able to visit you as planned.
+
+
 To begin with, I have recently been diagnosed with a serious ear infection, which
 requires surgery on the very day I was scheduled to depart. This unexpected medical
 situation makes it impossible for me to travel at this time. In addition, I sincerely hope
@@ -299,13 +299,13 @@ it would be possible to postpone my visit to a later date within this year. I wa
 much looking forward to meeting you and regret having to make this change. Last but
 not least, I apologize for not informing you of this situation sooner. The diagnosis and
 need for immediate surgery developed very recently.
-​
+
 Please accept my sincere apology again for any inconvenience due to my
 carelessness. I humbly ask for your forgiveness and hope you can understand my
 situation. I would greatly appreciate your favorable reply at your earliest convenience.
-​
+
 Yours sincerely,
-​
+
 Li Ming
 亲爱的史密斯教授：
 我写这封信是为了向你表达我衷心的歉意，因为我没能按计划去看望你。
@@ -348,19 +348,19 @@ algorithms, ultimately helping our team win the National Robotics Competition.
 每周六的一对一辅导让我掌握了复杂的算法，最终帮助我们团队赢得了全国
 机器人竞赛。
 2010 英语（二）真题
-Directions:​
-​
+Directions:
+
 You have just come back from the U.S. as a member of a Sino-American cultural
 exchange program. Write a letter to your American colleague to:
 1.express your thanks for his/her warm reception;
 2.welcome him/her to visit China in due course.
 范文
-Dear Tom,​
-​
+Dear Tom,
+
 I am writing this letter in order to express my heartfelt appreciation to you for
 your wonderful hospitality during my stay in your house for the Sino-American
 cultural exchange program, the details of which are still fresh in my mind.
-​
+
 To begin with, your considerate and warm reception made me feel completely at
 home throughout my two-month stay. In addition, your kind and detailed explanations
 of American customs were invaluable. They not only helped me overcome culture
@@ -370,9 +370,9 @@ visit.
 Please accept my sincere gratitude again for your incredible kindness and
 support. And one day if you need any help, I will definitely spare no effort to give my
 hand to you.
-​
+
 Yours sincerely,
-​
+
 Li Ming
 亲爱的汤姆,
 我写这封信是为了向您表示衷心的感谢，感谢您在我参加中美文化交流活动
@@ -429,8 +429,8 @@ satisfaction can be gained by these means，I will have to demand a refund.我�
 你能提供一个新的型号，或者至少给按照保修政策进行维修。如果这些方法
 都不能得到满意结果，我将不得不要求退款。
 2012 英语（二）真题
-Directions:​
-​
+Directions:
+
 Suppose you have found something wrong with the electronic dictionary that you
 bought from an nine store the other day. Write an email to the customer service center
 to
@@ -438,12 +438,12 @@ to
 (2) demand a prompt solution.
 You should write about 100 words on ANSWER SHEET 2.
 范文
-Dear Sir or Madam,​
-​
+Dear Sir or Madam,
+
 I feel sorry to bother you but I am afraid I have to make a complaint about the
 flaws in the electronic dictionary I bought from your company last week. I found it
 has some problems.
-​
+
 To begin with, the battery needs recharging after a mere 2 hours of use. This
 means I need to carry my charger whenever I go out for the day. In addition, the
 buttons on the dictionary are so small that it is nearly impossible to type anything with
@@ -452,9 +452,9 @@ for its intended purpose. Therefore, I would like either to change to another mo
 that works better or get a full refund.
 I hope you can deal with my complaint seriously. Thank you for your time and
 consideration. Looking forward to your earliest reply.
-​
+
 Yours sincerely,
-​
+
 Li Ming
 尊敬的先生/女士：
 我很抱歉打扰你，但我恐怕不得不对我上周从贵公司购买的电子词典的缺陷
