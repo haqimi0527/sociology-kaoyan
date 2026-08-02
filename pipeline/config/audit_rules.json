@@ -11,7 +11,10 @@
       "unknown-3seg-name",
       "def_too_short_classified",
       "proponent-chapter-consistency",
-      "duplicate-def-prefix"
+      "duplicate-def-prefix",
+      "variant-def-similar",
+      "variant-edit-distance",
+      "variant-exact-norm"
     ]
   },
   "rules": {
@@ -174,6 +177,31 @@
       "severity": "ERROR",
       "blocker": true,
       "suggestion_template": "数据文件大小超限（阈值需随数据增长更新）"
+    },
+    "variant_def_similar": {
+      "severity": "WARN",
+      "blocker": true,
+      "suggestion_template": "定义前80字 difflib ≥0.6 但 term 不同，疑似同一概念变体，人审后合并"
+    },
+    "variant_edit_distance": {
+      "severity": "WARN",
+      "blocker": true,
+      "suggestion_template": "term 归一后编辑距离 ≥0.8 且非反义对，疑似变体，人审后合并"
+    },
+    "variant_exact_norm": {
+      "severity": "WARN",
+      "blocker": true,
+      "suggestion_template": "term 去连接词/后缀/的 后相同，确定变体，人审后合并"
+    },
+    "variant_alias_ref": {
+      "severity": "INFO",
+      "blocker": false,
+      "suggestion_template": "定义里'又称/亦称X'且 X 是库内概念，合并候选"
+    },
+    "variant_shared_word": {
+      "severity": "INFO",
+      "blocker": false,
+      "suggestion_template": "定义共享≥3专业词但 term 不同，内容相近候选，人审"
     }
   }
 }

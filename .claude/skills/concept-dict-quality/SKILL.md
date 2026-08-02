@@ -82,6 +82,7 @@ description: Use when working on the 考研 concept dictionary's data quality �
 | 10 | 修复流程 | proponent 错位：mismatch 清单 → DeepSeek 判定归属（模板见"实现"）→ 人工核对 → 修复 |
 | 11 | 新脚本先小跑 | 新脚本先 `--dry-run` / 小样本跑一次，无意外再全量 |
 | 12 | 改前必备份 | 每次写 `web/data/*.json` 前备份，命名 `concepts_backup_<tag>_<ts>.json` |
+| 13 | **变体普查** | 重复定义检测**全量扫，绝不抽查**（用户铁律）。看 `_audit_report.md` 的 variant_* 规则（def_similar/edit_distance/exact_norm/alias_ref/shared_word）。"term 不同但同一概念"（如 资本主义的文化悲剧~文化悲剧）现有 term 查重抓不到，必须靠 E 层变体检测。合并前**人审**，keeper 保留定义最长+来源最权威 |
 
 ## 置信度分级（修复建议标注）
 

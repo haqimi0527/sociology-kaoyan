@@ -497,6 +497,197 @@ def check_proponent(concepts, taxonomy):
                     detail=f'assigned={assigned} but proponent={prop}')
 
 
+# ============ Layer E: 变体检测（全量普查，复用 step5/def_similarity/shared_word/scan_aliases 逻辑）============
+
+import difflib as _difflib
+
+# 反义修饰词对（step5 OPPOSITE）
+OPPOSITE_PAIRS = [
+    ("宏观", "微观"), ("正式", "非正式"), ("现实", "非现实"), ("直接", "间接"),
+    ("内部", "外部"), ("绝对", "相对"), ("利己", "利他"), ("显性", "隐性"),
+    ("主观", "客观"), ("内在", "外在"), ("总体", "具体"), ("上层", "下层"),
+    ("简单", "复杂"), ("正向", "反向"), ("正向", "负向"), ("积极", "消极"),
+]
+ANTI_PREFIX = re.compile(r'^(非|无|去|反|后|有|前)')
+# 独立考点（近义但必须保留，绝不合并）
+EXCLUDE_VARIANT_TERMS = {
+    "机械团结", "有机团结", "正功能", "反功能", "显功能", "潜功能",
+    "正式组织", "非正式组织", "正式群体", "非正式群体", "概率抽样", "非概率抽样",
+    "定类", "定序", "定距", "定比", "自变量", "因变量", "主我", "客我",
+    "利己型自杀", "利他型自杀", "宿命型自杀", "失范型自杀",
+    "剩余价值", "绝对剩余价值", "相对剩余价值",
+    "方法论个体主义", "方法论集体主义", "社会化", "再社会化",
+    "社会", "社会学", "社会主义", "社会理论", "社会研究", "社会现象",
+    "资本", "资本主义", "结构", "结构主义",
+}
+# 2-3 字核心词保护（去后缀仅限 ≥4 字）
+VARIANT_SUFFIX = re.compile(r'[型性式]?(主义|论|理论|学说|思想|概念|研究|类型|体系|模式|现象|学)$')
+VARIANT_NORM_JOIN = re.compile(r'[与和及\-－—]')
+# 共享词检测停用词（shared_word_check 精简版）
+SHARED_STOP = set("的与和及了在是这那之对从而并由或社会理论概念研究方法主义主要认为提出一种进行通过包括具有表示成为人们之间不同关系过程发展形成")
+
+
+def _variant_norm(t):
+    """term 归一（step5 norm 逻辑）：去括号内容/空格，连接词→~，去后缀仅限≥4字"""
+    t = str(t or '').replace('（', '(').replace('）', ')')
+    t = re.sub(r'\(.*?\)', '', t)
+    t = re.sub(r'[　 \t]+', '', t)
+    t = VARIANT_NORM_JOIN.sub('~', t)
+    if len(t) >= 4:
+        t = VARIANT_SUFFIX.sub('', t)
+    return t.strip(' \t\n*#△^←→√※.·、—-—:："“”\'‘’')
+
+
+def _variant_strip_qualifier(t):
+    """去修饰词前缀：'X的Y' → 'Y'（资本主义的文化悲剧 → 文化悲剧）。X 为 2-6 字修饰词"""
+    m = re.match(r'^([一-鿿]{2,6})的(.+)$', t)
+    if m:
+        return m.group(2)
+    return t
+
+
+def _is_opposite(a, b):
+    """归一化词带反义修饰词 → 不同考点"""
+    for p1, p2 in OPPOSITE_PAIRS:
+        if a.startswith(p1) and b.startswith(p2):
+            return True
+        if a.startswith(p2) and b.startswith(p1):
+            return True
+    return False
+
+
+def _is_antipair(a, b):
+    """一个带 非/无/去/反/后 前缀另一个不带 → 不同考点"""
+    def strip_mod(t):
+        t = ANTI_PREFIX.sub('', t)
+        return re.sub(r'[式性化]', '', t)
+    for x, y in ((a, b), (b, a)):
+        if ANTI_PREFIX.match(x):
+            xr, yr = strip_mod(x), strip_mod(y)
+            if xr == yr or (len(xr) >= 3 and len(yr) >= 3 and (xr in yr or yr in xr)):
+                return True
+    return False
+
+
+def _def_no_space(d):
+    return re.sub(r'\s+', '', d or '')
+
+
+def check_variants(concepts):
+    """全量变体检测（E1-E5），1972 条全扫，绝不抽样"""
+    # E1 定义相似（def_similarity_check）：term 不同 + 定义前80字 difflib ≥0.6
+    # 用前10字分桶避免 O(n²)
+    from collections import defaultdict
+    act = [(c.get('id', ''), c.get('term', ''), _def_no_space(c.get('definition')))
+           for c in concepts]
+    act = [x for x in act if len(x[2]) >= 20]
+
+    # E3 归一精确重复 + E2 编辑距离（step5 逻辑）
+    norm_map = defaultdict(list)
+    for cid, term, _d in act:
+        nk = _variant_norm(term)
+        if nk:
+            norm_map[nk].append((cid, term))
+
+    # E3: 归一后精确相同 → 确定变体
+    for nk, items in norm_map.items():
+        if len(items) > 1 and len(set(t for _, t in items)) > 1:
+            names = sorted(set(t for _, t in items))
+            add('variant_exact_norm', 'variant', 'WARN',
+                term=names[0], detail=f'归一精确重复: {names} → {nk}')
+
+    # E2: 归一后编辑距离 ≥0.8（排除反义/独立考点）
+    nk_list = sorted(norm_map.items(), key=lambda kv: -len(kv[0]))
+    for i in range(len(nk_list)):
+        nk1, items1 = nk_list[i]
+        for j in range(i + 1, len(nk_list)):
+            nk2, items2 = nk_list[j]
+            t1 = items1[0][1]
+            t2 = items2[0][1]
+            if t1 in EXCLUDE_VARIANT_TERMS or t2 in EXCLUDE_VARIANT_TERMS:
+                continue
+            if _is_opposite(nk1, nk2) or _is_antipair(nk1, nk2):
+                continue
+            ratio = _difflib.SequenceMatcher(None, nk1, nk2).ratio()
+            if ratio >= 0.8:
+                add('variant_edit_distance', 'variant', 'WARN', term=t1,
+                    detail=f'编辑距离近义: {t1}~{t2} (ratio={ratio:.2f}) 归一后{nk1}/{nk2}')
+
+    # E2b: 修饰词前缀变体：'X的Y' 去掉前缀后与库内 Y 重复（资本主义的文化悲剧 → 文化悲剧）
+    # 只接受 Y ≥3 字（排除 冲突/规范/标准 等 ≤2 字独立考点误报）
+    for nk, items in norm_map.items():
+        stripped = _variant_strip_qualifier(nk)
+        if stripped == nk or len(stripped) < 3:
+            continue
+        if stripped in norm_map:
+            t1 = items[0][1]
+            t2 = norm_map[stripped][0][1]
+            if t1 in EXCLUDE_VARIANT_TERMS or t2 in EXCLUDE_VARIANT_TERMS:
+                continue
+            if _is_opposite(nk, stripped) or _is_antipair(nk, stripped):
+                continue
+            add('variant_edit_distance', 'variant', 'WARN', term=t1,
+                detail=f'修饰前缀变体: {t1} 前缀={nk[:nk.rfind("的")]}, 疑似 {t2}')
+
+    # E1: 定义前80字相似（分桶避免 O(n²)）
+    buckets = defaultdict(list)
+    for cid, term, d in act:
+        buckets[d[:10]].append((cid, term, d))
+    for key, items in buckets.items():
+        if len(items) < 2:
+            continue
+        for i in range(len(items)):
+            for j in range(i + 1, len(items)):
+                cid1, t1, d1 = items[i]
+                cid2, t2, d2 = items[j]
+                if t1 == t2 or t1 in EXCLUDE_VARIANT_TERMS or t2 in EXCLUDE_VARIANT_TERMS:
+                    continue
+                ratio = _difflib.SequenceMatcher(None, d1[:80], d2[:80]).ratio()
+                if ratio >= 0.6:
+                    add('variant_def_similar', 'variant', 'WARN', term=t1,
+                        detail=f'定义相似: {t1}~{t2} (ratio={ratio:.2f})')
+
+    # E4 别名引用（scan_aliases）：定义里"又称X"且 X 是库内概念
+    all_terms = {c.get('term') for c in concepts}
+    sorted_terms = sorted(all_terms, key=len, reverse=True)
+    for c in concepts:
+        d = c.get('definition') or ''
+        for m in re.finditer(r'(又称|亦称|也叫|又名|别称|简称为|简称|即)([^，。；,;：:（(]{2,20})', d):
+            ref = m.group(2).strip()
+            for t in sorted_terms:
+                if t == ref or (ref.startswith(t) and len(t) >= len(ref) - 2):
+                    if t != c.get('term'):
+                        add('variant_alias_ref', 'variant', 'INFO', term=c.get('term', ''),
+                            detail=f'定义称 {t} 为别名')
+                    break
+
+    # E5 共享专业词（shared_word_check 简化）：定义共享≥3专业词
+    def sh_words(d):
+        d = re.sub(r'\s+', '', d or '')
+        out = set()
+        for n in (4, 3, 2):
+            for i in range(len(d) - n + 1):
+                w = d[i:i + n]
+                if w not in SHARED_STOP:
+                    out.add(w)
+        return out
+
+    # E5 用前10字桶内比较（避免 O(n²)），共享≥3词标记
+    for key, items in buckets.items():
+        if len(items) < 2:
+            continue
+        for i in range(len(items)):
+            for j in range(i + 1, len(items)):
+                cid1, t1, d1 = items[i]
+                cid2, t2, d2 = items[j]
+                if t1 == t2 or t1 in EXCLUDE_VARIANT_TERMS or t2 in EXCLUDE_VARIANT_TERMS:
+                    continue
+                shared = sh_words(d1) & sh_words(d2)
+                if len(shared) >= 3:
+                    add('variant_shared_word', 'variant', 'INFO', term=t1,
+                        detail=f'共享专业词: {t1}~{t2} 共享{len(shared)}词')
+
+
 # ============ 报告输出 ============
 
 def compute_exit_code(findings, strict=False):
@@ -600,6 +791,8 @@ def main():
         # Layer D
         check_taxonomy(concepts, taxonomy)
         check_proponent(concepts, taxonomy)
+        # Layer E（变体检测普查）
+        check_variants(concepts)
 
     write_report(FINDINGS, REPORT_JSON, REPORT_MD)
 
