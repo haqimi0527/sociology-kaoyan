@@ -8,3 +8,5 @@ __pycache__/
 *.pyc
 .DS_Store
 concept-taxonomy_backup_*.json
+concept-taxonomy.json_backup_*.json
+concept-taxonomy.json_backup_*

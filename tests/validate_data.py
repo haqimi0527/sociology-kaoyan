@@ -259,7 +259,7 @@ def check_taxonomy():
                     tax_ids.add(item['id'])
         elif isinstance(node, dict):
             for k, v in node.items():
-                if k == 'concepts' and isinstance(v, list):
+                if k in ('concepts', 'ungrouped_concepts') and isinstance(v, list):
                     for item in v:
                         if isinstance(item, str):
                             tax_ids.add(item)

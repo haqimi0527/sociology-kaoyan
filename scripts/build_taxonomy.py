@@ -324,12 +324,38 @@ def classify_concept(c):
 
 
 def classify_theory(c, all_text):
-    """Classify a theory concept into era→school→scholar"""
+    """Classify a theory concept into era→school→scholar
+
+    chapter 路径权威优先：`理论/时期/学派/学者/` 直接返回，`理论/时期/学派/`
+    返回学派级（scholar=None 进 ungrouped 桶）。路径无法命中才退回关键词打分。
+    """
     term = c['term']
     proponent = (c.get('proponent') or '').lower()
     school = (c.get('school') or '').lower()
     chapter = (c.get('chapter') or '').lower()
     tags = [t.lower() for t in (c.get('tags') or [])]
+
+    # ==== chapter 路径权威（优先） ====
+    parts = [p for p in (c.get('chapter') or '').split('/') if p]
+    if parts and parts[0].lower() == '理论':
+        if len(parts) >= 4:
+            era_raw, school_raw, scholar_raw = parts[1], parts[2], parts[3]
+            for era_full, era_data in THEORY_TAXONOMY.items():
+                if era_full.lower().startswith(era_raw.lower()):
+                    for sch_n, sch_data in era_data.items():
+                        if sch_n.lower() == school_raw.lower() or \
+                           (sch_n.lower().split('（')[0] == school_raw.lower().split('（')[0]):
+                            if scholar_raw in sch_data.get('scholars', {}):
+                                return (era_full, sch_n, scholar_raw), 100
+        elif len(parts) == 3:
+            era_raw, school_raw = parts[1], parts[2]
+            for era_full, era_data in THEORY_TAXONOMY.items():
+                if era_full.lower().startswith(era_raw.lower()):
+                    for sch_n, sch_data in era_data.items():
+                        if sch_n.lower() == school_raw.lower() or \
+                           (sch_n.lower().split('（')[0] == school_raw.lower().split('（')[0]):
+                            # 学派直挂 → 返回学派级，scholar=None（进 ungrouped 桶）
+                            return (era_full, sch_n, None), 90
 
     best_score = 0
     best_path = None
@@ -462,6 +488,7 @@ def build():
         for school_data in era.values():
             for scholar_data in school_data.get('scholars', {}).values():
                 scholar_data['concepts'] = []
+            school_data.pop('ungrouped_concepts', None)
     for phase in METHODS_TAXONOMY.values():
         for cdata in phase['categories'].values():
             cdata['concepts'] = []
@@ -486,7 +513,13 @@ def build():
         if path[0] == 'intro':
             INTRO_TAXONOMY[path[1]]['concepts'].append(cid)
         elif len(path) == 3:
-            THEORY_TAXONOMY[path[0]][path[1]]['scholars'][path[2]]['concepts'].append(cid)
+            if path[2] is None:
+                # 学派直挂 → 学派级 ungrouped 桶
+                if 'ungrouped_concepts' not in THEORY_TAXONOMY[path[0]][path[1]]:
+                    THEORY_TAXONOMY[path[0]][path[1]]['ungrouped_concepts'] = []
+                THEORY_TAXONOMY[path[0]][path[1]]['ungrouped_concepts'].append(cid)
+            else:
+                THEORY_TAXONOMY[path[0]][path[1]]['scholars'][path[2]]['concepts'].append(cid)
         else:
             METHODS_TAXONOMY[path[0]]['categories'][path[1]]['concepts'].append(cid)
         classified_count += 1
@@ -517,8 +550,11 @@ def build():
             for sname, sdata in sch.get('scholars', {}).items():
                 if sdata['concepts']:
                     clean_scholars[sname] = {'concepts': sdata['concepts']}
-            if clean_scholars:
-                clean_era[sch_n] = {'desc': sch.get('desc', ''), 'scholars': clean_scholars}
+            if clean_scholars or sch.get('ungrouped_concepts'):
+                node = {'desc': sch.get('desc', ''), 'scholars': clean_scholars}
+                if sch.get('ungrouped_concepts'):
+                    node['ungrouped_concepts'] = sch['ungrouped_concepts']
+                clean_era[sch_n] = node
         if clean_era:
             clean_theory[era_n] = clean_era
 
@@ -547,7 +583,16 @@ def build():
     }
 
     # Re-count after cleanup
-    theory_total = sum(len(sd['concepts']) for era in clean_theory.values() for sch in era.values() for sd in sch.get('scholars',{}).values())
+    theory_total = sum(
+        len(sd['concepts'])
+        for era in clean_theory.values()
+        for sch in era.values()
+        for sd in sch.get('scholars', {}).values()
+    ) + sum(
+        len(sch.get('ungrouped_concepts', []))
+        for era in clean_theory.values()
+        for sch in era.values()
+    )
     methods_total = sum(len(cd['concepts']) for ph in clean_methods.values() for cd in ph['categories'].values())
     intro_total = sum(len(td['concepts']) for td in clean_intro.values())
 

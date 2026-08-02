@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "_comment": "自检规则注册表：audit_runner.py 统一出口的规则元数据。severity=ERROR/WARN/INFO；blocker=true 表示 WARN 也须人工处理（决定退出码2）。suggestion_template 是每条 finding 的建议模板。",
+  "exit_policy": {
+    "_comment": "退出码：0=真PASS(无ERROR且无blocker WARN) / 1=FAIL(有ERROR) / 2=REVIEW(无ERROR但有blocker WARN须人审)",
+    "blocker_warns": [
+      "proponent-mismatch",
+      "era-mismatch",
+      "scholar_dir_3seg",
+      "school-direct-needs-scholar",
+      "unknown-3seg-name",
+      "def_too_short_classified",
+      "proponent-chapter-consistency",
+      "duplicate-def-prefix"
+    ]
+  },
+  "rules": {
+    "no_source_text": {
+      "severity": "INFO",
+      "blocker": false,
+      "suggestion_template": "补 source_text 或标注'笔记未标注来源'（历史技术债，只监控不回填）"
+    },
+    "narrative_start": {
+      "severity": "WARN",
+      "blocker": false,
+      "suggestion_template": "定义以'在/根据/随着/从/对'开头，去掉叙事式开头"
+    },
+    "def_no_period": {
+      "severity": "WARN",
+      "blocker": false,
+      "suggestion_template": "定义≥20字但无句号，补句号"
+    },
+    "def_too_long": {
+      "severity": "WARN",
+      "blocker": false,
+      "suggestion_template": "定义超500字，考虑精简或拆分"
+    },
+    "def_too_short_classified": {
+      "severity": "WARN",
+      "blocker": true,
+      "suggestion_template": "定义<15字。教材短定义绝不自动删，用 is_fragment_term 分流真概念(KEEP) vs 碎片；见短定义清单"
+    },
+    "textbook_language": {
+      "severity": "WARN",
+      "blocker": false,
+      "suggestion_template": "定义含'本章/本书/该书'教材语言，清理"
+    },
+    "term_fragment": {
+      "severity": "WARN",
+      "blocker": false,
+      "suggestion_template": "term 是残句/泛化词/编号前缀（碎片穷举见 fragment-exhaustive）"
+    },
+    "fragment_exhaustive": {
+      "severity": "WARN",
+      "blocker": false,
+      "suggestion_template": "穷举 is_fragment_term/classify_fragment 命中碎片，人工核边界"
+    },
+    "term_is_chapter": {
+      "severity": "ERROR",
+      "blocker": true,
+      "suggestion_template": "term 是章节标题（第X章/编号+标题），删除或改概念名"
+    },
+    "term_norm_dup": {
+      "severity": "WARN",
+      "blocker": false,
+      "suggestion_template": "term 规范化后重复（去括号/标点），核查是否译名变体"
+    },
+    "duplicate_def_prefix": {
+      "severity": "ERROR",
+      "blocker": true,
+      "suggestion_template": "定义前60字重复（白名单豁免见 approved_def_prefix_dups.json），核查是否同义/共用引导语"
+    },
+    "chapter_top_whitelist": {
+      "severity": "ERROR",
+      "blocker": true,
+      "suggestion_template": "chapter 顶层不在{理论,方法,概论}，归一"
+    },
+    "empty_chapter": {
+      "severity": "ERROR",
+      "blocker": true,
+      "suggestion_template": "chapter 为空，按关键词推断归位"
+    },
+    "duplicate_id": {
+      "severity": "ERROR",
+      "blocker": true,
+      "suggestion_template": "id 重复，保留 base 删除 base_N"
+    },
+    "missing_field": {
+      "severity": "ERROR",
+      "blocker": true,
+      "suggestion_template": "缺 id/term/definition 字段"
+    },
+    "scholar_dir_3seg": {
+      "severity": "WARN",
+      "blocker": true,
+      "suggestion_template": "3段 chapter 理论/era/学者/ 缺学派层，补学派层（见结构大修计划）"
+    },
+    "era_mismatch": {
+      "severity": "WARN",
+      "blocker": true,
+      "suggestion_template": "chapter 时期与正典 era 不符（只标不改，人工确认归属）"
+    },
+    "school_direct_needs_scholar": {
+      "severity": "WARN",
+      "blocker": true,
+      "suggestion_template": "3段 chapter 理论/era/学派/ 学派直挂，判断是否需挂具体学者"
+    },
+    "unknown_3seg_name": {
+      "severity": "WARN",
+      "blocker": true,
+      "suggestion_template": "3段 name 不在正典学者/学派，人工确认映射"
+    },
+    "proponent_mismatch": {
+      "severity": "WARN",
+      "blocker": true,
+      "suggestion_template": "proponent 归一后与挂靠学者不符，检查 chapter 归属或 proponent 是否写错"
+    },
+    "proponent_chapter_consistency": {
+      "severity": "WARN",
+      "blocker": true,
+      "suggestion_template": "proponent 归一后未命中 chapter 任一正典学者，双向一致性核查"
+    },
+    "proponent_noise": {
+      "severity": "WARN",
+      "blocker": false,
+      "suggestion_template": "proponent 含残片/非人名值，清理"
+    },
+    "scholar_heavy": {
+      "severity": "INFO",
+      "blocker": false,
+      "suggestion_template": "学者概念>50条，关键词过匹配（结构修后应自然消失）"
+    },
+    "unclassified": {
+      "severity": "ERROR",
+      "blocker": true,
+      "suggestion_template": "概念未分类，taxonomy 必须全部归位"
+    },
+    "cross_domain_dup": {
+      "severity": "ERROR",
+      "blocker": true,
+      "suggestion_template": "概念在多个 taxonomy 域重复索引"
+    },
+    "theory_in_methods": {
+      "severity": "ERROR",
+      "blocker": true,
+      "suggestion_template": "理论概念误入方法域，改 chapter"
+    },
+    "methods_in_theory": {
+      "severity": "ERROR",
+      "blocker": true,
+      "suggestion_template": "方法概念误入理论域，改 chapter"
+    },
+    "empty_taxonomy_node": {
+      "severity": "ERROR",
+      "blocker": true,
+      "suggestion_template": "taxonomy 节点为空（学者/类目 0 概念）"
+    },
+    "exam_year": {
+      "severity": "ERROR",
+      "blocker": true,
+      "suggestion_template": "真题年份越界"
+    },
+    "exam_score": {
+      "severity": "WARN",
+      "blocker": false,
+      "suggestion_template": "真题分值异常（题型分值不匹配）"
+    },
+    "exam_hallucination": {
+      "severity": "WARN",
+      "blocker": false,
+      "suggestion_template": "题干含 AI 幻觉模式（某市/某研究者/编造地名）"
+    },
+    "file_size": {
+      "severity": "ERROR",
+      "blocker": true,
+      "suggestion_template": "数据文件大小超限（阈值需随数据增长更新）"
+    }
+  }
+}

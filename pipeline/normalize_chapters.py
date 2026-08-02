@@ -30,12 +30,22 @@ SCHOLAR_MAP = MAP["scholar_to_era_school"]
 CHAPTER_TO_TOPIC = MAP["chapter_to_topic"]
 TOPIC_RENAME = MAP.get("topic_rename", {})
 
+# 学派别名 → 正典学派名（translation_aliases.json）
+try:
+    _alias_cfg = json.load(open(os.path.join(os.path.dirname(MAPPINGS), "translation_aliases.json"), encoding="utf-8"))
+    SCHOOL_ALIASES = {k: v for k, v in _alias_cfg.get("school_aliases", {}).items() if not k.startswith("_")}
+except Exception:
+    SCHOOL_ALIASES = {}
+
 # 时期→学派默认（学者不在映射表时兜底到时期）
 ERA_DEFAULT_SCHOOL = {
     "古典时期": "其他古典学者",
     "现代时期": "其他现代学者",
     "当代时期": "其他当代学者",
 }
+
+# 全局：era 不符（只标不改）日志
+era_mismatch_log = []
 
 def normalize_chapter(ch, concept=None):
     """归一单个 chapter，返回新 chapter（保留尾斜杠）
@@ -49,7 +59,26 @@ def normalize_chapter(ch, concept=None):
     top = TOP_RENAME.get(top, top)
     parts[0] = top  # 写回顶层
 
-    if top == "理论" and len(parts) >= 2:
+    if top == "理论" and len(parts) >= 3:
+        # 3段：理论/era/name/ —— name 可能是学者（缺学派层）或学派（直挂）
+        era, name = parts[1].strip(), parts[2].strip()
+        era = ERA_RENAME.get(era, era)  # 古典→古典时期
+        if name in SCHOLAR_MAP:
+            # 学者直挂 → 补学派层（era 不符只标不改，见 --plan 的 era_mismatch）
+            c_era, school, scholar = SCHOLAR_MAP[name]
+            if era != c_era:
+                era_mismatch_log.append({"id": (concept or {}).get("id", ""),
+                                         "term": (concept or {}).get("term", ""),
+                                         "old": ch, "cur_era": era, "canon_era": c_era})
+                return None  # era 不符，不自动改，交人审
+            parts = [top, c_era, school, scholar] + parts[3:]
+        elif name in SCHOOL_ALIASES:
+            # 学派直挂 → 归一学派名（不挂学者，交 --plan 的 school_direct 表）
+            parts[1] = era
+            parts[2] = SCHOOL_ALIASES[name]
+        else:
+            parts[1] = era
+    elif top == "理论" and len(parts) >= 2:
         p2 = parts[1].strip()
         if p2 in ERA_RENAME:
             parts[1] = ERA_RENAME[p2]
@@ -134,19 +163,70 @@ def infer_chapter_for_empty(c):
     return None
 
 def plan_concepts(concepts):
-    """计算归一计划：返回 (new_chapter_by_id, report)"""
+    """计算归一计划：返回 (changes, inferred, unresolved, era_mismatch)
+
+    changes 元素: {id, term, old_chapter, new_chapter, type}
+      type: normalize(学者补学派层/学派别名归一) | infer(空chapter推断)
+    era_mismatch: 学者 era 与正典不符，只标不改，交人审
+    """
+    global era_mismatch_log
+    era_mismatch_log = []
     changes = []
+    school_direct = []
+    unknown = []
+
+    # 正典学派名 = translation_aliases.school_aliases 的值 + 当前 taxonomy theory 域的学派键
+    canonical_schools = set(SCHOOL_ALIASES.values())
+    try:
+        _tax = json.load(open(os.path.join(os.path.dirname(CONCEPTS), 'concept-taxonomy.json'), encoding='utf-8'))
+        for _era_data in _tax.get('theory', {}).values():
+            canonical_schools.update(_era_data.keys())
+    except Exception:
+        pass
+    canonical_schools.update({'其他古典学者', '其他现代学者', '其他当代学者',
+                              '古典综合', '现代综合', '当代综合', '理论综合',
+                              '理论对比', '理论前沿'})
+    # 3段处理
     for c in concepts:
         cid = c["id"]
         term = c.get("term", "")
         ch = c.get("chapter", "") or ""
+        parts = [p for p in ch.split("/") if p]
+        if parts and parts[0] == "理论" and len(parts) == 3:
+            era, name = parts[1].strip(), parts[2].strip()
+            era = ERA_RENAME.get(era, era)
+            if name in SCHOLAR_MAP:
+                new_ch = normalize_chapter(ch, concept=c)
+                if new_ch is None:
+                    continue  # era mismatch 已记入 log
+                if new_ch != ch:
+                    changes.append({"id": cid, "term": term,
+                                    "old_chapter": ch, "new_chapter": new_ch,
+                                    "type": "scholar_insert_school"})
+            elif name in SCHOOL_ALIASES or name in canonical_schools:
+                school_direct.append({"id": cid, "term": term, "old_chapter": ch,
+                                      "school": name, "type": "school_direct"})
+            elif name not in ('其他古典学者', '其他现代学者', '其他当代学者',
+                              '古典综合', '现代综合', '当代综合', '理论综合',
+                              '理论对比', '理论前沿'):
+                unknown.append({"id": cid, "term": term, "old_chapter": ch,
+                                "name": name, "type": "unknown"})
+
+    # 其余（非3段理论）走常规归一
+    for c in concepts:
+        cid = c["id"]
+        term = c.get("term", "")
+        ch = c.get("chapter", "") or ""
+        parts = [p for p in ch.split("/") if p]
+        if parts and parts[0] == "理论" and len(parts) == 3:
+            continue  # 已处理
         new_ch = normalize_chapter(ch, concept=c)
+        if new_ch is None:
+            continue
         if ch != new_ch:
-            changes.append({
-                "id": cid, "term": term,
-                "old_chapter": ch, "new_chapter": new_ch,
-                "type": "normalize",
-            })
+            changes.append({"id": cid, "term": term,
+                            "old_chapter": ch, "new_chapter": new_ch,
+                            "type": "normalize"})
 
     # 空/未分类 chapter 推断
     inferred = []
@@ -163,13 +243,13 @@ def plan_concepts(concepts):
                 unresolved.append({"id": c["id"], "term": c.get("term",""),
                                    "old_chapter": ch, "reason": "无学者/来源信号"})
 
-    return changes, inferred, unresolved
+    return changes, inferred, unresolved, era_mismatch_log, school_direct, unknown
 
 def main():
     mode = "--check" if "--check" in sys.argv else "--plan" if "--plan" in sys.argv else "apply"
     concepts = json.load(open(CONCEPTS, encoding="utf-8"))
 
-    changes, inferred, unresolved = plan_concepts(concepts)
+    changes, inferred, unresolved, era_mm, school_direct, unknown = plan_concepts(concepts)
 
     if mode == "--check":
         # 统计归一后顶层分布
@@ -178,27 +258,35 @@ def main():
         for c in concepts:
             ch = c.get("chapter", "") or ""
             new_ch = normalize_chapter(ch, concept=c)
-            if ch != new_ch:
+            if new_ch and ch != new_ch:
                 touched += 1
             top = new_ch.split("/")[0] if new_ch else "(空)"
             after[top] += 1
         print(f"归一将改动: {touched} 条")
         print(f"归一后顶层: {dict(after.most_common(8))}")
         print(f"空chapter推断: {len(inferred)}, 未解决: {len(unresolved)}")
+        print(f"era不符(只标不改): {len(era_mm)} | 学派直挂: {len(school_direct)} | 未知名: {len(unknown)}")
         return
 
     # plan 输出
     report = {
-        "schema_version": 1,
+        "schema_version": 2,
         "total": len(concepts),
         "touched": len(changes),
         "normalize_changes": changes,
         "inferred": inferred,
         "unresolved": unresolved,
+        "era_mismatch": era_mm,
+        "school_direct": school_direct,
+        "unknown_names": unknown,
         "summary": {
             "top_after": None,
             "inferred_count": len(inferred),
             "unresolved_count": len(unresolved),
+            "era_mismatch_count": len(era_mm),
+            "scholar_insert_count": len([c for c in changes if c["type"] == "scholar_insert_school"]),
+            "school_direct_count": len(school_direct),
+            "unknown_count": len(unknown),
         }
     }
     # 统计归一后顶层
@@ -216,23 +304,36 @@ def main():
         print(f"计划已写入 {PLAN_OUT}")
         print(f"归一改动: {len(changes)} 条")
         print(f"空chapter推断: {len(inferred)} (未解决 {len(unresolved)})")
+        print(f"era不符(只标不改): {len(era_mm)} | 学派直挂: {len(school_direct)} | 未知名: {len(unknown)}")
         # MD
         lines = ["# 方向2 分类归一审批清单", ""]
         lines.append(f"## 统计\n- 归一改动: {len(changes)} 条")
         lines.append(f"- 空chapter推断: {len(inferred)} (未解决 {len(unresolved)})")
+        lines.append(f"- era不符(只标不改): {len(era_mm)}")
+        lines.append(f"- 学派直挂: {len(school_direct)}")
+        lines.append(f"- 未知名: {len(unknown)}")
         lines.append(f"- 归一后顶层: {report['summary']['top_after']}\n")
-        # 顶层归一
-        top_changes = [x for x in changes if x["old_chapter"].startswith(("社会学研究方法","当代"))]
-        if top_changes:
-            lines.append(f"## 顶层归一（{len(top_changes)} 条）")
-            for x in top_changes[:10]:
-                lines.append(f"- {x['old_chapter']} → {x['new_chapter']}")
-        # 学者展开
-        sch = [x for x in changes if x["old_chapter"].startswith("理论/") and len(x["old_chapter"].split('/'))<=3 and x["old_chapter"].split('/')[1] in SCHOLAR_MAP]
+        # 学者补学派层
+        sch = [x for x in changes if x["type"] == "scholar_insert_school"]
         if sch:
-            lines.append(f"\n## 学者直挂展开（{len(sch)} 条）")
-            for x in sch[:10]:
+            lines.append(f"## 学者补学派层（{len(sch)} 条）")
+            for x in sch[:15]:
                 lines.append(f"- {x['old_chapter']} → {x['new_chapter']}")
+        # era mismatch（只标不改，人审）
+        if era_mm:
+            lines.append(f"\n## era不符（{len(era_mm)} 条，只标不改，人审）")
+            for x in era_mm[:15]:
+                lines.append(f"- {x['term']} [{x['old']}] 当前{ x['cur_era']} ≠ 正典{x['canon_era']}")
+        # 学派直挂（人审挂学者）
+        if school_direct:
+            lines.append(f"\n## 学派直挂（{len(school_direct)} 条，人审挂学者）")
+            for x in school_direct[:15]:
+                lines.append(f"- {x['term']} [{x['old_chapter']}] 学派={x['school']}")
+        # 未知名（人审映射）
+        if unknown:
+            lines.append(f"\n## 未知名（{len(unknown)} 条，人审映射）")
+            for x in unknown[:15]:
+                lines.append(f"- {x['term']} [{x['old_chapter']}] name={x['name']}")
         # 编号章节
         num = [x for x in changes if '第' in x["old_chapter"]]
         if num:
