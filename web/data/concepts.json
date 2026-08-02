@@ -12492,38 +12492,6 @@
   ]
  },
  {
-  "term": "资本主义的文化悲剧",
-  "definition": "文化是与自然现象不同的人类社会活动的全部成果，它包括人类所创造的一切物质与非物质的东西；也可以说，自然界本无文化，自从有了人类，凡经人“耕耘”的一切均为文化。",
-  "proponent": "齐美尔",
-  "chapter": "理论/古典时期/形式社会学/齐美尔/",
-  "core_points": [
-   "预言现代的客观和主观文化相互独立化，和谐的理想关系已经破碎"
-  ],
-  "id": "c_e7491996",
-  "related": [
-   {
-    "id": "c_47560414",
-    "relation": "parallel"
-   },
-   {
-    "id": "c_d2fc47d6",
-    "relation": "parallel"
-   },
-   {
-    "id": "c_9c5a7806",
-    "relation": "parallel"
-   }
-  ],
-  "school": "",
-  "source_text": "",
-  "textbook_ref": "",
-  "exam_frequency": "medium",
-  "tags": [
-   "古典时期",
-   "齐美尔"
-  ]
- },
- {
   "term": "社会前提",
   "definition": "社会前提是指社会互动得以发生和持续所依赖的基本条件或基础性因素，齐美尔认为互动形成的人际关系网络是自由的前提，自由的重要特质在于让社会运作产生非线性的、不可完全预测的偶然演变，从而既可能带来创新，也可能造成风险。",
   "proponent": "格奥尔格·齐美尔",
@@ -45916,10 +45884,20 @@
   "proponent": "",
   "chapter": "理论/古典时期/形式社会学/齐美尔/",
   "core_points": [],
-  "related": [],
+  "related": [
+   {
+    "id": "c_9c5a7806",
+    "relation": "parallel",
+    "term": "拟像"
+   }
+  ],
   "source_text": "南大全考点_03.西方社会学理论-全考点_01.古典时期_03.古典齐美尔-全考点.txt",
   "exam_frequency": "medium",
-  "tags": [],
+  "tags": [
+   "古典时期",
+   "齐美尔",
+   "资本主义的文化悲剧（别名）"
+  ],
   "textbook_ref": "",
   "school": ""
  },

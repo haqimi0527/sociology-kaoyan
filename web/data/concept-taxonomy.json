@@ -191,7 +191,6 @@
               "c_62a94438",
               "c_7579c7a2",
               "c_6d0d3cdc",
-              "c_e7491996",
               "c_f7d4ff6f",
               "c_f232a846",
               "c_a9af136c",
@@ -2456,10 +2455,10 @@
     }
   },
   "_meta": {
-    "total_concepts": 1972,
-    "classified": 1972,
+    "total_concepts": 1971,
+    "classified": 1971,
     "unclassified": 0,
-    "theory_count": 931,
+    "theory_count": 930,
     "methods_count": 557,
     "intro_count": 345,
     "unclassified_terms": []
