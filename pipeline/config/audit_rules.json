@@ -12,9 +12,7 @@
       "def_too_short_classified",
       "proponent-chapter-consistency",
       "duplicate-def-prefix",
-      "variant-def-similar",
-      "variant-edit-distance",
-      "variant-exact-norm"
+      "variant-def-similar"
     ]
   },
   "rules": {
@@ -184,14 +182,14 @@
       "suggestion_template": "定义前80字 difflib ≥0.6 但 term 不同，疑似同一概念变体，人审后合并"
     },
     "variant_edit_distance": {
-      "severity": "WARN",
-      "blocker": true,
-      "suggestion_template": "term 归一后编辑距离 ≥0.8 且非反义对，疑似变体，人审后合并"
+      "severity": "INFO",
+      "blocker": false,
+      "suggestion_template": "term 归一后编辑距离 ≥0.8。注意：中文词根派生天然高相似（标准/标准差），多数是独立考点非变体，仅参考不阻塞"
     },
     "variant_exact_norm": {
-      "severity": "WARN",
-      "blocker": true,
-      "suggestion_template": "term 去连接词/后缀/的 后相同，确定变体，人审后合并"
+      "severity": "INFO",
+      "blocker": false,
+      "suggestion_template": "term 去连接词/后缀/的 后相同。注意：2-3字核心词+后缀是独立考点（社会/社会主义），仅参考不阻塞"
     },
     "variant_alias_ref": {
       "severity": "INFO",

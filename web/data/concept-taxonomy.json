@@ -163,7 +163,6 @@
               "c_0a9df927e1",
               "c_ea8f5d0c0d",
               "c_a70d61b486",
-              "c_2f8339ea89",
               "c_084b8c1229",
               "c_190a004c4d",
               "c_fee344d77a",
@@ -1894,7 +1893,6 @@
             "c_0d094a08",
             "c_3cca4c79",
             "c_fefadc3795",
-            "c_fefadc3796",
             "c_fefadc3798",
             "c_fefadc3799",
             "c_fefadc379a",
@@ -2202,7 +2200,6 @@
         "c_803a7e98",
         "c_d3958776",
         "c_8e3595cd",
-        "c_ec01d744",
         "c_1fadd448",
         "c_df7ea665",
         "c_59c07cfc",
@@ -2455,12 +2452,12 @@
     }
   },
   "_meta": {
-    "total_concepts": 1971,
-    "classified": 1971,
+    "total_concepts": 1968,
+    "classified": 1968,
     "unclassified": 0,
-    "theory_count": 930,
-    "methods_count": 557,
-    "intro_count": 345,
+    "theory_count": 929,
+    "methods_count": 556,
+    "intro_count": 344,
     "unclassified_terms": []
   }
 }
