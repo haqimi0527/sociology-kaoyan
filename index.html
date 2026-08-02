@@ -1830,7 +1830,7 @@ let taxonomy = null;  // concept-taxonomy.json
 async function loadTaxonomy() {
   if (taxonomy) return;
   try {
-    const resp = await fetch('data/concept-taxonomy.json?v=1');
+    const resp = await fetch('data/concept-taxonomy.json?v=2');
     if (!resp.ok) throw new Error('HTTP ' + resp.status);
     taxonomy = await resp.json();
   } catch(e) {
@@ -1842,7 +1842,7 @@ async function loadTaxonomy() {
 async function loadConcepts() {
   if (concepts.length) return;
   try {
-    const resp = await fetch('data/concepts.json?v=3');
+    const resp = await fetch('data/concepts.json?v=4');
     if (!resp.ok) throw new Error('HTTP ' + resp.status);
     concepts = await resp.json();
     concepts.forEach(c => { if (c.id) { conceptIndex[c.id] = c; } else { console.warn('概念缺少 id:', c.term); } });
@@ -1892,6 +1892,14 @@ function buildTaxonomyTree(subject) {
           allConcepts = allConcepts.concat(scholarConcepts);
           scholars.push({ name: scholarName, concepts: scholarConcepts, keywords: scholarsData[scholarName].keywords || [] });
         });
+        // 学派直挂概念（ungrouped_concepts）→ 作为"未分学者"桶展示
+        var ungrouped = (schoolData[schoolName].ungrouped_concepts || []).map(function(c) {
+          var cid = typeof c === 'string' ? c : (c && c.id); return conceptIndex[cid] || null;
+        }).filter(Boolean);
+        if (ungrouped.length) {
+          allConcepts = allConcepts.concat(ungrouped);
+          scholars.push({ name: '（未分学者）', concepts: ungrouped, keywords: [] });
+        }
         schools.push({ name: schoolName, desc: schoolData[schoolName].desc || '', scholars: scholars });
       });
       periods.push({ name: periodName, schools: schools });
@@ -2010,6 +2018,13 @@ function renderTheoryTaxonomyColumn(state) {
         var isActive = !state.thinkers.length || state.thinkers.indexOf(scholarName) !== -1;
         html += '<div class="cat-item cat-scholar' + (isActive ? ' active' : '') + '" data-action="thinker" data-thinker="' + escHtml(scholarName) + '" data-subject="theory">📖 ' + escHtml(scholarName) + '<span class="count">' + count + '</span></div>';
       });
+      // 学派直挂概念 → 未分学者桶
+      var ungrouped = schoolData.ungrouped_concepts || [];
+      if (ungrouped.length) {
+        var ugCount = ungrouped.length;
+        var ugActive = !state.thinkers.length || state.thinkers.indexOf('（未分学者）') !== -1;
+        html += '<div class="cat-item cat-scholar' + (ugActive ? ' active' : '') + '" data-action="thinker" data-thinker="（未分学者）" data-subject="theory">📖 （未分学者）<span class="count">' + ugCount + '</span></div>';
+      }
     });
   } else {
     // All periods mode: show period → school summary
@@ -2019,6 +2034,7 @@ function renderTheoryTaxonomyColumn(state) {
       Object.values(schools).forEach(function(sd) {
         var scholars = sd.scholars || {};
         Object.values(scholars).forEach(function(sc) { totalCount += (sc.concepts || []).length; });
+        totalCount += (sd.ungrouped_concepts || []).length;
       });
       html += '<div class="cat-item cat-period-summary" data-action="period" data-period="' + escHtml(pName) + '" data-subject="theory">📂 ' + escHtml(pName) + '<span class="count">' + totalCount + '</span></div>';
     });
@@ -2069,6 +2085,12 @@ function renderScholarAZColumn(state, taxPeriods) {
         if (!scholarMap[scholarName]) scholarMap[scholarName] = 0;
         scholarMap[scholarName] += (scholars[scholarName].concepts || []).length;
       });
+      // 学派直挂概念 → 未分学者桶
+      var ug = (schools[schoolName].ungrouped_concepts || []).length;
+      if (ug) {
+        if (!scholarMap['（未分学者）']) scholarMap['（未分学者）'] = 0;
+        scholarMap['（未分学者）'] += ug;
+      }
     });
   }
 
@@ -4163,7 +4185,7 @@ var polQuestions = [];
 async function loadPolData() {
   if (polQuestionsLoaded) return;
   try {
-    var resp = await fetch('data/politics.json?v=2');
+    var resp = await fetch('data/politics.json?v=3');
     if (resp.ok) { var data = await resp.json(); if (Array.isArray(data) && data.length > 0) { polQuestions = data; polQuestionsLoaded = true; } }
   } catch(e) { /* keep fallback */ }
   if (!polQuestions.length) {
@@ -4933,7 +4955,7 @@ var methodFreq = {};
 
 async function loadConceptExtras() {
   try {
-    var resp = await fetch('data/theory-topics.json?v=3');
+    var resp = await fetch('data/theory-topics.json?v=4');
     if (resp.ok) {
       var data = await resp.json();
       data.forEach(function(item) {
