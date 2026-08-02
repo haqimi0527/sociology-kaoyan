@@ -4,6 +4,7 @@ playwright-report/
 *.backup.json
 concepts_backup_*.json
 concepts.json_backup_*.json
+concepts.json_backup_*
 __pycache__/
 *.pyc
 .DS_Store
