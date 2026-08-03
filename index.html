@@ -994,108 +994,286 @@ table.tbl tr:nth-child(even) td {
 .scholar-az-item:hover{background:var(--thr-bg)}
 .scholar-az-item.active{background:var(--thr-light);font-weight:600}
 .scholar-az-item .count{font-size:10px;color:var(--faint);background:var(--surface2);padding:1px 6px;border-radius:10px}
+
+/* ============================================================
+   RPG 深色奇幻主题层（覆盖，位于样式表末尾——强制深色，不跟随系统）
+   ============================================================ */
+:root {
+  --bg: #0B0817; --bg-2: #120E26;
+  --surface: rgba(22,17,44,.78); --surface2: rgba(28,21,54,.8);
+  --border: rgba(217,178,94,.22); --border-light: rgba(217,178,94,.14);
+  --ink: #EDE7F7; --lead: #9A8FB8; --faint: #6E6390; --placeholder: #5a4f78;
+  --pol: #E06A5E; --pol-bg: rgba(224,106,94,.15); --pol-light: rgba(224,106,94,.24);
+  --eng: #6FA8E8; --eng-bg: rgba(111,168,232,.15); --eng-light: rgba(111,168,232,.24);
+  --thr: #B58AF2; --thr-bg: rgba(181,138,242,.15); --thr-light: rgba(181,138,242,.24);
+  --met: #5CD6A0; --met-bg: rgba(92,214,160,.15); --met-light: rgba(92,214,160,.24);
+  --good: #4FC98F; --good-bg: rgba(79,201,143,.16);
+  --warn: #E8B45E; --warn-bg: rgba(232,180,94,.16);
+  --bad: #E06A5E; --bad-bg: rgba(224,106,94,.16);
+  --gold: #D9B25E; --gold-2: #F0C75E; --gold-dim: #8A6A2F;
+  --line: rgba(217,178,94,.22);
+  --btn-primary-bg: #8A6A2F;
+  --shadow-xs: 0 1px 2px rgba(0,0,0,.35);
+  --shadow-sm: 0 1px 3px rgba(0,0,0,.45);
+  --shadow: 0 4px 12px rgba(0,0,0,.5);
+  --shadow-lg: 0 8px 24px rgba(0,0,0,.6);
+  --shadow-xl: 0 16px 40px rgba(0,0,0,.7);
+}
+body { background: var(--bg); }
+.bg { position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  background: radial-gradient(ellipse at 70% 0%, rgba(84,58,150,.32), transparent 55%), radial-gradient(ellipse at 15% 100%, rgba(40,70,130,.25), transparent 55%), linear-gradient(160deg, #0B0817 0%, #120E26 55%, #0A0918 100%); }
+.bg::before { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 30%; background: linear-gradient(to top, rgba(217,178,94,.05), transparent); }
+.particle { position: fixed; z-index: 0; width: var(--s,3px); height: var(--s,3px); border-radius: 50%; background: var(--c,#D9B25E); opacity: 0; animation: floatUp var(--d,14s) linear infinite; animation-delay: var(--dl,0s); filter: blur(.4px); pointer-events: none; }
+@keyframes floatUp { 0% { transform: translateY(20vh) translateX(0) scale(1); opacity: 0; } 12% { opacity: var(--o,.7); } 100% { transform: translateY(-110vh) translateX(var(--dx,20px)) scale(.4); opacity: 0; } }
+.sidebar, .main { position: relative; z-index: 2; }
+.sidebar { background: rgba(12,9,26,.9); border-right-color: var(--line); backdrop-filter: blur(8px); }
+.side-nav .nav-item { color: var(--lead); }
+.nav-item:hover { background: rgba(217,178,94,.08); color: var(--ink); }
+.nav-item.active { background: rgba(217,178,94,.12); color: var(--gold-2); box-shadow: inset 3px 0 0 var(--gold); }
+.btn-primary { background: linear-gradient(135deg, var(--gold-dim), var(--gold-2)); color: var(--bg); }
+.btn-primary:hover { filter: brightness(1.1); opacity: 1; }
+.res-cat-btn.active { background: linear-gradient(135deg, var(--gold-dim), var(--gold-2)); color: var(--bg); }
+input, select, textarea { background: var(--surface2); color: var(--ink); border-color: var(--line); }
+input::placeholder { color: var(--placeholder); }
+
+/* 角色栏（侧边栏顶部） */
+.hero-role { padding: 20px 16px 14px; border-bottom: 1px solid var(--line); }
+.hero-role .hero-top { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+.hero-role .avatar { width: 46px; height: 46px; border-radius: 50%; flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-size: 21px; font-weight: 900; color: var(--bg); background: radial-gradient(circle at 30% 30%, var(--gold-2), var(--gold-dim)); box-shadow: 0 0 18px rgba(217,178,94,.45); position: relative; }
+.hero-role .avatar::after { content: ""; position: absolute; inset: -4px; border-radius: 50%; border: 1px solid rgba(217,178,94,.5); animation: heroRing 3.5s ease-in-out infinite; }
+@keyframes heroRing { 0%,100% { transform: scale(1); opacity: .6; } 50% { transform: scale(1.14); opacity: .15; } }
+.hero-role .hero-name { font-weight: 700; font-size: 14px; letter-spacing: 1px; color: var(--ink); }
+.hero-role .hero-title { font-size: 10px; color: var(--text-soft,var(--lead)); letter-spacing: 1.5px; }
+.hero-role .hero-lvl { font-size: 11px; font-weight: 700; color: var(--gold); border: 1px solid var(--line); padding: 1px 8px; border-radius: 6px; background: rgba(217,178,94,.08); margin-left: auto; }
+.hero-role .xp { width: 100%; }
+.hero-role .xp-label { font-size: 10px; color: var(--lead); display: flex; justify-content: space-between; margin-bottom: 4px; letter-spacing: 1px; }
+.hero-role .xp-label b { color: var(--gold-2); }
+.hero-role .xp-bar { height: 9px; border-radius: 6px; background: rgba(217,178,94,.12); border: 1px solid var(--line); overflow: hidden; position: relative; }
+.hero-role .xp-bar i { display: block; height: 100%; width: 0%; border-radius: 6px; background: linear-gradient(90deg, var(--gold-dim), var(--gold-2)); box-shadow: 0 0 12px rgba(240,199,94,.55); transition: width .6s var(--ease); }
+.switch-btn { font-size: 11px; color: var(--lead); border: 1px solid var(--line); border-radius: 8px; padding: 4px 10px; letter-spacing: 1px; background: none; cursor: pointer; }
+.switch-btn:hover { color: var(--gold-2); border-color: var(--gold); }
+
+/* ===== 世界地图（主城） ===== */
+.map-head { text-align: center; margin: 6px 0 26px; }
+.map-head .kicker { font-size: 10px; letter-spacing: 6px; color: var(--gold); text-transform: uppercase; text-shadow: 0 0 14px rgba(217,178,94,.5); }
+.map-head h1 { font-size: 36px; font-weight: 900; letter-spacing: 8px; margin: 6px 0 4px; background: linear-gradient(180deg, #fff, #D9C7F2); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+.map-head p { color: var(--lead); font-size: 12px; letter-spacing: 2px; }
+.zones { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; margin-bottom: 22px; }
+.zone { position: relative; padding: 22px 14px 16px; border-radius: 16px; background: linear-gradient(165deg, var(--card,var(--surface)), var(--card-2,var(--surface2))); border: 1px solid var(--line); backdrop-filter: blur(8px); text-align: center; cursor: pointer; transition: transform .3s, box-shadow .3s, border-color .3s; overflow: hidden; animation: zoneFloat 6s ease-in-out infinite; }
+.zone:nth-child(2) { animation-delay: .7s; } .zone:nth-child(3) { animation-delay: 1.4s; } .zone:nth-child(4) { animation-delay: .3s; } .zone:nth-child(5) { animation-delay: 2s; }
+@keyframes zoneFloat { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+.zone:hover { transform: translateY(-12px) scale(1.02); box-shadow: 0 18px 46px rgba(0,0,0,.5); border-color: rgba(217,178,94,.55); animation-play-state: paused; }
+.zone::after { content: ""; position: absolute; top: 0; left: 18%; right: 18%; height: 2px; background: linear-gradient(90deg, transparent, var(--zc,var(--gold)), transparent); opacity: .7; }
+.zone .z-icon { font-size: 34px; display: block; margin-bottom: 10px; filter: drop-shadow(0 0 14px var(--zc,rgba(217,178,94,.6))); }
+.zone .z-name { display: block; font-weight: 700; font-size: 14px; letter-spacing: 1px; color: var(--ink); margin-bottom: 3px; }
+.zone .z-sub { display: block; font-size: 10px; color: var(--lead); letter-spacing: 1px; }
+.zone .z-stat { display: inline-block; margin-top: 10px; font-size: 11px; font-weight: 700; color: var(--zc,var(--gold)); padding: 2px 10px; border-radius: 8px; background: rgba(217,178,94,.08); border: 1px solid var(--line); }
+.zone.dash { --zc: var(--gold); } .zone.gen { --zc: var(--gold-2); } .zone.thr { --zc: var(--thr); } .zone.met { --zc: var(--met); } .zone.pol { --zc: var(--pol); } .zone.eng { --zc: var(--eng); }
+.board-row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 22px; }
+.board { background: linear-gradient(165deg, var(--surface), var(--surface2)); border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px; backdrop-filter: blur(8px); }
+.board h2 { font-size: 14px; font-weight: 700; letter-spacing: 2px; margin-bottom: 12px; color: var(--gold-2); }
+.board h2::before { content: "◆ "; font-size: 11px; color: var(--gold-dim); }
+.quest-list { list-style: none; }
+.quest-list li { display: flex; align-items: center; gap: 10px; padding: 7px 2px; font-size: 12px; color: var(--lead); border-bottom: 1px dashed rgba(217,178,94,.14); }
+.quest-list li:last-child { border-bottom: 0; }
+.quest-list .ck { width: 20px; height: 20px; border-radius: 50%; flex-shrink: 0; display: flex; align-items: center; justify-content: center; border: 1px solid var(--line); font-size: 10px; color: var(--gold); }
+.quest-list li.done .ck { background: var(--met); color: var(--bg); border-color: var(--met); box-shadow: 0 0 10px rgba(79,201,143,.5); }
+.quest-list li.done span:not(.ck) { color: var(--faint); text-decoration: line-through; }
+.quest-list .rew { margin-left: auto; font-size: 10px; color: var(--gold); }
+.ach-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.ach { display: flex; align-items: center; gap: 8px; padding: 10px 12px; border-radius: 12px; border: 1px solid var(--line); background: rgba(217,178,94,.04); font-size: 11px; color: var(--faint); transition: transform .2s; }
+.ach:hover { transform: translateY(-2px); }
+.ach.lit { color: var(--ink); border-color: rgba(217,178,94,.5); background: linear-gradient(135deg, rgba(217,178,94,.14), rgba(217,178,94,.04)); }
+.ach .a-icon { font-size: 16px; filter: grayscale(1) opacity(.5); }
+.ach.lit .a-icon { filter: none; }
+
+/* ===== 领地内容视图（面包屑 + 下钻 + 技能卡） ===== */
+.zone-view { display: none; animation: zoneIn .4s cubic-bezier(.2,.8,.25,1); }
+.zone-view.active { display: block; }
+@keyframes zoneIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+.content-head { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; flex-wrap: wrap; }
+.back { font-size: 12px; color: var(--lead); letter-spacing: 1px; padding: 6px 12px; border: 1px solid var(--line); border-radius: 8px; background: rgba(217,178,94,.06); cursor: pointer; white-space: nowrap; transition: all .2s; }
+.back:hover { color: var(--gold-2); border-color: var(--gold); box-shadow: 0 0 12px rgba(217,178,94,.2); }
+.back:disabled { opacity: .4; cursor: not-allowed; }
+.zone-title { font-size: 22px; font-weight: 900; letter-spacing: 3px; color: var(--ink); }
+.crumbs { display: flex; align-items: center; gap: 4px; margin-top: 4px; flex-wrap: wrap; font-size: 12px; color: var(--faint); width: 100%; }
+.crumbs button { font-size: 12px; color: var(--faint); padding: 2px 6px; border-radius: 6px; cursor: pointer; background: none; border: 0; transition: all .2s; }
+.crumbs button:hover { color: var(--gold-2); background: rgba(217,178,94,.08); }
+.crumbs .sep { color: var(--faint); opacity: .5; }
+.crumbs .cur { color: var(--gold-2); font-weight: 700; }
+.zone-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 18px; }
+.browse { display: flex; flex-direction: column; gap: 10px; }
+.browse-item { display: flex; align-items: center; gap: 12px; padding: 14px 18px; border-radius: 14px; background: linear-gradient(165deg, var(--surface), var(--surface2)); border: 1px solid var(--line); border-left: 3px solid var(--zc,var(--gold)); backdrop-filter: blur(8px); cursor: pointer; transition: transform .25s, box-shadow .25s, border-color .25s; text-align: left; font-family: var(--font); }
+.browse-item:hover { transform: translateX(6px); box-shadow: 0 10px 30px rgba(0,0,0,.4); border-color: var(--zc,var(--gold)); }
+.browse-item .b-icon { font-size: 22px; filter: drop-shadow(0 0 8px var(--zc,rgba(217,178,94,.5))); }
+.browse-item .b-name { flex: 1; font-size: 14px; font-weight: 700; letter-spacing: 1px; color: var(--ink); }
+.browse-item .b-count { font-size: 11px; color: var(--lead); padding: 2px 10px; border-radius: 8px; background: rgba(217,178,94,.07); border: 1px solid var(--line); white-space: nowrap; }
+.browse-item .b-arrow { font-size: 18px; color: var(--faint); transition: transform .25s; }
+.browse-item:hover .b-arrow { transform: translateX(4px); color: var(--gold-2); }
+.skill-list { display: flex; flex-direction: column; gap: 12px; }
+.skill-card { background: linear-gradient(165deg, var(--surface), var(--surface2)); border: 1px solid var(--line); border-left: 3px solid var(--sc,var(--thr)); border-radius: 14px; padding: 16px 20px; backdrop-filter: blur(8px); transition: transform .25s, box-shadow .25s; position: relative; overflow: hidden; cursor: pointer; }
+.skill-card:hover { transform: translateX(6px); box-shadow: 0 10px 30px rgba(0,0,0,.4); }
+.skill-card::after { content: ""; position: absolute; top: 0; left: 0; bottom: 0; width: 34%; background: linear-gradient(105deg, transparent, rgba(255,255,255,.05), transparent); transform: translateX(-150%); transition: transform .7s; }
+.skill-card:hover::after { transform: translateX(300%); }
+.skill-top { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+.skill-tier { font-size: 10px; font-weight: 900; letter-spacing: 1px; color: var(--sc,var(--gold)); padding: 2px 8px; border-radius: 6px; border: 1px solid currentColor; }
+.skill-name { font-size: 15px; font-weight: 700; letter-spacing: 1px; color: var(--ink); }
+.skill-desc { font-size: 12px; color: var(--lead); line-height: 1.75; }
+.skill-rels { margin-top: 8px; font-size: 11px; color: var(--faint); }
+.skill-rels b { color: var(--gold); }
+.skill-actions { display: flex; align-items: center; justify-content: space-between; margin-top: 10px; }
+.m-status { font-size: 11px; color: var(--faint); letter-spacing: 1px; }
+.skill-card.mastered { border-left-color: var(--gold-2); box-shadow: 0 0 18px rgba(240,199,94,.14); }
+.skill-card.mastered .skill-name::after { content: " ✓"; color: var(--gold-2); }
+.skill-card.mastered .m-status { color: var(--gold-2); }
+.m-btn { font-size: 11px; font-weight: 700; color: var(--gold-2); border: 1px solid var(--gold); border-radius: 8px; padding: 4px 12px; letter-spacing: 1px; background: none; cursor: pointer; }
+.m-btn:hover { background: rgba(217,178,94,.15); box-shadow: 0 0 12px rgba(217,178,94,.3); }
+.m-count { display: block; margin-top: 3px; font-size: 10px; font-weight: 700; color: var(--gold-2); letter-spacing: .5px; }
+
+/* ===== 概念卡侧栏 ===== */
+.flash-card { background: linear-gradient(165deg, var(--surface), var(--surface2)); border: 1px solid var(--line); border-radius: 16px; padding: 20px; position: sticky; top: 20px; height: fit-content; backdrop-filter: blur(8px); }
+.flash-card h3 { font-size: 13px; letter-spacing: 2px; color: var(--gold-2); margin-bottom: 12px; }
+.flash-note { font-size: 12px; color: var(--faint); line-height: 1.8; padding: 14px; border: 1px dashed var(--line); border-radius: 12px; }
+.fc-card { height: 230px; perspective: 900px; cursor: pointer; margin-bottom: 14px; }
+.fc-inner { position: relative; width: 100%; height: 100%; transform-style: preserve-3d; transition: transform .6s; }
+.fc-card.flip .fc-inner { transform: rotateY(180deg); }
+.fc-face { position: absolute; inset: 0; backface-visibility: hidden; border-radius: 14px; border: 1px solid var(--line); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; background: linear-gradient(170deg, rgba(28,21,54,.95), rgba(18,14,38,.95)); padding: 20px; }
+.fc-back { transform: rotateY(180deg); }
+.fc-kicker { font-size: 10px; letter-spacing: 3px; color: var(--gold-dim); }
+.fc-term { font-size: 22px; font-weight: 900; letter-spacing: 2px; text-align: center; color: var(--ink); }
+.fc-answer { font-size: 12px; color: var(--lead); line-height: 1.8; }
+.fc-hint { font-size: 11px; color: var(--faint); }
+.xp-note { font-size: 12px; color: var(--lead); text-align: center; padding: 10px; border: 1px dashed var(--line); border-radius: 10px; }
+.xp-note b { color: var(--gold-2); }
+.hidden { display: none; }
+
+/* ===== 欢迎 / 升级弹窗 ===== */
+.welcome { position: fixed; inset: 0; z-index: 500; display: none; align-items: center; justify-content: center; background: rgba(5,4,12,.85); backdrop-filter: blur(8px); }
+.welcome.open { display: flex; }
+.w-card { width: 400px; max-width: 90vw; background: linear-gradient(170deg, rgba(28,21,54,.97), rgba(15,11,32,.97)); border: 1px solid var(--line); border-radius: 18px; padding: 32px 28px; text-align: center; box-shadow: 0 20px 60px rgba(0,0,0,.6), 0 0 40px rgba(217,178,94,.14); animation: upIn .5s cubic-bezier(.2,.8,.25,1); }
+@keyframes upIn { from { opacity: 0; transform: translateY(20px) scale(.96); } to { opacity: 1; transform: none; } }
+.w-badge { font-size: 40px; filter: drop-shadow(0 0 20px rgba(217,178,94,.5)); }
+.w-card h2 { font-size: 20px; font-weight: 900; letter-spacing: 3px; margin: 10px 0 6px; color: var(--ink); }
+.w-card p { font-size: 12px; color: var(--lead); letter-spacing: 1px; margin-bottom: 18px; }
+.w-card input { width: 100%; padding: 11px 14px; background: rgba(10,7,22,.7); border: 1px solid var(--line); border-radius: 10px; color: var(--ink); font-size: 15px; text-align: center; letter-spacing: 2px; outline: none; }
+.w-card input:focus { border-color: var(--gold); box-shadow: 0 0 14px rgba(217,178,94,.25); }
+#btn-enter { width: 100%; margin-top: 12px; padding: 11px; background: linear-gradient(135deg, var(--gold-dim), var(--gold-2)); color: var(--bg); font-weight: 700; font-size: 15px; border-radius: 10px; letter-spacing: 2px; cursor: pointer; border: 0; }
+#btn-enter:hover { filter: brightness(1.1); }
+.w-save { margin-top: 12px; font-size: 11px; color: var(--faint); letter-spacing: 1px; }
+.upgrade { position: fixed; inset: 0; z-index: 510; display: none; align-items: center; justify-content: center; background: rgba(5,4,12,.72); }
+.upgrade.open { display: flex; }
+.up-card { text-align: center; padding: 34px 48px; background: linear-gradient(170deg, rgba(28,21,54,.98), rgba(15,11,32,.98)); border: 1px solid var(--gold); border-radius: 20px; box-shadow: 0 0 60px rgba(240,199,94,.3); animation: upIn .5s cubic-bezier(.2,.8,.25,1); }
+.up-title { font-size: 12px; letter-spacing: 4px; color: var(--gold); }
+.up-lv { font-size: 48px; font-weight: 900; margin: 8px 0 16px; color: var(--gold-2); text-shadow: 0 0 30px rgba(240,199,94,.5); }
+.up-card button { padding: 9px 26px; background: var(--gold); color: var(--bg); font-weight: 700; border-radius: 10px; letter-spacing: 2px; cursor: pointer; border: 0; }
+.up-card button:hover { filter: brightness(1.1); }
+
+/* 窄屏适配 */
+@media (max-width: 1000px) { .zones { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 800px) {
+  .zones { grid-template-columns: 1fr 1fr; }
+  .board-row, .zone-grid { grid-template-columns: 1fr; }
+  .flash-card { position: static; }
+  .hero-role .hero-title { display: none; }
+}
+@media (max-width: 500px) { .zones { grid-template-columns: 1fr; } }
+
+/* ===== 无侧边栏布局修正 ===== */
+.main { margin-left: 0 !important; padding: 20px 28px 60px; max-width: 1100px; }
+
+/* ===== 顶部角色栏（RPG mock 移植） ===== */
+.hero-bar { position: sticky; top: 0; z-index: 300; display: flex; align-items: center; gap: 20px; padding: 12px 28px; border-bottom: 1px solid var(--line); background: linear-gradient(to bottom, rgba(13,10,28,.92), rgba(13,10,28,.72)); backdrop-filter: blur(10px); }
+.hero-bar .hero { display: flex; align-items: center; gap: 12px; }
+.hero-bar .avatar { width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: 900; color: var(--bg); background: radial-gradient(circle at 30% 30%, var(--gold-2), var(--gold-dim)); box-shadow: 0 0 18px rgba(217,178,94,.45); position: relative; }
+.hero-bar .avatar::after { content: ""; position: absolute; inset: -4px; border-radius: 50%; border: 1px solid rgba(217,178,94,.5); animation: heroRing 3.5s ease-in-out infinite; }
+@keyframes heroRing { 0%,100% { transform: scale(1); opacity: .6; } 50% { transform: scale(1.14); opacity: .15; } }
+.hero-bar .hero-name { font-weight: 700; letter-spacing: 1px; color: var(--ink); }
+.hero-bar .hero-title { font-size: 10px; color: var(--lead); letter-spacing: 2px; }
+.hero-bar .hero-lvl { font-size: 11px; font-weight: 700; color: var(--gold); border: 1px solid var(--line); padding: 1px 8px; border-radius: 6px; background: rgba(217,178,94,.08); }
+.hero-bar .xp { flex: 1; max-width: 380px; }
+.hero-bar .xp-label { font-size: 10px; color: var(--lead); display: flex; justify-content: space-between; margin-bottom: 4px; letter-spacing: 1px; }
+.hero-bar .xp-label b { color: var(--gold-2); }
+.hero-bar .xp-bar { height: 9px; border-radius: 6px; background: rgba(217,178,94,.12); border: 1px solid var(--line); overflow: hidden; position: relative; }
+.hero-bar .xp-bar i { display: block; height: 100%; border-radius: 6px; background: linear-gradient(90deg, var(--gold-dim), var(--gold-2)); box-shadow: 0 0 12px rgba(240,199,94,.55); transition: width .6s var(--ease); }
+.hero-bar .switch-btn { font-size: 11px; color: var(--lead); border: 1px solid var(--line); border-radius: 8px; padding: 5px 12px; letter-spacing: 1px; background: none; cursor: pointer; }
+.hero-bar .switch-btn:hover { color: var(--gold-2); border-color: var(--gold); }
+
+/* ===== 领地头 ===== */
+.zone-head { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; flex-wrap: wrap; }
+.zone-head .zh-titles { display: flex; align-items: center; gap: 10px; flex: 1; min-width: 0; }
+.zone-head .zh-icon { font-size: 24px; filter: drop-shadow(0 0 10px rgba(217,178,94,.5)); }
+.zone-head .zh-title { font-size: 22px; font-weight: 900; letter-spacing: 3px; color: var(--ink); }
+.zone-head .crumbs { width: 100%; margin-top: 2px; }
+.zone-head .back { font-size: 12px; color: var(--lead); letter-spacing: 1px; padding: 6px 12px; border: 1px solid var(--line); border-radius: 8px; background: rgba(217,178,94,.06); cursor: pointer; white-space: nowrap; transition: all .2s; }
+.zone-head .back:hover { color: var(--gold-2); border-color: var(--gold); box-shadow: 0 0 12px rgba(217,178,94,.2); }
+@media (max-width: 560px) { .hero-bar { flex-wrap: wrap; gap: 10px; padding: 10px 16px; } .hero-bar .xp { min-width: 60%; } }
+
+/* ===== 窄屏修复 ===== */
+@media (max-width: 800px) {
+  body { overflow-x: hidden; }
+  .main { padding: 14px 14px 50px; max-width: 100%; }
+  .zone-head { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .zone-head .back { padding: 5px 10px; font-size: 11px; width: auto; }
+  .zone-head .zh-titles { width: 100%; }
+  .zone-head .zh-title { font-size: 18px; letter-spacing: 2px; }
+  .panel, .sub-panel { max-width: 100%; overflow-x: hidden; }
+  .sub-tabs { max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; flex-wrap: nowrap; }
+  .sub-tabs .sub-tab { flex-shrink: 0; white-space: nowrap; }
+  .zone-grid { grid-template-columns: 1fr; }
+  .flash-card { position: static; }
+  .bg, .particle { display: none; }
+}
+@media (max-width: 500px) {
+  .zones { grid-template-columns: 1fr; }
+  .board-row { grid-template-columns: 1fr; }
+  .content-grid, .zone-grid { grid-template-columns: 1fr; }
+  .skill-card .skill-desc { font-size: 12px; }
+}
 </style>
 </head>
 <body>
 
-<!-- ============================================================
-     SIDEBAR
-     ============================================================ -->
-<aside class="sidebar">
-  <div class="side-brand">
-    <h2>社会学考研<br>AI 导师</h2>
-    <div class="brand-sub">四科全覆盖 · v2</div>
+<!-- 星云粒子背景 -->
+<body>
+
+<!-- 星云粒子背景 -->
+<div class="bg"></div>
+<span class="particle" style="--s:3px;--c:#D9B25E;--dl:0s;--d:15s;left:12%;--dx:24px;--o:.6"></span>
+<span class="particle" style="--s:2px;--c:#B58AF2;--dl:3s;--d:18s;left:28%;--dx:-18px;--o:.5"></span>
+<span class="particle" style="--s:4px;--c:#6FA8E8;--dl:6s;--d:20s;left:45%;--dx:30px;--o:.4"></span>
+<span class="particle" style="--s:2px;--c:#D9B25E;--dl:1.5s;--d:14s;left:63%;--dx:-22px;--o:.7"></span>
+<span class="particle" style="--s:3px;--c:#5CD6A0;--dl:8s;--d:22s;left:78%;--dx:16px;--o:.5"></span>
+<span class="particle" style="--s:2px;--c:#E06A5E;--dl:4.5s;--d:17s;left:88%;--dx:-26px;--o:.5"></span>
+<span class="particle" style="--s:3px;--c:#D9B25E;--dl:10s;--d:24s;left:8%;--dx:18px;--o:.4"></span>
+<span class="particle" style="--s:2px;--c:#B58AF2;--dl:2s;--d:16s;left:55%;--dx:28px;--o:.6"></span>
+
+<header class="hero-bar">
+  <div class="hero"><div class="avatar" id="heroAvatar">考</div>
+    <div><div class="hero-name" id="heroName">无名修士</div><div class="hero-title">知识大陆的修行者</div></div>
   </div>
+  <div class="hero-lvl" id="heroLvl">LV.1</div>
+  <div class="xp"><div class="xp-label"><span>经验值</span><span id="heroExp">0 <b>/</b> 120</span></div><div class="xp-bar"><i id="heroExpBar" style="width:0%"></i></div></div>
+  <button class="switch-btn" id="btn-switch">⇄ 换人</button>
+</header>
 
-  <nav class="side-nav">
-    <button class="nav-item active" data-panel="dashboard" onclick="switchPanel('dashboard')">
-      <span class="nav-icon">🏠</span> 总览
-    </button>
-    <button class="nav-item pol" data-panel="politics" onclick="switchPanel('politics')">
-      <span class="nav-icon">📖</span> 政治
-      <span class="nav-badge">0</span>
-    </button>
-    <button class="nav-item eng" data-panel="english" onclick="switchPanel('english')">
-      <span class="nav-icon">🔤</span> 英语一
-      <span class="nav-badge">0</span>
-    </button>
-    <button class="nav-item thr" data-panel="theory" onclick="switchPanel('theory')">
-      <span class="nav-icon">🧠</span> 社会学理论
-      <span class="nav-badge">97</span>
-    </button>
-    <button class="nav-item met" data-panel="methods" onclick="switchPanel('methods')">
-      <span class="nav-icon">🔬</span> 研究方法
-      <span class="nav-badge">0</span>
-    </button>
-    <button class="nav-item" data-panel="mock-exam" onclick="switchPanel('mock-exam')" style="background:var(--thr-bg)">
-      <span class="nav-icon">📝</span> 模拟测试
-    </button>
-
-    <div class="side-divider"></div>
-
-    <button class="nav-item" data-panel="settings" onclick="switchPanel('settings')">
-      <span class="nav-icon">⚙️</span> 设置
-    </button>
-  </nav>
-
-  <div class="side-footer">
-    🔥 连续打卡 <span class="streak" id="sideStreak">0</span> 天
-  </div>
-</aside>
-
-<!-- ============================================================
-     MAIN CONTENT
-     ============================================================ -->
 <main class="main">
-
-<!-- ===== Top Bar ===== -->
-<div class="topbar">
-  <div>
-    <div class="greeting" id="greeting">👋 下午好</div>
-    <div class="date-row" id="dateRow"></div>
-  </div>
-  <div class="streak-badge" id="streakBadge">🔥 连续 0 天</div>
-</div>
-
-<!-- =========================================================
-     PANEL: Dashboard
-     ========================================================= -->
 <div class="panel active" id="panel-dashboard">
 
-  <!-- Four Subject Cards -->
-  <div class="subj-grid">
-    <div class="subj-card pol" onclick="switchPanel('politics')">
-      <span class="sc-icon">📖</span>
-      <div class="sc-name">政治</div>
-      <div class="sc-pct">—</div>
-      <div class="sc-label">选择题待做 · 分析题待背</div>
-      <div class="sc-bar"><div class="sc-bar-inner pol" style="width:0%"></div></div>
-    </div>
-    <div class="subj-card eng" onclick="switchPanel('english')">
-      <span class="sc-icon">🔤</span>
-      <div class="sc-name">英语一</div>
-      <div class="sc-pct">—</div>
-      <div class="sc-label">单词待复习 · 阅读待精练</div>
-      <div class="sc-bar"><div class="sc-bar-inner eng" style="width:0%"></div></div>
-    </div>
-    <div class="subj-card thr" onclick="switchPanel('theory')">
-      <span class="sc-icon">🧠</span>
-      <div class="sc-name">社会学理论</div>
-      <div class="sc-pct">—</div>
-      <div class="sc-label">97 个概念 · 待做题目</div>
-      <div class="sc-bar"><div class="sc-bar-inner thr" style="width:0%"></div></div>
-    </div>
-    <div class="subj-card met" onclick="switchPanel('methods')">
-      <span class="sc-icon">🔬</span>
-      <div class="sc-name">研究方法</div>
-      <div class="sc-pct">—</div>
-      <div class="sc-label">概念卡片 · 公式手册</div>
-      <div class="sc-bar"><div class="sc-bar-inner met" style="width:0%"></div></div>
-    </div>
+  <!-- 世界地图 -->
+  <div class="map-head">
+    <div class="kicker">Adventure of Knowledge</div>
+    <h1>知识大陆</h1>
+    <p>选择一块领地，开启今日修行</p>
+  </div>
+  <div class="zones" id="mapZones"></div>
+
+  <div class="board-row">
+    <div class="board"><h2>今日任务</h2><ul class="quest-list" id="questBoard"></ul></div>
+    <div class="board"><h2>成就</h2><div class="ach-grid" id="achBoard"></div></div>
   </div>
 
   <!-- Today's Summary -->
-  <div class="dash-bottom">
+  <div class="dash-bottom" id="dashSummary">
     <div class="card">
       <div class="card-header"><span class="ch-icon">📊</span>今日学习摘要</div>
       <div class="stat-row" id="todaySummary">
@@ -1111,222 +1289,59 @@ table.tbl tr:nth-child(even) td {
     </div>
   </div>
 
-</div><!-- /panel-dashboard -->
-
-<!-- =========================================================
-     PANEL: 政治
-     ========================================================= -->
-<div class="panel" id="panel-politics">
-  <div class="subj-header">
-    <span class="sh-icon">📖</span>
-    <div><div class="sh-title">政治</div><div class="sh-sub">马原 · 毛中特 · 史纲 · 思修 · 时政</div></div>
-  </div>
-
-  <div class="sub-tabs" id="polTabs">
-    <button class="sub-tab pol-tab active" data-sub="pol-quiz">📝 选择题刷题</button>
-    <button class="sub-tab pol-tab" data-sub="pol-wrong">📕 错题本</button>
-    <button class="sub-tab pol-tab" data-sub="pol-essay">📄 分析题背诵</button>
-    <button class="sub-tab pol-tab" data-sub="pol-news">📰 时政速览</button>
-    <button class="sub-tab pol-tab" data-sub="pol-resource">📚 资料库</button>
-  </div>
-
-  <div class="sub-panel active" id="sub-pol-quiz">
-    <div class="pol-module-bar" id="polQuizModuleBar">
-      <button class="pol-module-btn active" data-module="all">全部</button>
-      <button class="pol-module-btn" data-module="马原">📗 马原</button>
-      <button class="pol-module-btn" data-module="毛中特">📘 毛中特</button>
-      <button class="pol-module-btn" data-module="史纲">📙 史纲</button>
-      <button class="pol-module-btn" data-module="思修">📕 思修</button>
+  <!-- 主城 · 概论下钻视图（点击主城卡片时显示） -->
+  <div class="hidden" id="dashZone">
+    <div class="zone-head">
+      <button class="back" id="btn-dash-back">← 返回地图</button>
+      <div class="zh-titles"><span class="zh-icon">🏛</span><div class="zh-title">主城 · 概论</div></div>
+      <nav class="crumbs" id="dashCrumbs"></nav>
     </div>
-    <div class="pol-quiz-progress">
-      <span id="polQuizProgressText">已答 0 / 20</span>
-      <div class="pqp-bar"><div class="pqp-fill" id="polQuizProgressBar" style="width:0%"></div></div>
-    </div>
-    <div id="polQuizList"></div>
-    <div class="placeholder" id="polQuizEmpty" style="display:none">
-      <span class="ph-icon">🎉</span>
-      <div class="ph-title">该模块题目已全部完成！</div>
-      <p>错题已自动进入错题本，去错题本复习巩固吧。</p>
-    </div>
-  </div>
-
-  <div class="sub-panel" id="sub-pol-wrong">
-    <div class="pol-module-bar" id="polWrongModuleBar">
-      <button class="pol-module-btn active" data-module="all">全部</button>
-      <button class="pol-module-btn" data-module="马原">📗 马原</button>
-      <button class="pol-module-btn" data-module="毛中特">📘 毛中特</button>
-      <button class="pol-module-btn" data-module="史纲">📙 史纲</button>
-      <button class="pol-module-btn" data-module="思修">📕 思修</button>
-    </div>
-    <div id="polWrongList"></div>
-    <div class="placeholder" id="polWrongEmpty">
-      <span class="ph-icon">🎉</span>
-      <div class="ph-title">错题本为空</div>
-      <p>刷题中的错题会自动收集到这里。继续加油！</p>
-    </div>
-  </div>
-
-  <div class="sub-panel" id="sub-pol-essay">
-    <div class="essay-filter-bar" id="essayFilterBar">
-      <button class="res-cat-btn active" data-module="all">全部</button>
-      <button class="res-cat-btn" data-module="马原">📗 马原</button>
-      <button class="res-cat-btn" data-module="毛中特">📘 毛中特</button>
-      <button class="res-cat-btn" data-module="习思想">📔 习思想</button>
-      <button class="res-cat-btn" data-module="史纲">📙 史纲</button>
-      <button class="res-cat-btn" data-module="思修">📕 思修</button>
-    </div>
-    <div id="essayCardList"></div>
-    <div class="placeholder" id="essayEmpty" style="display:none">
-      <span class="ph-icon">📭</span>
-      <div class="ph-title">该模块暂无分析题</div>
-    </div>
-  </div>
-
-  <div class="sub-panel" id="sub-pol-news">
-    <div class="pol-module-bar" id="newsFilterBar">
-      <button class="pol-module-btn active" data-module="all">全部</button>
-      <button class="pol-module-btn" data-module="国内">🇨🇳 国内</button>
-      <button class="pol-module-btn" data-module="国际">🌍 国际</button>
-    </div>
-    <div class="news-grid" id="newsGrid"></div>
-    <div class="placeholder" id="newsEmpty" style="display:none">
-      <span class="ph-icon">📭</span>
-      <div class="ph-title">该分类暂无时政热点</div>
-    </div>
-  </div>
-
-  <div class="sub-panel" id="sub-pol-resource">
-    <div class="res-cat-bar" id="polResCat">
-      <button class="res-cat-btn active" data-cat="all">全部</button>
-      <button class="res-cat-btn" data-cat="txtbook">📖 课本</button>
-      <button class="res-cat-btn" data-cat="notes">📝 笔记</button>
-      <button class="res-cat-btn" data-cat="exam">📄 真题</button>
-      <button class="res-cat-btn" data-cat="video">🎬 视频</button>
-    </div>
-    <div class="res-grid" id="polResGrid"></div>
-    <div class="placeholder" id="polResEmpty" style="display:none">
-      <span class="ph-icon">📭</span>
-      <div class="ph-title">该分类暂无资料</div>
-      <p>上传或链接资料后将显示在此处</p>
-    </div>
-  </div>
-</div><!-- /panel-politics -->
-
-<!-- =========================================================
-     PANEL: 英语一
-     ========================================================= -->
-<div class="panel" id="panel-english">
-  <div class="subj-header">
-    <span class="sh-icon">🔤</span>
-    <div><div class="sh-title">英语一</div><div class="sh-sub">单词 · 阅读 · 作文 · 翻译 · 完形 · 新题型</div></div>
-  </div>
-
-  <div class="sub-tabs" id="engTabs">
-    <button class="sub-tab eng-tab active" data-sub="eng-vocab">📒 单词本</button>
-    <button class="sub-tab eng-tab" data-sub="eng-read">📖 阅读理解</button>
-    <button class="sub-tab eng-tab" data-sub="eng-write">✍️ 作文</button>
-    <button class="sub-tab eng-tab" data-sub="eng-trans">🌐 翻译</button>
-    <button class="sub-tab eng-tab" data-sub="eng-resource">📚 资料库</button>
-  </div>
-
-  <div class="sub-panel active" id="sub-eng-vocab">
-    <div class="vocab-stats-bar" id="vocabStatsBar">
-      <div class="vocab-stat due"><div class="vs-num" id="vocabDueCount">0</div><div class="vs-label">🔄 待复习</div></div>
-      <div class="vocab-stat new"><div class="vs-num" id="vocabNewCount">0</div><div class="vs-label">🆕 新词</div></div>
-      <div class="vocab-stat mastered"><div class="vs-num" id="vocabMasteredCount">0</div><div class="vs-label">✅ 已掌握</div></div>
-    </div>
-    <div class="vocab-flash-container" id="vocabFlashContainer">
-      <div class="vocab-progress" id="vocabProgress"></div>
-      <div class="vocab-flash-card" id="vocabFlashCard" onclick="flipVocabCard()">
-        <div class="vocab-flash-inner" id="vocabFlashInner">
-          <div class="vocab-flash-front">
-            <div class="vf-word" id="vocabWord"></div>
-            <div class="vf-phonetic" id="vocabPhonetic"></div>
-            <div class="vf-click-hint">👆 点击翻转查看释义</div>
-          </div>
-          <div class="vocab-flash-back">
-            <div class="vf-meaning" id="vocabMeaning"></div>
-            <div class="vf-example" id="vocabExample"></div>
-            <div class="vf-example-cn" id="vocabExampleCn"></div>
+    <div class="zone-grid">
+      <div class="browse" id="dashBrowse"></div>
+      <aside class="flash-card">
+        <h3>✦ 概念卡</h3>
+        <div class="flash-note" id="dashFlashNote">选择下方卡片查看详情</div>
+        <div class="fc-card hidden" id="dashFcCard">
+          <div class="fc-inner">
+            <div class="fc-face fc-front"><span class="fc-kicker" id="dashFcKicker">名词解释</span><span class="fc-term" id="dashFcTerm">概念</span><span class="fc-hint">点击翻面</span></div>
+            <div class="fc-face fc-back"><span class="fc-kicker">参考答案</span><span class="fc-answer" id="dashFcAnswer"></span></div>
           </div>
         </div>
-      </div>
-      <div class="vocab-rate-bar" id="vocabRateBar">
-        <button class="vocab-rate-btn hard" onclick="rateVocab(1)">😰 没记住</button>
-        <button class="vocab-rate-btn good" onclick="rateVocab(3)">🤔 模糊</button>
-        <button class="vocab-rate-btn easy" onclick="rateVocab(5)">😎 记住了</button>
-      </div>
-    </div>
-    <div class="vocab-summary placeholder" id="vocabSummary" style="display:none">
-      <span class="ph-icon">🎉</span>
-      <div class="ph-title">本轮全部完成！</div>
-      <p id="vocabSummaryText"></p>
-      <button class="btn btn-primary btn-sm" onclick="startVocabSession()">🔄 再来一轮</button>
+        <div class="xp-note" id="dashXpNote">点击概念查看 · 点亮 +40 exp</div>
+      </aside>
     </div>
   </div>
 
-  <div class="sub-panel" id="sub-eng-read">
-    <div id="readingContent"></div>
-    <div class="placeholder" id="readingEmpty" style="display:none">
-      <span class="ph-icon">📖</span>
-      <div class="ph-title">真题阅读加载中…</div>
-    </div>
-  </div>
-
-  <div class="sub-panel" id="sub-eng-write">
-    <div class="template-list" id="engTemplateList">
-      <div class="placeholder"><span class="ph-icon">📂</span><div class="ph-title">作文模板加载中…</div></div>
-    </div>
-    <!-- AI Essay Review -->
-    <div class="card" style="margin-top:16px">
-      <div class="card-header"><span class="ch-icon">🤖</span>AI 作文批改</div>
-      <textarea id="engEssayInput" placeholder="在此粘贴你的英语作文，AI 将从语法、结构、词汇丰富度三维批改…" style="min-height:160px;resize:vertical;margin-bottom:10px"></textarea>
-      <button class="btn btn-primary btn-sm" onclick="reviewEngEssay()">🔍 AI 批改</button>
-      <div id="engEssayResult" style="margin-top:12px;font-size:13px;line-height:1.8;white-space:pre-line"></div>
-    </div>
-  </div>
-
-  <div class="sub-panel" id="sub-eng-trans">
-    <div class="trans-list" id="transList"></div>
-    <div class="placeholder" id="transEmpty" style="display:none">
-      <span class="ph-icon">📭</span>
-      <div class="ph-title">翻译练习加载中…</div>
-    </div>
-  </div>
-
-  <div class="sub-panel" id="sub-eng-resource">
-    <div class="res-cat-bar" id="engResCat">
-      <button class="res-cat-btn active" data-cat="all">全部</button>
-      <button class="res-cat-btn" data-cat="txtbook">📖 课本</button>
-      <button class="res-cat-btn" data-cat="notes">📝 笔记</button>
-      <button class="res-cat-btn" data-cat="exam">📄 真题</button>
-      <button class="res-cat-btn" data-cat="video">🎬 视频</button>
-    </div>
-    <div class="res-grid" id="engResGrid"></div>
-    <div class="placeholder" id="engResEmpty" style="display:none">
-      <span class="ph-icon">📭</span>
-      <div class="ph-title">该分类暂无资料</div>
-      <p>上传或链接资料后将显示在此处</p>
-    </div>
-  </div>
-</div><!-- /panel-english -->
-
-<!-- =========================================================
-     PANEL: 社会学理论
-     ========================================================= -->
+</div><!-- /panel-dashboard -->
 <div class="panel" id="panel-theory">
-  <div class="subj-header">
-    <span class="sh-icon">🧠</span>
-    <div><div class="sh-title">社会学理论</div><div class="sh-sub">古典 · 现代 · 当代 · 逐维批改</div></div>
+<div class="zone-head">
+  <button class="back" onclick="switchPanel('dashboard')">← 返回地图</button>
+  <div class="zh-titles"><span class="zh-icon">📜</span><div class="zh-title">知识圣殿 · 社会学理论</div></div>
+  <nav class="crumbs" id="thrCrumbs"></nav>
+</div>
+<div class="sub-tabs" id="thrTabs">
+  <button class="sub-tab thr-tab active" data-sub="thr-browse">🗺 技能下钻</button>
+  <button class="sub-tab thr-tab active active" data-sub="thr-concept">🔍 概念学习</button>
+  <button class="sub-tab thr-tab" data-sub="thr-quiz">✏️ 刷题</button>
+  <button class="sub-tab thr-tab" data-sub="thr-exam">📝 模拟考</button>
+  <button class="sub-tab thr-tab" data-sub="thr-resource">📚 资料库</button>
+</div>
+<div class="sub-panel active" id="sub-thr-browse">
+  <div class="zone-grid">
+    <div class="browse" id="thrBrowse"></div>
+    <aside class="flash-card">
+      <h3>✦ 概念卡</h3>
+      <div class="flash-note" id="thrFlashNote">选择下方卡片查看详情</div>
+      <div class="fc-card hidden" id="thrFcCard">
+        <div class="fc-inner">
+          <div class="fc-face fc-front"><span class="fc-kicker" id="thrFcKicker">名词解释</span><span class="fc-term" id="thrFcTerm">概念</span><span class="fc-hint">点击翻面</span></div>
+          <div class="fc-face fc-back"><span class="fc-kicker">参考答案</span><span class="fc-answer" id="thrFcAnswer"></span></div>
+        </div>
+      </div>
+      <div class="xp-note" id="thrXpNote">点击概念查看 · 点亮 +40 exp</div>
+    </aside>
   </div>
-
-  <div class="sub-tabs" id="thrTabs">
-    <button class="sub-tab thr-tab active" data-sub="thr-concept">🔍 概念学习</button>
-    <button class="sub-tab thr-tab" data-sub="thr-quiz">✏️ 刷题</button>
-    <button class="sub-tab thr-tab" data-sub="thr-exam">📝 模拟考</button>
-    <button class="sub-tab thr-tab" data-sub="thr-resource">📚 资料库</button>
-  </div>
-
+</div>
   <div class="sub-panel active" id="sub-thr-concept">
     <div style="display:flex;gap:0">
       <div id="thrLeftCol" style="width:280px;min-width:200px;max-width:500px;flex-shrink:0;overflow:hidden">
@@ -1470,24 +1485,37 @@ table.tbl tr:nth-child(even) td {
   </div>
 </div><!-- /panel-theory -->
 
-<!-- =========================================================
-     PANEL: 社会研究方法
-     ========================================================= -->
 <div class="panel" id="panel-methods">
-  <div class="subj-header">
-    <span class="sh-icon">🔬</span>
-    <div><div class="sh-title">社会研究方法</div><div class="sh-sub">概念 · 公式 · 统计 · 研究设计</div></div>
+<div class="zone-head">
+  <button class="back" onclick="switchPanel('dashboard')">← 返回地图</button>
+  <div class="zh-titles"><span class="zh-icon">⚗</span><div class="zh-title">炼金工坊 · 研究方法</div></div>
+  <nav class="crumbs" id="metCrumbs"></nav>
+</div>
+<div class="sub-tabs" id="metTabs">
+  <button class="sub-tab met-tab active" data-sub="met-browse">🗺 技能下钻</button>
+  <button class="sub-tab met-tab active active" data-sub="met-concept">🃏 概念卡片</button>
+  <button class="sub-tab met-tab" data-sub="met-formula">📐 公式手册</button>
+  <button class="sub-tab met-tab" data-sub="met-stat">📊 统计练习</button>
+  <button class="sub-tab met-tab" data-sub="met-design">📋 研究设计</button>
+  <button class="sub-tab met-tab" data-sub="met-resource">📚 资料库</button>
+  <button class="sub-tab met-tab" data-sub="met-questions">📝 真题题库</button>
+</div>
+<div class="sub-panel active" id="sub-met-browse">
+  <div class="zone-grid">
+    <div class="browse" id="metBrowse"></div>
+    <aside class="flash-card">
+      <h3>✦ 概念卡</h3>
+      <div class="flash-note" id="metFlashNote">选择下方卡片查看详情</div>
+      <div class="fc-card hidden" id="metFcCard">
+        <div class="fc-inner">
+          <div class="fc-face fc-front"><span class="fc-kicker" id="metFcKicker">名词解释</span><span class="fc-term" id="metFcTerm">概念</span><span class="fc-hint">点击翻面</span></div>
+          <div class="fc-face fc-back"><span class="fc-kicker">参考答案</span><span class="fc-answer" id="metFcAnswer"></span></div>
+        </div>
+      </div>
+      <div class="xp-note" id="metXpNote">点击概念查看 · 点亮 +40 exp</div>
+    </aside>
   </div>
-
-  <div class="sub-tabs" id="metTabs">
-    <button class="sub-tab met-tab active" data-sub="met-concept">🃏 概念卡片</button>
-    <button class="sub-tab met-tab" data-sub="met-formula">📐 公式手册</button>
-    <button class="sub-tab met-tab" data-sub="met-stat">📊 统计练习</button>
-    <button class="sub-tab met-tab" data-sub="met-design">📋 研究设计</button>
-    <button class="sub-tab met-tab" data-sub="met-resource">📚 资料库</button>
-    <button class="sub-tab met-tab" data-sub="met-questions">📝 真题题库</button>
-  </div>
-
+</div>
   <div class="sub-panel active" id="sub-met-concept">
     <div class="flash-filter" style="margin-bottom:10px">
       <input type="text" id="metCardSearch" aria-label="搜索研究方法概念" placeholder="🔍 搜索方法概念…" style="width:100%;max-width:400px;font-size:14px;padding:8px 12px" autocomplete="off">
@@ -1561,7 +1589,7 @@ table.tbl tr:nth-child(even) td {
       <p>上传或链接资料后将显示在此处</p>
     </div>
   </div>
-</div><div class="sub-panel" id="sub-met-questions">
+ class="sub-panel" id="sub-met-questions">
     <div class="flash-filter" style="margin-bottom:12px">
       <select id="metQFilter" onchange="renderMetQuestions()" style="font-size:14px;padding:6px 12px">
         <option value="all">全部题型</option>
@@ -1576,13 +1604,232 @@ table.tbl tr:nth-child(even) td {
       </select>
       <span style="font-size:12px;color:var(--faint);margin-left:10px" id="metQCount"></span>
     </div>
-    <div id="metQList"></div>
-  </div>
 </div><!-- /panel-methods -->
 
-<!-- =========================================================
-     PANEL: Mock Exam
-     ========================================================= -->
+<div class="panel" id="panel-politics">
+<div class="zone-head">
+  <button class="back" onclick="switchPanel('dashboard')">← 返回地图</button>
+  <div class="zh-titles"><span class="zh-icon">🗣</span><div class="zh-title">辩论广场 · 政治</div></div>
+  <nav class="crumbs" id="polCrumbs"></nav>
+</div>
+<div class="sub-tabs" id="polTabs">
+  <button class="sub-tab pol-tab active" data-sub="pol-browse">🗺 技能下钻</button>
+  <button class="sub-tab pol-tab active active" data-sub="pol-quiz">📝 选择题刷题</button>
+  <button class="sub-tab pol-tab" data-sub="pol-wrong">📕 错题本</button>
+  <button class="sub-tab pol-tab" data-sub="pol-essay">📄 分析题背诵</button>
+  <button class="sub-tab pol-tab" data-sub="pol-news">📰 时政速览</button>
+  <button class="sub-tab pol-tab" data-sub="pol-resource">📚 资料库</button>
+</div>
+<div class="sub-panel active" id="sub-pol-browse">
+  <div class="zone-grid">
+    <div class="browse" id="polBrowse"></div>
+    <aside class="flash-card">
+      <h3>✦ 概念卡</h3>
+      <div class="flash-note" id="polFlashNote">选择下方卡片查看详情</div>
+      <div class="fc-card hidden" id="polFcCard">
+        <div class="fc-inner">
+          <div class="fc-face fc-front"><span class="fc-kicker" id="polFcKicker">选择题 · 名词</span><span class="fc-term" id="polFcTerm">概念</span><span class="fc-hint">点击翻面</span></div>
+          <div class="fc-face fc-back"><span class="fc-kicker">参考答案</span><span class="fc-answer" id="polFcAnswer"></span></div>
+        </div>
+      </div>
+      <div class="xp-note" id="polXpNote">点击概念查看 · 点亮 +40 exp</div>
+    </aside>
+  </div>
+</div>
+  <div class="sub-panel active" id="sub-pol-quiz">
+    <div class="pol-module-bar" id="polQuizModuleBar">
+      <button class="pol-module-btn active" data-module="all">全部</button>
+      <button class="pol-module-btn" data-module="马原">📗 马原</button>
+      <button class="pol-module-btn" data-module="毛中特">📘 毛中特</button>
+      <button class="pol-module-btn" data-module="史纲">📙 史纲</button>
+      <button class="pol-module-btn" data-module="思修">📕 思修</button>
+    </div>
+    <div class="pol-quiz-progress">
+      <span id="polQuizProgressText">已答 0 / 20</span>
+      <div class="pqp-bar"><div class="pqp-fill" id="polQuizProgressBar" style="width:0%"></div></div>
+    </div>
+    <div id="polQuizList"></div>
+    <div class="placeholder" id="polQuizEmpty" style="display:none">
+      <span class="ph-icon">🎉</span>
+      <div class="ph-title">该模块题目已全部完成！</div>
+      <p>错题已自动进入错题本，去错题本复习巩固吧。</p>
+    </div>
+  </div>
+
+  <div class="sub-panel" id="sub-pol-wrong">
+    <div class="pol-module-bar" id="polWrongModuleBar">
+      <button class="pol-module-btn active" data-module="all">全部</button>
+      <button class="pol-module-btn" data-module="马原">📗 马原</button>
+      <button class="pol-module-btn" data-module="毛中特">📘 毛中特</button>
+      <button class="pol-module-btn" data-module="史纲">📙 史纲</button>
+      <button class="pol-module-btn" data-module="思修">📕 思修</button>
+    </div>
+    <div id="polWrongList"></div>
+    <div class="placeholder" id="polWrongEmpty">
+      <span class="ph-icon">🎉</span>
+      <div class="ph-title">错题本为空</div>
+      <p>刷题中的错题会自动收集到这里。继续加油！</p>
+    </div>
+  </div>
+
+  <div class="sub-panel" id="sub-pol-essay">
+    <div class="essay-filter-bar" id="essayFilterBar">
+      <button class="res-cat-btn active" data-module="all">全部</button>
+      <button class="res-cat-btn" data-module="马原">📗 马原</button>
+      <button class="res-cat-btn" data-module="毛中特">📘 毛中特</button>
+      <button class="res-cat-btn" data-module="习思想">📔 习思想</button>
+      <button class="res-cat-btn" data-module="史纲">📙 史纲</button>
+      <button class="res-cat-btn" data-module="思修">📕 思修</button>
+    </div>
+    <div id="essayCardList"></div>
+    <div class="placeholder" id="essayEmpty" style="display:none">
+      <span class="ph-icon">📭</span>
+      <div class="ph-title">该模块暂无分析题</div>
+    </div>
+  </div>
+
+  <div class="sub-panel" id="sub-pol-news">
+    <div class="pol-module-bar" id="newsFilterBar">
+      <button class="pol-module-btn active" data-module="all">全部</button>
+      <button class="pol-module-btn" data-module="国内">🇨🇳 国内</button>
+      <button class="pol-module-btn" data-module="国际">🌍 国际</button>
+    </div>
+    <div class="news-grid" id="newsGrid"></div>
+    <div class="placeholder" id="newsEmpty" style="display:none">
+      <span class="ph-icon">📭</span>
+      <div class="ph-title">该分类暂无时政热点</div>
+    </div>
+  </div>
+
+  <div class="sub-panel" id="sub-pol-resource">
+    <div class="res-cat-bar" id="polResCat">
+      <button class="res-cat-btn active" data-cat="all">全部</button>
+      <button class="res-cat-btn" data-cat="txtbook">📖 课本</button>
+      <button class="res-cat-btn" data-cat="notes">📝 笔记</button>
+      <button class="res-cat-btn" data-cat="exam">📄 真题</button>
+      <button class="res-cat-btn" data-cat="video">🎬 视频</button>
+    </div>
+    <div class="res-grid" id="polResGrid"></div>
+    <div class="placeholder" id="polResEmpty" style="display:none">
+      <span class="ph-icon">📭</span>
+      <div class="ph-title">该分类暂无资料</div>
+      <p>上传或链接资料后将显示在此处</p>
+    </div>
+  </div>
+</div><!-- /panel-politics -->
+
+<div class="panel" id="panel-english">
+<div class="zone-head">
+  <button class="back" onclick="switchPanel('dashboard')">← 返回地图</button>
+  <div class="zh-titles"><span class="zh-icon">✧</span><div class="zh-title">异界之门 · 英语一</div></div>
+  <nav class="crumbs" id="engCrumbs"></nav>
+</div>
+<div class="sub-tabs" id="engTabs">
+  <button class="sub-tab eng-tab active" data-sub="eng-browse">🗺 技能下钻</button>
+  <button class="sub-tab eng-tab active active" data-sub="eng-vocab">📒 单词本</button>
+  <button class="sub-tab eng-tab" data-sub="eng-read">📖 阅读理解</button>
+  <button class="sub-tab eng-tab" data-sub="eng-write">✍️ 作文</button>
+  <button class="sub-tab eng-tab" data-sub="eng-trans">🌐 翻译</button>
+  <button class="sub-tab eng-tab" data-sub="eng-resource">📚 资料库</button>
+</div>
+<div class="sub-panel active" id="sub-eng-browse">
+  <div class="zone-grid">
+    <div class="browse" id="engBrowse"></div>
+    <aside class="flash-card">
+      <h3>✦ 概念卡</h3>
+      <div class="flash-note" id="engFlashNote">选择下方卡片查看详情</div>
+      <div class="fc-card hidden" id="engFcCard">
+        <div class="fc-inner">
+          <div class="fc-face fc-front"><span class="fc-kicker" id="engFcKicker">单词 · 词汇</span><span class="fc-term" id="engFcTerm">概念</span><span class="fc-hint">点击翻面</span></div>
+          <div class="fc-face fc-back"><span class="fc-kicker">参考答案</span><span class="fc-answer" id="engFcAnswer"></span></div>
+        </div>
+      </div>
+      <div class="xp-note" id="engXpNote">点击概念查看 · 点亮 +40 exp</div>
+    </aside>
+  </div>
+</div>
+  <div class="sub-panel active" id="sub-eng-vocab">
+    <div class="vocab-stats-bar" id="vocabStatsBar">
+      <div class="vocab-stat due"><div class="vs-num" id="vocabDueCount">0</div><div class="vs-label">🔄 待复习</div></div>
+      <div class="vocab-stat new"><div class="vs-num" id="vocabNewCount">0</div><div class="vs-label">🆕 新词</div></div>
+      <div class="vocab-stat mastered"><div class="vs-num" id="vocabMasteredCount">0</div><div class="vs-label">✅ 已掌握</div></div>
+    </div>
+    <div class="vocab-flash-container" id="vocabFlashContainer">
+      <div class="vocab-progress" id="vocabProgress"></div>
+      <div class="vocab-flash-card" id="vocabFlashCard" onclick="flipVocabCard()">
+        <div class="vocab-flash-inner" id="vocabFlashInner">
+          <div class="vocab-flash-front">
+            <div class="vf-word" id="vocabWord"></div>
+            <div class="vf-phonetic" id="vocabPhonetic"></div>
+            <div class="vf-click-hint">👆 点击翻转查看释义</div>
+          </div>
+          <div class="vocab-flash-back">
+            <div class="vf-meaning" id="vocabMeaning"></div>
+            <div class="vf-example" id="vocabExample"></div>
+            <div class="vf-example-cn" id="vocabExampleCn"></div>
+          </div>
+        </div>
+      </div>
+      <div class="vocab-rate-bar" id="vocabRateBar">
+        <button class="vocab-rate-btn hard" onclick="rateVocab(1)">😰 没记住</button>
+        <button class="vocab-rate-btn good" onclick="rateVocab(3)">🤔 模糊</button>
+        <button class="vocab-rate-btn easy" onclick="rateVocab(5)">😎 记住了</button>
+      </div>
+    </div>
+    <div class="vocab-summary placeholder" id="vocabSummary" style="display:none">
+      <span class="ph-icon">🎉</span>
+      <div class="ph-title">本轮全部完成！</div>
+      <p id="vocabSummaryText"></p>
+      <button class="btn btn-primary btn-sm" onclick="startVocabSession()">🔄 再来一轮</button>
+    </div>
+  </div>
+
+  <div class="sub-panel" id="sub-eng-read">
+    <div id="readingContent"></div>
+    <div class="placeholder" id="readingEmpty" style="display:none">
+      <span class="ph-icon">📖</span>
+      <div class="ph-title">真题阅读加载中…</div>
+    </div>
+  </div>
+
+  <div class="sub-panel" id="sub-eng-write">
+    <div class="template-list" id="engTemplateList">
+      <div class="placeholder"><span class="ph-icon">📂</span><div class="ph-title">作文模板加载中…</div></div>
+    </div>
+    <!-- AI Essay Review -->
+    <div class="card" style="margin-top:16px">
+      <div class="card-header"><span class="ch-icon">🤖</span>AI 作文批改</div>
+      <textarea id="engEssayInput" placeholder="在此粘贴你的英语作文，AI 将从语法、结构、词汇丰富度三维批改…" style="min-height:160px;resize:vertical;margin-bottom:10px"></textarea>
+      <button class="btn btn-primary btn-sm" onclick="reviewEngEssay()">🔍 AI 批改</button>
+      <div id="engEssayResult" style="margin-top:12px;font-size:13px;line-height:1.8;white-space:pre-line"></div>
+    </div>
+  </div>
+
+  <div class="sub-panel" id="sub-eng-trans">
+    <div class="trans-list" id="transList"></div>
+    <div class="placeholder" id="transEmpty" style="display:none">
+      <span class="ph-icon">📭</span>
+      <div class="ph-title">翻译练习加载中…</div>
+    </div>
+  </div>
+
+  <div class="sub-panel" id="sub-eng-resource">
+    <div class="res-cat-bar" id="engResCat">
+      <button class="res-cat-btn active" data-cat="all">全部</button>
+      <button class="res-cat-btn" data-cat="txtbook">📖 课本</button>
+      <button class="res-cat-btn" data-cat="notes">📝 笔记</button>
+      <button class="res-cat-btn" data-cat="exam">📄 真题</button>
+      <button class="res-cat-btn" data-cat="video">🎬 视频</button>
+    </div>
+    <div class="res-grid" id="engResGrid"></div>
+    <div class="placeholder" id="engResEmpty" style="display:none">
+      <span class="ph-icon">📭</span>
+      <div class="ph-title">该分类暂无资料</div>
+      <p>上传或链接资料后将显示在此处</p>
+    </div>
+  </div>
+</div><!-- /panel-english -->
+
 <div class="panel" id="panel-mock-exam">
   <div class="subj-header">
     <span class="sh-icon">📝</span>
@@ -1716,6 +1963,7 @@ table.tbl tr:nth-child(even) td {
 <!-- =========================================================
      PANEL: Settings
      ========================================================= -->
+
 <div class="panel" id="panel-settings">
   <div class="subj-header">
     <span class="sh-icon">⚙️</span>
@@ -1753,14 +2001,31 @@ table.tbl tr:nth-child(even) td {
   </div>
 </div><!-- /panel-settings -->
 
+
 </main><!-- /main -->
 
-<!-- Toast container -->
 <div class="toast-container" id="toastContainer"></div>
 
-<!-- ============================================================
-     JS — 导航 + 框架逻辑（壳子，无真实数据）
-     ============================================================ -->
+<!-- ===== 欢迎 / 自命名 ===== -->
+<div class="welcome" id="welcome">
+  <div class="w-card">
+    <div class="w-badge">🏛</div>
+    <h2>欢迎来到知识大陆</h2>
+    <p>为修行起个名号，你的进度将单独存档</p>
+    <input type="text" id="pname" maxlength="12" placeholder="输入你的名号…">
+    <button id="btn-enter">进入大陆</button>
+    <div class="w-save">换人后，各自进度独立保存</div>
+  </div>
+</div>
+
+<!-- ===== 升级弹窗 ===== -->
+<div class="upgrade" id="upgrade">
+  <div class="up-card">
+    <div class="up-title">✦ 升 级 ✦</div>
+    <div class="up-lv" id="up-lv">LV.2</div>
+    <button id="btn-up-close">继续修行</button>
+  </div>
+</div>
 <script>
 // ===== Panel Switching =====
 let currentPanel = 'dashboard';
@@ -1819,6 +2084,10 @@ document.querySelectorAll('.sub-tabs').forEach(tabBar => {
     else if (subId === 'eng-vocab') startVocabSession();
     else if (subId === 'eng-read') renderReading();
     else if (subId === 'eng-trans') renderTranslation();
+    else if (subId === 'thr-browse') { zoneState.zone = 'thr'; rpgRenderAll(); }
+    else if (subId === 'met-browse') { zoneState.zone = 'met'; rpgRenderAll(); }
+    else if (subId === 'pol-browse') { zoneState.zone = 'pol'; rpgRenderAll(); }
+    else if (subId === 'eng-browse') { zoneState.zone = 'eng'; rpgRenderAll(); }
   });
 });
 
@@ -1830,7 +2099,7 @@ let taxonomy = null;  // concept-taxonomy.json
 async function loadTaxonomy() {
   if (taxonomy) return;
   try {
-    const resp = await fetch('data/concept-taxonomy.json?v=2');
+    const resp = await fetch('data/concept-taxonomy.json?v=3');
     if (!resp.ok) throw new Error('HTTP ' + resp.status);
     taxonomy = await resp.json();
   } catch(e) {
@@ -1842,7 +2111,7 @@ async function loadTaxonomy() {
 async function loadConcepts() {
   if (concepts.length) return;
   try {
-    const resp = await fetch('data/concepts.json?v=4');
+    const resp = await fetch('data/concepts.json?v=5');
     if (!resp.ok) throw new Error('HTTP ' + resp.status);
     concepts = await resp.json();
     concepts.forEach(c => { if (c.id) { conceptIndex[c.id] = c; } else { console.warn('概念缺少 id:', c.term); } });
@@ -4732,6 +5001,11 @@ async function loadEngVocabData() {
       { word:'persistent', phonetic:'/pəˈsɪstənt/', meaning:'adj. 持续的；坚持不懈的', example:'Persistent inequality undermines social cohesion.', exampleCn:'持续的不平等破坏社会凝聚力。' }
     ];
   }
+  // 数据加载完成后：若当前正停在异界之门下钻视图，重渲染（否则 openZone 首次进会因数据未就绪显示加载中）
+  if (typeof zoneState !== 'undefined' && zoneState.zone === 'eng' && engTree === null) {
+    var _bp = document.querySelector('#panel-english .sub-panel.active');
+    if (_bp && _bp.id === 'sub-eng-browse') { engTree = null; rpgRenderAll(); }
+  }
 }
 
 function loadEngVocab() {
@@ -4999,6 +5273,7 @@ loadApiKey();
 loadConcepts().then(function() {
   loadConceptExtras();
   searchConceptsShell();
+  renderMap();
   renderMetCards();
   renderDesignCards();
   // Update filter dropdowns with real counts
@@ -5054,7 +5329,394 @@ initDash();
 updateTodaySummary();
 updateDashboardPolStats();
 renderPolQuiz('all');
-</script>
 
+
+/* ============================================================
+   RPG 玩家系统（自命名 / 存档 / 点亮 / 经验 / 升级）
+   ============================================================ */
+var RPG = {
+  name: '', data: null,
+  defaults: function () { return { level: 1, exp: 0, expNext: 120, mastered: {} }; },
+  key: function () { return 'rpg_save_' + this.name; },
+  load: function () {
+    this.name = localStorage.getItem('rpg_player') || '';
+    if (!this.name) return false;
+    try { var raw = localStorage.getItem(this.key()); this.data = raw ? JSON.parse(raw) : this.defaults(); }
+    catch (e) { this.data = this.defaults(); }
+    return true;
+  },
+  save: function () { try { localStorage.setItem(this.key(), JSON.stringify(this.data)); } catch (e) {} },
+  create: function (name) {
+    this.name = (name.trim() || '无名修士');
+    localStorage.setItem('rpg_player', this.name);
+    this.data = this.defaults(); this.save();
+  }
+};
+function rpgUpdateHero() {
+  var d = RPG.data || RPG.defaults();
+  document.getElementById('heroName').textContent = RPG.name || '无名修士';
+  var av = document.getElementById('heroAvatar'); if (av) av.textContent = (RPG.name || '修').charAt(0);
+  document.getElementById('heroLvl').textContent = 'LV.' + d.level;
+  var pct = Math.min(100, Math.round(d.exp / d.expNext * 100));
+  document.getElementById('heroExpBar').style.width = pct + '%';
+  document.getElementById('heroExp').innerHTML = d.exp + ' <b>/</b> ' + d.expNext;
+}
+function rpgAddExp(n) {
+  var d = RPG.data; d.exp += n;
+  while (d.exp >= d.expNext) { d.exp -= d.expNext; d.level++; d.expNext = Math.round(d.expNext * 1.35); rpgShowLevelUp(); }
+  rpgUpdateHero(); RPG.save();
+}
+function rpgMaster(id, term) {
+  if (!RPG.data || RPG.data.mastered[id]) return;
+  RPG.data.mastered[id] = true; rpgAddExp(40); rpgRenderAll(); renderMap();
+  showToast('✨ 已点亮「' + term + '」 +40 exp', 'success');
+}
+function rpgShowLevelUp() { document.getElementById('up-lv').textContent = 'LV.' + RPG.data.level; document.getElementById('upgrade').classList.add('open'); }
+function rpgHideUpgrade() { document.getElementById('upgrade').classList.remove('open'); }
+function rpgShowWelcome() { document.getElementById('welcome').classList.add('open'); }
+function rpgHideWelcome() { document.getElementById('welcome').classList.remove('open'); }
+
+/* ===== 领地元数据 + 真实数据树 ===== */
+var ZONES = {
+  dash: { panel: 'dashboard', name: '主城 · 概论', icon: '🏛', zc: '#D9B25E', sub: '概论八主题' },
+  thr: { panel: 'theory', name: '知识圣殿', icon: '📜', zc: '#B58AF2', sub: '时期→学派→学者' },
+  met: { panel: 'methods', name: '炼金工坊', icon: '⚗', zc: '#5CD6A0', sub: '类目→子类' },
+  pol: { panel: 'politics', name: '辩论广场', icon: '🗣', zc: '#E06A5E', sub: '模块→题型' },
+  eng: { panel: 'english', name: '异界之门', icon: '✧', zc: '#6FA8E8', sub: '词汇类别' }
+};
+
+function zoneLeafFrom(cid) {
+  var c = conceptIndex[cid]; if (!c) return null;
+  var r = c.related ? '相关：' + (typeof c.related === 'string' ? c.related : (c.related || []).join(' · ')) : '';
+  if (!r && c.school) r = '学派：' + c.school;
+  if (!r && c.proponent) r = '学者：' + c.proponent;
+  return { n: c.term, d: c.definition, r: r, id: c.id };
+}
+
+/* 概念类领地树：thr / met / dash(intro) */
+function buildConceptTree(zone) {
+  if (zone === 'thr' && taxonomy) {
+    var t = taxonomy.theory || {};
+    return { name: '知识圣殿', zc: '#B58AF2', icon: '📜', children: Object.keys(t).map(function (pn) {
+      return { name: pn, count: Object.keys(t[pn] || {}).length + ' 学派', children: Object.keys(t[pn] || {}).map(function (sn) {
+        var sd = t[pn][sn] || {};
+        var scholars = Object.keys(sd.scholars || {}).map(function (hn) {
+          var leaf = (sd.scholars[hn].concepts || []).map(zoneLeafFrom).filter(Boolean);
+          return { name: hn, count: leaf.length + ' 概念', leaf: leaf };
+        });
+        var ug = (sd.ungrouped_concepts || []).map(zoneLeafFrom).filter(Boolean);
+        if (ug.length) scholars.push({ name: '（未分学者）', count: ug.length + ' 概念', leaf: ug });
+        return { name: sn, count: scholars.length + ' 学者', children: scholars };
+      }) };
+    }) };
+  }
+  if (zone === 'met' && taxonomy) {
+    var m = taxonomy.methods || {};
+    return { name: '炼金工坊', zc: '#5CD6A0', icon: '⚗', children: Object.keys(m).map(function (cn) {
+      var sc = Object.keys(m[cn].categories || {}).map(function (sn) {
+        var leaf = (m[cn].categories[sn].concepts || []).map(zoneLeafFrom).filter(Boolean);
+        return { name: sn, count: leaf.length + ' 概念', leaf: leaf };
+      });
+      return { name: cn, count: sc.length + ' 子类', children: sc };
+    }) };
+  }
+  if (zone === 'dash' && taxonomy) {
+    var intro = taxonomy.intro || {};
+    return { name: '主城', zc: '#D9B25E', icon: '🏛', children: Object.keys(intro).map(function (tn) {
+      var leaf = (intro[tn].concepts || []).map(zoneLeafFrom).filter(Boolean);
+      return { name: tn, count: leaf.length + ' 概念', leaf: leaf };
+    }) };
+  }
+  return null;
+}
+
+/* 政治题树：module → type → 题列表 */
+var polTree = null;
+function buildPolTree() {
+  if (polTree) return polTree;
+  if (!polQuestions || !polQuestions.length) return null;
+  var byMod = {};
+  polQuestions.forEach(function (q) {
+    var mod = q.module || '其他', typ = q.type || '题';
+    if (!byMod[mod]) byMod[mod] = {};
+    if (!byMod[mod][typ]) byMod[mod][typ] = [];
+    byMod[mod][typ].push(q);
+  });
+  polTree = { name: '辩论广场', zc: '#E06A5E', icon: '🗣', children: Object.keys(byMod).map(function (mod) {
+    var types = byMod[mod];
+    return { name: mod, count: Object.keys(types).length + ' 题型', children: Object.keys(types).map(function (typ) {
+      var leaf = types[typ].map(function (q) {
+        return { n: q.stem, d: '答案：' + q.answer + (q.explanation ? '\n解析：' + q.explanation : ''), r: '[' + mod + ' · ' + typ + ']', id: q.id, kind: 'pol' };
+      });
+      return { name: typ, count: leaf.length + ' 题', leaf: leaf };
+    }) };
+  }) };
+  return polTree;
+}
+
+/* 英语词树：category → 词列表 */
+var engTree = null;
+function buildEngTree() {
+  if (engTree) return engTree;
+  if (!engVocabWords || !engVocabWords.length) return null;
+  var byCat = {};
+  engVocabWords.forEach(function (w) {
+    var cat = w.category || '其他';
+    if (!byCat[cat]) byCat[cat] = [];
+    byCat[cat].push(w);
+  });
+  engTree = { name: '异界之门', zc: '#6FA8E8', icon: '✧', children: Object.keys(byCat).map(function (cat) {
+    var leaf = byCat[cat].map(function (w) {
+      return { n: w.word, d: w.meaning + (w.example ? '\n例：' + w.example : ''), r: '[' + cat + ']' + (w.freq ? ' · 频次' + w.freq : ''), id: 'word_' + w.word, kind: 'eng' };
+    });
+    return { name: cat, count: leaf.length + ' 词', leaf: leaf };
+  }) };
+  return engTree;
+}
+
+function getZoneTree(zone) {
+  if (zone === 'pol') return buildPolTree();
+  if (zone === 'eng') return buildEngTree();
+  return buildConceptTree(zone);
+}
+
+/* ===== 参数化下钻渲染（每领地独立容器） ===== */
+var zoneState = { zone: 'thr', path: [] };
+
+function zoneNodeAt(zone, path) {
+  var n = getZoneTree(zone); if (!n) return null;
+  for (var i = 0; i < path.length; i++) n = n.children[path[i]];
+  return n;
+}
+function zoneCrumbName(zone, path) {
+  var n = getZoneTree(zone); if (!n) return '';
+  for (var i = 0; i < path.length; i++) n = n.children[path[i]];
+  return n.name;
+}
+function zoneCountMastered(node) {
+  var m = 0, t = 0;
+  (function walk(n) {
+    if (!n) return;
+    if (n.leaf) { n.leaf.forEach(function (c) { t++; if (RPG.data && RPG.data.mastered[c.id]) m++; }); }
+    else if (n.children) n.children.forEach(walk);
+  })(node);
+  return { mastered: m, total: t };
+}
+
+function rpgRenderAll() {
+  var zone = zoneState.zone, tree = getZoneTree(zone);
+  if (!tree) return;
+  var p = zoneState.path;
+  var crumbEl = document.getElementById(zone + 'Crumbs');
+  var browseEl = document.getElementById(zone + 'Browse');
+  var fcEl = document.getElementById(zone + 'FcCard');
+  var noteEl = document.getElementById(zone + 'FlashNote');
+  if (!browseEl) return;
+
+  // 面包屑
+  var ch = '<button data-pop="-1">' + tree.name + '</button>';
+  for (var i = 0; i < p.length; i++) {
+    var nm = zoneCrumbName(zone, p.slice(0, i + 1));
+    ch += '<span class="sep">›</span>';
+    ch += (i === p.length - 1) ? '<span class="cur">' + nm + '</span>' : '<button data-pop="' + i + '">' + nm + '</button>';
+  }
+  if (crumbEl) {
+    crumbEl.innerHTML = ch;
+    crumbEl.querySelectorAll('button').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var pi = parseInt(b.getAttribute('data-pop'));
+        zoneState.path = pi < 0 ? [] : zoneState.path.slice(0, pi + 1);
+        rpgRenderAll();
+      });
+    });
+  }
+
+  // 浏览区
+  var node = zoneNodeAt(zone, p);
+  browseEl.style.setProperty('--zc', tree.zc || '#D9B25E');
+  if (node && node.children) {
+    browseEl.innerHTML = node.children.map(function (c, i) {
+      var hasLeaf = !!c.leaf;
+      var ct = hasLeaf ? (c.count || c.leaf.length + ' 项') : (c.count || (c.children ? c.children.length + ' 子项' : ''));
+      var m = zoneCountMastered(c);
+      var mh = (m.total > 0) ? '<span class="m-count">✦ 已点亮 ' + m.mastered + ' / ' + m.total + '</span>' : '';
+      return '<button class="browse-item" data-i="' + i + '"><span class="b-icon">' + (c.icon || '◆') + '</span>' +
+        '<span class="b-name">' + c.name + '</span><span class="b-count">' + ct + mh + '</span><span class="b-arrow">›</span></button>';
+    }).join('');
+    browseEl.querySelectorAll('.browse-item').forEach(function (b) {
+      b.addEventListener('click', function () {
+        zoneState.path.push(parseInt(b.getAttribute('data-i')));
+        rpgRenderAll();
+      });
+    });
+  } else if (node && node.leaf) {
+    browseEl.innerHTML = '<div class="skill-list">' + node.leaf.map(function (c, i) {
+      var m = RPG.data && RPG.data.mastered[c.id];
+      return '<div class="skill-card leaf' + (m ? ' mastered' : '') + '" data-leaf="' + i + '" style="--sc:' + (tree.zc || '#B58AF2') + '">' +
+        '<div class="skill-top"><span class="skill-tier">' + (zone === 'eng' ? 'WORD' : (zone === 'pol' ? 'Q' : (i === 0 ? 'S' : 'A'))) + '</span>' +
+        '<span class="skill-name">' + c.n + '</span></div>' +
+        '<div class="skill-desc">' + c.d + '</div>' +
+        '<div class="skill-rels">' + c.r + '</div>' +
+        '<div class="skill-actions"><span class="m-status">' + (m ? '✓ 已掌握' : '未掌握') + '</span>' +
+        (m ? '' : '<button class="m-btn" data-m="' + i + '">标记掌握</button>') + '</div></div>';
+    }).join('') + '</div>';
+    browseEl.querySelectorAll('.leaf').forEach(function (card) {
+      card.addEventListener('click', function () {
+        var leaf = node.leaf[parseInt(card.getAttribute('data-leaf'))];
+        if (noteEl) noteEl.classList.add('hidden');
+        if (fcEl) {
+          fcEl.classList.remove('hidden'); fcEl.classList.remove('flip');
+          var k = document.getElementById(zone + 'FcKicker');
+          if (k) k.textContent = (zone === 'eng' ? '单词 · ' : zone === 'pol' ? '题目 · ' : '名词解释 · ') + zoneCrumbName(zone, zoneState.path);
+          var t = document.getElementById(zone + 'FcTerm'); if (t) t.textContent = leaf.n;
+          var a = document.getElementById(zone + 'FcAnswer'); if (a) a.textContent = leaf.d;
+        }
+      });
+      var mb = card.querySelector('.m-btn');
+      if (mb) mb.addEventListener('click', function (e) {
+        e.stopPropagation();
+        var leaf = node.leaf[parseInt(this.getAttribute('data-m'))];
+        rpgMaster(leaf.id, leaf.n);
+      });
+    });
+  } else {
+    browseEl.innerHTML = '<div class="flash-note">该分类暂无内容</div>';
+  }
+}
+
+/* 领地打开：切到对应 panel + 激活下钻 tab */
+function openZone(zone) {
+  zoneState.zone = zone; zoneState.path = [];
+  var meta = ZONES[zone]; if (!meta) return;
+  // 激活领地 panel
+  switchPanel(meta.panel);
+  // 主城特例：dashboard 面板内显示概论下钻，隐藏地图区
+  if (zone === 'dash') {
+    var dMap = document.getElementById('mapZones');
+    var dSum = document.getElementById('dashSummary');
+    var dZone = document.getElementById('dashZone');
+    if (dMap) dMap.closest('.map-head') && dMap.closest('.map-head').classList.add('hidden');
+    if (dMap) dMap.classList.add('hidden');
+    var dBoard = dMap && dMap.parentElement ? dMap.parentElement.querySelector('.board-row') : null;
+    if (dBoard) dBoard.classList.add('hidden');
+    if (dSum) dSum.classList.add('hidden');
+    if (dZone) dZone.classList.remove('hidden');
+    var tree = getZoneTree(zone);
+    if (!tree) {
+      var bEl = document.getElementById('dashBrowse');
+      if (bEl) bEl.innerHTML = '<div class="flash-note">数据加载中，请稍候…</div>';
+      return;
+    }
+    rpgRenderAll();
+    window.scrollTo({ top: 0 });
+    return;
+  }
+  // 激活下钻 sub-tab（如果该面板有）
+  var tabBar = document.querySelector('#panel-' + meta.panel + ' .sub-tabs');
+  if (tabBar) {
+    tabBar.querySelectorAll('.sub-tab').forEach(function (t) { t.classList.remove('active'); });
+    var bt = tabBar.querySelector('[data-sub="' + zone + '-browse"]');
+    if (bt) bt.classList.add('active');
+  }
+  var panel = document.getElementById('panel-' + meta.panel);
+  if (panel) {
+    panel.querySelectorAll('.sub-panel').forEach(function (sp) { sp.classList.remove('active'); });
+    var bp = document.getElementById('sub-' + zone + '-browse');
+    if (bp) bp.classList.add('active');
+  }
+  var tree = getZoneTree(zone);
+  if (!tree) {
+    // 数据未就绪：显示加载提示，数据加载后重渲染
+    var bEl = document.getElementById(zone + 'Browse');
+    if (bEl) bEl.innerHTML = '<div class="flash-note">数据加载中，请稍候…</div>';
+    if (zone === 'eng' && typeof engVocabLoaded === 'boolean' && !engVocabLoaded) {
+      setTimeout(function () { openZone(zone); }, 500);
+      return;
+    }
+    return;
+  }
+  rpgRenderAll();
+  window.scrollTo({ top: 0 });
+}
+
+/* 主城返回地图 */
+function closeDashZone() {
+  var dZone = document.getElementById('dashZone');
+  if (dZone) dZone.classList.add('hidden');
+  var dMap = document.getElementById('mapZones');
+  if (dMap) { dMap.classList.remove('hidden'); var mh = dMap.closest('.map-head'); if (mh) mh.classList.remove('hidden'); var br = dMap.parentElement ? dMap.parentElement.querySelector('.board-row') : null; if (br) br.classList.remove('hidden'); }
+  var dSum = document.getElementById('dashSummary');
+  if (dSum) dSum.classList.remove('hidden');
+  zoneState.path = [];
+}
+
+/* ===== 世界地图渲染 ===== */
+function rpgZoneStat(zone) {
+  var tree = getZoneTree(zone);
+  if (!tree) return '加载中…';
+  if (zone === 'pol') { var c = polQuestions ? polQuestions.length : 0; return c ? c + ' 题' : '加载中…'; }
+  if (zone === 'eng') { var c = engVocabWords ? engVocabWords.length : 0; return c ? c + ' 词' : '加载中…'; }
+  var m = zoneCountMastered(tree);
+  return (m.mastered > 0 ? '✦ ' + m.mastered + ' / ' : '') + m.total + ' 概念';
+}
+function renderMap() {
+  var el = document.getElementById('mapZones'); if (!el) return;
+  el.innerHTML = ['dash', 'thr', 'met', 'pol', 'eng'].map(function (z) {
+    var meta = ZONES[z];
+    return '<button class="zone ' + z + '" data-zone="' + z + '">' +
+      '<span class="z-icon">' + meta.icon + '</span><span class="z-name">' + meta.name + '</span>' +
+      '<span class="z-sub">' + meta.sub + '</span><span class="z-stat">' + rpgZoneStat(z) + '</span></button>';
+  }).join('');
+  var qb = document.getElementById('questBoard');
+  if (qb) {
+    var done = RPG.data && Object.keys(RPG.data.mastered).length > 0;
+    qb.innerHTML = [
+      { t: '点亮任意概念', e: '+40 exp', d: done }, { t: '浏览知识圣殿 · 古典时期', e: '+30 exp', d: false }, { t: '炼金工坊 · 复习抽样设计', e: '+150 exp', d: false }
+    ].map(function (q) {
+      return '<li class="' + (q.d ? 'done' : '') + '"><span class="ck">' + (q.d ? '✓' : '→') + '</span><span>' + q.t + '</span><span class="rew">' + q.e + '</span></li>';
+    }).join('');
+  }
+  var ab = document.getElementById('achBoard');
+  if (ab) {
+    var mc = RPG.data ? Object.keys(RPG.data.mastered).length : 0;
+    var lv = RPG.data ? RPG.data.level : 1;
+    var ach = [
+      { icon: '🔥', t: '点亮者 · 首个概念', ok: mc >= 1 },
+      { icon: '📚', t: '学徒 · 10 概念掌握', ok: mc >= 10 },
+      { icon: '⚡', t: '贤者 · 50 概念掌握', ok: mc >= 50 },
+      { icon: '🗺', t: '满级修行者', ok: lv >= 5 }
+    ];
+    ab.innerHTML = ach.map(function (a) {
+      return '<div class="ach' + (a.ok ? ' lit' : '') + '"><span class="a-icon">' + a.icon + '</span><span>' + a.t + '</span></div>';
+    }).join('');
+  }
+}
+
+/* ===== RPG 初始化 + 事件绑定 ===== */
+if (RPG.load()) { rpgUpdateHero(); } else { rpgShowWelcome(); }
+document.getElementById('btn-enter').addEventListener('click', function () {
+  RPG.create(document.getElementById('pname').value);
+  rpgHideWelcome(); rpgUpdateHero(); renderMap();
+});
+document.getElementById('pname').addEventListener('keydown', function (e) { if (e.key === 'Enter') document.getElementById('btn-enter').click(); });
+document.getElementById('btn-switch').addEventListener('click', function () {
+  localStorage.removeItem('rpg_player'); RPG.name = ''; RPG.data = null;
+  document.getElementById('pname').value = ''; rpgShowWelcome();
+});
+document.getElementById('btn-up-close').addEventListener('click', rpgHideUpgrade);
+document.getElementById('mapZones').addEventListener('click', function (e) {
+  var btn = e.target.closest('.zone'); if (!btn) return;
+  openZone(btn.getAttribute('data-zone'));
+});
+// 每个领地的概念卡翻面
+['dash', 'thr', 'met', 'pol', 'eng'].forEach(function (z) {
+  var el = document.getElementById(z + 'FcCard');
+  if (el) el.addEventListener('click', function () { this.classList.toggle('flip'); });
+});
+// 主城返回地图
+var _dashBack = document.getElementById('btn-dash-back');
+if (_dashBack) _dashBack.addEventListener('click', closeDashZone);
+
+</script>
 </body>
 </html>
