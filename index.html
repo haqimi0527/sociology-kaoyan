@@ -994,37 +994,243 @@ table.tbl tr:nth-child(even) td {
 .scholar-az-item:hover{background:var(--thr-bg)}
 .scholar-az-item.active{background:var(--thr-light);font-weight:600}
 .scholar-az-item .count{font-size:10px;color:var(--faint);background:var(--surface2);padding:1px 6px;border-radius:10px}
+
+/* ============================================================
+   RPG 深色奇幻主题层（覆盖，位于样式表末尾——强制深色，不跟随系统）
+   ============================================================ */
+:root {
+  --bg: #0B0817; --bg-2: #120E26;
+  --surface: rgba(22,17,44,.78); --surface2: rgba(28,21,54,.8);
+  --border: rgba(217,178,94,.22); --border-light: rgba(217,178,94,.14);
+  --ink: #EDE7F7; --lead: #9A8FB8; --faint: #6E6390; --placeholder: #5a4f78;
+  --pol: #E06A5E; --pol-bg: rgba(224,106,94,.15); --pol-light: rgba(224,106,94,.24);
+  --eng: #6FA8E8; --eng-bg: rgba(111,168,232,.15); --eng-light: rgba(111,168,232,.24);
+  --thr: #B58AF2; --thr-bg: rgba(181,138,242,.15); --thr-light: rgba(181,138,242,.24);
+  --met: #5CD6A0; --met-bg: rgba(92,214,160,.15); --met-light: rgba(92,214,160,.24);
+  --good: #4FC98F; --good-bg: rgba(79,201,143,.16);
+  --warn: #E8B45E; --warn-bg: rgba(232,180,94,.16);
+  --bad: #E06A5E; --bad-bg: rgba(224,106,94,.16);
+  --gold: #D9B25E; --gold-2: #F0C75E; --gold-dim: #8A6A2F;
+  --line: rgba(217,178,94,.22);
+  --btn-primary-bg: #8A6A2F;
+  --shadow-xs: 0 1px 2px rgba(0,0,0,.35);
+  --shadow-sm: 0 1px 3px rgba(0,0,0,.45);
+  --shadow: 0 4px 12px rgba(0,0,0,.5);
+  --shadow-lg: 0 8px 24px rgba(0,0,0,.6);
+  --shadow-xl: 0 16px 40px rgba(0,0,0,.7);
+}
+body { background: var(--bg); }
+.bg { position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  background: radial-gradient(ellipse at 70% 0%, rgba(84,58,150,.32), transparent 55%), radial-gradient(ellipse at 15% 100%, rgba(40,70,130,.25), transparent 55%), linear-gradient(160deg, #0B0817 0%, #120E26 55%, #0A0918 100%); }
+.bg::before { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 30%; background: linear-gradient(to top, rgba(217,178,94,.05), transparent); }
+.particle { position: fixed; z-index: 0; width: var(--s,3px); height: var(--s,3px); border-radius: 50%; background: var(--c,#D9B25E); opacity: 0; animation: floatUp var(--d,14s) linear infinite; animation-delay: var(--dl,0s); filter: blur(.4px); pointer-events: none; }
+@keyframes floatUp { 0% { transform: translateY(20vh) translateX(0) scale(1); opacity: 0; } 12% { opacity: var(--o,.7); } 100% { transform: translateY(-110vh) translateX(var(--dx,20px)) scale(.4); opacity: 0; } }
+.sidebar, .main { position: relative; z-index: 2; }
+.sidebar { background: rgba(12,9,26,.9); border-right-color: var(--line); backdrop-filter: blur(8px); }
+.side-nav .nav-item { color: var(--lead); }
+.nav-item:hover { background: rgba(217,178,94,.08); color: var(--ink); }
+.nav-item.active { background: rgba(217,178,94,.12); color: var(--gold-2); box-shadow: inset 3px 0 0 var(--gold); }
+.btn-primary { background: linear-gradient(135deg, var(--gold-dim), var(--gold-2)); color: var(--bg); }
+.btn-primary:hover { filter: brightness(1.1); opacity: 1; }
+.res-cat-btn.active { background: linear-gradient(135deg, var(--gold-dim), var(--gold-2)); color: var(--bg); }
+input, select, textarea { background: var(--surface2); color: var(--ink); border-color: var(--line); }
+input::placeholder { color: var(--placeholder); }
+
+/* 角色栏（侧边栏顶部） */
+.hero-role { padding: 20px 16px 14px; border-bottom: 1px solid var(--line); }
+.hero-role .hero-top { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+.hero-role .avatar { width: 46px; height: 46px; border-radius: 50%; flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-size: 21px; font-weight: 900; color: var(--bg); background: radial-gradient(circle at 30% 30%, var(--gold-2), var(--gold-dim)); box-shadow: 0 0 18px rgba(217,178,94,.45); position: relative; }
+.hero-role .avatar::after { content: ""; position: absolute; inset: -4px; border-radius: 50%; border: 1px solid rgba(217,178,94,.5); animation: heroRing 3.5s ease-in-out infinite; }
+@keyframes heroRing { 0%,100% { transform: scale(1); opacity: .6; } 50% { transform: scale(1.14); opacity: .15; } }
+.hero-role .hero-name { font-weight: 700; font-size: 14px; letter-spacing: 1px; color: var(--ink); }
+.hero-role .hero-title { font-size: 10px; color: var(--text-soft,var(--lead)); letter-spacing: 1.5px; }
+.hero-role .hero-lvl { font-size: 11px; font-weight: 700; color: var(--gold); border: 1px solid var(--line); padding: 1px 8px; border-radius: 6px; background: rgba(217,178,94,.08); margin-left: auto; }
+.hero-role .xp { width: 100%; }
+.hero-role .xp-label { font-size: 10px; color: var(--lead); display: flex; justify-content: space-between; margin-bottom: 4px; letter-spacing: 1px; }
+.hero-role .xp-label b { color: var(--gold-2); }
+.hero-role .xp-bar { height: 9px; border-radius: 6px; background: rgba(217,178,94,.12); border: 1px solid var(--line); overflow: hidden; position: relative; }
+.hero-role .xp-bar i { display: block; height: 100%; width: 0%; border-radius: 6px; background: linear-gradient(90deg, var(--gold-dim), var(--gold-2)); box-shadow: 0 0 12px rgba(240,199,94,.55); transition: width .6s var(--ease); }
+.switch-btn { font-size: 11px; color: var(--lead); border: 1px solid var(--line); border-radius: 8px; padding: 4px 10px; letter-spacing: 1px; background: none; cursor: pointer; }
+.switch-btn:hover { color: var(--gold-2); border-color: var(--gold); }
+
+/* ===== 世界地图（主城） ===== */
+.map-head { text-align: center; margin: 6px 0 26px; }
+.map-head .kicker { font-size: 10px; letter-spacing: 6px; color: var(--gold); text-transform: uppercase; text-shadow: 0 0 14px rgba(217,178,94,.5); }
+.map-head h1 { font-size: 36px; font-weight: 900; letter-spacing: 8px; margin: 6px 0 4px; background: linear-gradient(180deg, #fff, #D9C7F2); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+.map-head p { color: var(--lead); font-size: 12px; letter-spacing: 2px; }
+.zones { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; margin-bottom: 22px; }
+.zone { position: relative; padding: 22px 14px 16px; border-radius: 16px; background: linear-gradient(165deg, var(--card,var(--surface)), var(--card-2,var(--surface2))); border: 1px solid var(--line); backdrop-filter: blur(8px); text-align: center; cursor: pointer; transition: transform .3s, box-shadow .3s, border-color .3s; overflow: hidden; animation: zoneFloat 6s ease-in-out infinite; }
+.zone:nth-child(2) { animation-delay: .7s; } .zone:nth-child(3) { animation-delay: 1.4s; } .zone:nth-child(4) { animation-delay: .3s; } .zone:nth-child(5) { animation-delay: 2s; }
+@keyframes zoneFloat { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+.zone:hover { transform: translateY(-12px) scale(1.02); box-shadow: 0 18px 46px rgba(0,0,0,.5); border-color: rgba(217,178,94,.55); animation-play-state: paused; }
+.zone::after { content: ""; position: absolute; top: 0; left: 18%; right: 18%; height: 2px; background: linear-gradient(90deg, transparent, var(--zc,var(--gold)), transparent); opacity: .7; }
+.zone .z-icon { font-size: 34px; display: block; margin-bottom: 10px; filter: drop-shadow(0 0 14px var(--zc,rgba(217,178,94,.6))); }
+.zone .z-name { display: block; font-weight: 700; font-size: 14px; letter-spacing: 1px; color: var(--ink); margin-bottom: 3px; }
+.zone .z-sub { display: block; font-size: 10px; color: var(--lead); letter-spacing: 1px; }
+.zone .z-stat { display: inline-block; margin-top: 10px; font-size: 11px; font-weight: 700; color: var(--zc,var(--gold)); padding: 2px 10px; border-radius: 8px; background: rgba(217,178,94,.08); border: 1px solid var(--line); }
+.zone.dash { --zc: var(--gold); } .zone.gen { --zc: var(--gold-2); } .zone.thr { --zc: var(--thr); } .zone.met { --zc: var(--met); } .zone.pol { --zc: var(--pol); } .zone.eng { --zc: var(--eng); }
+.board-row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 22px; }
+.board { background: linear-gradient(165deg, var(--surface), var(--surface2)); border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px; backdrop-filter: blur(8px); }
+.board h2 { font-size: 14px; font-weight: 700; letter-spacing: 2px; margin-bottom: 12px; color: var(--gold-2); }
+.board h2::before { content: "◆ "; font-size: 11px; color: var(--gold-dim); }
+.quest-list { list-style: none; }
+.quest-list li { display: flex; align-items: center; gap: 10px; padding: 7px 2px; font-size: 12px; color: var(--lead); border-bottom: 1px dashed rgba(217,178,94,.14); }
+.quest-list li:last-child { border-bottom: 0; }
+.quest-list .ck { width: 20px; height: 20px; border-radius: 50%; flex-shrink: 0; display: flex; align-items: center; justify-content: center; border: 1px solid var(--line); font-size: 10px; color: var(--gold); }
+.quest-list li.done .ck { background: var(--met); color: var(--bg); border-color: var(--met); box-shadow: 0 0 10px rgba(79,201,143,.5); }
+.quest-list li.done span:not(.ck) { color: var(--faint); text-decoration: line-through; }
+.quest-list .rew { margin-left: auto; font-size: 10px; color: var(--gold); }
+.ach-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.ach { display: flex; align-items: center; gap: 8px; padding: 10px 12px; border-radius: 12px; border: 1px solid var(--line); background: rgba(217,178,94,.04); font-size: 11px; color: var(--faint); transition: transform .2s; }
+.ach:hover { transform: translateY(-2px); }
+.ach.lit { color: var(--ink); border-color: rgba(217,178,94,.5); background: linear-gradient(135deg, rgba(217,178,94,.14), rgba(217,178,94,.04)); }
+.ach .a-icon { font-size: 16px; filter: grayscale(1) opacity(.5); }
+.ach.lit .a-icon { filter: none; }
+
+/* ===== 领地内容视图（面包屑 + 下钻 + 技能卡） ===== */
+.zone-view { display: none; animation: zoneIn .4s cubic-bezier(.2,.8,.25,1); }
+.zone-view.active { display: block; }
+@keyframes zoneIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+.content-head { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; flex-wrap: wrap; }
+.back { font-size: 12px; color: var(--lead); letter-spacing: 1px; padding: 6px 12px; border: 1px solid var(--line); border-radius: 8px; background: rgba(217,178,94,.06); cursor: pointer; white-space: nowrap; transition: all .2s; }
+.back:hover { color: var(--gold-2); border-color: var(--gold); box-shadow: 0 0 12px rgba(217,178,94,.2); }
+.back:disabled { opacity: .4; cursor: not-allowed; }
+.zone-title { font-size: 22px; font-weight: 900; letter-spacing: 3px; color: var(--ink); }
+.crumbs { display: flex; align-items: center; gap: 4px; margin-top: 4px; flex-wrap: wrap; font-size: 12px; color: var(--faint); width: 100%; }
+.crumbs button { font-size: 12px; color: var(--faint); padding: 2px 6px; border-radius: 6px; cursor: pointer; background: none; border: 0; transition: all .2s; }
+.crumbs button:hover { color: var(--gold-2); background: rgba(217,178,94,.08); }
+.crumbs .sep { color: var(--faint); opacity: .5; }
+.crumbs .cur { color: var(--gold-2); font-weight: 700; }
+.zone-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 18px; }
+.browse { display: flex; flex-direction: column; gap: 10px; }
+.browse-item { display: flex; align-items: center; gap: 12px; padding: 14px 18px; border-radius: 14px; background: linear-gradient(165deg, var(--surface), var(--surface2)); border: 1px solid var(--line); border-left: 3px solid var(--zc,var(--gold)); backdrop-filter: blur(8px); cursor: pointer; transition: transform .25s, box-shadow .25s, border-color .25s; text-align: left; font-family: var(--font); }
+.browse-item:hover { transform: translateX(6px); box-shadow: 0 10px 30px rgba(0,0,0,.4); border-color: var(--zc,var(--gold)); }
+.browse-item .b-icon { font-size: 22px; filter: drop-shadow(0 0 8px var(--zc,rgba(217,178,94,.5))); }
+.browse-item .b-name { flex: 1; font-size: 14px; font-weight: 700; letter-spacing: 1px; color: var(--ink); }
+.browse-item .b-count { font-size: 11px; color: var(--lead); padding: 2px 10px; border-radius: 8px; background: rgba(217,178,94,.07); border: 1px solid var(--line); white-space: nowrap; }
+.browse-item .b-arrow { font-size: 18px; color: var(--faint); transition: transform .25s; }
+.browse-item:hover .b-arrow { transform: translateX(4px); color: var(--gold-2); }
+.skill-list { display: flex; flex-direction: column; gap: 12px; }
+.skill-card { background: linear-gradient(165deg, var(--surface), var(--surface2)); border: 1px solid var(--line); border-left: 3px solid var(--sc,var(--thr)); border-radius: 14px; padding: 16px 20px; backdrop-filter: blur(8px); transition: transform .25s, box-shadow .25s; position: relative; overflow: hidden; cursor: pointer; }
+.skill-card:hover { transform: translateX(6px); box-shadow: 0 10px 30px rgba(0,0,0,.4); }
+.skill-card::after { content: ""; position: absolute; top: 0; left: 0; bottom: 0; width: 34%; background: linear-gradient(105deg, transparent, rgba(255,255,255,.05), transparent); transform: translateX(-150%); transition: transform .7s; }
+.skill-card:hover::after { transform: translateX(300%); }
+.skill-top { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+.skill-tier { font-size: 10px; font-weight: 900; letter-spacing: 1px; color: var(--sc,var(--gold)); padding: 2px 8px; border-radius: 6px; border: 1px solid currentColor; }
+.skill-name { font-size: 15px; font-weight: 700; letter-spacing: 1px; color: var(--ink); }
+.skill-desc { font-size: 12px; color: var(--lead); line-height: 1.75; }
+.skill-rels { margin-top: 8px; font-size: 11px; color: var(--faint); }
+.skill-rels b { color: var(--gold); }
+.skill-actions { display: flex; align-items: center; justify-content: space-between; margin-top: 10px; }
+.m-status { font-size: 11px; color: var(--faint); letter-spacing: 1px; }
+.skill-card.mastered { border-left-color: var(--gold-2); box-shadow: 0 0 18px rgba(240,199,94,.14); }
+.skill-card.mastered .skill-name::after { content: " ✓"; color: var(--gold-2); }
+.skill-card.mastered .m-status { color: var(--gold-2); }
+.m-btn { font-size: 11px; font-weight: 700; color: var(--gold-2); border: 1px solid var(--gold); border-radius: 8px; padding: 4px 12px; letter-spacing: 1px; background: none; cursor: pointer; }
+.m-btn:hover { background: rgba(217,178,94,.15); box-shadow: 0 0 12px rgba(217,178,94,.3); }
+.m-count { display: block; margin-top: 3px; font-size: 10px; font-weight: 700; color: var(--gold-2); letter-spacing: .5px; }
+
+/* ===== 概念卡侧栏 ===== */
+.flash-card { background: linear-gradient(165deg, var(--surface), var(--surface2)); border: 1px solid var(--line); border-radius: 16px; padding: 20px; position: sticky; top: 20px; height: fit-content; backdrop-filter: blur(8px); }
+.flash-card h3 { font-size: 13px; letter-spacing: 2px; color: var(--gold-2); margin-bottom: 12px; }
+.flash-note { font-size: 12px; color: var(--faint); line-height: 1.8; padding: 14px; border: 1px dashed var(--line); border-radius: 12px; }
+.fc-card { height: 230px; perspective: 900px; cursor: pointer; margin-bottom: 14px; }
+.fc-inner { position: relative; width: 100%; height: 100%; transform-style: preserve-3d; transition: transform .6s; }
+.fc-card.flip .fc-inner { transform: rotateY(180deg); }
+.fc-face { position: absolute; inset: 0; backface-visibility: hidden; border-radius: 14px; border: 1px solid var(--line); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; background: linear-gradient(170deg, rgba(28,21,54,.95), rgba(18,14,38,.95)); padding: 20px; }
+.fc-back { transform: rotateY(180deg); }
+.fc-kicker { font-size: 10px; letter-spacing: 3px; color: var(--gold-dim); }
+.fc-term { font-size: 22px; font-weight: 900; letter-spacing: 2px; text-align: center; color: var(--ink); }
+.fc-answer { font-size: 12px; color: var(--lead); line-height: 1.8; }
+.fc-hint { font-size: 11px; color: var(--faint); }
+.xp-note { font-size: 12px; color: var(--lead); text-align: center; padding: 10px; border: 1px dashed var(--line); border-radius: 10px; }
+.xp-note b { color: var(--gold-2); }
+.hidden { display: none; }
+
+/* ===== 欢迎 / 升级弹窗 ===== */
+.welcome { position: fixed; inset: 0; z-index: 500; display: none; align-items: center; justify-content: center; background: rgba(5,4,12,.85); backdrop-filter: blur(8px); }
+.welcome.open { display: flex; }
+.w-card { width: 400px; max-width: 90vw; background: linear-gradient(170deg, rgba(28,21,54,.97), rgba(15,11,32,.97)); border: 1px solid var(--line); border-radius: 18px; padding: 32px 28px; text-align: center; box-shadow: 0 20px 60px rgba(0,0,0,.6), 0 0 40px rgba(217,178,94,.14); animation: upIn .5s cubic-bezier(.2,.8,.25,1); }
+@keyframes upIn { from { opacity: 0; transform: translateY(20px) scale(.96); } to { opacity: 1; transform: none; } }
+.w-badge { font-size: 40px; filter: drop-shadow(0 0 20px rgba(217,178,94,.5)); }
+.w-card h2 { font-size: 20px; font-weight: 900; letter-spacing: 3px; margin: 10px 0 6px; color: var(--ink); }
+.w-card p { font-size: 12px; color: var(--lead); letter-spacing: 1px; margin-bottom: 18px; }
+.w-card input { width: 100%; padding: 11px 14px; background: rgba(10,7,22,.7); border: 1px solid var(--line); border-radius: 10px; color: var(--ink); font-size: 15px; text-align: center; letter-spacing: 2px; outline: none; }
+.w-card input:focus { border-color: var(--gold); box-shadow: 0 0 14px rgba(217,178,94,.25); }
+#btn-enter { width: 100%; margin-top: 12px; padding: 11px; background: linear-gradient(135deg, var(--gold-dim), var(--gold-2)); color: var(--bg); font-weight: 700; font-size: 15px; border-radius: 10px; letter-spacing: 2px; cursor: pointer; border: 0; }
+#btn-enter:hover { filter: brightness(1.1); }
+.w-save { margin-top: 12px; font-size: 11px; color: var(--faint); letter-spacing: 1px; }
+.upgrade { position: fixed; inset: 0; z-index: 510; display: none; align-items: center; justify-content: center; background: rgba(5,4,12,.72); }
+.upgrade.open { display: flex; }
+.up-card { text-align: center; padding: 34px 48px; background: linear-gradient(170deg, rgba(28,21,54,.98), rgba(15,11,32,.98)); border: 1px solid var(--gold); border-radius: 20px; box-shadow: 0 0 60px rgba(240,199,94,.3); animation: upIn .5s cubic-bezier(.2,.8,.25,1); }
+.up-title { font-size: 12px; letter-spacing: 4px; color: var(--gold); }
+.up-lv { font-size: 48px; font-weight: 900; margin: 8px 0 16px; color: var(--gold-2); text-shadow: 0 0 30px rgba(240,199,94,.5); }
+.up-card button { padding: 9px 26px; background: var(--gold); color: var(--bg); font-weight: 700; border-radius: 10px; letter-spacing: 2px; cursor: pointer; border: 0; }
+.up-card button:hover { filter: brightness(1.1); }
+
+/* 窄屏适配 */
+@media (max-width: 1000px) { .zones { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 800px) {
+  .zones { grid-template-columns: 1fr 1fr; }
+  .board-row, .zone-grid { grid-template-columns: 1fr; }
+  .flash-card { position: static; }
+  .hero-role .hero-title { display: none; }
+}
+@media (max-width: 500px) { .zones { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
+
+<!-- 星云粒子背景 -->
+<div class="bg"></div>
+<span class="particle" style="--s:3px;--c:#D9B25E;--dl:0s;--d:15s;left:12%;--dx:24px;--o:.6"></span>
+<span class="particle" style="--s:2px;--c:#B58AF2;--dl:3s;--d:18s;left:28%;--dx:-18px;--o:.5"></span>
+<span class="particle" style="--s:4px;--c:#6FA8E8;--dl:6s;--d:20s;left:45%;--dx:30px;--o:.4"></span>
+<span class="particle" style="--s:2px;--c:#D9B25E;--dl:1.5s;--d:14s;left:63%;--dx:-22px;--o:.7"></span>
+<span class="particle" style="--s:3px;--c:#5CD6A0;--dl:8s;--d:22s;left:78%;--dx:16px;--o:.5"></span>
+<span class="particle" style="--s:2px;--c:#E06A5E;--dl:4.5s;--d:17s;left:88%;--dx:-26px;--o:.5"></span>
+<span class="particle" style="--s:3px;--c:#D9B25E;--dl:10s;--d:24s;left:8%;--dx:18px;--o:.4"></span>
+<span class="particle" style="--s:2px;--c:#B58AF2;--dl:2s;--d:16s;left:55%;--dx:28px;--o:.6"></span>
 
 <!-- ============================================================
      SIDEBAR
      ============================================================ -->
 <aside class="sidebar">
-  <div class="side-brand">
-    <h2>社会学考研<br>AI 导师</h2>
-    <div class="brand-sub">四科全覆盖 · v2</div>
+  <!-- 角色栏 -->
+  <div class="hero-role">
+    <div class="hero-top">
+      <div class="avatar" id="heroAvatar">考</div>
+      <div>
+        <div class="hero-name" id="heroName">无名修士</div>
+        <div class="hero-title">知识大陆的修行者</div>
+      </div>
+      <div class="hero-lvl" id="heroLvl">LV.1</div>
+    </div>
+    <div class="xp">
+      <div class="xp-label"><span>经验值</span><span id="heroExp">0 <b>/</b> 120</span></div>
+      <div class="xp-bar"><i id="heroExpBar" style="width:0%"></i></div>
+    </div>
+    <button class="switch-btn" id="btn-switch" style="margin-top:10px;width:100%">⇄ 换人</button>
   </div>
 
   <nav class="side-nav">
     <button class="nav-item active" data-panel="dashboard" onclick="switchPanel('dashboard')">
-      <span class="nav-icon">🏠</span> 总览
+      <span class="nav-icon">🏛</span> 主城 · 总览
     </button>
     <button class="nav-item pol" data-panel="politics" onclick="switchPanel('politics')">
-      <span class="nav-icon">📖</span> 政治
+      <span class="nav-icon">🗣</span> 辩论广场
       <span class="nav-badge">0</span>
     </button>
     <button class="nav-item eng" data-panel="english" onclick="switchPanel('english')">
-      <span class="nav-icon">🔤</span> 英语一
+      <span class="nav-icon">✧</span> 异界之门
       <span class="nav-badge">0</span>
     </button>
     <button class="nav-item thr" data-panel="theory" onclick="switchPanel('theory')">
-      <span class="nav-icon">🧠</span> 社会学理论
-      <span class="nav-badge">97</span>
+      <span class="nav-icon">📜</span> 知识圣殿
+      <span class="nav-badge">0</span>
     </button>
     <button class="nav-item met" data-panel="methods" onclick="switchPanel('methods')">
-      <span class="nav-icon">🔬</span> 研究方法
+      <span class="nav-icon">⚗</span> 炼金工坊
       <span class="nav-badge">0</span>
     </button>
     <button class="nav-item" data-panel="mock-exam" onclick="switchPanel('mock-exam')" style="background:var(--thr-bg)">
@@ -1062,36 +1268,17 @@ table.tbl tr:nth-child(even) td {
      ========================================================= -->
 <div class="panel active" id="panel-dashboard">
 
-  <!-- Four Subject Cards -->
-  <div class="subj-grid">
-    <div class="subj-card pol" onclick="switchPanel('politics')">
-      <span class="sc-icon">📖</span>
-      <div class="sc-name">政治</div>
-      <div class="sc-pct">—</div>
-      <div class="sc-label">选择题待做 · 分析题待背</div>
-      <div class="sc-bar"><div class="sc-bar-inner pol" style="width:0%"></div></div>
-    </div>
-    <div class="subj-card eng" onclick="switchPanel('english')">
-      <span class="sc-icon">🔤</span>
-      <div class="sc-name">英语一</div>
-      <div class="sc-pct">—</div>
-      <div class="sc-label">单词待复习 · 阅读待精练</div>
-      <div class="sc-bar"><div class="sc-bar-inner eng" style="width:0%"></div></div>
-    </div>
-    <div class="subj-card thr" onclick="switchPanel('theory')">
-      <span class="sc-icon">🧠</span>
-      <div class="sc-name">社会学理论</div>
-      <div class="sc-pct">—</div>
-      <div class="sc-label">97 个概念 · 待做题目</div>
-      <div class="sc-bar"><div class="sc-bar-inner thr" style="width:0%"></div></div>
-    </div>
-    <div class="subj-card met" onclick="switchPanel('methods')">
-      <span class="sc-icon">🔬</span>
-      <div class="sc-name">研究方法</div>
-      <div class="sc-pct">—</div>
-      <div class="sc-label">概念卡片 · 公式手册</div>
-      <div class="sc-bar"><div class="sc-bar-inner met" style="width:0%"></div></div>
-    </div>
+  <!-- 世界地图 -->
+  <div class="map-head">
+    <div class="kicker">Adventure of Knowledge</div>
+    <h1>知识大陆</h1>
+    <p>选择一块领地，开启今日修行</p>
+  </div>
+  <div class="zones" id="mapZones"></div>
+
+  <div class="board-row">
+    <div class="board"><h2>今日任务</h2><ul class="quest-list" id="questBoard"></ul></div>
+    <div class="board"><h2>成就</h2><div class="ach-grid" id="achBoard"></div></div>
   </div>
 
   <!-- Today's Summary -->
@@ -1755,8 +1942,57 @@ table.tbl tr:nth-child(even) td {
 
 </main><!-- /main -->
 
+<!-- ============================================================
+     领地内容视图（概念下钻：面包屑 + 浏览 + 技能卡）
+     ============================================================ -->
+<div class="zone-view" id="zoneView">
+  <div class="content-head">
+    <button class="back" id="btn-zone-map">← 返回地图</button>
+    <button class="back" id="btn-zone-panel">⚙ 完整面板</button>
+    <div class="head-titles" style="flex:1;min-width:0">
+      <div class="zone-title" id="zoneTitle">知识圣殿</div>
+      <nav class="crumbs" id="zoneCrumbs"></nav>
+    </div>
+  </div>
+  <div class="zone-grid">
+    <div class="browse" id="zoneBrowse"></div>
+    <aside class="flash-card">
+      <h3>✦ 概念卡</h3>
+      <div class="flash-note" id="zoneFlashNote">选择下方概念查看详情</div>
+      <div class="fc-card hidden" id="zoneFcCard">
+        <div class="fc-inner">
+          <div class="fc-face fc-front"><span class="fc-kicker" id="zoneFcKicker">名词解释</span><span class="fc-term" id="zoneFcTerm">概念</span><span class="fc-hint">点击翻面</span></div>
+          <div class="fc-face fc-back"><span class="fc-kicker">参考答案</span><span class="fc-answer" id="zoneFcAnswer"></span></div>
+        </div>
+      </div>
+      <div class="xp-note" id="zoneXpNote">点击概念查看 · 点亮 +40 exp</div>
+    </aside>
+  </div>
+</div>
+
 <!-- Toast container -->
 <div class="toast-container" id="toastContainer"></div>
+
+<!-- ===== 欢迎 / 自命名 ===== -->
+<div class="welcome" id="welcome">
+  <div class="w-card">
+    <div class="w-badge">🏛</div>
+    <h2>欢迎来到知识大陆</h2>
+    <p>为修行起个名号，你的进度将单独存档</p>
+    <input type="text" id="pname" maxlength="12" placeholder="输入你的名号…">
+    <button id="btn-enter">进入大陆</button>
+    <div class="w-save">换人后，各自进度独立保存</div>
+  </div>
+</div>
+
+<!-- ===== 升级弹窗 ===== -->
+<div class="upgrade" id="upgrade">
+  <div class="up-card">
+    <div class="up-title">✦ 升 级 ✦</div>
+    <div class="up-lv" id="up-lv">LV.2</div>
+    <button id="btn-up-close">继续修行</button>
+  </div>
+</div>
 
 <!-- ============================================================
      JS — 导航 + 框架逻辑（壳子，无真实数据）
@@ -1830,7 +2066,7 @@ let taxonomy = null;  // concept-taxonomy.json
 async function loadTaxonomy() {
   if (taxonomy) return;
   try {
-    const resp = await fetch('data/concept-taxonomy.json?v=2');
+    const resp = await fetch('data/concept-taxonomy.json?v=3');
     if (!resp.ok) throw new Error('HTTP ' + resp.status);
     taxonomy = await resp.json();
   } catch(e) {
@@ -1842,7 +2078,7 @@ async function loadTaxonomy() {
 async function loadConcepts() {
   if (concepts.length) return;
   try {
-    const resp = await fetch('data/concepts.json?v=4');
+    const resp = await fetch('data/concepts.json?v=5');
     if (!resp.ok) throw new Error('HTTP ' + resp.status);
     concepts = await resp.json();
     concepts.forEach(c => { if (c.id) { conceptIndex[c.id] = c; } else { console.warn('概念缺少 id:', c.term); } });
@@ -4998,6 +5234,7 @@ function getExamInfo(conceptName) {
 loadApiKey();
 loadConcepts().then(function() {
   loadConceptExtras();
+  renderMap();
   searchConceptsShell();
   renderMetCards();
   renderDesignCards();
@@ -5054,6 +5291,328 @@ initDash();
 updateTodaySummary();
 updateDashboardPolStats();
 renderPolQuiz('all');
+
+/* ============================================================
+   RPG 玩家系统（自命名 / 存档 / 点亮 / 经验 / 升级）
+   ============================================================ */
+var RPG = {
+  name: '',
+  data: null,
+  defaults: function() { return { level: 1, exp: 0, expNext: 120, mastered: {} }; },
+  key: function() { return 'rpg_save_' + this.name; },
+  load: function() {
+    this.name = localStorage.getItem('rpg_player') || '';
+    if (!this.name) return false;
+    try { var raw = localStorage.getItem(this.key()); this.data = raw ? JSON.parse(raw) : this.defaults(); }
+    catch(e) { this.data = this.defaults(); }
+    return true;
+  },
+  save: function() { try { localStorage.setItem(this.key(), JSON.stringify(this.data)); } catch(e) {} },
+  create: function(name) {
+    this.name = (name.trim() || '无名修士');
+    localStorage.setItem('rpg_player', this.name);
+    this.data = this.defaults();
+    this.save();
+  }
+};
+
+function rpgUpdateHero() {
+  var d = RPG.data || RPG.defaults();
+  document.getElementById('heroName').textContent = RPG.name || '无名修士';
+  var avatar = document.getElementById('heroAvatar');
+  if (avatar) avatar.textContent = (RPG.name || '修').charAt(0);
+  document.getElementById('heroLvl').textContent = 'LV.' + d.level;
+  var pct = Math.min(100, Math.round(d.exp / d.expNext * 100));
+  document.getElementById('heroExpBar').style.width = pct + '%';
+  document.getElementById('heroExp').innerHTML = d.exp + ' <b>/</b> ' + d.expNext;
+}
+function rpgAddExp(n) {
+  var d = RPG.data;
+  d.exp += n;
+  while (d.exp >= d.expNext) {
+    d.exp -= d.expNext; d.level++;
+    d.expNext = Math.round(d.expNext * 1.35);
+    rpgShowLevelUp();
+  }
+  rpgUpdateHero(); RPG.save();
+}
+function rpgMasterConcept(id, term) {
+  if (!RPG.data || RPG.data.mastered[id]) return;
+  RPG.data.mastered[id] = true;
+  rpgAddExp(40);
+  rpgRenderBrowse();
+  renderMap();
+  showToast('✨ 已点亮「' + term + '」 +40 exp', 'success');
+}
+function rpgShowLevelUp() {
+  document.getElementById('up-lv').textContent = 'LV.' + RPG.data.level;
+  document.getElementById('upgrade').classList.add('open');
+}
+function rpgHideUpgrade() { document.getElementById('upgrade').classList.remove('open'); }
+function rpgShowWelcome() { document.getElementById('welcome').classList.add('open'); }
+function rpgHideWelcome() { document.getElementById('welcome').classList.remove('open'); }
+
+/* ===== 领地元数据 + 真实分类树（concept-taxonomy.json 驱动） ===== */
+var ZONE_META = {
+  dash: { name: '主城 · 总览', zc: '#D9B25E', icon: '🏛', sub: '概论八主题', panel: 'dashboard' },
+  thr:  { name: '知识圣殿 · 理论', zc: '#B58AF2', icon: '📜', sub: '时期 → 学派 → 学者', panel: 'theory' },
+  met:  { name: '炼金工坊 · 方法', zc: '#5CD6A0', icon: '⚗', sub: '类目 → 子类', panel: 'methods' },
+  pol:  { name: '辩论广场 · 政治', zc: '#E06A5E', icon: '🗣', sub: '模块 → 题型', panel: 'politics' },
+  eng:  { name: '异界之门 · 英语', zc: '#6FA8E8', icon: '✧', sub: '12 词汇类别', panel: 'english' }
+};
+
+function zoneLeafFrom(cid) {
+  var c = conceptIndex[cid];
+  if (!c) return null;
+  var r = c.related ? '相关：' + (typeof c.related === 'string' ? c.related : (c.related || []).join(' · ')) : '';
+  if (!r && c.school) r = '学派：' + c.school;
+  if (!r && c.proponent) r = '学者：' + c.proponent;
+  return { n: c.term, d: c.definition, r: r, id: c.id };
+}
+
+function buildZoneTree(zone) {
+  if (!taxonomy) return null;
+  if (zone === 'dash') {
+    var intro = taxonomy.intro || {};
+    var kids = Object.keys(intro).map(function(topic) {
+      var leaf = (intro[topic].concepts || []).map(zoneLeafFrom).filter(Boolean);
+      return { name: topic, count: leaf.length + ' 概念', leaf: leaf };
+    });
+    return { name: '主城', zc: '#D9B25E', icon: '🏛', children: kids };
+  }
+  if (zone === 'thr') {
+    var t = taxonomy.theory || {};
+    var periods = Object.keys(t).map(function(periodName) {
+      var schools = Object.keys(t[periodName] || {}).map(function(schoolName) {
+        var sd = t[periodName][schoolName] || {};
+        var scholars = Object.keys(sd.scholars || {}).map(function(scholarName) {
+          var leaf = (sd.scholars[scholarName].concepts || []).map(zoneLeafFrom).filter(Boolean);
+          return { name: scholarName, count: leaf.length + ' 概念', leaf: leaf };
+        });
+        var ungrouped = (sd.ungrouped_concepts || []).map(zoneLeafFrom).filter(Boolean);
+        if (ungrouped.length) scholars.push({ name: '（未分学者）', count: ungrouped.length + ' 概念', leaf: ungrouped });
+        return { name: schoolName, count: scholars.length + ' 学者', children: scholars };
+      });
+      return { name: periodName, count: schools.length + ' 学派', children: schools };
+    });
+    return { name: '知识圣殿', zc: '#B58AF2', icon: '📜', children: periods };
+  }
+  if (zone === 'met') {
+    var m = taxonomy.methods || {};
+    var cats = Object.keys(m).map(function(catName) {
+      var subCats = Object.keys(m[catName].categories || {}).map(function(subName) {
+        var leaf = (m[catName].categories[subName].concepts || []).map(zoneLeafFrom).filter(Boolean);
+        return { name: subName, count: leaf.length + ' 概念', leaf: leaf };
+      });
+      return { name: catName, count: subCats.length + ' 子类', children: subCats };
+    });
+    return { name: '炼金工坊', zc: '#5CD6A0', icon: '⚗', children: cats };
+  }
+  return null;
+}
+
+/* ===== 领地内容视图：面包屑 + 逐层下钻 + 技能卡 ===== */
+var zoneState = { zone: 'thr', path: [] };
+var zoneTree = {};
+
+function openZone(zone) {
+  if (!taxonomy || !concepts.length) { showToast('数据加载中，请稍候…', 'info'); return; }
+  var tree = buildZoneTree(zone);
+  if (!tree) { showToast('该领地暂无数据', 'error'); return; }
+  zoneState.zone = zone; zoneState.path = [];
+  zoneTree[zone] = tree;
+  document.querySelectorAll('.panel').forEach(function(p) { p.classList.remove('active'); });
+  document.getElementById('zoneView').classList.add('active');
+  rpgRenderAll();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function zoneNodeAt(z, path) {
+  var n = zoneTree[z];
+  for (var i = 0; i < path.length; i++) n = n.children[path[i]];
+  return n;
+}
+function zoneCrumbName(z, path) {
+  var n = zoneTree[z];
+  for (var i = 0; i < path.length; i++) n = n.children[path[i]];
+  return n.name;
+}
+
+function zoneCountMastered(node) {
+  var mastered = 0, total = 0;
+  (function walk(n) {
+    if (n.leaf) { n.leaf.forEach(function(c) { total++; if (RPG.data && RPG.data.mastered[c.id]) mastered++; }); }
+    else if (n.children) n.children.forEach(walk);
+  })(node);
+  return { mastered: mastered, total: total };
+}
+
+function rpgRenderAll() {
+  var t = zoneTree[zoneState.zone];
+  document.getElementById('zoneTitle').textContent = t.name;
+  rpgRenderCrumbs();
+  rpgRenderBrowse();
+  document.getElementById('zoneFcCard').classList.add('hidden');
+  document.getElementById('zoneFlashNote').classList.remove('hidden');
+  document.getElementById('zoneFlashNote').textContent = '选择下方卡片查看概念详情';
+}
+
+function rpgRenderCrumbs() {
+  var el = document.getElementById('zoneCrumbs');
+  var html = '<button data-pop="-1">' + zoneTree[zoneState.zone].name + '</button>';
+  for (var i = 0; i < zoneState.path.length; i++) {
+    var name = zoneCrumbName(zoneState.zone, zoneState.path.slice(0, i + 1));
+    html += '<span class="sep">›</span>';
+    if (i === zoneState.path.length - 1) html += '<span class="cur">' + name + '</span>';
+    else html += '<button data-pop="' + i + '">' + name + '</button>';
+  }
+  el.innerHTML = html;
+  el.querySelectorAll('button').forEach(function(b) {
+    b.addEventListener('click', function() {
+      var p = parseInt(b.getAttribute('data-pop'));
+      if (p < 0) zoneState.path = [];
+      else zoneState.path = zoneState.path.slice(0, p + 1);
+      rpgRenderAll();
+    });
+  });
+}
+
+function rpgRenderBrowse() {
+  var node = zoneNodeAt(zoneState.zone, zoneState.path);
+  var t = zoneTree[zoneState.zone];
+  var el = document.getElementById('zoneBrowse');
+  el.style.setProperty('--zc', t.zc);
+  if (node.children) {
+    el.innerHTML = node.children.map(function(c, i) {
+      var hasLeaf = !!c.leaf;
+      var countTxt = hasLeaf ? (c.count || c.leaf.length + ' 概念') : (c.count || (c.children ? c.children.length + ' 子项' : ''));
+      var m = zoneCountMastered(c);
+      var mHtml = (m.total > 0) ? '<span class="m-count">✦ 已点亮 ' + m.mastered + ' / ' + m.total + '</span>' : '';
+      return '<button class="browse-item" data-i="' + i + '"><span class="b-icon">' + (c.icon || '◆') + '</span>' +
+        '<span class="b-name">' + c.name + '</span>' +
+        '<span class="b-count">' + countTxt + mHtml + '</span><span class="b-arrow">›</span></button>';
+    }).join('');
+    el.querySelectorAll('.browse-item').forEach(function(b) {
+      b.addEventListener('click', function() {
+        var i = parseInt(b.getAttribute('data-i'));
+        zoneState.path.push(i);
+        rpgRenderAll();
+      });
+    });
+  } else if (node.leaf) {
+    el.innerHTML = '<div class="skill-list">' + node.leaf.map(function(c, i) {
+      var m = RPG.data && RPG.data.mastered[c.id];
+      return '<div class="skill-card leaf' + (m ? ' mastered' : '') + '" data-leaf="' + i + '" style="--sc:' + t.zc + '">' +
+        '<div class="skill-top"><span class="skill-tier">' + (zoneState.zone === 'eng' ? 'WORD' : (i === 0 ? 'S' : 'A')) + '</span>' +
+        '<span class="skill-name">' + c.n + '</span></div>' +
+        '<div class="skill-desc">' + c.d + '</div>' +
+        '<div class="skill-rels">' + c.r + '</div>' +
+        '<div class="skill-actions"><span class="m-status">' + (m ? '✓ 已掌握' : '未掌握') + '</span>' +
+        (m ? '' : '<button class="m-btn" data-m="' + i + '">标记掌握</button>') + '</div></div>';
+    }).join('') + '</div>';
+    el.querySelectorAll('.leaf').forEach(function(card) {
+      card.addEventListener('click', function() {
+        var leaf = node.leaf[parseInt(card.getAttribute('data-leaf'))];
+        document.getElementById('zoneFlashNote').classList.add('hidden');
+        var fc = document.getElementById('zoneFcCard');
+        fc.classList.remove('hidden');
+        fc.classList.remove('flip');
+        document.getElementById('zoneFcKicker').textContent = '名词解释 · ' + zoneCrumbName(zoneState.zone, zoneState.path);
+        document.getElementById('zoneFcTerm').textContent = leaf.n;
+        document.getElementById('zoneFcAnswer').textContent = leaf.d;
+      });
+      var mb = card.querySelector('.m-btn');
+      if (mb) mb.addEventListener('click', function(e) {
+        e.stopPropagation();
+        rpgMasterConcept(node.leaf[parseInt(this.getAttribute('data-m'))].id, node.leaf[parseInt(this.getAttribute('data-m'))].n);
+      });
+    });
+  } else {
+    el.innerHTML = '<div class="flash-note">该分类暂无内容</div>';
+  }
+}
+
+/* ===== 世界地图渲染（领地卡片 + 任务板 + 成就） ===== */
+function rpgZoneStat(z) {
+  if (z === 'pol') return '1,140 题';
+  if (z === 'eng') return '5,169 词';
+  var tree = buildZoneTree(z);
+  if (!tree) return '加载中…';
+  var m = zoneCountMastered(tree);
+  var mc = m.mastered > 0 ? '✦ ' + m.mastered + ' / ' : '';
+  return mc + m.total + ' 概念';
+}
+function renderMap() {
+  var el = document.getElementById('mapZones');
+  if (!el) return;
+  el.innerHTML = ['dash', 'thr', 'met', 'pol', 'eng'].map(function(z) {
+    var meta = ZONE_META[z];
+    return '<button class="zone ' + z + '" data-zone="' + z + '">' +
+      '<span class="z-icon">' + meta.icon + '</span>' +
+      '<span class="z-name">' + meta.name + '</span>' +
+      '<span class="z-sub">' + meta.sub + '</span>' +
+      '<span class="z-stat">' + rpgZoneStat(z) + '</span></button>';
+  }).join('');
+  var today = new Date().toISOString().slice(0, 10);
+  var qb = document.getElementById('questBoard');
+  if (qb) qb.innerHTML = [
+    { t: '点亮任意概念', e: '+40 exp' },
+    { t: '浏览知识圣殿 · 古典时期', e: '+30 exp' },
+    { t: '炼金工坊 · 复习抽样设计', e: '+150 exp' }
+  ].map(function(q, i) { return '<li class="' + (i === 0 && RPG.data && Object.keys(RPG.data.mastered).length ? 'done' : '') + '"><span class="ck">' + (i === 0 && RPG.data && Object.keys(RPG.data.mastered).length ? '✓' : '→') + '</span><span>' + q.t + '</span><span class="rew">' + q.e + '</span></li>'; }).join('');
+  var ab = document.getElementById('achBoard');
+  if (ab) {
+    var masteredCount = RPG.data ? Object.keys(RPG.data.mastered).length : 0;
+    var ach = [
+      { icon: '🔥', t: '点亮者 · 首个概念', ok: masteredCount >= 1 },
+      { icon: '📚', t: '学徒 · 10 概念掌握', ok: masteredCount >= 10 },
+      { icon: '⚡', t: '贤者 · 50 概念掌握', ok: masteredCount >= 50 },
+      { icon: '🗺', t: '满级修行者', ok: (RPG.data ? RPG.data.level : 1) >= 5 }
+    ];
+    ab.innerHTML = ach.map(function(a) {
+      return '<div class="ach' + (a.ok ? ' lit' : '') + '"><span class="a-icon">' + a.icon + '</span><span>' + a.t + '</span></div>';
+    }).join('');
+  }
+}
+
+/* ===== RPG 初始化 + 事件绑定 ===== */
+if (RPG.load()) { rpgUpdateHero(); } else { rpgShowWelcome(); }
+
+document.getElementById('btn-enter').addEventListener('click', function() {
+  RPG.create(document.getElementById('pname').value);
+  rpgHideWelcome();
+  rpgUpdateHero();
+  renderMap();
+});
+document.getElementById('pname').addEventListener('keydown', function(e) {
+  if (e.key === 'Enter') document.getElementById('btn-enter').click();
+});
+document.getElementById('btn-switch').addEventListener('click', function() {
+  localStorage.removeItem('rpg_player');
+  RPG.name = ''; RPG.data = null;
+  document.getElementById('pname').value = '';
+  rpgShowWelcome();
+});
+document.getElementById('btn-up-close').addEventListener('click', rpgHideUpgrade);
+document.getElementById('zoneFcCard').addEventListener('click', function() { this.classList.toggle('flip'); });
+document.getElementById('btn-zone-map').addEventListener('click', function() {
+  document.getElementById('zoneView').classList.remove('active');
+  switchPanel('dashboard');
+  renderMap();
+});
+document.getElementById('btn-zone-panel').addEventListener('click', function() {
+  var panel = ZONE_META[zoneState.zone].panel;
+  document.getElementById('zoneView').classList.remove('active');
+  switchPanel(panel);
+});
+document.getElementById('mapZones').addEventListener('click', function(e) {
+  var btn = e.target.closest('.zone');
+  if (!btn) return;
+  var z = btn.getAttribute('data-zone');
+  if (z === 'pol' || z === 'eng') { switchPanel(ZONE_META[z].panel); return; }
+  openZone(z);
+});
+
 </script>
 
 </body>
