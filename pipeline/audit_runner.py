@@ -328,9 +328,12 @@ def check_structure(concepts, taxonomy=None):
                 add('scholar_dir_3seg', 'structure', 'WARN', term=term, chapter=ch,
                     id=cid, detail=f'学者直挂缺学派层: {name} 在 {era}')
             elif normalize_school_name(name) in canonical_schools:
-                # 学派直挂（归一后是正典学派）
-                add('school_direct_needs_scholar', 'structure', 'WARN', term=term,
-                    chapter=ch, id=cid, detail=f'学派直挂: {name}')
+                # 学派直挂（归一后是正典学派）；综合/思潮概念 + 其他X学者杂项桶 豁免
+                if name in ('其他古典学者', '其他现代学者', '其他当代学者'):
+                    continue  # 杂项桶，3 段合法
+                if term not in SCHOOL_DIRECT_EXEMPT:
+                    add('school_direct_needs_scholar', 'structure', 'WARN', term=term,
+                        chapter=ch, id=cid, detail=f'学派直挂: {name}')
             elif name not in canonical_schools:
                 # 未知3段名
                 add('unknown_3seg_name', 'structure', 'WARN', term=term, chapter=ch,
@@ -517,6 +520,10 @@ EXCLUDE_VARIANT_TERMS = {
     "利己型自杀", "利他型自杀", "宿命型自杀", "失范型自杀",
     "剩余价值", "绝对剩余价值", "相对剩余价值",
     "方法论个体主义", "方法论集体主义", "社会化", "再社会化",
+    # 2026-08-03 人审: 定义模板相同的合法概念对（非变体）
+    "通则式解释", "个案式解释", "隐性内容", "显性内容",
+    "情感行动", "传统行动", "社会存在", "社会意识",
+    "群体卡理斯玛", "群体污名",
     "社会", "社会学", "社会主义", "社会理论", "社会研究", "社会现象",
     "资本", "资本主义", "结构", "结构主义",
 }
@@ -525,6 +532,15 @@ VARIANT_SUFFIX = re.compile(r'[型性式]?(主义|论|理论|学说|思想|概�
 VARIANT_NORM_JOIN = re.compile(r'[与和及\-－—]')
 # 共享词检测停用词（shared_word_check 精简版）
 SHARED_STOP = set("的与和及了在是这那之对从而并由或社会理论概念研究方法主义主要认为提出一种进行通过包括具有表示成为人们之间不同关系过程发展形成")
+# 2026-08-03 人审: 理论综合/思潮/方法论概念，无单一学者归属，豁免 school_direct
+SCHOOL_DIRECT_EXEMPT = {
+    "建构主义", "社会变迁", "社会现代化", "社会冲突论", "古典社会学理论",
+    "后现代社会理论", "现代性", "福柯与戈夫曼社会思想比较", "分析二元论",
+    "社会契约理论", "新兴范式", "自由社会制度", "压力-分化模式", "问题-解决模式",
+    "社团结构", "现代事业",
+    # 2026-08-03 深扫: 理论流派综述概念，无单一学者
+    "结构功能论", "社会交换论", "交换理论", "社会影响", "表演互动论",
+}
 
 
 def _variant_norm(t):

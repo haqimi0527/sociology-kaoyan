@@ -20,8 +20,8 @@ test.describe('冒烟测试（RPG 骨架）', () => {
   });
 
   test('核心结构：hero-bar + 世界地图 + 7 面板', async ({ page }) => {
-    await page.goto('/');
-    await expect(page.locator('.hero-bar')).toBeAttached();
+    await enterWorld(page);
+    await expect(page.locator('.hero-banner')).toBeAttached();
     const panels = ['panel-dashboard', 'panel-politics', 'panel-english',
                     'panel-theory', 'panel-methods', 'panel-mock-exam', 'panel-settings'];
     for (const id of panels) {

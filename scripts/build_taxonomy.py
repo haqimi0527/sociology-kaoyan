@@ -68,6 +68,9 @@ THEORY_TAXONOMY = {
                 "米德": {"concepts": [], "keywords": ["米德", "符号互动", "主我", "客我", "角色扮演", "泛化他人"]},
                 "萨姆纳": {"concepts": [], "keywords": ["萨姆纳", "民俗", "民德", "内群体", "外群体", "种族中心主义"]},
                 "塔尔德": {"concepts": [], "keywords": ["塔尔德", "模仿律", "暗示", "社会逻辑"]},
+                "孟德斯鸠": {"concepts": [], "keywords": ["孟德斯鸠", "三权分立", "政体", "论法的精神"]},
+                "笛卡尔": {"concepts": [], "keywords": ["笛卡尔", "身心二元论", "我思故我在", "主客二分"]},
+                "康德": {"concepts": [], "keywords": ["康德", "先验范畴", "先天综合判断", "理性批判"]},
             }
         },
     },
@@ -323,6 +326,41 @@ def classify_concept(c):
         return classify_theory(c, all_text)
 
 
+def _school_name_match(sch_key, raw):
+    """学派名匹配：精确 / 去括号 / '与'拆分 / 子串包含（2026-08-03 增强）"""
+    raw = (raw or '').strip()
+    k = sch_key.strip()
+    if not raw:
+        return False
+    if k == raw:
+        return True
+    if '（' in k and k.split('（')[0] == raw:
+        return True
+    if '与' in k:
+        for sub in k.split('与'):
+            if sub == raw:
+                return True
+    # 子串包含（现象学社会学 in 现象学社会学与常人方法学 / 批判理论 in 批判理论（法兰克福学派））
+    if len(raw) >= 2 and (raw in k or k in raw):
+        return True
+    return False
+
+
+def _scholar_name_match(sc_key, raw):
+    """学者名匹配：精确 / 中文译名'名·姓'取姓（乔治·米德→米德，2026-08-03 增强）"""
+    raw = (raw or '').strip()
+    if not raw:
+        return False
+    if sc_key == raw:
+        return True
+    # '乔治·米德' / '乔治·赫伯特·米德' → '米德'
+    surname = raw.split('·')[-1] if '·' in raw else ''
+    if surname and len(surname) >= 2 and sc_key == surname:
+        return True
+    # 反向：raw 是 sc_key 的变体（如'理论综合' 匹配 '理论综合'）
+    return False
+
+
 def classify_theory(c, all_text):
     """Classify a theory concept into era→school→scholar
 
@@ -343,17 +381,18 @@ def classify_theory(c, all_text):
             for era_full, era_data in THEORY_TAXONOMY.items():
                 if era_full.lower().startswith(era_raw.lower()):
                     for sch_n, sch_data in era_data.items():
-                        if sch_n.lower() == school_raw.lower() or \
-                           (sch_n.lower().split('（')[0] == school_raw.lower().split('（')[0]):
-                            if scholar_raw in sch_data.get('scholars', {}):
-                                return (era_full, sch_n, scholar_raw), 100
+                        if _school_name_match(sch_n, school_raw):
+                            for sc_key in sch_data.get('scholars', {}):
+                                if _scholar_name_match(sc_key, scholar_raw):
+                                    return (era_full, sch_n, sc_key), 100
+                            # 学者不在 taxonomy 学者节点 → 归学派级 ungrouped（不退回关键词，避免错配）
+                            return (era_full, sch_n, None), 95
         elif len(parts) == 3:
             era_raw, school_raw = parts[1], parts[2]
             for era_full, era_data in THEORY_TAXONOMY.items():
                 if era_full.lower().startswith(era_raw.lower()):
                     for sch_n, sch_data in era_data.items():
-                        if sch_n.lower() == school_raw.lower() or \
-                           (sch_n.lower().split('（')[0] == school_raw.lower().split('（')[0]):
+                        if _school_name_match(sch_n, school_raw):
                             # 学派直挂 → 返回学派级，scholar=None（进 ungrouped 桶）
                             return (era_full, sch_n, None), 90
 
