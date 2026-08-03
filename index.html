@@ -2123,7 +2123,7 @@ let taxonomy = null;  // concept-taxonomy.json
 async function loadTaxonomy() {
   if (taxonomy) return;
   try {
-    const resp = await fetch('data/concept-taxonomy.json?v=3');
+    const resp = await fetch('data/concept-taxonomy.json?v=4');
     if (!resp.ok) throw new Error('HTTP ' + resp.status);
     taxonomy = await resp.json();
   } catch(e) {
@@ -2135,7 +2135,7 @@ async function loadTaxonomy() {
 async function loadConcepts() {
   if (concepts.length) return;
   try {
-    const resp = await fetch('data/concepts.json?v=5');
+    const resp = await fetch('data/concepts.json?v=6');
     if (!resp.ok) throw new Error('HTTP ' + resp.status);
     concepts = await resp.json();
     concepts.forEach(c => { if (c.id) { conceptIndex[c.id] = c; } else { console.warn('概念缺少 id:', c.term); } });
