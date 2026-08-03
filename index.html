@@ -1179,24 +1179,39 @@ input::placeholder { color: var(--placeholder); }
 @media (max-width: 500px) { .zones { grid-template-columns: 1fr; } }
 
 /* ===== 无侧边栏布局修正 ===== */
-.main { margin-left: 0 !important; padding: 20px 28px 60px; max-width: 1100px; }
+.main { margin-left: 0 !important; padding: 20px 28px 60px; width: 100%; max-width: none; }
+.main > .panel { max-width: 1200px; margin: 0 auto; }
+.main > .panel#panel-dashboard { max-width: none; }
+.hero-banner { margin-left: auto; margin-right: auto; }
+.zones { margin-left: auto; margin-right: auto; }
+#panel-dashboard .zones { max-width: 1200px; }
+#panel-dashboard .board-row { max-width: 1200px; margin-left: auto; margin-right: auto; }
+#panel-dashboard .dash-bottom { max-width: 900px; margin-left: auto; margin-right: auto; }
+#panel-dashboard .zone-grid { max-width: 1100px; margin-left: auto; margin-right: auto; }
 
 /* ===== 顶部角色栏（RPG mock 移植） ===== */
-.hero-bar { position: sticky; top: 0; z-index: 300; display: flex; align-items: center; gap: 20px; padding: 12px 28px; border-bottom: 1px solid var(--line); background: linear-gradient(to bottom, rgba(13,10,28,.92), rgba(13,10,28,.72)); backdrop-filter: blur(10px); }
-.hero-bar .hero { display: flex; align-items: center; gap: 12px; }
-.hero-bar .avatar { width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: 900; color: var(--bg); background: radial-gradient(circle at 30% 30%, var(--gold-2), var(--gold-dim)); box-shadow: 0 0 18px rgba(217,178,94,.45); position: relative; }
-.hero-bar .avatar::after { content: ""; position: absolute; inset: -4px; border-radius: 50%; border: 1px solid rgba(217,178,94,.5); animation: heroRing 3.5s ease-in-out infinite; }
+.hero-banner { display: flex; align-items: center; justify-content: center; gap: 22px; padding: 16px 24px; margin: 0 auto 26px; max-width: 760px; border: 1px solid var(--line); border-radius: 16px; background: linear-gradient(165deg, rgba(22,17,44,.6), rgba(28,21,54,.35)); backdrop-filter: blur(8px); box-shadow: 0 8px 32px rgba(0,0,0,.35); }
+.hero-banner .hero { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
+.hero-banner .hero-ident { display: flex; flex-direction: column; }
+.hero-banner .avatar { width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 22px; font-weight: 900; color: var(--bg); background: radial-gradient(circle at 30% 30%, var(--gold-2), var(--gold-dim)); box-shadow: 0 0 20px rgba(217,178,94,.5); position: relative; }
+.hero-banner .avatar::after { content: ""; position: absolute; inset: -4px; border-radius: 50%; border: 1px solid rgba(217,178,94,.5); animation: heroRing 3.5s ease-in-out infinite; }
 @keyframes heroRing { 0%,100% { transform: scale(1); opacity: .6; } 50% { transform: scale(1.14); opacity: .15; } }
-.hero-bar .hero-name { font-weight: 700; letter-spacing: 1px; color: var(--ink); }
-.hero-bar .hero-title { font-size: 10px; color: var(--lead); letter-spacing: 2px; }
-.hero-bar .hero-lvl { font-size: 11px; font-weight: 700; color: var(--gold); border: 1px solid var(--line); padding: 1px 8px; border-radius: 6px; background: rgba(217,178,94,.08); }
-.hero-bar .xp { flex: 1; max-width: 380px; }
-.hero-bar .xp-label { font-size: 10px; color: var(--lead); display: flex; justify-content: space-between; margin-bottom: 4px; letter-spacing: 1px; }
-.hero-bar .xp-label b { color: var(--gold-2); }
-.hero-bar .xp-bar { height: 9px; border-radius: 6px; background: rgba(217,178,94,.12); border: 1px solid var(--line); overflow: hidden; position: relative; }
-.hero-bar .xp-bar i { display: block; height: 100%; border-radius: 6px; background: linear-gradient(90deg, var(--gold-dim), var(--gold-2)); box-shadow: 0 0 12px rgba(240,199,94,.55); transition: width .6s var(--ease); }
-.hero-bar .switch-btn { font-size: 11px; color: var(--lead); border: 1px solid var(--line); border-radius: 8px; padding: 5px 12px; letter-spacing: 1px; background: none; cursor: pointer; }
-.hero-bar .switch-btn:hover { color: var(--gold-2); border-color: var(--gold); }
+.hero-banner .hero-name { font-weight: 700; letter-spacing: 1px; color: var(--ink); }
+.hero-banner .hero-title { font-size: 10px; color: var(--lead); letter-spacing: 2px; }
+.hero-banner .hero-lvl { font-size: 11px; font-weight: 700; color: var(--gold); border: 1px solid var(--line); padding: 2px 10px; border-radius: 6px; background: rgba(217,178,94,.08); flex-shrink: 0; }
+.hero-banner .xp { flex: 1; max-width: 300px; min-width: 140px; }
+.hero-banner .xp-label { font-size: 10px; color: var(--lead); display: flex; justify-content: space-between; margin-bottom: 4px; letter-spacing: 1px; }
+.hero-banner .xp-label b { color: var(--gold-2); }
+.hero-banner .xp-bar { height: 9px; border-radius: 6px; background: rgba(217,178,94,.12); border: 1px solid var(--line); overflow: hidden; position: relative; }
+.hero-banner .xp-bar i { display: block; height: 100%; border-radius: 6px; background: linear-gradient(90deg, var(--gold-dim), var(--gold-2)); box-shadow: 0 0 12px rgba(240,199,94,.55); transition: width .6s var(--ease); }
+.hero-banner .hero-stats { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+.hero-banner .hstat { display: flex; align-items: center; gap: 8px; padding: 6px 12px; border: 1px solid var(--line); border-radius: 10px; background: rgba(217,178,94,.06); }
+.hero-banner .hstat .hs-ic { font-size: 15px; }
+.hero-banner .hstat .hs-box { display: flex; flex-direction: column; line-height: 1.2; }
+.hero-banner .hstat .hs-box b { font-size: 13px; color: var(--gold-2); font-weight: 700; }
+.hero-banner .hstat .hs-box span { font-size: 9px; color: var(--faint); letter-spacing: 1px; }
+.hero-banner .switch-btn { font-size: 11px; color: var(--lead); border: 1px solid var(--line); border-radius: 8px; padding: 5px 12px; letter-spacing: 1px; background: none; cursor: pointer; flex-shrink: 0; }
+.hero-banner .switch-btn:hover { color: var(--gold-2); border-color: var(--gold); }
 
 /* ===== 领地头 ===== */
 .zone-head { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; flex-wrap: wrap; }
@@ -1206,7 +1221,7 @@ input::placeholder { color: var(--placeholder); }
 .zone-head .crumbs { width: 100%; margin-top: 2px; }
 .zone-head .back { font-size: 12px; color: var(--lead); letter-spacing: 1px; padding: 6px 12px; border: 1px solid var(--line); border-radius: 8px; background: rgba(217,178,94,.06); cursor: pointer; white-space: nowrap; transition: all .2s; }
 .zone-head .back:hover { color: var(--gold-2); border-color: var(--gold); box-shadow: 0 0 12px rgba(217,178,94,.2); }
-@media (max-width: 560px) { .hero-bar { flex-wrap: wrap; gap: 10px; padding: 10px 16px; } .hero-bar .xp { min-width: 60%; } }
+@media (max-width: 700px) { .hero-banner { flex-wrap: wrap; gap: 12px; padding: 14px 16px; margin-bottom: 18px; } .hero-banner .xp { min-width: 70%; order: 5; } .hero-banner .hero-stats { order: 6; } }
 
 /* ===== 窄屏修复 ===== */
 @media (max-width: 800px) {
@@ -1247,15 +1262,6 @@ input::placeholder { color: var(--placeholder); }
 <span class="particle" style="--s:3px;--c:#D9B25E;--dl:10s;--d:24s;left:8%;--dx:18px;--o:.4"></span>
 <span class="particle" style="--s:2px;--c:#B58AF2;--dl:2s;--d:16s;left:55%;--dx:28px;--o:.6"></span>
 
-<header class="hero-bar">
-  <div class="hero"><div class="avatar" id="heroAvatar">考</div>
-    <div><div class="hero-name" id="heroName">无名修士</div><div class="hero-title">知识大陆的修行者</div></div>
-  </div>
-  <div class="hero-lvl" id="heroLvl">LV.1</div>
-  <div class="xp"><div class="xp-label"><span>经验值</span><span id="heroExp">0 <b>/</b> 120</span></div><div class="xp-bar"><i id="heroExpBar" style="width:0%"></i></div></div>
-  <button class="switch-btn" id="btn-switch">⇄ 换人</button>
-</header>
-
 <main class="main">
 <div class="panel active" id="panel-dashboard">
 
@@ -1265,6 +1271,24 @@ input::placeholder { color: var(--placeholder); }
     <h1>知识大陆</h1>
     <p>选择一块领地，开启今日修行</p>
   </div>
+
+  <!-- 角色横幅（融入地图标题下方） -->
+  <div class="hero-banner">
+    <div class="hero"><div class="avatar" id="heroAvatar">考</div>
+      <div class="hero-ident">
+        <div class="hero-name" id="heroName">无名修士</div>
+        <div class="hero-title">知识大陆的修行者</div>
+      </div>
+    </div>
+    <div class="hero-lvl" id="heroLvl">LV.1</div>
+    <div class="xp"><div class="xp-label"><span>经验值</span><span id="heroExp">0 <b>/</b> 120</span></div><div class="xp-bar"><i id="heroExpBar" style="width:0%"></i></div></div>
+    <div class="hero-stats">
+      <div class="hstat" title="已点亮概念数"><span class="hs-ic">✦</span><div class="hs-box"><b id="heroMastered">0</b><span>已点亮</span></div></div>
+      <div class="hstat" title="今日任务"><span class="hs-ic">📜</span><div class="hs-box"><b id="heroQuest">0/3</b><span>今日任务</span></div></div>
+    </div>
+    <button class="switch-btn" id="btn-switch">⇄ 换人</button>
+  </div>
+
   <div class="zones" id="mapZones"></div>
 
   <div class="board-row">
@@ -5360,6 +5384,11 @@ function rpgUpdateHero() {
   var pct = Math.min(100, Math.round(d.exp / d.expNext * 100));
   document.getElementById('heroExpBar').style.width = pct + '%';
   document.getElementById('heroExp').innerHTML = d.exp + ' <b>/</b> ' + d.expNext;
+  var mc = d.mastered ? Object.keys(d.mastered).length : 0;
+  var hm = document.getElementById('heroMastered');
+  if (hm) hm.textContent = mc;
+  var hq = document.getElementById('heroQuest');
+  if (hq) hq.textContent = (mc > 0 ? '1' : '0') + '/3';
 }
 function rpgAddExp(n) {
   var d = RPG.data; d.exp += n;
@@ -5595,6 +5624,8 @@ function openZone(zone) {
     var dMap = document.getElementById('mapZones');
     var dSum = document.getElementById('dashSummary');
     var dZone = document.getElementById('dashZone');
+    var dBanner = document.querySelector('.hero-banner');
+    if (dBanner) dBanner.classList.add('hidden');
     if (dMap) dMap.closest('.map-head') && dMap.closest('.map-head').classList.add('hidden');
     if (dMap) dMap.classList.add('hidden');
     var dBoard = dMap && dMap.parentElement ? dMap.parentElement.querySelector('.board-row') : null;
@@ -5647,6 +5678,8 @@ function closeDashZone() {
   if (dMap) { dMap.classList.remove('hidden'); var mh = dMap.closest('.map-head'); if (mh) mh.classList.remove('hidden'); var br = dMap.parentElement ? dMap.parentElement.querySelector('.board-row') : null; if (br) br.classList.remove('hidden'); }
   var dSum = document.getElementById('dashSummary');
   if (dSum) dSum.classList.remove('hidden');
+  var dBanner = document.querySelector('.hero-banner');
+  if (dBanner) dBanner.classList.remove('hidden');
   zoneState.path = [];
 }
 
